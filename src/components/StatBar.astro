@@ -21,6 +21,6 @@ const color = colorFor(value);
 
 <div class="stat-row">
   <span class="stat-label">{label}</span>
-  <span class="stat-bar-track"><span class="stat-bar-fill" style={`width:${pct}%; background:${color}`}></span></span>
+  <span class="stat-bar-track"><span class="stat-bar-fill" style={`width:${pct}%; background:${color}; box-shadow:0 0 12px 0 ${color}`}></span></span>
   <span class="stat-value">{value}</span>
 </div>

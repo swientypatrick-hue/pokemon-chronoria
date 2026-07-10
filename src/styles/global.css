@@ -1,72 +1,170 @@
+/* ==========================================================================
+   Design tokens
+   ========================================================================== */
 :root {
-  --bg: #f7f7fb;
-  --bg-elevated: #ffffff;
-  --text: #1c1c24;
-  --text-muted: #63636f;
-  --border: #e2e2ea;
-  --accent: #d64545;
-  --accent-contrast: #ffffff;
-  --radius: 10px;
-  --max-width: 960px;
+  /* Core palette (as specified) */
+  --gray-900: #111827;
+  --gray-800: #1f2937;
+  --gray-700: #374151;
+  --blue-400: #60a5fa;
+  --blue-600: #3b82f6;
+  --gold-400: #facc15;
+  --white: #ffffff;
+
+  /* Semantic tokens - dark theme (default) */
+  --bg: var(--gray-900);
+  --bg-elevated: var(--gray-800);
+  --bg-glass: rgba(31, 41, 55, 0.55);
+  --bg-glass-strong: rgba(31, 41, 55, 0.78);
+  --border: var(--gray-700);
+  --border-glass: rgba(255, 255, 255, 0.08);
+  --text: #f3f4f6;
+  --text-muted: #9ca3af;
+  --accent: var(--blue-600);
+  --accent-light: var(--blue-400);
+  --accent-gold: var(--gold-400);
+  --accent-contrast: #0b1220;
+
+  --shadow-soft: 0 10px 30px rgba(0, 0, 0, 0.35);
+  --shadow-lift: 0 20px 45px rgba(0, 0, 0, 0.45);
+  --glow-blue: 0 0 0 1px rgba(96, 165, 250, 0.25), 0 0 28px rgba(59, 130, 246, 0.35);
+  --glow-gold: 0 0 0 1px rgba(250, 204, 21, 0.3), 0 0 28px rgba(250, 204, 21, 0.3);
+
+  --radius-sm: 12px;
+  --radius-md: 16px;
+  --radius-lg: 20px;
+  --max-width: 1180px;
+
+  --font-display: "Outfit", "Inter", system-ui, sans-serif;
+  --font-body: "Inter", system-ui, -apple-system, sans-serif;
+
+  --ease-out: cubic-bezier(0.16, 1, 0.3, 1);
+  --dur-fast: 200ms;
+  --dur-med: 320ms;
 }
 
-@media (prefers-color-scheme: dark) {
+@media (prefers-color-scheme: light) {
   :root {
-    --bg: #16161d;
-    --bg-elevated: #1f1f29;
-    --text: #eeeef2;
-    --text-muted: #9c9ca8;
-    --border: #33333f;
-    --accent: #ff6b6b;
-    --accent-contrast: #16161d;
+    --bg: #eef1f6;
+    --bg-elevated: #ffffff;
+    --bg-glass: rgba(255, 255, 255, 0.7);
+    --bg-glass-strong: rgba(255, 255, 255, 0.88);
+    --border: #dde3ee;
+    --border-glass: rgba(17, 24, 39, 0.08);
+    --text: #111827;
+    --text-muted: #5b6472;
+    --accent-contrast: #ffffff;
+    --shadow-soft: 0 10px 30px rgba(17, 24, 39, 0.08);
+    --shadow-lift: 0 20px 45px rgba(17, 24, 39, 0.14);
   }
 }
 
-/* Pagefind's Default UI ships its own light-theme :root variables (dark-gray text on white
-   background) - override with !important so they win no matter the <link> load order, since
-   pagefind-ui.css is loaded from a page template, not through this stylesheet's cascade. */
+/* Pagefind's Default UI ships its own light-theme :root variables - override with
+   !important so they win no matter the <link> load order (loaded from a page template,
+   not through this stylesheet's cascade). */
 :root {
   --pagefind-ui-primary: var(--accent) !important;
   --pagefind-ui-text: var(--text) !important;
   --pagefind-ui-background: var(--bg-elevated) !important;
   --pagefind-ui-border: var(--border) !important;
   --pagefind-ui-tag: var(--border) !important;
+  --pagefind-ui-border-radius: var(--radius-sm) !important;
 }
 
+/* pagefind-ui.css never sets a text color on the <input> itself (only on result text),
+   so it falls back to the browser's default black - invisible on a dark background. */
+.pagefind-ui__search-input {
+  color: var(--text) !important;
+}
+
+/* ==========================================================================
+   Base / reset
+   ========================================================================== */
 * {
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   margin: 0;
-  font-family: "Segoe UI", system-ui, -apple-system, sans-serif;
+  font-family: var(--font-body);
   background: var(--bg);
   color: var(--text);
-  line-height: 1.5;
+  line-height: 1.6;
+  position: relative;
+  min-height: 100vh;
+}
+
+/* Ambient decorative background - fixed, blurred gradient blobs, purely cosmetic */
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  z-index: -1;
+  pointer-events: none;
+  background:
+    radial-gradient(560px circle at 12% -5%, rgba(59, 130, 246, 0.16), transparent 60%),
+    radial-gradient(480px circle at 100% 15%, rgba(250, 204, 21, 0.08), transparent 55%),
+    radial-gradient(600px circle at 90% 95%, rgba(96, 165, 250, 0.12), transparent 60%);
+  animation: driftBg 24s ease-in-out infinite alternate;
+}
+
+@keyframes driftBg {
+  from { transform: translate3d(0, 0, 0) scale(1); }
+  to { transform: translate3d(-2%, 2%, 0) scale(1.05); }
 }
 
 a {
-  color: var(--accent);
+  color: var(--accent-light);
   text-decoration: none;
+  transition: color var(--dur-fast) var(--ease-out);
 }
 a:hover {
-  text-decoration: underline;
+  color: var(--accent-gold);
+}
+
+/* Consistent, visible keyboard focus everywhere (WCAG) */
+a:focus-visible,
+button:focus-visible,
+summary:focus-visible,
+[tabindex]:focus-visible,
+input:focus-visible {
+  outline: 2px solid var(--accent-light);
+  outline-offset: 3px;
+  border-radius: 4px;
 }
 
 .page {
   max-width: var(--max-width);
   margin: 0 auto;
-  padding: 1rem 1.25rem 3rem;
+  padding: 1.5rem 1.5rem 4rem;
 }
 
+@media (min-width: 640px) {
+  .page {
+    padding: 2rem 2rem 5rem;
+  }
+}
+
+/* ==========================================================================
+   Header / navigation
+   ========================================================================== */
 .site-header {
-  border-bottom: 1px solid var(--border);
-  background: var(--bg-elevated);
+  position: sticky;
+  top: 0;
+  z-index: 50;
+  background: var(--bg-glass-strong);
+  backdrop-filter: blur(16px) saturate(160%);
+  -webkit-backdrop-filter: blur(16px) saturate(160%);
+  border-bottom: 1px solid var(--border-glass);
 }
 
 .site-header .page {
-  padding-top: 0.75rem;
-  padding-bottom: 0.75rem;
+  padding-top: 0.9rem;
+  padding-bottom: 0.9rem;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
@@ -74,166 +172,259 @@ a:hover {
 }
 
 .site-title {
-  font-weight: 700;
-  font-size: 1.15rem;
-  color: var(--text);
+  font-family: var(--font-display);
+  font-weight: 800;
+  font-size: 1.25rem;
+  letter-spacing: -0.01em;
   white-space: nowrap;
+  background: linear-gradient(120deg, var(--accent-light), var(--accent-gold));
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
 }
 
 .site-nav {
   display: flex;
   flex-wrap: wrap;
-  gap: 0.25rem 1rem;
+  gap: 0.25rem;
   margin-left: auto;
 }
 
 .site-nav a {
   color: var(--text-muted);
-  font-size: 0.95rem;
+  font-family: var(--font-display);
+  font-weight: 600;
+  font-size: 0.92rem;
+  padding: 0.45rem 0.9rem;
+  border-radius: 999px;
+  transition: color var(--dur-fast) var(--ease-out), background var(--dur-fast) var(--ease-out);
 }
-.site-nav a:hover,
+.site-nav a:hover {
+  color: var(--text);
+  background: var(--border-glass);
+}
 .site-nav a[aria-current="page"] {
-  color: var(--accent);
+  color: var(--accent-contrast);
+  background: linear-gradient(120deg, var(--accent), var(--accent-light));
+  box-shadow: var(--glow-blue);
+}
+
+/* ==========================================================================
+   Typography
+   ========================================================================== */
+h1, h2, h3 {
+  font-family: var(--font-display);
+  letter-spacing: -0.01em;
 }
 
 h1 {
-  font-size: 1.6rem;
-  margin: 0.25rem 0 1rem;
-}
-h2 {
-  font-size: 1.15rem;
-  margin: 1.75rem 0 0.75rem;
-  border-bottom: 1px solid var(--border);
-  padding-bottom: 0.35rem;
+  font-size: clamp(1.9rem, 1.5rem + 1.6vw, 2.75rem);
+  font-weight: 800;
+  margin: 0.25rem 0 1.1rem;
+  color: var(--text);
 }
 
+h2 {
+  font-size: 1.3rem;
+  font-weight: 700;
+  margin: 2.5rem 0 1rem;
+  padding-bottom: 0.6rem;
+  border-bottom: 1px solid var(--border-glass);
+}
+
+/* ==========================================================================
+   Cards
+   ========================================================================== */
 .card-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
-  gap: 0.6rem;
+  grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+  gap: 0.9rem;
 }
 
 .card {
   display: block;
-  background: var(--bg-elevated);
-  border: 1px solid var(--border);
-  border-radius: var(--radius);
-  padding: 0.6rem 0.75rem;
+  position: relative;
+  /* No backdrop-filter here on purpose: card grids can render 1000+ at once (the full
+     Pokédex list) and per-element backdrop blur at that scale is a real performance cost.
+     The layered gradient + border + shadow still reads as "glass" without it. */
+  background: linear-gradient(160deg, var(--bg-glass), rgba(17, 24, 39, 0.35));
+  border: 1px solid var(--border-glass);
+  border-radius: var(--radius-md);
+  padding: 0.85rem 1rem;
+  color: var(--text);
+  box-shadow: var(--shadow-soft);
+  transition: transform var(--dur-med) var(--ease-out), box-shadow var(--dur-med) var(--ease-out),
+    border-color var(--dur-med) var(--ease-out);
+  will-change: transform;
+}
+
+.card:hover,
+.card:focus-visible {
+  transform: translateY(-5px);
+  border-color: rgba(96, 165, 250, 0.45);
+  box-shadow: var(--shadow-lift), 0 0 30px var(--card-glow, rgba(59, 130, 246, 0.35));
+  text-decoration: none;
   color: var(--text);
 }
 
 .card-sprite {
   display: block;
-  margin: 0 auto;
+  margin: 0 auto 0.35rem;
   image-rendering: pixelated;
+  filter: drop-shadow(0 6px 10px rgba(0, 0, 0, 0.35));
 }
 
 .species-sprite {
   display: block;
-  margin: 0.5rem 0;
+  margin: 0.75rem 0;
   image-rendering: pixelated;
+  filter: drop-shadow(0 10px 18px rgba(0, 0, 0, 0.4));
 }
 
 .form-sprite {
   display: block;
   image-rendering: pixelated;
 }
-.card:hover {
-  border-color: var(--accent);
-  text-decoration: none;
-}
+
 .card .card-id {
   color: var(--text-muted);
-  font-size: 0.8rem;
+  font-size: 0.78rem;
 }
 .card .card-name {
-  font-weight: 600;
+  font-family: var(--font-display);
+  font-weight: 700;
 }
 
+/* ==========================================================================
+   Badges (type pills, EN marker, category tags)
+   ========================================================================== */
 .badge {
-  display: inline-block;
-  padding: 0.15rem 0.55rem;
+  display: inline-flex;
+  align-items: center;
+  padding: 0.25rem 0.7rem;
   border-radius: 999px;
-  font-size: 0.75rem;
-  font-weight: 600;
+  font-size: 0.72rem;
+  font-weight: 700;
   color: #fff;
   text-transform: uppercase;
-  letter-spacing: 0.02em;
+  letter-spacing: 0.04em;
+  background-image: linear-gradient(160deg, rgba(255, 255, 255, 0.22), rgba(255, 255, 255, 0));
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.25), inset 0 1px 0 rgba(255, 255, 255, 0.15);
 }
 
 .badge-en {
+  background-image: none;
   background: transparent;
   color: var(--text-muted);
-  border: 1px solid var(--border);
-  font-weight: 500;
+  border: 1px solid var(--border-glass);
+  font-weight: 600;
   text-transform: none;
   letter-spacing: normal;
   cursor: help;
+  box-shadow: none;
 }
 
+/* ==========================================================================
+   Stat bars
+   ========================================================================== */
 .stat-row {
   display: grid;
-  grid-template-columns: 5.5rem 1fr 3rem;
+  grid-template-columns: 6rem 1fr 3rem;
   align-items: center;
-  gap: 0.5rem;
-  margin: 0.3rem 0;
+  gap: 0.65rem;
+  margin: 0.4rem 0;
 }
 .stat-row .stat-label {
   color: var(--text-muted);
   font-size: 0.85rem;
+  font-weight: 600;
 }
 .stat-row .stat-value {
   text-align: right;
   font-variant-numeric: tabular-nums;
+  font-weight: 700;
+  font-family: var(--font-display);
 }
 .stat-bar-track {
   display: block;
-  background: var(--border);
+  background: var(--border-glass);
+  border: 1px solid var(--border-glass);
   border-radius: 999px;
-  height: 8px;
+  height: 10px;
   overflow: hidden;
 }
 .stat-bar-fill {
   display: block;
   height: 100%;
   border-radius: 999px;
-  background: var(--accent);
+  transition: width var(--dur-med) var(--ease-out);
 }
 
+/* ==========================================================================
+   Filter bar (segmented control)
+   ========================================================================== */
 .filter-bar {
   display: flex;
   flex-wrap: wrap;
-  gap: 0.4rem;
-  margin-bottom: 1rem;
+  gap: 0.45rem;
+  margin-bottom: 1.5rem;
 }
 .filter-bar a {
-  border: 1px solid var(--border);
+  border: 1px solid var(--border-glass);
+  background: var(--bg-glass);
   border-radius: 999px;
-  padding: 0.2rem 0.7rem;
+  padding: 0.35rem 0.9rem;
   font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--text);
+  transition: transform var(--dur-fast) var(--ease-out), background var(--dur-fast) var(--ease-out),
+    box-shadow var(--dur-fast) var(--ease-out);
+}
+.filter-bar a:hover {
+  transform: translateY(-2px);
   color: var(--text);
 }
 .filter-bar a[aria-current="true"] {
-  background: var(--accent);
+  background: linear-gradient(120deg, var(--accent), var(--accent-light));
   color: var(--accent-contrast);
-  border-color: var(--accent);
+  border-color: transparent;
+  box-shadow: var(--glow-blue);
 }
 
+/* ==========================================================================
+   Tables
+   ========================================================================== */
 table {
   width: 100%;
   border-collapse: collapse;
-  font-size: 0.9rem;
+  font-size: 0.92rem;
+  background: var(--bg-glass);
+  border: 1px solid var(--border-glass);
+  border-radius: var(--radius-md);
+  overflow: hidden;
 }
 th, td {
   text-align: left;
-  padding: 0.4rem 0.6rem;
-  border-bottom: 1px solid var(--border);
+  padding: 0.6rem 0.85rem;
+  border-bottom: 1px solid var(--border-glass);
 }
 th {
   color: var(--text-muted);
-  font-weight: 600;
+  font-weight: 700;
+  font-size: 0.78rem;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+tr:last-child td {
+  border-bottom: none;
+}
+tr:hover td {
+  background: var(--border-glass);
 }
 
+/* ==========================================================================
+   Misc utility classes
+   ========================================================================== */
 .meta-note {
   color: var(--text-muted);
   font-size: 0.85rem;
@@ -242,7 +433,7 @@ th {
 .pill-list {
   display: flex;
   flex-wrap: wrap;
-  gap: 0.4rem;
+  gap: 0.5rem;
 }
 
 .section-empty {
@@ -250,32 +441,84 @@ th {
   font-style: italic;
 }
 
-.fallback-list {
-  margin: 0.75rem 0;
-  border: 1px solid var(--border);
-  border-radius: var(--radius);
-  padding: 0.75rem 1rem;
-}
-.fallback-list summary {
-  cursor: pointer;
-  font-weight: 600;
-}
-.fallback-list .pill-list {
-  margin-top: 0.75rem;
-}
-
 .stat-tile {
-  background: var(--bg-elevated);
-  border: 1px solid var(--border);
-  border-radius: var(--radius);
-  padding: 0.75rem 1rem;
+  background: linear-gradient(160deg, var(--bg-glass), rgba(17, 24, 39, 0.25));
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid var(--border-glass);
+  border-radius: var(--radius-md);
+  padding: 1.1rem 1rem;
   text-align: center;
+  box-shadow: var(--shadow-soft);
+  transition: transform var(--dur-med) var(--ease-out), box-shadow var(--dur-med) var(--ease-out);
+}
+.stat-tile:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-lift), var(--glow-blue);
 }
 .stat-tile .stat-tile-value {
-  font-size: 1.6rem;
-  font-weight: 700;
+  font-family: var(--font-display);
+  font-size: 1.9rem;
+  font-weight: 800;
+  background: linear-gradient(120deg, var(--accent-light), var(--accent-gold));
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
 }
 .stat-tile .stat-tile-label {
   color: var(--text-muted);
   font-size: 0.85rem;
+  margin-top: 0.25rem;
+}
+
+/* ==========================================================================
+   Hero (homepage)
+   ========================================================================== */
+.hero {
+  padding: 2.5rem 0 1rem;
+  text-align: center;
+}
+.hero h1 {
+  margin-bottom: 0.6rem;
+}
+.hero p {
+  color: var(--text-muted);
+  font-size: 1.05rem;
+  max-width: 42rem;
+  margin: 0 auto;
+}
+.hero-search {
+  max-width: 40rem;
+  margin: 2rem auto 0.5rem;
+}
+
+/* ==========================================================================
+   Scroll-reveal (see Layout.astro script)
+   ========================================================================== */
+.reveal {
+  opacity: 0;
+  transform: translateY(18px);
+  transition: opacity 600ms var(--ease-out), transform 600ms var(--ease-out);
+}
+.reveal.is-visible {
+  opacity: 1;
+  transform: none;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  *, *::before, *::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+  }
+  .reveal {
+    opacity: 1;
+    transform: none;
+  }
+  body::before {
+    animation: none;
+  }
 }

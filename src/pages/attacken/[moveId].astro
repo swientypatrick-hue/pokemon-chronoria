@@ -3,6 +3,7 @@ import Layout from "../../layouts/Layout.astro";
 import TypeBadge from "../../components/TypeBadge.astro";
 import EnBadge from "../../components/EnBadge.astro";
 import { moves, pokemonById, slugify } from "../../lib/data";
+import { targetLabel } from "../../lib/moveTargets";
 import { href } from "../../lib/url";
 
 export function getStaticPaths() {
@@ -33,7 +34,7 @@ const learnedByAll = [...new Set([...m.learnedByLevelUp, ...m.learnedByTutorOrEg
     <tr><th>Stärke</th><td>{m.power ?? "–"}</td></tr>
     <tr><th>Genauigkeit</th><td>{m.accuracy ?? "–"}</td></tr>
     <tr><th>AP</th><td>{m.totalPP ?? "–"}</td></tr>
-    <tr><th>Ziel</th><td>{m.target}</td></tr>
+    <tr><th>Ziel</th><td>{targetLabel(m.target)}</td></tr>
     <tr><th>Priorität</th><td>{m.priority}</td></tr>
   </table>
 
