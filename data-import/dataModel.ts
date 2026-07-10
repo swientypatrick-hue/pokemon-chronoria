@@ -110,6 +110,8 @@ export interface Item {
   price: number | null;
   fieldUse: string | null;
   flags: string[];
+  /** filename in public/item-icons/, or null if no matching icon exists */
+  icon: string | null;
 }
 
 export interface TrainerPokemon {

@@ -82,5 +82,32 @@ const currentPath = Astro.url.pathname;
         setTimeout(() => targets.forEach(reveal), 1500);
       }
     </script>
+
+    <script>
+      // Auto-hide header: slide it up out of view when scrolling down, bring it back when
+      // scrolling up (or near the top). Runs on every page via this shared layout.
+      const header = document.querySelector<HTMLElement>(".site-header")!;
+      let lastY = window.scrollY;
+      let ticking = false;
+      const HIDE_AFTER_PX = 80; // don't hide while still near the top of the page
+
+      function onScroll() {
+        const y = window.scrollY;
+        if (y > lastY && y > HIDE_AFTER_PX) {
+          header.classList.add("site-header--hidden");
+        } else if (y < lastY) {
+          header.classList.remove("site-header--hidden");
+        }
+        lastY = y;
+        ticking = false;
+      }
+
+      window.addEventListener("scroll", () => {
+        if (!ticking) {
+          requestAnimationFrame(onScroll);
+          ticking = true;
+        }
+      });
+    </script>
   </body>
 </html>

@@ -25,7 +25,6 @@ function resolveAbility(species: string, abilityIndex: number | null): string | 
   <p class="meta-note"><a href={href("/trainer/")}>← Alle Trainer</a></p>
   <h1>{t.name}</h1>
   <p class="meta-note">{t.trainerTypeName.text}{t.trainerTypeName.fallback && <EnBadge />}</p>
-  {t.loseText && <p><em>„{t.loseText}"</em></p>}
 
   <h2>Team</h2>
   <div class="card-grid">
@@ -35,6 +34,7 @@ function resolveAbility(species: string, abilityIndex: number | null): string | 
       const item = tp.item ? itemById.get(tp.item)?.name ?? tp.item : null;
       return (
         <div class="card">
+          {species?.sprite && <img class="card-sprite" src={href(`/sprites/${species.sprite}`)} alt="" loading="lazy" width="64" height="64" />}
           <div class="card-name">
             <a href={href(`/pokemon/${slugify(tp.species)}/`)}>{species?.name ?? tp.species}</a>
             {" "}Lv. {tp.level}

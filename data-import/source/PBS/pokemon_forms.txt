@@ -2519,7 +2519,7 @@ Generation = 6
 
 #-------------------------------
 
-[SWABLU,2]
+[SWABLU,1]
 
 FormName = Donnerform
 
@@ -2549,28 +2549,6 @@ Evolutions = ALTARIA,Item,THUNDERSTONE
 
 [ALTARIA,1]
 
-FormName = Mega Altaria
-
-MegaStone = ALTARIANITE
-
-Types = DRAGON,FAIRY
-
-BaseStats = 75,110,110,80,110,105
-
-BaseExp = 207
-
-Abilities = PIXILATE
-
-HiddenAbilities = PIXILATE
-
-Height = 1.5
-
-Generation = 6
-
-#-------------------------------
-
-[ALTARIA,2]
-
 FormName = Donnerform
 
 Types = ELECTRIC,DRAGON
@@ -2593,6 +2571,30 @@ Generation = 3
 
 #-------------------------------
 
+[ALTARIA,2]
+
+FormName = Mega Altaria
+
+MegaStone = ALTARIANITE
+
+Types = DRAGON,FAIRY
+
+BaseStats = 75,110,110,80,110,105
+
+BaseExp = 207
+
+Abilities = PIXILATE
+
+HiddenAbilities = PIXILATE
+
+UnmegaForm = 0
+
+Height = 1.5
+
+Generation = 6
+
+#-------------------------------
+
 [ALTARIA,3]
 
 FormName = Mega Donnerform
@@ -2605,7 +2607,7 @@ Abilities = LIGHTNINGROD
 
 HiddenAbilities = LIGHTNINGROD
 
-UnmegaForm = 2
+UnmegaForm = 1
 
 #-------------------------------
 

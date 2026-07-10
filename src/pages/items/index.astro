@@ -11,6 +11,7 @@ const sortedItems = [...items].sort((a, b) => a.name.localeCompare(b.name, "de")
   <div class="card-grid">
     {sortedItems.map((i) => (
       <a class="card" href={href(`/items/${slugify(i.id)}/`)}>
+        {i.icon && <img class="card-sprite" src={href(`/item-icons/${i.icon}`)} alt="" loading="lazy" width="48" height="48" />}
         <div class="card-name">{i.name}</div>
         <div class="meta-note">{i.price !== null ? `${i.price} ₽` : "nicht käuflich"}</div>
       </a>
