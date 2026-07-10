@@ -6,10 +6,21 @@ interface Props {
 }
 const { label, value, max = 255 } = Astro.props;
 const pct = Math.max(2, Math.min(100, (value / max) * 100));
+
+// Color-codes how good the value is (common Pokedex-site convention) independently of the
+// bar width, which stays scaled against the true max reachable base stat (255).
+function colorFor(v: number): string {
+  if (v < 50) return "#e74c3c"; // schwach
+  if (v < 80) return "#e67e22"; // unterdurchschnittlich
+  if (v < 100) return "#f1c40f"; // durchschnittlich
+  if (v < 120) return "#a3d939"; // gut
+  return "#2ecc71"; // sehr gut
+}
+const color = colorFor(value);
 ---
 
 <div class="stat-row">
   <span class="stat-label">{label}</span>
-  <span class="stat-bar-track"><span class="stat-bar-fill" style={`width:${pct}%`}></span></span>
+  <span class="stat-bar-track"><span class="stat-bar-fill" style={`width:${pct}%; background:${color}`}></span></span>
   <span class="stat-value">{value}</span>
 </div>

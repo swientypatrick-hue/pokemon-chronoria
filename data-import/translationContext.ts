@@ -25,6 +25,17 @@ export interface TranslationContext {
   typeName: Map<string, string>;
   /** English trainer class display name -> German (only ~50 of 348 classes are translated) */
   trainerTypeName: Map<string, string>;
+  /**
+   * normalized internal id -> {en, de} pair, one per category. Used to patch up Name fields
+   * that are still English in PBS (e.g. ~85% of moves.txt) - keeping both sides, not just
+   * `de`, matters because these *_NAMES.txt files themselves contain bad rows (an untranslated
+   * "BalmMushroom" duplicate, or "Pearl String" flat-out mapped to the wrong item's German
+   * name "Stardust") - see resolveInlineName().
+   */
+  speciesName: Map<string, { en: string; de: string }>;
+  moveName: Map<string, { en: string; de: string }>;
+  abilityName: Map<string, { en: string; de: string }>;
+  itemName: Map<string, { en: string; de: string }>;
 }
 
 export function loadTranslationContext(): TranslationContext {
@@ -33,12 +44,42 @@ export function loadTranslationContext(): TranslationContext {
   const speciesCategory = buildTextIndex(parseTranslationFile(load("Text_deutsch_core/SPECIES_CATEGORIES.txt")));
   const formName = buildTextIndex(parseTranslationFile(load("Text_deutsch_core/SPECIES_FORM_NAMES.txt")));
   const trainerTypeName = buildTextIndex(parseTranslationFile(load("Text_deutsch_core/TRAINER_TYPE_NAMES.txt")));
-
   const typeNameAnchor = buildNameAnchorIndex(parseTranslationFile(load("Text_deutsch_core/TYPE_NAMES.txt")));
   const typeName = new Map<string, string>();
   for (const [key, pair] of typeNameAnchor) typeName.set(key, pair.de);
 
-  return { pokedexText, moveDescriptionText, speciesCategory, formName, typeName, trainerTypeName };
+  const speciesName = buildNameAnchorIndex(parseTranslationFile(load("Text_deutsch_core/SPECIES_NAMES.txt")));
+  const moveName = buildNameAnchorIndex(parseTranslationFile(load("Text_deutsch_core/MOVE_NAMES.txt")));
+  const abilityName = buildNameAnchorIndex(parseTranslationFile(load("Text_deutsch_core/ABILITY_NAMES.txt")));
+  const itemName = buildNameAnchorIndex(parseTranslationFile(load("Text_deutsch_core/ITEM_NAMES.txt")));
+
+  return {
+    pokedexText, moveDescriptionText, speciesCategory, formName, typeName, trainerTypeName,
+    speciesName, moveName, abilityName, itemName,
+  };
+}
+
+/**
+ * Resolves an entry's display name. PBS's own inline Name field is the primary source - for
+ * most categories it's already correct German, just not for every entry (e.g. only ~15% of
+ * moves.txt). The *_NAMES.txt name-anchor only steps in when the inline text is confirmed to
+ * still literally be the English name (or missing) - it is NOT trusted blindly, because these
+ * files have their own bad rows (an untranslated "BalmMushroom" duplicate, or "Pearl String"
+ * flat-out mapped to a different item's German name "Stardust"). Preferring inline whenever it
+ * already differs from the English original avoids letting a corrupt anchor row overwrite an
+ * already-correct translation.
+ */
+export function resolveInlineName(
+  nameAnchor: Map<string, { en: string; de: string }>,
+  internalId: string,
+  inlineName: string
+): string {
+  const pair = nameAnchor.get(normalizeKey(internalId));
+  if (!pair) return inlineName;
+  const trimmedInline = inlineName.trim();
+  const stillEnglish = trimmedInline === "" || trimmedInline === pair.en.trim();
+  if (!stillEnglish) return inlineName;
+  return pair.de.trim() !== pair.en.trim() ? pair.de : inlineName;
 }
 
 export interface TranslatedText {

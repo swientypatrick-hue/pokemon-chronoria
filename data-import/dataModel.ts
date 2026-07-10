@@ -31,11 +31,15 @@ export interface PokemonForm {
   levelMoves: LevelMove[];
   tutorMoves: string[];
   eggMoves: string[];
+  /** filename in public/sprites/, or null if no matching form sprite exists */
+  sprite: string | null;
 }
 
 export interface Pokemon {
   id: string;
-  name: string; // already German inline in PBS
+  name: string;
+  /** filename in public/sprites/, or null if no matching sprite exists */
+  sprite: string | null;
   types: string[];
   baseStats: BaseStats;
   abilities: string[];
@@ -63,7 +67,7 @@ export interface Pokemon {
 
 export interface Move {
   id: string;
-  name: string; // already German inline in PBS
+  name: string; // resolved via MOVE_NAMES.txt name-anchor, PBS inline as fallback
   type: string;
   category: string; // Physical/Special/Status
   power: number | null;
@@ -80,7 +84,7 @@ export interface Move {
 
 export interface Ability {
   id: string;
-  name: string; // already German inline in PBS
+  name: string; // resolved via ABILITY_NAMES.txt name-anchor, PBS inline as fallback
   description: string; // already German inline in PBS
   // reverse index
   pokemonWithAbility: string[];
@@ -88,7 +92,7 @@ export interface Ability {
 
 export interface Item {
   id: string;
-  name: string; // already German inline in PBS
+  name: string; // resolved via ITEM_NAMES.txt name-anchor, PBS inline as fallback
   namePlural: string | null;
   description: string; // already German inline in PBS
   pocket: number | null;

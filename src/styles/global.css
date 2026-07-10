@@ -110,6 +110,23 @@ h2 {
   padding: 0.6rem 0.75rem;
   color: var(--text);
 }
+
+.card-sprite {
+  display: block;
+  margin: 0 auto;
+  image-rendering: pixelated;
+}
+
+.species-sprite {
+  display: block;
+  margin: 0.5rem 0;
+  image-rendering: pixelated;
+}
+
+.form-sprite {
+  display: block;
+  image-rendering: pixelated;
+}
 .card:hover {
   border-color: var(--accent);
   text-decoration: none;
@@ -159,12 +176,14 @@ h2 {
   font-variant-numeric: tabular-nums;
 }
 .stat-bar-track {
+  display: block;
   background: var(--border);
   border-radius: 999px;
   height: 8px;
   overflow: hidden;
 }
 .stat-bar-fill {
+  display: block;
   height: 100%;
   border-radius: 999px;
   background: var(--accent);

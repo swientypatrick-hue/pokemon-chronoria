@@ -19,7 +19,7 @@ import { href } from "../../lib/url";
   <div class="card-grid" id="pokemon-grid">
     {pokemon.map((p) => (
       <a class="card" href={href(`/pokemon/${slugify(p.id)}/`)} data-types={p.types.join(",")}>
-        <div class="card-id">#{p.id}</div>
+        {p.sprite && <img class="card-sprite" src={href(`/sprites/${p.sprite}`)} alt="" loading="lazy" width="64" height="64" />}
         <div class="card-name">{p.name}</div>
         <div class="pill-list" style="margin-top:0.35rem">
           {p.types.map((t) => <TypeBadge type={t} />)}

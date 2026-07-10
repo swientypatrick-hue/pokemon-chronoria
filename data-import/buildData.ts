@@ -38,8 +38,8 @@ function main() {
   console.log("Parse Pokémon, Attacken, Fähigkeiten, Items, Trainer, Fundorte...");
   const pokemon = parsePokemon(ctx);
   const moves = parseMoves(ctx);
-  const abilities = parseAbilities();
-  const items = parseItems();
+  const abilities = parseAbilities(ctx);
+  const items = parseItems(ctx);
   const trainers = parseTrainers(ctx);
   const encounters = parseEncounters();
   const types = parseTypes(ctx);

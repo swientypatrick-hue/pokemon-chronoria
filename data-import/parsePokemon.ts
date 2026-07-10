@@ -1,13 +1,28 @@
-import { readFileSync } from "node:fs";
+import { readFileSync, readdirSync, existsSync } from "node:fs";
 import { join } from "node:path";
 import { parsePbsBlocks, blockToRecord, splitList, type PbsBlock } from "./parsePbs.ts";
-import { resolveText, type TranslationContext } from "./translationContext.ts";
+import { resolveText, resolveInlineName, type TranslationContext } from "./translationContext.ts";
 import type { BaseStats, LevelMove, Evolution, Pokemon, PokemonForm } from "./dataModel.ts";
 
 const SOURCE_DIR = join(import.meta.dirname, "source", "PBS");
+const SPRITES_DIR = join(import.meta.dirname, "..", "public", "sprites");
 
 function load(file: string): string {
   return readFileSync(join(SOURCE_DIR, file), "utf-8");
+}
+
+/** Sprite files are named exactly like the PBS internal id (case-sensitive, e.g.
+ *  "NIDORANfE.png"), with "_1"/"_2" suffixes for alternate forms. Build a lookup once so we
+ *  don't re-scan the directory per species, and so we pick up whichever exact
+ *  casing/extension (.png vs .PNG) the file actually has on disk. */
+function loadSpriteIndex(): Map<string, string> {
+  const index = new Map<string, string>();
+  if (!existsSync(SPRITES_DIR)) return index;
+  for (const name of readdirSync(SPRITES_DIR)) {
+    const withoutExt = name.replace(/\.png$/i, "");
+    index.set(withoutExt, name);
+  }
+  return index;
 }
 
 function parseBaseStats(value: string | undefined): BaseStats {
@@ -34,11 +49,13 @@ function parseEvolutions(value: string | undefined): Evolution[] {
   return evolutions;
 }
 
-function blockToPokemon(block: PbsBlock, ctx: TranslationContext): Pokemon {
+function blockToPokemon(block: PbsBlock, ctx: TranslationContext, sprites: Map<string, string>): Pokemon {
   const r = blockToRecord(block);
+  const id = block.headerParts[0];
   return {
-    id: block.headerParts[0],
-    name: r.Name ?? block.headerParts[0],
+    id,
+    name: resolveInlineName(ctx.speciesName, id, r.Name ?? id),
+    sprite: sprites.get(id) ?? null,
     types: splitList(r.Types),
     baseStats: parseBaseStats(r.BaseStats),
     abilities: splitList(r.Abilities),
@@ -64,10 +81,12 @@ function blockToPokemon(block: PbsBlock, ctx: TranslationContext): Pokemon {
   };
 }
 
-function blockToForm(block: PbsBlock, ctx: TranslationContext): PokemonForm {
+function blockToForm(block: PbsBlock, ctx: TranslationContext, sprites: Map<string, string>): PokemonForm {
   const r = blockToRecord(block);
+  const [speciesId, formNumberRaw] = block.headerParts;
+  const formNumber = Number(formNumberRaw ?? 0);
   return {
-    formNumber: Number(block.headerParts[1] ?? 0),
+    formNumber,
     formName: r.FormName ? resolveText(ctx.formName, r.FormName) : null,
     types: splitList(r.Types),
     baseStats: parseBaseStats(r.BaseStats),
@@ -76,17 +95,20 @@ function blockToForm(block: PbsBlock, ctx: TranslationContext): PokemonForm {
     levelMoves: parseLevelMoves(r.Moves),
     tutorMoves: splitList(r.TutorMoves),
     eggMoves: splitList(r.EggMoves),
+    sprite: sprites.get(`${speciesId}_${formNumber}`) ?? null,
   };
 }
 
 export function parsePokemon(ctx: TranslationContext): Pokemon[] {
+  const sprites = loadSpriteIndex();
+
   const baseBlocks = [
     ...parsePbsBlocks(load("pokemon.txt")),
     ...parsePbsBlocks(load("pokemon_base_Gen_9_Pack.txt")),
   ];
   const pokemon = new Map<string, Pokemon>();
   for (const block of baseBlocks) {
-    const p = blockToPokemon(block, ctx);
+    const p = blockToPokemon(block, ctx, sprites);
     if (pokemon.has(p.id)) {
       console.warn(`[Pokémon] Doppelter Eintrag für ${p.id}, überschreibe.`);
     }
@@ -104,7 +126,7 @@ export function parsePokemon(ctx: TranslationContext): Pokemon[] {
       console.warn(`[Pokémon] Form für unbekannte Spezies ${speciesId} übersprungen.`);
       continue;
     }
-    base.forms.push(blockToForm(block, ctx));
+    base.forms.push(blockToForm(block, ctx, sprites));
   }
 
   return [...pokemon.values()];

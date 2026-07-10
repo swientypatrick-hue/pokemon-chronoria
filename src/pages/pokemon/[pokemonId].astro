@@ -37,7 +37,8 @@ const locationsByPlace = Object.groupBy
 
 <Layout title={p.name}>
   <p class="meta-note"><a href={href("/pokemon/")}>← Alle Pokémon</a></p>
-  <h1>{p.name} <span class="meta-note">#{p.id}</span></h1>
+  <h1>{p.name}</h1>
+  {p.sprite && <img class="species-sprite" src={href(`/sprites/${p.sprite}`)} alt={p.name} width="96" height="96" />}
   <div class="pill-list">
     {p.types.map((t: string) => <TypeBadge type={t} />)}
   </div>
@@ -91,9 +92,10 @@ const locationsByPlace = Object.groupBy
     <>
       <h2>Formen</h2>
       <table>
-        <tr><th>Form</th><th>Typ(en)</th><th>KP/Ang/Vert/Init/SpA/SpV</th></tr>
+        <tr><th></th><th>Form</th><th>Typ(en)</th><th>KP/Ang/Vert/Init/SpA/SpV</th></tr>
         {p.forms.map((f: any) => (
           <tr>
+            <td>{f.sprite && <img class="form-sprite" src={href(`/sprites/${f.sprite}`)} alt="" width="40" height="40" />}</td>
             <td>{f.formName?.text || `Form ${f.formNumber}`}</td>
             <td class="pill-list">{f.types.map((t: string) => <TypeBadge type={t} />)}</td>
             <td>{f.baseStats.hp}/{f.baseStats.attack}/{f.baseStats.defense}/{f.baseStats.speed}/{f.baseStats.spAtk}/{f.baseStats.spDef}</td>
@@ -109,7 +111,7 @@ const locationsByPlace = Object.groupBy
       <tr><th>Level</th><th>Attacke</th></tr>
       {sortedLevelMoves.map((lm: any) => (
         <tr>
-          <td>{lm.level === 0 ? "Start" : lm.level}</td>
+          <td>{lm.level === 0 ? "bei Entwicklung" : lm.level}</td>
           <td><a href={href(`/attacken/${slugify(lm.move)}/`)}>{moveName(lm.move)}</a></td>
         </tr>
       ))}
