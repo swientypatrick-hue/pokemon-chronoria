@@ -13,7 +13,7 @@ import { parseItems } from "./parseItems.ts";
 import { parseTrainers } from "./parseTrainers.ts";
 import { parseEncounters } from "./parseEncounters.ts";
 import { parseTypes } from "./parseTypes.ts";
-import type { EncounterRef } from "./dataModel.ts";
+import type { EncounterRef, Pokemon } from "./dataModel.ts";
 
 const OUT_DIR = join(import.meta.dirname, "..", "src", "data");
 
@@ -22,13 +22,23 @@ function writeJson(name: string, data: unknown) {
   writeFileSync(join(OUT_DIR, `${name}.json`), JSON.stringify(data));
 }
 
-/** Encounter species entries sometimes carry a form suffix (e.g. "ZIGZAGOON_1") that isn't
- *  a standalone PBS pokemon.txt entry - it refers to form 1 of the base species. Resolve to
- *  the base species id so encounter data still attaches to a real Pokémon page. */
-function resolveEncounterSpeciesId(rawId: string, knownIds: Set<string>): string | null {
-  if (knownIds.has(rawId)) return rawId;
-  const base = rawId.replace(/_\d+$/, "");
-  return knownIds.has(base) ? base : null;
+/** Encounter species entries sometimes carry a form suffix (e.g. "ZIGZAGOON_1") - encounters.txt
+ *  deliberately distinguishes forms (a form can be rarer/only appear at certain times), so this
+ *  resolves to the exact form rather than collapsing everything onto the base species. Falls
+ *  back to the base species if the suffix doesn't match a real form (or there's no suffix). */
+function resolveEncounterTarget(
+  rawId: string,
+  pokemonById: Map<string, Pokemon>
+): { speciesId: string; formNumber: number | null } | null {
+  if (pokemonById.has(rawId)) return { speciesId: rawId, formNumber: null };
+  const match = rawId.match(/^(.+)_(\d+)$/);
+  if (!match) return null;
+  const [, base, formNumberRaw] = match;
+  const species = pokemonById.get(base);
+  if (!species) return null;
+  const formNumber = Number(formNumberRaw);
+  const formExists = species.forms.some((f) => f.formNumber === formNumber);
+  return { speciesId: base, formNumber: formExists ? formNumber : null };
 }
 
 function main() {
@@ -48,7 +58,6 @@ function main() {
   const pokemonById = new Map(pokemon.map((p) => [p.id, p]));
   const moveById = new Map(moves.map((m) => [m.id, m]));
   const abilityById = new Map(abilities.map((a) => [a.id, a]));
-  const knownPokemonIds = new Set(pokemonById.keys());
 
   // evolvesFrom
   for (const p of pokemon) {
@@ -75,21 +84,13 @@ function main() {
     }
   }
 
-  // trainer -> pokemon.usedByTrainers
-  for (const t of trainers) {
-    for (const tp of t.party) {
-      const id = resolveEncounterSpeciesId(tp.species, knownPokemonIds);
-      if (id) pokemonById.get(id)!.usedByTrainers.push(t.id);
-    }
-  }
-
-  // encounters -> pokemon.foundIn
+  // encounters -> pokemon.foundIn / form.foundIn
   let unresolvedEncounterSpecies = 0;
   for (const location of encounters) {
     for (const table of location.tables) {
       for (const slot of table.slots) {
-        const id = resolveEncounterSpeciesId(slot.species, knownPokemonIds);
-        if (!id) {
+        const target = resolveEncounterTarget(slot.species, pokemonById);
+        if (!target) {
           unresolvedEncounterSpecies++;
           continue;
         }
@@ -100,7 +101,12 @@ function main() {
           minLevel: slot.minLevel,
           maxLevel: slot.maxLevel,
         };
-        pokemonById.get(id)!.foundIn.push(ref);
+        const species = pokemonById.get(target.speciesId)!;
+        if (target.formNumber === null) {
+          species.foundIn.push(ref);
+        } else {
+          species.forms.find((f) => f.formNumber === target.formNumber)!.foundIn.push(ref);
+        }
       }
     }
   }

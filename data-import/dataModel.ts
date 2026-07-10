@@ -33,6 +33,8 @@ export interface PokemonForm {
   eggMoves: string[];
   /** filename in public/sprites/, or null if no matching form sprite exists */
   sprite: string | null;
+  // reverse index, filled in by buildData.ts
+  foundIn: EncounterRef[];
 }
 
 export interface Pokemon {
@@ -55,6 +57,8 @@ export interface Pokemon {
   eggGroups: string[];
   hatchSteps: number;
   catchRate: number;
+  /** raid star ranks this species can appear at, e.g. [1,2] - empty if not raid-eligible */
+  raidRanks: number[];
   levelMoves: LevelMove[];
   tutorMoves: string[];
   eggMoves: string[];
@@ -62,9 +66,8 @@ export interface Pokemon {
   evolvesFrom: string | null; // filled in by buildData.ts
   generation: number | null;
   forms: PokemonForm[];
-  // reverse indices, filled in by buildData.ts
+  // reverse index, filled in by buildData.ts
   foundIn: EncounterRef[];
-  usedByTrainers: string[]; // trainer ids
 }
 
 export interface Move {

@@ -3,8 +3,9 @@ import Layout from "../../../layouts/Layout.astro";
 import TypeBadge from "../../../components/TypeBadge.astro";
 import StatBar from "../../../components/StatBar.astro";
 import EnBadge from "../../../components/EnBadge.astro";
-import { pokemon, pokemonById, moveById, abilityById, itemById, trainerById, slugify, trainerSlug } from "../../../lib/data";
+import { pokemon, pokemonById, moveById, abilityById, itemById, slugify } from "../../../lib/data";
 import { formatEvolutionCondition } from "../../../lib/evolutionMethods";
+import { encounterMethodLabel } from "../../../lib/encounterMethods";
 import { href } from "../../../lib/url";
 
 export function getStaticPaths() {
@@ -63,6 +64,9 @@ const locationsByPlace = Object.groupBy
     <tr><th>Fangrate</th><td>{p.catchRate}</td></tr>
     <tr><th>Ei-Gruppen</th><td>{p.eggGroups.join(", ") || "–"}</td></tr>
     <tr><th>Schlupfschritte</th><td>{p.hatchSteps}</td></tr>
+    {p.raidRanks.length > 0 && (
+      <tr><th>Raid-Rang</th><td>{Math.min(...p.raidRanks)}{p.raidRanks.length > 1 ? `–${Math.max(...p.raidRanks)}` : ""} ⭐</td></tr>
+    )}
   </table>
 
   <h2>Fähigkeiten</h2>
@@ -144,22 +148,11 @@ const locationsByPlace = Object.groupBy
         refs.map((r: any, i: number) => (
           <tr>
             {i === 0 ? <td rowspan={refs.length}>{place}</td> : null}
-            <td>{r.method}</td>
+            <td>{encounterMethodLabel(r.method)}</td>
             <td>{r.minLevel === r.maxLevel ? r.minLevel : `${r.minLevel}–${r.maxLevel}`}</td>
           </tr>
         ))
       ))}
     </table>
   ) : <p class="section-empty">Kein bekannter wilder Fundort (z.B. nur durch Entwicklung, Geschenk oder Ei erhältlich).</p>}
-
-  {p.usedByTrainers.length > 0 && (
-    <>
-      <h2>Wird benutzt von Trainern</h2>
-      <div class="pill-list">
-        {p.usedByTrainers.map((tid: string) => (
-          <a class="card" href={href(`/trainer/${trainerSlug(tid)}/`)}>{trainerById.get(tid)?.name ?? tid}</a>
-        ))}
-      </div>
-    </>
-  )}
 </Layout>

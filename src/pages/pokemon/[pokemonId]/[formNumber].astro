@@ -3,6 +3,7 @@ import Layout from "../../../layouts/Layout.astro";
 import TypeBadge from "../../../components/TypeBadge.astro";
 import StatBar from "../../../components/StatBar.astro";
 import { pokemon, moveById, abilityById, slugify } from "../../../lib/data";
+import { encounterMethodLabel } from "../../../lib/encounterMethods";
 import { href } from "../../../lib/url";
 
 export function getStaticPaths() {
@@ -25,6 +26,12 @@ function abilityName(id: string) {
 
 const formLabel = f.formName?.text || `Form ${f.formNumber}`;
 const sortedLevelMoves = [...f.levelMoves].sort((a: any, b: any) => a.level - b.level);
+const locationsByPlace = Object.groupBy
+  ? Object.groupBy(f.foundIn, (r: any) => r.locationName)
+  : f.foundIn.reduce((acc: Record<string, any[]>, r: any) => {
+      (acc[r.locationName] ??= []).push(r);
+      return acc;
+    }, {});
 ---
 
 <Layout title={`${p.name} (${formLabel})`}>
@@ -36,7 +43,7 @@ const sortedLevelMoves = [...f.levelMoves].sort((a: any, b: any) => a.level - b.
   </div>
   <p class="meta-note">
     Diese Form von <a href={href(`/pokemon/${slugify(p.id)}/`)}>{p.name}</a> ändert Typ(en), Basiswerte,
-    Fähigkeiten und Attacken - Pokédex-Eintrag und Fundorte siehe Basisform.
+    Fähigkeiten und Attacken - Pokédex-Eintrag siehe Basisform.
   </p>
 
   <h2>Basiswerte</h2>
@@ -83,4 +90,20 @@ const sortedLevelMoves = [...f.levelMoves].sort((a: any, b: any) => a.level - b.
       </div>
     </>
   )}
+
+  <h2>Fundorte (wild)</h2>
+  {Object.keys(locationsByPlace).length > 0 ? (
+    <table>
+      <tr><th>Ort</th><th>Methode</th><th>Level</th></tr>
+      {Object.entries(locationsByPlace).map(([place, refs]: [string, any]) => (
+        refs.map((r: any, i: number) => (
+          <tr>
+            {i === 0 ? <td rowspan={refs.length}>{place}</td> : null}
+            <td>{encounterMethodLabel(r.method)}</td>
+            <td>{r.minLevel === r.maxLevel ? r.minLevel : `${r.minLevel}–${r.maxLevel}`}</td>
+          </tr>
+        ))
+      ))}
+    </table>
+  ) : <p class="section-empty">Kein bekannter wilder Fundort für diese Form.</p>}
 </Layout>

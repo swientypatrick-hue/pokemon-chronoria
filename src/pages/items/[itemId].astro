@@ -19,6 +19,5 @@ const { i } = Astro.props;
     <tr><th>Preis</th><td>{i.price !== null ? `${i.price} ₽` : "nicht käuflich"}</td></tr>
     <tr><th>Tasche</th><td>{i.pocket ?? "–"}</td></tr>
     <tr><th>Verwendung</th><td>{i.fieldUse ?? "–"}</td></tr>
-    <tr><th>Flags</th><td>{i.flags.join(", ") || "–"}</td></tr>
   </table>
 </Layout>

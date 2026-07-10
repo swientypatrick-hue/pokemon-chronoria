@@ -3,17 +3,35 @@ import Layout from "../../layouts/Layout.astro";
 import EnBadge from "../../components/EnBadge.astro";
 import { trainers, trainerSlug } from "../../lib/data";
 import { href } from "../../lib/url";
+
+const groups = new Map<string, typeof trainers>();
+for (const t of trainers) {
+  const key = t.trainerTypeName.text;
+  if (!groups.has(key)) groups.set(key, []);
+  groups.get(key)!.push(t);
+}
+const sortedGroups = [...groups.entries()]
+  .sort(([a], [b]) => a.localeCompare(b, "de"))
+  .map(([name, list]) => ({
+    name,
+    fallback: list[0].trainerTypeName.fallback,
+    trainers: [...list].sort((a, b) => a.name.localeCompare(b.name, "de")),
+  }));
 ---
 
 <Layout title="Trainer">
   <h1>Trainer ({trainers.length})</h1>
-  <div class="card-grid">
-    {trainers.map((t) => (
-      <a class="card" href={href(`/trainer/${trainerSlug(t.id)}/`)}>
-        <div class="card-id">{t.trainerTypeName.text}{t.trainerTypeName.fallback && <EnBadge />}</div>
-        <div class="card-name">{t.name}</div>
-        <div class="meta-note">{t.party.length} Pokémon</div>
-      </a>
-    ))}
-  </div>
+  {sortedGroups.map((group) => (
+    <>
+      <h2>{group.name} {group.fallback && <EnBadge />} <span class="meta-note">({group.trainers.length})</span></h2>
+      <div class="card-grid">
+        {group.trainers.map((t) => (
+          <a class="card" href={href(`/trainer/${trainerSlug(t.id)}/`)}>
+            <div class="card-name">{t.name}</div>
+            <div class="meta-note">{t.party.length} Pokémon</div>
+          </a>
+        ))}
+      </div>
+    </>
+  ))}
 </Layout>

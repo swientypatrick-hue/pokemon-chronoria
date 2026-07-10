@@ -71,6 +71,7 @@ function blockToPokemon(block: PbsBlock, ctx: TranslationContext, sprites: Map<s
     eggGroups: splitList(r.EggGroups),
     hatchSteps: Number(r.HatchSteps ?? 0),
     catchRate: Number(r.CatchRate ?? 0),
+    raidRanks: splitList(r.RaidRanks).map(Number),
     levelMoves: parseLevelMoves(r.Moves),
     tutorMoves: splitList(r.TutorMoves),
     eggMoves: splitList(r.EggMoves),
@@ -79,7 +80,6 @@ function blockToPokemon(block: PbsBlock, ctx: TranslationContext, sprites: Map<s
     generation: r.Generation ? Number(r.Generation) : null,
     forms: [],
     foundIn: [],
-    usedByTrainers: [],
   };
 }
 
@@ -98,6 +98,7 @@ function blockToForm(block: PbsBlock, ctx: TranslationContext, sprites: Map<stri
     tutorMoves: splitList(r.TutorMoves),
     eggMoves: splitList(r.EggMoves),
     sprite: sprites.get(`${speciesId}_${formNumber}`) ?? null,
+    foundIn: [],
   };
 }
 
