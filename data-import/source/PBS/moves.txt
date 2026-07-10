@@ -3654,7 +3654,7 @@ Flags = Contact,CanProtect,CanMirrorMove
 Description = The user drains the foe's energy with its horns. The user's HP is restored by half the damage inflicted.
 #-------------------------------
 [GRASSYGLIDE]
-Name = Grassy Glide
+Name = Grasrutsche
 Type = GRASS
 Category = Physical
 Power = 70
