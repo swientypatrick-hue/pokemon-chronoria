@@ -13,9 +13,11 @@ function load(file: string): string {
 function blockToAbility(block: PbsBlock, ctx: TranslationContext): Ability {
   const r = blockToRecord(block);
   const id = block.headerParts[0];
+  const resolvedName = resolveInlineName(ctx.abilityName, id, r.Name ?? id);
   return {
     id,
-    name: resolveInlineName(ctx.abilityName, id, r.Name ?? id),
+    name: resolvedName.text,
+    nameFallback: resolvedName.fallback,
     description: r.Description ?? "",
     pokemonWithAbility: [],
   };

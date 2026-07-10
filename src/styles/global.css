@@ -249,3 +249,33 @@ th {
   color: var(--text-muted);
   font-style: italic;
 }
+
+.fallback-list {
+  margin: 0.75rem 0;
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 0.75rem 1rem;
+}
+.fallback-list summary {
+  cursor: pointer;
+  font-weight: 600;
+}
+.fallback-list .pill-list {
+  margin-top: 0.75rem;
+}
+
+.stat-tile {
+  background: var(--bg-elevated);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 0.75rem 1rem;
+  text-align: center;
+}
+.stat-tile .stat-tile-value {
+  font-size: 1.6rem;
+  font-weight: 700;
+}
+.stat-tile .stat-tile-label {
+  color: var(--text-muted);
+  font-size: 0.85rem;
+}

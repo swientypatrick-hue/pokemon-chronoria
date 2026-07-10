@@ -52,9 +52,11 @@ function parseEvolutions(value: string | undefined): Evolution[] {
 function blockToPokemon(block: PbsBlock, ctx: TranslationContext, sprites: Map<string, string>): Pokemon {
   const r = blockToRecord(block);
   const id = block.headerParts[0];
+  const resolvedName = resolveInlineName(ctx.speciesName, id, r.Name ?? id);
   return {
     id,
-    name: resolveInlineName(ctx.speciesName, id, r.Name ?? id),
+    name: resolvedName.text,
+    nameFallback: resolvedName.fallback,
     sprite: sprites.get(id) ?? null,
     types: splitList(r.Types),
     baseStats: parseBaseStats(r.BaseStats),

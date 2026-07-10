@@ -19,9 +19,11 @@ function toNumberOrNull(value: string | undefined): number | null {
 function blockToMove(block: PbsBlock, ctx: TranslationContext, description: TranslatedText): Move {
   const r = blockToRecord(block);
   const id = block.headerParts[0];
+  const resolvedName = resolveInlineName(ctx.moveName, id, r.Name ?? id);
   return {
     id,
-    name: resolveInlineName(ctx.moveName, id, r.Name ?? id),
+    name: resolvedName.text,
+    nameFallback: resolvedName.fallback,
     type: r.Type ?? "",
     category: r.Category ?? "",
     power: toNumberOrNull(r.Power),

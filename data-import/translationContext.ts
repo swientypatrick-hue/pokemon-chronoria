@@ -73,13 +73,14 @@ export function resolveInlineName(
   nameAnchor: Map<string, { en: string; de: string }>,
   internalId: string,
   inlineName: string
-): string {
+): TranslatedText {
   const pair = nameAnchor.get(normalizeKey(internalId));
-  if (!pair) return inlineName;
+  if (!pair) return { text: inlineName, fallback: false }; // no anchor data - trust inline, can't verify further
   const trimmedInline = inlineName.trim();
   const stillEnglish = trimmedInline === "" || trimmedInline === pair.en.trim();
-  if (!stillEnglish) return inlineName;
-  return pair.de.trim() !== pair.en.trim() ? pair.de : inlineName;
+  if (!stillEnglish) return { text: inlineName, fallback: false }; // inline already differs from English - trust it
+  const hasRealTranslation = pair.de.trim() !== pair.en.trim();
+  return hasRealTranslation ? { text: pair.de, fallback: false } : { text: inlineName, fallback: true };
 }
 
 export interface TranslatedText {

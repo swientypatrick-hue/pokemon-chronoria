@@ -38,6 +38,8 @@ export interface PokemonForm {
 export interface Pokemon {
   id: string;
   name: string;
+  /** true if `name` is still the untranslated English species name */
+  nameFallback: boolean;
   /** filename in public/sprites/, or null if no matching sprite exists */
   sprite: string | null;
   types: string[];
@@ -68,6 +70,8 @@ export interface Pokemon {
 export interface Move {
   id: string;
   name: string; // resolved via MOVE_NAMES.txt name-anchor, PBS inline as fallback
+  /** true if `name` is still the untranslated English move name */
+  nameFallback: boolean;
   type: string;
   category: string; // Physical/Special/Status
   power: number | null;
@@ -85,6 +89,8 @@ export interface Move {
 export interface Ability {
   id: string;
   name: string; // resolved via ABILITY_NAMES.txt name-anchor, PBS inline as fallback
+  /** true if `name` is still the untranslated English ability name */
+  nameFallback: boolean;
   description: string; // already German inline in PBS
   // reverse index
   pokemonWithAbility: string[];
@@ -93,6 +99,8 @@ export interface Ability {
 export interface Item {
   id: string;
   name: string; // resolved via ITEM_NAMES.txt name-anchor, PBS inline as fallback
+  /** true if `name` is still the untranslated English item name */
+  nameFallback: boolean;
   namePlural: string | null;
   description: string; // already German inline in PBS
   pocket: number | null;

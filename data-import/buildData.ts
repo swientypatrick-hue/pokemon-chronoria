@@ -127,9 +127,13 @@ function main() {
       locations: encounters.length,
     },
     translationFallbacks: {
+      pokemonName: pokemon.filter((p) => p.nameFallback).length,
       pokedex: pokemon.filter((p) => p.pokedex.fallback).length,
       category: pokemon.filter((p) => p.category.fallback).length,
+      moveName: moves.filter((m) => m.nameFallback).length,
       moveDescription: moves.filter((m) => m.description.fallback).length,
+      abilityName: abilities.filter((a) => a.nameFallback).length,
+      itemName: items.filter((i) => i.nameFallback).length,
       trainerTypeName: trainers.filter((t) => t.trainerTypeName.fallback).length,
     },
   });

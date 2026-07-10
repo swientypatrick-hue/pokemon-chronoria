@@ -19,9 +19,11 @@ function toNumberOrNull(value: string | undefined): number | null {
 function blockToItem(block: PbsBlock, ctx: TranslationContext): Item {
   const r = blockToRecord(block);
   const id = block.headerParts[0];
+  const resolvedName = resolveInlineName(ctx.itemName, id, r.Name ?? id);
   return {
     id,
-    name: resolveInlineName(ctx.itemName, id, r.Name ?? id),
+    name: resolvedName.text,
+    nameFallback: resolvedName.fallback,
     namePlural: r.NamePlural ?? null,
     description: r.Description ?? "",
     pocket: toNumberOrNull(r.Pocket),
