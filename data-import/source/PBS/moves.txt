@@ -1296,7 +1296,7 @@ EffectChance = 30
 Description = A strong electric blast crashes down on the target. This may also make the target flinch.
 #-------------------------------
 [THUNDERPUNCH]
-Name = Thunder Punch
+Name = Donnerschlag
 Type = ELECTRIC
 Category = Physical
 Power = 75
