@@ -1,0 +1,8 @@
+﻿#-------------------------------
+[MEDALBOX]
+Name = Medallienbox
+NamePlural = Medallienboxen
+Pocket = 8
+Price = 0
+Flags = KeyItem
+Description = Eine Sammlung deiner bisher verdienten Medallien.

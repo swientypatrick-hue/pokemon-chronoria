@@ -1,0 +1,17 @@
+---
+import Layout from "../../layouts/Layout.astro";
+import { abilities, slugify } from "../../lib/data";
+import { href } from "../../lib/url";
+---
+
+<Layout title="Fähigkeiten">
+  <h1>Fähigkeiten ({abilities.length})</h1>
+  <div class="card-grid">
+    {abilities.map((a) => (
+      <a class="card" href={href(`/faehigkeiten/${slugify(a.id)}/`)}>
+        <div class="card-name">{a.name}</div>
+        <div class="meta-note">{a.description}</div>
+      </a>
+    ))}
+  </div>
+</Layout>

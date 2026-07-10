@@ -1,0 +1,19 @@
+---
+import Layout from "../../layouts/Layout.astro";
+import { items, slugify } from "../../lib/data";
+import { href } from "../../lib/url";
+
+const byPocket = [...items].sort((a, b) => (a.pocket ?? 99) - (b.pocket ?? 99) || a.name.localeCompare(b.name, "de"));
+---
+
+<Layout title="Items">
+  <h1>Items ({items.length})</h1>
+  <div class="card-grid">
+    {byPocket.map((i) => (
+      <a class="card" href={href(`/items/${slugify(i.id)}/`)}>
+        <div class="card-name">{i.name}</div>
+        <div class="meta-note">{i.price !== null ? `${i.price} ₽` : "nicht käuflich"}</div>
+      </a>
+    ))}
+  </div>
+</Layout>

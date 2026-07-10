@@ -1,0 +1,28 @@
+---
+import Layout from "../../layouts/Layout.astro";
+import { abilities, pokemonById, slugify } from "../../lib/data";
+import { href } from "../../lib/url";
+
+export function getStaticPaths() {
+  return abilities.map((a) => ({ params: { abilityId: slugify(a.id) }, props: { a } }));
+}
+
+const { a } = Astro.props;
+
+const withAbility = [...new Set(a.pokemonWithAbility)]
+  .map((id: string) => ({ id, name: pokemonById.get(id)?.name ?? id }))
+  .sort((x, y) => x.name.localeCompare(y.name, "de"));
+---
+
+<Layout title={a.name}>
+  <p class="meta-note"><a href={href("/faehigkeiten/")}>← Alle Fähigkeiten</a></p>
+  <h1>{a.name}</h1>
+  <p>{a.description || "–"}</p>
+
+  <h2>Pokémon mit dieser Fähigkeit ({withAbility.length})</h2>
+  {withAbility.length > 0 ? (
+    <div class="pill-list">
+      {withAbility.map((p) => <a class="card" href={href(`/pokemon/${slugify(p.id)}/`)}>{p.name}</a>)}
+    </div>
+  ) : <p class="section-empty">Kein bekanntes Pokémon mit dieser Fähigkeit.</p>}
+</Layout>

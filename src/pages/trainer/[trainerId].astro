@@ -1,0 +1,59 @@
+---
+import Layout from "../../layouts/Layout.astro";
+import EnBadge from "../../components/EnBadge.astro";
+import { trainers, pokemonById, abilityById, itemById, moveById, slugify, trainerSlug } from "../../lib/data";
+import { href } from "../../lib/url";
+
+export function getStaticPaths() {
+  return trainers.map((t) => ({ params: { trainerId: trainerSlug(t.id) }, props: { t } }));
+}
+
+const { t } = Astro.props;
+
+function resolveAbility(species: string, abilityIndex: number | null): string | null {
+  if (abilityIndex === null) return null;
+  const s = pokemonById.get(species);
+  if (!s) return null;
+  const combined = [...s.abilities, ...s.hiddenAbilities];
+  const id = combined[abilityIndex];
+  return id ? (abilityById.get(id)?.name ?? id) : null;
+}
+---
+
+<Layout title={`${t.name} (${t.trainerTypeName.text})`}>
+  <p class="meta-note"><a href={href("/trainer/")}>← Alle Trainer</a></p>
+  <h1>{t.name}</h1>
+  <p class="meta-note">{t.trainerTypeName.text}{t.trainerTypeName.fallback && <EnBadge />}</p>
+  {t.loseText && <p><em>„{t.loseText}"</em></p>}
+
+  <h2>Team</h2>
+  <div class="card-grid">
+    {t.party.map((tp) => {
+      const species = pokemonById.get(tp.species);
+      const ability = resolveAbility(tp.species, tp.abilityIndex);
+      const item = tp.item ? itemById.get(tp.item)?.name ?? tp.item : null;
+      return (
+        <div class="card">
+          <div class="card-name">
+            <a href={href(`/pokemon/${slugify(tp.species)}/`)}>{species?.name ?? tp.species}</a>
+            {" "}Lv. {tp.level}
+          </div>
+          {tp.shiny && <span class="meta-note">✨ Schillernd</span>}
+          {tp.shadow && <span class="meta-note">🌑 Shadow-Pokémon</span>}
+          {ability && <div class="meta-note">Fähigkeit: {ability}</div>}
+          {item && <div class="meta-note">Item: {item}</div>}
+          {tp.gender && <div class="meta-note">Geschlecht: {tp.gender === "male" ? "männlich" : "weiblich"}</div>}
+          {tp.moves.length > 0 && (
+            <div class="pill-list" style="margin-top:0.35rem">
+              {tp.moves.map((m) => (
+                <a href={href(`/attacken/${slugify(m)}/`)} class="badge" style="background:#888">
+                  {moveById.get(m)?.name ?? m}
+                </a>
+              ))}
+            </div>
+          )}
+        </div>
+      );
+    })}
+  </div>
+</Layout>

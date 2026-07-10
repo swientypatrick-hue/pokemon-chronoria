@@ -1,0 +1,173 @@
+﻿# See the documentation on the wiki to learn how to edit this file.
+#-------------------------------
+[ANGERSHELL]
+Name = Wutpanzer
+Description = Bei hälftigen LP sinken Vert. und Sp. Vert., aber Angr. und Sp. Angr. steigen.
+#-------------------------------
+[ARMORTAIL]
+Name = Schweifrüstung
+Description = Hindert Gegner daran, Erstschlag-Attacken einzusetzen.
+#-------------------------------
+[BEADSOFRUIN]
+Name = Unheilsjuwelen
+Description = Senkt die Sp. Vert. aller Pokémon, außer von sich selbst.
+#-------------------------------
+[COMMANDER]
+Name = Kommandant
+Description = Kombiniert seinen Angriff mit einem Heerashai, wenn es sein Mitstreiter ist.
+#-------------------------------
+[COSTAR]
+Name = Synchronauftritt
+Description = Kopiert die Statusänderungen des Mitstreiters bei Kampfantritt.
+#-------------------------------
+[CUDCHEW]
+Name = Wiederkäuer
+Description = Eine Beere kann im nächsten Zug erneut verwendet werden.
+#-------------------------------
+[EARTHEATER]
+Name = Bodenschmaus
+Description = Regeneriert LP, falls es von einer Boden-Attacke getroffen wird.
+#-------------------------------
+[ELECTROMORPHOSIS]
+Name = Dynamo
+Description = Wird es getroffen, fügt die nächste Elektro-Attacke mehr Schaden zu.
+#-------------------------------
+[GOODASGOLD]
+Name = Goldkörper
+Description = Es ist immun gegen Status-Attacken.
+#-------------------------------
+[GUARDDOG]
+Name = Wachhund
+Description = Angriff wird durch Bedroher erhöht. Es kann nicht zum Wechsel gezwungen werden.
+#-------------------------------
+[HADRONENGINE]
+Name = Hadronen-Motor
+Description = Elektrofeld wird aktiviert und der Sp. Angriff erhöht.
+#-------------------------------
+[LINGERINGAROMA]
+Name = Duftschwade
+Description = Kontakt mit diesem Pokémon verbreitet diese Fähigkeit.
+#-------------------------------
+[MYCELIUMMIGHT]
+Name = Myzelienkraft
+Description = Status-Attacken sind langsamer aber treffen unabhängig der Fähigkeit.
+#-------------------------------
+[OPPORTUNIST]
+Name = Profiteur
+Description = Kopiert sofort Statuserhöhungen des Gegners.
+#-------------------------------
+[ORICHALCUMPULSE]
+Name = Orichalkum-Puls
+Description = Erzeugt starken Sonnenschein und steigert den Angriff.
+#-------------------------------
+[PROTOSYNTHESIS]
+Name = Paläosynthese
+Description = Erhöht den besten Statuswert bei starkem Sonnenlicht.
+#-------------------------------
+[PURIFYINGSALT]
+Name = Läutersalz
+Description = Schutz vor Status-Effekten und Geist-Attacken.
+#-------------------------------
+[QUARKDRIVE]
+Name = Quantenantrieb
+Description = Erhöht den besten Statuswert bei aktivem Elektrofeld.
+#-------------------------------
+[ROCKYPAYLOAD]
+Name = Steinträger
+Description = Verstärkt Gestein-Attacken.
+#-------------------------------
+[SEEDSOWER]
+Name = Streusaat
+Description = Nimmt das Pokémon Schaden, wird ein Grasfeld aktiviert.
+#-------------------------------
+[SHARPNESS]
+Name = Scharfkantig
+Description = Die Stärke von Schnitt-Attacken des Pokémon steigt. 
+#-------------------------------
+[SUPREMEOVERLORD]
+Name = Feldherr
+Description = Mit jedem besiegten Mitstreiter steigt der Schaden.
+#-------------------------------
+[SWORDOFRUIN]
+Name = Unheilsschwert
+Description = Senkt die Vert. aller Pokémon, außer von sich selbst.
+#-------------------------------
+[TABLETSOFRUIN]
+Name = Unheilstafeln
+Description = Senkt den Angriff aller Pokémon, außer von sich selbst.
+#-------------------------------
+[THERMALEXCHANGE]
+Name = Thermowandel
+Description = Verhindert Verbr. und steigert den Angr., falls es von einer Feuer-Att. getr. wird.
+#-------------------------------
+[TOXICDEBRIS]
+Name = Giftbelag
+Description = Verteilt Giftspitzen, wenn es von einer physischen Attacke getroffen wird.
+#-------------------------------
+[VESSELOFRUIN]
+Name = Unheilsgefäß
+Description = Senkt den Sp. Angriff aller Pokémon, außer von sich selbst.
+#-------------------------------
+[WELLBAKEDBODY]
+Name = Knusperkruste
+Description = Feuer-Attacken sind wirkungslos und die Vert. wird stark erhöht.
+#-------------------------------
+[WINDPOWER]
+Name = Windkraft
+Description = Wird es von "Wind"-Attacken getroffen, fügt die nächste Elektro-Att. mehr Schaden zu.
+#-------------------------------
+[WINDRIDER]
+Name = Windreiter
+Description = Steigert Angriff bei Rückenwind.
+#-------------------------------
+[ZEROTOHERO]
+Name = Superwechsel
+Description = Wechselt seine Form beim Austausch.
+#-------------------------------
+[SUPERSWEETSYRUP]
+Name = Süßer Nektar
+Description = Senkt den gegnerischen Fluchtwert einmalig pro Kampf.
+#-------------------------------
+[HOSPITALITY]
+Name = Gastlichkeit
+Description = Regeneriert bei Kampfantritt ein wenig LP der Mitstreiter.
+#-------------------------------
+[TOXICCHAIN]
+Name = Giftkette
+Description = Vergiftet evtl. schwer, wenn der Gegner angegriffen wird.
+#-------------------------------
+[MINDSEYE]
+Name = Geistiges Auge
+Description = Die Genauigkeit kann nicht gesenkt werden. Ignoriert Geist-Immunitäten.
+#-------------------------------
+[EMBODYASPECT]
+Name = Erinnerungskraft
+Description = Erhöht die Initiative.
+#-------------------------------
+[EMBODYASPECT_1]
+Name = Erinnerungskraft
+Description = Erhöht die Spezial Verteidigung.
+#-------------------------------
+[EMBODYASPECT_2]
+Name = Erinnerungskraft
+Description = Erhöht den Angriff.
+#-------------------------------
+[EMBODYASPECT_3]
+Name = Erinnerungskraft
+Description = Erhöht die Verteidigung.
+#-------------------------------
+[POISONPUPPETEER]
+Name = Giftpuppenspiel
+Description = Attacken, die vergiften, verwirren zusätzlich.
+#-------------------------------
+[TERASHIFT]
+Name = Tera Shift
+Description = Enters Terastal Form when sent out.
+#-------------------------------
+[TERASHELL]
+Name = Tera Shell
+Description = Bei vollen LP kann es nicht sehr effektiv getroffen werden.
+#-------------------------------
+[TERAFORMZERO]
+Name = Teraform Zero
+Description = Negiert alle Wetter und Feld-Effekte.

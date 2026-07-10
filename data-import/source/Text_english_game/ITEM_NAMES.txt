@@ -1,0 +1,234 @@
+﻿# To localize this text for a particular language, please
+# translate every second line of this file.
+#-------------------------------
+[ITEM_NAMES]
+Eisstein
+Eisstein
+Megastein
+Megastein
+Metagrossnit2
+Metagrossnit2
+Meisterball
+Meisterball
+Hyperball
+Hyperball
+Superball
+Superball
+Pokéball
+Pokéball
+Safariball
+Safariball
+Prüfungsball
+Prüfungsball
+Netzball
+Netzball
+Mystikball
+Mystikball
+Lavaball
+Lavaball
+Stromball
+Stromball
+Sakralball
+Sakralball
+Tauchball
+Tauchball
+Nestball
+Nestball
+Wiederball
+Wiederball
+Timerball
+Timerball
+Luxusball
+Luxusball
+Premierball
+Premierball
+Düsterball
+Düsterball
+Heilball
+Heilball
+Flottball
+Flottball
+Jubelball
+Jubelball
+Turboball
+Turboball
+Schleichball
+Schleichball
+Levelball
+Levelball
+Köderball
+Köderball
+Schwerball
+Schwerball
+Sympaball
+Sympaball
+Freundesball
+Freundesball
+Mondball
+Mondball
+Traumball
+Traumball
+Ultraball
+Ultraball
+TM101
+TM101
+TM102
+TM102
+Spitzaxt
+Spitzaxt
+Beil
+Beil
+Krafthandschuhe
+Krafthandschuhe
+Tohaido-Mobil
+Tohaido-Mobil
+Fliegen
+Fliegen
+Premium-Futter
+Premium-Futter
+Laterne
+Laterne
+Used Shovel
+Used Shovel
+Tohaido-Tauchmodul
+Tohaido-Tauchmodul
+Essence Mixture
+Essence Mixture
+Disc der Rückkehr
+Disc der Rückkehr
+Kaskadeausrüstung
+Kaskadeausrüstung
+Handpaddel
+Handpaddel
+Kletterausrüstung
+Kletterausrüstung
+Eispickel
+Eispickel
+Magic Fan
+Magic Fan
+Weather Gadget
+Weather Gadget
+Cloak of Kecleon
+Cloak of Kecleon
+1. Platz Käfersammler-Contest
+1. Platz Käfersammler-Contest
+Guardevoirit2
+Guardevoirit2
+Galladit2
+Galladit2
+Dummimiselnit-A
+Dummimiselnit-A
+Dummimiselnit-B
+Dummimiselnit-B
+Wesen-Wechsler
+Wesen-Wechsler
+Schwarzaugit
+Schwarzaugit
+Torfblock
+Torfblock
+Verbindungsschnur
+Verbindungsschnur
+Adamantkristall
+Adamantkristall
+Weißkristall
+Weißkristall
+Legendentafel
+Legendentafel
+Neutraltafel
+Neutraltafel
+Pfohbeere
+Pfohbeere
+Platinumkristall
+Platinumkristall
+Federball
+Federball
+Flügelball
+Flügelball
+Düsenball
+Düsenball
+Zentnerball
+Zentnerball
+Tonnenball
+Tonnenball
+Urball
+Urball
+Rätselball
+Rätselball
+Glorienrüstung
+Glorienrüstung
+Fluchrüstung
+Fluchrüstung
+Unlicht-Schriftrolle
+Unlicht-Schriftrolle
+Wasser-Schriftrolle
+Wasser-Schriftrolle
+Anführersymbol
+Anführersymbol
+Energiekapsel
+Energiekapsel
+Fähigkeitenschild
+Fähigkeitenschild
+Neutralschmuck
+Neutralschmuck
+Kopierkraut
+Kopierkraut
+Boxhandschuh
+Boxhandschuh
+Tarnumhang
+Tarnumhang
+Gezinkter Würfel
+Gezinkter Würfel
+Gierspenst-Münze
+Gierspenst-Münze
+Minibambusspross
+Minibambusspross
+Big Bamboo Shoot
+Big Bamboo Shoot
+Rotom Phone
+Rotom Phone
+Scarlet Book
+Scarlet Book
+Violet Book
+Violet Book
+Health Mochi
+Health Mochi
+Muscle Mochi
+Muscle Mochi
+Resist Mochi
+Resist Mochi
+Genius Mochi
+Genius Mochi
+Clever Mochi
+Clever Mochi
+Swift Mochi
+Swift Mochi
+Fresh-Start Mochi
+Fresh-Start Mochi
+Feendaune
+Feendaune
+Saftiger Apfel
+Saftiger Apfel
+Simple Teeschale
+Simple Teeschale
+Edle Teeschale
+Edle Teeschale
+Brunnenmaske
+Brunnenmaske
+Ofenmaske
+Ofenmaske
+Fundamentmaske
+Fundamentmaske
+Türkisgrüne Maske
+Türkisgrüne Maske
+Legierungsmetall
+Legierungsmetall
+Indigo Disk
+Indigo Disk
+Mythical Pecha Berry
+Mythical Pecha Berry
+Synchro Machine
+Synchro Machine
+Meteorite
+Meteorite
+Briar's Book
+Briar's Book

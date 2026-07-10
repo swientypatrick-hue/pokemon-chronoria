@@ -1,0 +1,52 @@
+---
+import Layout from "../../layouts/Layout.astro";
+import TypeBadge from "../../components/TypeBadge.astro";
+import { moves, types, slugify } from "../../lib/data";
+import { href } from "../../lib/url";
+
+const CATEGORY_LABEL: Record<string, string> = { Physical: "Physisch", Special: "Speziell", Status: "Status" };
+---
+
+<Layout title="Attacken">
+  <h1>Attacken ({moves.length})</h1>
+
+  <div class="filter-bar" id="type-filter">
+    <a href="#" data-type="ALL" aria-current="true">Alle</a>
+    {types.filter((t) => t.id !== "QMARKS").map((t) => (
+      <a href="#" data-type={t.id}>{t.name}</a>
+    ))}
+  </div>
+
+  <table id="move-table">
+    <tr><th>Attacke</th><th>Typ</th><th>Kategorie</th><th>St.</th><th>Genau.</th><th>AP</th></tr>
+    {moves.map((m) => (
+      <tr data-type={m.type}>
+        <td><a href={href(`/attacken/${slugify(m.id)}/`)}>{m.name}</a></td>
+        <td><TypeBadge type={m.type} /></td>
+        <td>{CATEGORY_LABEL[m.category] ?? m.category}</td>
+        <td>{m.power ?? "–"}</td>
+        <td>{m.accuracy ?? "–"}</td>
+        <td>{m.totalPP ?? "–"}</td>
+      </tr>
+    ))}
+  </table>
+</Layout>
+
+<script>
+  const filterBar = document.getElementById("type-filter")!;
+  const rows = [...document.querySelectorAll<HTMLElement>("#move-table [data-type]")];
+
+  filterBar.addEventListener("click", (e) => {
+    const link = (e.target as HTMLElement).closest("a[data-type]");
+    if (!link) return;
+    e.preventDefault();
+    const type = link.getAttribute("data-type")!;
+
+    for (const a of filterBar.querySelectorAll("a")) a.removeAttribute("aria-current");
+    link.setAttribute("aria-current", "true");
+
+    for (const row of rows) {
+      row.style.display = type === "ALL" || row.dataset.type === type ? "" : "none";
+    }
+  });
+</script>

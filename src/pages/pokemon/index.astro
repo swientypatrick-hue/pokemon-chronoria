@@ -1,0 +1,51 @@
+---
+import Layout from "../../layouts/Layout.astro";
+import TypeBadge from "../../components/TypeBadge.astro";
+import { pokemon, types } from "../../lib/data";
+import { slugify } from "../../lib/data";
+import { href } from "../../lib/url";
+---
+
+<Layout title="Pokémon">
+  <h1>Pokémon ({pokemon.length})</h1>
+
+  <div class="filter-bar" id="type-filter">
+    <a href="#" data-type="ALL" aria-current="true">Alle</a>
+    {types.filter((t) => t.id !== "QMARKS").map((t) => (
+      <a href="#" data-type={t.id}>{t.name}</a>
+    ))}
+  </div>
+
+  <div class="card-grid" id="pokemon-grid">
+    {pokemon.map((p) => (
+      <a class="card" href={href(`/pokemon/${slugify(p.id)}/`)} data-types={p.types.join(",")}>
+        <div class="card-id">#{p.id}</div>
+        <div class="card-name">{p.name}</div>
+        <div class="pill-list" style="margin-top:0.35rem">
+          {p.types.map((t) => <TypeBadge type={t} />)}
+        </div>
+      </a>
+    ))}
+  </div>
+</Layout>
+
+<script>
+  const filterBar = document.getElementById("type-filter")!;
+  const grid = document.getElementById("pokemon-grid")!;
+  const cards = [...grid.querySelectorAll<HTMLElement>("[data-types]")];
+
+  filterBar.addEventListener("click", (e) => {
+    const link = (e.target as HTMLElement).closest("a[data-type]");
+    if (!link) return;
+    e.preventDefault();
+    const type = link.getAttribute("data-type")!;
+
+    for (const a of filterBar.querySelectorAll("a")) a.removeAttribute("aria-current");
+    link.setAttribute("aria-current", "true");
+
+    for (const card of cards) {
+      const cardTypes = card.dataset.types?.split(",") ?? [];
+      card.style.display = type === "ALL" || cardTypes.includes(type) ? "" : "none";
+    }
+  });
+</script>

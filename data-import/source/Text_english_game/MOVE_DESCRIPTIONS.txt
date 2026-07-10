@@ -1,0 +1,182 @@
+﻿# To localize this text for a particular language, please
+# translate every second line of this file.
+#-------------------------------
+[MOVE_DESCRIPTIONS]
+The user may critically hit with its ruinous claws. May also leave the target poisoned, paralyzed, or asleep.
+The user may critically hit with its ruinous claws. May also leave the target poisoned, paralyzed, or asleep.
+The user wraps winds of fierce emotion around opponents. This may lower their Attack stats.
+The user wraps winds of fierce emotion around opponents. This may lower their Attack stats.
+The user rampages around spewing flames for two to three turns. The user then becomes confused.
+The user rampages around spewing flames for two to three turns. The user then becomes confused.
+The user shrouds itself in water and slams into the target. This also damages the user.
+The user shrouds itself in water and slams into the target. This also damages the user.
+The user launches its amassed chlorophyll to inflict damage on the target. This also damages the user.
+The user launches its amassed chlorophyll to inflict damage on the target. This also damages the user.
+The user hurls giant chunks of ice at the target. This may also make the target flinch.
+The user hurls giant chunks of ice at the target. This may also make the target flinch.
+The user rams into the target in a full-body tackle. This lowers the user’s Defense and Sp. Def stats.
+The user rams into the target in a full-body tackle. This lowers the user’s Defense and Sp. Def stats.
+Fires toxic barbs which may poison the target. Power is doubled if the target is poisoned.
+Fires toxic barbs which may poison the target. Power is doubled if the target is poisoned.
+The user slashes with aura-enriched wings which boosts its Speed stat. Critical hits land more easily.
+The user slashes with aura-enriched wings which boosts its Speed stat. Critical hits land more easily.
+The user attacks the target with spine-chilling resentment. This also lowers the target’s Attack stat.
+The user attacks the target with spine-chilling resentment. This also lowers the target’s Attack stat.
+The user fires arrows which may lower the target’s Defense or make it flinch. Critical hits land more easily.
+The user fires arrows which may lower the target’s Defense or make it flinch. Critical hits land more easily.
+The user attacks with cold winds that cause opposing Pokémon to tremble. This may lower their Speed stats.
+The user attacks with cold winds that cause opposing Pokémon to tremble. This may lower their Speed stats.
+The user attacks opposing Pokémon with a thunderous tempest. This may also leave them paralyzed.
+The user attacks opposing Pokémon with a thunderous tempest. This may also leave them paralyzed.
+The user wraps fierce winds and hot sand around opponents. This may leave them with a burn.
+The user wraps fierce winds and hot sand around opponents. This may leave them with a burn.
+The user is blessed by the moon, restoring HP and curing status conditions of itself and allies.
+The user is blessed by the moon, restoring HP and curing status conditions of itself and allies.
+Cloaking itself in psychic energy, the user slams into the target. This raises the user’s Defense.
+Cloaking itself in psychic energy, the user slams into the target. This raises the user’s Defense.
+The user swaps its Attack and Defense stats.
+The user swaps its Attack and Defense stats.
+The user swings at the opponent with its stone axes. May leave floating rocks around the target.
+The user swings at the opponent with its stone axes. May leave floating rocks around the target.
+The user attacks by emitting a mysterious power. This also boosts the user’s Sp. Atk stat.
+The user attacks by emitting a mysterious power. This also boosts the user’s Sp. Atk stat.
+The user performs an intense dance to usher in victory, raising its Attack, Defense, and Speed.
+The user performs an intense dance to usher in victory, raising its Attack, Defense, and Speed.
+The user makes its skin as hard as an iron shield, sharply boosting its Defense stat.
+The user makes its skin as hard as an iron shield, sharply boosting its Defense stat.
+Hurls fireballs which may cause burns. Power is doubled if the target has a status condition.
+Hurls fireballs which may cause burns. Power is doubled if the target has a status condition.
+The user slashes the opponent with its shell blade. May leave spikes around the target.
+The user slashes the opponent with its shell blade. May leave spikes around the target.
+The user lifts its spirits, curing its own status conditions and boosting its Sp. Atk and Sp. Def stats.
+The user lifts its spirits, curing its own status conditions and boosting its Sp. Atk and Sp. Def stats.
+The user expels pressurized water to cut at the target like a blade. Critical hits land more easily.
+The user expels pressurized water to cut at the target like a blade. Critical hits land more easily.
+The user attacks the target using light and fluid dance steps. This also boosts the user’s Speed stat.
+The user attacks the target using light and fluid dance steps. This also boosts the user’s Speed stat.
+The user shoots its own armor out as blazing projectiles. This lowers the user’s Defense and Sp. Def.
+The user shoots its own armor out as blazing projectiles. This lowers the user’s Defense and Sp. Def.
+Performs a downward kick which may confuse the target. The user takes damage if it misses.
+Performs a downward kick which may confuse the target. The user takes damage if it misses.
+A spiteful slashing attack. The user’s HP is restored by up to half the damage taken by the target.
+A spiteful slashing attack. The user’s HP is restored by up to half the damage taken by the target.
+This move is only used by a Starmobile. It may leave the target with a burn.
+This move is only used by a Starmobile. It may leave the target with a burn.
+The user showers the target with frigid water. This also lowers the target's Attack stat.
+The user showers the target with frigid water. This also lowers the target's Attack stat.
+The user tells a chillingly bad joke and switches out. This summons a snowstorm lasting five turns.
+The user tells a chillingly bad joke and switches out. This summons a snowstorm lasting five turns.
+A massive prehistoric explosion. This move’s power is boosted more than usual if it’s a supereffective hit.
+A massive prehistoric explosion. This move’s power is boosted more than usual if it’s a supereffective hit.
+This move is only used by a Starmobile. It may paralyze the target.
+This move is only used by a Starmobile. It may paralyze the target.
+The user retaliates with much greater force against the opponent that last inflicted damage on it.
+The user retaliates with much greater force against the opponent that last inflicted damage on it.
+The user captures a quick sketch, changing the Abilities of the user and its allies to the target's.
+The user captures a quick sketch, changing the Abilities of the user and its allies to the target's.
+The user attacks by discharging all of its electricity. The user will no longer be Electric type.
+The user attacks by discharging all of its electricity. The user will no longer be Electric type.
+A futuristic electric strike. This move’s power is boosted more than usual if it’s a supereffective hit.
+A futuristic electric strike. This move’s power is boosted more than usual if it’s a supereffective hit.
+The user sharply boosts its Attack, Sp. Atk, and Speed stats by using its own HP.
+The user sharply boosts its Attack, Sp. Atk, and Speed stats by using its own HP.
+The user throws a rigged bouquet of flowers at the target, which always hits and lands a critical hit.
+The user throws a rigged bouquet of flowers at the target, which always hits and lands a critical hit.
+The user attacks with its huge hammer. This move can’t be used twice in a row.
+The user attacks with its huge hammer. This move can’t be used twice in a row.
+The user becomes highly vulnerable to attacks until its next turn after using this move.
+The user becomes highly vulnerable to attacks until its next turn after using this move.
+The user spins the pointed part of its body at high speed to pierce the target, ignoring protections.
+The user spins the pointed part of its body at high speed to pierce the target, ignoring protections.
+The user spins into the target with feet covered in thin ice. This also destroys the terrain.
+The user spins into the target with feet covered in thin ice. This also destroys the terrain.
+The user summons a torrent around its fist and punches at blinding speed. Always goes first.
+The user summons a torrent around its fist and punches at blinding speed. Always goes first.
+The user kowtows to make the target lower its guard, then slashes. This attack never misses.
+The user kowtows to make the target lower its guard, then slashes. This attack never misses.
+The user attacks to avenge its allies. The move’s power increases for each defeated ally.
+The user attacks to avenge its allies. The move’s power increases for each defeated ally.
+The user attacks by unleashing a peculiar, mind-bending light that harshly lowers the target’s Sp. Def.
+The user attacks by unleashing a peculiar, mind-bending light that harshly lowers the target’s Sp. Def.
+This move is only used by a Starmobile. It may confuse the target.
+This move is only used by a Starmobile. It may confuse the target.
+The user throws out a huge mass of coins, lowering its Sp. Atk stat. Money is earned after the battle.
+The user throws out a huge mass of coins, lowering its Sp. Atk stat. Money is earned after the battle.
+Performs a spin that eliminates certain traps and hazards. This also poisons opposing Pokémon.
+Performs a spin that eliminates certain traps and hazards. This also poisons opposing Pokémon.
+This move is only used by a Starmobile. It may poison the target.
+This move is only used by a Starmobile. It may poison the target.
+If used when the user has a Tatsugiri in its mouth, a boost occurs based on its form.
+If used when the user has a Tatsugiri in its mouth, a boost occurs based on its form.
+The user’s fellows gather in droves to perform a combo attack that hits one to ten times in a row.
+The user’s fellows gather in droves to perform a combo attack that hits one to ten times in a row.
+The user attacks by pouncing on the target. This also lowers the target’s Speed stat.
+The user attacks by pouncing on the target. This also lowers the target’s Speed stat.
+The user converts its rage into energy to attack. The move’s power increases every time the user is hit.
+The user converts its rage into energy to attack. The move’s power increases every time the user is hit.
+The user charges and destroys enemy barriers. This move’s type depends on the user’s form.
+The user charges and destroys enemy barriers. This move’s type depends on the user’s form.
+The user revives a party Pokémon that has fainted and restores half their max HP.
+The user revives a party Pokémon that has fainted and restores half their max HP.
+The user summons a ruinous disaster. This cuts the target’s HP in half.
+The user summons a ruinous disaster. This cuts the target’s HP in half.
+The user salt cures the target, inflicting damage every turn. Steel and Water types take more damage.
+The user salt cures the target, inflicting damage every turn. Steel and Water types take more damage.
+The user creates a substitute and switches places with a party Pokémon in waiting.
+The user creates a substitute and switches places with a party Pokémon in waiting.
+User spins a silken trap to protect itself. Lowers the Speed of any that make direct contact.
+User spins a silken trap to protect itself. Lowers the Speed of any that make direct contact.
+Summons a five-turn snowstorm that boosts the Defense of Ice-type Pokémon.
+Summons a five-turn snowstorm that boosts the Defense of Ice-type Pokémon.
+Emits a spicy extract which raises the target’s Attack and lowers Defense by two stages each.
+Emits a spicy extract which raises the target’s Attack and lowers Defense by two stages each.
+The user inflicts damage on the target with a furious spin. This harshly lowers the user’s Speed.
+The user inflicts damage on the target with a furious spin. This harshly lowers the user’s Speed.
+Clears hazards and substitutes from the field. This also boosts the user’s Attack and Speed.
+Clears hazards and substitutes from the field. This also boosts the user’s Attack and Speed.
+The user blows out raging flames as if singing a song. This also boosts the user’s Sp. Atk stat.
+The user blows out raging flames as if singing a song. This also boosts the user’s Sp. Atk stat.
+The user attacks suddenly as if leaping out from tall grass. This boosts the user's Speed stat.
+The user attacks suddenly as if leaping out from tall grass. This boosts the user's Speed stat.
+The user performs a perfectly timed triple dive, hitting the target three times in a row.
+The user performs a perfectly timed triple dive, hitting the target three times in a row.
+The user shoots mystical beams from its eyes to inflict damage. The target is hit twice in a row.
+The user shoots mystical beams from its eyes to inflict damage. The target is hit twice in a row.
+This move is only used by a Starmobile. It may put the target to sleep.
+This move is only used by a Starmobile. It may put the target to sleep.
+The user blasts the target with boiling-hot water whose power is boosted in harsh sunlight.
+The user blasts the target with boiling-hot water whose power is boosted in harsh sunlight.
+The user rends the target with an ethereal blade whose power is boosted on Electric Terrain.
+The user rends the target with an ethereal blade whose power is boosted on Electric Terrain.
+The user unleashes the full brunt of its spirit from a blood moon. This move can't be used twice in a row.
+The user unleashes the full brunt of its spirit from a blood moon. This move can't be used twice in a row.
+Blasts opponents with hot tea. Heals the user by half the damage dealt and may also burn targets.
+Blasts opponents with hot tea. Heals the user by half the damage dealt and may also burn targets.
+An explosion of sticky candy syrup, which drop the target's Speed stat each turn for three turns.
+An explosion of sticky candy syrup, which drop the target's Speed stat each turn for three turns.
+An ivy-wrapped cudgel strike with a high critical-hit ratio. Type changes based on the user's Mask.
+An ivy-wrapped cudgel strike with a high critical-hit ratio. Type changes based on the user's Mask.
+A two-turn attack. The user boosts its Sp. Atk and then fires a high-voltage shot.
+A two-turn attack. The user boosts its Sp. Atk and then fires a high-voltage shot.
+When used by Terapagos in its Stellar Form, this move damages all opposing Pokémon.
+When used by Terapagos in its Stellar Form, this move damages all opposing Pokémon.
+Sometimes all of the user's heads shoot beams in unison, doubling this move's power.
+Sometimes all of the user's heads shoot beams in unison, doubling this move's power.
+Protects the user from attacks. Also burns any attacker that makes contact with the user.
+Protects the user from attacks. Also burns any attacker that makes contact with the user.
+The user cleaves the target. This move hits even if the target protects itself.
+The user cleaves the target. This move hits even if the target protects itself.
+The user attacks by launching particle blades at the target twice in a row. This attack never misses.
+The user attacks by launching particle blades at the target twice in a row. This attack never misses.
+The user raises its allies’ critical hit ratio with a draconic cry. This rouses Dragon types more.
+The user raises its allies’ critical hit ratio with a draconic cry. This rouses Dragon types more.
+Attacks using an angelic voice. This confuses the target if its stats have been raised this turn.
+Attacks using an angelic voice. This confuses the target if its stats have been raised this turn.
+The user drops onto the target with its electrified body. If it misses, the user is hurt instead.
+The user drops onto the target with its electrified body. If it misses, the user is hurt instead.
+Attacks the target with unpleasant sound waves. Prevents the target from healing for two turns.
+Attacks the target with unpleasant sound waves. Prevents the target from healing for two turns.
+An attack that hits first and makes the target flinch. Fails if the target isn't using a high priority move.
+An attack that hits first and makes the target flinch. Fails if the target isn't using a high priority move.
+Wraps the target in a toxic, corrosive chain. This may also leave the target badly poisoned.
+Wraps the target in a toxic, corrosive chain. This may also leave the target badly poisoned.

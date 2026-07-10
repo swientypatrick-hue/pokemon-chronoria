@@ -1,0 +1,19 @@
+---
+import Layout from "../../layouts/Layout.astro";
+import EnBadge from "../../components/EnBadge.astro";
+import { trainers, trainerSlug } from "../../lib/data";
+import { href } from "../../lib/url";
+---
+
+<Layout title="Trainer">
+  <h1>Trainer ({trainers.length})</h1>
+  <div class="card-grid">
+    {trainers.map((t) => (
+      <a class="card" href={href(`/trainer/${trainerSlug(t.id)}/`)}>
+        <div class="card-id">{t.trainerTypeName.text}{t.trainerTypeName.fallback && <EnBadge />}</div>
+        <div class="card-name">{t.name}</div>
+        <div class="meta-note">{t.party.length} Pokémon</div>
+      </a>
+    ))}
+  </div>
+</Layout>

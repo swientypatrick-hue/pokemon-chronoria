@@ -1,0 +1,208 @@
+﻿# To localize this text for a particular language, please
+# translate every second line of this file.
+#-------------------------------
+[ITEM_PORTION_NAMES]
+jar of Honey  
+Glas Honig  
+bag of Stardust  
+Beutel Sternenstaub  
+Relic Copper coin  
+Relikt-Kupfermünze  
+Relic Silver coin  
+Relikt-Silbermünze  
+Relic Gold coin  
+Relikt-Goldmünze  
+bag of Growth Mulch  
+Beutel Wachstums-Mulch  
+bag of Damp Mulch  
+Beutel Feucht-Mulch  
+bag of Stable Mulch  
+Beutel Stabil-Mulch  
+bag of Gooey Mulch  
+Beutel Klebrig-Mulch  
+pile of Shoal Salt  
+Haufen Küstensalz  
+jar of Red Nectar  
+Glas Roter Nektar  
+jar of Yellow Nectar  
+Glas Gelber Nektar  
+jar of Pink Nectar  
+Glas Rosa Nektar  
+jar of Purple Nectar  
+Glas Lila Nektar  
+bag of Bright Powder  
+Beutel Leuchtpuder  
+bag of BrightPowder  
+Beutel Leuchtstaub  
+pair of Safety Goggles  
+Paar Schutzbrillen  
+set of Protective Pads  
+Set Schutzpolster  
+pair of Heavy-Duty Boots  
+Paar Schwerlaststiefel  
+pair of Choice Specs  
+Paar Wahlbrillen  
+lump of Light Clay  
+Klumpen Lichtlehm  
+blob of Black Sludge  
+Klumpen Schwarzschlamm  
+serving of Leftovers  
+Portion Überreste  
+clump of Luminous Moss  
+Klumpen Leuchtmoos  
+bottle of Throat Spray  
+Flasche Rachenspray  
+voucher for Room Service  
+Gutschein für Zimmerservice  
+pair of Wise Glasses  
+Paar Klugbrillen  
+jar of Lax Incense  
+Glas Träge-Räucherstäbchen  
+jar of Full Incense  
+Glas Völlig-Räucherstäbchen  
+jar of Luck Incense  
+Glas Glücks-Räucherstäbchen  
+jar of Pure Incense  
+Glas Reines-Räucherstäbchen  
+jar of Sea Incense  
+Glas See-Räucherstäbchen  
+jar of Wave Incense  
+Glas Wellen-Räucherstäbchen  
+jar of Rose Incense  
+Glas Rosen-Räucherstäbchen  
+jar of Odd Incense  
+Glas Seltsames-Räucherstäbchen  
+jar of Rock Incense  
+Glas Stein-Räucherstäbchen  
+piece of Charcoal  
+Stück Holzkohle  
+piece of Never-Melt Ice  
+Stück Schmelzfreies Eis  
+piece of NeverMeltIce  
+Stück Ewiges Eis  
+bag of Soft Sand  
+Beutel Weicher Sand  
+pile of Silver Powder  
+Haufen Silberstaub  
+pile of SilverPowder  
+Haufen Silberpulver  
+pair of Black Glasses  
+Paar Schwarze Brillen  
+pair of BlackGlasses  
+Paar Dunkelbrillen  
+bag of Metal Powder  
+Beutel Metallstaub  
+bag of Quick Powder  
+Beutel Schnellpulver  
+scrap of Reaper Cloth  
+Fetzen Schattentuch  
+dollop of Whipped Dream  
+Klecks Zuckerwatte  
+bag of Sacred Ash  
+Beutel Heilige Asche  
+bag of Pewter Crunchies  
+Beutel Marmoria-Kekse  
+cup of Berry Juice  
+Becher Beerensaft  
+bottle of Fresh Water  
+Flasche Tafelwasser  
+bottle of Soda Pop  
+Flasche Sprudel  
+can of Lemonade  
+Dose Limonade  
+bottle of Moomoo Milk  
+Flasche Moomoo-Milch  
+dose of Energy Powder  
+Dosis Energiepulver  
+dose of EnergyPowder  
+Dosis Kraftstaub  
+dose of Heal Powder  
+Dosis Heilpulver  
+comb of Max Honey  
+Wabe Max-Honig  
+bottle of PP Up  
+Flasche AP-Plus  
+bottle of PP Max  
+Flasche AP-Max  
+bottle of HP Up  
+Flasche KP-Plus  
+bottle of Protein  
+Flasche Protein  
+bottle of Iron  
+Flasche Eisen  
+bottle of Calcium  
+Flasche Kalzium  
+bottle of Zinc  
+Flasche Zink  
+bottle of Carbos  
+Flasche Carbos  
+sprig of Lonely Mint  
+Zweig Eigenbrötler-Minze  
+sprig of Adamant Mint  
+Zweig Hart-Minze  
+sprig of Naughty Mint  
+Zweig Frech-Minze  
+sprig of Brave Mint  
+Zweig Mutig-Minze  
+sprig of Bold Mint  
+Zweig Kühn-Minze  
+sprig of Impish Mint  
+Zweig Pfiffig-Minze  
+sprig of Lax Mint  
+Zweig Lasch-Minze  
+sprig of Relaxed Mint  
+Zweig Ruhig-Minze  
+sprig of Modest Mint  
+Zweig Mäßig-Minze  
+sprig of Mild Mint  
+Zweig Mild-Minze  
+sprig of Rash Mint  
+Zweig Hitzig-Minze  
+sprig of Quiet Mint  
+Zweig Still-Minze  
+sprig of Calm Mint  
+Zweig Sanft-Minze  
+sprig of Gentle Mint  
+Zweig Zaghaft-Minze  
+sprig of Careful Mint  
+Zweig Sorgsam-Minze  
+sprig of Sassy Mint  
+Zweig Forsch-Minze  
+sprig of Timid Mint  
+Zweig Scheu-Minze  
+sprig of Hasty Mint  
+Zweig Hastig-Minze  
+sprig of Jolly Mint  
+Zweig Froh-Minze  
+sprig of Naive Mint  
+Zweig Naiv-Minze  
+sprig of Serious Mint  
+Zweig Ernst-Minze  
+piece of Grass Mail  
+Stück Pflanzenbrief  
+piece of Flame Mail  
+Stück Flammenbrief  
+piece of Bubble Mail  
+Stück Blubberbrief  
+piece of Bloom Mail  
+Stück Blütenbrief  
+piece of Tunnel Mail  
+Stück Tunnelbrief  
+piece of Steel Mail  
+Stück Stahlbrief  
+piece of Heart Mail  
+Stück Herzbrief  
+piece of Snow Mail  
+Stück Schneebrief  
+piece of Space Mail  
+Stück Weltraumbrief  
+piece of Air Mail  
+Stück Luftbrief  
+piece of Mosaic Mail  
+Stück Mosaikbrief  
+piece of Brick Mail  
+Stück Ziegelbrief  
+cluster of Max Mushrooms  
+Bündel Max-Pilze  
+set of Reins of Unity  
+Set Zügel der Eintracht  

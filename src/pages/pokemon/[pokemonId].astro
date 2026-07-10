@@ -1,0 +1,163 @@
+---
+import Layout from "../../layouts/Layout.astro";
+import TypeBadge from "../../components/TypeBadge.astro";
+import StatBar from "../../components/StatBar.astro";
+import EnBadge from "../../components/EnBadge.astro";
+import { pokemon, pokemonById, moveById, abilityById, itemById, trainerById, slugify, trainerSlug } from "../../lib/data";
+import { formatEvolutionCondition } from "../../lib/evolutionMethods";
+import { href } from "../../lib/url";
+
+export function getStaticPaths() {
+  return pokemon.map((p) => ({ params: { pokemonId: slugify(p.id) }, props: { p } }));
+}
+
+const { p } = Astro.props;
+
+function moveName(id: string) {
+  return moveById.get(id)?.name ?? id;
+}
+function abilityName(id: string) {
+  return abilityById.get(id)?.name ?? id;
+}
+function speciesName(id: string) {
+  return pokemonById.get(id)?.name ?? id;
+}
+function itemName(id: string) {
+  return itemById.get(id)?.name;
+}
+
+const sortedLevelMoves = [...p.levelMoves].sort((a, b) => a.level - b.level);
+const locationsByPlace = Object.groupBy
+  ? Object.groupBy(p.foundIn, (r: any) => r.locationName)
+  : p.foundIn.reduce((acc: Record<string, any[]>, r: any) => {
+      (acc[r.locationName] ??= []).push(r);
+      return acc;
+    }, {});
+---
+
+<Layout title={p.name}>
+  <p class="meta-note"><a href={href("/pokemon/")}>← Alle Pokémon</a></p>
+  <h1>{p.name} <span class="meta-note">#{p.id}</span></h1>
+  <div class="pill-list">
+    {p.types.map((t: string) => <TypeBadge type={t} />)}
+  </div>
+
+  <h2>Basiswerte</h2>
+  <StatBar label="KP" value={p.baseStats.hp} />
+  <StatBar label="Angriff" value={p.baseStats.attack} />
+  <StatBar label="Verteidigung" value={p.baseStats.defense} />
+  <StatBar label="Init." value={p.baseStats.speed} />
+  <StatBar label="Sp. Angriff" value={p.baseStats.spAtk} />
+  <StatBar label="Sp. Vert." value={p.baseStats.spDef} />
+
+  <h2>Pokédex</h2>
+  <p>
+    {p.pokedex.text || "–"}
+    {p.pokedex.fallback && p.pokedex.text && <EnBadge />}
+  </p>
+  <table>
+    <tr><th>Kategorie</th><td>{p.category.text || "–"} {p.category.fallback && p.category.text && <EnBadge />}</td></tr>
+    <tr><th>Größe</th><td>{p.height} m</td></tr>
+    <tr><th>Gewicht</th><td>{p.weight} kg</td></tr>
+    <tr><th>Fangrate</th><td>{p.catchRate}</td></tr>
+    <tr><th>Ei-Gruppen</th><td>{p.eggGroups.join(", ") || "–"}</td></tr>
+    <tr><th>Schlupfschritte</th><td>{p.hatchSteps}</td></tr>
+  </table>
+
+  <h2>Fähigkeiten</h2>
+  <div class="pill-list">
+    {p.abilities.map((a: string) => <a class="card" href={href(`/faehigkeiten/${slugify(a)}/`)}>{abilityName(a)}</a>)}
+    {p.hiddenAbilities.map((a: string) => <a class="card" href={href(`/faehigkeiten/${slugify(a)}/`)}>{abilityName(a)} (versteckt)</a>)}
+  </div>
+
+  <h2>Entwicklung</h2>
+  {p.evolvesFrom && (
+    <p>Entwickelt sich aus <a href={href(`/pokemon/${slugify(p.evolvesFrom)}/`)}>{speciesName(p.evolvesFrom)}</a>.</p>
+  )}
+  {p.evolutions.length > 0 ? (
+    <ul>
+      {p.evolutions.map((evo: any) => (
+        <li>
+          <a href={href(`/pokemon/${slugify(evo.target)}/`)}>{speciesName(evo.target)}</a>
+          {" — "}{formatEvolutionCondition(evo.method, evo.param, itemName)}
+        </li>
+      ))}
+    </ul>
+  ) : (
+    !p.evolvesFrom && <p class="section-empty">Entwickelt sich nicht weiter.</p>
+  )}
+
+  {p.forms.length > 0 && (
+    <>
+      <h2>Formen</h2>
+      <table>
+        <tr><th>Form</th><th>Typ(en)</th><th>KP/Ang/Vert/Init/SpA/SpV</th></tr>
+        {p.forms.map((f: any) => (
+          <tr>
+            <td>{f.formName?.text || `Form ${f.formNumber}`}</td>
+            <td class="pill-list">{f.types.map((t: string) => <TypeBadge type={t} />)}</td>
+            <td>{f.baseStats.hp}/{f.baseStats.attack}/{f.baseStats.defense}/{f.baseStats.speed}/{f.baseStats.spAtk}/{f.baseStats.spDef}</td>
+          </tr>
+        ))}
+      </table>
+    </>
+  )}
+
+  <h2>Attacken (durch Levelaufstieg)</h2>
+  {sortedLevelMoves.length > 0 ? (
+    <table>
+      <tr><th>Level</th><th>Attacke</th></tr>
+      {sortedLevelMoves.map((lm: any) => (
+        <tr>
+          <td>{lm.level === 0 ? "Start" : lm.level}</td>
+          <td><a href={href(`/attacken/${slugify(lm.move)}/`)}>{moveName(lm.move)}</a></td>
+        </tr>
+      ))}
+    </table>
+  ) : <p class="section-empty">Keine Level-Attacken bekannt.</p>}
+
+  {p.tutorMoves.length > 0 && (
+    <>
+      <h2>Tutor-Attacken</h2>
+      <div class="pill-list">
+        {p.tutorMoves.map((m: string) => <a class="card" href={href(`/attacken/${slugify(m)}/`)}>{moveName(m)}</a>)}
+      </div>
+    </>
+  )}
+
+  {p.eggMoves.length > 0 && (
+    <>
+      <h2>Ei-Attacken</h2>
+      <div class="pill-list">
+        {p.eggMoves.map((m: string) => <a class="card" href={href(`/attacken/${slugify(m)}/`)}>{moveName(m)}</a>)}
+      </div>
+    </>
+  )}
+
+  <h2>Fundorte (wild)</h2>
+  {Object.keys(locationsByPlace).length > 0 ? (
+    <table>
+      <tr><th>Ort</th><th>Methode</th><th>Level</th></tr>
+      {Object.entries(locationsByPlace).map(([place, refs]: [string, any]) => (
+        refs.map((r: any, i: number) => (
+          <tr>
+            {i === 0 ? <td rowspan={refs.length}>{place}</td> : null}
+            <td>{r.method}</td>
+            <td>{r.minLevel === r.maxLevel ? r.minLevel : `${r.minLevel}–${r.maxLevel}`}</td>
+          </tr>
+        ))
+      ))}
+    </table>
+  ) : <p class="section-empty">Kein bekannter wilder Fundort (z.B. nur durch Entwicklung, Geschenk oder Ei erhältlich).</p>}
+
+  {p.usedByTrainers.length > 0 && (
+    <>
+      <h2>Wird benutzt von Trainern</h2>
+      <div class="pill-list">
+        {p.usedByTrainers.map((tid: string) => (
+          <a class="card" href={href(`/trainer/${trainerSlug(tid)}/`)}>{trainerById.get(tid)?.name ?? tid}</a>
+        ))}
+      </div>
+    </>
+  )}
+</Layout>

@@ -1,0 +1,24 @@
+---
+import Layout from "../../layouts/Layout.astro";
+import { items, slugify } from "../../lib/data";
+import { href } from "../../lib/url";
+
+export function getStaticPaths() {
+  return items.map((i) => ({ params: { itemId: slugify(i.id) }, props: { i } }));
+}
+
+const { i } = Astro.props;
+---
+
+<Layout title={i.name}>
+  <p class="meta-note"><a href={href("/items/")}>← Alle Items</a></p>
+  <h1>{i.name}</h1>
+  <p>{i.description || "–"}</p>
+
+  <table>
+    <tr><th>Preis</th><td>{i.price !== null ? `${i.price} ₽` : "nicht käuflich"}</td></tr>
+    <tr><th>Tasche</th><td>{i.pocket ?? "–"}</td></tr>
+    <tr><th>Verwendung</th><td>{i.fieldUse ?? "–"}</td></tr>
+    <tr><th>Flags</th><td>{i.flags.join(", ") || "–"}</td></tr>
+  </table>
+</Layout>

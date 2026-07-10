@@ -1,0 +1,147 @@
+// Shape of the generated src/data/*.json files consumed by the Astro pages.
+import type { TranslatedText } from "./translationContext.ts";
+
+export interface BaseStats {
+  hp: number;
+  attack: number;
+  defense: number;
+  speed: number;
+  spAtk: number;
+  spDef: number;
+}
+
+export interface LevelMove {
+  level: number;
+  move: string; // move id
+}
+
+export interface Evolution {
+  target: string; // species id
+  method: string;
+  param: string;
+}
+
+export interface PokemonForm {
+  formNumber: number;
+  formName: TranslatedText | null;
+  types: string[];
+  baseStats: BaseStats;
+  abilities: string[];
+  hiddenAbilities: string[];
+  levelMoves: LevelMove[];
+  tutorMoves: string[];
+  eggMoves: string[];
+}
+
+export interface Pokemon {
+  id: string;
+  name: string; // already German inline in PBS
+  types: string[];
+  baseStats: BaseStats;
+  abilities: string[];
+  hiddenAbilities: string[];
+  category: TranslatedText;
+  pokedex: TranslatedText;
+  height: number;
+  weight: number;
+  genderRatio: string;
+  growthRate: string;
+  eggGroups: string[];
+  hatchSteps: number;
+  catchRate: number;
+  levelMoves: LevelMove[];
+  tutorMoves: string[];
+  eggMoves: string[];
+  evolutions: Evolution[];
+  evolvesFrom: string | null; // filled in by buildData.ts
+  generation: number | null;
+  forms: PokemonForm[];
+  // reverse indices, filled in by buildData.ts
+  foundIn: EncounterRef[];
+  usedByTrainers: string[]; // trainer ids
+}
+
+export interface Move {
+  id: string;
+  name: string; // already German inline in PBS
+  type: string;
+  category: string; // Physical/Special/Status
+  power: number | null;
+  accuracy: number | null;
+  totalPP: number | null;
+  target: string;
+  priority: number;
+  flags: string[];
+  description: TranslatedText;
+  // reverse index
+  learnedByLevelUp: string[]; // species ids
+  learnedByTutorOrEgg: string[];
+}
+
+export interface Ability {
+  id: string;
+  name: string; // already German inline in PBS
+  description: string; // already German inline in PBS
+  // reverse index
+  pokemonWithAbility: string[];
+}
+
+export interface Item {
+  id: string;
+  name: string; // already German inline in PBS
+  namePlural: string | null;
+  description: string; // already German inline in PBS
+  pocket: number | null;
+  price: number | null;
+  fieldUse: string | null;
+  flags: string[];
+}
+
+export interface TrainerPokemon {
+  species: string;
+  level: number;
+  moves: string[];
+  // index into the species' Abilities+HiddenAbilities list (PBS AbilityIndex) - resolved to
+  // a display name at render time, since it depends on the species' ability list.
+  abilityIndex: number | null;
+  item: string | null;
+  gender: string | null;
+  shiny: boolean;
+  shadow: boolean;
+  nature: string | null;
+}
+
+export interface Trainer {
+  id: string; // "TRAINERTYPE-Name-optionalId"
+  trainerType: string;
+  trainerTypeName: TranslatedText;
+  name: string;
+  loseText: string | null;
+  party: TrainerPokemon[];
+}
+
+export interface EncounterSlot {
+  chance: number;
+  species: string;
+  minLevel: number;
+  maxLevel: number;
+}
+
+export interface EncounterTable {
+  method: string; // LandMorning, OldRod, ...
+  slots: EncounterSlot[];
+}
+
+export interface EncounterLocation {
+  mapId: string;
+  locationName: string;
+  tables: EncounterTable[];
+}
+
+export interface EncounterRef {
+  mapId: string;
+  locationName: string;
+  method: string;
+  minLevel: number;
+  maxLevel: number;
+}

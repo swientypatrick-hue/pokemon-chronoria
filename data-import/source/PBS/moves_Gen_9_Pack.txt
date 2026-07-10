@@ -1,0 +1,1129 @@
+﻿# See the documentation on the wiki to learn how to edit this file.
+#-------------------------------
+[DIRECLAW]
+Name = Unheilsklauen
+Type = POISON
+Category = Physical
+Power = 80
+Accuracy = 100
+TotalPP = 15
+Target = NearOther
+FunctionCode = PoisonParalyzeOrSleepTarget
+Flags = Contact,CanProtect,CanMirrorMove
+EffectChance = 50
+Description = Hat eine Chance von 50 %, Gegner zu vergiften, paralysieren oder in Schlaf zu versetzen.
+#-------------------------------
+[SPRINGTIDESTORM]
+Name = Frühlingsorkan
+Type = FAIRY
+Category = Special
+Power = 100
+Accuracy = 80
+TotalPP = 5
+Target = AllNearFoes
+FunctionCode = LowerTargetAttack1
+Flags = Wind,CanProtect,CanMirrorMove,CannotMetronome
+EffectChance = 30
+Description = Greift alle Gegner an und senkt ihren Angriff mit einer Chance von 30 % um eine Stufe.
+#-------------------------------
+[RAGINGFURY]
+Name = Flammenwut
+Type = FIRE
+Category = Physical
+Power = 120
+Accuracy = 100
+TotalPP = 10
+Target = RandomNearFoe
+FunctionCode = MultiTurnAttackConfuseUserAtEnd
+Flags = CanProtect,CanMirrorMove,CannotMetronome
+Description = Die Attacke dauert 2-3 Runden an. Danach wird der Anwender verwirrt.
+#-------------------------------
+[WAVECRASH]
+Name = Wellentackle
+Type = WATER
+Category = Physical
+Power = 120
+Accuracy = 100
+TotalPP = 10
+Target = NearOther
+FunctionCode = RecoilThirdOfDamageDealt
+Flags = Contact,CanProtect,CanMirrorMove
+EffectChance = 100
+Description = Der Anwender erleidet 33 % des angerichteten Schadens als Rückstoßschaden.
+#-------------------------------
+[CHLOROBLAST]
+Name = Chlorostrahl
+Type = GRASS
+Category = Special
+Power = 150
+Accuracy = 95
+TotalPP = 5
+Target = NearOther
+FunctionCode = RecoilHalfOfTotalHP
+Flags = CanProtect,CanMirrorMove
+Description = Der Anwender verliert bei Einsatz der Attacke 50 % seiner maximalen KP. 
+#-------------------------------
+[MOUNTAINGALE]
+Name = Frostfallwind
+Type = ICE
+Category = Physical
+Power = 100
+Accuracy = 85
+TotalPP = 10
+Target = NearOther
+FunctionCode = FlinchTarget
+Flags = CanProtect,CanMirrorMove
+EffectChance = 30
+Description = Fügt dem Gegner Schaden zu und hat eine Chance von 30 %, ihn zurückschrecken zu lassen.
+#-------------------------------
+[HEADLONGRUSH]
+Name = Schmetterramme
+Type = GROUND
+Category = Physical
+Power = 120
+Accuracy = 100
+TotalPP = 5
+Target = NearOther
+FunctionCode = LowerUserDefSpDef1
+Flags = Contact,Punching,CanProtect,CanMirrorMove
+Description = Senkt die Verteidigung und die Spezial-Verteidigung des Anwenders um eine Stufe. 
+#-------------------------------
+[BARBBARRAGE]
+Name = Giftstachelregen
+Type = POISON
+Category = Physical
+Power = 60
+Accuracy = 100
+TotalPP = 10
+Target = NearOther
+FunctionCode = DoublePowerIfTargetPoisonedPoisonTarget
+Flags = CanProtect,CanMirrorMove
+EffectChance = 50
+Description = Chance von 50 % Gegner zu vergiften. Doppelter Schaden falls Gegner bereits vergiftet ist.
+#-------------------------------
+[ESPERWING]
+Name = Auraschwingen
+Type = PSYCHIC
+Category = Special
+Power = 80
+Accuracy = 100
+TotalPP = 10
+Target = NearOther
+FunctionCode = RaiseUserSpeed1
+Flags = CanProtect,CanMirrorMove,HighCriticalHitRate
+EffectChance = 100
+Description = Erhöht zudem die Initiative des Anwenders um eine Stufe. Hohe Volltrefferquote.
+#-------------------------------
+[BITTERMALICE]
+Name = Niedertracht
+Type = GHOST
+Category = Special
+Power = 75
+Accuracy = 100
+TotalPP = 10
+Target = NearOther
+FunctionCode = LowerTargetAttack1
+Flags = CanProtect,CanMirrorMove
+EffectChance = 100
+Description = Fügt dem Gegner Schaden zu und senkt dessen Angriff um eine Stufe.
+#-------------------------------
+[TRIPLEARROWS]
+Name = Drillingspfeile
+Type = FIGHTING
+Category = Physical
+Power = 90
+Accuracy = 100
+TotalPP = 10
+Target = NearOther
+FunctionCode = LowerTargetDefense1FlinchTarget
+Flags = CanProtect,CanMirrorMove,HighCriticalHitRate
+EffectChance = 100
+Description = Fügt dem Gegner Schaden zu und senkt dessen Verteidigung mit einer Chance von 50 % um eine Stufe.
+#-------------------------------
+[BLEAKWINDSTORM]
+Name = Polarorkan
+Type = FLYING
+Category = Special
+Power = 100
+Accuracy = 80
+TotalPP = 10
+Target = AllNearFoes
+FunctionCode = LowerTargetSpeed1AlwaysHitsInRain
+Flags = CanProtect,CanMirrorMove,Wind
+EffectChance = 30
+Description = Fügt dem Gegner Schaden zu und hat eine Chance von 30 %, seine Initiative zu senken.
+#-------------------------------
+[WILDBOLTSTORM]
+Name = Donnerorkan
+Type = ELECTRIC
+Category = Special
+Power = 100
+Accuracy = 80
+TotalPP = 10
+Target = AllNearFoes
+FunctionCode = ParalyzeTargetAlwaysHitsInRain
+Flags = CanProtect,CanMirrorMove,Wind
+EffectChance = 20
+Description = Fügt dem Gegner Schaden zu und hat eine Chance von 20 %, ihn zu paralysieren.
+#-------------------------------
+[SANDSEARSTORM]
+Name = Wüstenorkan
+Type = GROUND
+Category = Special
+Power = 100
+Accuracy = 80
+TotalPP = 10
+Target = AllNearFoes
+FunctionCode = BurnTargetAlwaysHitsInRain
+Flags = CanProtect,CanMirrorMove,Wind
+EffectChance = 20
+Description = Fügt dem Gegner Schaden zu und hat eine Chance von 20 %, ihn zu verbrennen.
+#-------------------------------
+[LUNARBLESSING]
+Name = Lunargebet
+Type = PSYCHIC
+Category = Status
+Accuracy = 0
+TotalPP = 5
+Target = UserAndAllies
+FunctionCode = HealUserAndAlliesQuarterOfTotalHPCureStatus
+Description = Stellt 25% bei sich und Mitstreitern wieder her und heilt Statusprobleme.
+#-------------------------------
+[PSYSHIELDBASH]
+Name = Barrierenstoß
+Type = PSYCHIC
+Category = Physical
+Power = 70
+Accuracy = 90
+TotalPP = 10
+Target = NearOther
+FunctionCode = RaiseUserDefense1
+Flags = Contact,CanProtect,CanMirrorMove
+EffectChance = 100
+Description = Fügt dem Gegner Schaden zu und erhöht die Verteidigung des Anwenders um 1 Stufe.
+#-------------------------------
+[POWERSHIFT]
+Name = Kraftwechsel
+Type = NORMAL
+Category = Status
+Accuracy = 0
+TotalPP = 10
+Target = User
+FunctionCode = UserSwapBaseAtkDef
+Flags = CannotMetronome
+Description = Der Anwender tauscht für 5 Runden seine offensiven und defensiven Werte.
+#-------------------------------
+[STONEAXE]
+Name = Felsaxt
+Type = ROCK
+Category = Physical
+Power = 65
+Accuracy = 90
+TotalPP = 15
+Target = NearOther
+FunctionCode = SplintersTargetGen8AddStealthRocksGen9
+Flags = Contact,CanProtect,CanMirrorMove,Slicing
+EffectChance = 100
+Description = Fügt dem Gegner Schaden zu, zudem legt der Anwender Tarnsteine aus.
+#-------------------------------
+[MYSTICALPOWER]
+Name = Mythenkraft
+Type = PSYCHIC
+Category = Special
+Power = 70
+Accuracy = 90
+TotalPP = 10
+Target = NearOther
+FunctionCode = RaiseUserSpAtk1
+Flags = CanProtect,CanMirrorMove
+EffectChance = 100
+Description = Fügt dem Gegner Schaden zu und erhöht den Spezial-Angriff um eine Stufe.
+#-------------------------------
+[VICTORYDANCE]
+Name = Siegestanz
+Type = FIGHTING
+Category = Status
+Accuracy = 0
+TotalPP = 10
+Target = User
+FunctionCode = RaiseUserAtkDefSpd1
+Flags = Dance
+Description = Erhöht den Angriff, die Verteidigung und die Initiative des Anwenders um jeweils eine Stufe.
+#-------------------------------
+[SHELTER]
+Name = Refugium
+Type = STEEL
+Category = Status
+Accuracy = 0
+TotalPP = 10
+Target = User
+FunctionCode = RaiseUserDefense2
+Description = Erhöht die Verteidigung des Anwenders um 2 Stufen.
+#-------------------------------
+[INFERNALPARADE]
+Name = Phantomparade
+Type = GHOST
+Category = Special
+Power = 60
+Accuracy = 100
+TotalPP = 15
+Target = NearOther
+FunctionCode = DoublePowerIfTargetStatusProblemBurnTarget
+Flags = CanProtect,CanMirrorMove
+EffectChance = 30
+Description = 30% Chance den Gegner zu verwirren. Doppelter Schaden, falls der Gegner ein Statusproblem hat.
+#-------------------------------
+[CEASELESSEDGE]
+Name = Klingenschwall
+Type = DARK
+Category = Physical
+Power = 65
+Accuracy = 90
+TotalPP = 15
+Target = NearOther
+FunctionCode = SplintersTargetGen8AddSpikesGen9
+Flags = Contact,CanProtect,CanMirrorMove,Slicing
+EffectChance = 100
+Description = Fügt dem Gegner Schaden zu und legt Stacheln aus.
+#-------------------------------
+[TAKEHEART]
+Name = Mutschub
+Type = PSYCHIC
+Category = Status
+Accuracy = 0
+TotalPP = 10
+Target = User
+FunctionCode = RaiseUserSpAtkSpDef1CureStatus
+Description = Erhöht den Sp.-Ang. und die Sp.-Vert. um eine Stufe und heilt Statusveränderungen.
+#-------------------------------
+[AQUACUTTER]
+Name = Aquaschnitt
+Type = WATER
+Category = Physical
+Power = 70
+Accuracy = 100
+TotalPP = 20
+Target = NearOther
+FunctionCode = None
+Flags = CanProtect,CanMirrorMove,Slicing,HighCriticalHitRate
+Description = Schädigt den Gegner und hat eine um eine Stufe erhöhte Volltrefferquote.
+#-------------------------------
+[AQUASTEP]
+Name = Wogentanz
+Type = WATER
+Category = Physical
+Power = 80
+Accuracy = 100
+TotalPP = 10
+Target = NearOther
+FunctionCode = RaiseUserSpeed1
+Flags = Dance,Contact,CanProtect,CanMirrorMove
+EffectChance = 100
+Description = Greift den Gegner an und erhöht die Initiative des Anwenders um 1 Stufe.
+#-------------------------------
+[ARMORCANNON]
+Name = Rüstungskanone
+Type = FIRE
+Category = Special
+Power = 120
+Accuracy = 100
+TotalPP = 5
+Target = NearOther
+FunctionCode = LowerUserDefSpDef1
+Flags = CanProtect,CanMirrorMove,CannotMetronome
+EffectChance = 100
+Description = Greift den Gegner an, dabei sinken Verteidigung und Spezial-Verteidigung um je eine Stufe.
+#-------------------------------
+[AXEKICK]
+Name = Fersenkick
+Type = FIGHTING
+Category = Physical
+Power = 120
+Accuracy = 90
+TotalPP = 10
+Target = NearOther
+FunctionCode = CrashDamageIfFailsConfuseTarget
+Flags = Contact,CanProtect,CanMirrorMove
+EffectChance = 30
+Description = Angriff hat eine Chance von 30 %, diesen zu verwirren. 50% der LP als Rückstoß bei Fehlschlag.
+#-------------------------------
+[BITTERBLADE]
+Name = Reueschwert
+Type = FIRE
+Category = Physical
+Power = 90
+Accuracy = 100
+TotalPP = 10
+Target = NearOther
+FunctionCode = HealUserByHalfOfDamageDone
+Flags = Contact,CanProtect,Slicing,CanMirrorMove
+Description = Schadet dem Ziel und füllt die KP des Anwenders um 50 % des verursachten Schadens auf.
+#-------------------------------
+[BLAZINGTORQUE]
+Name = Hitzeturbo
+Type = FIRE
+Category = Physical
+Power = 80
+Accuracy = 100
+TotalPP = 10
+Target = NearOther
+FunctionCode = StarmobileBurnTarget
+Flags = CanProtect,CannotMetronome
+EffectChance = 30
+Description = Greift den Gegner an und hat eine Chance von 30 %, diesen zu verbrennen.
+#-------------------------------
+[CHILLINGWATER]
+Name = Kalte Dusche
+Type = WATER
+Category = Special
+Power = 50
+Accuracy = 100
+TotalPP = 20
+Target = NearOther
+FunctionCode = LowerTargetAttack1
+Flags = CanProtect,CanMirrorMove,CannotMetronome
+EffectChance = 100
+Description = Greift den Gegner an und senkt dessen Angriff um eine Stufe.
+#-------------------------------
+[CHILLYRECEPTION]
+Name = Eisige Stimmung
+Type = ICE
+Category = Status
+Accuracy = 0
+TotalPP = 10
+Target = BothSides
+FunctionCode = SwitchOutUserStartHailWeather
+Flags = CannotMetronome
+Description = Anwender wechselt sich aus und erzeugt einen Schneesturm über 5 Runden.
+#-------------------------------
+[COLLISIONCOURSE]
+Name = Kollisionskurs
+Type = FIGHTING
+Category = Physical
+Power = 100
+Accuracy = 100
+TotalPP = 5
+Target = NearOther
+FunctionCode = IncreasePowerSuperEffective
+Flags = Contact,CanProtect,CanMirrorMove,CannotMetronome
+Description = Bei einem sehr effektiven Treffer wird die Attacke nochmal stärker.
+#-------------------------------
+[COMBATTORQUE]
+Name = Raufturbo
+Type = FIGHTING
+Category = Physical
+Power = 100
+Accuracy = 100
+TotalPP = 10
+Target = NearOther
+FunctionCode = StarmobileParalyzeTarget
+Flags = CanProtect,CannotMetronome
+EffectChance = 30
+Description = Greift den Gegner an und hat eine Chance von 30 %, diesen zu paralysieren.
+#-------------------------------
+[COMEUPPANCE]
+Name = Vendetta
+Type = DARK
+Category = Physical
+Power = 1
+Accuracy = 100
+TotalPP = 10
+Target = None
+FunctionCode = CounterDamagePlusHalf
+Flags = Contact,CanProtect,CanMirrorMove,CannotMetronome
+Description = Attacke schlägt fehl, wenn der Anwender zuerst angreift. Richtet 1,5-Fache des erlittenen Schadens an.
+#-------------------------------
+[DOODLE]
+Name = Abpausen
+Type = NORMAL
+Category = Status
+Accuracy = 100
+TotalPP = 10
+Target = NearFoe
+FunctionCode = SetUserAlliesAbilityToTargetAbility
+Flags = CannotMetronome
+Description = Alle Mitstreiter und der Anwender erhalten die Fähigkeit des Ziels.
+#-------------------------------
+[DOUBLESHOCK]
+Name = Zweifachladung
+Type = ELECTRIC
+Category = Physical
+Power = 120
+Accuracy = 100
+TotalPP = 5
+Target = NearOther
+FunctionCode = UserLosesElectricType
+Flags = Contact,CanProtect,CanMirrorMove,CannotMetronome
+Description = Anwender verliert den Typ Elektro, außer es trägt die Blitztafel oder besitzt die Fähigkeit Variabilität.
+#-------------------------------
+[ELECTRODRIFT]
+Name = Blitztour
+Type = ELECTRIC
+Category = Special
+Power = 100
+Accuracy = 100
+TotalPP = 5
+Target = NearOther
+FunctionCode = IncreasePowerSuperEffective
+Flags = Contact,CanProtect,CanMirrorMove,CannotMetronome
+Description = Bei einem sehr effektiven Treffer wird die Attacke nochmal stärker.
+#-------------------------------
+[FILLETAWAY]
+Name = Abspaltung
+Type = NORMAL
+Category = Status
+Accuracy = 0
+TotalPP = 10
+Target = NearOther
+FunctionCode = RaiseUserAtkSpAtkSpeed2LoseHalfOfTotalHP
+Flags = CannotMetronome
+Description = Anwender erhöht Ang., Sp. Ang. und Init. um jeweils 2 Stufen im Tausch für LP.
+#-------------------------------
+[FLOWERTRICK]
+Name = Blumentrick
+Type = GRASS
+Category = Physical
+Power = 70
+Accuracy = 0
+TotalPP = 10
+Target = NearOther
+FunctionCode = AlwaysCriticalHit
+Flags = CanProtect,CanMirrorMove
+Description = Fügt dem Gegner Schaden zu, trifft dabei immer als Volltreffer und verfehlt nie.
+#-------------------------------
+[GIGATONHAMMER]
+Name = Riesenhammer
+Type = STEEL
+Category = Physical
+Power = 160
+Accuracy = 100
+TotalPP = 5
+Target = NearOther
+FunctionCode = CantSelectConsecutiveTurns
+Flags = CanProtect,CanMirrorMove
+Description = Schädigt den Gegner. Diese Attacke kann nicht zweimal hintereinander eingesetzt werden.
+#-------------------------------
+[GLAIVERUSH]
+Name = Großklingenstoß
+Type = DRAGON
+Category = Physical
+Power = 120
+Accuracy = 100
+TotalPP = 5
+Target = NearOther
+FunctionCode = UserVulnerableUntilNextAction
+Flags = Contact,CanProtect,CanMirrorMove
+Description = Gegnerische Attacken richten in dieser Runde doppelten Schaden an und treffen garantiert.
+#-------------------------------
+[HYPERDRILL]
+Name = Hyperbohrer
+Type = NORMAL
+Category = Physical
+Power = 100
+Accuracy = 100
+TotalPP = 5
+Target = NearOther
+FunctionCode = None
+Flags = Contact,CanMirrorMove,CannotMetronome
+Description = Greift den Gegner an und umgeht Schild-Attacken, aber hebt deren Effekt nicht auf.
+#-------------------------------
+[ICESPINNER]
+Name = Eiskreisel
+Type = ICE
+Category = Physical
+Power = 80
+Accuracy = 100
+TotalPP = 15
+Target = NearOther
+FunctionCode = RemoveTerrainIceSpinner
+Flags = Contact,CanProtect,CanMirrorMove
+Description = Der Anwender greift den Gegner an und zerstört Feldeffekte.
+#-------------------------------
+[JETPUNCH]
+Name = Düsenhieb
+Type = WATER
+Category = Physical
+Power = 60
+Accuracy = 100
+TotalPP = 15
+Target = NearOther
+Priority = 1
+FunctionCode = None
+Flags = Contact,CanProtect,CanMirrorMove,CannotMetronome,Punching
+Description = Verursacht Schaden und besitzt eine erhöhte Priorität von +1.
+#-------------------------------
+[KOWTOWCLEAVE]
+Name = Kniefallspalter
+Type = DARK
+Category = Physical
+Power = 85
+Accuracy = 0
+TotalPP = 10
+Target = NearOther
+FunctionCode = None
+Flags = Slicing,Contact,CanProtect,CanMirrorMove
+Description = Fügt dem Gegner Schaden zu und trifft garantiert.
+#-------------------------------
+[LASTRESPECTS]
+Name = Letzte Ehre
+Type = GHOST
+Category = Physical
+Power = 50
+Accuracy = 100
+TotalPP = 10
+Target = NearOther
+FunctionCode = IncreasePowerEachFaintedAlly
+Flags = CanProtect,CanMirrorMove
+Description = Der Schaden steigt mit jedem besiegten Mitstreiter.
+#-------------------------------
+[LUMINACRASH]
+Name = Lichteinschlag
+Type = PSYCHIC
+Category = Special
+Power = 80
+Accuracy = 100
+TotalPP = 10
+Target = NearOther
+FunctionCode = LowerTargetSpDef2
+Flags = CanProtect,CanMirrorMove
+EffectChance = 100
+Description = Der Anwender greift an und senkt die Spezial-Verteidigung des Zieles um zwei Stufen.
+#-------------------------------
+[MAGICALTORQUE]
+Name = Zauberturbo
+Type = FAIRY
+Category = Physical
+Power = 100
+Accuracy = 100
+TotalPP = 10
+Target = NearOther
+FunctionCode = StarmobileConfuseTarget
+Flags = CanProtect,CannotMetronome
+EffectChance = 30
+Description = Greift den Gegner an und hat eine Chance von 30 %, diesen zu verwirren.
+#-------------------------------
+[MAKEITRAIN]
+Name = Goldrausch
+Type = STEEL
+Category = Special
+Power = 120
+Accuracy = 100
+TotalPP = 5
+Target = AllNearFoes
+FunctionCode = AddMoneyGainedFromBattleLowerUserSpAtk1
+Flags = CanProtect,CanMirrorMove,CannotMetronome
+Description = Der gegnerische Sp. Ang. wird gesenkt. Am Ende des Kampfes erhält der Spieler Geld.
+#-------------------------------
+[MORTALSPIN]
+Name = Letalwirbler
+Type = POISON
+Category = Physical
+Power = 30
+Accuracy = 100
+TotalPP = 15
+Target = AllNearFoes
+FunctionCode = RemoveUserBindingAndEntryHazardsPoisonTarget
+Flags = Contact,CanProtect,CanMirrorMove
+EffectChance = 100
+Description = Entfernt Effekte, wie Wickel und Stachler. Vergiftet zusätzlich den Gegner.
+#-------------------------------
+[NOXIOUSTORQUE]
+Name = Toxiturbo
+Type = POISON
+Category = Physical
+Power = 100
+Accuracy = 100
+TotalPP = 10
+Target = NearOther
+FunctionCode = StarmobilePoisonTarget
+Flags = CanProtect,CannotMetronome
+EffectChance = 30
+Description = Greift den Gegner an und hat eine Chance von 30 %, diesen zu vergiften.
+#-------------------------------
+[ORDERUP]
+Name = Auftischen
+Type = DRAGON
+Category = Physical
+Power = 80
+Accuracy = 100
+TotalPP = 10
+Target = NearOther
+FunctionCode = RaiseUserStat1Commander
+Flags = CanProtect,CannotMetronome
+EffectChance = 100
+Description = Trägt der Anwender ein Nigiragi im Maul, erhöht sich ein Statuswert abhängig von der Form.
+#-------------------------------
+[POPULATIONBOMB]
+Name = Mäuseplage
+Type = NORMAL
+Category = Physical
+Power = 20
+Accuracy = 90
+TotalPP = 10
+Target = NearOther
+FunctionCode = HitTenTimes
+Flags = Contact,CanProtect,CanMirrorMove,CannotMetronome,Slicing
+Description = Die Attacke trifft 1-10 Mal. Attacke wird auch beendet, sobald sie daneben geht.
+#-------------------------------
+[POUNCE]
+Name = Anspringen
+Type = BUG
+Category = Physical
+Power = 50
+Accuracy = 100
+TotalPP = 20
+Target = NearOther
+FunctionCode = LowerTargetSpeed1
+Flags = Contact,CanProtect,CanMirrorMove,CannotMetronome
+EffectChance = 100
+Description = Greift den Gegner an und senkt dessen Initiative um eine Stufe.
+#-------------------------------
+[RAGEFIST]
+Name = Zornesfaust
+Type = GHOST
+Category = Physical
+Power = 50
+Accuracy = 100
+TotalPP = 10
+Target = NearOther
+FunctionCode = IncreasePowerEachTimeHit
+Flags = Contact,CanProtect,CanMirrorMove,CannotMetronome,Punching
+Description = Schaden steigt mit jedem Treffer durch diese Attacke.
+#-------------------------------
+[RAGINGBULL]
+Name = Rasender Stier
+Type = NORMAL
+Category = Physical
+Power = 90
+Accuracy = 100
+TotalPP = 10
+Target = NearOther
+FunctionCode = TypeIsUserSecondTypeRemoveScreens
+Flags = Contact,CanProtect,CanMirrorMove,CannotMetronome
+Description = Entfernt die Effekte von Reflektor, Lichtschild und Auroraschleier. Typ hängt von der Form ab.
+#-------------------------------
+[REVIVALBLESSING]
+Name = Vitalsegen
+Type = NORMAL
+Category = Status
+Accuracy = 0
+TotalPP = 1
+Target = User
+FunctionCode = RevivePokemonHalfHP
+Flags = CannotMetronome
+Description = Belebt ein besiegtes Pokémon mit 50% der LP wieder. AP sind stets bei 1.
+#-------------------------------
+[RUINATION]
+Name = Verderben
+Type = DARK
+Category = Special
+Power = 1
+Accuracy = 90
+TotalPP = 10
+Target = NearOther
+FunctionCode = FixedDamageHalfTargetHP
+Flags = CanProtect,CanMirrorMove,CannotMetronome
+Description = Greift den Gegner an und halbiert seine KP.
+#-------------------------------
+[SALTCURE]
+Name = Pökelsalz
+Type = ROCK
+Category = Physical
+Power = 40
+Accuracy = 100
+TotalPP = 15
+Target = NearOther
+FunctionCode = StartSaltCureTarget
+Flags = CanProtect,CanMirrorMove,CannotMetronome
+EffectChance = 100
+Description = Gegner erhält jede Runde Schaden. Wasser und Stahl sind besonders betroffen.
+#-------------------------------
+[SHEDTAIL]
+Name = Schwanzabwurf
+Type = NORMAL
+Category = Status
+Accuracy = 0
+TotalPP = 10
+Target = User
+FunctionCode = UserMakeSubstituteSwitchOut
+Flags = CannotMetronome
+Description = Anwender erstellt einen Delegator und wechselt mit einem Teammitglied.
+#-------------------------------
+[SILKTRAP]
+Name = Fadenfalle
+Type = BUG
+Category = Status
+Accuracy = 0
+TotalPP = 10
+Target = User
+Priority = 4
+FunctionCode = ProtectUserFromDamagingMovesSilkTrap
+Flags = CannotMetronome
+Description = Anwender schützt sich selbst, Initiative des Gegners wird bei Berührung gesenkt.
+#-------------------------------
+[SNOWSCAPE]
+Name = Schneelandschaft
+Type = ICE
+Category = Status
+Accuracy = 0
+TotalPP = 10
+Target = BothSides
+FunctionCode = StartHailWeather
+Flags = CannotMetronome
+Description = Lässt 5 Runden lang einen Schneesturm aufziehen.
+#-------------------------------
+[SPICYEXTRACT]
+Name = Chili-Essenz
+Type = GRASS
+Category = Status
+Accuracy = 0
+TotalPP = 15
+Target = NearOther
+FunctionCode = RaiseTargetAtkLowerTargetDef2
+Flags = CanProtect,CanMirrorMove,CannotMetronome
+Description = Erhöht den Angriff des Gegners um 2 Stufen, senkt aber auch die Vert. um 2 Stufen.
+#-------------------------------
+[SPINOUT]
+Name = Reifendrehung
+Type = STEEL
+Category = Physical
+Power = 100
+Accuracy = 100
+TotalPP = 5
+Target = NearOther
+FunctionCode = LowerUserSpeed2
+Flags = Contact,CanProtect,CanMirrorMove
+Description = Fügt dem Gegner Schaden zu und senkt die Initiative des Anwenders um 2 Stufen.
+#-------------------------------
+[TIDYUP]
+Name = Aufräumen
+Type = NORMAL
+Category = Status
+Accuracy = 0
+TotalPP = 10
+Target = User
+FunctionCode = RaiseUserAtkSpd1RemoveHazardsSubstitutes
+Flags = CannotMetronome
+EffectChance = 100
+Description = Effekte, wie Stachler, werden entfernt sowie die Initiative und Angriff erhöht.
+#-------------------------------
+[TORCHSONG]
+Name = Loderlied
+Type = FIRE
+Category = Special
+Power = 80
+Accuracy = 100
+TotalPP = 10
+Target = NearOther
+FunctionCode = RaiseUserSpAtk1
+Flags = Sound,CanProtect,CanMirrorMove
+EffectChance = 100
+Description = Greift den Gegner an und erhöht den Spezial-Angriff des Anwenders um 1 Stufe.
+#-------------------------------
+[TRAILBLAZE]
+Name = Wegbereiter
+Type = GRASS
+Category = Physical
+Power = 50
+Accuracy = 100
+TotalPP = 20
+Target = NearOther
+FunctionCode = RaiseUserSpeed1
+Flags = Contact,CanProtect,CanMirrorMove,CannotMetronome
+EffectChance = 100
+Description = Greift den Gegner an und erhöht die Initiative des Anwenders um eine Stufe.
+#-------------------------------
+[TRIPLEDIVE]
+Name = Tauchtriade
+Type = WATER
+Category = Physical
+Power = 30
+Accuracy = 95
+TotalPP = 10
+Target = NearOther
+FunctionCode = HitThreeTimes
+Flags = Contact,CanProtect,CanMirrorMove
+Description = Fügt dem Gegner dreimal Schaden zu.
+#-------------------------------
+[TWINBEAM]
+Name = Doppelstrahl
+Type = PSYCHIC
+Category = Special
+Power = 40
+Accuracy = 100
+TotalPP = 10
+Target = NearOther
+FunctionCode = HitTwoTimes
+Flags = CanProtect,CanMirrorMove,CannotMetronome
+Description = Die Attacke fügt zweimal hintereinander Schaden zu.
+#-------------------------------
+[WICKEDTORQUE]
+Name = Finsterturbo
+Type = DARK
+Category = Physical
+Power = 80
+Accuracy = 100
+TotalPP = 10
+Target = NearOther
+FunctionCode = StarmobileSleepTarget
+Flags = CanProtect,CannotMetronome
+EffectChance = 10
+Description = Greift den Gegner an und hat eine Chance von 10 %, diesen in Schlaf zu versetzen.
+#-------------------------------
+[HYDROSTEAM]
+Name = Hydrodampf
+Type = WATER
+Category = Special
+Power = 80
+Accuracy = 100
+TotalPP = 15
+Target = NearOther
+FunctionCode = IncreasePowerInSunWeather
+Flags = CanProtect,CanMirrorMove
+Description = Die Attacke wird durch starkes Sonnenlicht geboostet.
+#-------------------------------
+[PSYBLADE]
+Name = Psychoschneide
+Type = PSYCHIC
+Category = Physical
+Power = 80
+Accuracy = 100
+TotalPP = 15
+Target = NearOther
+FunctionCode = IncreasePowerInElectricTerrain
+Flags = Contact,CanProtect,CanMirrorMove,Slicing
+Description = Wenn ein Elektrofeld aktiv ist, fügt die Attacke 50 % mehr Schaden zu.
+#-------------------------------
+[BLOODMOON]
+Name = Blutmond
+Type = NORMAL
+Category = Special
+Power = 140
+Accuracy = 100
+TotalPP = 5
+Target = NearOther
+FunctionCode = CantSelectConsecutiveTurns
+Flags = CanProtect,CanMirrorMove
+Description = Diese Attacke kann nicht zweimal in Folge eingesetzt werden.
+#-------------------------------
+[MATCHAGOTCHA]
+Name = Quirlschuss
+Type = GRASS
+Category = Special
+Power = 80
+Accuracy = 90
+TotalPP = 15
+Target = AllNearFoes
+FunctionCode = HealUserByHalfOfDamageDoneBurnTarget
+Flags = CanProtect,CanMirrorMove,ThawsUser
+EffectChance = 20
+Description = Die Hälfte des angerichteten Schadens werden regeneriert und lässt Gegner evtl. zurückschrecken.
+#-------------------------------
+[SYRUPBOMB]
+Name = Sirupbombe
+Type = GRASS
+Category = Special
+Power = 60
+Accuracy = 85
+TotalPP = 10
+Target = NearOther
+FunctionCode = LowerTargetSpeedOverTime
+Flags = CanProtect,CanMirrorMove,Bomb
+EffectChance = 100
+Description = Zusätzlich wird die Initiative des Gegners in den nächsten 3 Runden in Folge gesenkt.
+#-------------------------------
+[IVYCUDGEL]
+Name = Rankenkeule
+Type = GRASS
+Category = Physical
+Power = 100
+Accuracy = 100
+TotalPP = 10
+Target = NearOther
+FunctionCode = TypeIsUserSecondType
+Flags = CanProtect,CanMirrorMove,HighCriticalHitRate
+Description = Hohe Volltrefferquote. Typ hängt von der Maske des Pokémon ab.
+#-------------------------------
+[ELECTROSHOT]
+Name = Stromstrahl
+Type = ELECTRIC
+Category = Special
+Power = 130
+Accuracy = 100
+TotalPP = 10
+Target = NearOther
+FunctionCode = TwoTurnAttackOneTurnInRainRaiseUserSpAtk1
+Flags = CanProtect,CanMirrorMove
+EffectChance = 100
+Description = Eine Attacke über 2 Runden, bei Regen kann das Pokémon sofort angreifen.
+#-------------------------------
+[TERASTARSTORM]
+Name = Tera-Sternhagel
+Type = NORMAL
+Category = Special
+Power = 120
+Accuracy = 100
+TotalPP = 5
+Target = NearOther
+FunctionCode = TerapagosCategoryDependsOnHigherDamage
+Flags = CanProtect,CanMirrorMove,CannotMetronome
+Description = Diese Attacke hat keine weiteren Effekte.
+#-------------------------------
+[FICKLEBEAM]
+Name = Launenlaser
+Type = DRAGON
+Category = Special
+Power = 80
+Accuracy = 100
+TotalPP = 5
+Target = NearOther
+FunctionCode = RandomlyDealsDoubleDamage
+Flags = CanProtect,CanMirrorMove
+Description = 30% Chance, dass die Attacke doppelten Schaden verursacht.
+#-------------------------------
+[BURNINGBULWARK]
+Name = Flammenschild
+Type = FIRE
+Category = Status
+Accuracy = 0
+TotalPP = 10
+Target = User
+Priority = 4
+FunctionCode = ProtectUserBurningBulwark
+Description = Schützt vor Attacken und verbrennt Gegner bei Berührung.
+#-------------------------------
+[THUNDERCLAP]
+Name = Sturmblitz
+Type = ELECTRIC
+Category = Special
+Power = 70
+Accuracy = 100
+TotalPP = 5
+Target = NearOther
+Priority = 1
+FunctionCode = FailsIfTargetActed
+Flags = CanProtect,CanMirrorMove
+Description = Sie gelingt nur, wenn der Gegner gerade eine Angriffsattacke vorbereitet, greift aber zuerst an.
+#-------------------------------
+[MIGHTYCLEAVE]
+Name = Wuchtklinge
+Type = ROCK
+Category = Physical
+Power = 95
+Accuracy = 100
+TotalPP = 5
+Target = NearOther
+FunctionCode = None
+Flags = Contact,CanMirrorMove,Slicing
+Description = Greift den Gegner an und umgeht Schutzschilde. 
+#-------------------------------
+[TACHYONCUTTER]
+Name = Tachyon-Schnitt
+Type = STEEL
+Category = Special
+Power = 50
+Accuracy = 0
+TotalPP = 10
+Target = NearOther
+FunctionCode = HitTwoTimes
+Flags = CanProtect,CanMirrorMove,Slicing
+Description = Tachyon-Schnitt verursacht Schaden, trifft zweimal in Folge und trifft garantiert. 
+#-------------------------------
+[HARDPRESS]
+Name = Stahlpresse
+Type = STEEL
+Category = Physical
+Power = 1
+Accuracy = 100
+TotalPP = 10
+Target = NearOther
+FunctionCode = PowerHigherWithTargetHP100PowerRange
+Flags = Contact,CanProtect,CanMirrorMove
+Description = Je höher die KP des Zieles, desto stärker die Attacke.
+#-------------------------------
+[DRAGONCHEER]
+Name = Drachenschrei
+Type = DRAGON
+Category = Status
+Accuracy = 0
+TotalPP = 15
+Target = AllAllies
+FunctionCode = RaiseAlliesCriticalHitRate1DragonTypes2
+Description = Erhöhte Volltrefferquote, besonders bei Drachen-Pokémon.
+#-------------------------------
+[ALLURINGVOICE]
+Name = Lockstimme
+Type = FAIRY
+Category = Special
+Power = 80
+Accuracy = 100
+TotalPP = 10
+Target = NearOther
+FunctionCode = ConfuseTargetIfTargetStatsRaisedThisTurn
+Flags = Sound,CanProtect,CanMirrorMove
+EffectChance = 100
+Description = Der Gegner wird zusätzlich verwirrt, wenn seine Werte diese Runde erhöht wurden.
+#-------------------------------
+[TEMPERFLARE]
+Name = Frustflamme
+Type = FIRE
+Category = Physical
+Power = 75
+Accuracy = 100
+TotalPP = 10
+Target = NearOther
+FunctionCode = DoublePowerIfUserLastMoveFailed
+Flags = Contact,CanProtect,CanMirrorMove
+Description = Wenn dir eigene, vorherige Attacke fehlgeschlagen ist, verdoppelt sich die Stärke dieser Attacke.
+#-------------------------------
+[SUPERCELLSLAM]
+Name = Donnerstoß
+Type = ELECTRIC
+Category = Physical
+Power = 100
+Accuracy = 95
+TotalPP = 15
+Target = NearOther
+FunctionCode = CrashDamageIfFails
+Flags = Contact,CanProtect,CanMirrorMove
+Description = Bei Misserfolg verletzt sich der Anwender selbst.
+#-------------------------------
+[PSYCHICNOISE]
+Name = Psycholärm
+Type = PSYCHIC
+Category = Special
+Power = 75
+Accuracy = 100
+TotalPP = 10
+Target = NearOther
+FunctionCode = DisableTargetHealingMoves2Turns
+Flags = Sound,CanProtect,CanMirrorMove
+EffectChance = 100
+Description = Der Gegner kann 2 Runden lang nicht heilen.
+#-------------------------------
+[UPPERHAND]
+Name = Schnellkonter
+Type = FIGHTING
+Category = Physical
+Power = 65
+Accuracy = 100
+TotalPP = 15
+Target = NearOther
+Priority = 3
+FunctionCode = FlinchTargetFailsIfTargetNotUsingPriorityMove
+Flags = Contact,CanProtect,CanMirrorMove
+EffectChance = 100
+Description = Greift zuerst an und lässt zurückschrecken, wenn der Gegner eine Attacke mit höherer Prio. einsetzt.
+#-------------------------------
+[MALIGNANTCHAIN]
+Name = Giftkettung
+Type = POISON
+Category = Special
+Power = 100
+Accuracy = 100
+TotalPP = 5
+Target = NearOther
+FunctionCode = BadPoisonTarget
+Flags = CanProtect,CanMirrorMove
+EffectChance = 50
+Description = Giftkettung schädigt das Ziel und kann es mit einer Chance von 50 % schwer vergiften.

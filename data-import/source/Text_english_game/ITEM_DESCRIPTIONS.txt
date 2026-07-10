@@ -1,0 +1,182 @@
+﻿# To localize this text for a particular language, please
+# translate every second line of this file.
+#-------------------------------
+[ITEM_DESCRIPTIONS]
+Damit lassen sich Magneton, Pikachu, Evoli, Nasgnet, Zapplalek und Akkup entwicklen.
+Damit lassen sich Magneton, Pikachu, Evoli, Nasgnet, Zapplalek und Akkup entwicklen.
+Damit lassen sich Krabbox und Evoli entwicklen.
+Damit lassen sich Krabbox und Evoli entwicklen.
+Damit lässt sich Knapfel entwicklen.
+Damit lässt sich Knapfel entwicklen.
+One of a variety of mysterious Mega Stones. Have Pokémon hold it, and it will be able to Mega Evolve.
+One of a variety of mysterious Mega Stones. Have Pokémon hold it, and it will be able to Mega Evolve.
+Besonders effektiv bei Käfer und Wasser Pokémon.
+Besonders effektiv bei Käfer und Wasser Pokémon.
+Besonders effektiv bei Psycho und Fee Pokémon.
+Besonders effektiv bei Psycho und Fee Pokémon.
+Besonders effektiv bei Feuer Pokémon.
+Besonders effektiv bei Feuer Pokémon.
+Besonders effektiv bei Elektro Pokémon.
+Besonders effektiv bei Elektro Pokémon.
+Damit kann Arceus garantiert gefangen werden.
+Damit kann Arceus garantiert gefangen werden.
+Ein Pokéball, mit dem man leichter schnelle Pokémon fangen kann.
+Ein Pokéball, mit dem man leichter schnelle Pokémon fangen kann.
+Ein Pokéball, mit dem man leichter langsame Pokémon fangen kann.
+Ein Pokéball, mit dem man leichter langsame Pokémon fangen kann.
+Kann mit Feuersäulen (Zusatzeffekte verdoppeln) oder Pflanzensäulen (Init. des Gegners senken) kombiniert werden.
+Kann mit Feuersäulen (Zusatzeffekte verdoppeln) oder Pflanzensäulen (Init. des Gegners senken) kombiniert werden.
+The user stirs up a violent petal blizzard and attacks everything around it.
+The user stirs up a violent petal blizzard and attacks everything around it.
+Nutze diese, um Felsen zu zertrümmern.
+Nutze diese, um Felsen zu zertrümmern.
+Damit kann man kleine Bäume fällen.
+Damit kann man kleine Bäume fällen.
+Damit können Felsen verrückt werden.
+Damit können Felsen verrückt werden.
+Damit kannst du über Wasser schwimmen.
+Damit kannst du über Wasser schwimmen.
+A flying cloud that can only be ridden by those with a pure heart.
+A flying cloud that can only be ridden by those with a pure heart.
+Locke Pokémon aus Bäumen hervor.
+Locke Pokémon aus Bäumen hervor.
+Erhellt dunkle Gebiete.
+Erhellt dunkle Gebiete.
+It is a Shovel, it can dig holes. Used to belong to a great knight.
+It is a Shovel, it can dig holes. Used to belong to a great knight.
+Erlaubt es dir unter Wasser zu atmen.
+Erlaubt es dir unter Wasser zu atmen.
+It allows you spread a sweet essence around you.
+It allows you spread a sweet essence around you.
+Zum letzten Pokécenter zurückkehren.
+Zum letzten Pokécenter zurückkehren.
+Einzigartige Ausrüstung, welche den Spieler Wasserfälle erklimmen lässt.
+Einzigartige Ausrüstung, welche den Spieler Wasserfälle erklimmen lässt.
+Einzigartige Paddel. Damit kannst du Strudel überwinden.
+Einzigartige Paddel. Damit kannst du Strudel überwinden.
+Damit kann man Felswände erklimmen.
+Damit kann man Felswände erklimmen.
+Damit zerberchen gefrorene Felsen mit Leichtigkeit.
+Damit zerberchen gefrorene Felsen mit Leichtigkeit.
+A magic fan that can push fog away..
+A magic fan that can push fog away..
+Please put some other info here.
+Please put some other info here.
+A wizard used to own this.
+A wizard used to own this.
+Eine einzigartige Belohnung.
+Eine einzigartige Belohnung.
+Tauscht das Wesen eines Pokémon.
+Tauscht das Wesen eines Pokémon.
+Es möglich, ein Sichlor damit zu entwickeln.
+Es möglich, ein Sichlor damit zu entwickeln.
+Ursaring kann sich nachts mit dem Torfblock entwickeln.
+Ursaring kann sich nachts mit dem Torfblock entwickeln.
+Damit können Alpollo, Kadabra, Georok und Maschok entwickelt werden.
+Damit können Alpollo, Kadabra, Georok und Maschok entwickelt werden.
+Wenn das Item von Dialga getragen wird, ändert das Pokémon seine Form.
+Wenn das Item von Dialga getragen wird, ändert das Pokémon seine Form.
+Von Arceus getragen sorgt das Item dafür, dass die Attacke Urteilskraft immer sehr effektiv ist.
+Von Arceus getragen sorgt das Item dafür, dass die Attacke Urteilskraft immer sehr effektiv ist.
+Verstärkt Normal-Attacken bei Arceus.
+Verstärkt Normal-Attacken bei Arceus.
+Frischt die Angriffspunkte eines Pokémon auf.
+Frischt die Angriffspunkte eines Pokémon auf.
+Gib das Item Giratina zum tragen, damit es seine Urform annimmt.
+Gib das Item Giratina zum tragen, damit es seine Urform annimmt.
+A mysterious ball that can be thrown at wild Pokémon in order to catch them.
+A mysterious ball that can be thrown at wild Pokémon in order to catch them.
+A mysterious ball that provides a higher success catch rate than a standard Poké Ball.
+A mysterious ball that provides a higher success catch rate than a standard Poké Ball.
+A mysterious ball that provides an even higher success catch rate than a Great Ball does.
+A mysterious ball that provides an even higher success catch rate than a Great Ball does.
+Erhöhte Fangrate bei hoch fliegenden Pokémon.
+Erhöhte Fangrate bei hoch fliegenden Pokémon.
+Eine verbesserte Version des Federballs mit einer höheren Fangrate.
+Eine verbesserte Version des Federballs mit einer höheren Fangrate.
+Die beste Version des Federballs mit einer noch höheren Fangrate als der Flügelball.
+Die beste Version des Federballs mit einer noch höheren Fangrate als der Flügelball.
+A ball that is too heavy to throw, but it is highly effective to an unsuspecting Pokémon.
+A ball that is too heavy to throw, but it is highly effective to an unsuspecting Pokémon.
+Eine verbesserte Version des Schwerballs mit einer höheren Fangrate.
+Eine verbesserte Version des Schwerballs mit einer höheren Fangrate.
+Die beste Version des Schwerballs mit einer noch höheren Fangrate als der Zentnerball.
+Die beste Version des Schwerballs mit einer noch höheren Fangrate als der Zentnerball.
+Damit kann Palkia, Dialga oder Giratina garantiert gefangen werden.
+Damit kann Palkia, Dialga oder Giratina garantiert gefangen werden.
+Dieser Ball besitzt die gleiche Fangrate wie der Pokéball.
+Dieser Ball besitzt die gleiche Fangrate wie der Pokéball.
+Damit kann Knarbon entwickelt werden.
+Damit kann Knarbon entwickelt werden.
+Damit kann Dakuma entwickelt werden (Unlicht / Kampf).
+Damit kann Dakuma entwickelt werden (Unlicht / Kampf).
+Damit kann Dakuma entwickelt werden (Kampf / Wasser).
+Damit kann Dakuma entwickelt werden (Kampf / Wasser).
+Wenn Caesurio dieses Item trägt und drei andere Caesurio besiegt, entwickelt es sich ab Level 52.
+Wenn Caesurio dieses Item trägt und drei andere Caesurio besiegt, entwickelt es sich ab Level 52.
+Das Tragen einer Energiekapsel löst die Fähigkeiten Paläosynthese bzw. Quantenantrieb aus.
+Das Tragen einer Energiekapsel löst die Fähigkeiten Paläosynthese bzw. Quantenantrieb aus.
+Verhindert jegliche Änderung der eigenen Fähigkeit durch Gegner.
+Verhindert jegliche Änderung der eigenen Fähigkeit durch Gegner.
+Verhindert, dass die eigenen Satuswerte gesenkt werden.
+Verhindert, dass die eigenen Satuswerte gesenkt werden.
+Kopiert Statuswerterhöhungen des Gegners. Erhält beim Züchten Zuchtattacken des Partners.
+Kopiert Statuswerterhöhungen des Gegners. Erhält beim Züchten Zuchtattacken des Partners.
+Der Boxhandschuh erhöht die Stärke von Box-Attacken und verhindert, dass diese Attacken Kontakt herstellen.
+Der Boxhandschuh erhöht die Stärke von Box-Attacken und verhindert, dass diese Attacken Kontakt herstellen.
+Der Tarnumhang schützt ein Pokémon vor Zusatzeffekten von gegnerischen Attacken.
+Der Tarnumhang schützt ein Pokémon vor Zusatzeffekten von gegnerischen Attacken.
+Serien-Attacken treffen mindestens vier Mal.
+Serien-Attacken treffen mindestens vier Mal.
+An item that accidentally dropped by a Pokémon. It seems that Gimmighoul treasure and hoard these.
+An item that accidentally dropped by a Pokémon. It seems that Gimmighoul treasure and hoard these.
+Für manche von hohem Wert.
+Für manche von hohem Wert.
+The latest model of smartphone. A Rotom lives within it, and it can be used to run all sorts of handy apps.
+The latest model of smartphone. A Rotom lives within it, and it can be used to run all sorts of handy apps.
+A record of the Heath's expedition on the Great Crater of Paldea. It has the name "Sada" written on it.
+A record of the Heath's expedition on the Great Crater of Paldea. It has the name "Sada" written on it.
+A record of the Heath's expedition on the Great Crater of Paldea. It has the name "Turo" written on it.
+A record of the Heath's expedition on the Great Crater of Paldea. It has the name "Turo" written on it.
+A mochi cake with Berries kneaded into its dough. It increases base points for a Pokémon's HP stat.
+A mochi cake with Berries kneaded into its dough. It increases base points for a Pokémon's HP stat.
+A mochi cake with Berries kneaded into its dough. It increases base points for a Pokémon's Attack stat.
+A mochi cake with Berries kneaded into its dough. It increases base points for a Pokémon's Attack stat.
+A mochi cake with Berries kneaded into its dough. It increases base points for a Pokémon's Defense stat.
+A mochi cake with Berries kneaded into its dough. It increases base points for a Pokémon's Defense stat.
+A mochi cake with Berries kneaded into its dough. It increases base points for a Pokémon's Sp. Atk stat.
+A mochi cake with Berries kneaded into its dough. It increases base points for a Pokémon's Sp. Atk stat.
+A mochi cake with Berries kneaded into its dough. It increases base points for a Pokémon's Sp. Def stat.
+A mochi cake with Berries kneaded into its dough. It increases base points for a Pokémon's Sp. Def stat.
+A mochi cake with Berries kneaded into its dough. It increases base points for a Pokémon's Speed stat.
+A mochi cake with Berries kneaded into its dough. It increases base points for a Pokémon's Speed stat.
+A mochi cake with Berries kneaded into its dough. It causes a Pokémon to lose all its base points.
+A mochi cake with Berries kneaded into its dough. It causes a Pokémon to lose all its base points.
+Verstärkt Attacken vom Typ Fee um 20%.
+Verstärkt Attacken vom Typ Fee um 20%.
+Damit ist es möglich Knapfel zu entwickeln.
+Damit ist es möglich Knapfel zu entwickeln.
+Damit ist es möglich Mortcha (Imitationsform) zu entwickeln.
+Damit ist es möglich Mortcha (Imitationsform) zu entwickeln.
+Damit ist es möglich Mortcha (Konstbarkeitsform) zu entwickeln.
+Damit ist es möglich Mortcha (Konstbarkeitsform) zu entwickeln.
+Gibt Ogerpon zusätzlich den Typ Wasser.
+Gibt Ogerpon zusätzlich den Typ Wasser.
+Gibt Ogerpon zusätzlich den Typ Feuer.
+Gibt Ogerpon zusätzlich den Typ Feuer.
+Gibt Ogerpon zusätzlich den Typ Gestein.
+Gibt Ogerpon zusätzlich den Typ Gestein.
+A teal mask patterned after the face of an ogre. Dropped by Ogerpon after visiting the Festival of Masks.
+A teal mask patterned after the face of an ogre. Dropped by Ogerpon after visiting the Festival of Masks.
+Das Item ermöglicht es dir Duraludon zu entwickeln.
+Das Item ermöglicht es dir Duraludon zu entwickeln.
+A mysterious disk with an indigo shine to it, given by the Top Champion. It seems to be tied to Area Zero.
+A mysterious disk with an indigo shine to it, given by the Top Champion. It seems to be tied to Area Zero.
+A Pecha Berry of the highest quality. It's one of every a few years berry that carefully tended by an expert.
+A Pecha Berry of the highest quality. It's one of every a few years berry that carefully tended by an expert.
+A device that synchronizes your mind and feelings with your Pokémon's as one. It's still a prototype—hence.
+A device that synchronizes your mind and feelings with your Pokémon's as one. It's still a prototype—hence.
+A rock that fell to earth from space. It allows a certain species of Pokémon to change forms.
+A rock that fell to earth from space. It allows a certain species of Pokémon to change forms.
+A proof copy of the exploration notes, along with Briar's thoughts covering the Area Zero Underdepths.
+A proof copy of the exploration notes, along with Briar's thoughts covering the Area Zero Underdepths.

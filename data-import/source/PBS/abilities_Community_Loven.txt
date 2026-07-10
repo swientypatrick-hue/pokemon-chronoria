@@ -1,0 +1,156 @@
+#-------------------------------
+[CORRUPTEDCODE]
+Name = Korruptionscode
+Description = Verstärkt Gift-Attacken, kann eine vom Pokémon eingesetzte Attacke deaktivieren.
+#-------------------------------
+[AQUATICBLOOD]
+Name = Aquatisches Blut
+Description = Ist zusätzlich zu seinen anderen Typen auch Wasser-Typ.
+#-------------------------------
+[EXPEDITIOUS]
+Name = Eilig
+Description = Deine offensiven Attacken haben +1 Priorität.
+#-------------------------------
+[GOODLUCK]
+Name = Viel Glück
+Description = Erhöhte Volltrefferchance und Glück.
+#-------------------------------
+[TOXICWATERS]
+Name = Giftige Gewässer
+Description = Wasser-Attacken haben eine 20% Chance zu vergiften.
+#-------------------------------
+[BURNINGSTEAM]
+Name = Brennender Dampf
+Description = Wasser-Attacken haben eine 20% Chance zu verbrennen.
+#-------------------------------
+[RUSTEDFEATHERS]
+Name = Verrostete Federn
+Description = Halbiert Geschwindigkeit und Schaden. Schwäche gegenüber Wasser.
+#-------------------------------
+[GREYGOO]
+Name = Grauer Schleim
+Description = Immunität gegenüber Gift-Attacken und Heilung durch Gift.
+#-------------------------------
+[MADSCIENTIST]
+Name = Verrückter Wissenschaftler
+Description = Verstärkt Feuer-, Gift- und Fee-Attacken.
+#-------------------------------
+[QUEENSPOTENTIAL]
+Name = Potenzial der Königin
+Description = Erhöht die Volltrefferchance nach dem Besiegen eines Pokémon.
+#-------------------------------
+[MUTATION]
+Name = Mutation
+Description = Erhöht Angriff und senkt Geschwindigkeit, wenn es angegriffen wird.
+#-------------------------------
+[SCARECROW]
+Name = Vogelscheuche
+Description = Erzeugt einen Ersatz (Delegator), wenn die KP unter der Hälfte liegen.
+#-------------------------------
+[PHANTOMTHIEF]
+Name = Phantomdieb
+Description = Wenn du die Statuswerte eines Gegners senkst, werden deine erhöht.
+#-------------------------------
+[BACKSWING]
+Name = Gegenschwung
+Description = Wenn die letzte Attacke fehlschlägt, werden die Offensivwerte erhöht.
+#-------------------------------
+[UNCONCERNED]
+Name = Unbeeindruckt
+Description = Normal-Attacken umgehen Resistenz von Gestein und Stahl.
+#-------------------------------
+[MAGICJAW]
+Name = Magischer Kiefer
+Description = Biss-Attacken sind speziell und verursachen Statusveränderungen.
+#-------------------------------
+[SWEETDREAMS]
+Name = Süße Träume
+Description = Heilt jedes schlafende Pokémon.
+#-------------------------------
+[PRACTICAL]
+Name = Praktisch
+Description = Wenn ein Statuswert gesenkt wird, wird der Gegenwert erhöht.
+#-------------------------------
+[PARALYTICPOISON]
+Name = Lähmendes Gift
+Description = Attacken, die vergiften würden, paralysieren stattdessen.
+#-------------------------------
+[ACIDICPOISON]
+Name = Säuregift
+Description = Attacken, die vergiften würden, verbrennen stattdessen.
+#-------------------------------
+[SOLARFIELD]
+Name = Sonnenfeld
+Description = Erhöht Spezialverteidigung in der Sonne, heilt Pflanzen-Verbündete.
+#-------------------------------
+[COMPACTEDICE]
+Name = Verdichtetes Eis
+Description = Resistenz gegen Kampf und Stahl, erhöht Verteidigung bei Treffer.
+#-------------------------------
+[NEUTRALIZE]
+Name = Neutralisieren
+Description = Attacken sind typlos und stärker.
+#-------------------------------
+[WINDSWEPT]
+Name = Windgepeitscht
+Description = Setzt nach einer Flug-Attacke Rückenwind ein.
+#-------------------------------
+[QUICKCHARGE]
+Name = Schnellladung
+Description = Zwei-Runden-Attacken benötigen nur eine Runde.
+#-------------------------------
+[KINGSWRATH]
+Name = Zorn des Königs
+Description = Horn- oder Bohrattacken sind stärker und können zurückschrecken lassen.
+#-------------------------------
+[CHEMICALREACTION]
+Name = Chemische Reaktion
+Description = Heilt 25% durch eine Beere und übernimmt ihren Typ.
+#-------------------------------
+[ECHOLOCATION]
+Name = Echoortung
+Description = Genauigkeit kann nicht gesenkt werden, nimmt mehr Schaden durch Schall-Attacken.
+#-------------------------------
+[POWERSHIELD]
+Name = Kraftschild
+Description = Ignoriert den Typen-Chart, immun gegen nicht-schlafende Statusveränderungen.
+#-------------------------------
+[RAGEBAITING]
+Name = Ragebaiting
+Description = Beim ersten Senken eines Statuswerts wird der Gegner gefangen und erleidet Schaden.
+#-------------------------------
+[BEASTMODE]
+Name = Bestienmodus
+Description = Kehrt nach 5 Runden in die normale Form zurück.
+#-------------------------------
+[CONCUSSION]
+Name = Gehirnerschütterung
+Description = Explosion & Finale verursachen 75% Schaden, wenn bei vollem KP eingesetzt.
+#-------------------------------
+[BOULDERBARRIER]
+Name = Felsbarriere
+Description = Nach erfolgreichem Schutz werden Gesteins-Attacken verstärkt.
+#-------------------------------
+[HESSAFE]
+Name = Cheater
+Description = Bei K.O. durch Rückstoß wird 50% der KP wiederhergestellt.
+#-------------------------------
+[ARCANEMAGE]
+Name = Arkane Magie
+Description = Feuer-, Eis- und Elektro-Attacken sind stärker, Unlicht ist immun dagegen.
+#-------------------------------
+[QUICKSTRIKE]
+Name = Schneller Schlag
+Description = In der ersten Runde immer zuerst und mit 100% Genauigkeit.
+#-------------------------------
+[IGNITION]
+Name = Zündung
+Description = Entzündet sich bei Treffer durch eine Feuer-Attacke. Reduziert Feuerschaden.
+#-------------------------------
+[EXTINGUISH]
+Name = Löschen
+Description = Wird bei Treffer durch eine Wasser-Attacke gelöscht. Reduziert Wasserschaden.
+#-------------------------------
+[SOUPFILLER]
+Name = Suppenfüller
+Description = Wenn ein Gegner sich heilt, wirst du ebenfalls etwas geheilt.

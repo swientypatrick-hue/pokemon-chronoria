@@ -1,0 +1,15 @@
+---
+interface Props {
+  label: string;
+  value: number;
+  max?: number;
+}
+const { label, value, max = 255 } = Astro.props;
+const pct = Math.max(2, Math.min(100, (value / max) * 100));
+---
+
+<div class="stat-row">
+  <span class="stat-label">{label}</span>
+  <span class="stat-bar-track"><span class="stat-bar-fill" style={`width:${pct}%`}></span></span>
+  <span class="stat-value">{value}</span>
+</div>

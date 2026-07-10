@@ -1,0 +1,50 @@
+---
+import Layout from "../../layouts/Layout.astro";
+import TypeBadge from "../../components/TypeBadge.astro";
+import EnBadge from "../../components/EnBadge.astro";
+import { moves, pokemonById, slugify } from "../../lib/data";
+import { href } from "../../lib/url";
+
+export function getStaticPaths() {
+  return moves.map((m) => ({ params: { moveId: slugify(m.id) }, props: { m } }));
+}
+
+const { m } = Astro.props;
+const CATEGORY_LABEL: Record<string, string> = { Physical: "Physisch", Special: "Speziell", Status: "Status" };
+
+function speciesName(id: string) {
+  return pokemonById.get(id)?.name ?? id;
+}
+
+const learnedByAll = [...new Set([...m.learnedByLevelUp, ...m.learnedByTutorOrEgg])]
+  .map((id) => ({ id, name: speciesName(id) }))
+  .sort((a, b) => a.name.localeCompare(b.name, "de"));
+---
+
+<Layout title={m.name}>
+  <p class="meta-note"><a href={href("/attacken/")}>← Alle Attacken</a></p>
+  <h1>{m.name}</h1>
+  <div class="pill-list">
+    <TypeBadge type={m.type} />
+    <span class="badge" style="background:#888">{CATEGORY_LABEL[m.category] ?? m.category}</span>
+  </div>
+
+  <table>
+    <tr><th>Stärke</th><td>{m.power ?? "–"}</td></tr>
+    <tr><th>Genauigkeit</th><td>{m.accuracy ?? "–"}</td></tr>
+    <tr><th>AP</th><td>{m.totalPP ?? "–"}</td></tr>
+    <tr><th>Ziel</th><td>{m.target}</td></tr>
+    <tr><th>Priorität</th><td>{m.priority}</td></tr>
+    <tr><th>Flags</th><td>{m.flags.join(", ") || "–"}</td></tr>
+  </table>
+
+  <h2>Beschreibung</h2>
+  <p>{m.description.text || "–"} {m.description.fallback && m.description.text && <EnBadge />}</p>
+
+  <h2>Erlernt von ({learnedByAll.length})</h2>
+  {learnedByAll.length > 0 ? (
+    <div class="pill-list">
+      {learnedByAll.map((s) => <a class="card" href={href(`/pokemon/${slugify(s.id)}/`)}>{s.name}</a>)}
+    </div>
+  ) : <p class="section-empty">Wird von keinem bekannten Pokémon erlernt.</p>}
+</Layout>

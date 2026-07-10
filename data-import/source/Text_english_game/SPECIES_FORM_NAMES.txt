@@ -1,0 +1,392 @@
+﻿# To localize this text for a particular language, please
+# translate every second line of this file.
+#-------------------------------
+[SPECIES_FORM_NAMES]
+Hoch-Form
+Hoch-Form
+Family of Four
+Family of Four
+Green Plumage
+Green Plumage
+Zero Form
+Zero Form
+Curly Form
+Curly Form
+Chest Form
+Chest Form
+Counterfeit Form
+Counterfeit Form
+Unremarkable Form
+Unremarkable Form
+Teal Mask
+Teal Mask
+Spitzohr
+Spitzohr
+Alola
+Alola
+Galar
+Galar
+Mega Guardevoir
+Mega Guardevoir
+Sonnenform
+Sonnenform
+Regenform
+Regenform
+Schneeform
+Schneeform
+Proto Kyogre
+Proto Kyogre
+Proto Groudon
+Proto Groudon
+Angriffsform
+Angriffsform
+Verteidigungsform
+Verteidigungsform
+Speedform
+Speedform
+Sandumhang
+Sandumhang
+Pflanzenumhang
+Pflanzenumhang
+Wolkenform
+Wolkenform
+Östliches Meer
+Östliches Meer
+Hitze Rotom
+Hitze Rotom
+Wasch Rotom
+Wasch Rotom
+Wirbel Rotom
+Wirbel Rotom
+Schneid Rotom
+Schneid Rotom
+Urform
+Urform
+Zenitform
+Zenitform
+Kampf
+Kampf
+Wind
+Wind
+Gift
+Gift
+Boden
+Boden
+Gestein
+Gestein
+Käfer
+Käfer
+Geist
+Geist
+Stahl
+Stahl
+Unbekannt
+Unbekannt
+Feuer
+Feuer
+Wasser
+Wasser
+Pflanze
+Pflanze
+Elektro
+Elektro
+Psycho
+Psycho
+Eis
+Eis
+Drache
+Drache
+Unlicht
+Unlicht
+Fee
+Fee
+Blaulinige Form
+Blaulinige Form
+Trance-Modus
+Trance-Modus
+Galar-Form Normalmodus
+Galar-Form Normalmodus
+Galar-Form Trance-Modus
+Galar-Form Trance-Modus
+Sommerform
+Sommerform
+Herbstform
+Herbstform
+Winterform
+Winterform
+Tiergeistform
+Tiergeistform
+Weißes Kyurem
+Weißes Kyurem
+Schwarzes Kyurem
+Schwarzes Kyurem
+Resolutform
+Resolutform
+Tanzform
+Tanzform
+Blitzmodul
+Blitzmodul
+Flammenmodul
+Flammenmodul
+Gefriermodul
+Gefriermodul
+Aquamodul
+Aquamodul
+Ash-Form
+Ash-Form
+Kontinentalmuster
+Kontinentalmuster
+Prunkmuster
+Prunkmuster
+Ziergartenmuster
+Ziergartenmuster
+Dürremuster
+Dürremuster
+Frostmuster
+Frostmuster
+Dschungelmuster
+Dschungelmuster
+Aquamarinmuster
+Aquamarinmuster
+Blumenmeermuster
+Blumenmeermuster
+Innovationmuster
+Innovationmuster
+Monsunmuster
+Monsunmuster
+Ozeanmuster
+Ozeanmuster
+Schneefeldmuster
+Schneefeldmuster
+Flussdeltamuster
+Flussdeltamuster
+Sandmuster
+Sandmuster
+Savannemuster
+Savannemuster
+Sonnenmuster
+Sonnenmuster
+Flockenmuster
+Flockenmuster
+Fantasiemuster
+Fantasiemuster
+Pokéball-Muster
+Pokéball-Muster
+Gelbblütler
+Gelbblütler
+Orangeblütler
+Orangeblütler
+Blaublütler
+Blaublütler
+Weißblütler
+Weißblütler
+Ewigblütler
+Ewigblütler
+Herzchenschnitt
+Herzchenschnitt
+Sternchenschnitt
+Sternchenschnitt
+Diamantenschnitt
+Diamantenschnitt
+Fräuleinschnitt
+Fräuleinschnitt
+Damenschnitt
+Damenschnitt
+Kavaliersschnitt
+Kavaliersschnitt
+Königinnenschnitt
+Königinnenschnitt
+Kabuki-Schnitt
+Kabuki-Schnitt
+Herrscherschnitt
+Herrscherschnitt
+Klingenform
+Klingenform
+Größe S
+Größe S
+Größe L
+Größe L
+Größe XL
+Größe XL
+Aktiv-Modus
+Aktiv-Modus
+10%-Form
+10%-Form
+Optimumform
+Optimumform
+Entfesseltes Hoopa
+Entfesseltes Hoopa
+Cheerleading-Stil
+Cheerleading-Stil
+Hula-Stil
+Hula-Stil
+Buyo-Stil
+Buyo-Stil
+Nachtform
+Nachtform
+Zwielichtform
+Zwielichtform
+Schwarmform
+Schwarmform
+Typ: Kampf
+Typ: Kampf
+Typ: Wind
+Typ: Wind
+Typ: Gift
+Typ: Gift
+Typ: Boden
+Typ: Boden
+Typ: Gestein
+Typ: Gestein
+Typ: Käfer
+Typ: Käfer
+Typ: Geist
+Typ: Geist
+Typ: Stahl
+Typ: Stahl
+Typ: Unbekannt
+Typ: Unbekannt
+Typ: Feuer
+Typ: Feuer
+Typ: Wasser
+Typ: Wasser
+Typ: Pflanze
+Typ: Pflanze
+Typ: Elektro
+Typ: Elektro
+Typ: Psycho
+Typ: Psycho
+Typ: Eis
+Typ: Eis
+Typ: Drache
+Typ: Drache
+Typ: Unlicht
+Typ: Unlicht
+Typ: Fee
+Typ: Fee
+Roter Kern
+Roter Kern
+Oranger Kern
+Oranger Kern
+Gelber Kern
+Gelber Kern
+Grüner Kern
+Grüner Kern
+Hellblauer Kern
+Hellblauer Kern
+Blauer Kern
+Blauer Kern
+Violetter Kern
+Violetter Kern
+Entlarvte Form
+Entlarvte Form
+Abendmähne
+Abendmähne
+Morgenschwingen
+Morgenschwingen
+Ultra-Necrozma
+Ultra-Necrozma
+Originalfarbe
+Originalfarbe
+Schlingform
+Schlingform
+Stopfform
+Stopfform
+Tief-Form
+Tief-Form
+Originalform
+Originalform
+Ruby-Creme
+Ruby-Creme
+Matcha-Creme
+Matcha-Creme
+Minz-Creme
+Minz-Creme
+Zitronen-Creme
+Zitronen-Creme
+Salz-Creme
+Salz-Creme
+Ruby-Mix
+Ruby-Mix
+Karamell-Mix
+Karamell-Mix
+Trio-Mix
+Trio-Mix
+Wohlfühlkopf
+Wohlfühlkopf
+Kohldampfmuster
+Kohldampfmuster
+König des Schwertes
+König des Schwertes
+König des Schildes
+König des Schildes
+Fließender Stil
+Fließender Stil
+Schimmelreiter
+Schimmelreiter
+Rappenreiter
+Rappenreiter
+Ruinenform
+Ruinenform
+Trasla
+Trasla
+Kirlia
+Kirlia
+Galagladi
+Galagladi
+Hisuian
+Hisuian
+Paldean (Combat Breed)
+Paldean (Combat Breed)
+Paldean (Blaze Breed)
+Paldean (Blaze Breed)
+Paldean (Aqua Breed)
+Paldean (Aqua Breed)
+Paldean
+Paldean
+White-Striped
+White-Striped
+Bloodmoon Ursaluna
+Bloodmoon Ursaluna
+Therian Form
+Therian Form
+Three-Segment Form
+Three-Segment Form
+Hero Form
+Hero Form
+Family of Three
+Family of Three
+Droopy Form
+Droopy Form
+Stretchy Form
+Stretchy Form
+Blue Plumage
+Blue Plumage
+Yellow Plumage
+Yellow Plumage
+White Plumage
+White Plumage
+Roaming Form
+Roaming Form
+Artisan Form
+Artisan Form
+Masterpiece Form
+Masterpiece Form
+Wellspring Mask
+Wellspring Mask
+Hearthflame Mask
+Hearthflame Mask
+Cornerstone Mask
+Cornerstone Mask
+Terastal Teal Mask
+Terastal Teal Mask
+Terastal Wellspring Mask
+Terastal Wellspring Mask
+Terastal Hearthflame Mask
+Terastal Hearthflame Mask
+Terastal Cornerstone Mask
+Terastal Cornerstone Mask
+Terastal Form
+Terastal Form
+Stellar Form
+Stellar Form

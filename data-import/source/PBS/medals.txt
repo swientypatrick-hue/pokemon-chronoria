@@ -1,0 +1,296 @@
+#1-----------------------------------
+[ROOKIEMEDALIST]
+Name = Sammler?
+Icon = ROOKIEMEDALIST
+Description = Für alle, die bereits 5 Medallien sammeln konnten.
+Tip = Je mehr Medallien, desto besser!
+#2-----------------------------------
+[SECONDMEDALIST]
+Name = Anfänger-Sammler
+Icon = ROOKIEMEDALIST
+Description = Für alle, die bereits 10 Medallien sammeln konnten.
+Tip = Je mehr Medallien, desto besser!
+#3-----------------------------------
+[ELITEMEDALIST]
+Name = Profi-Sammler
+Icon = ELITEMEDALIST
+Description = Für alle, die bereits 20 Medallien sammeln konnten.
+Tip = Du kannst sicher noch mehr Medallien sammeln!
+#4-----------------------------------
+[MASTERMEDALIST]
+Name = Elite-Sammler
+Icon = MASTERMEDALIST
+Description = Für alle, die bereits 30 Medallien sammeln konnten.
+Tip = Gibt es überhaupt noch mehr Medallien? Na klar!
+#5-----------------------------------
+[LEGENDMEDALIST]
+Name = Legende
+Icon = LEGENDMEDALIST
+Rarity = Legendary
+Description = Für alle, die bereits 40 Medallien sammeln konnten.
+Tip = Du hast alle Medallien gesammelt! Eine wahre Legende!
+#6-----------------------------------
+[DASABENTEUERBEGINNT]
+Name = Das Abenteuer beginnt
+Icon = DASABENTEUERBEGINNT
+Description = Eine Medallie für 10 gefangene Pokémon.
+Tip = Fange 10 verschiedene Pokémon.
+#7-----------------------------------
+[ERSTESCHRITTE]
+Name = Erste Schritte
+Icon = ERSTESCHRITTE
+Description = Eine Medallie für 25 gefangene Pokémon.
+Tip = Fange 25 verschiedene Pokémon.
+#8-----------------------------------
+[SAMMELALBUM]
+Name = Sammelalbum
+Icon = SAMMELALBUM
+Description = Eine Medallie für 50 gefangene Pokémon.
+Tip = Fange 50 verschiedene Pokémon.
+#9-----------------------------------
+[WELTENBUMMLER]
+Name = Weltenbummler
+Icon = WELTENBUMMLER
+Description = Eine Medallie für 100 gefangene Pokémon.
+Tip = Fange 100 verschiedene Pokémon.
+#10-----------------------------------
+[ERSTERMEILENSTEIN]
+Name = Erster Meilenstein
+Icon = ERSTERMEILENSTEIN
+Description = Eine Medallie für 150 gefangene Pokémon.
+Tip = Fange 150 verschiedene Pokémon.
+#11-----------------------------------
+[ESSINDNIEGENUG]
+Name = Es sind nie genug.
+Icon = ESSINDNIEGENUG
+Description = Eine Medallie für 200 gefangene Pokémon.
+Tip = Fange 200 verschiedene Pokémon.
+#12-----------------------------------
+[FASTEINVIERTEL]
+Name = Fast ein Viertel
+Icon = FASTEINVIERTEL
+Description = Eine Medallie für 250 gefangene Pokémon.
+Tip = Fange 250 verschiedene Pokémon.
+#13-----------------------------------
+[KEINEHALBENSACHEN]
+Name = Keine halben Sachen
+Icon = KEINEHALBENSACHEN
+Description = Eine Medallie für 400 gefangene Pokémon.
+Tip = Fange 400 verschiedene Pokémon.
+#14-----------------------------------
+[HALBZEIT]
+Name = Halbzeit
+Icon = HALBZEIT
+Description = Eine Medallie für 513 gefangene Pokémon.
+Tip = Fange 513 verschiedene Pokémon.
+#15-----------------------------------
+[ZWEITERMEILENSTEIN]
+Name = Zweiter Meilenstein
+Icon = ZWEITERMEILENSTEIN
+Description = Eine Medallie für 600 gefangene Pokémon.
+Tip = Fange 600 verschiedene Pokémon.
+#16-----------------------------------
+[KEINZURUECK]
+Name = Es gibt kein zurück mehr
+Icon = KEINZURUECK
+Description = Eine Medallie für 650 gefangene Pokémon.
+Tip = Fange 650 verschiedene Pokémon.
+#17-----------------------------------
+[DREIVIERTEL]
+Name = Drei Viertel
+Icon = DREIVIERTEL
+Description = Eine Medallie für 770 gefangene Pokémon.
+Tip = Fange 770 verschiedene Pokémon.
+#18-----------------------------------
+[ENDSPURT]
+Name = Endspurt
+Icon = ENDSPURT
+Description = Eine Medallie für 926 gefangene Pokémon.
+Tip = Fange 926 verschiedene Pokémon.
+#19-----------------------------------
+[SCHNAPPSIEDIRALLE]
+Name = Schnapp sie dir alle!
+Icon = SCHNAPPSIEDIRALLE
+Rarity = Legendary
+Description = Du hast fast alle Pokémon gefangen.
+Tip = Fange 1000 verschiedene Pokémon.
+#20-----------------------------------
+[DRITTERMEILENSTEIN]
+Name = Dritter Meilenstein
+Icon = DRITTERMEILENSTEIN
+Description = Eine Medallie für 1026 gefangene Pokémon.
+Tip = Fange sämtliche Pokémon.
+#21-----------------------------------
+[KAEFERSAMMLER]
+Name = Käfersammler
+Icon = KAEFERSAMMLER
+Description = Werde Mitglied im Käfersammler-Club.
+Tip = Werde Mitglied im Käfersammler-Club.
+#22-----------------------------------
+[KAEFERPROFI]
+Name = Käfer-Profi
+Icon = KAEFERPROFI
+Description = Eine Medallie für gelöste Aufgaben im Käfersammler-Club.
+Tip = Erledige Aufgaben im Käfersammler-Club.
+#23-----------------------------------
+[KAEFEREXPERTE]
+Name = Käfer-Experte
+Icon = KAEFEREXPERTE
+Description = Eine Medallie für gelöste Aufgaben im Käfersammler-Club.
+Tip = Erledige Aufgaben im Käfersammler-Club.
+#24-----------------------------------
+[OBERKAEFERLING]
+Name = Oberkäferling
+Icon = OBERKAEFERLING
+Description = Eine Medallie für das erledigen aller Aufgaben im Käfersammler-Club.
+Tip = Erledige alle Aufgaben im Käfersammler-Club.
+#25-----------------------------------
+[KAEFERMODUL]
+Name = Käfer-Modul
+Icon = KAEFERMODUL
+Rarity = Legendary
+Description = Eine Medallie für den Erhalt eines Genesect.
+Tip = Erhalte ein Genesect.
+Condition = Caught,GENESECT
+#26-----------------------------------
+[GEISTERJAEGER]
+Name = Geisterjäger
+Icon = GEISTERJAEGER
+Description = Werde Mitglied im Geister-Club.
+Tip = Werde Mitglied im Geister-Club.
+#27-----------------------------------
+[GEISTERANFAENGER]
+Name = Geister-Anfänger
+Icon = GEISTERJAEGER
+Description = Eine Medallie für gelöste Aufgaben im Geister-Club.
+Tip = Erledige Aufgaben im Geister-Club.
+#28-----------------------------------
+[GEISTERPROFI]
+Name = Geister-Profi
+Icon = GEISTERPROFI
+Description = Eine Medallie für gelöste Aufgaben im Geister-Club.
+Tip = Erledige Aufgaben im Geister-Club.
+#29-----------------------------------
+[GEISTERMEISTER]
+Name = Geister-Meister
+Icon = GEISTERMEISTER
+Description = Eine Medallie für gelöste Aufgaben im Geister-Club.
+Tip = Erledige Aufgaben im Geister-Club.
+#30-----------------------------------
+[NINJATOM]
+Name = Wunderwache
+Icon = NINJATOM
+Rarity = Legendary
+Description = Eine Medallie für den Erhalt eines Ninjatom.
+Tip = Erhalte ein Ninjatom.
+Condition = Caught,SHEDINJA
+#30-----------------------------------
+[ANGEL]
+Name = Angler
+Icon = ANGEL1
+Description = Eine Medallie für gelöste Aufgaben im Angel-Club.
+Tip = Erledige Aufgaben im Angel-Club.
+#31-----------------------------------
+[ANGEL1]
+Name = Angel-Anfänger
+Icon = ANGEL1
+Description = Eine Medallie für gelöste Aufgaben im Angel-Club.
+Tip = Erledige Aufgaben im Angel-Club.
+#32-----------------------------------
+[ANGEL2]
+Name = Angel-Profi
+Icon = ANGEL2
+Description = Eine Medallie für gelöste Aufgaben im Angel-Club.
+Tip = Erledige Aufgaben im Angel-Club.
+#27----------------------------------
+[ANGEL3]
+Name = Angel-Meister
+Icon = ANGEL3
+Description = Eine Medallie für gelöste Aufgaben im Angel-Club.
+Tip = Erledige alle Aufgaben im Angel-Club.
+#28-----------------------------------Noch zu bearbeiten
+[POKEMON]
+Name = Wunderwache
+Icon = NINJATOM
+Rarity = Legendary
+Description = Eine Medallie für den Erhalt eines Ninjatom.
+Tip = Erhalte ein Ninjatom.
+Condition = Caught,MEW
+#29-----------------------------------
+[SANDKASTENGRAEBER]
+Name = Sandkastengräber
+Icon = ARCH1
+Description = Eine Medallie für gelöste Aufgaben im Paläontologen-Club.
+Tip = Erledige Aufgaben im Paläontologen-Club.
+#30-----------------------------------
+[RUINENFORSCHER]
+Name = Ruinenforscher
+Icon = ARCH2
+Description = Eine Medallie für gelöste Aufgaben im Paläontologen-Club.
+Tip = Erledige Aufgaben im Paläontologen-Club.
+#31----------------------------------
+[GRABSCHAENDER]
+Name = Grabschänder
+Icon = ARCH3
+Description = Eine Medallie für gelöste Aufgaben im Paläontologen-Club.
+Tip = Erledige alle Aufgaben im Paläontologen-Club.
+#32-----------------------------------Noch zu bearbeiten
+[POKEMON1]
+Name = Wunderwache
+Icon = NINJATOM
+Rarity = Legendary
+Description = Eine Medallie für den Erhalt eines Ninjatom.
+Tip = Erhalte ein Ninjatom.
+Condition = Caught,MEW
+#33-----------------------------------
+[TAUBENFEUTTERER]
+Name = Taubenfütterer
+Icon = FLUG1
+Description = Eine Medallie für gelöste Aufgaben im Vogelfänger-Club.
+Tip = Erledige Aufgaben im Vogelfänger-Club.
+#34-----------------------------------
+[FLUGHOERNCHEN]
+Name = Flughörnchen
+Icon = FLUG2
+Description = Eine Medallie für gelöste Aufgaben im Vogelfänger-Club.
+Tip = Erledige Aufgaben im Vogelfänger-Club.
+#35----------------------------------
+[ORNITHOLOGE]
+Name = Ornithologe
+Icon = FLUG3
+Description = Eine Medallie für gelöste Aufgaben im Vogelfänger-Club.
+Tip = Erledige alle Aufgaben im Vogelfänger-Club.
+#36-----------------------------------Noch zu bearbeiten
+[POKEMON2]
+Name = Wunderwache
+Icon = NINJATOM
+Rarity = Legendary
+Description = Eine Medallie für den Erhalt eines Ninjatom.
+Tip = Erhalte ein Ninjatom.
+Condition = Caught,MEW
+#37-----------------------------------
+[OHNEZAHN]
+Name = Ohnezahn
+Icon = DRACHEN1
+Description = Eine Medallie für gelöste Aufgaben im Drachen-Club.
+Tip = Erledige Aufgaben im Drachen-Club.
+#38-----------------------------------
+[FLUGSTUNDEN]
+Name = Flugstunden
+Icon = DRACHEN2
+Description = Eine Medallie für gelöste Aufgaben im Drachen-Club.
+Tip = Erledige Aufgaben im Drachen-Club.
+#39----------------------------------
+[TARGARYEN]
+Name = Targaryen
+Icon = DRACHEN3
+Description = Eine Medallie für gelöste Aufgaben im Drachen-Club.
+Tip = Erledige alle Aufgaben im Drachen-Club.
+#40-----------------------------------Noch zu bearbeiten
+[POKEMON3]
+Name = Wunderwache
+Icon = NINJATOM
+Rarity = Legendary
+Description = Eine Medallie für den Erhalt eines Ninjatom.
+Tip = Erhalte ein Ninjatom.
+Condition = Caught,MEW

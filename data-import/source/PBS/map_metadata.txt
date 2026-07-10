@@ -1,0 +1,3905 @@
+﻿# See the documentation on the wiki to learn how to edit this file.
+#-------------------------------
+[001]   # Vorlagen
+Name = Intro
+MapPosition = 0,13,12
+#-------------------------------
+[002]   # Lappet Town
+Name = Lappet Town
+Outdoor = true
+ShowArea = true
+MapPosition = 0,13,12
+BattleBack = field
+#-------------------------------
+[003]   # Player's house
+Name = Pat's house
+HealingSpot = 2,8,8
+MapPosition = 0,13,12
+#-------------------------------
+[004]   # Pokémon Lab
+Name = Pokémon Lab
+MapPosition = 0,13,12
+#-------------------------------
+[005]   # Route 1
+Name = Route 1
+Outdoor = true
+ShowArea = true
+MapPosition = 0,13,11
+BattleBack = field
+#-------------------------------
+[006]   # Kurt's house
+Name = Route 1
+MapPosition = 0,13,11
+#-------------------------------
+[007]   # Cedolan City
+Name = Cedolan City
+Outdoor = true
+ShowArea = true
+MapPosition = 0,13,10
+MapSize = 2,11
+#-------------------------------
+[008]   # Daisy's house
+Name = Lappet Town
+MapPosition = 0,13,12
+#-------------------------------
+[009]   # Cedolan City Poké Center
+Name = Cedolan City
+HealingSpot = 8,17,11
+MapPosition = 0,14,10
+#-------------------------------
+[010]   # Cedolan Gym
+Name = Cedolan City
+MapPosition = 0,13,10
+BattleBack = indoor3
+Environment = Rock
+Flags = DisableBoxLink
+#-------------------------------
+[011]   # Pokémon Institute
+Name = Cedolan City
+MapPosition = 0,14,10
+#-------------------------------
+[012]   # Cedolan City Condo
+Name = Cedolan City
+MapPosition = 0,14,10
+#-------------------------------
+[013]   # Game Corner
+Name = Cedolan City
+MapPosition = 0,14,10
+#-------------------------------
+[014]   # Cedolan Dept. 1F
+Name = Cedolan City
+MapPosition = 0,13,10
+#-------------------------------
+[015]   # Cedolan Dept. 2F
+Name = Cedolan City
+MapPosition = 0,13,10
+#-------------------------------
+[016]   # Cedolan Dept. 3F
+Name = Cedolan City
+MapPosition = 0,13,10
+#-------------------------------
+[017]   # Cedolan Dept. 4F
+Name = Cedolan City
+MapPosition = 0,13,10
+#-------------------------------
+[018]   # Cedolan Dept. 5F
+Name = Cedolan City
+MapPosition = 0,13,10
+#-------------------------------
+[019]   # Cedolan Dept. Rooftop
+Name = Cedolan City
+MapPosition = 0,13,10
+#-------------------------------
+[020]   # Cedolan Dept. Elevator
+Name = Cedolan City
+MapPosition = 0,13,10
+#-------------------------------
+[021]   # Route 2
+Name = Route 2
+Outdoor = true
+ShowArea = true
+Weather = Rain,100
+MapPosition = 0,14,8
+BattleBack = field
+MapSize = 1,11
+#-------------------------------
+[022]   # Velmora
+Name = Velmora
+Outdoor = true
+ShowArea = true
+Bicycle = true
+MapPosition = 0,1,18
+SnapEdges = true
+BattleBack = city
+Environment = Grass
+#-------------------------------
+[023]   # Lerucean Town
+Name = Lerucean Town
+Outdoor = true
+ShowArea = true
+MapPosition = 0,15,8
+#-------------------------------
+[024]   # Lerucean Town Poké Center
+Name = Lerucean Town
+HealingSpot = 23,11,15
+MapPosition = 0,15,8
+#-------------------------------
+[025]   # Lerucean Town Mart
+Name = Lerucean Town
+MapPosition = 0,15,8
+#-------------------------------
+[026]   # Pokémon Fan Club
+Name = Lerucean Town
+MapPosition = 0,15,8
+#-------------------------------
+[027]   # Pokémon Day Care
+Name = Lerucean Town
+MapPosition = 0,15,8
+#-------------------------------
+[028]   # Natural Park
+Name = Natural Park
+Outdoor = true
+ShowArea = true
+MapPosition = 0,16,8
+BattleBack = field
+#-------------------------------
+[029]   # Natural Park Entrance
+Name = Natural Park
+Bicycle = true
+MapPosition = 0,16,8
+#-------------------------------
+[030]   # Natural Park Pavillion
+Name = Natural Park
+MapPosition = 0,16,8
+#-------------------------------
+[031]   # Route 3
+Name = Route 3
+Outdoor = true
+ShowArea = true
+MapPosition = 0,14,6
+BattleBack = field
+MapSize = 2,1101
+#-------------------------------
+[032]   # Velmora
+Name = Velmora
+MapPosition = 0,1,18
+SnapEdges = true
+#-------------------------------
+[033]   # Velmora
+Name = Velmora
+MapPosition = 0,1,18
+SnapEdges = true
+#-------------------------------
+[034]   # Ice Cave
+Name = Route 3
+Bicycle = true
+MapPosition = 0,15,6
+BattleBack = cave1
+Environment = Cave
+Flags = IceRock
+#-------------------------------
+[035]   # Ingido Plateau outside
+Name = Ingido Plateau
+Outdoor = true
+ShowArea = true
+MapPosition = 0,13,6
+#-------------------------------
+[036]   # Pokémon League entrance
+Name = Ingido Plateau
+HealingSpot = 35,17,7
+MapPosition = 0,13,6
+#-------------------------------
+[037]   # Pokémon League room 1
+Name = Ingido Plateau
+MapPosition = 0,13,6
+BattleBack = elite1
+Flags = DisableBoxLink
+#-------------------------------
+[038]   # Hall of Fame
+Name = Ingido Plateau
+MapPosition = 0,13,6
+Flags = DisableBoxLink
+#-------------------------------
+[039]   # Route 4
+Name = Route 4
+Outdoor = true
+ShowArea = true
+MapPosition = 0,11,6
+BattleBack = field
+MapSize = 2,11
+#-------------------------------
+[040]   # Route 4 Cycling Road
+Name = Route 4
+Outdoor = true
+ShowArea = true
+BicycleAlways = true
+MapPosition = 0,11,6
+#-------------------------------
+[041]   # Route 5
+Name = Route 5
+Outdoor = true
+ShowArea = true
+MapPosition = 0,11,7
+MapSize = 1,111
+#-------------------------------
+[042]   # Velmora
+Name = Velmora
+MapPosition = 0,1,18
+SnapEdges = true
+#-------------------------------
+[043]   # Velmora
+Name = Velmora
+MapPosition = 0,1,18
+SnapEdges = true
+#-------------------------------
+[044]   # Route 6
+Name = Route 6
+Outdoor = true
+ShowArea = true
+MapPosition = 0,11,10
+BattleBack = field
+MapSize = 2,11
+#-------------------------------
+[045]   # Route 6 Cycling Road
+Name = Route 6
+Outdoor = true
+ShowArea = true
+MapPosition = 0,11,10
+#-------------------------------
+[046]   # Route 4 Cycling Road gate
+Name = Route 4
+Bicycle = true
+MapPosition = 0,12,6
+#-------------------------------
+[047]   # Route 7
+Name = Route 7
+Outdoor = true
+ShowArea = true
+Weather = Rain,0
+MapPosition = 0,15,10
+BattleBack = rocky
+MapSize = 2,11
+Environment = Rock
+#-------------------------------
+[048]   # Velmora
+Name = Velmora
+MapPosition = 0,1,18
+SnapEdges = true
+#-------------------------------
+[049]   # Rock Cave 1F
+Name = Route 7
+Bicycle = true
+MapPosition = 0,16,10
+BattleBack = cave1
+Environment = Cave
+Flags = Magnetic,DistortionWorld
+#-------------------------------
+[050]   # Rock Cave B1F
+Name = Route 7
+Bicycle = true
+MapPosition = 0,16,10
+DarkMap = true
+BattleBack = cave3
+Environment = Cave
+Flags = Magnetic,DistortionWorld
+#-------------------------------
+[051]   # Dungeon
+Name = Route 7
+Bicycle = true
+MapPosition = 0,16,10
+Dungeon = true
+BattleBack = cave2
+Environment = Cave
+Flags = Magnetic,DistortionWorld,ScaleWildEncounterLevels
+#-------------------------------
+[052]   # Battle Frontier
+Name = Battle Frontier
+Outdoor = true
+ShowArea = true
+MapPosition = 0,17,10
+#-------------------------------
+[053]   # Battle Frontier Poké Center
+Name = Battle Frontier
+HealingSpot = 52,17,14
+MapPosition = 0,17,10
+#-------------------------------
+[054]   # Battle Frontier Mart
+Name = Battle Frontier
+MapPosition = 0,17,10
+#-------------------------------
+[055]   # Battle Tower
+Name = Battle Frontier
+HealingSpot = 52,30,10
+MapPosition = 0,17,10
+#-------------------------------
+[056]   # Battle Tower arena
+Name = Battle Frontier
+MapPosition = 0,17,10
+BattleBack = indoor1
+Flags = DisableBoxLink
+#-------------------------------
+[057]   # Stadium Cup lobby
+Name = Battle Frontier
+MapPosition = 0,17,10
+#-------------------------------
+[058]   # Battle Palace
+Name = Battle Frontier
+MapPosition = 0,17,10
+#-------------------------------
+[059]   # Battle Palace arena
+Name = Battle Frontier
+MapPosition = 0,17,10
+BattleBack = indoor1
+Flags = DisableBoxLink
+#-------------------------------
+[060]   # Battle Arena
+Name = Battle Frontier
+MapPosition = 0,17,10
+#-------------------------------
+[061]   # Battle Arena arena
+Name = Battle Frontier
+MapPosition = 0,17,10
+BattleBack = indoor1
+Flags = DisableBoxLink
+#-------------------------------
+[062]   # Battle Factory
+Name = Battle Frontier
+MapPosition = 0,17,10
+#-------------------------------
+[063]   # Battle Factory intro corridor
+Name = Battle Frontier
+MapPosition = 0,17,10
+Flags = DisableBoxLink
+#-------------------------------
+[064]   # Battle Factory arena
+Name = Battle Frontier
+MapPosition = 0,17,10
+BattleBack = indoor1
+Flags = DisableBoxLink
+#-------------------------------
+[065]   # Battle Factory corridor
+Name = Battle Frontier
+MapPosition = 0,17,10
+Flags = DisableBoxLink
+#-------------------------------
+[066]   # Safari Zone outside
+Name = Safari Zone
+Outdoor = true
+ShowArea = true
+MapPosition = 0,12,12
+BattleBack = field
+#-------------------------------
+[067]   # Safari Zone gate
+Name = Safari Zone
+MapPosition = 0,12,12
+#-------------------------------
+[068]   # Safari Zone
+Name = Safari Zone
+Outdoor = true
+ShowArea = true
+MapPosition = 0,12,12
+SafariMap = true
+BattleBack = forest
+Environment = Forest
+#-------------------------------
+[069]   # Route 8
+Name = Route 8
+Outdoor = true
+ShowArea = true
+MapPosition = 0,13,13
+DiveMap = 70
+BattleBack = field
+#-------------------------------
+[070]   # Route 8 underwater
+Name = Route 8
+MapPosition = 0,13,13
+BattleBack = underwater
+Environment = Underwater
+#-------------------------------
+[071]   # Route 8 harbor
+Name = Route 8
+MapPosition = 0,13,13
+#-------------------------------
+[072]   # Berth Island
+Name = Berth Island
+Outdoor = true
+ShowArea = true
+Weather = Storm,50
+MapPosition = 0,18,17
+BattleBack = field
+Flags = DistortionWorld
+#-------------------------------
+[073]   # Faraday Island
+Name = Faraday Island
+Outdoor = true
+ShowArea = true
+MapPosition = 0,22,16
+BattleBack = field
+Flags = DistortionWorld
+#-------------------------------
+[074]   # Route 6 Cycling Road gate
+Name = Route 6
+Bicycle = true
+MapPosition = 0,12,10
+#-------------------------------
+[075]   # Tiall Region
+Name = Tiall Region
+Outdoor = true
+MapPosition = 1,13,16
+BattleBack = city
+#-------------------------------
+[076]   # Kolosseum
+Name = Kolosseum
+ShowArea = true
+MapPosition = 0,1,18
+SnapEdges = true
+BattleBack = ruine
+#-------------------------------
+[077]   # Pflanze
+Name = Kolosseum
+MapPosition = 0,1,18
+SnapEdges = true
+#-------------------------------
+[078]   # Feuer
+Name = Kolosseum
+MapPosition = 0,1,18
+SnapEdges = true
+#-------------------------------
+[079]   # Wasser
+Name = Kolosseum
+MapPosition = 0,1,18
+SnapEdges = true
+#-------------------------------
+[080]   # Vermächtnis des Codes
+Name = Vermächtnis des Codes
+MapPosition = 0,1,18
+SnapEdges = true
+#-------------------------------
+[081]   # Orphax-Tunnel
+Name = Orphax-Tunnel
+MapPosition = 0,2,17
+DarkMap = true
+SnapEdges = true
+BattleBack = cave
+WildBattleBGM = Battle! (Wild Pokémon)_1
+WildVictoryBGM = Victory! (Wild Pokemon)_9
+Environment = Cave
+Flags = Levels
+#-------------------------------
+[082]   # Beerenladen
+Name = Kräuterküche
+ShowArea = true
+MapPosition = 0,6,15
+SnapEdges = true
+#-------------------------------
+[083]   # Route 1
+Name = Route 1
+Outdoor = true
+ShowArea = true
+Bicycle = true
+HealingSpot = 86,15,20
+MapPosition = 0,2,17
+SnapEdges = true
+BattleBack = forest
+WildBattleBGM = Battle! (Wild Pokémon)_2
+Environment = Forest
+Flags = Levels
+#-------------------------------
+[084]   # Rin-Spalte
+Name = Rin-Spalte
+MapPosition = 0,1,16
+DarkMap = true
+SnapEdges = true
+BattleBack = cave
+WildBattleBGM = Battle! (Wild Pokémon)_3
+WildVictoryBGM = Victory! (Wild Pokemon)_3
+Environment = Cave
+Flags = Levels
+#-------------------------------
+[085]   # Dämmergrube
+Name = Dämmergrube
+ShowArea = true
+Bicycle = true
+MapPosition = 0,3,13
+DarkMap = true
+SnapEdges = true
+BattleBack = cave
+WildBattleBGM = Battle! (Wild Pokémon)_4
+WildVictoryBGM = Victory! (Wild Pokemon)_4
+Environment = Cave
+Flags = Levels
+#-------------------------------
+[086]   # Route 1 Center
+Name = Pokécenter Route 1
+ShowArea = true
+Bicycle = true
+MapPosition = 0,2,16
+SnapEdges = true
+Environment = None
+#-------------------------------
+[087]   # Route 2
+Name = Route 2
+Outdoor = true
+ShowArea = true
+Bicycle = true
+MapPosition = 0,3,15
+SnapEdges = true
+BattleBack = beach
+WildBattleBGM = Battle! (Wild Pokémon)_5
+WildVictoryBGM = Victory! (Wild Pokemon)_5
+Environment = None
+Flags = Levels
+#-------------------------------
+[088]   # Felino-Spalte
+Name = Felino-Spalte
+MapPosition = 0,3,15
+DarkMap = true
+SnapEdges = true
+BattleBack = cave2
+WildBattleBGM = Battle! (Wild Pokémon)_7
+WildVictoryBGM = Victory! (Wild Pokémon)_7
+Environment = Cave
+Flags = Levels
+#-------------------------------
+[089]   # Zwischengebäude
+Name = Mistral
+Bicycle = true
+MapPosition = 0,4,15
+SnapEdges = true
+#-------------------------------
+[090]   # Auroria-Höhle
+Name = Auroria-Höhle
+MapPosition = 0,3,16
+DarkMap = true
+SnapEdges = true
+BattleBack = cave1
+WildBattleBGM = Battle! (Wild Pokémon)_8
+WildVictoryBGM = Victory! (Wild Pokemon)_9
+Environment = Cave
+Flags = Levels
+#-------------------------------
+[091]   # Auroria-Höhle
+Name = Auroria-Höhle
+MapPosition = 0,3,16
+DarkMap = true
+SnapEdges = true
+BattleBack = cave1
+WildBattleBGM = Battle! (Wild Pokémon)_8
+WildVictoryBGM = Victory! (Wild Pokemon)_9
+Environment = Cave
+Flags = Levels
+#-------------------------------
+[092]   # Mistral
+Name = Mistral
+Outdoor = true
+ShowArea = true
+Bicycle = true
+MapPosition = 0,5,15
+SnapEdges = true
+BattleBack = city
+WildBattleBGM = Battle! (Wild Pokémon)_9
+WildVictoryBGM = Victory! (Wild Pokemon)_9
+Environment = Grass
+Flags = Levels
+#-------------------------------
+[093]   # Mistral
+Name = Mistral
+MapPosition = 0,5,15
+SnapEdges = true
+#-------------------------------
+[094]   # Mistral
+Name = Mistral
+MapPosition = 0,5,15
+SnapEdges = true
+#-------------------------------
+[095]   # Mistral
+Name = Mistral
+MapPosition = 0,5,15
+SnapEdges = true
+#-------------------------------
+[096]   # Mistral
+Name = Mistral
+MapPosition = 0,5,15
+SnapEdges = true
+#-------------------------------
+[097]   # Mistral
+Name = Mistral
+MapPosition = 0,5,15
+SnapEdges = true
+#-------------------------------
+[098]   # Mistral
+Name = Mistral
+MapPosition = 0,5,15
+SnapEdges = true
+#-------------------------------
+[099]   # Mistral
+Name = Mistral
+MapPosition = 0,5,15
+SnapEdges = true
+#-------------------------------
+[100]   # Mistral
+Name = Mistral
+MapPosition = 0,5,15
+SnapEdges = true
+#-------------------------------
+[101]   # Mistral
+Name = Mistral
+MapPosition = 0,5,15
+SnapEdges = true
+#-------------------------------
+[102]   # Mistral
+Name = Mistral
+MapPosition = 0,5,15
+SnapEdges = true
+#-------------------------------
+[103]   # Mistral
+Name = Mistral
+MapPosition = 0,5,15
+SnapEdges = true
+#-------------------------------
+[104]   # Mistral
+Name = Mistral
+MapPosition = 0,5,15
+SnapEdges = true
+#-------------------------------
+[105]   # Mistral
+Name = Mistral
+MapPosition = 0,5,15
+SnapEdges = true
+StillReflections = true
+#-------------------------------
+[106]   # Mistral
+Name = Mistral
+MapPosition = 0,5,15
+SnapEdges = true
+#-------------------------------
+[107]   # Mistral
+Name = Mistral
+MapPosition = 0,5,15
+SnapEdges = true
+#-------------------------------
+[108]   # Mistral
+Name = Mistral
+MapPosition = 0,5,15
+SnapEdges = true
+#-------------------------------
+[109]   # Morastia
+Name = Morastia
+Outdoor = true
+ShowArea = true
+HealingSpot = 92,12,15
+MapPosition = 0,22,5
+SnapEdges = true
+BattleBack = Swamp
+WildBattleBGM = Battle Wild Southeast
+WildVictoryBGM = Victory! (Wild Pokemon)_5
+Environment = ForestGrass
+Flags = Levels
+#-------------------------------
+[110]   # Mistral
+Name = Mistral
+Outdoor = true
+ShowArea = true
+Bicycle = true
+MapPosition = 0,6,15
+SnapEdges = true
+BattleBack = city
+WildBattleBGM = Battle! (Wild Pokémon)_9
+WildVictoryBGM = Victory! (Wild Pokemon)_9
+Environment = Grass
+Flags = Levels
+#-------------------------------
+[111]   # Mistral
+Name = Mistral
+MapPosition = 0,6,15
+SnapEdges = true
+#-------------------------------
+[112]   # Mistral
+Name = Mistral
+MapPosition = 0,6,15
+SnapEdges = true
+#-------------------------------
+[113]   # Mistral
+Name = Mistral
+MapPosition = 0,6,15
+SnapEdges = true
+#-------------------------------
+[114]   # Mistral
+Name = Mistral
+MapPosition = 0,6,15
+SnapEdges = true
+#-------------------------------
+[115]   # Mistral
+Name = Mistral
+MapPosition = 0,6,15
+SnapEdges = true
+#-------------------------------
+[116]   # Mistral
+Name = Mistral
+MapPosition = 0,6,15
+SnapEdges = true
+#-------------------------------
+[117]   # Mistral
+Name = Mistral
+MapPosition = 0,6,15
+SnapEdges = true
+#-------------------------------
+[118]   # Mistral
+Name = Mistral
+MapPosition = 0,6,15
+SnapEdges = true
+#-------------------------------
+[119]   # Mistral
+Name = Mistral
+MapPosition = 0,6,15
+SnapEdges = true
+#-------------------------------
+[120]   # Mistral
+Name = Mistral
+MapPosition = 0,6,15
+SnapEdges = true
+#-------------------------------
+[121]   # Mistral
+Name = Mistral
+MapPosition = 0,6,15
+SnapEdges = true
+#-------------------------------
+[122]   # Mistral
+Name = Mistral
+MapPosition = 0,6,15
+SnapEdges = true
+#-------------------------------
+[123]   # Mistral
+Name = Mistral
+MapPosition = 0,6,15
+SnapEdges = true
+#-------------------------------
+[124]   # Mistral
+Name = Mistral
+MapPosition = 0,6,15
+SnapEdges = true
+#-------------------------------
+[125]   # Mistral
+Name = Mistral
+MapPosition = 0,6,15
+SnapEdges = true
+#-------------------------------
+[126]   # Mistral
+Name = Mistral
+MapPosition = 0,6,15
+SnapEdges = true
+#-------------------------------
+[127]   # Mistral
+Name = Mistral
+MapPosition = 0,6,15
+SnapEdges = true
+#-------------------------------
+[128]   # Mistral
+Name = Mistral
+MapPosition = 0,6,15
+SnapEdges = true
+#-------------------------------
+[129]   # Mistral
+Name = Mistral
+MapPosition = 0,6,15
+SnapEdges = true
+#-------------------------------
+[130]   # Mistral
+Name = Mistral
+MapPosition = 0,6,15
+SnapEdges = true
+#-------------------------------
+[131]   # Mistral
+Name = Mistral
+MapPosition = 0,6,15
+SnapEdges = true
+#-------------------------------
+[132]   # Mistral
+Name = Mistral
+MapPosition = 0,6,15
+SnapEdges = true
+#-------------------------------
+[133]   # Mistral
+Name = Mistral
+MapPosition = 0,6,15
+SnapEdges = true
+#-------------------------------
+[134]   # Mistral
+Name = Mistral
+MapPosition = 0,6,15
+SnapEdges = true
+#-------------------------------
+[135]   # Mistral
+Name = Mistral
+MapPosition = 0,6,15
+SnapEdges = true
+#-------------------------------
+[136]   # Mistral
+Name = Mistral
+MapPosition = 0,6,15
+SnapEdges = true
+#-------------------------------
+[137]   # Mistral
+Name = Mistral
+MapPosition = 0,6,15
+SnapEdges = true
+#-------------------------------
+[138]   # Traumwelt
+Name = Traumwelt
+ShowArea = true
+HealingSpot = 110,81,11
+MapPosition = 0,22,7
+SnapEdges = true
+BattleBack = traum
+WildBattleBGM = battle wild space
+WildVictoryBGM = Victory! (Wild Pokemon)_5
+Environment = Space
+Flags = Levels,Inverse
+#-------------------------------
+[139]   # Route 15
+Name = Route 15
+Outdoor = true
+ShowArea = true
+MapPosition = 0,22,4
+SnapEdges = true
+BattleBack = route15
+Flags = Levels
+#-------------------------------
+[140]   # Geisterhaus
+Name = Geisterhaus
+ShowArea = true
+MapPosition = 0,6,5
+DarkMap = true
+SnapEdges = true
+BattleBack = interior
+WildBattleBGM = Battle! (Wild Pokemon)_13
+WildVictoryBGM = Victory! (Wild Pokemon)_9
+Flags = Levels
+#-------------------------------
+[141]   # Lunafeld
+Name = Lunafeld
+Outdoor = true
+ShowArea = true
+Bicycle = true
+HealingSpot = 141,35,37
+MapPosition = 0,4,13
+SnapEdges = true
+BattleBack = city
+WildBattleBGM = Battle! (Wild Pokémon)_10
+WildVictoryBGM = Victory! (Wild Pokemon)_4
+Environment = Grass
+Flags = Levels
+#-------------------------------
+[142]   # Lunafeld Höhle
+Name = Lunafeld
+MapPosition = 0,4,13
+DarkMap = true
+SnapEdges = true
+BattleBack = cave
+WildBattleBGM = Battle! (Wild Pokémon)_2
+WildVictoryBGM = Victory! (Wild Pokémon)_2
+Environment = Cave
+Flags = Levels
+#-------------------------------
+[143]   # Lunafeld
+Name = Lunafeld
+MapPosition = 0,4,13
+SnapEdges = true
+#-------------------------------
+[144]   # Lunafeld
+Name = Lunafeld
+MapPosition = 0,4,13
+SnapEdges = true
+#-------------------------------
+[145]   # Lunafeld
+Name = Lunafeld
+MapPosition = 0,4,13
+SnapEdges = true
+#-------------------------------
+[146]   # Lunafeld
+Name = Lunafeld
+MapPosition = 0,4,13
+SnapEdges = true
+#-------------------------------
+[147]   # Lunafeld
+Name = Lunafeld
+MapPosition = 0,4,13
+SnapEdges = true
+#-------------------------------
+[148]   # Lunafeld
+Name = Lunafeld
+MapPosition = 0,4,13
+SnapEdges = true
+#-------------------------------
+[149]   # Lunafeld
+Name = Lunafeld
+MapPosition = 0,4,13
+SnapEdges = true
+#-------------------------------
+[150]   # Lunafeld
+Name = Lunafeld
+MapPosition = 0,4,13
+SnapEdges = true
+#-------------------------------
+[151]   # Arena 1
+Name = Arena Lunafeld
+ShowArea = true
+MapPosition = 0,4,13
+SnapEdges = true
+#-------------------------------
+[152]   # Arena 1 Prüfung
+Name = Arena Lunafeld
+MapPosition = 0,4,13
+DarkMap = true
+SnapEdges = true
+BattleBack = cave5
+WildBattleBGM = Battle! Wild special
+Environment = Cave
+Flags = Levels
+#-------------------------------
+[153]   # Arena 1 Prüfung
+Name = Arena Lunafeld
+MapPosition = 0,4,13
+DarkMap = true
+SnapEdges = true
+BattleBack = cave5
+WildBattleBGM = Battle! Wild special
+Environment = Cave
+Flags = Levels
+#-------------------------------
+[154]   # Arena 1 Kampf
+Name = Arena Lunafeld
+MapPosition = 0,4,13
+SnapEdges = true
+BattleBack = arena1
+#-------------------------------
+[155]   # Bruchhain
+Name = Bruchhain
+Outdoor = true
+ShowArea = true
+HealingSpot = 155,12,18
+MapPosition = 0,22,7
+SnapEdges = true
+BattleBack = Forest_2
+WildBattleBGM = Battle! (Clan Warden)
+WildVictoryBGM = Victory! (Wild Pokémon)_2
+Flags = Levels
+#-------------------------------
+[156]   # Route 3
+Name = Route 3
+Outdoor = true
+ShowArea = true
+Bicycle = true
+MapPosition = 0,4,13
+SnapEdges = true
+BattleBack = forest
+WildBattleBGM = Battle! (Wild Pokémon)_1
+Environment = Forest
+Flags = Levels
+#-------------------------------
+[157]   # Eldorin-Höhle
+Name = Eldorin-Höhle
+ShowArea = true
+MapPosition = 0,4,13
+DarkMap = true
+SnapEdges = true
+BattleBack = cave
+WildBattleBGM = Battle! (Wild Pokémon)_1
+Environment = Cave
+Flags = Levels
+#-------------------------------
+[158]   # Eldorin-Höhle
+Name = Eldorin-Höhle
+ShowArea = true
+MapPosition = 0,4,12
+DarkMap = true
+SnapEdges = true
+BattleBack = cave
+WildBattleBGM = Battle! (Wild Pokémon)_1
+Environment = Cave
+Flags = Levels
+#-------------------------------
+[159]   # Eldorin-Höhle
+Name = Eldorin-Höhle
+ShowArea = true
+MapPosition = 0,5,12
+DarkMap = true
+SnapEdges = true
+BattleBack = cave
+WildBattleBGM = Battle! (Wild Pokémon)_1
+Environment = Cave
+Flags = Levels
+#-------------------------------
+[160]   # Route 3 (Filler)
+Name = Route 3
+Outdoor = true
+Bicycle = true
+MapPosition = 0,4,14
+#-------------------------------
+[161]   # Route 4
+Name = Route 4
+Outdoor = true
+ShowArea = true
+Bicycle = true
+HealingSpot = 161,13,20
+MapPosition = 0,6,13
+SnapEdges = true
+BattleBack = forest
+WildBattleBGM = Battle! (Wild Pokémon)_3
+WildVictoryBGM = Victory! (Wild Pokemon)_3
+Environment = Forest
+Flags = Levels
+#-------------------------------
+[162]   # MAP162
+Name = Route 4
+MapPosition = 0,6,13
+#-------------------------------
+[163]   # MAP163
+Name = Route 5
+MapPosition = 0,7,13
+#-------------------------------
+[164]   # Zwischengebäude
+Name = Zwischengebäude
+MapPosition = 0,3,10
+SnapEdges = true
+#-------------------------------
+[165]   # Käfersammler-Contest
+Name = Käfersammler-Contest
+ShowArea = true
+MapPosition = 0,8,13
+SnapEdges = true
+#-------------------------------
+[166]   # Käfersammler-Contest Siegerehrung
+Name = Käfersammler-Contest
+MapPosition = 0,8,13
+SnapEdges = true
+Flags = BugContestReception
+#-------------------------------
+[167]   # Käfersammler-Contest (Aufzug)
+Name = Käfersammler-Contest
+MapPosition = 0,8,13
+SnapEdges = true
+#-------------------------------
+[168]   # Käfersammler-Contest
+Name = Käfersammler-Contest
+Outdoor = true
+ShowArea = true
+MapPosition = 0,8,13
+BattleBack = forest
+WildBattleBGM = Battle! (Wild Pokémon)_4
+WildVictoryBGM = Victory! (Wild Pokemon)_4
+Flags = BugContest,Levels
+#-------------------------------
+[169]   # Käfersammler-Contest
+Name = Käfersammler-Contest
+Outdoor = true
+MapPosition = 0,8,13
+BattleBack = forest
+WildBattleBGM = Battle! (Wild Pokémon)_4
+WildVictoryBGM = Victory! (Wild Pokemon)_4
+Flags = BugContest,Levels
+#-------------------------------
+[170]   # Käfersammler-Contest
+Name = Käfersammler-Contest
+Outdoor = true
+MapPosition = 0,8,13
+BattleBack = forest
+WildBattleBGM = Battle! (Wild Pokémon)_4
+WildVictoryBGM = Victory! (Wild Pokemon)_4
+Flags = BugContest,Levels
+#-------------------------------
+[171]   # Käfersammler-Contest
+Name = Käfersammler-Contest
+Outdoor = true
+MapPosition = 0,8,13
+BattleBack = forest
+WildBattleBGM = Battle! (Wild Pokémon)_4
+WildVictoryBGM = Victory! (Wild Pokemon)_4
+Flags = BugContest,Levels
+#-------------------------------
+[172]   # Käfersammler-Contest
+Name = Käfersammler-Contest
+Outdoor = true
+MapPosition = 0,8,13
+BattleBack = forest
+WildBattleBGM = Battle! (Wild Pokémon)_4
+WildVictoryBGM = Victory! (Wild Pokemon)_4
+Flags = BugContest,Levels
+#-------------------------------
+[173]   # Käfersammler-Contest
+Name = Käfersammler-Contest
+MapPosition = 0,8,13
+DarkMap = true
+BattleBack = cave1
+WildBattleBGM = Battle! (Wild Pokémon)_4
+WildVictoryBGM = Victory! (Wild Pokemon)_4
+Flags = BugContest,Levels
+#-------------------------------
+[174]   # Azumaris
+Name = Azumaris
+Outdoor = true
+ShowArea = true
+Bicycle = true
+HealingSpot = 174,36,30
+MapPosition = 0,9,14
+SnapEdges = true
+BattleBack = beach
+WildBattleBGM = Battle! (Wild Pokémon)_5
+Flags = Levels
+#-------------------------------
+[175]   # Arena 2
+Name = Azumaris Arena
+MapPosition = 0,9,14
+BattleBack = gym2
+#-------------------------------
+[176]   # Arena 2
+Name = Azumaris Arena
+MapPosition = 0,9,14
+BattleBack = gym2
+#-------------------------------
+[177]   # MAP177
+Name = Azumaris
+HealingSpot = 177,10,7
+MapPosition = 0,9,14
+#-------------------------------
+[178]   # Arena 4
+Name = Arena Ephiron
+MapPosition = 0,3,10
+SnapEdges = true
+BattleBack = gym4
+#-------------------------------
+[179]   # Azumaris
+Name = Azumaris
+MapPosition = 0,9,14
+#-------------------------------
+[180]   # Raukun-Tunnel
+Name = Raukun-Tunnel
+ShowArea = true
+MapPosition = 0,9,13
+DarkMap = true
+SnapEdges = true
+BattleBack = cave
+WildBattleBGM = Battle! (Wild Pokémon)_7
+Environment = Cave
+Flags = Levels
+#-------------------------------
+[181]   # Raukun-Tunnel
+Name = Raukun-Tunnel
+ShowArea = true
+MapPosition = 0,9,13
+DarkMap = true
+SnapEdges = true
+BattleBack = cave
+WildBattleBGM = Battle! (Wild Pokémon)_7
+Environment = Cave
+Flags = Levels
+#-------------------------------
+[182]   # Raukun-Tunnel
+Name = Raukun-Tunnel
+ShowArea = true
+MapPosition = 0,9,13
+DarkMap = true
+SnapEdges = true
+BattleBack = cave
+WildBattleBGM = Battle! (Wild Pokémon)_7
+Environment = Cave
+Flags = Levels
+#-------------------------------
+[183]   # Intro
+Name = Intro
+MapPosition = 0,1,18
+#-------------------------------
+[184]   # Route 5
+Name = Route 5
+Outdoor = true
+ShowArea = true
+Bicycle = true
+HealingSpot = 184,17,64
+MapPosition = 0,9,12
+SnapEdges = true
+BattleBack = beach
+WildBattleBGM = Battle! (Wild Pokémon)_8
+Environment = Sand
+Flags = Levels
+#-------------------------------
+[185]   # Kraftwerk
+Name = Kraftwerk
+Outdoor = true
+ShowArea = true
+MapPosition = 0,5,10
+SnapEdges = true
+BattleBack = forest
+WildBattleBGM = Battle! (Wild Pokémon)_9
+Flags = Levels
+#-------------------------------
+[186]   # Gesteinsschlund
+Name = Gesteinsschlund
+MapPosition = 0,9,9
+SnapEdges = true
+BattleBack = industrial
+WildBattleBGM = Battle! (Wild Pokémon)_10
+Environment = Cave
+Flags = Levels,ShowFollowingPkmn
+#-------------------------------
+[187]   # Kraftwerk OG
+Name = Kraftwerk OG
+MapPosition = 0,5,10
+BattleBack = industrial
+WildBattleBGM = Battle! (Wild Pokémon)_10
+Flags = Levels
+#-------------------------------
+[188]   # Kraftwerk EG
+Name = Kraftwerk EG
+ShowArea = true
+MapPosition = 0,5,10
+SnapEdges = true
+BattleBack = industrial
+WildBattleBGM = Battle! (Wild Pokémon)_10
+Flags = Levels
+#-------------------------------
+[189]   # Kraftwerk UG
+Name = Kraftwerk UG
+ShowArea = true
+MapPosition = 0,5,10
+SnapEdges = true
+BattleBack = industrial
+WildBattleBGM = Battle! (Wild Pokémon)_10
+Flags = Levels
+#-------------------------------
+[190]   # Rin-Spalte
+Name = Rin-Spalte
+MapPosition = 0,1,16
+DarkMap = true
+SnapEdges = true
+BattleBack = cave
+WildBattleBGM = Battle! (Wild Pokémon)_3
+WildVictoryBGM = Victory! (Wild Pokemon)_3
+Environment = Cave
+Flags = Levels
+#-------------------------------
+[191]   # Route 14
+Name = Route 14
+Outdoor = true
+ShowArea = true
+MapPosition = 0,22,6
+SnapEdges = true
+BattleBack = Swamp
+WildBattleBGM = Battle Wild Southeast
+WildVictoryBGM = Victory! (Wild Pokemon)_5
+Environment = ForestGrass
+Flags = Levels
+#-------------------------------
+[192]   # Route 13
+Name = Route 13
+Outdoor = true
+ShowArea = true
+HealingSpot = 141,35,37
+MapPosition = 0,21,9
+SnapEdges = true
+BattleBack = Forest_2
+WildBattleBGM = Battle! (Clan Warden)
+WildVictoryBGM = Victory! (Wild Pokémon)_2
+Environment = Forest
+Flags = Levels
+#-------------------------------
+[193]   # Mansion
+Name = Mansion
+Outdoor = true
+ShowArea = true
+MapPosition = 0,22,6
+SnapEdges = true
+BattleBack = Swamp
+WildBattleBGM = Battle Wild Southeast
+WildVictoryBGM = Victory! (Wild Pokemon)_5
+Environment = ForestGrass
+Flags = Levels
+#-------------------------------
+[194]   # Manaphy
+Name = Grotte
+ShowArea = true
+MapPosition = 0,3,16
+SnapEdges = true
+BattleBack = manaphy
+WildBattleBGM = battle wild 2
+WildVictoryBGM = Victory! (Wild Pokémon)_2
+Environment = Sand
+Flags = Levels
+#-------------------------------
+[195]   # Arena 2 Aufzug
+Name = Azumaris Arena
+MapPosition = 0,9,14
+#-------------------------------
+[196]   # Gesteinsschlund
+Name = Gesteinsschlund
+ShowArea = true
+MapPosition = 0,9,9
+SnapEdges = true
+BattleBack = cave1
+Environment = Cave
+Flags = Levels,ShowFollowingPkmn
+#-------------------------------
+[197]   # Gesteinsschlund
+Name = Gesteinsschlund
+ShowArea = true
+MapPosition = 0,9,9
+SnapEdges = true
+BattleBack = cave1
+Environment = Cave
+Flags = Levels,ShowFollowingPkmn
+#-------------------------------
+[198]   # Gesteinsschlund
+Name = Gesteinsschlund
+MapPosition = 0,9,9
+SnapEdges = true
+BattleBack = cave1
+WildBattleBGM = Battle! (Wild Pokémon)_10
+Environment = Cave
+Flags = Levels,ShowFollowingPkmn
+#-------------------------------
+[199]   # Gesteinsschlund
+Name = Gesteinsschlund
+MapPosition = 0,9,9
+SnapEdges = true
+BattleBack = cave1
+WildBattleBGM = Battle! (Wild Pokémon)_10
+Flags = Levels,ShowFollowingPkmn
+#-------------------------------
+[200]   # Hafen/Strand
+Name = Hafen/Strand
+MapPosition = 0,12,8
+#-------------------------------
+[201]   # Nicht verwendet Eis-Puzzle
+Name = Nicht verwendet Eis-Puzzle
+MapPosition = 0,12,8
+#-------------------------------
+[202]   # Nicht verwendet Teleport-Puzzle
+Name = Nicht verwendet Teleport-Puzzle
+MapPosition = 0,12,8
+#-------------------------------
+[203]   # Nicht verwendet Test Map leuchtende Kristalle
+Name = MAP203
+MapPosition = 0,12,8
+DarkMap = true
+#-------------------------------
+[204]   # Aufzug
+Name = Arena Lunafeld
+MapPosition = 0,4,13
+SnapEdges = true
+#-------------------------------
+[205]   # Gesteinsschlund
+Name = Gesteinsschlund
+MapPosition = 0,9,9
+SnapEdges = true
+BattleBack = cave1
+WildBattleBGM = B2W2 107 Battle! (Wild Pokemon)
+WildVictoryBGM = Victory! (Wild Pokemon)_4
+Environment = Cave
+Flags = Levels
+#-------------------------------
+[206]   # Insel
+Name = Dracheninseln
+Outdoor = true
+ShowArea = true
+MapPosition = 0,7,16
+SnapEdges = true
+BattleBack = beach
+WildBattleBGM = Battle! (Wild Pokémon)_7
+Flags = Levels
+#-------------------------------
+[207]   # MAP207
+Name = Route 5
+MapPosition = 0,7,13
+#-------------------------------
+[208]   # Solhaven
+Name = Solhaven
+Outdoor = true
+HealingSpot = 208,15,54
+MapPosition = 0,11,8
+SnapEdges = true
+BattleBack = forest
+WildBattleBGM = Battle! (Wild Pokémon)_11
+Flags = Levels
+#-------------------------------
+[209]   # Gesteinsschlund
+Name = Gesteinsschlund
+ShowArea = true
+MapPosition = 0,9,9
+SnapEdges = true
+BattleBack = cave1
+Environment = Cave
+Flags = Levels,ShowFollowingPkmn
+#-------------------------------
+[210]   # Nicht verwendet
+Name = Nicht verwendet
+MapPosition = 0,12,8
+#-------------------------------
+[211]   # Solhaven
+Name = Solhaven
+MapPosition = 0,11,8
+#-------------------------------
+[212]   # Solhaven
+Name = Solhaven
+MapPosition = 0,11,8
+#-------------------------------
+[213]   # Solhaven
+Name = Solhaven
+MapPosition = 0,11,8
+#-------------------------------
+[214]   # Solhaven
+Name = Solhaven
+MapPosition = 0,11,8
+#-------------------------------
+[215]   # Solhaven
+Name = Solhaven
+MapPosition = 0,11,8
+#-------------------------------
+[216]   # Solhaven
+Name = Solhaven
+MapPosition = 0,11,8
+#-------------------------------
+[217]   # Solhaven
+Name = Solhaven
+MapPosition = 0,11,8
+BattleBack = indoor
+#-------------------------------
+[218]   # Solhaven
+Name = Solhaven
+MapPosition = 0,11,8
+#-------------------------------
+[219]   # Solhaven
+Name = Solhaven
+MapPosition = 0,11,8
+BattleBack = indoor
+#-------------------------------
+[220]   # Solhaven
+Name = Solhaven
+MapPosition = 0,11,8
+#-------------------------------
+[221]   # Solhaven
+Name = Solhaven
+MapPosition = 0,11,8
+#-------------------------------
+[222]   # Solhaven
+Name = Solhaven
+MapPosition = 0,11,8
+#-------------------------------
+[223]   # Labor
+Name = Solhaven
+MapPosition = 0,11,8
+#-------------------------------
+[224]   # Labor
+Name = Solhaven
+MapPosition = 0,11,8
+#-------------------------------
+[225]   # Solhaven Center
+Name = Solhaven
+HealingSpot = 208,15,54
+MapPosition = 0,11,8
+#-------------------------------
+[226]   # Solhaven Markt
+Name = Solhaven
+MapPosition = 0,11,8
+#-------------------------------
+[227]   # Arena 3
+Name = Solhaven Arena
+MapPosition = 0,11,8
+SnapEdges = true
+BattleBack = gym30
+#-------------------------------
+[228]   # Arena 3
+Name = Solhaven Arena
+MapPosition = 0,11,8
+SnapEdges = true
+BattleBack = gym30
+#-------------------------------
+[229]   # Arena 3
+Name = Solhaven Arena
+MapPosition = 0,11,8
+SnapEdges = true
+BattleBack = gym30
+#-------------------------------
+[230]   # Arena 3
+Name = Solhaven Arena
+MapPosition = 0,11,8
+SnapEdges = true
+BattleBack = gym3
+#-------------------------------
+[231]   # Route 6
+Name = Route 6
+Outdoor = true
+ShowArea = true
+Weather = Snow,50
+MapPosition = 0,7,6
+SnapEdges = true
+BattleBack = snowy
+WildBattleBGM = Battle! (Wild Pokémon)_9
+WildVictoryBGM = Victory! (Wild Pokemon)_9
+Environment = Snow
+Flags = Levels
+#-------------------------------
+[232]   # Arena 3
+Name = Solhaven Arena
+MapPosition = 0,11,8
+SnapEdges = true
+#-------------------------------
+[233]   # Route 5 (Tropius)
+Name = Route 5
+MapPosition = 0,9,11
+BattleBack = beach
+Flags = Levels
+#-------------------------------
+[234]   # Route 3
+Name = Route 3
+Outdoor = true
+ShowArea = true
+MapPosition = 0,5,13
+SnapEdges = true
+BattleBack = forest
+WildBattleBGM = Battle! (Wild Pokémon)_1
+Environment = Forest
+Flags = Levels
+#-------------------------------
+[235]   # Hotel 1
+Name = Solhaven
+MapPosition = 0,11,8
+#-------------------------------
+[236]   # Solhaven
+Name = Solhaven
+Outdoor = true
+MapPosition = 0,11,8
+SnapEdges = true
+BattleBack = forest
+WildBattleBGM = Battle! (Wild Pokémon)_11
+Flags = Levels
+#-------------------------------
+[237]   # Selphar-Gewölbe
+Name = Selphar-Gewölbe
+ShowArea = true
+MapPosition = 0,5,9
+DarkMap = true
+SnapEdges = true
+BattleBack = cave1
+WildBattleBGM = Battle! (Wild Pokémon)_2
+Environment = Cave
+Flags = Levels
+#-------------------------------
+[238]   # Hotel 2
+Name = Solhaven
+MapPosition = 0,11,8
+#-------------------------------
+[239]   # Hotel 1 OG1
+Name = Solhaven
+MapPosition = 0,11,8
+#-------------------------------
+[240]   # Hotel 1 OG2
+Name = Solhaven
+MapPosition = 0,11,8
+#-------------------------------
+[241]   # Hotel 1 OG3
+Name = Solhaven
+MapPosition = 0,11,8
+#-------------------------------
+[242]   # Hotel 1 OG4
+Name = Solhaven
+MapPosition = 0,11,8
+#-------------------------------
+[243]   # Hotel 1 OG5
+Name = Solhaven
+MapPosition = 0,11,8
+#-------------------------------
+[244]   # Hotel 2 OG1
+Name = Solhaven
+MapPosition = 0,11,8
+#-------------------------------
+[245]   # Hotel 2 OG2
+Name = Solhaven
+MapPosition = 0,11,8
+#-------------------------------
+[246]   # Hotel 2 OG3
+Name = Solhaven
+MapPosition = 0,11,8
+#-------------------------------
+[247]   # Hotel 2 OG4
+Name = Solhaven
+MapPosition = 0,11,8
+#-------------------------------
+[248]   # Hotel 2 OG5
+Name = Solhaven
+MapPosition = 0,11,8
+BattleBack = indoor
+#-------------------------------
+[249]   # Aufzug
+Name = Solhaven
+MapPosition = 0,11,8
+#-------------------------------
+[250]   # Aufzug
+Name = Solhaven
+MapPosition = 0,11,8
+#-------------------------------
+[251]   # Celestia
+Name = Celestia
+Outdoor = true
+ShowArea = true
+Weather = Snow,100
+MapPosition = 0,6,5
+SnapEdges = true
+BattleBack = SnowCity
+WildBattleBGM = Battle! (Wild Pokémon)_9
+WildVictoryBGM = Victory! (Wild Pokemon)_9
+Flags = Levels
+#-------------------------------
+[252]   # Morneis-Schacht
+Name = Morneis-Schacht
+ShowArea = true
+MapPosition = 0,6,7
+DarkMap = true
+SnapEdges = true
+BattleBack = cave4
+WildBattleBGM = Battle! (Wild Pokémon)_5
+Environment = Cave
+Flags = Levels
+#-------------------------------
+[253]   # Morneis-Schacht
+Name = Morneis-Schacht
+ShowArea = true
+MapPosition = 0,6,7
+DarkMap = true
+SnapEdges = true
+BattleBack = cave4
+WildBattleBGM = Battle! (Wild Pokémon)_5
+Environment = Cave
+Flags = Levels
+#-------------------------------
+[254]   # Morneis-Schacht
+Name = Morneis-Schacht
+ShowArea = true
+MapPosition = 0,6,7
+DarkMap = true
+SnapEdges = true
+BattleBack = cave4
+WildBattleBGM = Battle! (Wild Pokémon)_5
+Environment = Cave
+Flags = Levels
+#-------------------------------
+[255]   # Morneis-Schacht
+Name = Morneis-Schacht
+ShowArea = true
+MapPosition = 0,6,7
+SnapEdges = true
+BattleBack = cave4
+WildBattleBGM = Battle! (Wild Pokémon)_5
+Environment = Cave
+Flags = Levels
+#-------------------------------
+[256]   # Celestia
+Name = Celestia
+MapPosition = 0,6,5
+SnapEdges = true
+#-------------------------------
+[257]   # Celestia
+Name = Celestia
+MapPosition = 0,6,5
+SnapEdges = true
+#-------------------------------
+[258]   # Celestia
+Name = Celestia
+MapPosition = 0,6,5
+SnapEdges = true
+#-------------------------------
+[259]   # Celestia
+Name = Celestia
+MapPosition = 0,6,5
+SnapEdges = true
+#-------------------------------
+[260]   # Route 6 (Heiße Quellen)
+Name = Route 6
+Outdoor = true
+ShowArea = true
+MapPosition = 0,5,6
+SnapEdges = true
+BattleBack = snowy
+WildBattleBGM = Battle! (Wild Pokémon)_9
+WildVictoryBGM = Victory! (Wild Pokemon)_9
+Environment = Snow
+Flags = Levels
+#-------------------------------
+[261]   # Celestia
+Name = Celestia
+MapPosition = 0,6,5
+SnapEdges = true
+#-------------------------------
+[262]   # Celestia
+Name = Celestia
+MapPosition = 0,6,5
+SnapEdges = true
+#-------------------------------
+[263]   # Geisterhaus
+Name = Geisterhaus
+ShowArea = true
+MapPosition = 0,6,5
+DarkMap = true
+SnapEdges = true
+BattleBack = interior
+WildBattleBGM = Battle! (Wild Pokémon)_13
+WildVictoryBGM = Victory! (Wild Pokemon)_9
+Flags = Levels
+#-------------------------------
+[264]   # Route 6
+Name = Route 6
+ShowArea = true
+MapPosition = 0,4,6
+DarkMap = true
+SnapEdges = true
+BattleBack = cave4
+WildBattleBGM = Battle! (Wild Pokémon)_2
+Environment = Cave
+Flags = Levels
+#-------------------------------
+[265]   # Route 6
+Name = Route 6
+ShowArea = true
+MapPosition = 0,4,6
+DarkMap = true
+SnapEdges = true
+BattleBack = cave4
+WildBattleBGM = Battle! (Wild Pokémon)_3
+Environment = Cave
+Flags = Levels
+#-------------------------------
+[266]   # Route 7
+Name = Route 7
+Outdoor = true
+ShowArea = true
+MapPosition = 0,3,8
+SnapEdges = true
+BattleBack = forest
+WildBattleBGM = Battle! (Wild Pokémon)_8
+Environment = Forest
+Flags = Levels
+#-------------------------------
+[267]   # Geisterhaus
+Name = Geisterhaus
+MapPosition = 0,6,5
+DarkMap = true
+SnapEdges = true
+BattleBack = interior
+WildBattleBGM = Battle! (Wild Pokemon)_13
+WildVictoryBGM = Victory! (Wild Pokemon)_9
+Flags = Levels
+#-------------------------------
+[268]   # Geisterhaus
+Name = Geisterhaus
+MapPosition = 0,6,5
+DarkMap = true
+SnapEdges = true
+BattleBack = interior
+WildBattleBGM = Battle! (Wild Pokemon)_13
+WildVictoryBGM = Victory! (Wild Pokemon)_9
+Flags = Levels
+#-------------------------------
+[269]   # Geisterhaus
+Name = Geisterhaus
+MapPosition = 0,6,5
+DarkMap = true
+SnapEdges = true
+BattleBack = interior
+WildBattleBGM = Battle! (Wild Pokemon)_13
+WildVictoryBGM = Victory! (Wild Pokemon)_9
+Flags = Levels
+#-------------------------------
+[270]   # Geisterhaus
+Name = Geisterhaus
+MapPosition = 0,6,5
+DarkMap = true
+SnapEdges = true
+BattleBack = interior
+WildBattleBGM = Battle! (Wild Pokemon)_13
+WildVictoryBGM = Victory! (Wild Pokemon)_9
+Flags = Levels
+#-------------------------------
+[271]   # Geisterhaus
+Name = Geisterhaus
+MapPosition = 0,6,5
+DarkMap = true
+SnapEdges = true
+BattleBack = interior
+WildBattleBGM = Battle! (Wild Pokemon)_13
+WildVictoryBGM = Victory! (Wild Pokemon)_9
+Flags = Levels
+#-------------------------------
+[272]   # Celestia Center
+Name = Celestia
+ShowArea = true
+HealingSpot = 251,31,13
+MapPosition = 0,6,5
+SnapEdges = true
+#-------------------------------
+[273]   # Ephiron
+Name = Ephiron
+Outdoor = true
+ShowArea = true
+Bicycle = true
+HealingSpot = 273,35,9
+MapPosition = 0,3,10
+SnapEdges = true
+BattleBack = forest
+WildBattleBGM = Battle! (Wild Pokémon)_9
+Flags = Levels
+#-------------------------------
+[274]   # Route 7 (Sternwarte)
+Name = Sternwarte
+Outdoor = true
+ShowArea = true
+MapPosition = 0,4,9
+SnapEdges = true
+BattleBack = forest
+WildBattleBGM = Battle! (Wild Pokémon)_8
+Environment = Forest
+Flags = Levels
+#-------------------------------
+[275]   # Route 8
+Name = Route 8
+Outdoor = true
+ShowArea = true
+Bicycle = true
+MapPosition = 0,3,11
+SnapEdges = true
+BattleBack = forest
+WildBattleBGM = Battle! (Wild Pokémon)_9
+Environment = Forest
+Flags = Levels
+#-------------------------------
+[276]   # Wüste
+Name = Wüste
+MapPosition = 0,12,8
+#-------------------------------
+[277]   # Arena Test
+Name = Arena Test
+MapPosition = 0,12,8
+#-------------------------------
+[278]   # MAP278
+Name = MAP278
+MapPosition = 0,12,8
+#-------------------------------
+[279]   # Gebäude
+Name = Gebäude
+MapPosition = 1,1,18
+#-------------------------------
+[280]   # Gebäude
+Name = Gebäude
+MapPosition = 0,4,16
+#-------------------------------
+[281]   # Gebäude
+Name = Gebäude
+MapPosition = 0,5,16
+#-------------------------------
+[282]   # Labore
+Name = Labore
+MapPosition = 0,5,16
+SnapEdges = true
+#-------------------------------
+[283]   # Gebäude
+Name = Gebäude
+MapPosition = 0,3,14
+#-------------------------------
+[284]   # Gebäude
+Name = Gebäude
+MapPosition = 0,7,15
+#-------------------------------
+[285]   # Nicht verwendete Maps
+Name = Nicht verwendete Maps
+MapPosition = 0,12,8
+#-------------------------------
+[286]   # Gebäude
+Name = Gebäude
+MapPosition = 0,7,11
+#-------------------------------
+[287]   # Gebäude
+Name = Gebäude
+MapPosition = 0,5,9
+#-------------------------------
+[288]   # VM-Testmap
+Name = VM-Testmap
+MapPosition = 1,10,7
+#-------------------------------
+[289]   # Moostiefen
+Name = Moostiefen
+ShowArea = true
+Bicycle = true
+MapPosition = 0,2,12
+DarkMap = true
+SnapEdges = true
+BattleBack = cave3
+WildBattleBGM = Battle! (Wild Pokémon)_10
+WildVictoryBGM = Victory! (Wild Pokemon)_9
+Environment = Cave
+Flags = Levels
+#-------------------------------
+[290]   # Moostiefen U1
+Name = Moostiefen
+ShowArea = true
+Bicycle = true
+MapPosition = 0,2,12
+DarkMap = true
+SnapEdges = true
+BattleBack = cave3
+WildBattleBGM = Battle! (Wild Pokémon)_10
+WildVictoryBGM = Victory! (Wild Pokemon)_9
+Environment = Cave
+Flags = Levels
+#-------------------------------
+[291]   # Moostiefen U2
+Name = Moostiefen
+ShowArea = true
+Bicycle = true
+MapPosition = 0,2,12
+DarkMap = true
+SnapEdges = true
+BattleBack = cave3
+WildBattleBGM = Battle! (Wild Pokémon)_10
+WildVictoryBGM = Victory! (Wild Pokemon)_9
+Environment = Cave
+Flags = Levels
+#-------------------------------
+[292]   # Moostiefen Tanhel
+Name = Moostiefen
+ShowArea = true
+MapPosition = 0,2,12
+DarkMap = true
+SnapEdges = true
+BattleBack = cave3
+WildBattleBGM = Battle! (Wild Pokémon)_10
+WildVictoryBGM = Victory! (Wild Pokémon)_7
+Environment = Cave
+Flags = Levels
+#-------------------------------
+[293]   # Vermächtnis des Codes
+Name = Vermächtnis des Codes
+MapPosition = 0,1,18
+SnapEdges = true
+#-------------------------------
+[294]   # Hotel Klefki
+Name = Hotel Klefki
+MapPosition = 0,2,12
+#-------------------------------
+[295]   # Hotel Klefki P1
+Name = Hotel Klefki P1
+MapPosition = 0,2,12
+#-------------------------------
+[296]   # Zimmer
+Name = Zimmer
+MapPosition = 0,2,12
+#-------------------------------
+[297]   # Zimmer
+Name = Zimmer
+MapPosition = 0,2,12
+#-------------------------------
+[298]   # Zimmer
+Name = Zimmer
+MapPosition = 0,2,12
+#-------------------------------
+[299]   # Zimmer
+Name = Zimmer
+MapPosition = 0,2,12
+#-------------------------------
+[300]   # Hotel Klefki P2
+Name = Hotel Klefki P2
+MapPosition = 0,2,12
+#-------------------------------
+[301]   # Zimmer
+Name = Zimmer
+MapPosition = 0,2,12
+#-------------------------------
+[302]   # Zimmer
+Name = Zimmer
+MapPosition = 0,2,12
+#-------------------------------
+[303]   # Zimmer
+Name = Zimmer
+MapPosition = 0,2,12
+#-------------------------------
+[304]   # Zimmer
+Name = Zimmer
+MapPosition = 0,2,12
+#-------------------------------
+[305]   # Shaymin
+Name = Gracidea Anhöhe
+Outdoor = true
+ShowArea = true
+MapPosition = 0,11,8
+SnapEdges = true
+Environment = Grass
+Flags = Levels
+#-------------------------------
+[306]   # MAP306
+Name = Trainerschule
+ShowArea = true
+MapPosition = 0,3,14
+SnapEdges = true
+#-------------------------------
+[307]   # MAP307
+Name = Trainerschule
+MapPosition = 0,3,14
+SnapEdges = true
+#-------------------------------
+[308]   # Rätsel-Haus
+Name = Rätsel-Haus
+ShowArea = true
+MapPosition = 0,9,10
+SnapEdges = true
+#-------------------------------
+[309]   # Rätsel 1
+Name = Rätselhaus
+MapPosition = 0,9,10
+SnapEdges = true
+BattleBack = quiz
+WildBattleBGM = Battle! (Wild Pokémon)_5
+Flags = HideFollowingPkmn
+#-------------------------------
+[310]   # MAP310
+Name = Rätsel-Haus
+MapPosition = 0,9,10
+SnapEdges = true
+#-------------------------------
+[311]   # MAP311
+Name = MAP311
+MapPosition = 0,11,10
+#-------------------------------
+[312]   # Wald
+Name = Wald
+Outdoor = true
+ShowArea = true
+Bicycle = true
+MapPosition = 0,2,14
+SnapEdges = true
+WildBattleBGM = Battle! (Wild Pokémon)_5
+WildVictoryBGM = Victory! (Wild Pokemon)_4
+Environment = Forest
+Flags = Levels
+#-------------------------------
+[315]   # Mistral Angler
+Name = Anglerladen
+ShowArea = true
+MapPosition = 0,5,16
+SnapEdges = true
+#-------------------------------
+[316]   # Route 5 Angler
+Name = Anglerladen
+ShowArea = true
+MapPosition = 0,7,13
+SnapEdges = true
+#-------------------------------
+[317]   # Gebäude
+Name = Gebäude
+MapPosition = 0,3,10
+#-------------------------------
+[318]   # Ephiron
+Name = Ephiron
+MapPosition = 0,3,10
+#-------------------------------
+[319]   # Ephiron
+Name = Ephiron
+MapPosition = 0,3,10
+#-------------------------------
+[320]   # Ephiron
+Name = Ephiron
+MapPosition = 0,3,10
+#-------------------------------
+[321]   # Ephiron
+Name = Ephiron
+MapPosition = 0,3,10
+#-------------------------------
+[322]   # Ephiron
+Name = Ephiron
+MapPosition = 0,3,10
+#-------------------------------
+[323]   # Ephiron
+Name = Ephiron
+MapPosition = 0,3,10
+#-------------------------------
+[324]   # Ephiron
+Name = Ephiron
+MapPosition = 0,3,10
+#-------------------------------
+[325]   # Ephiron Markt
+Name = Ephiron Markt
+MapPosition = 0,3,10
+#-------------------------------
+[326]   # Ephiron Markt
+Name = Ephiron Markt
+MapPosition = 0,3,10
+#-------------------------------
+[327]   # Ephiron Markt
+Name = Ephiron Markt
+MapPosition = 0,3,10
+#-------------------------------
+[328]   # Ephiron Markt
+Name = Ephiron Markt
+MapPosition = 0,3,10
+#-------------------------------
+[329]   # Aufzug
+Name = Aufzug
+MapPosition = 0,3,10
+#-------------------------------
+[330]   # Sender
+Name = Sender
+MapPosition = 0,11,10
+#-------------------------------
+[331]   # Sender 1OG
+Name = Sender 1OG
+MapPosition = 0,11,10
+#-------------------------------
+[332]   # Sender 2OG
+Name = Sender 2OG
+MapPosition = 0,11,10
+#-------------------------------
+[333]   # Sender 3OG
+Name = Sender 3OG
+MapPosition = 0,11,10
+#-------------------------------
+[334]   # Sender 4OG
+Name = Sender 4OG
+MapPosition = 0,11,10
+#-------------------------------
+[335]   # Sender 5OG
+Name = Sender 5OG
+MapPosition = 0,11,10
+#-------------------------------
+[336]   # Aufzug EG
+Name = Aufzug EG
+MapPosition = 0,11,10
+#-------------------------------
+[337]   # RADiO/TV
+Name = RADiO/TV
+MapPosition = 0,11,10
+#-------------------------------
+[338]   # RADiO/TV OG1
+Name = RADiO/TV OG1
+MapPosition = 0,11,10
+DarkMap = true
+#-------------------------------
+[339]   # RADiO/TV
+Name = RADiO/TV
+MapPosition = 0,11,10
+#-------------------------------
+[340]   # Ariduna
+Name = Ariduna
+Outdoor = true
+ShowArea = true
+Bicycle = true
+HealingSpot = 340,26,20
+MapPosition = 0,19,9
+SnapEdges = true
+BattleBack = desert
+WildBattleBGM = battle wild 2
+WildVictoryBGM = Victory! (Wild Pokemon)_9
+Environment = Sand
+Flags = Levels
+#-------------------------------
+[341]   # Arena 5
+Name = Arena von Ariduna
+ShowArea = true
+MapPosition = 0,19,9
+SnapEdges = true
+#-------------------------------
+[342]   # Route 12
+Name = Route 12
+Outdoor = true
+ShowArea = true
+MapPosition = 0,20,9
+SnapEdges = true
+BattleBack = forest2
+WildBattleBGM = Battle Wild Southeast
+WildVictoryBGM = Victory! (Wild Pokemon)_9
+Environment = Forest
+Flags = Levels
+#-------------------------------
+[343]   # RADiO/TV OG2
+Name = RADiO/TV OG2
+MapPosition = 0,11,10
+#-------------------------------
+[344]   # RADiO/TV OG3
+Name = RADiO/TV OG3
+MapPosition = 0,11,10
+#-------------------------------
+[345]   # RADiO/TV OG4
+Name = RADiO/TV OG4
+MapPosition = 0,11,10
+#-------------------------------
+[346]   # RADiO/TV OG5
+Name = RADiO/TV OG5
+MapPosition = 0,11,10
+#-------------------------------
+[347]   # Route 9
+Name = Route 9
+Outdoor = true
+ShowArea = true
+Bicycle = true
+Weather = Rain,50
+MapPosition = 0,7,10
+SnapEdges = true
+BattleBack = forest
+Environment = TallGrass
+Flags = Levels
+#-------------------------------
+[348]   # Kampfplatz
+Name = Kampfplatz
+Outdoor = true
+MapPosition = 0,1,18
+SnapEdges = true
+#-------------------------------
+[349]   # Durchgang
+Name = Route 12
+Outdoor = true
+Bicycle = true
+MapPosition = 0,20,9
+SnapEdges = true
+#-------------------------------
+[350]   # Traumwelt
+Name = Traumwelt
+ShowArea = true
+MapPosition = 0,22,7
+SnapEdges = true
+BattleBack = traum
+WildBattleBGM = battle glitch
+WildVictoryBGM = victoryWild
+Environment = Space
+Flags = Levels,Inverse
+#-------------------------------
+[351]   # Distorion World
+Name = Distorion World
+MapPosition = 0,11,10
+#-------------------------------
+[352]   # Route 1
+Name = Route 1
+Outdoor = true
+ShowArea = true
+Bicycle = true
+MapPosition = 0,2,13
+SnapEdges = true
+BattleBack = forest
+WildBattleBGM = Battle! (Wild Pokémon)_2
+WildVictoryBGM = Victory! (Wild Pokémon)_2
+Environment = Forest
+Flags = Levels
+#-------------------------------
+[353]   # Erdgeschoss
+Name = Poké-Schule
+ShowArea = true
+MapPosition = 0,1,18
+SnapEdges = true
+#-------------------------------
+[354]   # Obergeschoss
+Name = Poké-Schule
+ShowArea = true
+MapPosition = 0,1,18
+SnapEdges = true
+#-------------------------------
+[355]   # Hotel Klefki
+Name = Hotel Klefki
+MapPosition = 0,8,14
+SnapEdges = true
+#-------------------------------
+[356]   # Hotel Klefki P1
+Name = Hotel Klefki
+MapPosition = 0,8,14
+SnapEdges = true
+BattleBack = Indoor4
+#-------------------------------
+[357]   # Hotel Klefki P2
+Name = Hotel Klefki P2
+MapPosition = 0,8,14
+SnapEdges = true
+#-------------------------------
+[358]   # Zimmer
+Name = Hotel Klefki
+MapPosition = 0,8,14
+SnapEdges = true
+#-------------------------------
+[359]   # Zimmer
+Name = Zimmer
+MapPosition = 0,8,14
+SnapEdges = true
+#-------------------------------
+[360]   # Zimmer
+Name = Zimmer
+MapPosition = 0,8,14
+SnapEdges = true
+#-------------------------------
+[361]   # Zimmer
+Name = Zimmer
+MapPosition = 0,8,14
+SnapEdges = true
+#-------------------------------
+[362]   # Zimmer
+Name = Zimmer
+MapPosition = 0,8,14
+SnapEdges = true
+#-------------------------------
+[363]   # Zimmer
+Name = Zimmer
+MapPosition = 0,8,14
+SnapEdges = true
+#-------------------------------
+[364]   # Zimmer
+Name = Zimmer
+MapPosition = 0,8,14
+SnapEdges = true
+#-------------------------------
+[365]   # Zimmer
+Name = Zimmer
+MapPosition = 0,8,14
+SnapEdges = true
+#-------------------------------
+[366]   # MAP366
+Name = MAP366
+MapPosition = 0,11,10
+#-------------------------------
+[367]   # Aufzug 1
+Name = Aufzug 1
+MapPosition = 0,8,14
+SnapEdges = true
+#-------------------------------
+[368]   # Aufzug 2
+Name = Aufzug 2
+MapPosition = 0,8,14
+SnapEdges = true
+#-------------------------------
+[369]   # MAP369
+Name = Route 1
+Outdoor = true
+ShowArea = true
+Bicycle = true
+MapPosition = 0,2,16
+SnapEdges = true
+BattleBack = forest
+WildBattleBGM = Battle! (Wild Pokémon)_2
+WildVictoryBGM = Victory! (Wild Pokémon)_2
+Environment = Forest
+Flags = Levels
+#-------------------------------
+[370]   # Route 13
+Name = Route 13
+Outdoor = true
+ShowArea = true
+MapPosition = 0,21,8
+SnapEdges = true
+BattleBack = Forest_2
+WildBattleBGM = Battle! (Clan Warden)
+WildVictoryBGM = Victory! (Wild Pokémon)_2
+Environment = Forest
+Flags = Levels
+#-------------------------------
+[376]   # Brunnen
+Name = Brunnen
+ShowArea = true
+MapPosition = 0,6,13
+SnapEdges = true
+BattleBack = brunnen
+WildBattleBGM = Battle! (Wild Pokémon)_1
+Environment = None
+Flags = Levels
+#-------------------------------
+[377]   # Kurts Haus
+Name = Kurts Haus
+ShowArea = true
+MapPosition = 0,4,13
+SnapEdges = true
+#-------------------------------
+[378]   # Mistral Center Rechts
+Name = Pokécenter Mistral
+ShowArea = true
+HealingSpot = 110,81,11
+MapPosition = 0,6,15
+SnapEdges = true
+#-------------------------------
+[379]   # Mistral Center Links
+Name = Pokécenter Mistral
+ShowArea = true
+HealingSpot = 92,12,15
+MapPosition = 0,5,15
+SnapEdges = true
+#-------------------------------
+[380]   # Lunafeld Center
+Name = Pokécenter Lunafeld
+ShowArea = true
+HealingSpot = 141,35,37
+MapPosition = 0,4,13
+SnapEdges = true
+#-------------------------------
+[381]   # Kurts Haus
+Name = Kurts Haus
+MapPosition = 0,4,13
+SnapEdges = true
+#-------------------------------
+[382]   # Route 10
+Name = Route 10
+Outdoor = true
+ShowArea = true
+Weather = Sandstorm,50
+MapPosition = 0,18,10
+SnapEdges = true
+BattleBack = desert
+WildBattleBGM = battle wild 2
+WildVictoryBGM = Victory! (Wild Pokemon)_9
+Environment = Sand
+Flags = Levels
+#-------------------------------
+[383]   # Brunnen
+Name = Brunnen
+ShowArea = true
+MapPosition = 0,6,13
+DarkMap = true
+SnapEdges = true
+BattleBack = cave3
+WildBattleBGM = Battle! Wild special
+Environment = Cave
+Flags = Levels
+#-------------------------------
+[384]   # Cable-Car
+Name = Lift Solhaven
+ShowArea = true
+MapPosition = 0,10,8
+SnapEdges = true
+#-------------------------------
+[385]   # Route 7
+Name = Route 7
+Outdoor = true
+ShowArea = true
+MapPosition = 0,3,8
+SnapEdges = true
+BattleBack = forest
+WildBattleBGM = Battle! (Wild Pokémon)_8
+WildVictoryBGM = Victory! (Wild Pokémon)_9
+Environment = Forest
+Flags = Levels
+#-------------------------------
+[386]   # Cable-Car
+Name = Lift Route 6
+ShowArea = true
+MapPosition = 0,8,6
+SnapEdges = true
+#-------------------------------
+[387]   # Kraftwerk Eingang
+Name = Kraftwerk
+ShowArea = true
+MapPosition = 0,5,10
+SnapEdges = true
+BattleBack = industrial
+Flags = Levels
+#-------------------------------
+[388]   # Geheimlabor
+Name = Team 1 Labor
+ShowArea = true
+MapPosition = 0,4,9
+SnapEdges = true
+BattleBack = labor
+#-------------------------------
+[389]   # Geheimlabor
+Name = Geheimlabor
+ShowArea = true
+MapPosition = 0,4,9
+SnapEdges = true
+BattleBack = labor
+#-------------------------------
+[390]   # Geheimlabor
+Name = Geheimlabor
+ShowArea = true
+MapPosition = 0,4,9
+SnapEdges = true
+BattleBack = labor
+#-------------------------------
+[391]   # Geheimlabor
+Name = Geheimlabor
+ShowArea = true
+MapPosition = 0,4,9
+SnapEdges = true
+BattleBack = labor
+#-------------------------------
+[392]   # Pension
+Name = Pokémon-Pension
+ShowArea = true
+MapPosition = 0,5,15
+SnapEdges = true
+#-------------------------------
+[393]   # Moostiefen Zarude
+Name = Moostiefen
+ShowArea = true
+MapPosition = 0,2,12
+DarkMap = true
+SnapEdges = true
+BattleBack = cave3
+WildBattleBGM = Battle! (Wild Pokémon)_10
+WildVictoryBGM = Victory! (Wild Pokémon)_7
+Environment = Cave
+Flags = Levels
+#-------------------------------
+[394]   # Gesteinsschlund
+Name = Gesteinsschlund
+MapPosition = 0,9,8
+SnapEdges = true
+BattleBack = cave1
+Environment = Cave
+Flags = Levels
+#-------------------------------
+[395]   # Route 4 Center
+Name = Route 4 Center
+HealingSpot = 161,13,20
+MapPosition = 0,7,14
+SnapEdges = true
+#-------------------------------
+[396]   # Azumaris Center
+Name = Azumaris Center
+HealingSpot = 174,36,30
+MapPosition = 0,9,15
+SnapEdges = true
+#-------------------------------
+[397]   # Route 5 Center
+Name = Route 5 Center
+HealingSpot = 184,17,64
+MapPosition = 0,9,13
+SnapEdges = true
+#-------------------------------
+[398]   # Titanenbruch-Kaverne
+Name = Demeteros Eingang
+MapPosition = 0,2,10
+DarkMap = true
+SnapEdges = true
+BattleBack = cave
+WildBattleBGM = Battle! (Wild Pokémon)_7
+WildVictoryBGM = Victory! (Wild Pokémon)_7
+Environment = Cave
+Flags = Levels
+#-------------------------------
+[399]   # Titanenbruch-Kaverne
+Name = Höhle
+MapPosition = 0,2,10
+DarkMap = true
+SnapEdges = true
+BattleBack = cave
+WildBattleBGM = Battle! (Wild Pokémon)_7
+WildVictoryBGM = Victory! (Wild Pokémon)_7
+Environment = Cave
+Flags = Levels
+#-------------------------------
+[400]   # Titanenbruch-Kaverne
+Name = Höhle
+MapPosition = 0,2,10
+DarkMap = true
+SnapEdges = true
+BattleBack = cave
+WildBattleBGM = Battle! (Wild Pokémon)_7
+WildVictoryBGM = Victory! (Wild Pokémon)_7
+Environment = Cave
+Flags = Levels
+#-------------------------------
+[401]   # Titanenbruch-Kaverne
+Name = Höhle
+MapPosition = 0,2,10
+DarkMap = true
+SnapEdges = true
+BattleBack = cave
+WildBattleBGM = Battle! (Wild Pokémon)_7
+WildVictoryBGM = Victory! (Wild Pokémon)_7
+Environment = Cave
+Flags = Levels
+#-------------------------------
+[404]   # Ephiron Pokécenter
+Name = Ephiron Pokécenter
+HealingSpot = 273,35,9
+MapPosition = 0,3,10
+SnapEdges = true
+#-------------------------------
+[405]   # Titanenbruch-Kaverne
+Name = Höhle
+MapPosition = 0,2,10
+DarkMap = true
+SnapEdges = true
+BattleBack = cave
+WildBattleBGM = Battle! (Wild Pokémon)_7
+WildVictoryBGM = Victory! (Wild Pokémon)_7
+Environment = Cave
+Flags = Levels,MossRock
+#-------------------------------
+[406]   # Titanenbruch-Kaverne
+Name = MAP406
+MapPosition = 0,2,10
+DarkMap = true
+SnapEdges = true
+BattleBack = cave
+WildBattleBGM = Battle! (Wild Pokémon)_7
+WildVictoryBGM = Victory! (Wild Pokémon)_7
+Environment = Cave
+Flags = Levels
+#-------------------------------
+[407]   # Titanenbruch-Kaverne
+Name = MAP407
+MapPosition = 0,2,10
+DarkMap = true
+SnapEdges = true
+BattleBack = cave
+WildBattleBGM = Battle! (Wild Pokémon)_7
+WildVictoryBGM = Victory! (Wild Pokémon)_7
+Environment = Cave
+Flags = Levels
+#-------------------------------
+[408]   # Titanenbruch-Kaverne
+Name = Höhle
+MapPosition = 0,2,10
+DarkMap = true
+SnapEdges = true
+BattleBack = cave
+WildBattleBGM = Battle! (Wild Pokémon)_7
+WildVictoryBGM = Victory! (Wild Pokémon)_7
+Environment = Cave
+Flags = Levels
+#-------------------------------
+[409]   # Titanenbruch-Kaverne
+Name = MAP409
+MapPosition = 0,2,10
+DarkMap = true
+SnapEdges = true
+BattleBack = cave
+WildBattleBGM = Battle! (Wild Pokémon)_7
+WildVictoryBGM = Victory! (Wild Pokémon)_7
+Environment = Cave
+Flags = Levels
+#-------------------------------
+[410]   # Zwischengebäude
+Name = Lunafeld
+MapPosition = 0,4,13
+SnapEdges = true
+#-------------------------------
+[411]   # Zwischengebäude
+Name = Route 3 / 4
+MapPosition = 0,3,10
+SnapEdges = true
+#-------------------------------
+[412]   # Zwischengebäude
+Name = Ephiron
+MapPosition = 0,3,10
+SnapEdges = true
+#-------------------------------
+[413]   # Regirock Tempel
+Name = Vermächtnis von Regirock
+ShowArea = true
+MapPosition = 0,18,10
+DarkMap = true
+SnapEdges = true
+BattleBack = ruine
+WildBattleBGM = battle wild 2
+WildVictoryBGM = Victory! (Wild Pokemon)_9
+Flags = Levels
+#-------------------------------
+[414]   # Oase
+Name = Oase
+Outdoor = true
+ShowArea = true
+MapPosition = 0,19,9
+SnapEdges = true
+BattleBack = desert
+WildBattleBGM = battle wild 2
+WildVictoryBGM = Victory! (Wild Pokemon)_9
+Environment = Sand
+Flags = Levels
+#-------------------------------
+[415]   # Labor Eingang
+Name = Route 11
+MapPosition = 0,18,9
+SnapEdges = true
+BattleBack = gym4
+#-------------------------------
+[416]   # Labor
+Name = Route 11
+MapPosition = 0,18,9
+SnapEdges = true
+BattleBack = gym4
+Flags = Levels
+#-------------------------------
+[417]   # Mine
+Name = Arena von Ariduna
+MapPosition = 0,19,9
+SnapEdges = true
+#-------------------------------
+[418]   # Center
+Name = Pokécenter
+ShowArea = true
+HealingSpot = 340,26,20
+MapPosition = 0,19,9
+SnapEdges = true
+#-------------------------------
+[419]   # Archäologe
+Name = Ariduna
+MapPosition = 0,19,9
+SnapEdges = true
+#-------------------------------
+[420]   # Oben
+Name = Ariduna
+MapPosition = 0,19,9
+SnapEdges = true
+#-------------------------------
+[421]   # Ruinen
+Name = Siegelkammer
+ShowArea = true
+MapPosition = 0,20,9
+SnapEdges = true
+BattleBack = regis
+WildBattleBGM = battle wild 2
+WildVictoryBGM = Victory! (Wild Pokemon)_9
+Environment = Cave
+Flags = Levels
+#-------------------------------
+[422]   # Links
+Name = Siegelkammer
+MapPosition = 0,20,9
+SnapEdges = true
+BattleBack = regis
+WildBattleBGM = battle wild 2
+WildVictoryBGM = Victory! (Wild Pokemon)_9
+Environment = Cave
+Flags = Levels
+#-------------------------------
+[423]   # Rechts
+Name = Siegelkammer
+MapPosition = 0,20,9
+SnapEdges = true
+BattleBack = regis
+WildBattleBGM = battle wild 2
+WildVictoryBGM = Victory! (Wild Pokemon)_9
+Environment = Cave
+Flags = Levels
+#-------------------------------
+[424]   # Mine
+Name = Arena von Ariduna
+MapPosition = 0,19,9
+SnapEdges = true
+BattleBack = mine
+WildBattleBGM = Battle wild (2)
+TrainerBattleBGM = Battle Trainer (10)
+WildVictoryBGM = B2W2 107 Battle! (Wild Pokemon)
+Environment = Cave
+Flags = Levels
+#-------------------------------
+[425]   # Gym
+Name = Arena von Ariduna
+MapPosition = 0,19,9
+SnapEdges = true
+BattleBack = labor1
+Flags = Levels
+#-------------------------------
+[426]   # Angel-Club
+Name = Angel-Club
+ShowArea = true
+MapPosition = 0,6,15
+SnapEdges = true
+#-------------------------------
+[427]   # MAP427
+Name = Angel-Club
+MapPosition = 0,6,15
+#-------------------------------
+[428]   # MAP428
+Name = Angel-Club
+MapPosition = 0,6,15
+SnapEdges = true
+#-------------------------------
+[429]   # MAP429
+Name = Angel-Club
+MapPosition = 0,6,15
+SnapEdges = true
+#-------------------------------
+[430]   # MAP430
+Name = Angel-Club
+MapPosition = 0,6,15
+SnapEdges = true
+#-------------------------------
+[431]   # MAP431
+Name = Angel-Club
+MapPosition = 0,6,15
+SnapEdges = true
+#-------------------------------
+[432]   # MAP432
+Name = Angel-Club
+MapPosition = 0,6,15
+SnapEdges = true
+#-------------------------------
+[435]   # Mooswind-Kaverne
+Name = Mooswind-Kaverne
+ShowArea = true
+MapPosition = 0,6,13
+DarkMap = true
+SnapEdges = true
+BattleBack = cave3
+WildBattleBGM = Battle! (Wild Pokémon)_4
+WildVictoryBGM = Victory! (Wild Pokemon)_4
+Environment = Cave
+Flags = Levels
+#-------------------------------
+[436]   # Mooswind-Kaverne
+Name = Mooswind-Kaverne
+ShowArea = true
+MapPosition = 0,6,13
+DarkMap = true
+SnapEdges = true
+BattleBack = cave3
+WildBattleBGM = Battle! (Wild Pokémon)_4
+WildVictoryBGM = Victory! (Wild Pokemon)_4
+Environment = Cave
+Flags = Levels
+#-------------------------------
+[437]   # Mooswind-Kaverne
+Name = Mooswind-Kaverne
+ShowArea = true
+MapPosition = 0,6,13
+DarkMap = true
+SnapEdges = true
+BattleBack = cave3
+WildBattleBGM = Battle! (Wild Pokémon)_4
+WildVictoryBGM = Victory! (Wild Pokemon)_4
+Environment = Cave
+Flags = Levels
+#-------------------------------
+[438]   # Mooswind-Kaverne
+Name = Mooswind-Kaverne
+ShowArea = true
+MapPosition = 0,6,13
+DarkMap = true
+SnapEdges = true
+BattleBack = cave3
+WildBattleBGM = Battle! (Wild Pokémon)_4
+WildVictoryBGM = Victory! (Wild Pokemon)_4
+Environment = Cave
+Flags = Levels
+#-------------------------------
+[439]   # Mooswind-Kaverne
+Name = Mooswind-Kaverne
+MapPosition = 0,6,13
+DarkMap = true
+SnapEdges = true
+BattleBack = cave3
+WildBattleBGM = Battle! (Wild Pokémon)_4
+WildVictoryBGM = Victory! (Wild Pokemon)_4
+Environment = Cave
+Flags = Levels
+#-------------------------------
+[440]   # Mooswind-Kaverne
+Name = Mooswind-Kaverne
+ShowArea = true
+MapPosition = 0,6,13
+DarkMap = true
+SnapEdges = true
+BattleBack = cave3
+WildBattleBGM = Battle! (Wild Pokemon)_5.1
+WildVictoryBGM = XY 017 Victory! (Wild Pokemon)
+WildCaptureME = Pkmn get
+Environment = Cave
+Flags = Levels
+#-------------------------------
+[441]   # Mooswind-Kaverne
+Name = Mooswind-Kaverne
+ShowArea = true
+MapPosition = 0,6,13
+DarkMap = true
+SnapEdges = true
+BattleBack = cave3
+WildBattleBGM = Battle! (Wild Pokémon)_4
+WildVictoryBGM = Victory! (Wild Pokemon)_4
+Environment = Cave
+Flags = Levels
+#-------------------------------
+[442]   # Stahltrug-Höhle
+Name = Stahltrug-Höhle
+ShowArea = true
+MapPosition = 0,6,6
+DarkMap = true
+SnapEdges = true
+BattleBack = cave6
+WildBattleBGM = Battle! (Wild Pokémon)_2
+WildVictoryBGM = Victory! (Wild Pokémon)_2
+Environment = Cave
+Flags = Levels
+#-------------------------------
+[443]   # Stahltrug-Höhle
+Name = Stahltrug-Höhle
+ShowArea = true
+MapPosition = 0,6,6
+DarkMap = true
+SnapEdges = true
+BattleBack = cave6
+WildBattleBGM = Battle! (Wild Pokémon)_2
+WildVictoryBGM = Victory! (Wild Pokémon)_2
+Environment = Cave
+Flags = Levels
+#-------------------------------
+[444]   # Stahltrug-Höhle
+Name = Stahltrug-Höhle
+ShowArea = true
+MapPosition = 0,6,6
+DarkMap = true
+SnapEdges = true
+BattleBack = cave6
+WildBattleBGM = Battle! (Wild Pokémon)_2
+WildVictoryBGM = Victory! (Wild Pokémon)_2
+Environment = Cave
+Flags = Levels
+#-------------------------------
+[445]   # Stahltrug-Höhle
+Name = Stahltrug-Höhle
+ShowArea = true
+MapPosition = 0,6,6
+DarkMap = true
+SnapEdges = true
+BattleBack = cave6
+WildBattleBGM = Battle! (Wild Pokémon)_2
+WildVictoryBGM = Victory! (Wild Pokémon)_2
+Environment = Cave
+Flags = Levels
+#-------------------------------
+[446]   # Halle des Stahlhüters
+Name = Halle des Stahlhüters
+ShowArea = true
+MapPosition = 0,6,6
+DarkMap = true
+SnapEdges = true
+BattleBack = cave6
+WildBattleBGM = Battle! (Wild Pokémon)_2
+WildVictoryBGM = Victory! (Wild Pokémon)_2
+Environment = Cave
+Flags = Levels
+#-------------------------------
+[447]   # Stahltrug-Höhle
+Name = Stahltrug-Höhle
+ShowArea = true
+MapPosition = 0,6,6
+DarkMap = true
+SnapEdges = true
+BattleBack = cave6
+WildBattleBGM = Battle! (Wild Pokémon)_2
+WildVictoryBGM = Victory! (Wild Pokémon)_2
+Environment = Cave
+Flags = Levels
+#-------------------------------
+[448]   # Stahltrug-Höhle
+Name = Stahltrug-Höhle
+ShowArea = true
+MapPosition = 0,6,6
+DarkMap = true
+SnapEdges = true
+BattleBack = cave6
+WildBattleBGM = Battle! (Wild Pokémon)_2
+WildVictoryBGM = Victory! (Wild Pokémon)_2
+Environment = Cave
+Flags = Levels
+#-------------------------------
+[449]   # Stahltrug-Höhle
+Name = Stahltrug-Höhle
+ShowArea = true
+MapPosition = 0,6,6
+DarkMap = true
+SnapEdges = true
+BattleBack = cave6
+WildBattleBGM = Battle! (Wild Pokémon)_2
+WildVictoryBGM = Victory! (Wild Pokémon)_2
+Environment = Cave
+Flags = Levels
+#-------------------------------
+[450]   # Stahltrug-Höhle
+Name = Stahltrug-Höhle
+ShowArea = true
+MapPosition = 0,6,6
+DarkMap = true
+SnapEdges = true
+BattleBack = cave6
+WildBattleBGM = Battle! (Wild Pokémon)_2
+WildVictoryBGM = Victory! (Wild Pokémon)_2
+Environment = Cave
+Flags = Levels
+#-------------------------------
+[451]   # Route 13
+Name = Route 13
+Outdoor = true
+MapPosition = 0,21,7
+SnapEdges = true
+BattleBack = Forest_2
+WildBattleBGM = Battle! (Clan Warden)
+WildVictoryBGM = Victory! (Wild Pokémon)_2
+Flags = Levels
+#-------------------------------
+[452]   # Route 16
+Name = Route 16
+Outdoor = true
+ShowArea = true
+MapPosition = 0,20,4
+SnapEdges = true
+BattleBack = wald
+Environment = Forest
+Flags = Levels
+#-------------------------------
+[453]   # Faulmoor
+Name = Faulmoor
+Outdoor = true
+ShowArea = true
+MapPosition = 0,21,5
+SnapEdges = true
+BattleBack = Forest_2
+WildBattleBGM = Battle Wild Southeast
+WildVictoryBGM = Victory! (Wild Pokemon)_5
+Environment = ForestGrass
+Flags = Levels
+#-------------------------------
+[454]   # Faulmoor
+Name = Faulmoor
+Outdoor = true
+ShowArea = true
+MapPosition = 0,20,5
+SnapEdges = true
+BattleBack = Forest_2
+WildBattleBGM = Battle Wild Southeast
+WildVictoryBGM = Victory! (Wild Pokemon)_5
+Environment = ForestGrass
+Flags = Levels
+#-------------------------------
+[455]   # Faulmoor
+Name = Faulmoor
+Outdoor = true
+ShowArea = true
+MapPosition = 0,20,6
+SnapEdges = true
+BattleBack = sacred
+WildBattleBGM = Battle Wild Southeast
+WildVictoryBGM = Victory! (Wild Pokemon)_5
+Environment = ForestGrass
+Flags = Levels
+#-------------------------------
+[456]   # Höhle des Schwarzen Donners
+Name = Höhle des Schwarzen Donners
+ShowArea = true
+MapPosition = 0,21,6
+DarkMap = true
+SnapEdges = true
+BattleBack = gym2
+Environment = Rock
+Flags = Levels
+#-------------------------------
+[457]   # Höhle des Schwarzen Donners
+Name = Höhle des Schwarzen Donners
+ShowArea = true
+MapPosition = 0,21,6
+SnapEdges = true
+BattleBack = gym2
+Environment = Rock
+#-------------------------------
+[462]   # Insel
+Name = Knowhere-Insel
+Outdoor = true
+ShowArea = true
+MapPosition = 0,12,1
+SnapEdges = true
+#-------------------------------
+[463]   # MAP463
+Name = Knowhere
+ShowArea = true
+MapPosition = 0,11,9
+SnapEdges = true
+Environment = Space
+Flags = Levels
+#-------------------------------
+[464]   # MAP464
+Name = Knowhere
+ShowArea = true
+MapPosition = 0,11,9
+SnapEdges = true
+BattleBack = cave3
+Environment = Space
+Flags = Levels
+#-------------------------------
+[465]   # MAP465
+Name = Knowhere
+MapPosition = 0,11,9
+SnapEdges = true
+BattleBack = cave3
+Environment = Space
+Flags = Levels
+#-------------------------------
+[466]   # Lone Beach
+Name = Lone Beach
+Outdoor = true
+ShowArea = true
+HealingSpot = 466,33,6
+MapPosition = 0,17,12
+SnapEdges = true
+BattleBack = beach
+WildBattleBGM = Battle wild Theme
+WildVictoryBGM = Victory! Wild
+Environment = Sand
+Flags = Levels
+#-------------------------------
+[467]   # Soul-Gasse
+Name = Soul-Gasse
+ShowArea = true
+MapPosition = 0,17,11
+DarkMap = true
+SnapEdges = true
+BattleBack = cave3
+WildBattleBGM = Battle Wild Southeast
+WildVictoryBGM = Victory! (Wild Pokemon)_3
+Environment = Cave
+Flags = Levels
+#-------------------------------
+[469]   # Arena 4
+Name = MAP469
+MapPosition = 0,3,10
+SnapEdges = true
+BattleBack = gym4
+#-------------------------------
+[470]   # Arena 4
+Name = MAP470
+MapPosition = 0,3,10
+SnapEdges = true
+BattleBack = gym4
+#-------------------------------
+[475]   # Arena 4
+Name = MAP475
+MapPosition = 0,3,10
+SnapEdges = true
+BattleBack = gym4
+#-------------------------------
+[476]   # Arena 4
+Name = MAP476
+MapPosition = 0,3,10
+SnapEdges = true
+BattleBack = gym4
+#-------------------------------
+[477]   # Arena 4
+Name = MAP477
+MapPosition = 0,3,10
+SnapEdges = true
+BattleBack = gym4
+#-------------------------------
+[478]   # Arena 4
+Name = MAP478
+MapPosition = 0,3,10
+SnapEdges = true
+BattleBack = gym4
+#-------------------------------
+[479]   # Arena 4
+Name = MAP479
+MapPosition = 0,3,10
+SnapEdges = true
+BattleBack = gym4
+#-------------------------------
+[480]   # Arena 4
+Name = MAP480
+MapPosition = 0,3,10
+SnapEdges = true
+BattleBack = gym4
+#-------------------------------
+[481]   # Arena 4
+Name = MAP481
+MapPosition = 0,3,10
+SnapEdges = true
+BattleBack = gym4
+#-------------------------------
+[482]   # Arena 4
+Name = MAP482
+MapPosition = 0,3,10
+SnapEdges = true
+BattleBack = gym4
+#-------------------------------
+[483]   # Arena 4
+Name = MAP483
+MapPosition = 0,3,10
+SnapEdges = true
+BattleBack = gym4
+#-------------------------------
+[484]   # Arena 4
+Name = MAP484
+MapPosition = 0,3,10
+SnapEdges = true
+BattleBack = gym4
+#-------------------------------
+[485]   # Arena 4
+Name = MAP485
+MapPosition = 0,3,10
+SnapEdges = true
+BattleBack = gym4
+#-------------------------------
+[486]   # Turm der Wiederkehr
+Name = Turm der Wiederkehr
+ShowArea = true
+MapPosition = 0,12,9
+SnapEdges = true
+#-------------------------------
+[487]   # Turm der Wiederkehr
+Name = Turm der Wiederkehr
+MapPosition = 0,12,9
+DarkMap = true
+SnapEdges = true
+Flags = Levels
+#-------------------------------
+[488]   # Turm der Wiederkehr
+Name = Turm der Wiederkehr
+MapPosition = 0,12,9
+DarkMap = true
+SnapEdges = true
+Flags = Levels
+#-------------------------------
+[489]   # Turm der Wiederkehr
+Name = Turm der Wiederkehr
+MapPosition = 0,12,9
+DarkMap = true
+SnapEdges = true
+Flags = Levels
+#-------------------------------
+[497]   # Lone Beach Pokécenter
+Name = Lone Beach Pokécenter
+ShowArea = true
+HealingSpot = 466,33,6
+MapPosition = 0,17,11
+SnapEdges = true
+#-------------------------------
+[498]   # Regirock
+Name = Vermächtnis von Regirock
+ShowArea = true
+MapPosition = 0,18,10
+SnapEdges = true
+BattleBack = ruine
+WildBattleBGM = battle wild 2
+WildVictoryBGM = Victory! (Wild Pokemon)_9
+Environment = Rock
+Flags = Levels
+#-------------------------------
+[499]   # Regirock
+Name = Regirock
+MapPosition = 0,18,10
+SnapEdges = true
+BattleBack = ruine
+WildBattleBGM = battle wild 2
+WildVictoryBGM = Victory! (Wild Pokemon)_9
+Environment = Rock
+Flags = Levels
+#-------------------------------
+[500]   # Regirock
+Name = Regirock
+MapPosition = 0,18,10
+SnapEdges = true
+BattleBack = ruine
+WildBattleBGM = battle wild 2
+WildVictoryBGM = Victory! (Wild Pokemon)_9
+Environment = Rock
+Flags = Levels
+#-------------------------------
+[501]   # Regirock
+Name = Regirock
+MapPosition = 0,18,10
+SnapEdges = true
+BattleBack = ruine
+WildBattleBGM = Battle! (Wild Pokémon)_8
+WildVictoryBGM = Victory! (Wild Pokemon)_9
+Flags = Levels
+#-------------------------------
+[502]   # Regirock
+Name = Regirock
+MapPosition = 0,18,10
+SnapEdges = true
+BattleBack = ruine
+WildBattleBGM = Battle! (Wild Pokémon)_8
+WildVictoryBGM = Victory! (Wild Pokemon)_9
+Flags = Levels
+#-------------------------------
+[503]   # Regirock
+Name = Regirock
+MapPosition = 0,18,10
+SnapEdges = true
+BattleBack = ruine
+WildBattleBGM = Battle! (Wild Pokémon)_8
+WildVictoryBGM = Victory! (Wild Pokemon)_9
+Flags = Levels
+#-------------------------------
+[504]   # Regirock
+Name = Regirock
+MapPosition = 0,18,10
+SnapEdges = true
+BattleBack = ruine
+WildBattleBGM = Battle! (Wild Pokémon)_8
+WildVictoryBGM = Victory! (Wild Pokemon)_9
+Flags = Levels
+#-------------------------------
+[505]   # Regirock
+Name = Regirock
+MapPosition = 0,18,10
+SnapEdges = true
+BattleBack = ruine
+WildBattleBGM = Battle! (Wild Pokémon)_8
+WildVictoryBGM = Victory! (Wild Pokemon)_9
+Flags = Levels
+#-------------------------------
+[506]   # Regirock
+Name = Regirock
+MapPosition = 0,18,10
+SnapEdges = true
+BattleBack = ruine
+WildBattleBGM = Battle! (Wild Pokémon)_8
+WildVictoryBGM = Victory! (Wild Pokemon)_9
+Flags = Levels
+#-------------------------------
+[507]   # Zwischengebäude
+Name = Route 11
+MapPosition = 0,19,9
+#-------------------------------
+[508]   # Regieleki Eingang
+Name = Vermächtnis von Regieleki
+ShowArea = true
+MapPosition = 0,17,9
+SnapEdges = true
+BattleBack = ruine
+WildBattleBGM = battle wild 2
+WildVictoryBGM = Victory! (Wild Pokemon)_9
+Flags = Levels
+#-------------------------------
+[509]   # Regieleki rechts
+Name = Regieleki
+MapPosition = 0,17,9
+SnapEdges = true
+BattleBack = ruine
+WildBattleBGM = battle wild 2
+WildVictoryBGM = Victory! (Wild Pokemon)_9
+Flags = Levels
+#-------------------------------
+[510]   # Regieleki links
+Name = Regieleki
+MapPosition = 0,17,9
+SnapEdges = true
+BattleBack = ruine
+WildBattleBGM = battle wild 2
+WildVictoryBGM = Victory! (Wild Pokemon)_9
+Flags = Levels
+#-------------------------------
+[511]   # Regieleki mitte
+Name = Regieleki
+MapPosition = 0,17,9
+SnapEdges = true
+BattleBack = ruine
+WildBattleBGM = battle wild 2
+WildVictoryBGM = Victory! (Wild Pokemon)_9
+Flags = Levels
+#-------------------------------
+[512]   # Regieleki links hinten
+Name = Regieleki
+MapPosition = 0,17,9
+SnapEdges = true
+BattleBack = ruine
+WildBattleBGM = battle wild 2
+WildVictoryBGM = Victory! (Wild Pokemon)_9
+Flags = Levels
+#-------------------------------
+[513]   # Regieleki links unten
+Name = Regieleki
+MapPosition = 0,17,9
+SnapEdges = true
+BattleBack = ruine
+WildBattleBGM = battle wild 2
+WildVictoryBGM = Victory! (Wild Pokemon)_9
+Flags = Levels
+#-------------------------------
+[514]   # Traumwelt
+Name = Traumwelt
+ShowArea = true
+MapPosition = 0,12,1
+SnapEdges = true
+StillReflections = true
+BattleBack = traum
+WildBattleBGM = battle glitch
+WildVictoryBGM = victoryWild
+Environment = Space
+Flags = Levels,Inverse
+#-------------------------------
+[515]   # Traumwelt
+Name = Traumwelt
+ShowArea = true
+MapPosition = 0,12,1
+SnapEdges = true
+BattleBack = traum
+WildBattleBGM = battle glitch
+WildVictoryBGM = victoryWild
+Environment = Space
+Flags = Levels,Inverse
+#-------------------------------
+[516]   # Traumwelt
+Name = Traumwelt
+ShowArea = true
+MapPosition = 0,12,1
+SnapEdges = true
+BattleBack = traum
+WildBattleBGM = battle glitch
+WildVictoryBGM = victoryWild
+Environment = Space
+Flags = Levels,Inverse
+#-------------------------------
+[517]   # Traumwelt
+Name = Traumwelt
+ShowArea = true
+MapPosition = 0,12,1
+SnapEdges = true
+BattleBack = traum
+WildBattleBGM = battle glitch
+WildVictoryBGM = victoryWild
+Environment = Space
+Flags = Levels,Inverse
+#-------------------------------
+[518]   # Route 11
+Name = Route 11
+Outdoor = true
+ShowArea = true
+Weather = Sandstorm,50
+MapPosition = 0,17,9
+SnapEdges = true
+BattleBack = desert
+WildBattleBGM = battle wild 2
+WildVictoryBGM = Victory! (Wild Pokemon)_9
+Environment = Sand
+Flags = Levels
+#-------------------------------
+[519]   # Tempel 1
+Name = Tempel
+MapPosition = 0,17,9
+DarkMap = true
+SnapEdges = true
+BattleBack = ruine
+WildBattleBGM = battle wild 2
+WildVictoryBGM = Victory! (Wild Pokemon)_9
+Flags = Levels
+#-------------------------------
+[520]   # Tempel 2
+Name = Tempel
+MapPosition = 0,17,9
+DarkMap = true
+SnapEdges = true
+BattleBack = ruine
+WildBattleBGM = battle wild 2
+WildVictoryBGM = Victory! (Wild Pokemon)_9
+Flags = Levels
+#-------------------------------
+[521]   # Tempel 3
+Name = Tempel
+MapPosition = 0,17,9
+DarkMap = true
+SnapEdges = true
+BattleBack = ruine
+WildBattleBGM = battle wild 2
+WildVictoryBGM = Victory! (Wild Pokemon)_9
+Flags = Levels
+#-------------------------------
+[522]   # Tempel 4
+Name = Tempel
+MapPosition = 0,17,9
+DarkMap = true
+SnapEdges = true
+BattleBack = ruine
+WildBattleBGM = battle wild 2
+WildVictoryBGM = Victory! (Wild Pokemon)_9
+Flags = Levels
+#-------------------------------
+[523]   # Tempel 5
+Name = Tempel
+MapPosition = 0,17,9
+DarkMap = true
+SnapEdges = true
+BattleBack = ruine
+WildBattleBGM = battle wild 2
+WildVictoryBGM = Victory! (Wild Pokemon)_9
+Flags = Levels
+#-------------------------------
+[524]   # Tempel 6
+Name = Tempel
+MapPosition = 0,17,9
+DarkMap = true
+SnapEdges = true
+BattleBack = ruine
+WildBattleBGM = battle wild 2
+WildVictoryBGM = Victory! (Wild Pokemon)_9
+Flags = Levels
+#-------------------------------
+[525]   # Tempel 7
+Name = Tempel
+MapPosition = 0,17,9
+DarkMap = true
+SnapEdges = true
+BattleBack = ruine
+WildBattleBGM = battle wild 2
+WildVictoryBGM = Victory! (Wild Pokemon)_9
+Flags = Levels
+#-------------------------------
+[527]   # Tempel 8
+Name = Tempel
+MapPosition = 0,17,9
+#-------------------------------
+[528]   # Tempel 9
+Name = Vermächtnis von Regieleki
+ShowArea = true
+MapPosition = 0,17,9
+DarkMap = true
+SnapEdges = true
+BattleBack = ruine
+WildBattleBGM = battle wild 2
+WildVictoryBGM = Victory! (Wild Pokemon)_9
+Flags = Levels
+#-------------------------------
+[529]   # Tempel 1
+Name = Tempel
+MapPosition = 0,18,10
+DarkMap = true
+SnapEdges = true
+BattleBack = ruine
+WildBattleBGM = battle wild 2
+WildVictoryBGM = Victory! (Wild Pokemon)_9
+Flags = Levels
+#-------------------------------
+[530]   # Tempel 2
+Name = Tempel
+MapPosition = 0,18,10
+DarkMap = true
+SnapEdges = true
+BattleBack = ruine
+WildBattleBGM = battle wild 2
+WildVictoryBGM = Victory! (Wild Pokemon)_9
+Flags = Levels
+#-------------------------------
+[531]   # Tempel 3
+Name = Tempel
+MapPosition = 0,18,10
+DarkMap = true
+SnapEdges = true
+BattleBack = ruine
+WildBattleBGM = battle wild 2
+WildVictoryBGM = Victory! (Wild Pokemon)_9
+Flags = Levels
+#-------------------------------
+[532]   # Tempel 4
+Name = Tempel
+MapPosition = 0,18,10
+DarkMap = true
+SnapEdges = true
+BattleBack = ruine
+WildBattleBGM = battle wild 2
+WildVictoryBGM = Victory! (Wild Pokemon)_9
+Flags = Levels
+#-------------------------------
+[533]   # Tempel 5
+Name = Tempel
+MapPosition = 0,18,10
+DarkMap = true
+SnapEdges = true
+BattleBack = ruine
+WildBattleBGM = battle wild 2
+WildVictoryBGM = Victory! (Wild Pokemon)_9
+Flags = Levels
+#-------------------------------
+[534]   # Tempel 6
+Name = Tempel
+MapPosition = 0,18,10
+DarkMap = true
+SnapEdges = true
+BattleBack = ruine
+WildBattleBGM = battle wild 2
+WildVictoryBGM = Victory! (Wild Pokemon)_9
+Flags = Levels
+#-------------------------------
+[535]   # Tempel 7
+Name = Tempel
+MapPosition = 0,18,10
+DarkMap = true
+SnapEdges = true
+BattleBack = ruine
+WildBattleBGM = battle wild 2
+WildVictoryBGM = Victory! (Wild Pokemon)_9
+Flags = Levels
+#-------------------------------
+[536]   # Wohnhaus
+Name = Ariduna
+MapPosition = 0,19,9
+SnapEdges = true
+#-------------------------------
+[537]   # Oben
+Name = Ariduna
+MapPosition = 0,19,9
+SnapEdges = true
+#-------------------------------
+[538]   # Wohnhaus
+Name = Ariduna
+MapPosition = 0,19,9
+SnapEdges = true
+#-------------------------------
+[539]   # Wohnhaus
+Name = Ariduna
+MapPosition = 0,19,9
+SnapEdges = true
+#-------------------------------
+[540]   # Haus
+Name = Bruchhain
+MapPosition = 0,22,7
+SnapEdges = true
+#-------------------------------
+[541]   # Haus
+Name = Bruchhain
+MapPosition = 0,22,7
+SnapEdges = true
+#-------------------------------
+[542]   # Haus
+Name = Bruchhain
+MapPosition = 0,22,7
+SnapEdges = true
+#-------------------------------
+[543]   # Flüstergrotte
+Name = Flüstergrotte
+ShowArea = true
+MapPosition = 0,21,8
+SnapEdges = true
+BattleBack = cave1
+WildBattleBGM = Battle! (Clan Warden)
+WildVictoryBGM = Victory! (Wild Pokémon)_2
+Environment = Cave
+Flags = Levels
+#-------------------------------
+[544]   # Durchgang
+Name = Bruchhain
+MapPosition = 0,22,7
+SnapEdges = true
+#-------------------------------
+[545]   # Schrein des modrigen Holzes
+Name = Schrein des modrigen Holzes
+Outdoor = true
+ShowArea = true
+MapPosition = 0,22,6
+SnapEdges = true
+BattleBack = Swamp
+WildBattleBGM = Battle Wild Southeast
+WildVictoryBGM = Victory! (Wild Pokemon)_5
+Environment = ForestGrass
+Flags = Levels
+#-------------------------------
+[546]   # Route 15
+Name = Route 15
+Outdoor = true
+ShowArea = true
+MapPosition = 0,21,4
+SnapEdges = true
+BattleBack = route15
+Flags = Levels
+#-------------------------------
+[547]   # Höhle des Schwarzen Donners
+Name = Höhle des Schwarzen Donners
+ShowArea = true
+MapPosition = 0,21,6
+SnapEdges = true
+BattleBack = gym2
+Environment = Rock
+#-------------------------------
+[548]   # Höhle des Schwarzen Donners
+Name = Höhle des Schwarzen Donners
+ShowArea = true
+MapPosition = 0,21,6
+SnapEdges = true
+BattleBack = gym2
+Environment = Rock
+#-------------------------------
+[549]   # Höhle des Schwarzen Donners
+Name = Höhle des Schwarzen Donners
+ShowArea = true
+MapPosition = 0,21,6
+SnapEdges = true
+BattleBack = gym2
+Environment = Rock
+#-------------------------------
+[550]   # Höhle des Schwarzen Donners
+Name = Höhle des Schwarzen Donners
+ShowArea = true
+MapPosition = 0,21,6
+SnapEdges = true
+BattleBack = gym2
+Environment = Rock
+#-------------------------------
+[551]   # Mansion Innen Sound
+Name = Mansion
+MapPosition = 0,22,6
+SnapEdges = true
+#-------------------------------
+[552]   # Route 16
+Name = Route 16
+Outdoor = true
+ShowArea = true
+MapPosition = 0,20,4
+SnapEdges = true
+BattleBack = wald
+Environment = Forest
+Flags = Levels
+#-------------------------------
+[553]   # Route 16
+Name = Flammenhain
+Outdoor = true
+ShowArea = true
+MapPosition = 0,20,3
+SnapEdges = true
+BattleBack = wald
+Environment = Forest
+Flags = Levels
+#-------------------------------
+[554]   # Route 16
+Name = Flammenhain
+Outdoor = true
+ShowArea = true
+MapPosition = 0,20,3
+SnapEdges = true
+BattleBack = wald
+Environment = Forest
+Flags = Levels
+#-------------------------------
+[555]   # Route 16
+Name = Flammenhain
+Outdoor = true
+ShowArea = true
+MapPosition = 0,20,3
+SnapEdges = true
+BattleBack = wald
+Environment = Forest
+Flags = Levels
+#-------------------------------
+[556]   # Route 16
+Name = Stein der Wahrheit
+ShowArea = true
+MapPosition = 0,20,3
+SnapEdges = true
+BattleBack = reshiram
+Environment = None
+Flags = Levels
+#-------------------------------
+[557]   # MAP557
+Name = Krypta der Weißen Flammen
+ShowArea = true
+MapPosition = 0,20,3
+SnapEdges = true
+BattleBack = reshiram
+Flags = Levels
+#-------------------------------
+[558]   # MAP558
+Name = Schrein der Wahrheit und Ideale
+ShowArea = true
+MapPosition = 0,22,4
+SnapEdges = true
+Flags = Levels
+#-------------------------------
+[559]   # Morastia Haus
+Name = Morastia
+MapPosition = 0,22,5
+SnapEdges = true
+#-------------------------------
+[560]   # Oben
+Name = Morastia
+MapPosition = 0,22,5
+SnapEdges = true
+#-------------------------------
+[561]   # Morastia Haus
+Name = Morastia
+MapPosition = 0,22,5
+SnapEdges = true
+#-------------------------------
+[562]   # Oben
+Name = Morastia
+MapPosition = 0,22,5
+SnapEdges = true
+#-------------------------------
+[563]   # Morastia Haus
+Name = Morastia
+MapPosition = 0,22,5
+SnapEdges = true
+#-------------------------------
+[564]   # Oben
+Name = Morastia
+MapPosition = 0,22,5
+SnapEdges = true
+#-------------------------------
+[565]   # Labor
+Name = Morastia Labor
+MapPosition = 0,22,5
+SnapEdges = true
+#-------------------------------
+[566]   # Pokécenter
+Name = Pokécenter
+HealingSpot = 155,12,18
+MapPosition = 0,22,7
+SnapEdges = true
+#-------------------------------
+[567]   # MAP567
+Name = Tao
+ShowArea = true
+MapPosition = 0,20,3
+SnapEdges = true
+Flags = Levels
+#-------------------------------
+[568]   # Pokécenter
+Name = Pokécenter
+ShowArea = true
+HealingSpot = 109,37,19
+MapPosition = 0,22,5
+SnapEdges = true
+#-------------------------------
+[569]   # Geisterjägerclub
+Name = Geisterjäger-Club
+ShowArea = true
+MapPosition = 0,22,5
+SnapEdges = true
+#-------------------------------
+[570]   # Geisterjägerclub
+Name = Geisterjäger-Club
+MapPosition = 0,22,5
+SnapEdges = true
+#-------------------------------
+[571]   # Mansion Innen Sound
+Name = Mansion
+MapPosition = 0,22,6
+SnapEdges = true
+#-------------------------------
+[601]   # Klartrug Arena
+Name = Klartrug Arena
+ShowArea = true
+MapPosition = 0,22,5
+SnapEdges = true
+BattleBack = Forest_2
+WildBattleBGM = battle wild 2
+TrainerBattleBGM = Battle Trainer (6)
+WildVictoryBGM = Battle victory wild
+#-------------------------------
+[603]   # Klartrug Arena
+Name = Klartrug Arena
+ShowArea = true
+MapPosition = 0,22,5
+SnapEdges = true
+BattleBack = Forest_2
+WildBattleBGM = battle wild space
+TrainerBattleBGM = Battle Trainer (6)
+WildVictoryBGM = Victory! (Wild Pokemon)_4
+TrainerVictoryBGM = Battle victory leader
+Environment = Forest
+Flags = Levels,Inverse
+#-------------------------------
+[604]   # Klartrug Arena
+Name = Klartrug Arena
+ShowArea = true
+MapPosition = 0,22,5
+SnapEdges = true
+BattleBack = Forest_2
+Environment = Forest
+Flags = Levels,Inverse
+#-------------------------------
+[607]   # MAP607
+Name = Siegelkammer
+ShowArea = true
+MapPosition = 0,20,9
+DarkMap = true
+SnapEdges = true
+BattleBack = ruine2
+Environment = Rock
+Flags = Levels
+#-------------------------------
+[609]   # Durchgang
+Name = Morastia
+MapPosition = 0,22,5
+SnapEdges = true
+#-------------------------------
+[610]   # Zwischengebäude
+Name = Morastia
+MapPosition = 0,22,5
+SnapEdges = true
+#-------------------------------
+[606]   # MAP606
+Name = Tao
+ShowArea = true
+MapPosition = 0,20,3
+SnapEdges = true
+Flags = Levels
+#-------------------------------
+[608]   # MAP608
+Name = Haus
+ShowArea = false
+MapPosition = 0,20,3
+SnapEdges = true
+Flags = Levels

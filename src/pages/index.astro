@@ -1,0 +1,45 @@
+---
+import Layout from "../layouts/Layout.astro";
+import { meta } from "../lib/data";
+import { href } from "../lib/url";
+
+const categories = [
+  { href: href("/pokemon/"), label: "Pokémon", count: meta.counts.pokemon },
+  { href: href("/attacken/"), label: "Attacken", count: meta.counts.moves },
+  { href: href("/faehigkeiten/"), label: "Fähigkeiten", count: meta.counts.abilities },
+  { href: href("/items/"), label: "Items", count: meta.counts.items },
+  { href: href("/trainer/"), label: "Trainer", count: meta.counts.trainers },
+];
+---
+
+<Layout title="Start">
+  <h1>Pokémon-Wiki</h1>
+  <p>Alles zu Pokémon, Attacken, Fähigkeiten, Items und Trainern aus unserem Spiel – auf Deutsch.</p>
+
+  <div id="search" style="margin: 1.5rem 0;"></div>
+
+  <div class="card-grid">
+    {categories.map((c) => (
+      <a class="card" href={c.href}>
+        <div class="card-name">{c.label}</div>
+        <div class="meta-note">{c.count}</div>
+      </a>
+    ))}
+  </div>
+
+  <p class="meta-note" style="margin-top:2rem">
+    Stand: {new Date(meta.generatedAt).toLocaleDateString("de-DE")} · Einträge mit
+    <span class="badge badge-en" style="margin:0 0.2rem">EN</span>
+    haben im Spiel noch keine deutsche Übersetzung und zeigen den englischen Text.
+  </p>
+</Layout>
+
+<link rel="stylesheet" href={href("/pagefind/pagefind-ui.css")} />
+<script is:inline src={href("/pagefind/pagefind-ui.js")}></script>
+<script is:inline define:vars={{ bundlePath: href("/pagefind/") }}>
+  window.addEventListener("DOMContentLoaded", () => {
+    if (typeof PagefindUI !== "undefined") {
+      new PagefindUI({ element: "#search", bundlePath, showSubResults: true, resetStyles: false });
+    }
+  });
+</script>

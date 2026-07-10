@@ -1,0 +1,256 @@
+﻿# To localize this text for a particular language, please
+# translate every second line of this file.
+#-------------------------------
+[MAP_NAMES]
+Intro
+Intro
+Lappet Town
+Lappet Town
+Pat's house
+Pat's house
+Pokémon Lab
+Pokémon Lab
+Route 1
+Route 1
+Cedolan City
+Cedolan City
+Route 2
+Route 2
+Stadt 1
+Stadt 1
+Lerucean Town
+Lerucean Town
+Natural Park
+Natural Park
+Route 3
+Route 3
+Velmora
+Velmora
+Ingido Plateau
+Ingido Plateau
+Route 4
+Route 4
+Route 5
+Route 5
+Route 6
+Route 6
+Route 7
+Route 7
+Battle Frontier
+Battle Frontier
+Safari Zone
+Safari Zone
+Route 8
+Route 8
+Berth Island
+Berth Island
+Faraday Island
+Faraday Island
+Tiall Region
+Tiall Region
+Pflanze
+Pflanze
+Feuer
+Feuer
+Wasser
+Wasser
+Vermächtnis des Codes
+Vermächtnis des Codes
+Höhle 1
+Höhle 1
+Labor
+Labor
+Höhle Route 1
+Höhle Route 1
+Route 1.1
+Route 1.1
+Route 1.2
+Route 1.2
+Höhle 1.1 Route 2.1
+Höhle 1.1 Route 2.1
+Höhle 1.2 Route 2.1
+Höhle 1.2 Route 2.1
+Stadt 2 Links
+Stadt 2 Links
+Mistral
+Mistral
+Pokémon Center
+Pokémon Center
+Stadt 2 Rechts
+Stadt 2 Rechts
+Pokémon Center 2
+Pokémon Center 2
+Mistral Markt
+Mistral Markt
+Stadt 2 Gesamt
+Stadt 2 Gesamt
+Stadt 3
+Stadt 3
+Höhle Stadt 3
+Höhle Stadt 3
+Lunafeld
+Lunafeld
+Arena 1
+Arena 1
+Arena 1 Prüfung
+Arena 1 Prüfung
+Arena 1 Kampf
+Arena 1 Kampf
+Zwischengebäude
+Zwischengebäude
+Höhle 2
+Höhle 2
+Höhle 3
+Höhle 3
+Filler (Bäume)
+Filler (Bäume)
+Route 5 Markt
+Route 5 Markt
+Käfersammler
+Käfersammler
+Käfersammler Siegerehrung
+Käfersammler Siegerehrung
+Käfersammler-Contest (Aufzug)
+Käfersammler-Contest (Aufzug)
+Käfersammler Prüfung
+Käfersammler Prüfung
+Käfersammler Prüfung 1
+Käfersammler Prüfung 1
+Käfersammler Prüfung 2
+Käfersammler Prüfung 2
+Käfersammler Prüfung 3
+Käfersammler Prüfung 3
+Käfersammler Prüfung 4
+Käfersammler Prüfung 4
+Käfersammler Prüfung Höhle
+Käfersammler Prüfung Höhle
+Hafenstadt
+Hafenstadt
+Arena 2
+Arena 2
+Center
+Center
+Azumaris Markt
+Azumaris Markt
+Azumaris
+Azumaris
+Raukun-Tunnel
+Raukun-Tunnel
+Kraftwerk
+Kraftwerk
+Kraftwerk Innen
+Kraftwerk Innen
+Kraftwerk OG
+Kraftwerk OG
+Kraftwerk EG
+Kraftwerk EG
+Kraftwerk UG
+Kraftwerk UG
+Lunafeld Markt
+Lunafeld Markt
+Arena 2 Aufzug
+Arena 2 Aufzug
+Nicht verwendet Höhle
+Nicht verwendet Höhle
+Nicht verwendet
+Nicht verwendet
+Kraftwerk UG Voltriant
+Kraftwerk UG Voltriant
+Kraftwerk EG Voltriant
+Kraftwerk EG Voltriant
+Hafen/Strand
+Hafen/Strand
+Nicht verwendet Eis-Puzzle
+Nicht verwendet Eis-Puzzle
+Nicht verwendet Teleport-Puzzle
+Nicht verwendet Teleport-Puzzle
+MAP203
+MAP203
+Aufzug
+Aufzug
+Kraftwerk Center
+Kraftwerk Center
+Dracheninseln
+Dracheninseln
+Route 5 Center
+Route 5 Center
+Stadt 5
+Stadt 5
+Solhaven
+Solhaven
+Solhaven Center
+Solhaven Center
+Solhaven Markt
+Solhaven Markt
+Arena 3
+Arena 3
+Route 5 (Tropius)
+Route 5 (Tropius)
+Route 3.1
+Route 3.1
+Hotel 1
+Hotel 1
+Stadt 5.1
+Stadt 5.1
+Selphar-Gewölbe
+Selphar-Gewölbe
+Hotel 2
+Hotel 2
+Hotel 1 OG1
+Hotel 1 OG1
+Hotel 1 OG2
+Hotel 1 OG2
+Hotel 1 OG3
+Hotel 1 OG3
+Hotel 1 OG4
+Hotel 1 OG4
+Hotel 1 OG5
+Hotel 1 OG5
+Hotel 2 OG1
+Hotel 2 OG1
+Hotel 2 OG2
+Hotel 2 OG2
+Hotel 2 OG3
+Hotel 2 OG3
+Hotel 2 OG4
+Hotel 2 OG4
+Hotel 2 OG5
+Hotel 2 OG5
+Eis-Dorf
+Eis-Dorf
+Höhle am See
+Höhle am See
+MAP254
+MAP254
+Morneis-Schacht
+Morneis-Schacht
+Celestia
+Celestia
+Geisterhaus
+Geisterhaus
+Höhle1
+Höhle1
+Höhle1.1
+Höhle1.1
+Celestia Center
+Celestia Center
+Stadt 7
+Stadt 7
+Route 9
+Route 9
+Wüste
+Wüste
+Arena Test
+Arena Test
+MAP278
+MAP278
+Gebäude
+Gebäude
+Labore
+Labore
+Nicht verwendete Maps
+Nicht verwendete Maps
+VM-Testmap
+VM-Testmap
+Moostiefen
+Moostiefen

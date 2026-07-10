@@ -1,0 +1,14 @@
+﻿# To localize this text for a particular language, please
+# translate every second line of this file.
+#-------------------------------
+[POKEMON_NICKNAMES]
+Arielle
+Arielle
+Sissi
+Sissi
+Mushu
+Mushu
+Katniss
+Katniss
+Big Daddy
+Big Daddy

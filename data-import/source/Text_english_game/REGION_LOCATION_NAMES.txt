@@ -1,0 +1,44 @@
+﻿# To localize this text for a particular language, please
+# translate every second line of this file.
+#-------------------------------
+[REGION_LOCATION_NAMES]
+Valmora
+Valmora
+Route 1
+Route 1
+Orphax-Tunnel
+Orphax-Tunnel
+Rin-Spalte
+Rin-Spalte
+Route 2
+Route 2
+Lunafeld
+Lunafeld
+Mistral
+Mistral
+Route 3
+Route 3
+Route 4
+Route 4
+Azumaris
+Azumaris
+Raukun-Tunnel
+Raukun-Tunnel
+Route 5
+Route 5
+Selphar-Gewölbe
+Selphar-Gewölbe
+Kraftwerk
+Kraftwerk
+Solhaven
+Solhaven
+Route 6
+Route 6
+Celestia
+Celestia
+Route 7
+Route 7
+Ephiron
+Ephiron
+Route 8
+Route 8

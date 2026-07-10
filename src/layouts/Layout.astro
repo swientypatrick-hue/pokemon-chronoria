@@ -1,0 +1,45 @@
+---
+import "../styles/global.css";
+import { href } from "../lib/url";
+
+interface Props {
+  title: string;
+}
+const { title } = Astro.props;
+const nav = [
+  { href: href("/"), label: "Start" },
+  { href: href("/pokemon/"), label: "Pokémon" },
+  { href: href("/attacken/"), label: "Attacken" },
+  { href: href("/faehigkeiten/"), label: "Fähigkeiten" },
+  { href: href("/items/"), label: "Items" },
+  { href: href("/trainer/"), label: "Trainer" },
+];
+const currentPath = Astro.url.pathname;
+---
+
+<html lang="de">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" type="image/svg+xml" href={href("/favicon.svg")} />
+    <title>{title} · Pokémon-Wiki</title>
+    <meta name="generator" content={Astro.generator} />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="page">
+        <a class="site-title" href={href("/")}>Pokémon-Wiki</a>
+        <nav class="site-nav">
+          {nav.map((item) => (
+            <a href={item.href} aria-current={(currentPath.startsWith(item.href) && item.href !== href("/")) || currentPath === item.href ? "page" : undefined}>
+              {item.label}
+            </a>
+          ))}
+        </nav>
+      </div>
+    </header>
+    <main class="page">
+      <slot />
+    </main>
+  </body>
+</html>

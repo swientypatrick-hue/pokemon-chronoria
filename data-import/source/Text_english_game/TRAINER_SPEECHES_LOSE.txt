@@ -1,0 +1,160 @@
+﻿# To localize this text for a particular language, please
+# translate every second line of this file.
+#-------------------------------
+[TRAINER_SPEECHES_LOSE]
+A very good battle, indeed!
+A very good battle, indeed!
+Die See hat sich wieder beruhigt.
+Die See hat sich wieder beruhigt.
+You're too good for me!
+You're too good for me!
+...
+...
+You beat me again!
+You beat me again!
+Defeated! Oh my!
+Defeated! Oh my!
+Washed out!
+Washed out!
+My Skitty!
+My Skitty!
+You didn't have to win so convincingly!
+You didn't have to win so convincingly!
+Our teamwork failed!
+Our teamwork failed!
+Not too shabby.
+Not too shabby.
+A good battle indeed!
+A good battle indeed!
+Ich sollte wohl noch ein bisschen trainieren...
+Ich sollte wohl noch ein bisschen trainieren...
+Einigen wir uns auf Unentschieden...
+Einigen wir uns auf Unentschieden...
+Wieso bist du so gemein?
+Wieso bist du so gemein?
+Meine Pokémon sind trotzdem schöner, ätsch!
+Meine Pokémon sind trotzdem schöner, ätsch!
+KUUUUUUUUUFT!
+KUUUUUUUUUFT!
+Ich bin vom Weg abgekommen.
+Ich bin vom Weg abgekommen.
+Ich brauche bessere Köder.
+Ich brauche bessere Köder.
+Das Leben ist immer im Wandel.
+Das Leben ist immer im Wandel.
+Ich dachte du wärst ein shiny Pokémon.
+Ich dachte du wärst ein shiny Pokémon.
+Ich muss noch mehr laufen.
+Ich muss noch mehr laufen.
+Käfer-Pokémon sind trotzdem besser!
+Käfer-Pokémon sind trotzdem besser!
+Denk immer daran genug Schutz-Items mitzunehmen!
+Denk immer daran genug Schutz-Items mitzunehmen!
+Ich sollte nicht jeden ansprechen.
+Ich sollte nicht jeden ansprechen.
+Von dir geht keine Aura aus!
+Von dir geht keine Aura aus!
+Danke für den erlesenen Kampf.
+Danke für den erlesenen Kampf.
+Wer suchet der findet!
+Wer suchet der findet!
+Zu viel!
+Zu viel!
+Meine Pokémon sind nicht hoch
+Meine Pokémon sind nicht hoch
+Die Luft ist rein.
+Die Luft ist rein.
+Ich werde stärkere Käfer-Pokémon fangen.
+Ich werde stärkere Käfer-Pokémon fangen.
+Ich könnte wegfliegen.
+Ich könnte wegfliegen.
+Das hat mich auf neue Ideen gebracht.
+Das hat mich auf neue Ideen gebracht.
+Naja, ich bin gerade erst Käfersammler.
+Naja, ich bin gerade erst Käfersammler.
+Ich sollte mich erstmal mit Quark eincremen.
+Ich sollte mich erstmal mit Quark eincremen.
+Im Schatten wird man auch braun.
+Im Schatten wird man auch braun.
+Ich war von der Aussicht abgelenkt.
+Ich war von der Aussicht abgelenkt.
+Ich komme auch nicht von hier.
+Ich komme auch nicht von hier.
+Du hast dich nicht von meinem Körper ablenken lassen.
+Du hast dich nicht von meinem Körper ablenken lassen.
+Lass deine Augen bei dir.
+Lass deine Augen bei dir.
+Eine freunde diesen Kampf ausgetragen zu haben.
+Eine freunde diesen Kampf ausgetragen zu haben.
+Zum verstecktem Strand kommt man nur indem man taucht.
+Zum verstecktem Strand kommt man nur indem man taucht.
+Kannst du den Stein aus dem Weg räumen?
+Kannst du den Stein aus dem Weg räumen?
+Ach, du hilfst uns die Anlagen wieder in Betrieb zu nehmen.
+Ach, du hilfst uns die Anlagen wieder in Betrieb zu nehmen.
+Ich sehe du kommst alleine klar.
+Ich sehe du kommst alleine klar.
+Danke, dass du mir hier rausgeholfen hast.
+Danke, dass du mir hier rausgeholfen hast.
+Der Sturm ist wohl verflogen.
+Der Sturm ist wohl verflogen.
+So einen Sturm habe ich noch nie erlebt.
+So einen Sturm habe ich noch nie erlebt.
+Ok, du darfst passieren.
+Ok, du darfst passieren.
+Jetzt lass mich weiter Käfer-Pokémon suchen.
+Jetzt lass mich weiter Käfer-Pokémon suchen.
+Ich bin nur auf der Durchreise.
+Ich bin nur auf der Durchreise.
+Besuche mich gerne wieder!
+Besuche mich gerne wieder!
+Du kannst einem auch echt die Stimmung versauen.
+Du kannst einem auch echt die Stimmung versauen.
+Da hab ich mich selbst in die Pfanne gehauen.
+Da hab ich mich selbst in die Pfanne gehauen.
+Jetzt habe ich die Bestellung vergessen!
+Jetzt habe ich die Bestellung vergessen!
+Die Brötchen müssen noch etwas abkühlen.
+Die Brötchen müssen noch etwas abkühlen.
+Ich muss noch an meiner Technik feilen.
+Ich muss noch an meiner Technik feilen.
+Dein Kampfgeist war größer, als meiner.
+Dein Kampfgeist war größer, als meiner.
+Training ist anscheinend nicht alles.
+Training ist anscheinend nicht alles.
+Ich bin dankbar.
+Ich bin dankbar.
+Der Spieler muss aufgehalten werden!
+Der Spieler muss aufgehalten werden!
+Wadenkrämpfe...
+Wadenkrämpfe...
+Das hätte ich kommen sehen müssen.
+Das hätte ich kommen sehen müssen.
+Die Mondsteine gehören mir!
+Die Mondsteine gehören mir!
+Das kann nicht wahr sein!
+Das kann nicht wahr sein!
+Keine Schwäche gefunden.
+Keine Schwäche gefunden.
+Du hast wohl recht.
+Du hast wohl recht.
+Mich hast du besiegt.
+Mich hast du besiegt.
+Das war eine Talfahrt.
+Das war eine Talfahrt.
+Machnmal muss man zurück gehen, um weiter zu kommen.
+Machnmal muss man zurück gehen, um weiter zu kommen.
+Mich hat die Kris-tallenergie verlassen.
+Mich hat die Kris-tallenergie verlassen.
+Schon wieder eine Schlacht verloren.
+Schon wieder eine Schlacht verloren.
+Ich kontrollier besser nochmal den Lift.
+Ich kontrollier besser nochmal den Lift.
+Das kann nicht sein...
+Das kann nicht sein...
+Geh einfach weg.
+Geh einfach weg.
+Es hat sich gelohnt hierhin zu kommen.
+Es hat sich gelohnt hierhin zu kommen.
+Ich sollte nach der Arbeit auch ein Bad nehmen.
+Ich sollte nach der Arbeit auch ein Bad nehmen.

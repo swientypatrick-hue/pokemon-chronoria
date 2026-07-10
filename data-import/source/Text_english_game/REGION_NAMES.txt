@@ -1,0 +1,22 @@
+﻿# To localize this text for a particular language, please
+# translate every second line of this file.
+#-------------------------------
+[REGION_NAMES]
+Region
+Region
+Region 2
+Region 2
+Gen3
+Gen3
+Gen4
+Gen4
+Gen5
+Gen5
+Gen6
+Gen6
+Gen7
+Gen7
+Gen8
+Gen8
+Gen9
+Gen9

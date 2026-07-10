@@ -1,0 +1,12 @@
+---
+import { typeColor } from "../lib/typeColors";
+import { typeNameById } from "../lib/data";
+
+interface Props {
+  type: string;
+}
+const { type } = Astro.props;
+const name = typeNameById.get(type) ?? type;
+---
+
+<span class="badge" style={`background:${typeColor(type)}`}>{name}</span>

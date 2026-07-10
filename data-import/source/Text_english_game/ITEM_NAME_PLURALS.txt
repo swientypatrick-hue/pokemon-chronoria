@@ -1,0 +1,230 @@
+﻿# To localize this text for a particular language, please
+# translate every second line of this file.
+#-------------------------------
+[ITEM_NAME_PLURALS]
+Eissteine
+Eissteine
+Megasteine
+Megasteine
+Metagrossites2
+Metagrossites2
+Meisterbälle
+Meisterbälle
+Hyperbälle
+Hyperbälle
+Superbälle
+Superbälle
+Pokébälle
+Pokébälle
+Safaribälle
+Safaribälle
+Prüfungsbälle
+Prüfungsbälle
+Netzbälle
+Netzbälle
+Mystikbälle
+Mystikbälle
+Lavabälle
+Lavabälle
+Strombälle
+Strombälle
+Sakralbälle
+Sakralbälle
+Tauchbälle
+Tauchbälle
+Nestbälle
+Nestbälle
+Wiederbälle
+Wiederbälle
+Timerbälle
+Timerbälle
+Luxusbälle
+Luxusbälle
+Premierbälle
+Premierbälle
+Düsterbälle
+Düsterbälle
+Heilbälle
+Heilbälle
+Flottbälle
+Flottbälle
+Jubelbälle
+Jubelbälle
+Turbobälle
+Turbobälle
+Schleichbälle
+Schleichbälle
+Levelbälle
+Levelbälle
+Köderbälle
+Köderbälle
+Schwerbälle
+Schwerbälle
+Sympabälle
+Sympabälle
+Freundesbälle
+Freundesbälle
+Mondbälle
+Mondbälle
+Traumbälle
+Traumbälle
+Ultrabälle
+Ultrabälle
+TM101s
+TM101s
+TM102s
+TM102s
+Spitzäxte
+Spitzäxte
+Beile
+Beile
+Krafthandschuhe
+Krafthandschuhe
+Tohaido-Mobile
+Tohaido-Mobile
+Fliegen
+Fliegen
+Premium-Futter
+Premium-Futter
+Laternen
+Laternen
+Used Shovels
+Used Shovels
+Tohaido-Tauchmodule
+Tohaido-Tauchmodule
+Essence Mixture
+Essence Mixture
+Discs der Rückkehr
+Discs der Rückkehr
+Kaskadeausrüstungen
+Kaskadeausrüstungen
+Handpaddel
+Handpaddel
+Kletterausrüstungen
+Kletterausrüstungen
+Eispickel
+Eispickel
+Magic Fans
+Magic Fans
+Weather Gadgets
+Weather Gadgets
+Cloaks of Kecleon
+Cloaks of Kecleon
+Käfersammler
+Käfersammler
+Dummimiselniten-A
+Dummimiselniten-A
+Dummimiselniten-B
+Dummimiselniten-B
+Wesen-Wechsler
+Wesen-Wechsler
+Schwarzaugite
+Schwarzaugite
+Torfblöcke
+Torfblöcke
+Verbindungsschnüre
+Verbindungsschnüre
+Adamantkristalle
+Adamantkristalle
+Weißkristalle
+Weißkristalle
+Legendentafeln
+Legendentafeln
+Neutraltafeln
+Neutraltafeln
+Pfohbeeren
+Pfohbeeren
+Platinumkristalle
+Platinumkristalle
+Federbälle
+Federbälle
+Flügelbälle
+Flügelbälle
+Düsenbälle
+Düsenbälle
+Zentnerbälle
+Zentnerbälle
+Tonnenbälle
+Tonnenbälle
+Urbälle
+Urbälle
+Rätselbälle
+Rätselbälle
+Glorienrüstungen
+Glorienrüstungen
+Fluchrüstungen
+Fluchrüstungen
+Unlicht-Schriftrolleen
+Unlicht-Schriftrolleen
+Wasser-Schriftrollen
+Wasser-Schriftrollen
+Anführersymbole
+Anführersymbole
+Energiekapseln
+Energiekapseln
+Fähigkeitenschilde
+Fähigkeitenschilde
+Neutralschmuck
+Neutralschmuck
+Kopierkräuter
+Kopierkräuter
+Boxhandschuhe
+Boxhandschuhe
+Tarnumhänge
+Tarnumhänge
+Gezinkte Würfel
+Gezinkte Würfel
+Gierspenst-Münzen
+Gierspenst-Münzen
+Minibambussprossen
+Minibambussprossen
+Big Bamboo Shoots
+Big Bamboo Shoots
+Rotom Phones
+Rotom Phones
+Scarlet Books
+Scarlet Books
+Violet Books
+Violet Books
+Health Mochi
+Health Mochi
+Muscle Mochi
+Muscle Mochi
+Resist Mochi
+Resist Mochi
+Genius Mochi
+Genius Mochi
+Clever Mochi
+Clever Mochi
+Swift Mochi
+Swift Mochi
+Fresh-Start Mochi
+Fresh-Start Mochi
+Feendaunen
+Feendaunen
+Saftige Äpfel
+Saftige Äpfel
+Simple Teeschalen
+Simple Teeschalen
+Edle Teeschalen
+Edle Teeschalen
+Brunnenmasken
+Brunnenmasken
+Ofenmasken
+Ofenmasken
+Fundamentmasken
+Fundamentmasken
+Türkisgrüne Masken
+Türkisgrüne Masken
+Legierungsmetalle
+Legierungsmetalle
+Indigo Disks
+Indigo Disks
+Mythical Pecha Berries
+Mythical Pecha Berries
+Synchro Machines
+Synchro Machines
+Meteorites
+Meteorites
+Briar's Books
+Briar's Books

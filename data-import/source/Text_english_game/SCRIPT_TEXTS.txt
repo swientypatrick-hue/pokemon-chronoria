@@ -1,0 +1,2522 @@
+﻿# To localize this text for a particular language, please
+# translate every second line of this file.
+#-------------------------------
+[SCRIPT_TEXTS]
+Kanto Pokédex
+Kanto Pokédex
+Johto Pokédex
+Johto Pokédex
+My Game by:
+Erstellt von:
+Also involved were:
+Ebenfalls beteiligt:
+Special thanks to:
+Spezielle Danksagung an:
+Field '{1}' is not an integer.
+Field '{1}' is not an integer.
+Field '{1}' is not a positive integer or 0.
+Field '{1}' is not a positive integer or 0.
+Field '{1}' is not a positive integer.
+Field '{1}' is not a positive integer.
+Field '{1}' must be greater than 0.
+Field '{1}' must be greater than 0.
+Field '{1}' is not a hexadecimal number.
+Field '{1}' is not a hexadecimal number.
+Field '{1}' is not a number.
+Field '{1}' is not a number.
+Field '{1}' is not a Boolean value (true, false, 1, 0).
+Field '{1}' is not a Boolean value (true, false, 1, 0).
+Field '{1}' must contain only letters, digits, and<<n>>underscores and can't begin with a number.
+Field '{1}' must contain only letters, digits, and<<n>>underscores and can't begin with a number.
+'{1}' is not a defined type (type {2}, Weaknesses).
+'{1}' is not a defined type (type {2}, Weaknesses).
+'{1}' is not a defined type (type {2}, Resistances).
+'{1}' is not a defined type (type {2}, Resistances).
+'{1}' is not a defined type (type {2}, Immunities).
+'{1}' is not a defined type (type {2}, Immunities).
+Encounters
+Encounters
+The 'quest' argument should be a symbol, e.g. ':Quest1'.
+The 'quest' argument should be a symbol, e.g. ':Quest1'.
+\se[{1}]<ac><c2=#{colorQuest(
+\se[{1}]<ac><c2=#{colorQuest(
+{1} tasks
+{1} Aufgaben
+You are missing the graphic for this UI. Make sure the image is in your Graphics/UI folder and that it is named appropriately.
+You are missing the graphic for this UI. Make sure the image is in your Graphics/UI folder and that it is named appropriately.
+<ac><c2=43F022E8>{1}: {2}</c2></ac>
+<ac><c2=43F022E8>{1}: {2}</c2></ac>
+<ac><c2=43F022E8>{1}</c2></ac>
+<ac><c2=43F022E8>{1}</c2></ac>
+This is a working Menu Entry for Voltseon's Pause Menu.
+This is a working Menu Entry for Voltseon's Pause Menu.
+Set Menu Theme
+Set Menu Theme
+Change the Menu Theme for Voltseon's Pause Menu...
+Hier kannst du das Menü anpassen...
+Set the menu theme. (1 - {1})
+Menü-Stil ändern. (1 - {1})
+The menu theme has been set to {1}.
+Der Menü-Stil wurde zu {1} geändert.
+Menu Theme
+Menü-Stil
+Set pause menu theme.
+Menü-Stil ändern.
+Steps: {1}/{2}
+SChritte: {1}/{2}
+Caught: {1}
+Gefangen: {1}
+Level: {1}
+Level: {1}
+Caught: None
+Gefangen: keine
+{1} {2} {3}
+{1} {2} {3}
+{1}
+{1}
+You have {1} new quest!
+Du hast {1} neue Quest!
+You have {1} new quests!
+You hast {1} neue Quest(s)!
+Check Moves
+Attacken ansehen
+Remember Moves
+Attacken erinnern
+Forget Moves
+Attacken vergessen
+Use TM's
+TMs benutzen
+Nickname
+Spitzname
+{1} forgot how to use {2}.
+{1} vergisst {2}.
+Set the Pokémon's #{status} count.
+Set the Pokémon's #{status} count.
+Set {1}'s #{status} count (0-99).
+Set {1}'s #{status} count (0-99).
+{1} was freed from the jagged splinters!
+{1} was freed from the jagged splinters!
+{1} was freed from the sticky candy syrup!
+{1} was freed from the sticky candy syrup!
+{1} is hurt by the jagged splinters!
+{1} is hurt by the jagged splinters!
+{1} is hurt by Salt Cure!
+{1} is hurt by Salt Cure!
+{1} was revived and is ready to fight again!
+{1} was revived and is ready to fight again!
+{1}'s Ability is protected by the effects of its Ability Shield!
+{1}'s Ability is protected by the effects of its Ability Shield!
+{1} comes out of {2}'s mouth!
+{1} comes out of {2}'s mouth!
+{1} was shocked wide awake!
+{1} was shocked wide awake!
+{1} warmed up!
+{1} warmed up!
+{1} can't be used twice in a row!
+{1} can't be used twice in a row!
+Drowsy
+Drowsy
+Frostbite
+Frostbite
+Snow is falling.
+Es schneit.
+A harsh hailstorm bellows!
+Ein Hagelsturm wütet!
+It started to snow!
+Es fängt an zu schneien!
+The hailstorm ended.
+Es hat aufgehört zu hageln.
+The snow stopped.
+Es hat aufgehört zu schneien.
+{1} is already drowsy!
+{1} is already drowsy!
+{1} is already frostbitten!
+{1} is already frostbitten!
+But the uproar kept {1} alert!
+But the uproar kept {1} alert!
+{1} stays alert!
+{1} stays alert!
+{1} cannot be frostbitten!
+{1} cannot be frostbitten!
+{1} stays alert because of {2}'s {3}!
+{1} stays alert because of {2}'s {3}!
+{1} cannot be frostbitten because of {2}'s {3}!
+{1} cannot be frostbitten because of {2}'s {3}!
+{1}'s {2} prevents drowsiness!
+{1}'s {2} prevents drowsiness!
+{1}'s {2} prevents frostbites!
+{1}'s {2} prevents frostbites!
+{1} grew drowsy!<<n>>It may be too sleepy to move!
+{1} grew drowsy!<<n>>It may be too sleepy to move!
+{1} was frostbitten!
+{1} was frostbitten!
+{1} became alert again.
+{1} became alert again.
+{1}'s frostbite was healed.
+{1}'s frostbite was healed.
+{1} is too drowsy to move!
+{1} is too drowsy to move!
+{1} was hurt by its frostbite!
+{1} was hurt by its frostbite!
+Being hit by Tailwind charged {1} with power!
+Being hit by Tailwind charged {1} with power!
+{1} cut its own HP and minimized its Attack!
+{1} cut its own HP and minimized its Attack!
+{1} cut its own HP and maximized its Attack!
+{1} cut its own HP and maximized its Attack!
+Jagged splinters dug into {1}!
+Jagged splinters dug into {1}!
+{1} used up all its electricity!
+{1} used up all its electricity!
+{1} is being salt cured!
+{1} is being salt cured!
+The pointed stones disappeared from around {1}!
+The pointed stones disappeared from around {1}!
+The pointed steel disappeared from around {1}!
+The pointed steel disappeared from around {1}!
+The spikes disappeared from the ground around {1}!
+The spikes disappeared from the ground around {1}!
+The poison spikes disappeared from the ground around {1}!
+The poison spikes disappeared from the ground around {1}!
+The sticky web has disappeared from the ground around {1}!
+The sticky web has disappeared from the ground around {1}!
+Tidying up complete!
+Tidying up complete!
+{1} blew away the pointed steel!
+{1} blew away the pointed steel!
+{1} is preparing to tell a chillingly bad joke!
+{1} is preparing to tell a chillingly bad joke!
+{1} shed its tail to create a decoy!
+{1} shed its tail to create a decoy!
+{1} got covered in sticky candy syrup!
+{1} got covered in sticky candy syrup!
+{1} absorbed electricity!
+{1} absorbed electricity!
+{1} is going all out for this attack!
+{1} is going all out for this attack!
+{1} is already pumped!
+{1} is already pumped!
+{1}'s {2} made it alert again!
+{1}'s {2} made it alert again!
+{1}'s {2} healed its frostbite!
+{1}'s {2} healed its frostbite!
+{1}'s {2} made its partner alert again!
+{1}'s {2} made its partner alert again!
+{1}'s {2} healed its partner's frostbite!
+{1}'s {2} healed its partner's frostbite!
+{1}'s {2} made {3} drowsy! It may be too sleepy to move!
+{1}'s {2} made {3} drowsy! It may be too sleepy to move!
+{1}'s {2} caused {3} to become frostbitten!
+{1}'s {2} caused {3} to become frostbitten!
+A lingering aroma clings to {1}!
+A lingering aroma clings to {1}!
+{1}'s Ability is protected by the effects of its {2}!
+{1}'s Ability is protected by the effects of its {2}!
+{1} gained strength from the fallen!
+{1} gained strength from the fallen!
+Being hit by {1} charged {2} with power!
+Being hit by {1} charged {2} with power!
+Poison spikes were scattered on the ground all around {1}!
+Poison spikes were scattered on the ground all around {1}!
+{1} underwent a heroic transformation!
+{1} underwent a heroic transformation!
+{1} goes inside the mouth of {2}!
+{1} goes inside the mouth of {2}!
+{1}'s {2} weakened the {3} of all surrounding Pokémon!
+{1}'s {2} weakened the {3} of all surrounding Pokémon!
+{1} basked in the sunlight, sending its ancient pulse into a frenzy!
+{1} basked in the sunlight, sending its ancient pulse into a frenzy!
+{1} turned the sunlight harsh, sending its ancient pulse into a frenzy!
+{1} turned the sunlight harsh, sending its ancient pulse into a frenzy!
+{1} used the Electric Terrain to energize its futuristic engine!
+{1} used the Electric Terrain to energize its futuristic engine!
+{1} turned the ground into Electric Terrain, energizing its futuristic engine!
+{1} turned the ground into Electric Terrain, energizing its futuristic engine!
+The effects of {1}'s {2} wore off!
+The effects of {1}'s {2} wore off!
+The #{cause} activated {1}'s {2}!
+The #{cause} activated {1}'s {2}!
+{1} used its {2} to activate its {3}!
+{1} used its {2} to activate its {3}!
+{1}'s {2} was heightened!
+{1}'s {2} was heightened!
+A supersweet aroma is wafting from the syrup covering {1}!
+A supersweet aroma is wafting from the syrup covering {1}!
+{1} drank down all the matcha that {2} made!
+{1} drank down all the matcha that {2} made!
+The {1} worn by {2} shone brilliantly!
+The {1} worn by {2} shone brilliantly!
+{1} made its shell gleam! It's distorting type matchups!
+{1} made its shell gleam! It's distorting type matchups!
+The harsh sunlight faded!
+The harsh sunlight faded!
+The heavy rain has lifted!
+The heavy rain has lifted!
+The mysterious air current has dissipated!
+The mysterious air current has dissipated!
+The weather returned to normal.
+The weather returned to normal.
+The battlefield returned to normal.
+The battlefield returned to normal.
+{1} used its {2} to mirror its opponent's stat changes!
+{1} used its {2} to mirror its opponent's stat changes!
+{1}'s base points were all reset to zero!
+{1}'s base points were all reset to zero!
+Normal Forme
+Normal Forme
+Attack Forme
+Attack Forme
+Defense Forme
+Defense Forme
+Speed Forme
+Speed Forme
+Which form should {1} change into?
+Which form should {1} change into?
+Battle
+Battle
+{1} is holding a round object...
+{1} is holding a round object...
+What would you like to do?
+What would you like to do?
+Play
+Play
+Talk
+Talk
+{1} is shivering with the effects of being poisoned.
+{1} is shivering with the effects of being poisoned.
+{1}'s burn looks painful.
+{1}'s burn looks painful.
+{1} seems very cold. It's frozen solid!
+{1} seems very cold. It's frozen solid!
+{1} seems really tired.
+{1} seems really tired.
+{1} is standing still and twitching.
+{1} is standing still and twitching.
+{1} is touching some kind of switch.
+{1} is touching some kind of switch.
+{1} has a cord in its mouth!
+{1} has a cord in its mouth!
+{1} seems to want to touch the machinery.
+{1} seems to want to touch the machinery.
+{1} is sniffing around the room.
+{1} is sniffing around the room.
+{1} noticed {2}'s mom is nearby.
+{1} noticed {2}'s mom is nearby.
+{1} seems to want to settle down at home.
+{1} seems to want to settle down at home.
+{1} looks happy to see the nurse.
+{1} looks happy to see the nurse.
+{1} looks a little better just being in the Pokémon Center.
+{1} looks a little better just being in the Pokémon Center.
+{1} seems fascinated by the healing machinery.
+{1} seems fascinated by the healing machinery.
+{1} looks like it wants to take a nap.
+{1} looks like it wants to take a nap.
+{1} chirped a greeting at the nurse.
+{1} chirped a greeting at the nurse.
+{1} is watching {2} with a playful gaze.
+{1} is watching {2} with a playful gaze.
+{1} seems to be completely at ease.
+{1} seems to be completely at ease.
+{1} is making itself comfortable.
+{1} is making itself comfortable.
+There's a content expression on {1}'s face.
+There's a content expression on {1}'s face.
+{1} looks eager to battle!
+{1} looks eager to battle!
+{1} is looking at {2} with a determined gleam in its' eye.
+{1} is looking at {2} with a determined gleam in its' eye.
+{1} is trying to intimidate the other trainers.
+{1} is trying to intimidate the other trainers.
+{1} trusts {2} to come up with a winning strategy.
+{1} trusts {2} to come up with a winning strategy.
+{1} is keeping an eye on the gym leader.
+{1} is keeping an eye on the gym leader.
+{1} is ready to pick a fight with someone.
+{1} is ready to pick a fight with someone.
+{1} looks like it might be preparing for a big showdown!
+{1} looks like it might be preparing for a big showdown!
+{1} wants to show off how strong it is!
+{1} wants to show off how strong it is!
+{1} is...doing warm-up exercises?
+{1} is...doing warm-up exercises?
+{1} is growling quietly in contemplation...
+{1} is growling quietly in contemplation...
+{1} is staring up at the sky.
+{1} is staring up at the sky.
+The storm seems to be making {1} excited.
+The storm seems to be making {1} excited.
+{1} looked up at the sky and shouted loudly!
+{1} looked up at the sky and shouted loudly!
+The storm only seems to be energizing {1}!
+The storm only seems to be energizing {1}!
+{1} is happily zapping and jumping in circles!
+{1} is happily zapping and jumping in circles!
+The lightning doesn't bother {1} at all.
+The lightning doesn't bother {1} at all.
+The storm seems to be making {1} a bit nervous.
+The storm seems to be making {1} a bit nervous.
+The lightning startled {1}!
+The lightning startled {1}!
+The rain doesn't seem to bother {1} much.
+The rain doesn't seem to bother {1} much.
+The weather seems to be putting {1} on edge.
+The weather seems to be putting {1} on edge.
+{1} was startled by the lightning and snuggled up to {2}!
+{1} was startled by the lightning and snuggled up to {2}!
+{1} is watching the snow fall.
+{1} is watching the snow fall.
+{1} is thrilled by the snow!
+{1} is thrilled by the snow!
+{1} is staring up at the sky with a smile.
+{1} is staring up at the sky with a smile.
+The snow seems to have put {1} in a good mood.
+The snow seems to have put {1} in a good mood.
+{1} is cheerful because of the cold!
+{1} is cheerful because of the cold!
+{1} is nipping at the falling snowflakes.
+{1} is nipping at the falling snowflakes.
+{1} wants to catch a snowflake in its' mouth.
+{1} wants to catch a snowflake in its' mouth.
+{1} is fascinated by the snow.
+{1} is fascinated by the snow.
+{1}'s teeth are chattering!
+{1}'s teeth are chattering!
+{1} made its body slightly smaller because of the cold...
+{1} made its body slightly smaller because of the cold...
+{1} is watching the hail fall.
+{1} is watching the hail fall.
+{1} isn't bothered at all by the hail.
+{1} isn't bothered at all by the hail.
+The hail seems to have put {1} in a good mood.
+The hail seems to have put {1} in a good mood.
+{1} is gnawing on a piece of hailstone.
+{1} is gnawing on a piece of hailstone.
+{1} is getting pelted by hail!
+{1} is getting pelted by hail!
+{1} wants to avoid the hail.
+{1} wants to avoid the hail.
+The hail is hitting {1} painfully.
+The hail is hitting {1} painfully.
+{1} looks unhappy.
+{1} looks unhappy.
+{1} is shaking like a leaf!
+{1} is shaking like a leaf!
+{1} is coated in sand.
+{1} is coated in sand.
+The weather doesn't seem to bother {1} at all!
+The weather doesn't seem to bother {1} at all!
+The sand can't slow {1} down!
+The sand can't slow {1} down!
+{1} is enjoying the weather.
+{1} is enjoying the weather.
+{1} is coated in sand, but doesn't seem to mind.
+{1} is coated in sand, but doesn't seem to mind.
+{1} seems unbothered by the sandstorm.
+{1} seems unbothered by the sandstorm.
+The sand doesn't slow {1} down.
+The sand doesn't slow {1} down.
+{1} doesn't seem to mind the weather.
+{1} doesn't seem to mind the weather.
+{1} is covered in sand...
+{1} is covered in sand...
+{1} spat out a mouthful of sand!
+{1} spat out a mouthful of sand!
+{1} is squinting through the sandstorm.
+{1} is squinting through the sandstorm.
+The sand seems to be bothering {1}.
+The sand seems to be bothering {1}.
+{1} seems highly interested in the trees.
+{1} seems highly interested in the trees.
+{1} seems to enjoy the buzzing of the bug Pokémon.
+{1} seems to enjoy the buzzing of the bug Pokémon.
+{1} is jumping around restlessly in the forest.
+{1} is jumping around restlessly in the forest.
+{1} is wandering around and listening to the different sounds.
+{1} is wandering around and listening to the different sounds.
+{1} is munching at the grass.
+{1} is munching at the grass.
+{1} is wandering around and enjoying the forest scenery.
+{1} is wandering around and enjoying the forest scenery.
+{1} is playing around, plucking bits of grass.
+{1} is playing around, plucking bits of grass.
+{1} is staring at the light coming through the trees.
+{1} is staring at the light coming through the trees.
+{1} is playing around with a leaf!
+{1} is playing around with a leaf!
+{1} seems to be listening to the sound of rustling leaves.
+{1} seems to be listening to the sound of rustling leaves.
+{1} is standing perfectly still and might be imitating a tree...
+{1} is standing perfectly still and might be imitating a tree...
+{1} got tangled in the branches and almost fell down!
+{1} got tangled in the branches and almost fell down!
+{1} was surprised when it got hit by a branch!
+{1} was surprised when it got hit by a branch!
+{1} seems very upset the weather.
+{1} seems very upset the weather.
+{1} is shivering...
+{1} is shivering...
+{1} doesn't seem to like being all wet...
+{1} doesn't seem to like being all wet...
+{1} keeps trying to shake itself dry...
+{1} keeps trying to shake itself dry...
+{1} moved closer to {2} for comfort.
+{1} moved closer to {2} for comfort.
+{1} is looking up at the sky and scowling.
+{1} is looking up at the sky and scowling.
+{1} seems to be having difficulty moving its body.
+{1} seems to be having difficulty moving its body.
+{1} seems to be enjoying the weather.
+{1} seems to be enjoying the weather.
+{1} seems to be happy about the rain!
+{1} seems to be happy about the rain!
+{1} seems to be very surprised that it's raining!
+{1} seems to be very surprised that it's raining!
+{1} beamed happily at {2}!
+{1} beamed happily at {2}!
+{1} is gazing up at the rainclouds.
+{1} is gazing up at the rainclouds.
+Raindrops keep falling on {1}.
+Raindrops keep falling on {1}.
+{1} is looking up with its mouth gaping open.
+{1} is looking up with its mouth gaping open.
+{1} looks a bit surprised to see rain.
+{1} looks a bit surprised to see rain.
+{1} keeps trying to shake itself dry.
+{1} keeps trying to shake itself dry.
+{1} is playing in a puddle!
+{1} is playing in a puddle!
+{1} is slipping in the water and almost fell over!
+{1} is slipping in the water and almost fell over!
+{1} seems to be enjoying the scenery.
+{1} seems to be enjoying the scenery.
+{1} seems to enjoy the sound of the waves moving the sand.
+{1} seems to enjoy the sound of the waves moving the sand.
+{1} looks like it wants to swim!
+{1} looks like it wants to swim!
+{1} can barely look away from the ocean.
+{1} can barely look away from the ocean.
+{1} is staring longingly at the water.
+{1} is staring longingly at the water.
+{1} keeps trying to shove {2} towards the water.
+{1} keeps trying to shove {2} towards the water.
+{1} is excited to be looking at the sea!
+{1} is excited to be looking at the sea!
+{1} is happily watching the waves!
+{1} is happily watching the waves!
+{1} is playing on the sand!
+{1} is playing on the sand!
+{1} is staring at {2}'s footprints in the sand.
+{1} is staring at {2}'s footprints in the sand.
+{1} is rolling around in the sand.
+{1} is rolling around in the sand.
+{1} seems pleased to be out in the sunshine.
+{1} seems pleased to be out in the sunshine.
+{1} is soaking up the sunshine.
+{1} is soaking up the sunshine.
+The bright sunlight doesn't seem to bother {1} at all.
+The bright sunlight doesn't seem to bother {1} at all.
+{1} sent a ring-shaped cloud of spores into the air!
+{1} sent a ring-shaped cloud of spores into the air!
+{1} is stretched out its body and is relaxing in the sunshine.
+{1} is stretched out its body and is relaxing in the sunshine.
+{1} is giving off a floral scent.
+{1} is giving off a floral scent.
+{1} seems to be happy about the great weather!
+{1} seems to be happy about the great weather!
+{1} looks thrilled by the sunshine!
+{1} looks thrilled by the sunshine!
+{1} blew out a fireball.
+{1} blew out a fireball.
+{1} is breathing out fire!
+{1} is breathing out fire!
+{1} is hot and cheerful!
+{1} is hot and cheerful!
+{1} is glaring up at the sky.
+{1} is glaring up at the sky.
+{1} seems personally offended by the sunshine.
+{1} seems personally offended by the sunshine.
+The bright sunshine seems to bothering {1}.
+The bright sunshine seems to bothering {1}.
+{1} looks upset for some reason.
+{1} looks upset for some reason.
+{1} is trying to stay in {2}'s shadow.
+{1} is trying to stay in {2}'s shadow.
+{1} keeps looking for shelter from the sunlight.
+{1} keeps looking for shelter from the sunlight.
+{1} is squinting in the bright sunshine.
+{1} is squinting in the bright sunshine.
+{1} is starting to sweat.
+{1} is starting to sweat.
+{1} seems a little uncomfortable in this weather.
+{1} seems a little uncomfortable in this weather.
+{1} looks a little overheated.
+{1} looks a little overheated.
+{1} seems very hot...
+{1} seems very hot...
+{1} shielded its vision against the sparkling light!
+{1} shielded its vision against the sparkling light!
+{1} seems to want to play with {2}.
+{1} seems to want to play with {2}.
+{1} is singing and humming.
+{1} is singing and humming.
+{1} is looking up at {2} with a happy expression.
+{1} is looking up at {2} with a happy expression.
+{1} swayed and danced around as it pleased.
+{1} swayed and danced around as it pleased.
+{1} is JUMPing around in a carefree way!
+{1} is JUMPing around in a carefree way!
+{1} is showing off its agility!
+{1} is showing off its agility!
+{1} is moving around happily!
+{1} is moving around happily!
+Whoa! {1} suddenly started dancing in happiness!
+Whoa! {1} suddenly started dancing in happiness!
+{1} is steadily keeping up with {2}!
+{1} is steadily keeping up with {2}!
+{1} is happy skipping about.
+{1} is happy skipping about.
+{1} is playfully nibbling at the ground.
+{1} is playfully nibbling at the ground.
+{1} is playfully nipping at {2}'s feet!
+{1} is playfully nipping at {2}'s feet!
+{1} is following {2} very closely!
+{1} is following {2} very closely!
+{1} turns around and looks at {2}.
+{1} turns around and looks at {2}.
+{1} is working hard to show off its mighty power!
+{1} is working hard to show off its mighty power!
+{1} looks like it wants to run around!
+{1} looks like it wants to run around!
+{1} is wandering around enjoying the scenery.
+{1} is wandering around enjoying the scenery.
+{1} seems to be enjoying this a little bit!
+{1} seems to be enjoying this a little bit!
+{1} is cheerful!
+{1} is cheerful!
+{1} seems to be singing something?
+{1} seems to be singing something?
+{1} is dancing around happily!
+{1} is dancing around happily!
+{1} is having fun dancing a lively jig!
+{1} is having fun dancing a lively jig!
+{1} is so happy, it started singing!
+{1} is so happy, it started singing!
+{1} looked up and howled!
+{1} looked up and howled!
+{1} seems to be feeling optimistic.
+{1} seems to be feeling optimistic.
+It looks like {1} feels like dancing!
+It looks like {1} feels like dancing!
+{1} suddenly started to sing! It seems to be feeling great.
+{1} suddenly started to sing! It seems to be feeling great.
+It looks like {1} wants to dance with {2}!
+It looks like {1} wants to dance with {2}!
+{1} let out a roar!
+{1} let out a roar!
+{1} is making a face like it's angry!
+{1} is making a face like it's angry!
+{1} seems to be angry for some reason.
+{1} seems to be angry for some reason.
+{1} chewed on {2}'s feet.
+{1} chewed on {2}'s feet.
+{1} turned to face the other way, showing a defiant expression.
+{1} turned to face the other way, showing a defiant expression.
+{1} is trying to intimidate {2}'s foes!
+{1} is trying to intimidate {2}'s foes!
+{1} wants to pick a fight!
+{1} wants to pick a fight!
+{1} is ready to fight!
+{1} is ready to fight!
+It looks like {1} will fight just about anyone right now!
+It looks like {1} will fight just about anyone right now!
+{1} is growling in a way that sounds almost like speech...
+{1} is growling in a way that sounds almost like speech...
+{1} is looking down steadily.
+{1} is looking down steadily.
+{1} is sniffing around.
+{1} is sniffing around.
+{1} is concentrating deeply.
+{1} is concentrating deeply.
+{1} faced {2} and nodded.
+{1} faced {2} and nodded.
+{1} is glaring straight into {2}'s eyes.
+{1} is glaring straight into {2}'s eyes.
+{1} is surveying the area.
+{1} is surveying the area.
+{1} focused with a sharp gaze!
+{1} focused with a sharp gaze!
+{1} is looking around absentmindedly.
+{1} is looking around absentmindedly.
+{1} yawned very loudly!
+{1} yawned very loudly!
+{1} is relaxing comfortably.
+{1} is relaxing comfortably.
+{1} is focusing its attention on {2}.
+{1} is focusing its attention on {2}.
+{1} is staring intently at nothing.
+{1} is staring intently at nothing.
+{1} is concentrating.
+{1} is concentrating.
+{1} is looking at {2}'s footprints.
+{1} is looking at {2}'s footprints.
+{1} seems to want to play and is gazing at {2} expectedly.
+{1} seems to want to play and is gazing at {2} expectedly.
+{1} seems to be thinking deeply about something.
+{1} seems to be thinking deeply about something.
+{1} isn't paying attention to {2}...Seems it's thinking about something else.
+{1} isn't paying attention to {2}...Seems it's thinking about something else.
+{1} seems to be feeling serious.
+{1} seems to be feeling serious.
+{1} seems disinterested.
+{1} seems disinterested.
+{1}'s mind seems to be elsewhere.
+{1}'s mind seems to be elsewhere.
+{1} seems to be observing the surroundings instead of watching {2}.
+{1} seems to be observing the surroundings instead of watching {2}.
+{1} looks a bit bored.
+{1} looks a bit bored.
+{1} has an intense look on its face.
+{1} has an intense look on its face.
+{1} is staring off into the distance.
+{1} is staring off into the distance.
+{1} seems to be carefully examining {2}'s face.
+{1} seems to be carefully examining {2}'s face.
+{1} seems to be trying to communicate with its eyes.
+{1} seems to be trying to communicate with its eyes.
+... {1} seems to have sneezed!
+... {1} seems to have sneezed!
+... {1} noticed that {2}'s shoes are a bit dirty.
+... {1} noticed that {2}'s shoes are a bit dirty.
+Seems {1} ate something strange, it's making an odd face...
+Seems {1} ate something strange, it's making an odd face... 
+{1} seems to be smelling something good.
+{1} seems to be smelling something good.
+{1} noticed that {2}'s Bag has a little dirt on it...
+{1} noticed that {2}'s Bag has a little dirt on it...
+...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... {1} silently nodded!
+...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... {1} silently nodded!
+{1} began poking {2}.
+{1} began poking {2}.
+{1} looks very happy.
+{1} looks very happy.
+{1} happily cuddled up to {2}.
+{1} happily cuddled up to {2}.
+{1} is so happy that it can't stand still.
+{1} is so happy that it can't stand still.
+{1} looks like it wants to lead!
+{1} looks like it wants to lead!
+{1} is coming along happily.
+{1} is coming along happily.
+{1} seems to be feeling great about walking with {2}!
+{1} seems to be feeling great about walking with {2}!
+{1} is glowing with health.
+{1} is glowing with health.
+{1} put in extra effort just for {2}!
+{1} put in extra effort just for {2}!
+{1} is smelling the scents of the surounding air.
+{1} is smelling the scents of the surounding air.
+{1} is jumping with joy!
+{1} is jumping with joy!
+{1} is still feeling great!
+{1} is still feeling great!
+{1} stretched out its body and is relaxing.
+{1} stretched out its body and is relaxing.
+{1} is doing its best to keep up with {2}.
+{1} is doing its best to keep up with {2}.
+{1} is happily cuddling up to {2}!
+{1} is happily cuddling up to {2}!
+{1} is full of energy!
+{1} is full of energy!
+{1} is so happy that it can't stand still!
+{1} is so happy that it can't stand still!
+{1} gives {2} a happy look and a smile.
+{1} gives {2} a happy look and a smile.
+{1} started breathing roughly through its nose in excitement!
+{1} started breathing roughly through its nose in excitement!
+{1} is trembling with eagerness!
+{1} is trembling with eagerness!
+{1} is so happy, it started rolling around.
+{1} is so happy, it started rolling around.
+{1} looks thrilled at getting attention from {2}.
+{1} looks thrilled at getting attention from {2}.
+{1} seems very pleased that {2} is noticing it!
+{1} seems very pleased that {2} is noticing it!
+{1} started wriggling its entire body with excitement!
+{1} started wriggling its entire body with excitement!
+It seems like {1} can barely keep itself from hugging {2}!
+It seems like {1} can barely keep itself from hugging {2}!
+{1} is keeping close to {2}'s feet.
+{1} is keeping close to {2}'s feet.
+{1} suddenly started walking closer to {2}.
+{1} suddenly started walking closer to {2}.
+Woah! {1} suddenly hugged {2}.
+Woah! {1} suddenly hugged {2}.
+{1} is rubbing up against {2}.
+{1} is rubbing up against {2}.
+{1} is keeping close to {2}.
+{1} is keeping close to {2}.
+{1} blushed.
+{1} blushed.
+{1} loves spending time with {2}!
+{1} loves spending time with {2}!
+{1} is suddenly playful!
+{1} is suddenly playful!
+{1} is rubbing against {2}'s legs!
+{1} is rubbing against {2}'s legs!
+{1} is regarding {2} with adoration!
+{1} is regarding {2} with adoration!
+{1} seems to want some affection from {2}.
+{1} seems to want some affection from {2}.
+{1} seems to want some attention from {2}.
+{1} seems to want some attention from {2}.
+{1} seems happy travelling with {2}.
+{1} seems happy travelling with {2}.
+{1} seems to be feeling affectionate towards {2}.
+{1} seems to be feeling affectionate towards {2}.
+{1} is looking at {2} with loving eyes.
+{1} is looking at {2} with loving eyes.
+{1} looks like it wants a treat from {2}.
+{1} looks like it wants a treat from {2}.
+{1} looks like it wants {2} to pet it!
+{1} looks like it wants {2} to pet it!
+{1} is rubbing itself against {2} affectionately.
+{1} is rubbing itself against {2} affectionately.
+{1} bumps its head gently against {2}'s hand.
+{1} bumps its head gently against {2}'s hand.
+{1} rolls over and looks at {2} expectantly.
+{1} rolls over and looks at {2} expectantly.
+{1} is looking at {2} with trusting eyes.
+{1} is looking at {2} with trusting eyes.
+{1} seems to be begging {2} for some affection!
+{1} seems to be begging {2} for some affection!
+{1} mimicked {2}!
+{1} mimicked {2}!
+{1} spun around in a circle!
+{1} spun around in a circle!
+{1} let out a battle cry.
+{1} let out a battle cry.
+{1} is on the lookout!
+{1} is on the lookout!
+{1} is standing patiently.
+{1} is standing patiently.
+{1} is looking around restlessly.
+{1} is looking around restlessly.
+{1} is wandering around.
+{1} is wandering around.
+{1} yawned loudly!
+{1} yawned loudly!
+{1} is steadily poking at the ground around {2}'s feet.
+{1} is steadily poking at the ground around {2}'s feet.
+{1} is looking at {2} and smiling.
+{1} is looking at {2} and smiling.
+{1} is staring intently into the distance.
+{1} is staring intently into the distance.
+{1} is keeping up with {2}.
+{1} is keeping up with {2}.
+{1} looks pleased with itself.
+{1} looks pleased with itself.
+{1} is still going strong!
+{1} is still going strong!
+{1} is walking in sync with {2}.
+{1} is walking in sync with {2}.
+{1} started spinning around in circles.
+{1} started spinning around in circles.
+{1} looks at {2} with anticipation.
+{1} looks at {2} with anticipation.
+{1} fell down and looks a little embarrassed.
+{1} fell down and looks a little embarrassed.
+{1} is waiting to see what {2} will do.
+{1} is waiting to see what {2} will do.
+{1} is calmly watching {2}.
+{1} is calmly watching {2}.
+{1} is looking to {2} for some kind of cue.
+{1} is looking to {2} for some kind of cue.
+{1} is staying in place, waiting for {2} to make a move.
+{1} is staying in place, waiting for {2} to make a move.
+{1} obediently sat down at {2}'s feet.
+{1} obediently sat down at {2}'s feet.
+{1} jumped in surprise!
+{1} jumped in surprise!
+{1} jumped a little!
+{1} jumped a little!
+{1} seems to be holding something...
+{1} seems to be holding something...
+\me[{1}]{3} found some \c[1]{2}\c[0]!\wtnp[30]
+\me[{1}]{3} found some \c[1]{2}\c[0]!\wtnp[30]
+\me[{1}]{3} found \c[1]{2}\c[0]!\wtnp[30]
+\me[{1}]{3} found \c[1]{2}\c[0]!\wtnp[30]
+\me[{1}]{4} found \c[1]{2} {3}\c[0]!\wtnp[30]
+\me[{1}]{4} found \c[1]{2} {3}\c[0]!\wtnp[30]
+\me[{1}]{4} found {2} \c[1]{3}\c[0]!\wtnp[30]
+\me[{1}]{4} found {2} \c[1]{3}\c[0]!\wtnp[30]
+\me[{1}]{3} found an \c[1]{2}\c[0]!\wtnp[30]
+\me[{1}]{3} found an \c[1]{2}\c[0]!\wtnp[30]
+\me[{1}]{3} found a \c[1]{2}\c[0]!\wtnp[30]
+\me[{1}]{3} found a \c[1]{2}\c[0]!\wtnp[30]
+You put the {1} away\<<n>>in the <icon=bagPocket{2}>\c<<[>>1<<]>>{3} Pocket\c<<[>>0<<]>>.
+You put the {1} away\<<n>>in the <icon=bagPocket{2}>\c<<[>>1<<]>>{3} Tasche\c<<[>>0<<]>>.
+{1} found some \c[1]{2}\c[0]!\wtnp[30]
+{1} found some \c[1]{2}\c[0]!\wtnp[30]
+{1} found \c[1]{2}\c[0]!\wtnp[30]
+{1} found \c[1]{2}\c[0]!\wtnp[30]
+{1} found \c[1]{2} {3}\c[0]!\wtnp[30]
+{1} found \c[1]{2} {3}\c[0]!\wtnp[30]
+{1} found {2} \c[1]{3}\c[0]!\wtnp[30]
+{1} found {2} \c[1]{3}\c[0]!\wtnp[30]
+{1} found an \c[1]{2}\c[0]!\wtnp[30]
+{1} found an \c[1]{2}\c[0]!\wtnp[30]
+{1} found a \c[1]{2}\c[0]!\wtnp[30]
+{1} found a \c[1]{2}\c[0]!\wtnp[30]
+Following Pokemon
+Following Pokemon
+Let the first Pokemon in your party follow you in the overworld.
+Let the first Pokemon in your party follow you in the overworld.
+Cheer
+Cheer
+Launch
+Launch
+{1} can only use {2} due to its Encore!
+{1} can only use {2} due to its Encore!
+{1} is completely immune to being copied!
+{1} is completely immune to being copied!
+{1} is completely immune to one-hit KO's!
+{1} is completely immune to one-hit KO's!
+#{msg}
+#{msg}
+{1} used the {2} on {3}.
+{1} verwendet das Item {2} bei {3}.
+{1} used the {2}.
+{1} verwendet das Item {2}.
+{1} transformed into the {2}-type!
+{1} hat sich in den {2}-Typen verwandelt!
+{1} put on its {2}!
+{1} put on its {2}!
+{1} is weak!<<n>>Throw a Poké Ball now!
+{1} is weak!<<n>>Throw a Poké Ball now!
+But there is no room left in the PC!
+Es ist kein Platz mehr auf dem PC!
+Items can't be used in this battle.
+In diesem Kampf können keine Items verwendet werden.
+#{@introText}
+#{@introText}
+{1} is completely immune to being put to sleep!
+{1} ist gegen Einschlafen immun!
+{1} is completely immune to poisoning!
+{1} ist gegen Vergiftung immun!
+{1} is completely immune to burns!
+{1} ist gegen Verbrennung immun!
+{1} is completely immune to paralysis!
+{1} ist gegen Paralyse immun!
+{1} is completely immune to being frozen!
+{1} ist gegen Gefrieren immun!
+{1} is completely immune to frostbite!
+{1} ist gegen Frostbrand immun!
+{1} is completely immune to becoming drowsy!
+{1} ist gegen Schläfrigkeit immun!
+{1} is completely immune to confusion!
+{1} ist gegen Verwirrung immun!
+{1} is completely immune to infatuation!
+{1} ist gegen Anziehung immun!
+{1} is completely immune to having its stats lowered!
+{1} ist gegen Wertveränderungen immun!
+{1} is completely immune to effects that may disable its moves!
+{1} ist gegen Attacken-Blocker immun!
+Deluxe plugin settings...
+Deluxe plugin settings...
+Settings added by the Deluxe Battle Kit and other add-on plugins.
+Settings added by the Deluxe Battle Kit and other add-on plugins.
+Toggle Mega Evolution
+Toggle Mega Evolution
+Toggles the availability of Mega Evolution functionality.
+Toggles the availability of Mega Evolution functionality.
+Mega Evolution {1}.
+Mega Evolution {1}.
+{1} radiates with Mega energy!
+{1} strahlt mit Mega-Energie!
+{1}'s {2} radiates with Mega energy!
+{1}s {2} strahlt mit Mega-Energie!
+#{param}
+#{param}
+{1}'s held {2} was removed!
+{1}s {2} wurde entfernt!
+{1} obtained {2} {3}!
+{1} erhält {2} {3}!
+{1}'s stat changes returned to normal!
+{1}s Statuswertveränderungen wurden zurückgesetzt!
+{1}'s raised stats returned to normal!
+{1}s Statuswertveränderungen wurden zurückgesetzt!
+{1}'s lowered stats returned to normal!
+{1}s Statuswertveränderungen wurden zurückgesetzt!
+The weather cleared.
+Das Wetter klaart wieder auf.
+{1} emited a powerful magnetic pulse!
+{1} sendet einen kraftvollen magnetischen Puls aus!
+Your Poké Balls short-circuited!<<n>>They cannot be used this battle!
+Pokébälle können in diesem Kampf nicht eingesetzt werden!
+{1} possessed a new appliance!
+{1} possessed a new appliance!
+{1} equipped a {2} it found in the appliance!
+{1} equipped a {2} it found in the appliance!
+{1} emited an electrical pulse out of desperation!
+{1} emited an electrical pulse out of desperation!
+The cave ceiling begins to crumble down all around you!
+The cave ceiling begins to crumble down all around you!
+I am not letting you escape!
+I am not letting you escape!
+I don't care if this whole cave collapses down on the both of us...haha!
+I don't care if this whole cave collapses down on the both of us...haha!
+Defeat your opponent before time runs out!
+Defeat your opponent before time runs out!
+The cave continues to collapse all around you!
+The cave continues to collapse all around you!
+{1} was struck on the head by a falling rock!
+{1} was struck on the head by a falling rock!
+You're running out of time!
+You're running out of time!
+You need to escape immediately!
+You need to escape immediately!
+You failed to defeat your opponent in time!
+You failed to defeat your opponent in time!
+You were forced to flee the battle!
+You were forced to flee the battle!
+My {1} will never give up!
+My {1} will never give up!
+{1} is standing its ground!
+{1} is standing its ground!
+Haha...you'll never make it out alive!
+Haha...you'll never make it out alive!
+{1}'s Mega Evolution faded!<<n>>It may now be captured!
+{1}'s Mega Evolution faded!<<n>>It may now be captured!
+{1} is set to {2}!
+{1} is set to {2}!
+It's a rugged rock but a {1} may be able to smash it.
+It's a rugged rock but a {1} may be able to smash it.
+This rock appears to be breakable.<<n>>Would you like to use the {1}?
+This rock appears to be breakable.<<n>>Would you like to use the {1}?
+{1} used the {2}!
+{1} used the {2}!
+There is no sensible reason why you would be trying to use the {1} now!
+There is no sensible reason why you would be trying to use the {1} now!
+This tree looks like it can be cut down!<<n>>Would you like to use the {1}?
+This tree looks like it can be cut down!<<n>>Would you like to use the {1}?
+This ice looks like it can be broken down.
+This ice looks like it can be broken down.
+This ice looks like it can be broken down.!<<n>>Would you like to use the {1}?
+This ice looks like it can be broken down.!<<n>>Would you like to use the {1}?
+A Pokémon could be in this tree. Maybe something could shake it.
+A Pokémon could be in this tree. Maybe something could shake it.
+A Pokémon could be in this tree. Would you like to use {1}?
+A Pokémon could be in this tree. Would you like to use {1}?
+I can't use this now!
+I can't use this now!
+Would you like to use the {1}?
+Would you like to use the {1}?
+It's a big boulder, but an item may be able to push it aside.
+It's a big boulder, but an item may be able to push it aside.
+The {1} made it possible to move boulders around!
+The {1} made it possible to move boulders around!
+The {1} were already used!
+The {1} were already used!
+There is no sensible reason why you would be trying to flex by using the {1} now!
+There is no sensible reason why you would be trying to flex by using the {1} now!
+There is no sensible reason why you would be trying to flex by using {1} now!
+There is no sensible reason why you would be trying to flex by using {1} now!
+You can't use the {1} yet.
+You can't use the {1} yet.
+The {1} was already used.
+The {1} was already used.
+The {1} is already being used.
+The {1} is already being used.
+This fog is very heavy.<<n>>Would you like to use the {1}
+This fog is very heavy.<<n>>Would you like to use the {1}
+There are no fog to clear.
+There are no fog to clear.
+There is no fog to clear.
+There is no fog to clear.
+Can't use the {1} indoors.
+Can't use the {1} indoors.
+{1} broke the camouflage and turned visible!
+{1} broke the camouflage and turned visible!
+Camouflage is already being used. Reappear?
+Camouflage is already being used. Reappear?
+{1} used {2} to turn invisible!
+{1} used {2} to turn invisible!
+{1} used {2} to turn visible!
+{1} used {2} to turn visible!
+You can't the {1} yet.
+You can't the {1} yet.
+The water is a deep blue...<<n>>Would you like to surf on it?
+The water is a deep blue...<<n>>Would you like to surf on it?
+You can't use the {1} here!
+You can't use the {1} here!
+You are not facing a waterfall.
+You are not facing a waterfall.
+It's a huge swirl of water use an item to cross it
+It's a huge swirl of water use an item to cross it
+It's a huge swirl of water.<<n>>Would you like to use the {1}?
+It's a huge swirl of water.<<n>>Would you like to use the {1}?
+You can't use the {1} when you are inside.
+You can't use the {1} when you are inside.
+The wall is very rocky. Could be climbed with the right equipment
+The wall is very rocky. Could be climbed with the right equipment
+The wall is very rocky.<<n>>Would you like to use the {1}?
+The wall is very rocky.<<n>>Would you like to use the {1}?
+You are not facing a rock wall.
+You are not facing a rock wall.
+surfing is ON!
+surfing is ON!
+surfing is OFF!
+surfing is OFF!
+It's a huge swirl of water use a move to cross it
+It's a huge swirl of water use a move to cross it
+It's a huge swirl of water.<<n>>Would you like to use {1}?
+It's a huge swirl of water.<<n>>Would you like to use {1}?
+The wall is very rocky. Could be climbed with the right move
+The wall is very rocky. Could be climbed with the right move
+The wall is very rocky.<<n>>Would you like to use the {1}
+The wall is very rocky.<<n>>Would you like to use the {1}
+This fog is very heavy. Could be defog with the right move
+This fog is very heavy. Could be defog with the right move
+Not enough PP...
+Not enough PP...
+{1} helped {2} turn invisible!
+{1} helped {2} turn invisible!
+{1} helped {2} turn visible!
+{1} helped {2} turn visible!
+\se[PC open]{1} booted up the {2}.
+\se[PC open]{1} booted up the {2}.
+Choose one to alter the weather!
+Choose one to alter the weather!
+Clear sky
+Clear sky
+Would you alter the weather to be Clear sky?
+Would you alter the weather to be Clear sky?
+The Weather have alter!<<n>>It started to clear up!
+The Weather have alter!<<n>>It started to clear up!
+You don't have permission to alter this weather yet!
+You don't have permission to alter this weather yet!
+Sunny
+Sunny
+Would you alter the weather to be Sunny?
+Would you alter the weather to be Sunny?
+The Weather have alter!<<n>>The sun is starting to shine brigther!
+The Weather have alter!<<n>>The sun is starting to shine brigther!
+Would you alter the weather to be Rain?
+Would you alter the weather to be Rain?
+The Weather have alter!<<n>>It started to Rain!
+The Weather have alter!<<n>>It started to Rain!
+Would you alter the weather to be Snowy?
+Would you alter the weather to be Snowy?
+The Weather have alter!<<n>>It started to Snow!
+The Weather have alter!<<n>>It started to Snow!
+Would you alter the weather to be a Sandstorm?
+Would you alter the weather to be a Sandstorm?
+The Weather have alter!<<n>>A Sandstorm have started!
+The Weather have alter!<<n>>A Sandstorm have started!
+Fog
+Fog
+Would you alter the weather to be Foggy?
+Would you alter the weather to be Foggy?
+The Weather have alter!<<n>>A heavy fog is starting to show!
+The Weather have alter!<<n>>A heavy fog is starting to show!
+You don't have permission to alter the current weather yet!
+You don't have permission to alter the current weather yet!
+Shutdown
+Shutdown
+Actually, this should not be possible
+Actually, this should not be possible
+Quest-Log
+Quest-Log
+Hoenn Pokédex
+Hoenn Pokédex
+Sinnoh Pokédex
+Sinnoh Pokédex
+Unova Pokédex
+Unova Pokédex
+Kalos Pokédex
+Kalos Pokédex
+Alola Pokédex
+Alola Pokédex
+Galar Pokédex
+Galar Pokédex
+Paldea Pokédex
+Paldea Pokédex
+Kanto
+Kanto
+Johto
+Johto
+Hoenn
+Hoenn
+Sinnoh
+Sinnoh
+Unova
+Unova
+Kalos
+Kalos
+Alola
+Alola
+Galar
+Galar
+Paldea
+Paldea
+Nationaler Pokédex
+Nationaler Pokédex
+Gesehen
+Gesehen
+Gefangen
+Gefangen
+1. Generation
+1. Generation
+2. Generation
+2. Generation
+3. Generation
+3. Generation
+4. Generation
+4. Generation
+5. Generation
+5. Generation
+6. Generation
+6. Generation
+7. Generation
+7. Generation
+8. Generation
+8. Generation
+9. Generation
+9. Generation
+Gesamter Pokédex
+Gesamter Pokédex
+Gesehen:
+Gesehen:
+Gefangen:
+Gefangen:
+Such-Modus
+Such-Modus
+Sortieren
+Sortieren
+Typ
+Typ
+Größe
+Größe
+Gewicht
+Gewicht
+Farbe
+Farbe
+Gestalt
+Gestalt
+Zurück
+Zurück
+Numerisch
+Numerisch
+A bis Z
+A bis Z
+Schwerste
+Schwerste
+Leichteste
+Leichteste
+Größte
+Größte
+Kleinste
+Kleinste
+Anzahl Kämpfe
+Anzahl Kämpfe
+Fundort Unbekannt
+Fundort Unbekannt
+{1}'s Habitat
+{1}'s Habitat
+Wesen
+Wesen
+EV-Werte
+EV-Werte
+IV-Werte
+IV-Werte
+<<[>>Zurück<<]>>
+<<[>>Zurück<<]>>
+Bei welchem deiner Pokémon soll das Wesen geändert werden?.
+Bei welchem deiner Pokémon soll das Wesen geändert werden?.
+{1}'s Wesen wurde zu {2} geändert.
+{1}'s Wesen wurde zu {2} geändert.
+{1}'s nature has been reset.
+{1}'s nature has been reset.
+IV-Werte von {1}: {2}
+IV-Werte von {1}: {2}
+EV-Werte von {1}: {2}
+EV-Werte von {1}: {2}
+It is already bright here.
+It is already bright here.
+There is nothing to brighten here.
+There is nothing to brighten here.
+You used the {1}!
+You used the {1}!
+Medizin
+Medizin
+Bälle
+Bälle
+TMs & VMs
+TMs & VMs
+Beeren
+Beeren
+Briefe
+Briefe
+Kampfitems
+Kampfitems
+Basisitems
+Basisitems
+Contest beenden
+Contest beenden
+{1} Aufgaben
+{1} Aufgaben
+Remove
+Remove
+Do what with this rule?
+Do what with this rule?
+There are no remaining battle rules to add.
+There are no remaining battle rules to add.
+Selected battle rule is invalid.
+Selected battle rule is invalid.
+Battle rule inverted.
+Battle rule inverted.
+Set battle rules...
+Set battle rules...
+Set battle rules to apply to the next encounter.
+Set battle rules to apply to the next encounter.
+Set partner trainer
+Set partner trainer
+Set a partner trainer to accompany the player in battle.
+Set a partner trainer to accompany the player in battle.
+Replace
+Replace
+Do what with the player's existing partner? ({1})
+Do what with the player's existing partner? ({1})
+Removed {1} as partner.
+Removed {1} as partner.
+Choose a new partner.
+Choose a new partner.
+PARTNER TRAINER
+PARTNER TRAINER
+Registered {1} as partner.
+Registered {1} as partner.
+Trainer is missing a back sprite.<<n>>Unable to set as partner.
+Trainer is missing a back sprite.<<n>>Unable to set as partner.
+Toggle battle gimmicks...
+Toggle battle gimmicks...
+Toggles for various battle gimmicks such as Mega Evolution.
+Toggles for various battle gimmicks such as Mega Evolution.
+<<[>>ADD NEW RULE<<]>>
+<<[>>ADD NEW RULE<<]>>
+Select a new battle rule to apply.
+Select a new battle rule to apply.
+<<[>>CLEAR ALL RULES<<]>>
+<<[>>CLEAR ALL RULES<<]>>
+Clear all active battle rules.
+Clear all active battle rules.
+No battle active battle rules to clear.
+No battle active battle rules to clear.
+Are you sure you want to clear all active battle rules?
+Are you sure you want to clear all active battle rules?
+Determines the number of battlers on each side of the field.
+Determines the number of battlers on each side of the field.
+Set the battle size.
+Set the battle size.
+The player's partner trainer will not participate in battle.
+The player's partner trainer will not participate in battle.
+The game will continue even if the player loses the battle.
+The game will continue even if the player loses the battle.
+The player will be unable to select the Run command.
+The player will be unable to select the Run command.
+Wild Pokémon will always attempt to flee as their first action.
+Wild Pokémon will always attempt to flee as their first action.
+Trainers will be unable to manually switch out Pokémon.
+Trainers will be unable to manually switch out Pokémon.
+Determines whether or not switch mode is enabled.
+Determines whether or not switch mode is enabled.
+Set whether switch mode should be enabled. (Trainer battles only)
+Set whether switch mode should be enabled. (Trainer battles only)
+The player's Pokémon will not gain any experience.
+The player's Pokémon will not gain any experience.
+The player will not lose or receive any prize money.
+The player will not lose or receive any prize money.
+Determines the default battle weather.
+Determines the default battle weather.
+Set the default battle weather.
+Set the default battle weather.
+Determines the default battle terrain.
+Determines the default battle terrain.
+Set the default battle terrain.
+Set the default battle terrain.
+Determines the battle environment.
+Determines the battle environment.
+Set the battle environment.
+Set the battle environment.
+Poké Balls will be unable to be selected from the bag.
+Poké Balls will be unable to be selected from the bag.
+Any captured Pokémon must be added to the party.
+Any captured Pokémon must be added to the party.
+Determines whether or not battle animations are enabled.
+Determines whether or not battle animations are enabled.
+Set whether battle animations should be enabled.
+Set whether battle animations should be enabled.
+Determines the graphic used for the battle background.
+Determines the graphic used for the battle background.
+Set the name of the background graphic.
+Set the name of the background graphic.
+Determines the graphics used for the battle bases.
+Determines the graphics used for the battle bases.
+Set the name of the battle base graphics.
+Set the name of the battle base graphics.
+The variable number used to store the battle outcome.
+The variable number used to store the battle outcome.
+Set a variable number.
+Set a variable number.
+Determines temporary player attributes.
+Determines temporary player attributes.
+Enter the player's temporary display name.
+Enter the player's temporary display name.
+Set the player's temporary outfit number.
+Set the player's temporary outfit number.
+Determines the player's temporary party.
+Determines the player's temporary party.
+Add a temporary party member (slot {1}).<<n>>(Exit menu to end early)
+Add a temporary party member (slot {1}).<<n>>(Exit menu to end early)
+Set a level for {1}.
+Set a level for {1}.
+Set a temporary party of {1}.
+Set a temporary party of {1}.
+Determines the player's temporary inventory.
+Determines the player's temporary inventory.
+Add a new item to the temporary bag.<<n>>(Exit menu to end)
+Add a new item to the temporary bag.<<n>>(Exit menu to end)
+Set the number of {1} to add.
+Set the number of {1} to add.
+Set a temporary inventory of {1} items.
+Set a temporary inventory of {1} items.
+Trainers are unable to use any items from their inventories.
+Trainers are unable to use any items from their inventories.
+Determines which side Mega Evolution is disabled for.
+Determines which side Mega Evolution is disabled for.
+Choose a side to disable Mega Evolution for.
+Choose a side to disable Mega Evolution for.
+The AI will control the player's commands.
+The AI will control the player's commands.
+The battle functions like a Battle Tower or PvP battle.
+The battle functions like a Battle Tower or PvP battle.
+Type effectiveness will be inverted.
+Type effectiveness will be inverted.
+Determines a battle gimmick to be used by wild Pokémon.
+Determines a battle gimmick to be used by wild Pokémon.
+Choose a battle gimmick for wild Pokémon to use.
+Choose a battle gimmick for wild Pokémon to use.
+Determines whether Poké Balls always succeeed or fail.
+Determines whether Poké Balls always succeeed or fail.
+Set whether Poké Balls will always succeed or fail.
+Set whether Poké Balls will always succeed or fail.
+Captured Pokémon will not be kept or registered in the Pokédex.
+Captured Pokémon will not be kept or registered in the Pokédex.
+You're prompted to capture a wild Pokémon when its HP drops to zero.
+You're prompted to capture a wild Pokémon when its HP drops to zero.
+Determines the music effect upon capturing a Pokémon.
+Determines the music effect upon capturing a Pokémon.
+Set the music effect that plays upon capturing a Pokémon.
+Set the music effect that plays upon capturing a Pokémon.
+Determines the battle background music.
+Determines the battle background music.
+Set the battle background music. (Set to None to disable)
+Set the battle background music. (Set to None to disable)
+Determines the battle victory music.
+Determines the battle victory music.
+Set the battle victory music. (Set to None to disable)
+Set the battle victory music. (Set to None to disable)
+Determines the low HP background music.
+Determines the low HP background music.
+Set the low HP background music. (Set to None to disable)
+Set the low HP background music. (Set to None to disable)
+Determines the text displayed at the start of an encounter.
+Determines the text displayed at the start of an encounter.
+Set the displayed encounter text.
+Set the displayed encounter text.
+Determines the opposing trainer's win speech.
+Determines the opposing trainer's win speech.
+Set the opposing trainer's win speech. (PvP-style battles only)
+Set the opposing trainer's win speech. (PvP-style battles only)
+Determines the opposing trainer's lose speech.
+Determines the opposing trainer's lose speech.
+Set the opposing trainer's lose speech.
+Set the opposing trainer's lose speech.
+Determines the way opponents slide on screen when encountered.
+Determines the way opponents slide on screen when encountered.
+Set the way opponents slide on screen.
+Set the way opponents slide on screen.
+Determines the style of the displayed databoxes.
+Determines the style of the displayed databoxes.
+Set the databox style to display.
+Set the databox style to display.
+Determines which mid-battle script to run.
+Determines which mid-battle script to run.
+No valid midbattle scripts found.
+No valid midbattle scripts found.
+Set a mid-battle script to run.
+Set a mid-battle script to run.
+{1} evolved into {2}!
+{1} evolved into {2}!
+Capture {1}?
+Capture {1}?
+{1} is completely immune to indirect damage!
+{1} is completely immune to indirect damage!
+Basic
+Basic
+Long
+Long
+Graphics/Items/#{@battler.item_id}
+Graphics/Items/#{@battler.item_id}
+{1} reverted to its original typing!
+{1} reverted to its original typing!
+: A
+: A
+: S
+: S
+Used: {1}
+Used: {1}
+Turn {1}
+Turn {1}
+Abil.
+Abil.
+Accuracy
+Accuracy
+Evasion
+Evasion
+Crit. Hit
+Crit. Hit
+The Pokémon's HP won't fall below {1}% when attacked.
+The Pokémon's HP won't fall below {1}% when attacked.
+Damage Gate
+Damage Gate
+The Pokémon is in the Dynamax state.
+The Pokémon is in the Dynamax state.
+Dynamax
+Dynamax
+The Pokémon is Terastallized into the {1} type.
+The Pokémon is Terastallized into the {1} type.
+Terastallization
+Terastallization
+Boosts Def of Ice types. Blizzard always hits.
+Boosts Def of Ice types. Blizzard always hits.
+Hailstorm
+Hailstorm
+Combined effects of both Hail and Snow.
+Combined effects of both Hail and Snow.
+Non-Ice types take damage each turn. Blizzard always hits.
+Non-Ice types take damage each turn. Blizzard always hits.
+Boosts Fire moves and weakens Water moves.
+Boosts Fire moves and weakens Water moves.
+Boosts Fire moves and negates Water moves.
+Boosts Fire moves and negates Water moves.
+Boosts Water moves and weakens Fire moves.
+Boosts Water moves and weakens Fire moves.
+Boosts Water moves and negates Fire moves.
+Boosts Water moves and negates Fire moves.
+Boosts Rock type Sp. Def. Damages unless Rock/Ground/Steel.
+Boosts Rock type Sp. Def. Damages unless Rock/Ground/Steel.
+Flying types won't take super effective damage.
+Flying types won't take super effective damage.
+Boosts Shadow moves. Non-Shadow Pokémon damaged each turn.
+Boosts Shadow moves. Non-Shadow Pokémon damaged each turn.
+Unknown weather.
+Unknown weather.
+{1} Terrain
+{1} Terrain
+Grounded Pokémon immune to sleep. Boosts Electric moves.
+Grounded Pokémon immune to sleep. Boosts Electric moves.
+Grounded Pokémon recover HP each turn. Boosts Grass moves.
+Grounded Pokémon recover HP each turn. Boosts Grass moves.
+Priority moves fail on grounded targets. Boosts Psychic moves.
+Priority moves fail on grounded targets. Boosts Psychic moves.
+Status can't be changed when grounded. Weakens Dragon moves.
+Status can't be changed when grounded. Weakens Dragon moves.
+Unknown terrain.
+Unknown terrain.
+Pokémon can't use moves known by an opposing {1} user.
+Pokémon can't use moves known by an opposing {1} user.
+Pokémon cannot fall asleep during an uproar.
+Pokémon cannot fall asleep during an uproar.
+No Escape
+No Escape
+The Pokémon can't flee or be switched out.
+The Pokémon can't flee or be switched out.
+The Pokémon regains some HP at the end of each turn.
+The Pokémon regains some HP at the end of each turn.
+The Pokémon regains some HP every turn, but cannot switch out.
+The Pokémon regains some HP every turn, but cannot switch out.
+The Pokémon's HP is leeched every turn to heal {1}.
+The Pokémon's HP is leeched every turn to heal {1}.
+The Pokémon takes damage at the end of each turn.
+The Pokémon takes damage at the end of each turn.
+The Pokémon takes damage each turn it spends asleep.
+The Pokémon takes damage each turn it spends asleep.
+The Pokémon's Attack stat increases whenever it's hit.
+The Pokémon's Attack stat increases whenever it's hit.
+The Pokémon's damage output is being increased.
+The Pokémon's damage output is being increased.
+The Pokémon's Atk and Def are swapped.
+The Pokémon's Atk and Def are swapped.
+The Pokémon can't use the same move twice in a row.
+The Pokémon can't use the same move twice in a row.
+The Pokémon's next Electric move will double in power.
+The Pokémon's next Electric move will double in power.
+The Pokémon's next move will be Electric type.
+The Pokémon's next move will be Electric type.
+The Pokémon's Normal type moves become Electric type.
+The Pokémon's Normal type moves become Electric type.
+The Pokémon shrunk and now takes more damage when squished.
+The Pokémon shrunk and now takes more damage when squished.
+The Pokémon is being lifted in the air by {1}.
+The Pokémon is being lifted in the air by {1}.
+The Pokémon has been made weaker to Fire type moves.
+The Pokémon has been made weaker to Fire type moves.
+The Pokémon takes damage when it uses a Fire type move.
+The Pokémon takes damage when it uses a Fire type move.
+The Pokémon in this spot restores HP on the next turn.
+The Pokémon in this spot restores HP on the next turn.
+Fully heals a Pokémon switching into this spot.
+Fully heals a Pokémon switching into this spot.
+The Pokémon will survive all incoming attacks with 1 HP.
+The Pokémon will survive all incoming attacks with 1 HP.
+The Pokémon's substitute will take any incoming moves.
+The Pokémon's substitute will take any incoming moves.
+The Pokémon bounces back any incoming status moves.
+The Pokémon bounces back any incoming status moves.
+The Pokémon is protected from all status moves.
+The Pokémon is protected from all status moves.
+The Pokémon is protected from all priority moves.
+The Pokémon is protected from all priority moves.
+The Pokémon is protected from all spread moves.
+The Pokémon is protected from all spread moves.
+The Pokémon's Ghost immunities and evasion boosts are ignored.
+The Pokémon's Ghost immunities and evasion boosts are ignored.
+The Pokémon's evasion boosts are ignored.
+The Pokémon's evasion boosts are ignored.
+The Pokémon's Dark immunities and evasion boosts are ignored.
+The Pokémon's Dark immunities and evasion boosts are ignored.
+The Pokémon is grounded and its Flying immunities are ignored.
+The Pokémon is grounded and its Flying immunities are ignored.
+The Pokémon is grounded.
+The Pokémon is grounded.
+Stockpiling increases the Pokémon's defensive stats.
+Stockpiling increases the Pokémon's defensive stats.
+Grounded Pokémon that switch into battle will take damage.
+Grounded Pokémon that switch into battle will take damage.
+Grounded Pokémon that switch into battle will be poisoned.
+Grounded Pokémon that switch into battle will be poisoned.
++1
++1
+Pokémon that switch into battle will take damage.
+Pokémon that switch into battle will take damage.
+Pokémon that switch into battle will have their Speed lowered.
+Pokémon that switch into battle will have their Speed lowered.
+The Pokémon's next attack is a guaranteed critical hit.
+The Pokémon's next attack is a guaranteed critical hit.
+Any move used against a locked-on target will be sure to hit.
+Any move used against a locked-on target will be sure to hit.
+The Pokémon can't use any sound-based moves.
+The Pokémon can't use any sound-based moves.
+No Pokémon can flee.
+No Pokémon can flee.
+The Pokémon has been made airborne, but it cannot evade attacks.
+The Pokémon has been made airborne, but it cannot evade attacks.
+Due to {1}, the Pokémon can only use {2}.
+Due to {1}, the Pokémon can only use {2}.
+The Pokémon can only use moves that deal damage.
+The Pokémon can only use moves that deal damage.
+The Pokémon's Speed stat is doubled.
+The Pokémon's Speed stat is doubled.
+Pokémon that are not Grass types take damage every turn.
+Pokémon that are not Grass types take damage every turn.
+Pokémon that are not Fire types take damage every turn.
+Pokémon that are not Fire types take damage every turn.
+Pokémon that are not Water types take damage every turn.
+Pokémon that are not Water types take damage every turn.
+Pokémon that are not Rock types take damage every turn.
+Pokémon that are not Rock types take damage every turn.
+The Pokémon is airborne and immune to Ground moves.
+The Pokémon is airborne and immune to Ground moves.
+The Pokémon's HP cannot be restored by healing effects.
+The Pokémon's HP cannot be restored by healing effects.
+Items cannot be used on or by the Pokémon.
+Items cannot be used on or by the Pokémon.
+The power of Electric moves is reduced.
+The power of Electric moves is reduced.
+The power of Fire moves is reduced.
+The power of Fire moves is reduced.
+The Pokémon takes half damage from physical and special moves.
+The Pokémon takes half damage from physical and special moves.
+The Pokémon takes half damage from physical moves.
+The Pokémon takes half damage from physical moves.
+The Pokémon takes half damage from special moves.
+The Pokémon takes half damage from special moves.
+The Pokémon is protected from status conditions.
+The Pokémon is protected from status conditions.
+The Pokémon's stats cannot be lowered.
+The Pokémon's stats cannot be lowered.
+The Pokémon is immune to critical hits.
+The Pokémon is immune to critical hits.
+Grounds Pokémon. Prevents midair actions. Increases accuracy.
+Grounds Pokémon. Prevents midair actions. Increases accuracy.
+No Pokémon can use their held items.
+No Pokémon can use their held items.
+All Pokémon swap their Def and Sp. Def stats.
+All Pokémon swap their Def and Sp. Def stats.
+Slower Pokémon get to move first.
+Slower Pokémon get to move first.
+Bound
+Bound
+The Pokémon is bound and takes damage every turn.
+The Pokémon is bound and takes damage every turn.
+Badly Poisoned
+Badly Poisoned
+Damage the Pokémon takes from its poison worsens every turn.
+Damage the Pokémon takes from its poison worsens every turn.
+Confusion
+Confusion
+The Pokémon may hurt itself in its confusion.
+The Pokémon may hurt itself in its confusion.
+Rampaging
+Rampaging
+The Pokémon rampages for 2-3 turns. It then becomes confused.
+The Pokémon rampages for 2-3 turns. It then becomes confused.
+No Ability
+No Ability
+The Pokémon's Ability loses its effect.
+The Pokémon's Ability loses its effect.
+Critical Hit Boost
+Critical Hit Boost
+The Pokémon is more likely to land critical hits.
+The Pokémon is more likely to land critical hits.
+Infatuation
+Infatuation
+The Pokémon is less likely to attack {1}.
+The Pokémon is less likely to attack {1}.
+Weight Changed
+Weight Changed
+The Pokémon's weight has been {1}.
+The Pokémon's weight has been {1}.
+Full Protect
+Full Protect
+The Pokémon is protected from all incoming moves.
+The Pokémon is protected from all incoming moves.
+Damage Protect
+Damage Protect
+The Pokémon is protected from all incoming damage.
+The Pokémon is protected from all incoming damage.
+Z-Healing
+Z-Healing
+A Pokémon switching into this spot will recover its HP.
+A Pokémon switching into this spot will recover its HP.
+Semi-Invulnerable
+Semi-Invulnerable
+The Pokémon cannot be hit by most attacks.
+The Pokémon cannot be hit by most attacks.
+Counting Down
+Counting Down
+All Pokémon in this battle state will faint after 3 turns.
+All Pokémon in this battle state will faint after 3 turns.
+Future Attack
+Future Attack
+The Pokémon in this spot will be attacked in 2 turns.
+The Pokémon in this spot will be attacked in 2 turns.
+Speed Down
+Speed Down
+The Pokémon's Speed is lowered for 3 turns.
+The Pokémon's Speed is lowered for 3 turns.
+The Pokémon gets its act together in 5 turns.
+The Pokémon gets its act together in 5 turns.
+The Pokémon will fall asleep at the end of the next turn.
+The Pokémon will fall asleep at the end of the next turn.
+Recharging
+Recharging
+The Pokémon cannot move until it recharges from its last attack.
+The Pokémon cannot move until it recharges from its last attack.
+Vulnerable
+Vulnerable
+The Pokémon cannot evade and takes double damage.
+The Pokémon cannot evade and takes double damage.
+Splinters
+Splinters
+Move Disabled
+Move Disabled
+{1} has been disabled and cannot be used.
+{1} has been disabled and cannot be used.
+Rainbow
+Rainbow
+The additional effects of moves are more likely to occur.
+The additional effects of moves are more likely to occur.
+Swamp
+Swamp
+Speed is reduced by 75% in swampy conditions.
+Speed is reduced by 75% in swampy conditions.
+Sea of Fire
+Sea of Fire
+Offense Cheer 1
+Offense Cheer 1
+The Pokémon's attacks deal increased damage.
+The Pokémon's attacks deal increased damage.
+Offense Cheer 2
+Offense Cheer 2
+The Pokémon's attacks will trigger effects & critically hit.
+The Pokémon's attacks will trigger effects & critically hit.
+Offense Cheer 3
+Offense Cheer 3
+The Pokémon's attacks bypass effects like Protect & Substitute.
+The Pokémon's attacks bypass effects like Protect & Substitute.
+Defense Cheer 1
+Defense Cheer 1
+The Pokémon takes reduced damage from attacks.
+The Pokémon takes reduced damage from attacks.
+Defense Cheer 2
+Defense Cheer 2
+The Pokémon is immune to critical hits and move effects.
+The Pokémon is immune to critical hits and move effects.
+Defense Cheer 3
+Defense Cheer 3
+Pow
+Pow
+Pri
+Pri
+Eff
+Eff
+Type changed by the {1} ability.
+Type changed by the {1} ability.
+Effect chance boosted by the {1} ability.
+Effect chance boosted by the {1} ability.
+Priority boosted by the {1} ability.
+Priority boosted by the {1} ability.
+Priority lowered by the {1} ability.
+Priority lowered by the {1} ability.
+Accuracy boosted by the {1} ability.
+Accuracy boosted by the {1} ability.
+Accuracy lowered by the {1} ability.
+Accuracy lowered by the {1} ability.
+Power boosted by the {1} ability.
+Power boosted by the {1} ability.
+Power weakened by the {1} ability.
+Power weakened by the {1} ability.
+Accuracy boosted by the held {1}.
+Accuracy boosted by the held {1}.
+Accuracy lowered by the held {1}.
+Accuracy lowered by the held {1}.
+Power boosted by the held {1}.
+Power boosted by the held {1}.
+Power weakened by the held {1}.
+Power weakened by the held {1}.
+Healing boosted by the {1} ability.
+Healing boosted by the {1} ability.
+Power boosted by Terastallization.
+Power boosted by Terastallization.
+Z-Power: Fully restores the user's HP.
+Z-Power: Fully restores the user's HP.
+Z-Power: Fully restores an incoming Pokémon's HP.
+Z-Power: Fully restores an incoming Pokémon's HP.
+Z-Power: Raises the user's critical hit rate.
+Z-Power: Raises the user's critical hit rate.
+Z-Power: Resets the user's lowered stat stages.
+Z-Power: Resets the user's lowered stat stages.
+Z-Power: The user becomes the center of attention.
+Z-Power: The user becomes the center of attention.
+Z-Power: Drastically raises the user's {1}.
+Z-Power: Drastically raises the user's {1}.
+Z-Power: Sharply raises the user's {1}.
+Z-Power: Sharply raises the user's {1}.
+Z-Power: Raises the user's {1}.
+Z-Power: Raises the user's {1}.
+Z: Hide
+Z: Hide
+Z: Details
+Z: Details
+Return
+Return
+Return to the command menu.
+Return to the command menu.
+C: Use
+C: Use
+Não tem PP suficiente...
+Não tem PP suficiente...
+{1} não pode usar {2} em si mesmo
+{1} não pode usar {2} em si mesmo
+{1} não pode ser usado em ovos!
+{1} não pode ser usado em ovos!
+{1} não pode ser usado nesse Pokémon.
+{1} não pode ser usado nesse Pokémon.
+{1} curou o HP em {2} pontos.
+{1} curou o HP em {2} pontos.
+Selecione um Pokémon?
+Selecione um Pokémon?
+{1} só pode ser usado em alvos dormindo.
+{1} só pode ser usado em alvos dormindo.
+{1} curou o HP em {2} pontos e causou dano em {3}.
+{1} curou o HP em {2} pontos e causou dano em {3}.
+{1} não pode ser usado nesse Pokémon pois possue a Ability Telepathy.
+{1} não pode ser usado nesse Pokémon pois possue a Ability Telepathy.
+{1} não pode ser usado nesse Pokémon pois possue a Ability Bulletproof.
+{1} não pode ser usado nesse Pokémon pois possue a Ability Bulletproof.
+{1} não pode ser usado.
+{1} não pode ser usado.
+Os pokemon do seu time foram curados!
+Os pokemon do seu time foram curados!
+Nenhum pokemon do seu time foi curado!
+Nenhum pokemon do seu time foi curado!
+{1} não pode usar {2} em si mesmo.
+{1} não pode usar {2} em si mesmo.
+{1} foi revivido pelo Revival Blessing.
+{1} foi revivido pelo Revival Blessing.
+{1} foi revivido pelo Revival Blessing e {2} desmaiou.
+{1} foi revivido pelo Revival Blessing e {2} desmaiou.
+{1} foi revivido pelo Lunar Dance, curou {2} por completo e desmaiou.
+{1} foi revivido pelo Lunar Dance, curou {2} por completo e desmaiou.
+{1} can't be used.
+{1} can't be used.
+Restaure os PPS...
+Restaure os PPS...
+{1} restaurou 100% do seu HP e dormiu.
+{1} restaurou 100% do seu HP e dormiu.
+{1} curou o HP em {2} pontos e curou efeito negativo de #{newpkmn.name}.
+{1} curou o HP em {2} pontos e curou efeito negativo de #{newpkmn.name}.
+Seus status foram curados!
+Seus status foram curados!
+Você não tem nenhum status valido!
+Você não tem nenhum status valido!
+Ninguém tem nenhum efeito de status!
+Ninguém tem nenhum efeito de status!
+Os efeitos de status de todos foram curados!
+Os efeitos de status de todos foram curados!
+Os Pokémon do seu time foram curados!
+Os Pokémon do seu time foram curados!
+Nenhum Pokémon do seu time foi curado!
+Nenhum Pokémon do seu time foi curado!
+Wähle ein Pokémon.
+Wähle ein Pokémon.
+Wähle ein Pokémon oder abbrechen.
+Wähle ein Pokémon oder abbrechen.
+Wohin verschieben?
+Wohin verschieben?
+Abbrechen
+Abbrechen
+Was möchtest du mit {1} machen?
+Was möchtest du mit {1} machen?
+Nicht genügend LP...
+Nicht genügend LP...
+Bei welchem Pokémon anwenden?
+Bei welchem Pokémon anwenden?
+Nicht genügend AP...
+Nicht genügend AP...
+{1} kann {2} nicht bei sich selbst anwenden
+{1} kann {2} nicht bei sich selbst anwenden
+{1} kann nicht bei Eiern verwendet werden!
+{1} kann nicht bei Eiern verwendet werden!
+{1} kann bei diesem Pokémon nicht verwendet werden.
+{1} kann bei diesem Pokémon nicht verwendet werden.
+{1} hat die LP um {2} Punkte erhöht.
+{1} hat die LP um {2} Punkte erhöht.
+Welches Pokémon möchtest du auswählen?
+Welches Pokémon möchtest du auswählen?
+{1} kann {2} nicht bei sich selbst anwenden.
+{1} kann {2} nicht bei sich selbst anwenden.
+{1} kann nur auf schlafende Pokémon angewandt werden.
+{1} kann nur auf schlafende Pokémon angewandt werden.
+{1} heilt die LP um {2} Punkte und verursacht {3} Schaden.
+{1} heilt die LP um {2} Punkte und verursacht {3} Schaden.
+"{1}" requires a boolean value, but {2} was provided.
+"{1}" requires a boolean value, but {2} was provided.
+"{1}" requires an array of types or a symbol (for only one), but {2} was provided.
+"{1}" requires an array of types or a symbol (for only one), but {2} was provided.
+"{1}" requires an array of generations or an integer (for only one), but {2} was provided.
+"{1}" requires an array of generations or an integer (for only one), but {2} was provided.
+Blacklist requires an array of pokemon, but {2} was provided.
+Blacklist requires an array of pokemon, but {2} was provided.
+This function requires a pokemon, but {2} was provided.
+This function requires a pokemon, but {2} was provided.
+Du hast keine Bälle in deiner Tasche.
+Du hast keine Bälle in deiner Tasche.
+Wähle einen Ball aus:
+Wähle einen Ball aus:
+Das wäre der gleiche Ball.
+Das wäre der gleiche Ball.
+Das Pokémon befindet sich nun in einem {1}.
+Das Pokémon befindet sich nun in einem {1}.
+Wilde Pokémon
+Wilde Pokémon
+You do not have any charges left...
+You do not have any charges left...
+You have 1 charge left.
+You have 1 charge left.
+Would you like to heal your Pokémon?
+Would you like to heal your Pokémon?
+You have no more charges left.
+You have no more charges left.
+You have {1} charge(s) left.
+You have {1} charge(s) left.
+{1} charge(s) remain!
+{1} charge(s) remain!
+Du kannst das Wesen noch nicht ändern!
+Du kannst das Wesen noch nicht ändern!
+Starkes Sonnenlicht.
+Starkes Sonnenlicht.
+Es regnet.
+Es regnet.
+Ein Sandsturm wütet.
+Ein Sandsturm wütet.
+Sehr grelles Sonnenlicht.
+Sehr grelles Sonnenlicht.
+Platzregen.
+Platzregen.
+Starke Windböhen.
+Starke Windböhen.
+Der Himmel ist verdunkelt.
+Der Himmel ist verdunkelt.
+Es schneit.
+Es schneit.
+Es hagelt.
+Es hagelt.
+Das hätte keinen Effekt.
+Das hätte keinen Effekt.
+Das kann nicht bei einem besiegten Pokémon angewandt werden.
+Das kann nicht bei einem besiegten Pokémon angewandt werden.
+Normal-Form
+Normal-Form
+Angriffs-Form
+Angriffs-Form
+Verteidigungs-Form
+Verteidigungs-Form
+Initiative-Form
+Initiative-Form
+In welche Form soll sich {1} verwandeln?
+In welche Form soll sich {1} verwandeln?
+{1} hat seine Form geändert!
+{1} hat seine Form geändert!
+{1} aktiviert das Tohaido-Mobil{2}!
+{1} aktiviert das Tohaido-Mobil{2}!
+The current map has no MapPosition defined in the map_metadata.txt PBS file.
+The current map has no MapPosition defined in the map_metadata.txt PBS file.
+North Essen
+North Essen
+East Essen
+East Essen
+South Essen
+South Essen
+West Essen
+West Essen
+Central Essen
+Central Essen
+Central Tiall
+Central Tiall
+Normal Map
+Normal Map
+Fly Map
+Fly Map
+Quest Map
+Quest Map
+Berry Map
+Berry Map
+Roaming Map
+Roaming Map
+No information Available
+No information Available
+A fairly old and loud town. It's a big and not so pretty place.
+A fairly old and loud town. It's a big and not so pretty place.
+<ac>The first Route in the Region and a home to Kurt.</ac>
+<ac>The first Route in the Region and a home to Kurt.</ac>
+The biggest City in Essen. It has a department store!
+The biggest City in Essen. It has a department store!
+The biggest City in Essen. It has a department store and what does it not have?
+The biggest City in Essen. It has a department store and what does it not have?
+The place to be when you're feeling tired and your Pokémon too of course.
+The place to be when you're feeling tired and your Pokémon too of course.
+A 6 floor tall building where you can almost buy anything you can imagine.
+A 6 floor tall building where you can almost buy anything you can imagine.
+A great place to spend the day but don't be mad if you're broke at the end!
+A great place to spend the day but don't be mad if you're broke at the end!
+Earn the Rainbow Badge by defeating Eric the Bug Type Gym Leader.
+Earn the Rainbow Badge by defeating Eric the Bug Type Gym Leader.
+A place for people that like to go to an institute...
+A place for people that like to go to an institute...
+A route with a lot of bridges.
+A route with a lot of bridges.
+Another Small Town. And a lot of text to fill the space here up to 3 lines yes yes baguette!
+Another Small Town. And a lot of text to fill the space here up to 3 lines yes yes baguette!
+A big Park and it's natural.
+A big Park and it's natural.
+Ice Cave
+Ice Cave
+A Route full with Trainers.
+A Route full with Trainers.
+An Icy Cold Cave located here... And still a lot of Trainers!
+An Icy Cold Cave located here... And still a lot of Trainers!
+Once a trainer has collected all 8 Badges, they are allowed to enter the League and challenge the E4 and Champion!
+Once a trainer has collected all 8 Badges, they are allowed to enter the League and challenge the E4 and Champion!
+The start of the Cycling Bridge.
+The start of the Cycling Bridge.
+The Cycling Bridge itself!
+The Cycling Bridge itself!
+The end of the Cycling Bridge
+The end of the Cycling Bridge
+A rocky route with mountains and caves and stuff.
+A rocky route with mountains and caves and stuff.
+Rock Cave
+Rock Cave
+Challenge the Brains of the Frontier! Which are just Humans.
+Challenge the Brains of the Frontier! Which are just Humans.
+A zone to go on Safari. What else would you do here?
+A zone to go on Safari. What else would you do here?
+Is this even a Route? It's just water and a waterfall.
+Is this even a Route? It's just water and a waterfall.
+The island which is home to the Pokémon named Deoxys.
+The island which is home to the Pokémon named Deoxys.
+The island which is home to the Pokémon named Mew and it's shiny!
+The island which is home to the Pokémon named Mew and it's shiny!
+There's something here but I don't know what!
+There's something here but I don't know what!
+All there's known about this place is that they sell Baguette!
+All there's known about this place is that they sell Baguette!
+There was no file named '#{file}' found.
+There was no file named '#{file}' found.
+DOWN
+DOWN
+LEFT
+LEFT
+RIGHT
+RIGHT
+UP
+UP
+Menu
+Menu
+ACTION
+ACTION
+BACK
+BACK
+Action
+Action
+USE
+USE
+Scroll Up
+Scroll Up
+JUMPUP
+JUMPUP
+Scroll Down
+Scroll Down
+JUMPDOWN
+JUMPDOWN
+Ready Menu
+Ready Menu
+SPECIAL
+SPECIAL
+Caps
+Caps
+pg Up
+pg Up
+pg Dn
+pg Dn
+prt Scr
+prt Scr
+Num 0
+Num 0
+Num 1
+Num 1
+Num 2
+Num 2
+Num 3
+Num 3
+Num 4
+Num 4
+Num 5
+Num 5
+Num 6
+Num 6
+Num 7
+Num 7
+Num 8
+Num 8
+Num 9
+Num 9
+Multi
+Multi
+Sep
+Sep
+Sub
+Sub
+Dec
+Dec
+Div
+Div
+Num
+Num
+Scroll
+Scroll
+Change Mode
+Change Mode
+Change Region
+Change Region
+Enable Zoom
+Enable Zoom
+Disable Zoom
+Disable Zoom
+Zoom In/Out
+Zoom In/Out
+Zoom In
+Zoom In
+Zoom Out
+Zoom Out
+View Info
+View Info
+Hide Info
+Hide Info
+Extend Info
+Extend Info
+View Encounter Info
+View Encounter Info
+Select Species
+Select Species
+Reveal Seen Species
+Reveal Seen Species
+Hide Seen Species
+Hide Seen Species
+Change Page
+Change Page
+Change Species
+Change Species
+Change Info
+Change Info
+Go Back
+Go Back
+Search Location
+Search Location
+Quick Search
+Quick Search
+Sort Search
+Sort Search
+Quick Fly
+Quick Fly
+View Quest
+View Quest
+Hide Quest
+Hide Quest
+View Quests
+View Quests
+Change Quest
+Change Quest
+Show Berry
+Show Berry
+Show Berries
+Show Berries
+Change Berry
+Change Berry
+Hide Berry
+Hide Berry
+Close Map
+Close Map
+No information given.
+No information given.
+Invalid Location
+Invalid Location
+#{questName.length} Active Quests
+#{questName.length} Active Quests
+Quest: #{questName[0]}
+Quest: #{questName[0]}
+Invalid Quest Position
+Invalid Quest Position
+Not Given
+Not Given
+Which quest would you like to view info about?
+Which quest would you like to view info about?
+Which berry would you like to view info about?
+Which berry would you like to view info about?
+Encounter Type '#{type}' has not been added to EncounterTypes in 000_RegionMap_Settings.rb
+Encounter Type '#{type}' has not been added to EncounterTypes in 000_RegionMap_Settings.rb
+There was no file named 'map#{type}Box#{encKey}' found.
+There was no file named 'map#{type}Box#{encKey}' found.
+No Highlight Image defined for point '#{mapData[0]}, #{mapData[1]} - #{mapData[2]}' in PBS file: town_map.txt
+No Highlight Image defined for point '#{mapData[0]}, #{mapData[1]} - #{mapData[2]}' in PBS file: town_map.txt
+Quick Fly: Choose one of the available locations to fly to.
+Quick Fly: Choose one of the available locations to fly to.
+Quick traveling to {1}!
+Quick traveling to {1}!
+No Higlight Image found for point '#{@mapInfo[curPos][:realname].to_s}' in PBS file: town_map.txt
+No Higlight Image found for point '#{@mapInfo[curPos][:realname].to_s}' in PBS file: town_map.txt
+No Unvisited Image found for point '#{value[:realname]}' in PBS file: town_map.txt
+No Unvisited Image found for point '#{value[:realname]}' in PBS file: town_map.txt
+Which mode would you like to switch to?
+Which mode would you like to switch to?
+Which Region would you like to change to?
+Which Region would you like to change to?
+Game map: #{id}, #{name}: MapPosition = #{region[0]},#{region[1]},#{region[2]} => #{region[0]} is not a valid Region ID.
+Game map: #{id}, #{name}: MapPosition = #{region[0]},#{region[1]},#{region[2]} => #{region[0]} is not a valid Region ID.
+Choose a Location (press #{convertButtonToString(ARMSettings::OrderSearchButton)} to order the list.)
+Choose a Location (press #{convertButtonToString(ARMSettings::OrderSearchButton)} to order the list.)
+There's no mapMetadata for map '#{$game_map.name}' with ID #{$game_map.map_id}.<<n>>Add it to the map_metadata.txt to fix this error!
+There's no mapMetadata for map '#{$game_map.name}' with ID #{$game_map.map_id}. <<n>>Add it to the map_metadata.txt to fix this error!
+#{map_metadata.name} has no mapPosition defined in map_metadata.txt PBS file.
+#{map_metadata.name} has no mapPosition defined in map_metadata.txt PBS file.
+Choose a Location (press #{convertButtonToString(ARMSettings::OrderSearchButton)} #{times} to undo the Quick Search.)
+Choose a Location (press #{convertButtonToString(ARMSettings::OrderSearchButton)} #{times} to undo the Quick Search.)
+Choose a Location (press #{convertButtonToString(ARMSettings::OrderSearchButton)} to unorder the list.)
+Choose a Location (press #{convertButtonToString(ARMSettings::OrderSearchButton)} to unorder the list.)
+You {1} \c[1]{2}\c[0]!
+You {1} \c[1]{2}\c[0]!
+You {1} {2} \c[1]{3} {4}\c[0]!
+You {1} {2} \c[1]{3} {4}\c[0]!
+You {1} \c[1]{2} {3}\c[0]!
+You {1} \c[1]{2} {3}\c[0]!
+You {1} {2} \c[1]{3}\c[0]!
+You {1} {2} \c[1]{3}\c[0]!
+You {1} an \c[1]{2}\c[0]!
+You {1} an \c[1]{2}\c[0]!
+You {1} a \c[1]{2}\c[0]!
+You {1} a \c[1]{2}\c[0]!
+Bälle: {1}
+Bälle: {1}
+Schritte: {1}/{2}
+Schritte: {1}/{2}
+Gefangen: {1}
+Gefangen: {1}
+Gefangen: Keins
+Gefangen: Keins
+Du hast {1} neue Quest!
+Du hast {1} neue Quest!
+Ein zerbrechlicher Felsen. Mit einer {1} könnte man ihn vielleicht zertrümmern.
+Ein zerbrechlicher Felsen. Mit einer {1} könnte man ihn vielleicht zertrümmern.
+Möchtest du die {1} einsetzen?
+Möchtest du die {1} einsetzen?
+{1} benutzt die {2}!
+{1} benutzt die {2}!
+Es gibt keinen logischen Grund weshalb du jetzt die {1} benutzen solltest!
+Es gibt keinen logischen Grund weshalb du jetzt die {1} benutzen solltest!
+Dieser Baum sieht so aus, als könnte man ihn zerschneiden.
+Dieser Baum sieht so aus, als könnte man ihn zerschneiden.
+Möchtest du das {1} verwenden?
+Möchtest du das {1} verwenden?
+{1} benutzt das {2}!
+{1} benutzt das {2}!
+Es gibt keinen logischen Grund weshalb du jetzt das {1} benutzen solltest!
+Es gibt keinen logischen Grund weshalb du jetzt das {1} benutzen solltest!
+Dieser Eisklotz sieht so aus, als könnte man ihn zertrümmern.
+Dieser Eisklotz sieht so aus, als könnte man ihn zertrümmern.
+Möchtest du den {1} verwenden?
+Möchtest du den {1} verwenden?
+{1} benutzt den {2}!
+{1} benutzt den {2}!
+Es gibt keinen logischen Grund weshalb du jetzt den {1} benutzen solltest!
+Es gibt keinen logischen Grund weshalb du jetzt den {1} benutzen solltest!
+Ein Pokémon könnte sich in diesem Baum verstecken. Mit einem Item, lässt es sich bestimmt rauslocken.
+Ein Pokémon könnte sich in diesem Baum verstecken. Mit einem Item, lässt es sich bestimmt rauslocken.
+Ein großer Felsen. Das geeignete Item oder Pokémon könnte hier helfen.
+Ein großer Felsen. Das geeignete Item oder Pokémon könnte hier helfen.
+Möchtest du die {1} verwenden?
+Möchtest du die {1} verwenden?
+Mit den {1} kannst du Felsen verschieben!
+Mit den {1} kannst du Felsen verschieben!
+Die {1} wurden bereits eingesetzt!
+Die {1} wurden bereits eingesetzt!
+Es gibt keinen logischen Grund weshalb du jetzt mit den {1} flexen solltest!
+Es gibt keinen logischen Grund weshalb du jetzt mit den {1} flexen solltest!
+Du hast leider noch keine Möglichkeit zu surfen.
+Du hast leider noch keine Möglichkeit zu surfen.
+Das Wasser ist tiefblau...<<n>>Möchtest du surfen?
+Das Wasser ist tiefblau...<<n>>Möchtest du surfen?
+Du kannst nicht surfen, wenn du mit jemandem unterwegs bist.
+Du kannst nicht surfen, wenn du mit jemandem unterwegs bist.
+Du kannst hier nicht surfen!
+Du kannst hier nicht surfen!
+Du surfst bereits.
+Du surfst bereits.
+Das Wasser scheint hier sehr tief zu sein.
+Das Wasser scheint hier sehr tief zu sein.
+Möchtest du tauchen?
+Möchtest du tauchen?
+Licht scheint von oben herab.
+Licht scheint von oben herab.
+Licht scheint von oben herab. Möchtest du Taucher einsetzen?
+Licht scheint von oben herab. Möchtest du Taucher einsetzen?
+Das kannst du hier nicht verwenden.
+Das kannst du hier nicht verwenden.
+Das Wasser plätschert den Wasserfall hinab.
+Das Wasser plätschert den Wasserfall hinab.
+Möchtest du den Wasserfall hinaufsteigen?
+Möchtest du den Wasserfall hinaufsteigen?
+Du stehst nicht vor einem Wasserfall...
+Du stehst nicht vor einem Wasserfall...
+Wasserverwirbelungen könnten mit Hilfe eines Items überwunden werden.
+Wasserverwirbelungen könnten mit Hilfe eines Items überwunden werden.
+{1} setzt die {2} ein!
+{1} setzt die {2} ein!
+Du kannst noch nicht {1}.
+Du kannst noch nicht {1}.
+{1} benutzt {2}!
+{1} benutzt {2}!
+Du kannst nur alleine fliegen.
+Du kannst nur alleine fliegen.
+Fliegen kann nur draußen verwendet werden.
+Fliegen kann nur draußen verwendet werden.
+Die Wand sieht erklimmbar aus. Mit der richtigen Ausrüstung könnte man dort hoch kraxeln.
+Die Wand sieht erklimmbar aus. Mit der richtigen Ausrüstung könnte man dort hoch kraxeln.
+Das ist keine erklimmbare Felswand.
+Das ist keine erklimmbare Felswand.
+Info
+Info
+Ein Pokémon könnte sich in diesem Baum verstecken. Mit einem Item lässt es sich bestimmt rauslocken.
+Ein Pokémon könnte sich in diesem Baum verstecken. Mit einem Item lässt es sich bestimmt rauslocken.
+Mit den {1}n kannst du Felsen verschieben!
+Mit den {1}n kannst du Felsen verschieben!
+Es gibt keinen logischen Grund weshalb du jetzt mit den {1}n flexen solltest!
+Es gibt keinen logischen Grund weshalb du jetzt mit den {1}n flexen solltest!
+Die Wand sieht erklimmbar aus. Mit der richtigen Ausrüstung könnte man dort hochkraxeln.
+Die Wand sieht erklimmbar aus. Mit der richtigen Ausrüstung könnte man dort hochkraxeln.
+Beutel
+Beutel
+Karte
+Karte
+Speichern
+Speichern
+Optionen
+Optionen
+Spiel beenden
+Spiel beenden
+Bist du sicher, dass du das Spiel schließen möchtest?
+Bist du sicher, dass du das Spiel schließen möchtest?
+ID Nr.
+ID Nr.
+Geld
+Geld
+Zeit
+Zeit
+Begonnen
+Begonnen
+Team: {1}
+Team: {1}
+Du hälst ein Pokémon!
+Du hälst ein Pokémon!
+Weiter bearbeiten?
+Weiter bearbeiten?
+Box verlassen?
+Box verlassen?
+{1} ist ausgewählt.
+{1} ist ausgewählt.
+Tauschen
+Tauschen
+Ablegen
+Ablegen
+Bewegen
+Bewegen
+Mitnehmen
+Mitnehmen
+Zeichen
+Zeichen
+Freilassen
+Freilassen
+Ja
+Ja
+Nein
+Nein
+Du kannst nicht aus dem Team mitnehmen.
+Du kannst nicht aus dem Team mitnehmen.
+Dein team ist voll!
+Dein team ist voll!
+Du kannst nicht von der Box aus ablegen
+Du kannst nicht von der Box aus ablegen
+Das ist dein letztes Pokémon!
+Das ist dein letztes Pokémon!
+Entferne die Post.
+Entferne die Post.
+{1} weigert sich in die Box geschickt zu werden!
+{1} weigert sich in die Box geschickt zu werden!
+In welche Box?
+In welche Box?
+Die Box ist voll.
+Die Box ist voll.
+Du kannst keine Eier freilassen.
+Du kannst keine Eier freilassen.
+{1} weigert sich dich zu verlassen!
+{1} weigert sich dich zu verlassen!
+Pokémon freilassen?
+Pokémon freilassen?
+{1} wurde freigelassen.
+{1} wurde freigelassen.
+Eier können keine Items tragen.
+Eier können keine Items tragen.
+{1} abnehmen?
+{1} abnehmen?
+Du hast {1} an dich genommen.
+Du hast {1} an dich genommen.
+DU kannst {1} nicht lagern.
+DU kannst {1} nicht lagern.
+{1} wurde dem Pokémon zum Tragen gegeben.
+{1} wurde dem Pokémon zum Tragen gegeben.
+Springe zu
+Springe zu
+Was möchtest du tun?
+Was möchtest du tun?
+Zu welcher Box springen?
+Zu welcher Box springen?
+Suche dir ein Wallpaper aus.
+Suche dir ein Wallpaper aus.
+Name der Box?
+Name der Box?
+Box weiter bearbeiten?
+Box weiter bearbeiten?
+Auswählen
+Auswählen
+{1} wurde ausgewählt.
+{1} wurde ausgewählt.
+Item mitnehmen
+Item mitnehmen
+Item ablegen
+Item ablegen
+Item wegwerfen
+Item wegwerfen
+Schließen
+Schließen
+Items in den Beutel verschieben.
+Items in den Beutel verschieben.
+Items ablegen.
+Items ablegen.
+Items vom PC wegwerfen.
+Items vom PC wegwerfen.
+Zurück zum vorherigen Menü.
+Zurück zum vorherigen Menü.
+Hier sind keine Items.
+Hier sind keine Items.
+{1} öffnet den PC.
+{1} öffnet den PC.
+Item Box
+Item Box
+Postfach
+Postfach
+Ausschalten
+Ausschalten
+Auf welchen PC möchtest du zugreifen?
+Auf welchen PC möchtest du zugreifen?
+{1}s PC
+{1}s PC
+Jemandes PC
+Jemandes PC
+Die Pokémon Verwaltung wurde geöffnet.
+Die Pokémon Verwaltung wurde geöffnet.
+Boxen organsisieren
+Boxen organsisieren
+Pokémon mitnehmen
+Pokémon mitnehmen
+Pokémon ablegen
+Pokémon ablegen
+Bis bald!
+Bis bald!
+Verschiebe die Pokémon in deinen Boxen.
+Verschiebe die Pokémon in deinen Boxen.
+Nehme Pokémon aus deinen Boxen mit in dein Team.
+Nehme Pokémon aus deinen Boxen mit in dein Team.
+Lege Pokémon aus deinem Team in die Boxen ab.
+Lege Pokémon aus deinem Team in die Boxen ab.
+Kehre zum vorherigen Menü zurück.
+Kehre zum vorherigen Menü zurück.
+Dein Team ist voll!
+Dein Team ist voll!
+Das letzte Pokémon kann nicht abgelegt werden!
+Das letzte Pokémon kann nicht abgelegt werden!
+Griff auf {1}'s PC zu.
+Griff auf {1}'s PC zu.
+Ausloggen
+Ausloggen
