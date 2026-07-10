@@ -6,6 +6,7 @@ import EnBadge from "../../../components/EnBadge.astro";
 import { pokemon, pokemonById, moveById, abilityById, itemById, slugify } from "../../../lib/data";
 import { formatEvolutionCondition } from "../../../lib/evolutionMethods";
 import { encounterMethodLabel } from "../../../lib/encounterMethods";
+import { eggGroupLabel } from "../../../lib/eggGroups";
 import { href } from "../../../lib/url";
 
 export function getStaticPaths() {
@@ -13,6 +14,10 @@ export function getStaticPaths() {
 }
 
 const { p } = Astro.props;
+
+const statTotal =
+  p.baseStats.hp + p.baseStats.attack + p.baseStats.defense +
+  p.baseStats.speed + p.baseStats.spAtk + p.baseStats.spDef;
 
 function moveName(id: string) {
   return moveById.get(id)?.name ?? id;
@@ -51,6 +56,11 @@ const locationsByPlace = Object.groupBy
   <StatBar label="Init." value={p.baseStats.speed} />
   <StatBar label="Sp. Angriff" value={p.baseStats.spAtk} />
   <StatBar label="Sp. Vert." value={p.baseStats.spDef} />
+  <div class="stat-row">
+    <span class="stat-label">Gesamt</span>
+    <span></span>
+    <span class="stat-value">{statTotal}</span>
+  </div>
 
   <h2>Pokédex</h2>
   <p>
@@ -62,7 +72,7 @@ const locationsByPlace = Object.groupBy
     <tr><th>Größe</th><td>{p.height} m</td></tr>
     <tr><th>Gewicht</th><td>{p.weight} kg</td></tr>
     <tr><th>Fangrate</th><td>{p.catchRate}</td></tr>
-    <tr><th>Ei-Gruppen</th><td>{p.eggGroups.join(", ") || "–"}</td></tr>
+    <tr><th>Ei-Gruppen</th><td>{p.eggGroups.map(eggGroupLabel).join(", ") || "–"}</td></tr>
     <tr><th>Schlupfschritte</th><td>{p.hatchSteps}</td></tr>
     {p.raidRanks.length > 0 && (
       <tr><th>Raid-Rang</th><td>{Math.min(...p.raidRanks)}{p.raidRanks.length > 1 ? `–${Math.max(...p.raidRanks)}` : ""} ⭐</td></tr>

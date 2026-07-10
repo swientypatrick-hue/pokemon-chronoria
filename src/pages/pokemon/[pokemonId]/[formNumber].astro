@@ -26,6 +26,9 @@ function abilityName(id: string) {
 
 const formLabel = f.formName?.text || `Form ${f.formNumber}`;
 const sortedLevelMoves = [...f.levelMoves].sort((a: any, b: any) => a.level - b.level);
+const statTotal =
+  f.baseStats.hp + f.baseStats.attack + f.baseStats.defense +
+  f.baseStats.speed + f.baseStats.spAtk + f.baseStats.spDef;
 const locationsByPlace = Object.groupBy
   ? Object.groupBy(f.foundIn, (r: any) => r.locationName)
   : f.foundIn.reduce((acc: Record<string, any[]>, r: any) => {
@@ -53,6 +56,11 @@ const locationsByPlace = Object.groupBy
   <StatBar label="Init." value={f.baseStats.speed} />
   <StatBar label="Sp. Angriff" value={f.baseStats.spAtk} />
   <StatBar label="Sp. Vert." value={f.baseStats.spDef} />
+  <div class="stat-row">
+    <span class="stat-label">Gesamt</span>
+    <span></span>
+    <span class="stat-value">{statTotal}</span>
+  </div>
 
   <h2>Fähigkeiten</h2>
   <div class="pill-list">
