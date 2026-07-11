@@ -210,7 +210,7 @@ UnmegaForm = 0
 
 #-------------------------------
 [CHARMANDER,1]
-Name = Charmander
+FormName = Kanto
 Types = FIRE
 BaseStats = 39,52,43,65,60,50
 GenderRatio = FemaleOneEighth
@@ -237,7 +237,7 @@ Generation = 1
 Evolutions = CHARMELEON,Level,16
 #-------------------------------
 [CHARMELEON,1]
-Name = Charmeleon
+FormName = Kanto
 Types = FIRE
 BaseStats = 58,64,58,80,80,65
 GenderRatio = FemaleOneEighth
@@ -263,7 +263,7 @@ Generation = 1
 Evolutions = CHARIZARD,Level,36
 #-------------------------------
 [CHARIZARD,1]
-Name = Charizard
+FormName = Kanto
 Types = FIRE,FLYING
 BaseStats = 78,84,78,100,109,85
 GenderRatio = FemaleOneEighth
