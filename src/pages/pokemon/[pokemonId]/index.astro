@@ -113,7 +113,7 @@ const locationsByPlace = Object.groupBy
           <tr>
             <td><a href={href(`/pokemon/${slugify(p.id)}/${f.formNumber}/`)}>{f.sprite && <img class="form-sprite" src={href(`/sprites/${f.sprite}`)} alt="" width="40" height="40" />}</a></td>
             <td><a href={href(`/pokemon/${slugify(p.id)}/${f.formNumber}/`)}>{f.formName?.text || `Form ${f.formNumber}`}</a></td>
-            <td class="pill-list">{f.types.map((t: string) => <TypeBadge type={t} />)}</td>
+            <td><div class="pill-list">{f.types.map((t: string) => <TypeBadge type={t} />)}</div></td>
             <td>{f.baseStats.hp}/{f.baseStats.attack}/{f.baseStats.defense}/{f.baseStats.speed}/{f.baseStats.spAtk}/{f.baseStats.spDef}</td>
           </tr>
         ))}
