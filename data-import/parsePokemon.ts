@@ -119,6 +119,7 @@ export function parsePokemon(ctx: TranslationContext): Pokemon[] {
   const pokemon = new Map<string, Pokemon>();
   for (const block of baseBlocks) {
     const p = blockToPokemon(block, ctx, sprites);
+    if (p.id === "MISSINGNO") continue; // glitch species, not a real Pokémon - keep it off the wiki
     if (pokemon.has(p.id)) {
       console.warn(`[Pokémon] Doppelter Eintrag für ${p.id}, überschreibe.`);
     }
