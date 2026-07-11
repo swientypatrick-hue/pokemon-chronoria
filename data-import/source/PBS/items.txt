@@ -7386,229 +7386,209 @@ Flags = Fling_30
 Description = It raises the Sp. Def stat of a Pokémon in battle immensely. It wears off if the Pokémon is withdrawn.
 #-------------------------------
 [XSPEED]
-Name = X Speed
-NamePlural = X Speeds
+Name = X-Initiative
+NamePlural = X-Initiative
 Pocket = 7
 Price = 1000
 SellPrice = 250
 BattleUse = OnBattler
 Flags = Fling_30
-Description = An item that sharply boosts the Speed stat of a Pokémon while it remains in battle.
+Description = Es erhöht die Initiative eines Pokémon um 1 Stufe, bis es ausgwechselt wird.
 #-------------------------------
 [XSPEED2]
-Name = X Speed 2
-NamePlural = X Speed 2s
+Name = X-Initiative 2
+NamePlural = X-Initiative 2
 Pocket = 7
 Price = 0
 BattleUse = OnBattler
 Flags = Fling_30
-Description = It sharply raises the Speed stat of a Pokémon in battle. It wears off if the Pokémon is withdrawn.
+Description = Es erhöht die Initiative eines Pokémon um 2 Stufen, bis es ausgwechselt wird.
 #-------------------------------
 [XSPEED3]
-Name = X Speed 3
-NamePlural = X Speed 3s
+Name = X-Initiative 3
+NamePlural = X-Initiative 3
 Pocket = 7
 Price = 0
 BattleUse = OnBattler
 Flags = Fling_30
-Description = It drastically raises the Speed stat of a Pokémon in battle. It wears off if the Pokémon is withdrawn.
+Description = Es erhöht die Initiative eines Pokémon um 3 Stufen, bis es ausgwechselt wird.
 #-------------------------------
 [XSPEED6]
-Name = X Speed 6
-NamePlural = X Speed 6s
+Name = X-Initiative 6
+NamePlural = X-Initiative 6
 Pocket = 7
 Price = 0
 BattleUse = OnBattler
 Flags = Fling_30
-Description = It raises the Speed stat of a Pokémon in battle immensely. It wears off if the Pokémon is withdrawn.
+Description = Es erhöht die Initiative eines Pokémon um 6 Stufen, bis es ausgwechselt wird.
 #-------------------------------
 [XACCURACY]
-Name = X Accuracy
-NamePlural = X Accuracies
+Name = X-Genauigkeit
+NamePlural = X-Genauigkeit
 Pocket = 7
 Price = 1000
 SellPrice = 250
 BattleUse = OnBattler
 Flags = Fling_30
-Description = An item that sharply boosts the accuracy of a Pokémon while it remains in battle.
+Description = Description = Es erhöht die Genauigkeit eines Pokémon um 1 Stufe, bis es ausgwechselt wird.
 #-------------------------------
 [XACCURACY2]
-Name = X Accuracy 2
-NamePlural = X Accuracy 2s
+Name = X-Genauigkeit 2
+NamePlural = X-Genauigkeit 2
 Pocket = 7
 Price = 0
 BattleUse = OnBattler
 Flags = Fling_30
-Description = It sharply raises the accuracy of a Pokémon in battle. It wears off if the Pokémon is withdrawn.
+Description = Es erhöht die Genauigkeit eines Pokémon um 2 Stufen, bis es ausgwechselt wird.
 #-------------------------------
 [XACCURACY3]
-Name = X Accuracy 3
-NamePlural = X Accuracy 3s
+Name = X-Genauigkeit 3
+NamePlural = X-Genauigkeit 3
 Pocket = 7
 Price = 0
 BattleUse = OnBattler
 Flags = Fling_30
-Description = It drastically raises the accuracy of a Pokémon in battle. It wears off if the Pokémon is withdrawn.
+Description = Es erhöht die Genauigkeit eines Pokémon um 3 Stufen, bis es ausgwechselt wird.
 #-------------------------------
 [XACCURACY6]
-Name = X Accuracy 6
-NamePlural = X Accuracy 6s
+Name = X-Genauigkeit 6
+NamePlural = X-Genauigkeit 6
 Pocket = 7
 Price = 0
 BattleUse = OnBattler
 Flags = Fling_30
-Description = It raises the accuracy of a Pokémon in battle immensely. It wears off if the Pokémon is withdrawn.
-#-------------------------------
-[MAXMUSHROOMS]
-Name = Max Mushrooms
-NamePlural = Max Mushrooms
-PortionName = cluster of Max Mushrooms
-PortionNamePlural = clusters of Max Mushrooms
-Pocket = 7
-Price = 8000
-BattleUse = OnBattler
-Flags = Fling_30
-Description = Mushrooms that boost all stats of a Pokémon during battle.
+Description = Es erhöht die Genauigkeit eines Pokémon um 6 Stufen, bis es ausgwechselt wird.
 #-------------------------------
 [DIREHIT]
-Name = Dire Hit
-NamePlural = Dire Hits
+Name = X-Volltreffer
+NamePlural = X-Volltreffer
 Pocket = 7
 Price = 1000
 SellPrice = 250
 BattleUse = OnBattler
 Flags = Fling_30
-Description = An item that raises the critical-hit ratio greatly. It wears off if the Pokémon is withdrawn.
+Description = Es erhöht die Volltrefferquote eines Pokémon um 1 Stufe, bis es ausgwechselt wird.
 #-------------------------------
 [DIREHIT2]
-Name = Dire Hit 2
-NamePlural = Dire Hit 2s
+Name = X-Volltreffer 2
+NamePlural = X-Volltreffer 2
 Pocket = 7
 Price = 0
 BattleUse = OnBattler
 Flags = Fling_30
-Description = It sharply raises the critical-hit ratio. It wears off if the Pokémon is withdrawn.
+Description = Es erhöht die Volltrefferquote eines Pokémon um 2 Stufen, bis es ausgwechselt wird.
 #-------------------------------
 [DIREHIT3]
-Name = Dire Hit 3
-NamePlural = Dire Hit 3s
+Name = X-Volltreffer 3
+NamePlural = X-Volltreffer 3
 Pocket = 7
 Price = 0
 BattleUse = OnBattler
 Flags = Fling_30
-Description = It greatly raises the critical-hit ratio. It wears off if the Pokémon is withdrawn.
+Description = Es erhöht die Volltrefferquote eines Pokémon um 3 Stufen, bis es ausgwechselt wird.
 #-------------------------------
 [GUARDSPEC]
-Name = Guard Spec.
-NamePlural = Guard Specs.
+Name = Megablock
+NamePlural = Megablöcke
 Pocket = 7
 Price = 1500
 SellPrice = 375
 BattleUse = Direct
 Flags = Fling_30
-Description = An item that prevents stat reduction among the Trainer's party Pokémon for five turns after use.
+Description = Eine mögliche Statusveränderung der Pokémon im Team wird für fünf Runden verhindert.
 #-------------------------------
 [RESETURGE]
-Name = Reset Urge
-NamePlural = Reset Urges
+Name = Umkehrappell
+NamePlural = Umkehrappelle
 Pocket = 7
 Price = 0
 Flags = Fling_30
-Description = When used, it restores any stat changes of an ally Pokémon.
+Description = Hebt bei Gebrauch Statusveränderungen deines Mitstreiters auf.
 #-------------------------------
 [ABILITYURGE]
-Name = Ability Urge
-NamePlural = Ability Urges
+Name = Fähigkeiten-Appell
+NamePlural = Fähigkeiten-Appelle
 Pocket = 7
 Price = 0
 Flags = Fling_30
-Description = When used, it activates the Ability of an ally Pokémon.
+Description = Es aktiviert eine Fähigkeit des Teamkollegen, falls es eine Möglichkeit zum einsetzen gibt.
 #-------------------------------
 [ITEMURGE]
-Name = Item Urge
-NamePlural = Item Urges
+Name = Itemappell
+NamePlural = Itemappelle
 Pocket = 7
 Price = 0
 Flags = Fling_30
-Description = When used, it causes an ally Pokémon to use its held item.
+Description = Alle Items der Teamkollegen werden aktiviert, falls es eine Möglichkeit zum einsetzen gibt.
 #-------------------------------
 [ITEMDROP]
-Name = Item Drop
-NamePlural = Item Drops
+Name = Itemabwurf
+NamePlural = Itemabwürfe
 Pocket = 7
 Price = 0
 Flags = Fling_30
-Description = When used, it causes an ally Pokémon to drop a held item.
+Description = Nach dem Einsatz verlieren Teamkollegen ihre Items, falls es eine Möglichkeit zum verlieren gibt.
 #-------------------------------
 [BLUEFLUTE]
-Name = Blue Flute
-NamePlural = Blue Flutes
+Name = Blaue Flöte
+NamePlural = Blaue Flöten
 Pocket = 7
 Price = 20
 FieldUse = OnPokemon
 BattleUse = OnPokemon
 Flags = Fling_30
 Consumable = false
-Description = A blue flute made from blown glass. Its melody awakens a single Pokémon from sleep.
+Description = Die Blaue Flöte weckt schlafende Pokémon.
 #-------------------------------
 [YELLOWFLUTE]
-Name = Yellow Flute
-NamePlural = Yellow Flutes
+Name = Gelbe Flöte
+NamePlural = Gelbe Flöten
 Pocket = 7
 Price = 20
 BattleUse = OnBattler
 Flags = Fling_30
 Consumable = false
-Description = A yellow flute made from blown glass. Its melody snaps a single Pokémon out of confusion.
+Description = Die Gelbe Flöte heilt Pokémon von Verwirrung.
 #-------------------------------
 [REDFLUTE]
-Name = Red Flute
-NamePlural = Red Flutes
+Name = Rote Flöte
+NamePlural = Rote Flöten
 Pocket = 7
 Price = 20
 BattleUse = OnBattler
 Flags = Fling_30
 Consumable = false
-Description = A red flute made from blown glass. Its melody snaps a single Pokémon out of infatuation.
+Description = Die Rote Flöte heilt Pokémon von Anziehung.
 #-------------------------------
 [POKEDOLL]
-Name = Poké Doll
-NamePlural = Poké Dolls
+Name = Poképuppe
+NamePlural = Poképuppen
 Pocket = 7
 Price = 300
 SellPrice = 75
 BattleUse = Direct
 Flags = Fling_30
-Description = A doll that attracts Pokémon. Use it to flee from any battle with a wild Pokémon.
+Description = Ermöglicht die garantierte Flucht aus einem Kampf mit wilden Pokémon.
 #-------------------------------
 [FLUFFYTAIL]
-Name = Fluffy Tail
-NamePlural = Fluffy Tails
+Name = Eneco-Rute
+NamePlural = Eneco-Ruten
 Pocket = 7
 Price = 300
 SellPrice = 75
 BattleUse = Direct
 Flags = Fling_30
-Description = An item that attracts Pokémon. Use it to flee from any battle with a wild Pokémon.
+Description = Ermöglicht die garantierte Flucht aus einem Kampf mit wilden Pokémon.
 #-------------------------------
 [POKETOY]
-Name = Poké Toy
-NamePlural = Poké Toys
+Name = Pokéwedel
+NamePlural = Pokéwedel
 Pocket = 7
 Price = 300
 SellPrice = 75
 BattleUse = Direct
 Flags = Fling_30
-Description = An item that attracts Pokémon. Use it to flee from any battle with a wild Pokémon.
-#-------------------------------
-[BICYCLE]
-Name = Bicycle
-NamePlural = Bicycles
-Pocket = 8
-Price = 0
-FieldUse = Direct
-Flags = KeyItem
-Description = A folding Bicycle that enables much faster movement than the Running Shoes.
+Description = Ermöglicht die garantierte Flucht aus einem Kampf mit wilden Pokémon.
 #-------------------------------
 [OLDROD]
 Name = Angel
@@ -7637,85 +7617,42 @@ FieldUse = Direct
 Flags = KeyItem
 Description = Eine Angel für Meister-Angler, mit der man starke und seltene Pokémon angeln kann.
 #-------------------------------
-[ITEMFINDER]
-Name = Itemfinder
-NamePlural = Itemfinders
-Pocket = 8
-Price = 0
-FieldUse = Direct
-Flags = KeyItem
-Description = A device used for finding items. If there is a hidden item nearby when it is used, it emits a signal.
-#-------------------------------
-[DOWSINGMACHINE]
-Name = Dowsing Machine
-NamePlural = Dowsing Machines
-Pocket = 8
-Price = 0
-FieldUse = Direct
-Flags = KeyItem
-Description = It checks for unseen items in the area and makes noise and lights when it finds something.
-#-------------------------------
-[POKERADAR]
-Name = Poké Radar
-NamePlural = Poké Radars
-Pocket = 8
-Price = 0
-FieldUse = Direct
-Flags = KeyItem
-Description = A tool that can search out Pokémon that are hiding in grass. Its battery is recharged as you walk.
-#-------------------------------
 [TOWNMAP]
-Name = Town Map
-NamePlural = Town Maps
+Name = Karte
+NamePlural = Karten
 Pocket = 8
 Price = 0
 FieldUse = Direct
 Flags = KeyItem
-Description = A very convenient map that can be viewed anytime. It even shows your present location.
+Description = Eine sehr nützliche Karte von Chronoria, die dir deinen Standort anzeigt.
 #-------------------------------
 [ESCAPEROPE]
-Name = Escape Rope
-NamePlural = Escape Ropes
+Name = Fluchtseil
+NamePlural = Fluchtseile
 Pocket = 8
 Price = 0
 FieldUse = Direct
 Flags = KeyItem
-Description = A long, durable rope. Use it to escape instantly from a cave or a dungeon.
+Description = Dieses Item ermöglicht die Flucht aus einer Höhle und teleportiert den Spieler zum Eingang.
 #-------------------------------
 [COINCASE]
-Name = Coin Case
-NamePlural = Coin Cases
+Name = Münzkorb
+NamePlural = Münzkörbe
 Pocket = 8
 Price = 0
 FieldUse = Direct
 Flags = KeyItem
-Description = A case for holding coins obtained at the Game Corner. It holds up to 99,999 coins.
+Description = Der Münzkorb ermöglicht das Spielen in der Spielhalle und kann 99.999 Münzen aufbewahren.
 #-------------------------------
 [POKEFLUTE]
-Name = Poké Flute
-NamePlural = Poké Flutes
+Name = Pokéflöte
+NamePlural = Pokéflöten
 Pocket = 8
 Price = 0
 FieldUse = OnPokemon
 BattleUse = Direct
 Flags = KeyItem
-Description = A flute that is said to instantly awaken any Pokémon. It has a lovely tone.
-#-------------------------------
-[SOOTSACK]
-Name = Soot Sack
-NamePlural = Soot Sacks
-Pocket = 8
-Price = 0
-Flags = KeyItem
-Description = A sack used to gather and hold volcanic ash.
-#-------------------------------
-[SILPHSCOPE]
-Name = Silph Scope
-NamePlural = Silph Scopes
-Pocket = 8
-Price = 0
-Flags = KeyItem
-Description = A scope that makes unseeable Pokémon visible. It is made by Silph Co.
+Description = Eine seltsame Flöte, die schlafende Pokémon aufwecken kann.
 #-------------------------------
 [DEVONSCOPE]
 Name = Scouter
@@ -7731,31 +7668,15 @@ NamePlural = Squirt Bottles
 Pocket = 8
 Price = 0
 Flags = KeyItem
-Description = A watering can shaped like a Squirtle. It helps promote healthy growth of Berries planted in soft soil.
-#-------------------------------
-[SPRAYDUCK]
-Name = Sprayduck
-NamePlural = Sprayducks
-Pocket = 8
-Price = 0
-Flags = KeyItem
-Description = A watering can shaped like a Psyduck. It helps promote healthy growth of Berries planted in soft soil.
-#-------------------------------
-[WAILMERPAIL]
-Name = Wailmer Pail
-NamePlural = Wailmer Pails
-Pocket = 8
-Price = 0
-Flags = KeyItem
-Description = A nifty watering pail. Use it to promote strong growth in Berries planted in soft soil.
+Description = Eine Gießkanne,geformt wie ein Schiggy.
 #-------------------------------
 [SPRINKLOTAD]
-Name = Sprinklotad
-NamePlural = Sprinklotads
+Name = Loturzelkanne
+NamePlural = Loturzelkannen
 Pocket = 8
 Price = 0
 Flags = KeyItem
-Description = A watering can shaped like a Lotad. It helps promote the healthy growth of any Berries planted in soft soil.
+Description = Mit der Loturzelkanne ist es möglich Beerensträucher zu bewässern. 
 #-------------------------------
 [GRACIDEA]
 Name = Gracidea
@@ -7764,151 +7685,142 @@ Pocket = 8
 Price = 0
 FieldUse = OnPokemon
 Flags = KeyItem
-Description = A flower sometimes bundled in bouquets to convey gratitude on special occasions like birthdays.
+Description = Die Gracidea verwandelt Shaymin in seine Zenitform.
 #-------------------------------
 [REVEALGLASS]
-Name = Reveal Glass
-NamePlural = Reveal Glasses
+Name = Wahrspiegel
+NamePlural = Wahrspiegel
 Pocket = 8
 Price = 0
 FieldUse = OnPokemon
 Flags = KeyItem
-Description = A glass that reveals the truth. It is a mysterious glass that returns a Pokémon back to its original shape.
+Description = Ermöglicht Boreos, Voltolos, Demeteros und Cupidos den Wechsel zwischen Inkarnations- und Tiergeistform. 
 #-------------------------------
 [PRISONBOTTLE]
-Name = Prison Bottle
-NamePlural = Prison Bottles
+Name = Banngefäß
+NamePlural = Banngefäße
 Pocket = 8
 Price = 0
 FieldUse = OnPokemon
 Flags = KeyItem
-Description = A bottle believed to have been used to seal away the power of a certain Pokémon long, long ago.
-#-------------------------------
-[ROTOMCATALOG]
-Name = Rotom Catalog
-NamePlural = Rotom Catalogs
-Pocket = 8
-Price = 0
-FieldUse = OnPokemon
-Flags = KeyItem
-Description = A catalog of devices that Rotom like. Use the catalog to have Rotom hop in and out of the devices listed within.
+Description = Der Einsatz des Banngefäßes ermöglicht Hoopa einen Formenwechsel zur entfesselten Form.
 #-------------------------------
 [ZYGARDECUBE]
-Name = Zygarde Cube
-NamePlural = Zygarde Cubes
+Name = Zygarde-Würfel
+NamePlural = Zygarde-Würfel
 Pocket = 8
 Price = 0
 FieldUse = OnPokemon
 Flags = KeyItem
-Description = An item in which Zygarde Cores and Cells are gathered. You can also use it to change Zygarde's forms.
+Description = Im Zygarde-Würfel werden sämtliche gefundenen Kerne und Zellen von Zygarde gesammelt und es kann Zygardes Form ändern.
 #-------------------------------
 [DNASPLICERS]
-Name = DNA Splicers
-NamePlural = DNA Splicers
+Name = DNS-Keil
+NamePlural = DNS-Keile
 Pocket = 8
 Price = 0
 FieldUse = OnPokemon
 Flags = KeyItem
-Description = A splicer that fuses Kyurem and a certain Pokémon. They are said to have been one in the beginning.
+Description = Der DNS-Keil wird benötigt, um Kyurem mit Reshiram oder Zekrom zu fusionieren.
 #-------------------------------
 [DNASPLICERSUSED]
-Name = DNA Splicers
-NamePlural = DNA Splicers
+Name = DNS-Keil
+NamePlural = DNS-Keile
 Pocket = 8
 Price = 0
 FieldUse = OnPokemon
 Flags = KeyItem
-Description = A splicer that separates Kyurem and a certain Pokémon when they have been fused.
+Description = Der DNS-Keil wird benötigt, um Kyurem und Reshiram oder Zekrom wieder zu trennen.
 #-------------------------------
 [NSOLARIZER]
-Name = N-Solarizer
-NamePlural = N-Solarizers
+Name = Necrosol
+NamePlural = Necrosole
 Pocket = 8
 Price = 0
 FieldUse = OnPokemon
 Flags = KeyItem
-Description = A machine to fuse Necrozma, which needs light, and Solgaleo.
+Description = Das Necrosol wird dazu verwendet, um Necrozma mit Solgaleo zu fusionieren.
 #-------------------------------
 [NSOLARIZERUSED]
-Name = N-Solarizer
-NamePlural = N-Solarizers
+Name = Necrosol
+NamePlural = Necrosole
 Pocket = 8
 Price = 0
 FieldUse = OnPokemon
 Flags = KeyItem
-Description = A machine to separate Necrozma, which needed light, from Solgaleo.
+Description = Das Necrosol wird dazu verwendet, um Necrozma und Solgaleo wieder zu trennen.
 #-------------------------------
 [NLUNARIZER]
-Name = N-Lunarizer
-NamePlural = N-Lunarizers
+Name = Necrolun
+NamePlural = Necrolune
 Pocket = 8
 Price = 0
 FieldUse = OnPokemon
 Flags = KeyItem
-Description = A machine to fuse Necrozma, which needs light, and Lunala.
+Description = Das Necrolun wird benutzt, um Necrozma mit Lunala zu fusionieren.
 #-------------------------------
 [NLUNARIZERUSED]
-Name = N-Lunarizer
-NamePlural = N-Lunarizers
+Name = Necrolun
+NamePlural = Necrolune
 Pocket = 8
 Price = 0
 FieldUse = OnPokemon
 Flags = KeyItem
-Description = A machine to separate Necrozma, which needed light, from Lunala.
+Description = Das Necrolun wird benutzt, um Necrozma und Lunala wieder zu trennen.
 #-------------------------------
 [REINSOFUNITY]
-Name = Reins of Unity
-NamePlural = Reins of Unity
-PortionName = set of Reins of Unity
-PortionNamePlural = sets of Reins of Unity
+Name = Zügel des Bundes
+NamePlural = Zügel des Bundes
+PortionName = set Zügel des Bundes
+PortionNamePlural = sets Zügel des Bundes
 Pocket = 8
 Price = 0
 FieldUse = OnPokemon
 Flags = KeyItem
-Description = Reins that people presented to the king. They unite Calyrex with its beloved steed.
+Description = Es kann Coronospa mit Polaross oder Phantoross fusionieren.
 #-------------------------------
 [REINSOFUNITYUSED]
-Name = Reins of Unity
-NamePlural = Reins of Unity
-PortionName = set of Reins of Unity
-PortionNamePlural = sets of Reins of Unity
+Name = Zügel des Bundes
+NamePlural = Zügel des Bundes
+PortionName = set Zügel des Bundes
+PortionNamePlural = sets Zügel des Bundes
 Pocket = 8
 Price = 0
 FieldUse = OnPokemon
 Flags = KeyItem
-Description = Reins that people presented to the king. They separate Calyrex and its beloved steed.
+Description = Es kann Coronospa mit Polaross oder Phantoross defusionieren.
 #-------------------------------
 [OVALCHARM]
-Name = Oval Charm
-NamePlural = Oval Charms
+Name = Ovalpin
+NamePlural = Ovalpins
 Pocket = 8
 Price = 0
 Flags = KeyItem
-Description = An oval charm said to increase the chance of Eggs being found at the Day Care.
+Description = Er erhöht die Wahrscheinlichkeit, ein Ei in der Pension zu erhalten.
 #-------------------------------
 [SHINYCHARM]
-Name = Shiny Charm
-NamePlural = Shiny Charms
+Name = Schillerpin
+NamePlural = Schillerpins
 Pocket = 8
 Price = 0
 Flags = KeyItem
-Description = A shiny charm said to increase the chance of finding a Shiny Pokémon.
+Description = Erhöht die Wahrscheinlichkeit ein Shiny Pokémon zu finden.
 #-------------------------------
 [CATCHINGCHARM]
-Name = Catching Charm
-NamePlural = Catching Charms
+Name = Superfangpin
+NamePlural = Superfangpins
 Pocket = 8
 Price = 0
 Flags = KeyItem
-Description = A charm said to increase the chance of getting a critical catch. The charm doesn't shake much.
+Description = Mit dem Superfangpin erhöht sich die Wahrscheinlichkeit, einen Superfang zu erzielen.
 #-------------------------------
 [EXPCHARM]
-Name = Exp. Charm
-NamePlural = Exp. Charms
+Name = EP-Pin
+NamePlural = EP-Pins
 Pocket = 8
 Price = 0
 Flags = KeyItem
-Description = A charm that increases the Exp. Points that Pokémon can get. A machine-like object is inside it.
+Description = Der EP-Pin erhöht die erhaltene Erfahrung nach einem Pokémon-Kampf um 50 %.
 #-------------------------------
 [MEGARING]
 Name = Mega Armband
@@ -7916,7 +7828,7 @@ NamePlural = Mega Armbänder
 Pocket = 8
 Price = 0
 Flags = KeyItem,MegaRing
-Description = This ring contains an untold power that somehow enables Pokémon carrying Mega Stones to Mega Evolve.
+Description = Ein Armband, welches deinen Pokémon im Kampf die Mega-Entwicklung ermöglicht.
 #-------------------------------
 [POKEMONBOXLINK]
 Name = Pokémon Box Link
@@ -7924,23 +7836,7 @@ NamePlural = Pokémon Box Links
 Pocket = 8
 Price = 0
 Flags = KeyItem
-Description = A device that allows you to access the Pokémon storage system. There are some places where it won't work.
-#-------------------------------
-[AURORATICKET]
-Name = Aurora Ticket
-NamePlural = Aurora Tickets
-Pocket = 8
-Price = 0
-Flags = KeyItem
-Description = A ticket required to board the ship to Doxy Island. It glows beautifully.
-#-------------------------------
-[OLDSEAMAP]
-Name = Old Sea Map
-NamePlural = Old Sea Maps
-Pocket = 8
-Price = 0
-Flags = KeyItem
-Description = A faded sea chart that shows the way to a certain island.
+Description = Dieses Gerät ermöglicht dir (fast) überall die Nutzung der Pokémon-Box.
 #===============================================================================
 #   HM ITEMS // Example Items
 #===============================================================================
@@ -7979,7 +7875,7 @@ Pocket = 8
 Price = 0
 FieldUse = Direct
 Flags = KeyItem
-Description = Damit können Felsen verrückt werden.
+Description = Damit können große Felsen verschoben werden.
 #-------------------------------------------------------------------------------
 [SURFITEM]
 Name = Tohaido-Mobil
@@ -7997,7 +7893,7 @@ Pocket = 8
 Price = 0
 FieldUse = Direct
 Flags = KeyItem
-Description = A flying cloud that can only be ridden by those with a pure heart.
+Description = Ein Modul, mit dem du bereits besuchte Orte anfliegen kannst.
 #-------------------------------------------------------------------------------
 [HEADBUTTITEM]
 Name = Premium-Futter
@@ -8017,15 +7913,6 @@ FieldUse = Direct
 Flags = KeyItem
 Description = Erhellt dunkle Gebiete.
 #-------------------------------------------------------------------------------
-[DIGITEM]
-Name = Used Shovel
-NamePlural = Used Shovels
-Pocket = 8
-Price = 0
-FieldUse = Direct
-Flags = KeyItem
-Description = It is a Shovel, it can dig holes. Used to belong to a great knight.
-#-------------------------------------------------------------------------------
 [DIVEITEM]
 Name = Tohaido-Tauchmodul
 NamePlural = Tohaido-Tauchmodule
@@ -8033,16 +7920,7 @@ Pocket = 8
 Price = 0
 FieldUse = Direct
 Flags = KeyItem
-Description = Erlaubt es dir unter Wasser zu atmen.
-#-------------------------------------------------------------------------------
-[SWEETSCENTITEM]
-Name = Essence Mixture
-NamePlural = Essence Mixture
-Pocket = 8
-Price = 0
-FieldUse = Direct
-Flags = KeyItem
-Description = It allows you spread a sweet essence around you.
+Description = Erlaubt es dir unter Wasser zu tauchen.
 #-------------------------------------------------------------------------------
 [TELEPORTITEM]
 Name = Disc der Rückkehr
@@ -8087,7 +7965,7 @@ Pocket = 8
 Price = 0
 FieldUse = Direct
 Flags = KeyItem
-Description = Wahrheit.
+Description = Ein Zeitenscanner, der verborgene Wege enthüllen kann.
 #-------------------------------------------------------------------------------
 [ICEBARRIEREITEM]
 Name = Eispickel
@@ -8098,40 +7976,13 @@ FieldUse = Direct
 Flags = KeyItem
 Description = Damit zerberchen gefrorene Felsen mit Leichtigkeit.
 #-------------------------------------------------------------------------------
-[DEFOGITEM]
-Name = Magic Fan
-NamePlural = Magic Fans
-Pocket = 8
-Price = 0
-FieldUse = Direct
-Flags = KeyItem
-Description = A magic fan that can push fog away..
-#-------------------------------------------------------------------------------
-[WEATHERGADGETITEM]
-Name = Weather Gadget
-NamePlural = Weather Gadgets
-Pocket = 8
-Price = 0
-FieldUse = Direct
-Flags = KeyItem
-Description = Please put some other info here.
-#-------------------------------------------------------------------------------
-[CAMOUFLAGEITEM]
-Name = Cloak of Kecleon
-NamePlural = Cloaks of Kecleon
-Pocket = 8
-Price = 0
-FieldUse = Direct
-Flags = KeyItem
-Description = A wizard used to own this.
-#-------------------------------------------------------------------------------
 [EXPLORERKIT]
 Name = Erkundungs-Set
 NamePlural = Erkundungs-Sets
 Pocket = 8
 Price = 0
 Flags = KeyItem
-Description = A wizard used to own this.
+Description = Das volle Repertoire, um brüchige Felswände aufzuschlagen.
 #-------------------------------------------------------------------------------
 [ENKELGESCHENK]
 Name = Geschenk für Enkel
@@ -8140,70 +7991,6 @@ Pocket = 8
 Price = 0
 Flags = KeyItem
 Description = Ein Geschenk einer Oma an ihr Enkelkind, welches in Lunafeld wohnt.
-#-------------------------------------------------------------------------------
-[KAEFERSAMMLERITEM]
-Name = Käfersammler-Abzeichen
-NamePlural = Käfersammler-Abzeichen
-Pocket = 8
-Price = 0
-Flags = KeyItem
-Description = Eine einzigartige Belohnung.
-#-------------------------------------------------------------------------------
-[PROFIKAEFERSAMMLERITEM]
-Name = Profi-Käfersammler-Abzeichen
-NamePlural = Profi-Käfersammler-Abzeichen
-Pocket = 8
-Price = 0
-Flags = KeyItem
-Description = Eine einzigartige Belohnung.
-#-------------------------------------------------------------------------------
-[MEISTERKAEFERSAMMLERITEM]
-Name = Meister-Käfersammler-Abzeichen
-NamePlural = Meister-Käfersammler-Abzeichen
-Pocket = 8
-Price = 0
-Flags = KeyItem
-Description = Eine einzigartige Belohnung.
-#-------------------------------------------------------------------------------
-[ANGLERITEM]
-Name = Angler-Abzeichen
-NamePlural = Angler-Abzeichen
-Pocket = 8
-Price = 0
-Flags = KeyItem
-Description = Eine einzigartige Belohnung.
-#-------------------------------------------------------------------------------
-[PROFIANGLERITEM]
-Name = Profi-Angler-Abzeichen
-NamePlural = Profi-Angler-Abzeichen
-Pocket = 8
-Price = 0
-Flags = KeyItem
-Description = Eine einzigartige Belohnung.
-#-------------------------------------------------------------------------------
-[MEISTERANGLERITEM]
-Name = Meister-Angler-Abzeichen
-NamePlural = Meister-Angler-Abzeichen
-Pocket = 8
-Price = 0
-Flags = KeyItem
-Description = Eine einzigartige Belohnung.
-#-------------------------------------------------------------------------------
-[DRACHENFLUESTERERITEM]
-Name = Drachenflüsterer-Abzeichen
-NamePlural = Drachenflüsterer-Abzeichen
-Pocket = 8
-Price = 0
-Flags = KeyItem
-Description = Eine einzigartige Belohnung.
-#-------------------------------------------------------------------------------
-[GEISTERJAEGERITEM]
-Name = Geisterjäger-Abzeichen
-NamePlural = Geisterjäger-Abzeichen
-Pocket = 8
-Price = 0
-Flags = KeyItem
-Description = Eine einzigartige Belohnung.
 #-------------------------------
 [GARDEVOIRITE2]
 Name = Guardevoirit2
