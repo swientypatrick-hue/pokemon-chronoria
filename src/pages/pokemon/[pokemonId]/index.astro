@@ -52,12 +52,12 @@ const locationsByPlace = Object.groupBy
   </div>
 
   <h2>Basiswerte</h2>
-  <StatBar label="KP" value={p.baseStats.hp} />
+  <StatBar label="LP" value={p.baseStats.hp} />
   <StatBar label="Angriff" value={p.baseStats.attack} />
   <StatBar label="Verteidigung" value={p.baseStats.defense} />
-  <StatBar label="Init." value={p.baseStats.speed} />
   <StatBar label="Sp. Angriff" value={p.baseStats.spAtk} />
   <StatBar label="Sp. Vert." value={p.baseStats.spDef} />
+  <StatBar label="Init." value={p.baseStats.speed} />
   <div class="stat-row">
     <span class="stat-label">Gesamt</span>
     <span></span>
@@ -75,7 +75,7 @@ const locationsByPlace = Object.groupBy
     <tr><th>Gewicht</th><td>{p.weight} kg</td></tr>
     <tr><th>Fangrate</th><td>{p.catchRate}</td></tr>
     <tr><th>Ei-Gruppen</th><td>{p.eggGroups.map(eggGroupLabel).join(", ") || "–"}</td></tr>
-    <tr><th>Schlupfschritte</th><td>{p.hatchSteps}</td></tr>
+    <tr><th>Schlüpfschritte</th><td>{p.hatchSteps}</td></tr>
     {p.raidRanks.length > 0 && (
       <tr><th>Raid-Rang</th><td>{Math.min(...p.raidRanks)}{p.raidRanks.length > 1 ? `–${Math.max(...p.raidRanks)}` : ""} ⭐</td></tr>
     )}
@@ -108,13 +108,13 @@ const locationsByPlace = Object.groupBy
     <>
       <h2>Formen</h2>
       <table>
-        <tr><th></th><th>Form</th><th>Typ(en)</th><th>KP/Ang/Vert/Init/SpA/SpV</th></tr>
+        <tr><th></th><th>Form</th><th>Typ(en)</th><th>LP/Ang/Vert/SpA/SpV/Init</th></tr>
         {p.forms.map((f: any) => (
           <tr>
             <td><a href={href(`/pokemon/${slugify(p.id)}/${f.formNumber}/`)}>{f.sprite && <img class="form-sprite" src={href(`/sprites/${f.sprite}`)} alt="" width="40" height="40" />}</a></td>
             <td><a href={href(`/pokemon/${slugify(p.id)}/${f.formNumber}/`)}>{f.formName?.text || `Form ${f.formNumber}`}</a></td>
             <td><div class="pill-list">{f.types.map((t: string) => <TypeBadge type={t} />)}</div></td>
-            <td>{f.baseStats.hp}/{f.baseStats.attack}/{f.baseStats.defense}/{f.baseStats.speed}/{f.baseStats.spAtk}/{f.baseStats.spDef}</td>
+            <td>{f.baseStats.hp}/{f.baseStats.attack}/{f.baseStats.defense}/{f.baseStats.spAtk}/{f.baseStats.spDef}/{f.baseStats.speed}</td>
           </tr>
         ))}
       </table>
@@ -124,13 +124,20 @@ const locationsByPlace = Object.groupBy
   <h2>Attacken (durch Levelaufstieg)</h2>
   {sortedLevelMoves.length > 0 ? (
     <table>
-      <tr><th>Level</th><th>Attacke</th></tr>
-      {sortedLevelMoves.map((lm: any) => (
-        <tr>
-          <td>{lm.level === 0 ? "bei Entwicklung" : lm.level}</td>
-          <td><a href={href(`/attacken/${slugify(lm.move)}/`)}>{moveName(lm.move)}</a></td>
-        </tr>
-      ))}
+      <tr><th>Level</th><th>Attacke</th><th>Typ</th><th>AP</th><th>Stärke</th><th>Genauigkeit</th></tr>
+      {sortedLevelMoves.map((lm: any) => {
+        const mv = moveById.get(lm.move);
+        return (
+          <tr>
+            <td>{lm.level === 0 ? "bei Entwicklung" : lm.level}</td>
+            <td><a href={href(`/attacken/${slugify(lm.move)}/`)}>{moveName(lm.move)}</a></td>
+            <td>{mv && <TypeBadge type={mv.type} />}</td>
+            <td>{mv?.totalPP ?? "–"}</td>
+            <td>{mv?.power ?? "–"}</td>
+            <td>{mv?.accuracy ?? "–"}</td>
+          </tr>
+        );
+      })}
     </table>
   ) : <p class="section-empty">Keine Level-Attacken bekannt.</p>}
 
