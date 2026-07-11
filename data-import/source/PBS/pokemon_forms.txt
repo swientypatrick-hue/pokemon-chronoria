@@ -1299,7 +1299,7 @@ Pokedex = Es heißt dieses Onix sei gegen Wasser immun.
 
 Generation = 1
 
-Evolutions = STEELIX,Item,METALCOAT
+Evolutions = STEELIX,Item,ICESTONE
 
 SpeciesSOS = GEODUDE,ONIX
 
