@@ -48,6 +48,9 @@ function pokemonFormLink(speciesId: string, formNumber: number) {
 
 const evolvesFromLink = p.evolvesFrom ? pokemonFormLink(p.evolvesFrom, f.formNumber) : null;
 const unmegaLink = f.megaStone ? pokemonFormLink(p.id, f.unmegaForm) : null;
+/** Forms of this same species that Mega Evolve FROM this form (UnmegaForm points back at it) -
+ *  the reverse of unmegaLink above, shown as a forward "can Mega Evolve into" relationship. */
+const megaFormsFromHere = p.forms.filter((mf: any) => mf.megaStone && mf.unmegaForm === f.formNumber);
 
 const formLabel = f.formName?.text || `Form ${f.formNumber}`;
 const sortedLevelMoves = [...f.levelMoves].sort((a: any, b: any) => a.level - b.level);
@@ -76,14 +79,8 @@ const locationsByPlace = Object.groupBy
     {f.types.map((t: string) => <TypeBadge type={t} />)}
   </div>
   <p class="meta-note">
-    {unmegaLink ? (
-      <>Dies ist die Mega-Form von <a href={unmegaLink.url}>{unmegaLink.label}</a>.</>
-    ) : (
-      <>
-        Diese Form von <a href={href(`/pokemon/${slugify(p.id)}/`)}>{p.name}</a> ändert Typ(en), Basiswerte,
-        Fähigkeiten und Attacken - Pokédex-Eintrag siehe Basisform.
-      </>
-    )}
+    Diese Form von <a href={href(`/pokemon/${slugify(p.id)}/`)}>{p.name}</a> ändert Typ(en), Basiswerte,
+    Fähigkeiten und Attacken - Pokédex-Eintrag siehe Basisform.
   </p>
 
   <h2>Basiswerte</h2>
@@ -106,10 +103,12 @@ const locationsByPlace = Object.groupBy
   </div>
 
   <h2>Entwicklung</h2>
-  {evolvesFromLink && (
-    <p>Entwickelt sich aus <a href={evolvesFromLink.url}>{evolvesFromLink.label}</a>.</p>
+  {unmegaLink ? (
+    <p>Dies ist die Mega-Form von <a href={unmegaLink.url}>{unmegaLink.label}</a>.</p>
+  ) : (
+    evolvesFromLink && <p>Entwickelt sich aus <a href={evolvesFromLink.url}>{evolvesFromLink.label}</a>.</p>
   )}
-  {f.evolutions.length > 0 ? (
+  {f.evolutions.length > 0 && (
     <ul>
       {f.evolutions.map((evo: any) => {
         const target = pokemonFormLink(evo.target, f.formNumber);
@@ -121,8 +120,19 @@ const locationsByPlace = Object.groupBy
         );
       })}
     </ul>
-  ) : (
-    !p.evolvesFrom && <p class="section-empty">Entwickelt sich nicht weiter.</p>
+  )}
+  {megaFormsFromHere.length > 0 && (
+    <ul>
+      {megaFormsFromHere.map((mf: any) => (
+        <li>
+          Kann mega-entwickeln zu{" "}
+          <a href={href(`/pokemon/${slugify(p.id)}/${mf.formNumber}/`)}>{mf.formName?.text || `Form ${mf.formNumber}`}</a>
+        </li>
+      ))}
+    </ul>
+  )}
+  {f.evolutions.length === 0 && megaFormsFromHere.length === 0 && !evolvesFromLink && !unmegaLink && (
+    <p class="section-empty">Entwickelt sich nicht weiter.</p>
   )}
 
   <h2>Attacken (durch Levelaufstieg)</h2>

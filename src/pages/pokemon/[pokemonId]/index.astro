@@ -32,6 +32,8 @@ function itemName(id: string) {
   return itemById.get(id)?.name;
 }
 
+const megaFormsFromHere = p.forms.filter((mf: any) => mf.megaStone && mf.unmegaForm === 0);
+
 const sortedLevelMoves = [...p.levelMoves].sort((a, b) => a.level - b.level);
 const sortedTutorMoves = [...p.tutorMoves].sort((a, b) => moveName(a).localeCompare(moveName(b), "de"));
 const sortedEggMoves = [...p.eggMoves].sort((a, b) => moveName(a).localeCompare(moveName(b), "de"));
@@ -94,7 +96,7 @@ const locationsByPlace = Object.groupBy
   {p.evolvesFrom && (
     <p>Entwickelt sich aus <a href={href(`/pokemon/${slugify(p.evolvesFrom)}/`)}>{speciesName(p.evolvesFrom)}</a>.</p>
   )}
-  {p.evolutions.length > 0 ? (
+  {p.evolutions.length > 0 && (
     <ul>
       {p.evolutions.map((evo: any) => (
         <li>
@@ -103,8 +105,19 @@ const locationsByPlace = Object.groupBy
         </li>
       ))}
     </ul>
-  ) : (
-    !p.evolvesFrom && <p class="section-empty">Entwickelt sich nicht weiter.</p>
+  )}
+  {megaFormsFromHere.length > 0 && (
+    <ul>
+      {megaFormsFromHere.map((mf: any) => (
+        <li>
+          Kann mega-entwickeln zu{" "}
+          <a href={href(`/pokemon/${slugify(p.id)}/${mf.formNumber}/`)}>{mf.formName?.text || `Form ${mf.formNumber}`}</a>
+        </li>
+      ))}
+    </ul>
+  )}
+  {p.evolutions.length === 0 && megaFormsFromHere.length === 0 && !p.evolvesFrom && (
+    <p class="section-empty">Entwickelt sich nicht weiter.</p>
   )}
 
   {p.forms.length > 0 && (
