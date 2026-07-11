@@ -1,10 +1,13 @@
 ---
 import Layout from "../layouts/Layout.astro";
-import { meta } from "../lib/data";
+import { meta, pokemon } from "../lib/data";
 import { href } from "../lib/url";
+
+const formsCount = pokemon.reduce((sum, p) => sum + p.forms.length, 0);
 
 const categories = [
   { href: href("/pokemon/"), label: "Pokémon", count: meta.counts.pokemon },
+  { href: href("/formen/"), label: "Formen", count: formsCount },
   { href: href("/attacken/"), label: "Attacken", count: meta.counts.moves },
   { href: href("/faehigkeiten/"), label: "Fähigkeiten", count: meta.counts.abilities },
   { href: href("/items/"), label: "Items", count: meta.counts.items },
