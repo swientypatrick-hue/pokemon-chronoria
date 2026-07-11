@@ -473,7 +473,7 @@ Pokedex = This Pokémon uses its hard tail to make its nest by boring holes into
 Generation = 9
 #-------------------------------
 [DUDUNSPARCE,4]
-FormName = Hoch-Form
+FormName = Mega Dummimisel
 MegaStone = DUDUNSPARCEDITEB
 UnmegaForm = 2
 Types = FAIRY,DRAGON
@@ -486,7 +486,7 @@ Pokedex = The overwhelming power that fills its entire body causes it to turn bl
 Generation = 6
 #-------------------------------
 [DUDUNSPARCE,5]
-FormName = Tief-Form
+FormName = Mega Dummimisel
 MegaStone = DUDUNSPARCEDITEA
 UnmegaForm = 3
 Types = DARK,DRAGON
@@ -528,7 +528,7 @@ Color = Blue
 Pokedex = Blue-feathered Squawkabilly view their green- feathered counterparts as rivals, since the latter make up the largest, most powerful groups.
 #-------------------------------
 [SQUAWKABILLY,2]
-FormName = Geldgefiedert
+FormName = Gelbgefiedert
 HiddenAbilities = SHEERFORCE
 Color = Yellow
 Pokedex = The yellow Squawkabilly are especially fierce. They've even been known to drive other bird Pokémon out of town.
@@ -608,31 +608,6 @@ FormName = Fundamentmaske
 PokedexForm = 3
 Types = GRASS,ROCK
 Abilities = STURDY
-Color = Gray
-Flags = Legendary,TeraType_ROCK
-#-------------------------------
-[OGERPON,8]
-FormName = Terastal Teal Mask
-Abilities = EMBODYASPECT
-#-------------------------------
-[OGERPON,9]
-FormName = Terastal Wellspring Mask
-Types = GRASS,WATER
-Abilities = EMBODYASPECT_1
-Color = Blue
-Flags = Legendary,TeraType_WATER
-#-------------------------------
-[OGERPON,10]
-FormName = Terastal Hearthflame Mask
-Types = GRASS,FIRE
-Abilities = EMBODYASPECT_2
-Color = Red
-Flags = Legendary,TeraType_FIRE
-#-------------------------------
-[OGERPON,11]
-FormName = Terastal Cornerstone Mask
-Types = GRASS,ROCK
-Abilities = EMBODYASPECT_3
 Color = Gray
 Flags = Legendary,TeraType_ROCK
 #-------------------------------
