@@ -7984,6 +7984,22 @@ Price = 0
 Flags = KeyItem
 Description = Das volle Repertoire, um brüchige Felswände aufzuschlagen.
 #-------------------------------------------------------------------------------
+[KAEFERSAMMLERITEM]
+Name = Käfersammleritem
+NamePlural = Erkundungs-Sets
+Pocket = 8
+Price = 0
+Flags = KeyItem
+Description = Das volle Repertoire, um brüchige Felswände aufzuschlagen.
+#-------------------------------------------------------------------------------
+[PROFIANGLERITEM]
+Name = Käfersammleritem
+NamePlural = Erkundungs-Sets
+Pocket = 8
+Price = 0
+Flags = KeyItem
+Description = Das volle Repertoire, um brüchige Felswände aufzuschlagen.
+#-------------------------------------------------------------------------------
 [ENKELGESCHENK]
 Name = Geschenk für Enkel
 NamePlural = Geschenke für Enkel
