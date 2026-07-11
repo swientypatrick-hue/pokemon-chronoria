@@ -2,9 +2,11 @@
 import Layout from "../../../layouts/Layout.astro";
 import TypeBadge from "../../../components/TypeBadge.astro";
 import StatBar from "../../../components/StatBar.astro";
+import EnBadge from "../../../components/EnBadge.astro";
 import { pokemon, pokemonById, moveById, abilityById, itemById, slugify, pokemonDexNumber } from "../../../lib/data";
 import { encounterMethodLabel } from "../../../lib/encounterMethods";
 import { formatEvolutionCondition } from "../../../lib/evolutionMethods";
+import { eggGroupLabel } from "../../../lib/eggGroups";
 import { href } from "../../../lib/url";
 
 export function getStaticPaths() {
@@ -78,10 +80,6 @@ const locationsByPlace = Object.groupBy
   <div class="pill-list">
     {f.types.map((t: string) => <TypeBadge type={t} />)}
   </div>
-  <p class="meta-note">
-    Diese Form von <a href={href(`/pokemon/${slugify(p.id)}/`)}>{p.name}</a> ändert Typ(en), Basiswerte,
-    Fähigkeiten und Attacken - Pokédex-Eintrag siehe Basisform.
-  </p>
 
   <h2>Basiswerte</h2>
   <StatBar label="LP" value={f.baseStats.hp} />
@@ -95,6 +93,22 @@ const locationsByPlace = Object.groupBy
     <span></span>
     <span class="stat-value">{statTotal}</span>
   </div>
+
+  <h2>Pokédex</h2>
+  <p>
+    {f.pokedex.text || "–"}
+    {f.pokedex.fallback && f.pokedex.text && <EnBadge />}
+  </p>
+  <table>
+    <tr><th>Größe</th><td>{f.height} m</td></tr>
+    <tr><th>Gewicht</th><td>{f.weight} kg</td></tr>
+    <tr><th>Fangrate</th><td>{f.catchRate}</td></tr>
+    <tr><th>Ei-Gruppen</th><td>{f.eggGroups.map(eggGroupLabel).join(", ") || "–"}</td></tr>
+    <tr><th>Schlüpfschritte</th><td>{f.hatchSteps}</td></tr>
+    {f.raidRanks.length > 0 && (
+      <tr><th>Raid-Rang</th><td>{Math.min(...f.raidRanks)}{f.raidRanks.length > 1 ? `–${Math.max(...f.raidRanks)}` : ""} ⭐</td></tr>
+    )}
+  </table>
 
   <h2>Fähigkeiten</h2>
   <div class="pill-list">

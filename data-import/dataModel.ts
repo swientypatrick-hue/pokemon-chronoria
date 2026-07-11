@@ -32,6 +32,13 @@ export interface PokemonForm {
   tutorMoves: string[];
   eggMoves: string[];
   evolutions: Evolution[];
+  pokedex: TranslatedText;
+  height: number;
+  weight: number;
+  eggGroups: string[];
+  hatchSteps: number;
+  catchRate: number;
+  raidRanks: number[];
   /** PBS item id of the Mega Stone that triggers this form, or null if it's not a Mega Evolution */
   megaStone: string | null;
   /** form number this Mega Evolution reverts to after battle (0 = base species). Only meaningful when megaStone is set. */
