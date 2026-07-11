@@ -20,6 +20,8 @@ export const meta = metaData as {
 };
 
 export const pokemonById = new Map(pokemon.map((p) => [p.id, p]));
+/** Pokédex number = position in the source PBS files, the same order the game itself uses. */
+export const pokemonDexNumber = new Map(pokemon.map((p, i) => [p.id, i + 1]));
 export const moveById = new Map(moves.map((m) => [m.id, m]));
 export const abilityById = new Map(abilities.map((a) => [a.id, a]));
 export const itemById = new Map(items.map((i) => [i.id, i]));

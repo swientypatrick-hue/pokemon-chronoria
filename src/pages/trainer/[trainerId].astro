@@ -42,7 +42,22 @@ function resolveAbility(species: string, abilityIndex: number | null): { id: str
           </div>
           {tp.shiny && <span class="meta-note">✨ Schillernd</span>}
           {tp.shadow && <span class="meta-note">🌑 Shadow-Pokémon</span>}
-          {ability && <div class="meta-note">Fähigkeit: <a href={href(`/faehigkeiten/${slugify(ability.id)}/`)}>{ability.name}</a></div>}
+          {species && species.abilities.length > 0 && (
+            <div class="meta-note">
+              Mögliche Fähigkeiten:{" "}
+              {species.abilities.map((a: string, i: number) => (
+                <>
+                  {i > 0 && ", "}
+                  <a href={href(`/faehigkeiten/${slugify(a)}/`)}>
+                    {ability?.id === a ? <strong>{abilityById.get(a)?.name ?? a}</strong> : abilityById.get(a)?.name ?? a}
+                  </a>
+                </>
+              ))}
+            </div>
+          )}
+          {ability && species?.hiddenAbilities.includes(ability.id) && (
+            <div class="meta-note">Fähigkeit (versteckt): <a href={href(`/faehigkeiten/${slugify(ability.id)}/`)}>{ability.name}</a></div>
+          )}
           {itemName && <div class="meta-note">Item: <a href={href(`/items/${slugify(tp.item!)}/`)}>{itemName}</a></div>}
           {tp.gender && <div class="meta-note">Geschlecht: {tp.gender === "male" ? "männlich" : "weiblich"}</div>}
           {tp.moves.length > 0 && (

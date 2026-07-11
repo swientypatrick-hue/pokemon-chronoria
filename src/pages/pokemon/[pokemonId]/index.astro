@@ -3,7 +3,7 @@ import Layout from "../../../layouts/Layout.astro";
 import TypeBadge from "../../../components/TypeBadge.astro";
 import StatBar from "../../../components/StatBar.astro";
 import EnBadge from "../../../components/EnBadge.astro";
-import { pokemon, pokemonById, moveById, abilityById, itemById, slugify } from "../../../lib/data";
+import { pokemon, pokemonById, moveById, abilityById, itemById, slugify, pokemonDexNumber } from "../../../lib/data";
 import { formatEvolutionCondition } from "../../../lib/evolutionMethods";
 import { encounterMethodLabel } from "../../../lib/encounterMethods";
 import { eggGroupLabel } from "../../../lib/eggGroups";
@@ -45,7 +45,7 @@ const locationsByPlace = Object.groupBy
 
 <Layout title={p.name}>
   <p class="meta-note"><a href={href("/pokemon/")}>← Alle Pokémon</a></p>
-  <h1>{p.name}</h1>
+  <h1><span class="dex-number">#{String(pokemonDexNumber.get(p.id)).padStart(3, "0")}</span> {p.name}</h1>
   {p.sprite && (
     <div class="species-sprite-frame">
       <img class="species-sprite" src={href(`/sprites/${p.sprite}`)} alt={p.name} width="288" height="288" />

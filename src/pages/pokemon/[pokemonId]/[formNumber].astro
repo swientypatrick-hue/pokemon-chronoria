@@ -2,7 +2,7 @@
 import Layout from "../../../layouts/Layout.astro";
 import TypeBadge from "../../../components/TypeBadge.astro";
 import StatBar from "../../../components/StatBar.astro";
-import { pokemon, pokemonById, moveById, abilityById, itemById, slugify } from "../../../lib/data";
+import { pokemon, pokemonById, moveById, abilityById, itemById, slugify, pokemonDexNumber } from "../../../lib/data";
 import { encounterMethodLabel } from "../../../lib/encounterMethods";
 import { formatEvolutionCondition } from "../../../lib/evolutionMethods";
 import { href } from "../../../lib/url";
@@ -30,6 +30,19 @@ function speciesName(id: string) {
 function itemName(id: string) {
   return itemById.get(id)?.name;
 }
+/** If the evolution target has a form with the same form number, this form line evolves into
+ *  that specific form (e.g. Onix "Kristall" form 1 -> Steelix "Kristall" form 1) rather than
+ *  the target's base form. */
+function evoTarget(targetId: string, formNumber: number) {
+  const targetForm = pokemonById.get(targetId)?.forms.find((tf: any) => tf.formNumber === formNumber);
+  if (targetForm) {
+    return {
+      url: href(`/pokemon/${slugify(targetId)}/${formNumber}/`),
+      label: `${speciesName(targetId)} (${targetForm.formName?.text || `Form ${formNumber}`})`,
+    };
+  }
+  return { url: href(`/pokemon/${slugify(targetId)}/`), label: speciesName(targetId) };
+}
 
 const formLabel = f.formName?.text || `Form ${f.formNumber}`;
 const sortedLevelMoves = [...f.levelMoves].sort((a: any, b: any) => a.level - b.level);
@@ -48,7 +61,7 @@ const locationsByPlace = Object.groupBy
 
 <Layout title={`${p.name} (${formLabel})`}>
   <p class="meta-note"><a href={href(`/pokemon/${slugify(p.id)}/`)}>← {p.name}</a></p>
-  <h1>{p.name} <span class="meta-note">— {formLabel}</span></h1>
+  <h1><span class="dex-number">#{String(pokemonDexNumber.get(p.id)).padStart(3, "0")}</span> {p.name} <span class="meta-note">— {formLabel}</span></h1>
   {f.sprite && (
     <div class="species-sprite-frame">
       <img class="species-sprite" src={href(`/sprites/${f.sprite}`)} alt={`${p.name} (${formLabel})`} width="288" height="288" />
@@ -87,12 +100,15 @@ const locationsByPlace = Object.groupBy
   )}
   {f.evolutions.length > 0 ? (
     <ul>
-      {f.evolutions.map((evo: any) => (
-        <li>
-          <a href={href(`/pokemon/${slugify(evo.target)}/`)}>{speciesName(evo.target)}</a>
-          {" — "}{formatEvolutionCondition(evo.method, evo.param, itemName)}
-        </li>
-      ))}
+      {f.evolutions.map((evo: any) => {
+        const target = evoTarget(evo.target, f.formNumber);
+        return (
+          <li>
+            <a href={target.url}>{target.label}</a>
+            {" — "}{formatEvolutionCondition(evo.method, evo.param, itemName)}
+          </li>
+        );
+      })}
     </ul>
   ) : (
     !p.evolvesFrom && <p class="section-empty">Entwickelt sich nicht weiter.</p>

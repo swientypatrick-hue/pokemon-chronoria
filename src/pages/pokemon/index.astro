@@ -1,7 +1,7 @@
 ---
 import Layout from "../../layouts/Layout.astro";
 import TypeBadge from "../../components/TypeBadge.astro";
-import { pokemon, types } from "../../lib/data";
+import { pokemon, types, pokemonDexNumber } from "../../lib/data";
 import { slugify } from "../../lib/data";
 import { href } from "../../lib/url";
 import { typeColor } from "../../lib/typeColors";
@@ -37,6 +37,7 @@ import { typeColor } from "../../lib/typeColors";
         style={`--card-glow:${typeColor(p.types[0])}66`}
       >
         {p.sprite && <img class="card-sprite" src={href(`/sprites/${p.sprite}`)} alt="" loading="lazy" width="64" height="64" />}
+        <div class="card-id">#{String(pokemonDexNumber.get(p.id)).padStart(3, "0")}</div>
         <div class="card-name">{p.name}</div>
         <div class="pill-list" style="margin-top:0.35rem">
           {p.types.map((t) => <TypeBadge type={t} />)}
