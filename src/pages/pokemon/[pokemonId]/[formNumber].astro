@@ -70,15 +70,17 @@ const locationsByPlace = Object.groupBy
 ---
 
 <Layout title={`${p.name} (${formLabel})`}>
-  <p class="meta-note"><a href={href(`/pokemon/${slugify(p.id)}/`)}>← {p.name}</a></p>
-  <h1><span class="dex-number">#{String(pokemonDexNumber.get(p.id)).padStart(3, "0")}</span> {p.name} <span class="meta-note">— {formLabel}</span></h1>
-  {f.sprite && (
-    <div class="species-sprite-frame">
-      <img class="species-sprite" src={href(`/sprites/${f.sprite}`)} alt={`${p.name} (${formLabel})`} width="288" height="288" />
+  <div class="detail-hero">
+    <p class="meta-note"><a href={href(`/pokemon/${slugify(p.id)}/`)}>← {p.name}</a></p>
+    <h1><span class="dex-number">#{String(pokemonDexNumber.get(p.id)).padStart(3, "0")}</span> {p.name} <span class="meta-note">— {formLabel}</span></h1>
+    {f.sprite && (
+      <div class="species-sprite-frame">
+        <img class="species-sprite" src={href(`/sprites/${f.sprite}`)} alt={`${p.name} (${formLabel})`} width="288" height="288" />
+      </div>
+    )}
+    <div class="pill-list">
+      {f.types.map((t: string) => <TypeBadge type={t} />)}
     </div>
-  )}
-  <div class="pill-list">
-    {f.types.map((t: string) => <TypeBadge type={t} />)}
   </div>
 
   <h2>Basiswerte</h2>
