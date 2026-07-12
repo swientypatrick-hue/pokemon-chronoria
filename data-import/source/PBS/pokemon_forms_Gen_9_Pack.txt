@@ -341,7 +341,7 @@ Evolutions = SNEASLER,DayHoldItem,RAZORCLAW
 RaidRanks = 2,3
 #-------------------------------
 [DIALGA,1]
-FormName = Origin Form
+FormName = Ur-Form
 BaseStats = 100,100,120,90,150,120
 Height = 7.0
 Weight = 848.7

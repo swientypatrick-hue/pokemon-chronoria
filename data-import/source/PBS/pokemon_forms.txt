@@ -2013,7 +2013,7 @@ Generation = 6
 [ONIX,1]
 
 
-FormName = Kristall
+FormName = Chrono
 
 
 Types = ROCK,ICE
@@ -3318,7 +3318,7 @@ Generation = 3
 [STEELIX,1]
 
 
-FormName = Kristall
+FormName = Chrono
 
 
 Types = STEEL,ICE
@@ -5053,7 +5053,7 @@ RaidRanks = 3,4,5
 [GIRATINA,1]
 
 
-FormName = Urform
+FormName = Ur-Form
 
 
 BaseStats = 150,120,100,90,120,100
@@ -8482,7 +8482,7 @@ Pokedex = Legend says that by using its power to see all events from past to fut
 [BELDUM,1]
 
 
-FormName = Ruinenform
+FormName = Chrono
 
 
 Types = GRASS,ROCK
@@ -8566,7 +8566,7 @@ CallRateSOS = 9
 [METANG,1]
 
 
-FormName = Ruinenform
+FormName = Chrono
 
 
 Types = GRASS,ROCK
@@ -8650,7 +8650,7 @@ CallRateSOS = 6
 [METAGROSS,1]
 
 
-FormName = Ruinenform
+FormName = Chrono
 
 
 Types = GRASS,ROCK
@@ -9742,9 +9742,6 @@ SpeciesSOS = ONIX
 FormName = Chrono
 
 
-FormName = Traumform
-
-
 Types = PSYCHIC,GRASS
 
 
@@ -9830,9 +9827,6 @@ RaidRanks = 1,2
 
 
 FormName = Chrono
-
-
-FormName = Traumform
 
 
 Types = PSYCHIC,GRASS
@@ -9955,9 +9949,6 @@ Pokedex = While this Pokémon usually lives in the sea, it can survive on land, 
 FormName = Chrono
 
 
-FormName = Traumform
-
-
 Types = GHOST,POISON
 
 
@@ -9988,9 +9979,6 @@ Pokedex = A glare from its single scarlet eye makes even burly grown-ups freeze 
 FormName = Chrono
 
 
-FormName = Traumform
-
-
 Types = GHOST,POISON
 
 
@@ -10019,9 +10007,6 @@ Pokedex = It is thought that its body is hollow with only a spectral ball of fir
 
 
 FormName = Chrono
-
-
-FormName = Traumform
 
 
 Types = GHOST
