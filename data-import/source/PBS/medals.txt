@@ -160,13 +160,13 @@ Description = Werde Mitglied im Geister-Club.
 Tip = Werde Mitglied im Geister-Club.
 #27-----------------------------------
 [GEISTERANFAENGER]
-Name = Geister-Anfänger
+Name = Geister-Profi
 Icon = GEISTERJAEGER
 Description = Eine Medallie für gelöste Aufgaben im Geister-Club.
 Tip = Erledige Aufgaben im Geister-Club.
 #28-----------------------------------
 [GEISTERPROFI]
-Name = Geister-Profi
+Name = Geister-Experte
 Icon = GEISTERPROFI
 Description = Eine Medallie für gelöste Aufgaben im Geister-Club.
 Tip = Erledige Aufgaben im Geister-Club.
@@ -184,31 +184,31 @@ Rarity = Legendary
 Description = Eine Medallie für den Erhalt eines Ninjatom.
 Tip = Erhalte ein Ninjatom.
 Condition = Caught,SHEDINJA
-#30-----------------------------------
+#31-----------------------------------
 [ANGEL]
 Name = Angler
 Icon = ANGEL1
 Description = Eine Medallie für gelöste Aufgaben im Angel-Club.
 Tip = Erledige Aufgaben im Angel-Club.
-#31-----------------------------------
+#32-----------------------------------
 [ANGEL1]
-Name = Angel-Anfänger
+Name = Angel-Profi
 Icon = ANGEL1
 Description = Eine Medallie für gelöste Aufgaben im Angel-Club.
 Tip = Erledige Aufgaben im Angel-Club.
-#32-----------------------------------
+#33-----------------------------------
 [ANGEL2]
-Name = Angel-Profi
+Name = Angel-Experte
 Icon = ANGEL2
 Description = Eine Medallie für gelöste Aufgaben im Angel-Club.
 Tip = Erledige Aufgaben im Angel-Club.
-#27----------------------------------
+#34----------------------------------
 [ANGEL3]
 Name = Angel-Meister
 Icon = ANGEL3
 Description = Eine Medallie für gelöste Aufgaben im Angel-Club.
 Tip = Erledige alle Aufgaben im Angel-Club.
-#28-----------------------------------Noch zu bearbeiten
+#35-----------------------------------Noch zu bearbeiten
 [POKEMON]
 Name = Wunderwache
 Icon = NINJATOM
@@ -216,77 +216,93 @@ Rarity = Legendary
 Description = Eine Medallie für den Erhalt eines Ninjatom.
 Tip = Erhalte ein Ninjatom.
 Condition = Caught,MEW
-#29-----------------------------------
+#36-----------------------------------
+[SANDIMGETRIEBE]
+Name = Sand im Getriebe
+Icon = ARCH
+Description = Du erhälst diese Medallie, wenn du Mitglied im Archäologen-Club wirst.
+Tip = Erledige Aufgaben im Archäologen-Club.
+#37-----------------------------------
 [SANDKASTENGRAEBER]
 Name = Sandkastengräber
 Icon = ARCH1
-Description = Eine Medallie für gelöste Aufgaben im Paläontologen-Club.
-Tip = Erledige Aufgaben im Paläontologen-Club.
-#30-----------------------------------
+Description = Eine Medallie für gelöste Aufgaben im Archäologen-Club.
+Tip = Erledige Aufgaben im Archäologen-Club.
+#38-----------------------------------
 [RUINENFORSCHER]
 Name = Ruinenforscher
 Icon = ARCH2
-Description = Eine Medallie für gelöste Aufgaben im Paläontologen-Club.
-Tip = Erledige Aufgaben im Paläontologen-Club.
-#31----------------------------------
+Description = Eine Medallie für gelöste Aufgaben im Archäologen-Club.
+Tip = Erledige Aufgaben im Archäologen-Club.
+#39----------------------------------
 [GRABSCHAENDER]
 Name = Grabschänder
 Icon = ARCH3
-Description = Eine Medallie für gelöste Aufgaben im Paläontologen-Club.
-Tip = Erledige alle Aufgaben im Paläontologen-Club.
-#32-----------------------------------Noch zu bearbeiten
-[POKEMON1]
-Name = Wunderwache
-Icon = NINJATOM
+Description = Eine Medallie für gelöste Aufgaben im Archäologen-Club.
+Tip = Erledige alle Aufgaben im Archäologen-Club.
+#40-----------------------------------Noch zu bearbeiten
+[REGIGIGAS]
+Name = Tiefer Schlaf
+Icon = REGIGIGAS
 Rarity = Legendary
-Description = Eine Medallie für den Erhalt eines Ninjatom.
-Tip = Erhalte ein Ninjatom.
-Condition = Caught,MEW
-#33-----------------------------------
+Description = Eine Medallie für den Erhalt eines Regigigas.
+Condition = Caught,REGIGIGAS
+#41-----------------------------------
+[FLUGSTUNDEN]
+Name = I believe...
+Icon = FLUG
+Description = Eine Medallie für gelöste Aufgaben im Vogelfänger-Club.
+Tip = Erledige Aufgaben im Vogelfänger-Club.
+#42-----------------------------------
 [TAUBENFEUTTERER]
 Name = Taubenfütterer
 Icon = FLUG1
 Description = Eine Medallie für gelöste Aufgaben im Vogelfänger-Club.
 Tip = Erledige Aufgaben im Vogelfänger-Club.
-#34-----------------------------------
+#43-----------------------------------
 [FLUGHOERNCHEN]
 Name = Flughörnchen
 Icon = FLUG2
 Description = Eine Medallie für gelöste Aufgaben im Vogelfänger-Club.
 Tip = Erledige Aufgaben im Vogelfänger-Club.
-#35----------------------------------
+#44----------------------------------
 [ORNITHOLOGE]
 Name = Ornithologe
 Icon = FLUG3
 Description = Eine Medallie für gelöste Aufgaben im Vogelfänger-Club.
 Tip = Erledige alle Aufgaben im Vogelfänger-Club.
-#36-----------------------------------Noch zu bearbeiten
-[POKEMON2]
-Name = Wunderwache
-Icon = NINJATOM
+#45-----------------------------------Noch zu bearbeiten
+[HIMMELSKOENIGE]
+Name = Himmelskönige
+Icon = HIMMELSKOENIGE
 Rarity = Legendary
-Description = Eine Medallie für den Erhalt eines Ninjatom.
-Tip = Erhalte ein Ninjatom.
-Condition = Caught,MEW
-#37-----------------------------------
+Description = Fange Arktos, Zapdos und Lavados, um dir diese Medallie zu verdienen.
+Condition = Caught,ARTICUNO,Caught,ZAPDOS,Caught,MOLTRES
+#46-----------------------------------
+[DRACHENZAEHMEN]
+Name = Drachenzähmen
+Icon = DRACHEN
+Description = Eine Medallie für gelöste Aufgaben im Drachen-Club.
+Tip = Erledige Aufgaben im Drachen-Club.
+#47-----------------------------------
 [OHNEZAHN]
 Name = Ohnezahn
 Icon = DRACHEN1
 Description = Eine Medallie für gelöste Aufgaben im Drachen-Club.
 Tip = Erledige Aufgaben im Drachen-Club.
-#38-----------------------------------
+#48-----------------------------------
 [FLUGSTUNDEN]
 Name = Flugstunden
 Icon = DRACHEN2
 Description = Eine Medallie für gelöste Aufgaben im Drachen-Club.
 Tip = Erledige Aufgaben im Drachen-Club.
-#39----------------------------------
+#49----------------------------------
 [TARGARYEN]
 Name = Targaryen
 Icon = DRACHEN3
 Description = Eine Medallie für gelöste Aufgaben im Drachen-Club.
 Tip = Erledige alle Aufgaben im Drachen-Club.
-#40-----------------------------------Noch zu bearbeiten
+#50-----------------------------------Noch zu bearbeiten
 [POKEMON3]
 Name = Wunderwache
 Icon = NINJATOM
