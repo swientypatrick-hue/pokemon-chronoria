@@ -291,8 +291,8 @@ Icon = DRACHEN1
 Description = Eine Medallie für gelöste Aufgaben im Drachen-Club.
 Tip = Erledige Aufgaben im Drachen-Club.
 #48-----------------------------------
-[FLUGSTUNDEN]
-Name = Flugstunden
+[DRACHENREITER]
+Name = Drachenreiter
 Icon = DRACHEN2
 Description = Eine Medallie für gelöste Aufgaben im Drachen-Club.
 Tip = Erledige Aufgaben im Drachen-Club.
