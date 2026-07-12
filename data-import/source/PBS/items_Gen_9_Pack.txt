@@ -569,7 +569,7 @@ BPPrice = 50
 Flags = MegaStone,Fling_80
 Description = Dieser Stein ermöglicht Meganie eine Mega-Entwicklung.
 #-------------------------------
-[FERALIGITE]
+[FERALIGITEX]
 Name = Impergatornit
 NamePlural = Impergatornite
 Pocket = 6

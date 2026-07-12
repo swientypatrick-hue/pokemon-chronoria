@@ -3,7 +3,7 @@
 [0]
 StartMoney = 3000
 StartItemStorage = POTION
-Home = 42,33,15,2
+Home = 42,31,16,2
 StorageCreator = Miriam
 WildBattleBGM = Battle wild
 TrainerBattleBGM = Battle trainer
