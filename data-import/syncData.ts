@@ -13,6 +13,14 @@ const gameDir = process.argv[2] ?? "E:/Test";
 const outDir = join(import.meta.dirname, "source");
 const publicDir = join(import.meta.dirname, "..", "public");
 
+// CI (and anyone without the game project checked out) has no access to gameDir - dev/build
+// now run this script unconditionally for local convenience, so skip quietly instead of
+// throwing and just build off the already-committed source/ snapshot and public/ assets.
+if (!existsSync(gameDir)) {
+  console.log(`Spielprojekt-Ordner ${gameDir} nicht gefunden - Sync übersprungen, nutze vorhandenen Datenstand.`);
+  process.exit(0);
+}
+
 const EXCLUDED_PBS_FILES = new Set<string>([]);
 const EXCLUDED_PBS_PREFIXES = ["cup_", "battle_tower_", "trainers_DTS_Example"];
 
