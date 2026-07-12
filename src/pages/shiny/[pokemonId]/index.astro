@@ -11,7 +11,7 @@ export function getStaticPaths() {
 }
 
 const { p } = Astro.props;
-const shinyForms = p.forms.filter((f: any) => f.shinySprite);
+const shinyForms = p.forms.filter((f: any) => f.shinySprite && !f.isFemaleForm);
 ---
 
 <Layout title={`${p.name} (Shiny)`}>

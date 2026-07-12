@@ -15,10 +15,6 @@ export function getStaticPaths() {
 
 const { p } = Astro.props;
 
-const statTotal =
-  p.baseStats.hp + p.baseStats.attack + p.baseStats.defense +
-  p.baseStats.speed + p.baseStats.spAtk + p.baseStats.spDef;
-
 function moveName(id: string) {
   return moveById.get(id)?.name ?? id;
 }
@@ -36,17 +32,46 @@ function typeName(id: string) {
 }
 
 const megaFormsFromHere = p.forms.filter((mf: any) => mf.megaStone && mf.unmegaForm === 0);
-const wildItems = wildItemRows(p.wildItemCommon, p.wildItemUncommon, p.wildItemRare);
+// Some "forms" only exist to carry the species' female stats/moveset/abilities (PBS convention:
+// FormName="Female", e.g. Indeedee/Meowstic/Basculegion/Oinkologne) - these aren't a separate
+// form a player picks, every individual just is male or female, so they're shown as a toggle on
+// this page instead of in the Formen list below.
+const femaleForm = p.forms.find((f: any) => f.isFemaleForm) ?? null;
+const displayForms = p.forms.filter((f: any) => !f.isFemaleForm);
 
-const sortedLevelMoves = [...p.levelMoves].sort((a, b) => a.level - b.level);
-const sortedTutorMoves = [...p.tutorMoves].sort((a, b) => moveName(a).localeCompare(moveName(b), "de"));
-const sortedEggMoves = [...p.eggMoves].sort((a, b) => moveName(a).localeCompare(moveName(b), "de"));
-const locationsByPlace = Object.groupBy
-  ? Object.groupBy(p.foundIn, (r: any) => r.locationName)
-  : p.foundIn.reduce((acc: Record<string, any[]>, r: any) => {
-      (acc[r.locationName] ??= []).push(r);
-      return acc;
-    }, {});
+function statTotalOf(stats: any) {
+  return stats.hp + stats.attack + stats.defense + stats.speed + stats.spAtk + stats.spDef;
+}
+
+/** Bundles everything on this page that can differ between the male (base species) and female
+ *  (isFemaleForm) datasets, so the two are rendered identically via one shared template below. */
+function buildGenderView(key: string, label: string, data: any) {
+  const locationsByPlace = Object.groupBy
+    ? Object.groupBy(data.foundIn, (r: any) => r.locationName)
+    : data.foundIn.reduce((acc: Record<string, any[]>, r: any) => {
+        (acc[r.locationName] ??= []).push(r);
+        return acc;
+      }, {});
+  return {
+    key,
+    label,
+    data,
+    statTotal: statTotalOf(data.baseStats),
+    wildItems: wildItemRows(data.wildItemCommon, data.wildItemUncommon, data.wildItemRare),
+    sortedLevelMoves: [...data.levelMoves].sort((a: any, b: any) => a.level - b.level),
+    sortedTutorMoves: [...data.tutorMoves].sort((a: string, b: string) => moveName(a).localeCompare(moveName(b), "de")),
+    sortedEggMoves: [...data.eggMoves].sort((a: string, b: string) => moveName(a).localeCompare(moveName(b), "de")),
+    locationsByPlace,
+  };
+}
+
+const genderViews = [
+  buildGenderView("male", "♂ Männlich", p),
+  ...(femaleForm ? [buildGenderView("female", "♀ Weiblich", femaleForm)] : []),
+];
+const hasTutorMoves = genderViews.some((v) => v.data.tutorMoves.length > 0);
+const hasEggMoves = genderViews.some((v) => v.data.eggMoves.length > 0);
+const hasWildItems = genderViews.some((v) => v.wildItems.length > 0);
 ---
 
 <Layout title={p.name}>
@@ -81,164 +106,227 @@ const locationsByPlace = Object.groupBy
     )}
   </div>
 
-  <h2>Basiswerte</h2>
-  <StatBar label="LP" value={p.baseStats.hp} />
-  <StatBar label="Angriff" value={p.baseStats.attack} />
-  <StatBar label="Verteidigung" value={p.baseStats.defense} />
-  <StatBar label="Sp. Angriff" value={p.baseStats.spAtk} />
-  <StatBar label="Sp. Vert." value={p.baseStats.spDef} />
-  <StatBar label="Init." value={p.baseStats.speed} />
-  <div class="stat-row">
-    <span class="stat-label">Gesamt</span>
-    <span></span>
-    <span class="stat-value">{statTotal}</span>
-  </div>
-
-  <h2>Pokédex</h2>
-  <p>
-    {p.pokedex.text || "–"}
-  </p>
-  <table>
-    <tr><th>Größe</th><td>{p.height} m</td></tr>
-    <tr><th>Gewicht</th><td>{p.weight} kg</td></tr>
-    <tr><th class="help-text" title="Je höher der Wert, desto leichter lässt sich das Pokémon fangen (0–255).">Fangrate</th><td>{p.catchRate}</td></tr>
-    <tr><th>Ei-Gruppen</th><td>{p.eggGroups.map(eggGroupLabel).join(", ") || "–"}</td></tr>
-    <tr><th>Schlüpfschritte</th><td>{p.hatchSteps}</td></tr>
-    {p.raidRanks.length > 0 && (
-      <tr><th>Raid-Rang</th><td>{Math.min(...p.raidRanks)}{p.raidRanks.length > 1 ? `–${Math.max(...p.raidRanks)}` : ""} ⭐</td></tr>
-    )}
-  </table>
-
-  <h2>Fähigkeiten</h2>
-  <div class="pill-list">
-    {p.abilities.map((a: string) => <a class="card" href={href(`/faehigkeiten/${slugify(a)}/`)}>{abilityName(a)}</a>)}
-    {p.hiddenAbilities.map((a: string) => <a class="card" href={href(`/faehigkeiten/${slugify(a)}/`)}>{abilityName(a)} (versteckt)</a>)}
-  </div>
-
-  <h2>Entwicklung</h2>
-  {p.evolvesFrom && (
-    <p>Entwickelt sich aus <a href={href(`/pokemon/${slugify(p.evolvesFrom)}/`)}>{speciesName(p.evolvesFrom)}</a>.</p>
-  )}
-  {p.evolutions.length > 0 && (
-    <ul>
-      {p.evolutions.map((evo: any) => (
-        <li>
-          <a href={href(`/pokemon/${slugify(evo.target)}/`)}>{speciesName(evo.target)}</a>
-          {" — "}{formatEvolutionCondition(evo.method, evo.param, itemName, moveName, typeName)}
-        </li>
+  {femaleForm && (
+    <div class="filter-bar" id="gender-toggle">
+      {genderViews.map((v, i) => (
+        <a href="#" data-gender={v.key} aria-current={i === 0 ? "true" : undefined}>{v.label}</a>
       ))}
-    </ul>
-  )}
-  {megaFormsFromHere.length > 0 && (
-    <ul>
-      {megaFormsFromHere.map((mf: any) => (
-        <li>
-          Kann mega-entwickeln zu{" "}
-          <a href={href(`/pokemon/${slugify(p.id)}/${mf.formNumber}/`)}>{mf.formName?.text || `Form ${mf.formNumber}`}</a>
-        </li>
-      ))}
-    </ul>
-  )}
-  {p.evolutions.length === 0 && megaFormsFromHere.length === 0 && !p.evolvesFrom && (
-    <p class="section-empty">Entwickelt sich nicht weiter.</p>
+    </div>
   )}
 
-  {p.forms.length > 0 && (
-    <>
-      <h2>Formen</h2>
-      <table>
-        <tr><th></th><th>Form</th><th>Typ(en)</th><th>Basiswerte</th></tr>
-        {p.forms.map((f: any) => (
-          <tr>
-            <td><a href={href(`/pokemon/${slugify(p.id)}/${f.formNumber}/`)}>{f.sprite && <img class="form-sprite" src={href(`/sprites/${f.sprite}`)} alt="" width="40" height="40" />}</a></td>
-            <td><a href={href(`/pokemon/${slugify(p.id)}/${f.formNumber}/`)}>{f.formName?.text || `Form ${f.formNumber}`}</a></td>
-            <td><div class="pill-list">{f.types.map((t: string) => <TypeBadge type={t} />)}</div></td>
-            <td>
-              <div class="form-stat-grid">
-                <span class="form-stat"><span class="form-stat-lbl">LP</span><span class="form-stat-val">{f.baseStats.hp}</span></span>
-                <span class="form-stat"><span class="form-stat-lbl">Ang</span><span class="form-stat-val">{f.baseStats.attack}</span></span>
-                <span class="form-stat"><span class="form-stat-lbl">Vert</span><span class="form-stat-val">{f.baseStats.defense}</span></span>
-                <span class="form-stat"><span class="form-stat-lbl">SpA</span><span class="form-stat-val">{f.baseStats.spAtk}</span></span>
-                <span class="form-stat"><span class="form-stat-lbl">SpV</span><span class="form-stat-val">{f.baseStats.spDef}</span></span>
-                <span class="form-stat"><span class="form-stat-lbl">Init</span><span class="form-stat-val">{f.baseStats.speed}</span></span>
-              </div>
-            </td>
-          </tr>
-        ))}
-      </table>
-    </>
-  )}
+  <div id="gender-content" data-active-gender="male">
+    <h2>Basiswerte</h2>
+    {genderViews.map((v) => (
+      <div data-gender={v.key}>
+        <StatBar label="LP" value={v.data.baseStats.hp} />
+        <StatBar label="Angriff" value={v.data.baseStats.attack} />
+        <StatBar label="Verteidigung" value={v.data.baseStats.defense} />
+        <StatBar label="Sp. Angriff" value={v.data.baseStats.spAtk} />
+        <StatBar label="Sp. Vert." value={v.data.baseStats.spDef} />
+        <StatBar label="Init." value={v.data.baseStats.speed} />
+        <div class="stat-row">
+          <span class="stat-label">Gesamt</span>
+          <span></span>
+          <span class="stat-value">{v.statTotal}</span>
+        </div>
+      </div>
+    ))}
 
-  <h2>Attacken (durch Levelaufstieg)</h2>
-  {sortedLevelMoves.length > 0 ? (
+    <h2>Pokédex</h2>
+    <p>
+      {p.pokedex.text || "–"}
+    </p>
     <table>
-      <tr><th>Level</th><th>Attacke</th><th>Typ</th><th>AP</th><th>Stärke</th><th>Genauigkeit</th></tr>
-      {sortedLevelMoves.map((lm: any) => {
-        const mv = moveById.get(lm.move);
-        return (
-          <tr>
-            <td>{lm.level === 0 ? "bei Entwicklung" : lm.level}</td>
-            <td><a href={href(`/attacken/${slugify(lm.move)}/`)}>{moveName(lm.move)}</a></td>
-            <td>{mv && <TypeBadge type={mv.type} />}</td>
-            <td>{mv?.totalPP ?? "–"}</td>
-            <td>{mv?.power ?? "–"}</td>
-            <td>{mv?.accuracy ?? "–"}</td>
-          </tr>
-        );
-      })}
+      <tr><th>Größe</th><td>{p.height} m</td></tr>
+      <tr><th>Gewicht</th><td>{p.weight} kg</td></tr>
+      <tr><th class="help-text" title="Je höher der Wert, desto leichter lässt sich das Pokémon fangen (0–255).">Fangrate</th><td>{p.catchRate}</td></tr>
+      <tr><th>Ei-Gruppen</th><td>{p.eggGroups.map(eggGroupLabel).join(", ") || "–"}</td></tr>
+      <tr><th>Schlüpfschritte</th><td>{p.hatchSteps}</td></tr>
+      {p.raidRanks.length > 0 && (
+        <tr><th>Raid-Rang</th><td>{Math.min(...p.raidRanks)}{p.raidRanks.length > 1 ? `–${Math.max(...p.raidRanks)}` : ""} ⭐</td></tr>
+      )}
     </table>
-  ) : <p class="section-empty">Keine Level-Attacken bekannt.</p>}
 
-  {p.tutorMoves.length > 0 && (
-    <>
-      <h2>Tutor-Attacken</h2>
-      <div class="pill-list">
-        {sortedTutorMoves.map((m: string) => <a class="card" href={href(`/attacken/${slugify(m)}/`)}>{moveName(m)}</a>)}
+    <h2>Fähigkeiten</h2>
+    {genderViews.map((v) => (
+      <div class="pill-list" data-gender={v.key}>
+        {v.data.abilities.map((a: string) => <a class="card" href={href(`/faehigkeiten/${slugify(a)}/`)}>{abilityName(a)}</a>)}
+        {v.data.hiddenAbilities.map((a: string) => <a class="card" href={href(`/faehigkeiten/${slugify(a)}/`)}>{abilityName(a)} (versteckt)</a>)}
       </div>
-    </>
-  )}
+    ))}
 
-  {p.eggMoves.length > 0 && (
-    <>
-      <h2>Ei-Attacken</h2>
-      <div class="pill-list">
-        {sortedEggMoves.map((m: string) => <a class="card" href={href(`/attacken/${slugify(m)}/`)}>{moveName(m)}</a>)}
-      </div>
-    </>
-  )}
-
-  {wildItems.length > 0 && (
-    <>
-      <h2>Mögliche Item-Funde (wild)</h2>
+    <h2>Entwicklung</h2>
+    {p.evolvesFrom && (
+      <p>Entwickelt sich aus <a href={href(`/pokemon/${slugify(p.evolvesFrom)}/`)}>{speciesName(p.evolvesFrom)}</a>.</p>
+    )}
+    {p.evolutions.length > 0 && (
       <ul>
-        {wildItems.map((row) => (
+        {p.evolutions.map((evo: any) => (
           <li>
-            {row.chance}:{" "}
-            {row.itemIds.map((id: string, i: number) => (
-              <>
-                {i > 0 && ", "}
-                <a href={href(`/items/${slugify(id)}/`)}>{itemName(id) ?? id}</a>
-              </>
-            ))}
+            <a href={href(`/pokemon/${slugify(evo.target)}/`)}>{speciesName(evo.target)}</a>
+            {" — "}{formatEvolutionCondition(evo.method, evo.param, itemName, moveName, typeName)}
           </li>
         ))}
       </ul>
-    </>
-  )}
+    )}
+    {megaFormsFromHere.length > 0 && (
+      <ul>
+        {megaFormsFromHere.map((mf: any) => (
+          <li>
+            Kann mega-entwickeln zu{" "}
+            <a href={href(`/pokemon/${slugify(p.id)}/${mf.formNumber}/`)}>{mf.formName?.text || `Form ${mf.formNumber}`}</a>
+          </li>
+        ))}
+      </ul>
+    )}
+    {p.evolutions.length === 0 && megaFormsFromHere.length === 0 && !p.evolvesFrom && (
+      <p class="section-empty">Entwickelt sich nicht weiter.</p>
+    )}
 
-  <h2>Fundorte (wild)</h2>
-  {Object.keys(locationsByPlace).length > 0 ? (
-    <table>
-      <tr><th>Ort</th><th>Methode</th><th>Level</th></tr>
-      {Object.entries(locationsByPlace).map(([place, refs]: [string, any]) => (
-        refs.map((r: any, i: number) => (
-          <tr>
-            {i === 0 ? <td rowspan={refs.length}>{place}</td> : null}
-            <td>{encounterMethodLabel(r.method)}</td>
-            <td>{r.minLevel === r.maxLevel ? r.minLevel : `${r.minLevel}–${r.maxLevel}`}</td>
-          </tr>
-        ))
-      ))}
-    </table>
-  ) : <p class="section-empty">Kein bekannter wilder Fundort (z.B. nur durch Entwicklung, Geschenk oder Ei erhältlich).</p>}
+    {displayForms.length > 0 && (
+      <>
+        <h2>Formen</h2>
+        <table>
+          <tr><th></th><th>Form</th><th>Typ(en)</th><th>Basiswerte</th></tr>
+          {displayForms.map((f: any) => (
+            <tr>
+              <td><a href={href(`/pokemon/${slugify(p.id)}/${f.formNumber}/`)}>{f.sprite && <img class="form-sprite" src={href(`/sprites/${f.sprite}`)} alt="" width="40" height="40" />}</a></td>
+              <td><a href={href(`/pokemon/${slugify(p.id)}/${f.formNumber}/`)}>{f.formName?.text || `Form ${f.formNumber}`}</a></td>
+              <td><div class="pill-list">{f.types.map((t: string) => <TypeBadge type={t} />)}</div></td>
+              <td>
+                <div class="form-stat-grid">
+                  <span class="form-stat"><span class="form-stat-lbl">LP</span><span class="form-stat-val">{f.baseStats.hp}</span></span>
+                  <span class="form-stat"><span class="form-stat-lbl">Ang</span><span class="form-stat-val">{f.baseStats.attack}</span></span>
+                  <span class="form-stat"><span class="form-stat-lbl">Vert</span><span class="form-stat-val">{f.baseStats.defense}</span></span>
+                  <span class="form-stat"><span class="form-stat-lbl">SpA</span><span class="form-stat-val">{f.baseStats.spAtk}</span></span>
+                  <span class="form-stat"><span class="form-stat-lbl">SpV</span><span class="form-stat-val">{f.baseStats.spDef}</span></span>
+                  <span class="form-stat"><span class="form-stat-lbl">Init</span><span class="form-stat-val">{f.baseStats.speed}</span></span>
+                </div>
+              </td>
+            </tr>
+          ))}
+        </table>
+      </>
+    )}
+
+    <h2>Attacken (durch Levelaufstieg)</h2>
+    {genderViews.map((v) => (
+      <div data-gender={v.key}>
+        {v.sortedLevelMoves.length > 0 ? (
+          <table>
+            <tr><th>Level</th><th>Attacke</th><th>Typ</th><th>AP</th><th>Stärke</th><th>Genauigkeit</th></tr>
+            {v.sortedLevelMoves.map((lm: any) => {
+              const mv = moveById.get(lm.move);
+              return (
+                <tr>
+                  <td>{lm.level === 0 ? "bei Entwicklung" : lm.level}</td>
+                  <td><a href={href(`/attacken/${slugify(lm.move)}/`)}>{moveName(lm.move)}</a></td>
+                  <td>{mv && <TypeBadge type={mv.type} />}</td>
+                  <td>{mv?.totalPP ?? "–"}</td>
+                  <td>{mv?.power ?? "–"}</td>
+                  <td>{mv?.accuracy ?? "–"}</td>
+                </tr>
+              );
+            })}
+          </table>
+        ) : <p class="section-empty">Keine Level-Attacken bekannt.</p>}
+      </div>
+    ))}
+
+    {hasTutorMoves && (
+      <>
+        <h2>Tutor-Attacken</h2>
+        {genderViews.map((v) => (
+          <div class="pill-list" data-gender={v.key}>
+            {v.sortedTutorMoves.length > 0
+              ? v.sortedTutorMoves.map((m: string) => <a class="card" href={href(`/attacken/${slugify(m)}/`)}>{moveName(m)}</a>)
+              : <p class="section-empty">Keine Tutor-Attacken bekannt.</p>}
+          </div>
+        ))}
+      </>
+    )}
+
+    {hasEggMoves && (
+      <>
+        <h2>Ei-Attacken</h2>
+        {genderViews.map((v) => (
+          <div class="pill-list" data-gender={v.key}>
+            {v.sortedEggMoves.length > 0
+              ? v.sortedEggMoves.map((m: string) => <a class="card" href={href(`/attacken/${slugify(m)}/`)}>{moveName(m)}</a>)
+              : <p class="section-empty">Keine Ei-Attacken bekannt.</p>}
+          </div>
+        ))}
+      </>
+    )}
+
+    {hasWildItems && (
+      <>
+        <h2>Mögliche Item-Funde (wild)</h2>
+        {genderViews.map((v) => (
+          <div data-gender={v.key}>
+            {v.wildItems.length > 0 ? (
+              <ul>
+                {v.wildItems.map((row) => (
+                  <li>
+                    {row.chance}:{" "}
+                    {row.itemIds.map((id: string, i: number) => (
+                      <>
+                        {i > 0 && ", "}
+                        <a href={href(`/items/${slugify(id)}/`)}>{itemName(id) ?? id}</a>
+                      </>
+                    ))}
+                  </li>
+                ))}
+              </ul>
+            ) : <p class="section-empty">Kein bekannter Item-Fund.</p>}
+          </div>
+        ))}
+      </>
+    )}
+
+    <h2>Fundorte (wild)</h2>
+    {genderViews.map((v) => (
+      <div data-gender={v.key}>
+        {Object.keys(v.locationsByPlace).length > 0 ? (
+          <table>
+            <tr><th>Ort</th><th>Methode</th><th>Level</th></tr>
+            {Object.entries(v.locationsByPlace).map(([place, refs]: [string, any]) => (
+              refs.map((r: any, i: number) => (
+                <tr>
+                  {i === 0 ? <td rowspan={refs.length}>{place}</td> : null}
+                  <td>{encounterMethodLabel(r.method)}</td>
+                  <td>{r.minLevel === r.maxLevel ? r.minLevel : `${r.minLevel}–${r.maxLevel}`}</td>
+                </tr>
+              ))
+            ))}
+          </table>
+        ) : <p class="section-empty">Kein bekannter wilder Fundort (z.B. nur durch Entwicklung, Geschenk oder Ei erhältlich).</p>}
+      </div>
+    ))}
+  </div>
 </Layout>
+
+<style>
+  #gender-content[data-active-gender="male"] [data-gender="female"] {
+    display: none;
+  }
+  #gender-content[data-active-gender="female"] [data-gender="male"] {
+    display: none;
+  }
+</style>
+
+<script>
+  const toggle = document.getElementById("gender-toggle");
+  const content = document.getElementById("gender-content");
+  if (toggle && content) {
+    toggle.addEventListener("click", (e) => {
+      const link = (e.target as HTMLElement).closest("a[data-gender]");
+      if (!link) return;
+      e.preventDefault();
+      const gender = link.getAttribute("data-gender")!;
+      content.setAttribute("data-active-gender", gender);
+      for (const a of toggle.querySelectorAll("a")) a.removeAttribute("aria-current");
+      link.setAttribute("aria-current", "true");
+    });
+  }
+</script>

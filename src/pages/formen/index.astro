@@ -6,11 +6,13 @@ import { href } from "../../lib/url";
 import { typeColor } from "../../lib/typeColors";
 
 const allForms = pokemon.flatMap((p) =>
-  p.forms.map((f) => ({
-    p,
-    f,
-    label: f.formName?.text || `Form ${f.formNumber}`,
-  }))
+  p.forms
+    .filter((f) => !f.isFemaleForm)
+    .map((f) => ({
+      p,
+      f,
+      label: f.formName?.text || `Form ${f.formNumber}`,
+    }))
 );
 ---
 

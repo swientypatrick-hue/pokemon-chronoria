@@ -3,7 +3,7 @@ import Layout from "../layouts/Layout.astro";
 import { meta, pokemon, medals } from "../lib/data";
 import { href } from "../lib/url";
 
-const formsCount = pokemon.reduce((sum, p) => sum + p.forms.length, 0);
+const formsCount = pokemon.reduce((sum, p) => sum + p.forms.filter((f) => !f.isFemaleForm).length, 0);
 const shinyCount = pokemon.filter((p) => p.shinySprite).length;
 
 const categories = [

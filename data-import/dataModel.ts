@@ -55,6 +55,8 @@ export interface PokemonForm {
   wildItemCommon: string[];
   wildItemUncommon: string[];
   wildItemRare: string[];
+  /** true if this form exists solely to represent the species' female appearance/stats (PBS convention: FormName="Female", e.g. Indeedee/Meowstic/Basculegion/Oinkologne) - shown as a male/female toggle on the species page instead of in the Formen list. */
+  isFemaleForm: boolean;
   // reverse index, filled in by buildData.ts
   foundIn: EncounterRef[];
 }

@@ -114,9 +114,15 @@ function blockToForm(
   const r = blockToRecord(block);
   const [speciesId, formNumberRaw] = block.headerParts;
   const formNumber = Number(formNumberRaw ?? 0);
+  // PokedexForm points at another form on the same species whose Pokédex entry (and, by the
+  // same logic, display name) this one should borrow - used for battle-only "alt" forms that
+  // are mechanically identical to an already-named form but never got their own FormName (e.g.
+  // Kyurem's forms 3/4, alternate sprites for White/Black Kyurem forms 1/2).
+  const pokedexFormRef = r.PokedexForm !== undefined ? Number(r.PokedexForm) : null;
+  const referencedForm = pokedexFormRef !== null ? base.forms.find((f) => f.formNumber === pokedexFormRef) : undefined;
   return {
     formNumber,
-    formName: r.FormName ? resolveText(ctx.formName, r.FormName) : null,
+    formName: r.FormName ? resolveText(ctx.formName, r.FormName) : (referencedForm?.formName ?? null),
     types: r.Types !== undefined ? splitList(r.Types) : base.types,
     baseStats: r.BaseStats !== undefined ? parseBaseStats(r.BaseStats) : base.baseStats,
     abilities: r.Abilities !== undefined ? splitList(r.Abilities) : base.abilities,
@@ -141,6 +147,7 @@ function blockToForm(
     femaleSprite: sprites.get(`${speciesId}_${formNumber}_female`) ?? null,
     shinySprite: shinySprites.get(`${speciesId}_${formNumber}`) ?? null,
     femaleShinySprite: shinySprites.get(`${speciesId}_${formNumber}_female`) ?? null,
+    isFemaleForm: r.FormName?.trim() === "Female",
     foundIn: [],
   };
 }
@@ -188,9 +195,16 @@ function sameSprite(a: string | null, b: string | null): boolean {
  * just show up as a confusing duplicate row in the wiki's forms table. Forms like Alcremie's many
  * unnamed flavor variants are NOT caught by this - they share stats/types but each has its own
  * distinct artwork, so they're clearly real, separate forms worth showing.
+ *
+ * hasOwnFormName reflects only whether the block itself declared a FormName - not whether
+ * form.formName ended up non-null, which also happens for PokedexForm-inherited names (see
+ * blockToForm). Those borrowed-name forms must still go through the duplicate check below:
+ * e.g. Mega Meowstic's female-mega alt form has no art or stats of its own beyond what it
+ * borrows from the "real" Mega Meowstic entry, so it's exactly the kind of bookkeeping-only
+ * duplicate this function exists to catch, and inheriting a display name shouldn't exempt it.
  */
-function isUnnamedDuplicate(form: PokemonForm, base: Pokemon): boolean {
-  if (form.formName !== null) return false;
+function isUnnamedDuplicate(form: PokemonForm, base: Pokemon, hasOwnFormName: boolean): boolean {
+  if (hasOwnFormName) return false;
   const candidates = [base, ...base.forms];
   return candidates.some(
     (c) => typesEqual(form.types, c.types) && statsEqual(form.baseStats, c.baseStats) && sameSprite(form.sprite, c.sprite)
@@ -236,7 +250,8 @@ export function parsePokemon(ctx: TranslationContext): Pokemon[] {
       continue;
     }
     const form = blockToForm(block, ctx, sprites, shinySprites, base);
-    if (isUnnamedDuplicate(form, base)) continue;
+    const hasOwnFormName = (blockToRecord(block).FormName ?? "").trim() !== "";
+    if (isUnnamedDuplicate(form, base, hasOwnFormName)) continue;
     if (FORMS_WITHOUT_ART.has(`${speciesId}:${form.formNumber}`)) continue;
     base.forms.push(form);
   }
