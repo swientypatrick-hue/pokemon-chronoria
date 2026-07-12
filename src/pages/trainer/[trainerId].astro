@@ -1,6 +1,5 @@
 ---
 import Layout from "../../layouts/Layout.astro";
-import EnBadge from "../../components/EnBadge.astro";
 import TypeBadge from "../../components/TypeBadge.astro";
 import { trainers, pokemonById, abilityById, itemById, moveById, slugify, trainerSlug } from "../../lib/data";
 import { href } from "../../lib/url";
@@ -25,7 +24,7 @@ function resolveAbility(species: string, abilityIndex: number | null): { id: str
   <p class="meta-note"><a href={href("/trainer/")}>← Alle Trainer</a></p>
   <h1>{t.name}</h1>
   {t.sprite && <img class="species-sprite" src={href(`/trainers/${t.sprite}`)} alt={t.name} width="96" height="96" />}
-  <p class="meta-note">{t.trainerTypeName.text}{t.trainerTypeName.fallback && <EnBadge />}</p>
+  <p class="meta-note">{t.trainerTypeName.text}</p>
 
   <h2>Team</h2>
   <div class="card-grid">

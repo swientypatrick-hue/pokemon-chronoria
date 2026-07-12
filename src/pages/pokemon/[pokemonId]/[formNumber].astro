@@ -2,7 +2,6 @@
 import Layout from "../../../layouts/Layout.astro";
 import TypeBadge from "../../../components/TypeBadge.astro";
 import StatBar from "../../../components/StatBar.astro";
-import EnBadge from "../../../components/EnBadge.astro";
 import { pokemon, pokemonById, moveById, abilityById, itemById, slugify, pokemonDexNumber, typeNameById } from "../../../lib/data";
 import { encounterMethodLabel } from "../../../lib/encounterMethods";
 import { formatEvolutionCondition } from "../../../lib/evolutionMethods";
@@ -122,12 +121,11 @@ const locationsByPlace = Object.groupBy
   <h2>Pokédex</h2>
   <p>
     {f.pokedex.text || "–"}
-    {f.pokedex.fallback && f.pokedex.text && <EnBadge />}
   </p>
   <table>
     <tr><th>Größe</th><td>{f.height} m</td></tr>
     <tr><th>Gewicht</th><td>{f.weight} kg</td></tr>
-    <tr><th>Fangrate</th><td>{f.catchRate}</td></tr>
+    <tr><th class="help-text" title="Je höher der Wert, desto leichter lässt sich das Pokémon fangen (0–255).">Fangrate</th><td>{f.catchRate}</td></tr>
     <tr><th>Ei-Gruppen</th><td>{f.eggGroups.map(eggGroupLabel).join(", ") || "–"}</td></tr>
     <tr><th>Schlüpfschritte</th><td>{f.hatchSteps}</td></tr>
     {f.raidRanks.length > 0 && (

@@ -1,7 +1,6 @@
 ---
 import Layout from "../../layouts/Layout.astro";
 import TypeBadge from "../../components/TypeBadge.astro";
-import EnBadge from "../../components/EnBadge.astro";
 import { moves, pokemonById, slugify } from "../../lib/data";
 import { targetLabel } from "../../lib/moveTargets";
 import { href } from "../../lib/url";
@@ -39,7 +38,7 @@ const learnedByAll = [...new Set([...m.learnedByLevelUp, ...m.learnedByTutorOrEg
   </table>
 
   <h2>Beschreibung</h2>
-  <p>{m.description.text || "–"} {m.description.fallback && m.description.text && <EnBadge />}</p>
+  <p>{m.description.text || "–"}</p>
 
   <h2>Erlernt von ({learnedByAll.length})</h2>
   {learnedByAll.length > 0 ? (
