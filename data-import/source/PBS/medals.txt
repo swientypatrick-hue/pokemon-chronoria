@@ -93,18 +93,21 @@ Tip = Fange 600 verschiedene Pokémon.
 [KEINZURUECK]
 Name = Es gibt kein zurück mehr
 Icon = KEINZURUECK
+Rarity = Legendary
 Description = Eine Medallie für 650 gefangene Pokémon.
 Tip = Fange 650 verschiedene Pokémon.
 #17-----------------------------------
 [DREIVIERTEL]
 Name = Drei Viertel
 Icon = DREIVIERTEL
+Rarity = Legendary
 Description = Eine Medallie für 770 gefangene Pokémon.
 Tip = Fange 770 verschiedene Pokémon.
 #18-----------------------------------
 [ENDSPURT]
 Name = Endspurt
 Icon = ENDSPURT
+Rarity = Legendary
 Description = Eine Medallie für 926 gefangene Pokémon.
 Tip = Fange 926 verschiedene Pokémon.
 #19-----------------------------------
@@ -118,6 +121,7 @@ Tip = Fange 1000 verschiedene Pokémon.
 [DRITTERMEILENSTEIN]
 Name = Dritter Meilenstein
 Icon = DRITTERMEILENSTEIN
+Rarity = Legendary
 Description = Eine Medallie für 1026 gefangene Pokémon.
 Tip = Fange sämtliche Pokémon.
 #21-----------------------------------

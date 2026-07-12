@@ -2188,7 +2188,7 @@ Pocket = 1
 Price = 10000
 SellPrice = 0
 Flags = Fling_60
-Description = A brightly gleaming orb to be held by Dialga. It boosts the power of Dragon- and Steel-type moves.
+Description = Verstärkt Attacken vom Typ Drache und Stahl, wenn Dialga ihn trägt.
 #-------------------------------
 [LUSTROUSORB]
 Name = Lustrous Orb
@@ -2921,8 +2921,8 @@ Flags = MegaStone,Fling_80
 Description = Dieser Stein ermöglicht Camerupt eine Mega-Entwicklung.
 #-------------------------------
 [ALTARIANITE]
-Name = Altarianite
-NamePlural = Altarianite
+Name = Altarianit X
+NamePlural = Altarianite X
 Pocket = 6
 Price = 10000
 BPPrice = 50
@@ -2930,8 +2930,8 @@ Flags = MegaStone,Fling_80
 Description = Dieser Stein ermöglicht Altaria eine Mega-Entwicklung.
 #-------------------------------
 [ALTARIANITE2]
-Name = Altarianit
-NamePlural = Altarianite
+Name = Altarianit Y
+NamePlural = Altarianite Y
 Pocket = 6
 Price = 10000
 BPPrice = 50
@@ -3637,13 +3637,13 @@ Flags = Fling_20
 Description = An item for use on a Pokémon. It slightly increases the base Attack stat of a single Pokémon.
 #-------------------------------
 [RESISTFEATHER]
-Name = Resist Feather
-NamePlural = Resist Feathers
+Name = Abwehrfeder
+NamePlural = Abwehrfedern
 Pocket = 2
 Price = 150
 FieldUse = OnPokemon
 Flags = Fling_20
-Description = An item for use on a Pokémon. It slightly increases the base Defense stat of a single Pokémon.
+Description = Schenkt man einem Pokémon dieses Item, wird dessen Verteidigungs-Wert dauerhaft erhöht.
 #-------------------------------
 [GENIUSFEATHER]
 Name = Genius Feather
@@ -7236,7 +7236,7 @@ NamePlural = Akibeeren
 Pocket = 5
 Price = 40
 Flags = Berry,Fling_10,NaturalGift_FAIRY_100
-Description = If held by a Pokémon, this Berry will increase the holder's Defense if it's hit with a physical move.
+Description = Erhöht die Verteidigung des Trägers, wenn dieser von physischen Attacken getroffen wird.
 #-------------------------------
 [MARANGABERRY]
 Name = Tarabeere

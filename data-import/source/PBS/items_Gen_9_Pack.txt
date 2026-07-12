@@ -34,7 +34,7 @@ Pocket = 1
 Price = 20000
 SellPrice = 0
 Flags = Fling_60
-Description = Wenn das Item von Dialga getragen wird, ändert das Pokémon seine Form.
+Description = Auf Dialga angewandt, wird es von Kraft erfüllt und nimmt eine andere Form an.
 #-------------------------------
 [LUSTROUSGLOBE]
 Name = Weißkristall
@@ -958,8 +958,8 @@ Flags = MegaStone,Fling_80
 Description = Dieser Stein ermöglicht Palimpalim eine Mega-Entwicklung.
 #-------------------------------
 [ABSOLITEZ]
-Name = Absolit Z
-NamePlural = Absolite Z
+Name = Absolnit Z
+NamePlural = Absolnite Z
 Pocket = 6
 Price = 10000
 BPPrice = 50
