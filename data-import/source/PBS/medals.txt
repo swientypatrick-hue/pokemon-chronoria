@@ -161,7 +161,7 @@ Tip = Werde Mitglied im Geister-Club.
 #27-----------------------------------
 [GEISTERANFAENGER]
 Name = Geister-Profi
-Icon = GEISTERJAEGER
+Icon = GEISTERANFAENGER
 Description = Eine Medallie für gelöste Aufgaben im Geister-Club.
 Tip = Erledige Aufgaben im Geister-Club.
 #28-----------------------------------
