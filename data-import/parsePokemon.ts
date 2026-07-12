@@ -172,6 +172,15 @@ function isUnnamedDuplicate(form: PokemonForm, base: Pokemon): boolean {
   );
 }
 
+/**
+ * "Antique"/"real" article forms (as opposed to the base "phony"/"counterfeit" one) that are
+ * named and mechanically distinct (different evolution item, dex text) but were never given a
+ * sprite of their own in this project - so the wiki has nothing to show that a name and a text
+ * block don't already say on the base species' own page. Explicitly excluded per feedback,
+ * unlike the general isUnnamedDuplicate rule above which only catches unnamed forms.
+ */
+const FORMS_WITHOUT_ART = new Set(["SINISTEA:1", "POLTEAGEIST:1", "POLTCHAGEIST:1", "SINISTCHA:1"]);
+
 export function parsePokemon(ctx: TranslationContext): Pokemon[] {
   const sprites = loadSpriteIndex();
 
@@ -202,6 +211,7 @@ export function parsePokemon(ctx: TranslationContext): Pokemon[] {
     }
     const form = blockToForm(block, ctx, sprites, base);
     if (isUnnamedDuplicate(form, base)) continue;
+    if (FORMS_WITHOUT_ART.has(`${speciesId}:${form.formNumber}`)) continue;
     base.forms.push(form);
   }
 
