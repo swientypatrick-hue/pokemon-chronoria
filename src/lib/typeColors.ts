@@ -1,7 +1,7 @@
 export const TYPE_COLORS: Record<string, string> = {
   NORMAL: "#A8A878",
   FIGHTING: "#C03028",
-  FLYING: "#A890F0",
+  FLYING: "#89CFF0",
   POISON: "#A040A0",
   GROUND: "#E0C068",
   ROCK: "#B8A038",
