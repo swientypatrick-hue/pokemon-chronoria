@@ -396,16 +396,12 @@ h2 {
   font-variant-numeric: tabular-nums;
 }
 
-.badge-en {
-  background-image: none;
-  background: transparent;
-  color: var(--text-muted);
-  border: 1px solid var(--border-glass);
-  font-weight: 600;
-  text-transform: none;
-  letter-spacing: normal;
+/* Small hover hint for table headers etc. - dotted underline signals a tooltip is available
+   via the element's title attribute. */
+.help-text {
   cursor: help;
-  box-shadow: none;
+  text-decoration: underline dotted;
+  text-underline-offset: 3px;
 }
 
 /* ==========================================================================

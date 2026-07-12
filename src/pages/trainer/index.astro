@@ -1,6 +1,5 @@
 ---
 import Layout from "../../layouts/Layout.astro";
-import EnBadge from "../../components/EnBadge.astro";
 import { trainers, trainerSlug } from "../../lib/data";
 import { href } from "../../lib/url";
 
@@ -14,7 +13,6 @@ const sortedGroups = [...groups.entries()]
   .sort(([a], [b]) => a.localeCompare(b, "de"))
   .map(([name, list]) => ({
     name,
-    fallback: list[0].trainerTypeName.fallback,
     trainers: [...list].sort((a, b) => a.name.localeCompare(b.name, "de")),
   }));
 ---
@@ -35,7 +33,7 @@ const sortedGroups = [...groups.entries()]
   <div id="trainer-groups">
     {sortedGroups.map((group) => (
       <div class="trainer-group">
-        <h2>{group.name} {group.fallback && <EnBadge />} <span class="meta-note">({group.trainers.length})</span></h2>
+        <h2>{group.name} <span class="meta-note">({group.trainers.length})</span></h2>
         <div class="card-grid">
           {group.trainers.map((t) => (
             <a class="card" href={href(`/trainer/${trainerSlug(t.id)}/`)} data-name={t.name.toLowerCase()}>
