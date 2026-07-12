@@ -209,13 +209,12 @@ Icon = ANGEL3
 Description = Eine Medallie für gelöste Aufgaben im Angel-Club.
 Tip = Erledige alle Aufgaben im Angel-Club.
 #35-----------------------------------Noch zu bearbeiten
-[POKEMON]
-Name = Wunderwache
-Icon = NINJATOM
+[WASSERSPORT]
+Name = Wassersport
+Icon = WASSERSPORT
 Rarity = Legendary
-Description = Eine Medallie für den Erhalt eines Ninjatom.
-Tip = Erhalte ein Ninjatom.
-Condition = Caught,MEW
+Description = Eine Medallie für den Erhalt eines Keldeo.
+Condition = Caught,KELDEO
 #36-----------------------------------
 [SANDIMGETRIEBE]
 Name = Sand im Getriebe
@@ -303,10 +302,9 @@ Icon = DRACHEN3
 Description = Eine Medallie für gelöste Aufgaben im Drachen-Club.
 Tip = Erledige alle Aufgaben im Drachen-Club.
 #50-----------------------------------Noch zu bearbeiten
-[POKEMON3]
-Name = Wunderwache
-Icon = NINJATOM
+[SHENLONG]
+Name = Shenlong?
+Icon = SHENLONG
 Rarity = Legendary
-Description = Eine Medallie für den Erhalt eines Ninjatom.
-Tip = Erhalte ein Ninjatom.
-Condition = Caught,MEW
+Description = Eine Medallie für den Erhalt eines Rayquaza.
+Condition = Caught,RAYQUAZA
