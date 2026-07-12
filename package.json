@@ -8,8 +8,8 @@
   "scripts": {
     "sync-data": "node data-import/syncData.ts",
     "build-data": "node data-import/buildData.ts",
-    "dev": "npm run build-data && astro dev",
-    "build": "npm run build-data && astro build && pagefind --site dist",
+    "dev": "npm run sync-data && npm run build-data && astro dev",
+    "build": "npm run sync-data && npm run build-data && astro build && pagefind --site dist",
     "preview": "astro preview",
     "astro": "astro"
   },
