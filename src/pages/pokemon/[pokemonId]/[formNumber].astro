@@ -3,10 +3,11 @@ import Layout from "../../../layouts/Layout.astro";
 import TypeBadge from "../../../components/TypeBadge.astro";
 import StatBar from "../../../components/StatBar.astro";
 import EnBadge from "../../../components/EnBadge.astro";
-import { pokemon, pokemonById, moveById, abilityById, itemById, slugify, pokemonDexNumber } from "../../../lib/data";
+import { pokemon, pokemonById, moveById, abilityById, itemById, slugify, pokemonDexNumber, typeNameById } from "../../../lib/data";
 import { encounterMethodLabel } from "../../../lib/encounterMethods";
 import { formatEvolutionCondition } from "../../../lib/evolutionMethods";
 import { eggGroupLabel } from "../../../lib/eggGroups";
+import { wildItemRows } from "../../../lib/wildItems";
 import { href } from "../../../lib/url";
 
 export function getStaticPaths() {
@@ -32,6 +33,9 @@ function speciesName(id: string) {
 function itemName(id: string) {
   return itemById.get(id)?.name;
 }
+function typeName(id: string) {
+  return typeNameById.get(id);
+}
 /** Link to a species page, or to one specific form of it if formNumber > 0 and that form
  *  exists (e.g. Onix "Kristall" form 1 evolves into Steelix "Kristall" form 1, not Steelix's
  *  base form; a Mega form's UnmegaForm may likewise point at a non-base form to revert to). */
@@ -53,6 +57,7 @@ const unmegaLink = f.megaStone ? pokemonFormLink(p.id, f.unmegaForm) : null;
 /** Forms of this same species that Mega Evolve FROM this form (UnmegaForm points back at it) -
  *  the reverse of unmegaLink above, shown as a forward "can Mega Evolve into" relationship. */
 const megaFormsFromHere = p.forms.filter((mf: any) => mf.megaStone && mf.unmegaForm === f.formNumber);
+const wildItems = wildItemRows(f.wildItemCommon, f.wildItemUncommon, f.wildItemRare);
 
 const formLabel = f.formName?.text || `Form ${f.formNumber}`;
 const sortedLevelMoves = [...f.levelMoves].sort((a: any, b: any) => a.level - b.level);
@@ -73,9 +78,24 @@ const locationsByPlace = Object.groupBy
   <div class="detail-hero">
     <p class="meta-note"><a href={href(`/pokemon/${slugify(p.id)}/`)}>← {p.name}</a></p>
     <h1><span class="dex-number">#{String(pokemonDexNumber.get(p.id)).padStart(3, "0")}</span> {p.name} <span class="meta-note">— {formLabel}</span></h1>
-    {f.sprite && (
-      <div class="species-sprite-frame">
-        <img class="species-sprite" src={href(`/sprites/${f.sprite}`)} alt={`${p.name} (${formLabel})`} width="288" height="288" />
+    {(f.sprite || f.femaleSprite) && (
+      <div class="sprite-pair">
+        {f.sprite && (
+          <figure>
+            <div class="species-sprite-frame">
+              <img class="species-sprite" src={href(`/sprites/${f.sprite}`)} alt={`${p.name} (${formLabel})`} width="288" height="288" />
+            </div>
+            {f.femaleSprite && <figcaption>♂ Männlich</figcaption>}
+          </figure>
+        )}
+        {f.femaleSprite && (
+          <figure>
+            <div class="species-sprite-frame">
+              <img class="species-sprite" src={href(`/sprites/${f.femaleSprite}`)} alt={`${p.name} (${formLabel}, weiblich)`} width="288" height="288" />
+            </div>
+            <figcaption>♀ Weiblich</figcaption>
+          </figure>
+        )}
       </div>
     )}
     <div class="pill-list">
@@ -131,7 +151,7 @@ const locationsByPlace = Object.groupBy
         return (
           <li>
             <a href={target.url}>{target.label}</a>
-            {" — "}{formatEvolutionCondition(evo.method, evo.param, itemName)}
+            {" — "}{formatEvolutionCondition(evo.method, evo.param, itemName, moveName, typeName)}
           </li>
         );
       })}
@@ -186,6 +206,25 @@ const locationsByPlace = Object.groupBy
       <div class="pill-list">
         {sortedEggMoves.map((m: string) => <a class="card" href={href(`/attacken/${slugify(m)}/`)}>{moveName(m)}</a>)}
       </div>
+    </>
+  )}
+
+  {wildItems.length > 0 && (
+    <>
+      <h2>Mögliche Item-Funde (wild)</h2>
+      <ul>
+        {wildItems.map((row) => (
+          <li>
+            {row.chance}:{" "}
+            {row.itemIds.map((id: string, i: number) => (
+              <>
+                {i > 0 && ", "}
+                <a href={href(`/items/${slugify(id)}/`)}>{itemName(id) ?? id}</a>
+              </>
+            ))}
+          </li>
+        ))}
+      </ul>
     </>
   )}
 

@@ -45,6 +45,12 @@ export interface PokemonForm {
   unmegaForm: number;
   /** filename in public/sprites/, or null if no matching form sprite exists */
   sprite: string | null;
+  /** filename in public/sprites/ for the "_female" gender-difference variant, or null if none exists */
+  femaleSprite: string | null;
+  /** item ids a wild Pokémon of this form may be found holding - 50%/5%/1% chance per tier (100% if all three are the same single item) */
+  wildItemCommon: string[];
+  wildItemUncommon: string[];
+  wildItemRare: string[];
   // reverse index, filled in by buildData.ts
   foundIn: EncounterRef[];
 }
@@ -56,6 +62,8 @@ export interface Pokemon {
   nameFallback: boolean;
   /** filename in public/sprites/, or null if no matching sprite exists */
   sprite: string | null;
+  /** filename in public/sprites/ for the "_female" gender-difference variant, or null if none exists */
+  femaleSprite: string | null;
   types: string[];
   baseStats: BaseStats;
   abilities: string[];
@@ -71,6 +79,10 @@ export interface Pokemon {
   catchRate: number;
   /** raid star ranks this species can appear at, e.g. [1,2] - empty if not raid-eligible */
   raidRanks: number[];
+  /** item ids a wild Pokémon of this species may be found holding - 50%/5%/1% chance per tier (100% if all three are the same single item) */
+  wildItemCommon: string[];
+  wildItemUncommon: string[];
+  wildItemRare: string[];
   levelMoves: LevelMove[];
   tutorMoves: string[];
   eggMoves: string[];

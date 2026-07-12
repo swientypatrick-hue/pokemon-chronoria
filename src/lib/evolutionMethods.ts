@@ -36,6 +36,24 @@ const METHOD_LABELS: Record<string, string> = {
   Silcoon: "Zufall (Silodra-Zweig)",
   Cascoon: "Zufall (Cascoon-Zweig)",
   NoneOfTheAbove: "sonstige Bedingung",
+  None: "Keine Entwicklung",
+  LocationFlag: "Besonderer Ort",
+  HoldItem: "Item tragen",
+  LevelUseMoveCount: "Attackeneinsatz",
+  LevelWalk: "Schritte",
+  NightHoldItem: "Item tragen (Nacht)",
+  DayHoldItem: "Item tragen (Tag)",
+  HappinessMoveType: "Freundschaft + Attacke",
+  Ninjask: "Level",
+  Shedinja: "Geheim",
+  LevelDefeatItsKindWithItem: "Gegner besiegen mit Item",
+  LevelDarkInParty: "Unlicht im Team",
+  LevelRain: "Level bei Regen",
+  CollectItems: "Items sammeln",
+  BattleDealCriticalHit: "Volltreffer",
+  EventAfterDamageTaken: "Schaden erhalten",
+  LevelEvening: "Level Abends",
+  LevelRecoilDamage: "Rückstoßschaden",
 };
 
 export function evolutionMethodLabel(method: string): string {
@@ -43,16 +61,27 @@ export function evolutionMethodLabel(method: string): string {
 }
 
 /** Renders a short human description of an evolution's method + param, e.g. "Level 16" or
- *  "mit Item (Wasserstein)". itemName is used to resolve Item-based methods to a display name. */
+ *  "mit Item (Wasserstein)". itemName/moveName/typeName resolve the param to a display name
+ *  for methods whose param is that kind of ID. */
+// Methods whose param is an item ID but whose method name doesn't start with "Item" (so the
+// startsWith("Item") shortcut below wouldn't catch them) and isn't otherwise a level number.
+const ITEM_PARAM_METHODS = new Set(["HoldItem", "NightHoldItem", "DayHoldItem", "LevelDefeatItsKindWithItem", "CollectItems"]);
+
 export function formatEvolutionCondition(
   method: string,
   param: string,
-  itemName: (id: string) => string | undefined
+  itemName: (id: string) => string | undefined,
+  moveName?: (id: string) => string | undefined,
+  typeName?: (id: string) => string | undefined
 ): string {
   const label = evolutionMethodLabel(method);
   if (!param) return label;
-  if (method.startsWith("Level")) return `${label} ${param}`;
-  if (method.startsWith("Item") || method === "TradeItem") return `${label}: ${itemName(param) ?? param}`;
+  if (method === "LevelUseMoveCount") return `${label}: ${moveName?.(param) ?? param}`;
+  if (method === "HappinessMoveType") return `${label} (${typeName?.(param) ?? param})`;
+  if (method.startsWith("Item") || method === "TradeItem" || ITEM_PARAM_METHODS.has(method)) {
+    return `${label}: ${itemName(param) ?? param}`;
+  }
+  if (method.startsWith("Level") || method === "Ninjask" || method === "Shedinja") return `${label} ${param}`;
   if (method.startsWith("Happiness") || method === "Beauty" || method === "MaxHappiness") return label;
   return `${label} (${param})`;
 }

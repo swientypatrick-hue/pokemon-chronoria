@@ -3,10 +3,11 @@ import Layout from "../../../layouts/Layout.astro";
 import TypeBadge from "../../../components/TypeBadge.astro";
 import StatBar from "../../../components/StatBar.astro";
 import EnBadge from "../../../components/EnBadge.astro";
-import { pokemon, pokemonById, moveById, abilityById, itemById, slugify, pokemonDexNumber } from "../../../lib/data";
+import { pokemon, pokemonById, moveById, abilityById, itemById, slugify, pokemonDexNumber, typeNameById } from "../../../lib/data";
 import { formatEvolutionCondition } from "../../../lib/evolutionMethods";
 import { encounterMethodLabel } from "../../../lib/encounterMethods";
 import { eggGroupLabel } from "../../../lib/eggGroups";
+import { wildItemRows } from "../../../lib/wildItems";
 import { href } from "../../../lib/url";
 
 export function getStaticPaths() {
@@ -31,8 +32,12 @@ function speciesName(id: string) {
 function itemName(id: string) {
   return itemById.get(id)?.name;
 }
+function typeName(id: string) {
+  return typeNameById.get(id);
+}
 
 const megaFormsFromHere = p.forms.filter((mf: any) => mf.megaStone && mf.unmegaForm === 0);
+const wildItems = wildItemRows(p.wildItemCommon, p.wildItemUncommon, p.wildItemRare);
 
 const sortedLevelMoves = [...p.levelMoves].sort((a, b) => a.level - b.level);
 const sortedTutorMoves = [...p.tutorMoves].sort((a, b) => moveName(a).localeCompare(moveName(b), "de"));
@@ -49,9 +54,24 @@ const locationsByPlace = Object.groupBy
   <div class="detail-hero">
     <p class="meta-note"><a href={href("/pokemon/")}>← Alle Pokémon</a></p>
     <h1><span class="dex-number">#{String(pokemonDexNumber.get(p.id)).padStart(3, "0")}</span> {p.name}</h1>
-    {p.sprite && (
-      <div class="species-sprite-frame">
-        <img class="species-sprite" src={href(`/sprites/${p.sprite}`)} alt={p.name} width="288" height="288" />
+    {(p.sprite || p.femaleSprite) && (
+      <div class="sprite-pair">
+        {p.sprite && (
+          <figure>
+            <div class="species-sprite-frame">
+              <img class="species-sprite" src={href(`/sprites/${p.sprite}`)} alt={p.name} width="288" height="288" />
+            </div>
+            {p.femaleSprite && <figcaption>♂ Männlich</figcaption>}
+          </figure>
+        )}
+        {p.femaleSprite && (
+          <figure>
+            <div class="species-sprite-frame">
+              <img class="species-sprite" src={href(`/sprites/${p.femaleSprite}`)} alt={`${p.name} (weiblich)`} width="288" height="288" />
+            </div>
+            <figcaption>♀ Weiblich</figcaption>
+          </figure>
+        )}
       </div>
     )}
     <div class="pill-list">
@@ -103,7 +123,7 @@ const locationsByPlace = Object.groupBy
       {p.evolutions.map((evo: any) => (
         <li>
           <a href={href(`/pokemon/${slugify(evo.target)}/`)}>{speciesName(evo.target)}</a>
-          {" — "}{formatEvolutionCondition(evo.method, evo.param, itemName)}
+          {" — "}{formatEvolutionCondition(evo.method, evo.param, itemName, moveName, typeName)}
         </li>
       ))}
     </ul>
@@ -183,6 +203,25 @@ const locationsByPlace = Object.groupBy
       <div class="pill-list">
         {sortedEggMoves.map((m: string) => <a class="card" href={href(`/attacken/${slugify(m)}/`)}>{moveName(m)}</a>)}
       </div>
+    </>
+  )}
+
+  {wildItems.length > 0 && (
+    <>
+      <h2>Mögliche Item-Funde (wild)</h2>
+      <ul>
+        {wildItems.map((row) => (
+          <li>
+            {row.chance}:{" "}
+            {row.itemIds.map((id: string, i: number) => (
+              <>
+                {i > 0 && ", "}
+                <a href={href(`/items/${slugify(id)}/`)}>{itemName(id) ?? id}</a>
+              </>
+            ))}
+          </li>
+        ))}
+      </ul>
     </>
   )}
 

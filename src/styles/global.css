@@ -248,6 +248,26 @@ h2 {
   text-align: center;
 }
 
+.sprite-pair {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 1rem;
+}
+.sprite-pair figure {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.4rem;
+}
+.sprite-pair figcaption {
+  color: var(--text-muted);
+  font-size: 0.85rem;
+  font-weight: 600;
+}
+
 /* ==========================================================================
    Cards
    ========================================================================== */
