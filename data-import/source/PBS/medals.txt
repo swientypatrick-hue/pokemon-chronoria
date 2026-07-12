@@ -7,7 +7,7 @@ Tip = Je mehr Medallien, desto besser!
 #2-----------------------------------
 [SECONDMEDALIST]
 Name = Anfänger-Sammler
-Icon = ROOKIEMEDALIST
+Icon = SECONDMEDALIST
 Description = Für alle, die bereits 10 Medallien sammeln konnten.
 Tip = Je mehr Medallien, desto besser!
 #3-----------------------------------

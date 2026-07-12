@@ -560,9 +560,18 @@ BPPrice = 50
 Flags = MegaStone,Fling_80
 Description = Dieser Stein ermöglicht Dragoran eine Mega-Entwicklung.
 #-------------------------------
-[MEGANIUMITE]
-Name = Meganienit
-NamePlural = Meganienite
+[MEGANIUMITEX]
+Name = Meganienit X
+NamePlural = Meganienite X
+Pocket = 6
+Price = 10000
+BPPrice = 50
+Flags = MegaStone,Fling_80
+Description = Dieser Stein ermöglicht Meganie eine Mega-Entwicklung.
+#-------------------------------
+[MEGANIUMITEY]
+Name = Meganienit Y
+NamePlural = Meganienite Y
 Pocket = 6
 Price = 10000
 BPPrice = 50

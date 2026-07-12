@@ -184,7 +184,7 @@ RaidRanks = 3,4,5
 #-------------------------------
 [TYPHLOSION,2]
 FormName = Mega Tornupto
-MegaStone = TYPHLOSIONITE
+MegaStone = TORNUPTONITX
 BaseStats = 78,110,80,95,175,110
 UnmegaForm = 1
 BaseExp = 350
@@ -1235,11 +1235,25 @@ Generation = 2
 Flags = HasGenderedSprites
 #-------------------------------
 [MEGANIUM,2]
-FormName = Mega Meganie
-MegaStone = MEGANIUMITE
+FormName = Mega Meganie X
+MegaStone = MEGANIUMITEX
 Types = GRASS,FAIRY
 BaseStats = 80,92,115,80,143,115
 BaseExp = 313
+Height = 2.4
+Weight = 201.0
+Pokedex = This Pokémon can fire a tremendously powerful Solar Beam from its four flowers. Another name for this is Mega Sol Cannon.
+UnmegaForm = 1
+Generation = 9
+#-------------------------------
+[MEGANIUM,3]
+FormName = Mega Meganie Y
+MegaStone = MEGANIUMITEY
+Types = GRASS,STEEL
+BaseStats = 115,92,115,80,143,80
+BaseExp = 313
+Abilities = FILTER
+HiddenAbilities = FILTER
 Height = 2.4
 Weight = 201.0
 Pokedex = This Pokémon can fire a tremendously powerful Solar Beam from its four flowers. Another name for this is Mega Sol Cannon.
