@@ -88,6 +88,7 @@ const spriteCount = copySprites(join(gameDir, "Graphics", "Pokemon", "Front"), j
 const shinySpriteCount = copySprites(join(gameDir, "Graphics", "Pokemon", "Front shiny"), join(publicDir, "sprites-shiny"));
 const itemIconCount = copySprites(join(gameDir, "Graphics", "Items"), join(publicDir, "item-icons"));
 const trainerSpriteCount = copySprites(join(gameDir, "Graphics", "Trainers"), join(publicDir, "trainers"));
+const medalIconCount = copySprites(join(gameDir, "Graphics", "UI", "Medal Box", "Medals"), join(publicDir, "medals"));
 
 console.log(`Sync abgeschlossen aus ${gameDir}:`);
 console.log(`  PBS: ${pbsCount} Dateien`);
@@ -98,3 +99,4 @@ console.log(`  Sprites: ${spriteCount} Dateien`);
 console.log(`  Shiny-Sprites: ${shinySpriteCount} Dateien`);
 console.log(`  Item-Icons: ${itemIconCount} Dateien`);
 console.log(`  Trainer-Sprites: ${trainerSpriteCount} Dateien`);
+console.log(`  Medaillen-Icons: ${medalIconCount} Dateien`);

@@ -1,17 +1,20 @@
 ---
 import Layout from "../layouts/Layout.astro";
-import { meta, pokemon } from "../lib/data";
+import { meta, pokemon, medals } from "../lib/data";
 import { href } from "../lib/url";
 
 const formsCount = pokemon.reduce((sum, p) => sum + p.forms.length, 0);
+const shinyCount = pokemon.filter((p) => p.shinySprite).length;
 
 const categories = [
   { href: href("/pokemon/"), label: "Pokémon", count: meta.counts.pokemon },
   { href: href("/formen/"), label: "Formen", count: formsCount },
+  { href: href("/shiny/"), label: "Shiny", count: shinyCount },
   { href: href("/attacken/"), label: "Attacken", count: meta.counts.moves },
   { href: href("/faehigkeiten/"), label: "Fähigkeiten", count: meta.counts.abilities },
   { href: href("/items/"), label: "Items", count: meta.counts.items },
   { href: href("/trainer/"), label: "Trainer", count: meta.counts.trainers },
+  { href: href("/medaillen/"), label: "Medaillen", count: medals.length },
 ];
 ---
 

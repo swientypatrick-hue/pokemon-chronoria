@@ -5,7 +5,8 @@ import itemsData from "../data/items.json";
 import trainersData from "../data/trainers.json";
 import typesData from "../data/types.json";
 import metaData from "../data/meta.json";
-import type { Pokemon, Move, Ability, Item, Trainer } from "../../data-import/dataModel";
+import medalsData from "../data/medals.json";
+import type { Pokemon, Move, Ability, Item, Trainer, Medal } from "../../data-import/dataModel";
 
 export const pokemon = pokemonData as Pokemon[];
 export const moves = movesData as Move[];
@@ -13,6 +14,7 @@ export const abilities = abilitiesData as Ability[];
 export const items = itemsData as Item[];
 export const trainers = trainersData as Trainer[];
 export const types = typesData as { id: string; name: string }[];
+export const medals = medalsData as Medal[];
 export const meta = metaData as {
   generatedAt: string;
   counts: Record<string, number>;
@@ -27,6 +29,7 @@ export const abilityById = new Map(abilities.map((a) => [a.id, a]));
 export const itemById = new Map(items.map((i) => [i.id, i]));
 export const trainerById = new Map(trainers.map((t) => [t.id, t]));
 export const typeNameById = new Map(types.map((t) => [t.id, t.name]));
+export const medalById = new Map(medals.map((m) => [m.id, m]));
 
 /** URL-safe slug for a PBS internal id or (for trainers) a "TYPE-Name-id" string. */
 export function slugify(id: string): string {

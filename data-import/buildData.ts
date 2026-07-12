@@ -13,6 +13,7 @@ import { parseItems } from "./parseItems.ts";
 import { parseTrainers } from "./parseTrainers.ts";
 import { parseEncounters } from "./parseEncounters.ts";
 import { parseTypes } from "./parseTypes.ts";
+import { parseMedals } from "./parseMedals.ts";
 import type { EncounterRef, Pokemon } from "./dataModel.ts";
 
 const OUT_DIR = join(import.meta.dirname, "..", "src", "data");
@@ -45,7 +46,7 @@ function main() {
   console.log("Lade Übersetzungen...");
   const ctx = loadTranslationContext();
 
-  console.log("Parse Pokémon, Attacken, Fähigkeiten, Items, Trainer, Fundorte...");
+  console.log("Parse Pokémon, Attacken, Fähigkeiten, Items, Trainer, Fundorte, Medaillen...");
   const pokemon = parsePokemon(ctx);
   const moves = parseMoves(ctx);
   const abilities = parseAbilities(ctx);
@@ -53,6 +54,7 @@ function main() {
   const trainers = parseTrainers(ctx);
   const encounters = parseEncounters();
   const types = parseTypes(ctx);
+  const medals = parseMedals();
 
   console.log("Baue Querverweise...");
   const pokemonById = new Map(pokemon.map((p) => [p.id, p]));
@@ -122,6 +124,7 @@ function main() {
   writeJson("trainers", trainers);
   writeJson("encounters", encounters);
   writeJson("types", types);
+  writeJson("medals", medals);
   writeJson("meta", {
     generatedAt: new Date().toISOString(),
     counts: {
@@ -131,6 +134,7 @@ function main() {
       items: items.length,
       trainers: trainers.length,
       locations: encounters.length,
+      medals: medals.length,
     },
     translationFallbacks: {
       pokemonName: pokemon.filter((p) => p.nameFallback).length,
@@ -145,7 +149,7 @@ function main() {
   });
 
   console.log(`Fertig: ${pokemon.length} Pokémon, ${moves.length} Attacken, ${abilities.length} Fähigkeiten, ` +
-    `${items.length} Items, ${trainers.length} Trainer, ${encounters.length} Orte.`);
+    `${items.length} Items, ${trainers.length} Trainer, ${encounters.length} Orte, ${medals.length} Medaillen.`);
 }
 
 main();

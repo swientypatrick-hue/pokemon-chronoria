@@ -1,0 +1,36 @@
+---
+import Layout from "../../layouts/Layout.astro";
+import { medals, slugify, pokemonById } from "../../lib/data";
+import { href } from "../../lib/url";
+import { formatMedalCondition, rarityLabel } from "../../lib/medalConditions";
+
+export function getStaticPaths() {
+  return medals.map((m) => ({ params: { medalId: slugify(m.id) }, props: { m } }));
+}
+
+const { m } = Astro.props;
+const conditionText = m.condition
+  ? formatMedalCondition(m.condition, (id) => pokemonById.get(id)?.name)
+  : null;
+const conditionTarget = m.condition?.type === "Caught" ? pokemonById.get(m.condition.param) : null;
+---
+
+<Layout title={m.name}>
+  <p class="meta-note"><a href={href("/medaillen/")}>← Alle Medaillen</a></p>
+  <h1>{m.name}</h1>
+  {m.icon && <img class="species-sprite medal-sprite" src={href(`/medals/${m.icon}`)} alt="" width="64" height="64" />}
+  <p>{m.description || "–"}</p>
+
+  <table>
+    <tr><th>Bedingung</th><td>{conditionTarget ? <a href={href(`/pokemon/${slugify(conditionTarget.id)}/`)}>{conditionText}</a> : conditionText ?? "–"}</td></tr>
+    <tr><th>Tipp</th><td>{m.tip || "–"}</td></tr>
+    <tr><th>Seltenheit</th><td>{rarityLabel(m.rarity) ?? "Normal"}</td></tr>
+  </table>
+</Layout>
+
+<style>
+  .medal-sprite {
+    margin-left: auto;
+    margin-right: auto;
+  }
+</style>

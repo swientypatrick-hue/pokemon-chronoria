@@ -146,6 +146,22 @@ export interface Item {
   icon: string | null;
 }
 
+export interface MedalCondition {
+  type: string; // e.g. "Caught"
+  param: string; // e.g. "GENESECT" (species id)
+}
+
+export interface Medal {
+  id: string;
+  name: string;
+  /** filename in public/medals/, or null if no matching icon exists */
+  icon: string | null;
+  rarity: string | null; // e.g. "LEGENDARY", or null for the common ones
+  description: string;
+  tip: string;
+  condition: MedalCondition | null;
+}
+
 export interface TrainerPokemon {
   species: string;
   level: number;

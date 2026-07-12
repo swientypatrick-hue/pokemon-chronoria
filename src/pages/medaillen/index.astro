@@ -1,0 +1,48 @@
+---
+import Layout from "../../layouts/Layout.astro";
+import { medals, slugify } from "../../lib/data";
+import { href } from "../../lib/url";
+import { rarityLabel } from "../../lib/medalConditions";
+---
+
+<Layout title="Medaillen">
+  <h1>Medaillen ({medals.length})</h1>
+
+  <input
+    type="search"
+    id="name-search"
+    class="text-input"
+    placeholder="Nach Namen suchen…"
+    aria-label="Medaillen nach Namen durchsuchen"
+  />
+
+  <p class="meta-note" id="result-count"></p>
+
+  <div class="card-grid" id="medal-grid">
+    {medals.map((m) => (
+      <a class="card" href={href(`/medaillen/${slugify(m.id)}/`)} data-name={m.name.toLowerCase()}>
+        {m.icon && <img class="card-sprite" src={href(`/medals/${m.icon}`)} alt="" loading="lazy" width="48" height="48" />}
+        <div class="card-name">{m.name}</div>
+        <div class="meta-note">{rarityLabel(m.rarity) ?? "–"}</div>
+      </a>
+    ))}
+  </div>
+</Layout>
+
+<script>
+  const nameSearch = document.getElementById("name-search") as HTMLInputElement;
+  const resultCount = document.getElementById("result-count")!;
+  const grid = document.getElementById("medal-grid")!;
+  const cards = [...grid.querySelectorAll<HTMLElement>("[data-name]")];
+
+  nameSearch.addEventListener("input", () => {
+    const query = nameSearch.value.trim().toLowerCase();
+    let visible = 0;
+    for (const card of cards) {
+      const show = query === "" || (card.dataset.name ?? "").includes(query);
+      card.style.display = show ? "" : "none";
+      if (show) visible++;
+    }
+    resultCount.textContent = query ? `${visible} Treffer` : "";
+  });
+</script>
