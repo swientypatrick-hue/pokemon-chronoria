@@ -50,8 +50,24 @@ function copySprites(srcDir: string, destDir: string) {
   mkdirSync(destDir, { recursive: true });
   let count = 0;
   const valid = new Set<string>();
+  // Windows is case-insensitive but case-PRESERVING: if the destination already has
+  // "CHARMANDER_FEMALE.png" and the source now has "CHARMANDER_female.png", copyFileSync
+  // just overwrites the existing entry's *content* while silently keeping its old-cased
+  // *name* on disk. The parser's sprite lookups are case-sensitive, so that stale casing
+  // makes the sprite invisible to it - and the exact-match orphan check below would then
+  // wrongly delete it next run (it no longer matches the source's casing either). Building
+  // a case-insensitive map of what's already there lets us delete the stale-cased file
+  // first, so the destination's casing always ends up matching the source exactly.
+  const existingByLowerName = new Map<string, string>();
+  for (const name of readdirSync(destDir)) {
+    existingByLowerName.set(name.toLowerCase(), name);
+  }
   for (const name of readdirSync(srcDir)) {
     if (!/\.png$/i.test(name)) continue;
+    const existing = existingByLowerName.get(name.toLowerCase());
+    if (existing && existing !== name) {
+      unlinkSync(join(destDir, existing));
+    }
     copyFileSync(join(srcDir, name), join(destDir, name));
     valid.add(name);
     count++;
