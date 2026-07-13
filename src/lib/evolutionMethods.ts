@@ -72,11 +72,13 @@ export function formatEvolutionCondition(
   param: string,
   itemName: (id: string) => string | undefined,
   moveName?: (id: string) => string | undefined,
-  typeName?: (id: string) => string | undefined
+  typeName?: (id: string) => string | undefined,
+  speciesName?: (id: string) => string | undefined
 ): string {
   const label = evolutionMethodLabel(method);
   if (!param) return label;
-  if (method === "LevelUseMoveCount") return `${label}: ${moveName?.(param) ?? param}`;
+  if (method === "LevelUseMoveCount" || method === "HasMove") return `${label}: ${moveName?.(param) ?? param}`;
+  if (method === "HasInParty") return `${label}: ${speciesName?.(param) ?? param}`;
   if (method === "HappinessMoveType") return `${label} (${typeName?.(param) ?? param})`;
   if (method.startsWith("Item") || method === "TradeItem" || ITEM_PARAM_METHODS.has(method)) {
     return `${label}: ${itemName(param) ?? param}`;

@@ -152,7 +152,7 @@ const locationsByPlace = Object.groupBy
         return (
           <li>
             <a href={target.url}>{target.label}</a>
-            {" — "}{formatEvolutionCondition(evo.method, evo.param, itemName, moveName, typeName)}
+            {" — "}{formatEvolutionCondition(evo.method, evo.param, itemName, moveName, typeName, speciesName)}
           </li>
         );
       })}

@@ -164,7 +164,7 @@ const hasWildItems = genderViews.some((v) => v.wildItems.length > 0);
         {p.evolutions.map((evo: any) => (
           <li>
             <a href={href(`/pokemon/${slugify(evo.target)}/`)}>{speciesName(evo.target)}</a>
-            {" — "}{formatEvolutionCondition(evo.method, evo.param, itemName, moveName, typeName)}
+            {" — "}{formatEvolutionCondition(evo.method, evo.param, itemName, moveName, typeName, speciesName)}
           </li>
         ))}
       </ul>
