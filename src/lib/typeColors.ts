@@ -37,14 +37,11 @@ export function mixColor(hex: string, amount: number): string {
   return `rgb(${r},${g},${b})`;
 }
 
-/** Picks readable ink for a badge from its own perceived brightness, rather than forcing white
- *  everywhere and faking contrast with a text-stroke - that trick looked "dirty" on light hues
- *  (ELECTRIC, NORMAL, FLYING). Dark ink on pale badges, white ink on saturated/dark ones. */
-export function textColorFor(hex: string): string {
-  const n = parseInt(hex.slice(1), 16);
-  const r = (n >> 16) & 255;
-  const g = (n >> 8) & 255;
-  const b = n & 255;
-  const luminance = 0.299 * r + 0.587 * g + 0.114 * b;
-  return luminance > 160 ? "#2b2418" : "#ffffff";
+/** Only these three types are pale enough that white text (even with a shadow) looked bad -
+ *  everything else keeps white ink. Chosen by hand rather than a brightness threshold, since the
+ *  threshold also flagged FLYING/ROCK/FAIRY/ICE, which should stay white. */
+const DARK_TEXT_TYPES = new Set(["ELECTRIC", "NORMAL", "STEEL"]);
+
+export function textColorFor(type: string): string {
+  return DARK_TEXT_TYPES.has(type) ? "#2b2418" : "#ffffff";
 }
