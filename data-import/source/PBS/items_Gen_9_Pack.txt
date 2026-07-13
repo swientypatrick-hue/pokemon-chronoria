@@ -80,86 +80,86 @@ SellPrice = 0
 Flags = Fling_60
 Description = Gib das Item Giratina zum tragen, damit es seine Urform annimmt.
 #-------------------------------
-[HISUIANPOKEBALL]
-Name = Poké Ball
-NamePlural = Poké Balls
-Pocket = 3
-Price = 500
-BattleUse = OnFoe
-Flags = PokeBall
-Description = A mysterious ball that can be thrown at wild Pokémon in order to catch them.
-#-------------------------------
-[HISUIANGREATBALL]
-Name = Great Ball
-NamePlural = Great Balls
-Pocket = 3
-Price = 900
-BattleUse = OnFoe
-Flags = PokeBall
-Description = A mysterious ball that provides a higher success catch rate than a standard Poké Ball.
-#-------------------------------
-[HISUIANULTRABALL]
-Name = Ultra Ball
-NamePlural = Ultra Balls
-Pocket = 3
-Price = 1500
-BattleUse = OnFoe
-Flags = PokeBall
-Description = A mysterious ball that provides an even higher success catch rate than a Great Ball does.
-#-------------------------------
-[FEATHERBALL]
-Name = Federball
-NamePlural = Federbälle
-Pocket = 3
-Price = 700
-BattleUse = OnFoe
-Flags = PokeBall
-Description = Erhöhte Fangrate bei hoch fliegenden Pokémon.
-#-------------------------------
-[WINGBALL]
-Name = Flügelball
-NamePlural = Flügelbälle
-Pocket = 3
-Price = 1000
-BattleUse = OnFoe
-Flags = PokeBall
-Description = Eine verbesserte Version des Federballs mit einer höheren Fangrate.
-#-------------------------------
-[JETBALL]
-Name = Düsenball
-NamePlural = Düsenbälle
-Pocket = 3
-Price = 1500
-BattleUse = OnFoe
-Flags = PokeBall
-Description = Die beste Version des Federballs mit einer noch höheren Fangrate als der Flügelball.
-#-------------------------------
-[HISUIANHEAVYBALL]
-Name = Heavy Ball
-NamePlural = Heavy Balls
-Pocket = 3
-Price = 700
-BattleUse = OnFoe
-Flags = PokeBall
-Description = A ball that is too heavy to throw, but it is highly effective to an unsuspecting Pokémon.
-#-------------------------------
-[LEADENBALL]
-Name = Zentnerball
-NamePlural = Zentnerbälle
-Pocket = 3
-Price = 1000
-BattleUse = OnFoe
-Flags = PokeBall
-Description = Eine verbesserte Version des Schwerballs mit einer höheren Fangrate.
-#-------------------------------
-[GIGATONBALL]
-Name = Tonnenball
-NamePlural = Tonnenbälle
-Pocket = 3
-Price = 1500
-BattleUse = OnFoe
-Flags = PokeBall
-Description = Die beste Version des Schwerballs mit einer noch höheren Fangrate als der Zentnerball.
+#[HISUIANPOKEBALL]
+#Name = Poké Ball
+#NamePlural = Poké Balls
+#Pocket = 3
+#Price = 500
+#BattleUse = OnFoe
+#Flags = PokeBall
+#Description = A mysterious ball that can be thrown at wild Pokémon in order to catch them.
+##-------------------------------
+#[HISUIANGREATBALL]
+#Name = Great Ball
+#NamePlural = Great Balls
+#Pocket = 3
+#Price = 900
+#BattleUse = OnFoe
+#Flags = PokeBall
+#Description = A mysterious ball that provides a higher success catch rate than a standard Poké Ball.
+##-------------------------------
+#[HISUIANULTRABALL]
+#Name = Ultra Ball
+#NamePlural = Ultra Balls
+#Pocket = 3
+#Price = 1500
+#BattleUse = OnFoe
+#Flags = PokeBall
+#Description = A mysterious ball that provides an even higher success catch rate than a Great Ball does.
+##-------------------------------
+#[FEATHERBALL]
+#Name = Federball
+#NamePlural = Federbälle
+#Pocket = 3
+#Price = 700
+#BattleUse = OnFoe
+#Flags = PokeBall
+#Description = Erhöhte Fangrate bei hoch fliegenden Pokémon.
+##-------------------------------
+#[WINGBALL]
+#Name = Flügelball
+#NamePlural = Flügelbälle
+#Pocket = 3
+#Price = 1000
+#BattleUse = OnFoe
+#Flags = PokeBall
+#Description = Eine verbesserte Version des Federballs mit einer höheren Fangrate.
+##-------------------------------
+#[JETBALL]
+#Name = Düsenball
+#NamePlural = Düsenbälle
+#Pocket = 3
+#Price = 1500
+#BattleUse = OnFoe
+#Flags = PokeBall
+#Description = Die beste Version des Federballs mit einer noch höheren Fangrate als der Flügelball.
+##-------------------------------
+#[HISUIANHEAVYBALL]
+#Name = Heavy Ball
+#NamePlural = Heavy Balls
+#Pocket = 3
+#Price = 700
+#BattleUse = OnFoe
+#Flags = PokeBall
+#Description = A ball that is too heavy to throw, but it is highly effective to an unsuspecting Pokémon.
+##-------------------------------
+#[LEADENBALL]
+#Name = Zentnerball
+#NamePlural = Zentnerbälle
+#Pocket = 3
+#Price = 1000
+#BattleUse = OnFoe
+#Flags = PokeBall
+#Description = Eine verbesserte Version des Schwerballs mit einer höheren Fangrate.
+##-------------------------------
+#[GIGATONBALL]
+#Name = Tonnenball
+#NamePlural = Tonnenbälle
+#Pocket = 3
+#Price = 1500
+#BattleUse = OnFoe
+#Flags = PokeBall
+#Description = Die beste Version des Schwerballs mit einer noch höheren Fangrate als der Zentnerball.
 #-------------------------------
 [ORIGINBALL]
 Name = Urball
@@ -291,7 +291,7 @@ NamePlural = Gierspenst-Münzen
 Pocket = 1
 Price = 0
 Flags = Fling_10
-Description = An item that accidentally dropped by a Pokémon. It seems that Gimmighoul treasure and hoard these.
+Description = Es werden einige benötigt, um Gierspenst zu Monetigo zu entwickeln. 
 #-------------------------------
 [TINYBAMBOOSHOOT]
 Name = Minibambusspross
@@ -302,99 +302,99 @@ Flags = Fling_30
 Description = Für manche von hohem Wert.
 #-------------------------------
 [BIGBAMBOOSHOOT]
-Name = Big Bamboo Shoot
-NamePlural = Big Bamboo Shoots
+Name = Riesenbambusspross
+NamePlural = Riesenbambussprossen
 Pocket = 1
 Price = 6000
 Flags = Fling_30
 Description = Für manche von hohem Wert.
 #-------------------------------
-[ROTOMPHONE]
-Name = Rotom Phone
-NamePlural = Rotom Phones
-Pocket = 8
-Price = 0
-Flags = KeyItem
-Description = The latest model of smartphone. A Rotom lives within it, and it can be used to run all sorts of handy apps.
+#[ROTOMPHONE]
+#Name = Rotom Phone
+#NamePlural = Rotom Phones
+#Pocket = 8
+#Price = 0
+#Flags = KeyItem
+#Description = The latest model of smartphone. A Rotom lives within it, and it can be used to run all sorts of handy apps.
 #-------------------------------
-[SCARLETBOOK]
-Name = Scarlet Book
-NamePlural = Scarlet Books
-Pocket = 8
-Price = 0
-Flags = KeyItem
-Description = A record of the Heath's expedition on the Great Crater of Paldea. It has the name "Sada" written on it.
-#-------------------------------
-[VIOLETBOOK]
-Name = Violet Book
-NamePlural = Violet Books
-Pocket = 8
-Price = 0
-Flags = KeyItem
-Description = A record of the Heath's expedition on the Great Crater of Paldea. It has the name "Turo" written on it.
+#[SCARLETBOOK]
+#Name = Scarlet Book
+#NamePlural = Scarlet Books
+#Pocket = 8
+#Price = 0
+#Flags = KeyItem
+#Description = A record of the Heath's expedition on the Great Crater of Paldea. It has the name "Sada" written on it.
+##-------------------------------
+#[VIOLETBOOK]
+#Name = Violet Book
+#NamePlural = Violet Books
+#Pocket = 8
+#Price = 0
+#Flags = KeyItem
+#Description = A record of the Heath's expedition on the Great Crater of Paldea. It has the name "Turo" written on it.
 #-------------------------------
 [HEALTHMOCHI]
-Name = Health Mochi
+Name = Heil-Mochi
 NamePlural = Health Mochi
 Pocket = 2
 Price = 250
 FieldUse = OnPokemon
 Flags = Fling_20
-Description = A mochi cake with Berries kneaded into its dough. It increases base points for a Pokémon's HP stat.
+Description = Der Heil-Mochi erhöht die LP-Basispunkte eines Pokémon um 10. 
 #-------------------------------
 [MUSCLEMOCHI]
-Name = Muscle Mochi
+Name = Kraft-Mochi
 NamePlural = Muscle Mochi
 Pocket = 2
 Price = 250
 FieldUse = OnPokemon
 Flags = Fling_20
-Description = A mochi cake with Berries kneaded into its dough. It increases base points for a Pokémon's Attack stat.
+Description = Der Kraft-Mochi erhöht die Angriffs-Basispunkte eines Pokémon um 10. 
 #-------------------------------
 [RESISTMOCHI]
-Name = Resist Mochi
+Name = Abwehr-Mochi
 NamePlural = Resist Mochi
 Pocket = 2
 Price = 250
 FieldUse = OnPokemon
 Flags = Fling_20
-Description = A mochi cake with Berries kneaded into its dough. It increases base points for a Pokémon's Defense stat.
+Description = Der Abwehr-Mochi erhöht die Verteidigungs-Basispunkte eines Pokémon um 10. 
 #-------------------------------
 [GENIUSMOCHI]
-Name = Genius Mochi
+Name = Genie-Mochi
 NamePlural = Genius Mochi
 Pocket = 2
 Price = 250
 FieldUse = OnPokemon
 Flags = Fling_20
-Description = A mochi cake with Berries kneaded into its dough. It increases base points for a Pokémon's Sp. Atk stat.
+Description = Der Genie-Mochi erhöht die Spezial-Angriffs-Basispunkte eines Pokémon um 10. 
 #-------------------------------
 [CLEVERMOCHI]
-Name = Clever Mochi
+Name = Esprit-Mochi
 NamePlural = Clever Mochi
 Pocket = 2
 Price = 250
 FieldUse = OnPokemon
 Flags = Fling_20
-Description = A mochi cake with Berries kneaded into its dough. It increases base points for a Pokémon's Sp. Def stat.
+Description = Der Esprit-Mochi erhöht die Spezial-Verteidigungs-Basispunkte eines Pokémon um 10. 
 #-------------------------------
 [SWIFTMOCHI]
-Name = Swift Mochi
+Name = Flink-Mochi
 NamePlural = Swift Mochi
 Pocket = 2
 Price = 250
 FieldUse = OnPokemon
 Flags = Fling_20
-Description = A mochi cake with Berries kneaded into its dough. It increases base points for a Pokémon's Speed stat.
+Description = Der Flink-Mochi erhöht die Initiative-Basispunkte eines Pokémon um 10. 
 #-------------------------------
 [FRESHSTARTMOCHI]
-Name = Fresh-Start Mochi
+Name = Neuanfangs-Mochi
 NamePlural = Fresh-Start Mochi
 Pocket = 2
 Price = 250
 FieldUse = OnPokemon
 Flags = Fling_20
-Description = A mochi cake with Berries kneaded into its dough. It causes a Pokémon to lose all its base points.
+Description = Der Neuanfangs-Mochi setzt alle Basispunkte eines Pokémon zurück. 
 #-------------------------------
 [FAIRYFEATHER]
 Name = Feendaune
@@ -473,8 +473,6 @@ Description = A teal mask patterned after the face of an ogre. Dropped by Ogerpo
 [METALALLOY]
 Name = Legierungsmetall
 NamePlural = Legierungsmetalle
-PortionName = hunk of Metal Alloy
-PortionNamePlural = hunks of Metal Alloy
 Pocket = 1
 Price = 3000
 SellPrice = 1500
@@ -484,45 +482,45 @@ Flags = EvolutionStone,Fling_30
 Description = Das Item ermöglicht es dir Duraludon zu entwickeln.
 #-------------------------------
 [INDIGODISK]
-Name = Indigo Disk
-NamePlural = Indigo Disks
+Name = Indigoblaue Scheibe
+NamePlural = Indigoblaue Scheiben
 Pocket = 8
 Price = 0
 Flags = KeyItem
-Description = A mysterious disk with an indigo shine to it, given by the Top Champion. It seems to be tied to Area Zero.
+Description = Eine mysteriöse Scheibe, die dir Zugang zu Zone Null verschafft.
 #-------------------------------
 [MYTHICALPECHABERRY]
-Name = Mythical Pecha Berry
-NamePlural = Mythical Pecha Berries
+Name = Mysteriöse Pirsifbeere
+NamePlural = Mysteriöse Pirsifbeeren
 Pocket = 8
 Price = 0
 Flags = KeyItem
-Description = A Pecha Berry of the highest quality. It's one of every a few years berry that carefully tended by an expert.
+Description = Löst ein bestimmtes Event aus.
 #-------------------------------
 [SYNCHROMACHINE]
-Name = Synchro Machine
-NamePlural = Synchro Machines
+Name = Synchromaschine
+NamePlural = Synchromaschinen
 Pocket = 8
 Price = 0
 Flags = KeyItem
-Description = A device that synchronizes your mind and feelings with your Pokémon's as one. It's still a prototype—hence.
+Description = Synchronisiert Traumwelt und echte Welt.
 #-------------------------------
 [METEORITE]
-Name = Meteorite
-NamePlural = Meteorites
+Name = Meteorit
+NamePlural = Meteoriten
 Pocket = 8
 Price = 0
 FieldUse = OnPokemon
 Flags = KeyItem
-Description = A rock that fell to earth from space. It allows a certain species of Pokémon to change forms.
+Description = Damit lässt sich Deoxys Form ändern.
 #-------------------------------
-[BRIARSBOOK]
-Name = Briar's Book
-NamePlural = Briar's Books
-Pocket = 8
-Price = 0
-Flags = KeyItem
-Description = A proof copy of the exploration notes, along with Briar's thoughts covering the Area Zero Underdepths.
+#[BRIARSBOOK]
+#Name = Briar's Book
+#NamePlural = Briar's Books
+#Pocket = 8
+#Price = 0
+#Flags = KeyItem
+#Description = A proof copy of the exploration notes, along with Briar's thoughts covering the Area Zero Underdepths.
 #-------------------------------
 [CLEFABLITE]
 Name = Pixinit
@@ -777,131 +775,11 @@ Flags = MegaStone,Fling_80
 Description = Dieser Stein ermöglicht Legios eine Mega-Entwicklung.
 #-------------------------------
 [MEGASHARD]
-Name = Mega Shard
-NamePlural = Mega Shards
+Name = Mega Splitter
+NamePlural = Mega Splitter
 Pocket = 1
 Price = 0
-Description = A mysterious shard found by smashing Mega Crystals. It seems that some people collect these shards.
-#-------------------------------
-[REDCANARIPLUSHLV1]
-Name = Red Canari Plush
-NamePlural = Red Canari Plushies
-Pocket = 8
-Price = 0
-Flags = KeyItem
-Description = A Canari plush holding a red charm. It slightly boosts the Exp. Points that Pokémon can get.
-#-------------------------------
-[REDCANARIPLUSHLV2]
-Name = Red Canari Plush
-NamePlural = Red Canari Plushies
-Pocket = 8
-Price = 0
-Flags = KeyItem
-Description = A Canari plush holding a red charm. It boosts the Exp. Points that Pokémon can get.
-#-------------------------------
-[REDCANARIPLUSHLV3]
-Name = Red Canari Plush
-NamePlural = Red Canari Plushies
-Pocket = 8
-Price = 0
-Flags = KeyItem
-Description = A Canari plush holding a red charm. It greatly boosts the Exp. Points that Pokémon can get.
-#-------------------------------
-[GOLDCANARIPLUSHLV1]
-Name = Gold Canari Plush
-NamePlural = Gold Canari Plushies
-Pocket = 8
-Price = 0
-Flags = KeyItem
-Description = A Canari plush holding a gold charm. It slightly increases the battle's prize money you get.
-#-------------------------------
-[GOLDCANARIPLUSHLV2]
-Name = Gold Canari Plush
-NamePlural = Gold Canari Plushies
-Pocket = 8
-Price = 0
-Flags = KeyItem
-Description = A Canari plush holding a gold charm. It increases the battle's prize money you get.
-#-------------------------------
-[GOLDCANARIPLUSHLV3]
-Name = Gold Canari Plush
-NamePlural = Gold Canari Plushies
-Pocket = 8
-Price = 0
-Flags = KeyItem
-Description = A Canari plush holding a gold charm. It greatly increases the battle's prize money you get.
-#-------------------------------
-[PINKCANARIPLUSHLV1]
-Name = Pink Canari Plush
-NamePlural = Pink Canari Plushies
-Pocket = 8
-Price = 0
-Flags = KeyItem
-Description = A Canari plush holding a pink charm. It slightly increases the number of Mega Shards you get.
-#-------------------------------
-[PINKCANARIPLUSHLV2]
-Name = Pink Canari Plush
-NamePlural = Pink Canari Plushies
-Pocket = 8
-Price = 0
-Flags = KeyItem
-Description = A Canari plush holding a pink charm. It increases the number of Mega Shards you get.
-#-------------------------------
-[PINKCANARIPLUSHLV3]
-Name = Pink Canari Plush
-NamePlural = Pink Canari Plushies
-Pocket = 8
-Price = 0
-Flags = KeyItem
-Description = A Canari plush holding a pink charm. It greatly increases the number of Mega Shards you get.
-#-------------------------------
-[GREENCANARIPLUSHLV1]
-Name = Green Canari Plush
-NamePlural = Green Canari Plushies
-Pocket = 8
-Price = 0
-Flags = KeyItem
-Description = A Canari plush holding a green charm. It makes you a little less likely to black out from taking damage.
-#-------------------------------
-[GREENCANARIPLUSHLV2]
-Name = Green Canari Plush
-NamePlural = Green Canari Plushies
-Pocket = 8
-Price = 0
-Flags = KeyItem
-Description = A Canari plush holding a green charm. It makes you a less likely to black out from taking damage.
-#-------------------------------
-[GREENCANARIPLUSHLV3]
-Name = Green Canari Plush
-NamePlural = Green Canari Plushies
-Pocket = 8
-Price = 0
-Flags = KeyItem
-Description = A Canari plush holding a green charm. It makes you a lot less likely to black out from taking damage.
-#-------------------------------
-[BLUECANARIPLUSHLV1]
-Name = Blue Canari Plush
-NamePlural = Blue Canari Plushies
-Pocket = 8
-Price = 0
-Flags = KeyItem
-Description = A Canari plush holding a blue charm. It slightly boosts your chance of catching Pokémon.
-#-------------------------------
-[BLUECANARIPLUSHLV2]
-Name = Blue Canari Plush
-NamePlural = Blue Canari Plushies
-Pocket = 8
-Price = 0
-Flags = KeyItem
-Description = A Canari plush holding a blue charm. It boosts your chance of catching Pokémon.
-#-------------------------------
-[BLUECANARIPLUSHLV3]
-Name = Blue Canari Plush
-NamePlural = Blue Canari Plushies
-Pocket = 8
-Price = 0
-Flags = KeyItem
-Description = A Canari plush holding a blue charm. It greatly boosts your chance of catching Pokémon.
+Description = Für manche von hohem Wert.
 #-------------------------------
 [HEATRANITE]
 Name = Heatranit
@@ -1300,367 +1178,346 @@ Flags = MegaStone,Fling_80
 Description = Dieser Stein ermöglicht Montecarbo eine Mega-Entwicklung.
 #-------------------------------
 [HYPERCHERIBERRY]
-Name = Hyper Cheri Berry
-NamePlural = Hyper Cheri Berries
+Name = Dimensions-Amrenabeere
+NamePlural = Dimensions-Amrenabeeren
 Pocket = 5
 Price = 0
 Flags = Berry
-Description = A mysterious Berry found in Hyperspace Lumiose. Its spicy kick is great when added to curries.
+Description = Kann für bestimmte Rezepte verwendet werden.
 #-------------------------------
 [HYPERCHESTOBERRY]
-Name = Hyper Chesto Berry
-NamePlural = Hyper Chesto Berries
+Name = Dimensions-Maronbeere
+NamePlural = Dimensions-Maronbeeren
 Pocket = 5
 Price = 0
 Flags = Berry
-Description = A mysterious Berry found in Hyperspace Lumiose. Its dry flavor offers a good balance in sweet cream.
+Description = Kann für bestimmte Rezepte verwendet werden.
 #-------------------------------
 [HYPERPECHABERRY]
-Name = Hyper Pecha Berry
-NamePlural = Hyper Pecha Berries
+Name = Dimensions-Pirsifbeere
+NamePlural = Dimensions-Pirsifbeeren
 Pocket = 5
 Price = 0
 Flags = Berry
-Description = A mysterious Berry found in Hyperspace Lumiose. Its sweet flavor makes it a great ingredient for meringue.
+Description = Kann für bestimmte Rezepte verwendet werden.
 #-------------------------------
 [HYPERRAWSTBERRY]
-Name = Hyper Rawst Berry
-NamePlural = Hyper Rawst Berries
+Name = Dimensions-Fragiabeere
+NamePlural = Dimensions-Fragiabeeren
 Pocket = 5
 Price = 0
 Flags = Berry
-Description = A mysterious Berry found in Hyperspace Lumiose. Its bitter bite works beautifully in chocolate.
+Description = Kann für bestimmte Rezepte verwendet werden.
 #-------------------------------
 [HYPERASPEARBERRY]
-Name = Hyper Aspear Berry
-NamePlural = Hyper Aspear Berries
+Name = Dimensions-Wilbirbeere
+NamePlural = Dimensions-Wilbirbeeren
 Pocket = 5
 Price = 0
 Flags = Berry
-Description = A mysterious Berry found in Hyperspace Lumiose. Its sour bite makes it perfect for stewing into a confiture.
+Description = Kann für bestimmte Rezepte verwendet werden.
 #-------------------------------
 [HYPERORANBERRY]
-Name = Hyper Oran Berry
-NamePlural = Hyper Oran Berries
+Name = Dimensions-Sinelbeere
+NamePlural = Dimensions-Sinelbeeren
 Pocket = 5
 Price = 0
 Flags = Berry
-Description = A mysterious Berry found in Hyperspace Lumiose. It goes well in curries, meringue, chocolate, and confitures.
+Description = Kann für bestimmte Rezepte verwendet werden.
 #-------------------------------
 [HYPERPERSIMBERRY]
-Name = Hyper Persim Berry
-NamePlural = Hyper Persim Berries
+Name = Dimensions-Persimbeere
+NamePlural = Dimensions-Persimbeeren
 Pocket = 5
 Price = 0
 Flags = Berry
-Description = A mysterious Berry found in Hyperspace Lumiose. It goes well in curries, cream, chocolate, and confitures.
+Description = Kann für bestimmte Rezepte verwendet werden.
 #-------------------------------
 [HYPERLUMBERRY]
-Name = Hyper Lum Berry
-NamePlural = Hyper Lum Berries
+Name = Dimensions-Prunusbeere
+NamePlural = Dimensions-Prunusbeeren
 Pocket = 5
 Price = 0
 Flags = Berry
-Description = A mysterious Berry found in Hyperspace Lumiose. It goes well in curries, cream, meringue, and confitures.
+Description = Kann für bestimmte Rezepte verwendet werden.
 #-------------------------------
 [HYPERSITRUSBERRY]
-Name = Hyper Sitrus Berry
-NamePlural = Hyper Sitrus Berries
+Name = Dimensions-Tsitrubeere
+NamePlural = Dimensions-Tsitrubeeren
 Pocket = 5
 Price = 0
 Flags = Berry
-Description = A mysterious Berry found in Hyperspace Lumiose. It goes well in curries, cream, meringue, and chocolate.
+Description = Kann für bestimmte Rezepte verwendet werden.
 #-------------------------------
 [HYPERPOMEGBERRY]
-Name = Hyper Pomeg Berry
-NamePlural = Hyper Pomeg Berries
+Name = Dimensions-Granabeere
+NamePlural = Dimensions-Granabeeren
 Pocket = 5
 Price = 0
 Flags = Berry
-Description = A mysterious Berry found in Hyperspace Lumiose. It goes well in curries and meringue.
+Description = Kann für bestimmte Rezepte verwendet werden.
 #-------------------------------
 [HYPERKELPSYBERRY]
-Name = Hyper Kelpsy Berry
-NamePlural = Hyper Kelpsy Berries
+Name = Dimensions-Setangbeere
+NamePlural = Dimensions-Setangbeeren
 Pocket = 5
 Price = 0
 Flags = Berry
-Description = A mysterious Berry found in Hyperspace Lumiose. It goes well in cream and chocolate.
+Description = Kann für bestimmte Rezepte verwendet werden.
 #-------------------------------
 [HYPERQUALOTBERRY]
-Name = Hyper Qualot Berry
-NamePlural = Hyper Qualot Berries
+Name = Dimensions-Qualotbeere
+NamePlural = Dimensions-Qualotbeeren
 Pocket = 5
 Price = 0
 Flags = Berry
-Description = A mysterious Berry found in Hyperspace Lumiose. It goes well in meringue and confitures.
+Description = Kann für bestimmte Rezepte verwendet werden.
 #-------------------------------
 [HYPERHONDEWBERRY]
-Name = Hyper Hondew Berry
-NamePlural = Hyper Hondew Berries
+Name = Dimensions-Honmelbeere
+NamePlural = Dimensions-Honmelbeeren
 Pocket = 5
 Price = 0
 Flags = Berry
-Description = A mysterious Berry found in Hyperspace Lumiose. It goes well in cream and confitures.
+Description = Kann für bestimmte Rezepte verwendet werden.
 #-------------------------------
 [HYPERGREPABERRY]
-Name = Hyper Grepa Berry
-NamePlural = Hyper Grepa Berries
+Name = Dimensions-Labrusbeere
+NamePlural = Dimensions-Labrusbeeren
 Pocket = 5
 Price = 0
 Flags = Berry
-Description = A mysterious Berry found in Hyperspace Lumiose. It goes well in curries.
+Description = Kann für bestimmte Rezepte verwendet werden.
 #-------------------------------
 [HYPERTAMATOBERRY]
-Name = Hyper Tamato Berry
-NamePlural = Hyper Tamato Berries
+Name = Dimensions-Tamotbeere
+NamePlural = Dimensions-Tamotbeeren
 Pocket = 5
 Price = 0
 Flags = Berry
-Description = A mysterious Berry found in Hyperspace Lumiose. It goes well in cream.
+Description = Kann für bestimmte Rezepte verwendet werden.
 #-------------------------------
 [HYPEROCCABERRY]
-Name = Hyper Occa Berry
-NamePlural = Hyper Occa Berries
+Name = Dimensions-Koakobeere
+NamePlural = Dimensions-Koakobeeren
 Pocket = 5
 Price = 0
 Flags = Berry
-Description = A mysterious Berry found in Hyperspace Lumiose. It goes well in meringue.
+Description = Kann für bestimmte Rezepte verwendet werden.
 #-------------------------------
 [HYPERPASSHOBERRY]
-Name = Hyper Passho Berry
-NamePlural = Hyper Passho Berries
+Name = Dimensions-Foepasbeere
+NamePlural = Dimensions-Foepasbeeren
 Pocket = 5
 Price = 0
 Flags = Berry
-Description = A mysterious Berry found in Hyperspace Lumiose. It goes well in chocolate.
+Description = Kann für bestimmte Rezepte verwendet werden.
 #-------------------------------
 [HYPERWACANBERRY]
-Name = Hyper Wacan Berry
-NamePlural = Hyper Wacan Berries
+Name = Dimensions-Kerzalbeere
+NamePlural = Dimensions-Kerzalbeeren
 Pocket = 5
 Price = 0
 Flags = Berry
-Description = A mysterious Berry found in Hyperspace Lumiose. It goes well in confitures.
+Description = Kann für bestimmte Rezepte verwendet werden.
 #-------------------------------
 [HYPERRINDOBERRY]
-Name = Hyper Rindo Berry
-NamePlural = Hyper Rindo Berries
+Name = Dimensions-Grindobeere
+NamePlural = Dimensions-Grindobeeren
 Pocket = 5
 Price = 0
 Flags = Berry
-Description = A mysterious Berry found in Hyperspace Lumiose. It goes well in curries.
+Description = Kann für bestimmte Rezepte verwendet werden.
 #-------------------------------
 [HYPERYACHEBERRY]
-Name = Hyper Yache Berry
-NamePlural = Hyper Yache Berries
+Name = Dimensions-Kiroyabeere
+NamePlural = Dimensions-Kiroyabeeren
 Pocket = 5
 Price = 0
 Flags = Berry
-Description = A mysterious Berry found in Hyperspace Lumiose. It goes well in cream.
+Description = Kann für bestimmte Rezepte verwendet werden.
 #-------------------------------
 [HYPERCHOPLEBERRY]
-Name = Hyper Chople Berry
-NamePlural = Hyper Chople Berries
+Name = Dimensions-Rospelbeere
+NamePlural = Dimensions-Rospelbeeren
 Pocket = 5
 Price = 0
 Flags = Berry
-Description = A mysterious Berry found in Hyperspace Lumiose. It goes well in meringue.
+Description = Kann für bestimmte Rezepte verwendet werden.
 #-------------------------------
 [HYPERKEBIABERRY]
-Name = Hyper Kebia Berry
-NamePlural = Hyper Kebia Berries
+Name = Dimensions-Grarzbeere
+NamePlural = Dimensions-Grarzbeeren
 Pocket = 5
 Price = 0
 Flags = Berry
-Description = A mysterious Berry found in Hyperspace Lumiose. It goes well in chocolate.
+Description = Kann für bestimmte Rezepte verwendet werden.
 #-------------------------------
 [HYPERSHUCABERRY]
-Name = Hyper Shuca Berry
-NamePlural = Hyper Shuca Berries
+Name = Dimensions-Schukebeere
+NamePlural = Dimensions-Schukebeeren
 Pocket = 5
 Price = 0
 Flags = Berry
-Description = A mysterious Berry found in Hyperspace Lumiose. It goes well in confitures.
+Description = Kann für bestimmte Rezepte verwendet werden.
 #-------------------------------
 [HYPERCOBABERRY]
-Name = Hyper Coba Berry
-NamePlural = Hyper Coba Berries
+Name = Dimensions-Kobabeere
+NamePlural = Dimensions-Kobabeeren
 Pocket = 5
 Price = 0
 Flags = Berry
-Description = A mysterious Berry found in Hyperspace Lumiose. It goes well in curries.
+Description = Kann für bestimmte Rezepte verwendet werden.
 #-------------------------------
 [HYPERPAYAPABERRY]
-Name = Hyper Payapa Berry
-NamePlural = Hyper Payapa Berries
+Name = Dimensions-Pyapabeere
+NamePlural = Dimensions-Pyapabeeren
 Pocket = 5
 Price = 0
 Flags = Berry
-Description = A mysterious Berry found in Hyperspace Lumiose. It goes well in cream.
+Description = Kann für bestimmte Rezepte verwendet werden.
 #-------------------------------
 [HYPERTANGABERRY]
-Name = Hyper Tanga Berry
-NamePlural = Hyper Tanga Berries
+Name = Dimensions-Tanigabeere
+NamePlural = Dimensions-Tanigabeeren
 Pocket = 5
 Price = 0
 Flags = Berry
-Description = A mysterious Berry found in Hyperspace Lumiose. It goes well in meringue.
+Description = Kann für bestimmte Rezepte verwendet werden.
 #-------------------------------
 [HYPERCHARTIBERRY]
-Name = Hyper Charti Berry
-NamePlural = Hyper Charti Berries
+Name = Dimensions-Chiaribeere
+NamePlural = Dimensions-Chiaribeeren
 Pocket = 5
 Price = 0
 Flags = Berry
-Description = A mysterious Berry found in Hyperspace Lumiose. It goes well in chocolate.
+Description = Kann für bestimmte Rezepte verwendet werden.
 #-------------------------------
 [HYPERKASIBBERRY]
-Name = Hyper Kasib Berry
-NamePlural = Hyper Kasib Berries
+Name = Dimensions-Zitarzbeere
+NamePlural = Dimensions-Zitarzbeeren
 Pocket = 5
 Price = 0
 Flags = Berry
-Description = A mysterious Berry found in Hyperspace Lumiose. It goes well in confitures.
+Description = Kann für bestimmte Rezepte verwendet werden.
 #-------------------------------
 [HYPERHABANBERRY]
-Name = Hyper Haban Berry
-NamePlural = Hyper Haban Berries
+Name = Dimensions-Terirobeere
+NamePlural = Dimensions-Terirobeeren
 Pocket = 5
 Price = 0
 Flags = Berry
-Description = A mysterious Berry found in Hyperspace Lumiose. It goes well in cream and meringue.
+Description = Kann für bestimmte Rezepte verwendet werden.
 #-------------------------------
 [HYPERCOLBURBERRY]
-Name = Hyper Colbur Berry
-NamePlural = Hyper Colbur Berries
+Name = Dimensions-Burleobeere
+NamePlural = Dimensions-Burleobeeren
 Pocket = 5
 Price = 0
 Flags = Berry
-Description = A mysterious Berry found in Hyperspace Lumiose. It goes well in cream and confitures.
+Description = Kann für bestimmte Rezepte verwendet werden.
 #-------------------------------
 [HYPERBABIRIBERRY]
-Name = Hyper Babiri Berry
-NamePlural = Hyper Babiri Berries
+Name = Dimensions-Babiribeere
+NamePlural = Dimensions-Babiribeeren
 Pocket = 5
 Price = 0
 Flags = Berry
-Description = A mysterious Berry found in Hyperspace Lumiose. It goes well in chocolate and confitures.
+Description = Kann für bestimmte Rezepte verwendet werden.
 #-------------------------------
 [HYPERCHILANBERRY]
-Name = Hyper Chilan Berry
-NamePlural = Hyper Chilan Berries
+Name = Dimensions-Chilanbeere
+NamePlural = Dimensions-Chilanbeeren
 Pocket = 5
 Price = 0
 Flags = Berry
-Description = A mysterious Berry found in Hyperspace Lumiose. It goes well in curries and chocolate.
+Description = Kann für bestimmte Rezepte verwendet werden.
 #-------------------------------
 [HYPERROSELIBERRY]
-Name = Hyper Roseli Berry
-NamePlural = Hyper Roseli Berries
+Name = Dimensions-Hibisbeere
+NamePlural = Dimensions-Hibisbeeren
 Pocket = 5
 Price = 0
 Flags = Berry
-Description = A mysterious Berry found in Hyperspace Lumiose. It goes well in curries and confitures.
+Description = Kann für bestimmte Rezepte verwendet werden.
 #-------------------------------
 [CANARIBREAD]
-Name = Canari Bread
-NamePlural = Canari Breads
-Pocket = 2
+Name = Canary-Brot
+NamePlural = Canary-Brote
+Pocket = 5
 Price = 0
 FieldUse = OnPokemon
 BattleUse = OnPokemon
 Flags = Fling_30
-Description = A bun made to look like Canari's face. It can be used to restore 100 HP to a Pokémon.
+Description = Das Canary-Brot füllt die KP eines Pokémon um 100 Punkte auf oder nutze es für Rezepte.
 #-------------------------------
 [LUMIOSIANBUTTER]
-Name = Lumiosian Butter
-NamePlural = Lumiosian Butters
-PortionName = pack of Lumiosian Butter
-PortionNamePlural = packs of Lumiosian Butter
-Pocket = 8
+Name = Illumina-Butter
+NamePlural = Illumina-Butter
+Pocket = 5
 Price = 0
-Flags = KeyItem
-Description = Some of the best butter produced in the Kalos region. Highly sought after by the cooks of Lumiose.
+Description = Kann für bestimmte Rezepte verwendet werden.
 #-------------------------------
 [NICEBUTTER]
-Name = Nice Butter
-NamePlural = Nice Butters
-PortionName = pack of Nice Butter
-PortionNamePlural = packs of Nice Butter
-Pocket = 8
+Name = Superbutter
+NamePlural = Superbutter
+Pocket = 5
 Price = 0
-Flags = KeyItem
-Description = A nice pack of butter found in Hyperspace Lumiose. With it, you could make higher quality donuts.
+Description = Kann für bestimmte Rezepte verwendet werden.
 #-------------------------------
 [GREATBUTTER]
-Name = Great Butter
-NamePlural = Great Butters
-PortionName = pack of Great Butter
-PortionNamePlural = packs of Great Butter
-Pocket = 8
+Name = Hyperbutter
+NamePlural = Hyperbutter
+Pocket = 5
 Price = 0
-Flags = KeyItem
-Description = A great pack of butter found in Hyperspace Lumiose. With it, you could make higher quality donuts.
+Description = Kann für bestimmte Rezepte verwendet werden.
 #-------------------------------
 [AMAZINGBUTTER]
-Name = Amazing Butter
-NamePlural = Amazing Butters
-PortionName = pack of Amazing Butter
-PortionNamePlural = packs of Amazing Butter
-Pocket = 8
+Name = Ultrabutter
+NamePlural = Ultrabutter
+Pocket = 5
 Price = 0
-Flags = KeyItem
-Description = An amazing pack of butter found in Hyperspace Lumiose. With it, you could make higher quality donuts.
+Description = Kann für bestimmte Rezepte verwendet werden.
 #-------------------------------
 [SUPREMEBUTTER]
-Name = Supreme Butter
-NamePlural = Supreme Butters
-PortionName = pack of Supreme Butter
-PortionNamePlural = packs of Supreme Butter
-Pocket = 8
+Name = Meisterbutter
+NamePlural = Meisterbutter
+Pocket = 5
 Price = 0
-Flags = KeyItem
-Description = A supreme pack of butter found in Hyperspace Lumiose. With it, you could make higher quality donuts.
+Description = Kann für bestimmte Rezepte verwendet werden.
 #-------------------------------
 [HYPERSPACEBUTTER]
-Name = Hyperspace Butter
-NamePlural = Hyperspace Butters
-PortionName = pack of Hyperspace Butter
-PortionNamePlural = packs of Hyperspace Butter
-Pocket = 8
+Name = Dimensionsbutter
+NamePlural = Dimensionsbutter
+Pocket = 5
 Price = 0
-Flags = KeyItem
-Description = The absolute ultimate butter found in Hyperspace Lumiose. With it, you could make higher quality donuts.
+Description = Kann für bestimmte Rezepte verwendet werden.
 #-------------------------------
 [HOENNIANSALT]
-Name = Hoennian Salt
-NamePlural = Hoennian Salts
-Pocket = 8
+Name = Hoenn-Steinsalz
+NamePlural = Hoenn-Steinsalz
+Pocket = 5
 Price = 0
-Flags = KeyItem
-Description = A coarse salt harvested in the Hoenn region. A tiny pinch will impart a wondrous depth of flavor.
+Description = Kann für bestimmte Rezepte verwendet werden.
 #-------------------------------
 [EPICENOIRE]
-Name = Épice Noire
-NamePlural = Épice Noires
-Pocket = 8
+Name = Dunkelwürze
+NamePlural = Dunkelwürze
+Pocket = 5
 Price = 0
-Flags = KeyItem
-Description = A mysterious, highly prized spice of the Rust Syndicate that elevates any dish to dreamlike perfection.
+Description = Kann für bestimmte Rezepte verwendet werden.
 #-------------------------------
 [ARBOLIVAOIL]
 Name = Arboliva Oil
 NamePlural = Arboliva Oils
 Pocket = 8
 Price = 0
-Flags = KeyItem
-Description = Oil from Paldea's Arboliva, said to taste heavenly. How Corbeau obtained it remains a mystery.
+Description = Kann für bestimmte Rezepte verwendet werden.
 #-------------------------------
 [GACHATICKET]
 Name = Gacha Ticket
 NamePlural = Gacha Ticket
 Pocket = 1
-Price = 1000
+Price = 10000
 Flags = Fling_30
-Description = Ein seltsames Ticket.
+Description = Versuche dein Glück und ergattere wertvolle Preise.
