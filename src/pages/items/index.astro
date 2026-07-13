@@ -4,7 +4,15 @@ import { items, slugify, moveById } from "../../lib/data";
 import { href } from "../../lib/url";
 import { pocketName } from "../../lib/itemPockets";
 
-const sortedItems = [...items].sort((a, b) => a.name.localeCompare(b.name, "de"));
+// TM ids aren't zero-padded past TM99 ("TM100"), so plain string sort puts TM100 before TM11
+// (lexicographic "1","0","0" < "1","1") - sort TMs by their numeric suffix instead so the pocket
+// tab shows a clean TM1...TM231 order; every other item keeps the existing alphabetical sort.
+const sortedItems = [...items].sort((a, b) => {
+  if (a.move && b.move) {
+    return parseInt(a.id.replace(/^TM/, ""), 10) - parseInt(b.id.replace(/^TM/, ""), 10);
+  }
+  return a.name.localeCompare(b.name, "de");
+});
 const pockets = [...new Set(items.map((i) => i.pocket).filter((p): p is number => p !== null))].sort((a, b) => a - b);
 ---
 
