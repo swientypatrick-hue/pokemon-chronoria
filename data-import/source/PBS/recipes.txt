@@ -122,62 +122,62 @@ Ingredients=GREATBUTTER,2,ARBOLIVAOIL,1
 Item=XACCURACY6
 Ingredients=AMAZINGBUTTER,1,HYPERPERSIMBERRY,1
 
-[Protein-Donut]
+[ProteinDonut]
 Item=PROTEIN
 Ingredients=AMAZINGBUTTER,2,CHERIBERRY,2,HOENNIANSALT,1
 
-[Eisen-Donut]
+[EisenDonut]
 Item=IRON
 Ingredients=AMAZINGBUTTER,2,ASPEARBERRY,2,HOENNIANSALT,1
 
-[Kalzium-Donut]
+[KalziumDonut]
 Item=CALCIUM
 Ingredients=AMAZINGBUTTER,2,CHESTOBERRY,2,EPICENOIRE,1
 
-[Zink-Donut]
+[ZinkDonut]
 Item=ZINC
 Ingredients=AMAZINGBUTTER,2,RAWSTBERRY,2,EPICENOIRE,1
 
-[Karbon-Donut]
+[KarbonDonut]
 Item=CARBOS
 Ingredients=AMAZINGBUTTER,2,PECHABERRY,2,ARBOLIVAOIL,1
 
-[LP-PLUS-Donut]
+[LPPLUSDonut]
 Item=HPUP
 Ingredients=AMAZINGBUTTER,2,SITRUSBERRY,3
 
-[EP-Bonbon XS]
+[EPBonbonXS]
 Item=EXPCANDYXS
 Ingredients=TINYBAMBOOSHOOT,2
 
-[EP-Bonbon S]
+[EPBonbonS]
 Item=EXPCANDYS
 Ingredients=TINYBAMBOOSHOOT,2,NICEBUTTER,1
 
-[EP-Bonbon M]
+[EPBonbonM]
 Item=EXPCANDYM
 Ingredients=BIGBAMBOOSHOOT,2,GREATBUTTER,1
 
-[EP-Bonbon L]
+[EPBonbonL]
 Item=EXPCANDYL
 Ingredients=BIGBAMBOOSHOOT,1,SUPREMEBUTTER,1
 
-[EP-Bonbon XL]
+[EPBonbonXL]
 Item=EXPCANDYXL
 Ingredients=BIGBAMBOOSHOOT,1,HYPERSPACEBUTTER,1,LUMIOSIANBUTTER,1
 
-[AP-Plus-Donut]
+[APPlusDonut]
 Item=PPUP
 Ingredients=SUPREMEBUTTER,2,EPICENOIRE,1,ARBOLIVAOIL,1
 
-[AP-Top-Donut]
+[APTopDonut]
 Item=PPMAX
 Ingredients=HYPERSPACEBUTTER,1,SUPREMEBUTTER,2
 
-[Nugget-Ration]
+[NuggetRation]
 Item=NUGGET
 Ingredients=GIMMIGHOULCOIN,20
 
-[Riesennugget-Ration]
+[RiesennuggetRation]
 Item=BIGNUGGET
 Ingredients=GIMMIGHOULCOIN,100

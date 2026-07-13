@@ -8020,7 +8020,7 @@ Description = Ein Geschenk einer Oma an ihr Enkelkind, welches in Lunafeld wohnt
 [GARDEVOIRITE2]
 Name = Guardevoirnit 2
 NamePlural = Guardevoirnite 2
-Pocket = 1
+Pocket = 6
 Price = 10000
 BPPrice = 50
 Flags = MegaStone,Fling_80
@@ -8029,7 +8029,7 @@ Description = Dieser Stein ermöglicht Guardevoir eine Mega-Entwicklung.
 [GALLADITE2]
 Name = Galagladinit 2
 NamePlural = Galagladinit 2
-Pocket = 1
+Pocket = 6
 Price = 10000
 BPPrice = 50
 Flags = MegaStone,Fling_80
@@ -8038,7 +8038,7 @@ Description = Dieser Stein ermöglicht Galagladi eine Mega-Entwicklung.
 [DUDUNSPARCEDITEA]
 Name = Dummimiselnit-A
 NamePlural = Dummimiselniten-A
-Pocket = 1
+Pocket = 6
 Price = 10000
 BPPrice = 50
 Flags = MegaStone,Fling_80
@@ -8047,7 +8047,7 @@ Description = Dieser Stein ermöglicht Dummimisel eine Mega-Entwicklung.
 [DUDUNSPARCEDITEB]
 Name = Dummimiselnit-B
 NamePlural = Dummimiselniten-B
-Pocket = 1
+Pocket = 6
 Price = 10000
 BPPrice = 50
 Flags = MegaStone,Fling_80
@@ -8168,7 +8168,7 @@ Description = Eine Schlüsselkarte für eine unbekannte Tür.
 [SNORLAXITE]
 Name = Relaxonit
 NamePlural = Relaxonite
-Pocket = 1
+Pocket = 6
 Price = 10000
 BPPrice = 50
 Flags = MegaStone,Fling_80
@@ -8177,7 +8177,7 @@ Description = Dieser Stein ermöglicht Relaxo eine Mega-Entwicklung.
 [MELMETALNITE]
 Name = Melmetalnit
 NamePlural = Melmetalnite
-Pocket = 1
+Pocket = 6
 Price = 10000
 BPPrice = 50
 Flags = MegaStone,Fling_80
