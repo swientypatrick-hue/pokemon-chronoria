@@ -4,7 +4,7 @@ import TypeBadge from "../../../components/TypeBadge.astro";
 import StatBar from "../../../components/StatBar.astro";
 import { pokemon, pokemonById, moveById, abilityById, itemById, slugify, pokemonDexNumber, typeNameById } from "../../../lib/data";
 import { encounterMethodLabel } from "../../../lib/encounterMethods";
-import { formatEvolutionCondition } from "../../../lib/evolutionMethods";
+import { formatEvolutionCondition, evolutionMethodLabel } from "../../../lib/evolutionMethods";
 import { eggGroupLabel } from "../../../lib/eggGroups";
 import { wildItemRows } from "../../../lib/wildItems";
 import { href } from "../../../lib/url";
@@ -152,7 +152,12 @@ const locationsByPlace = Object.groupBy
         return (
           <li>
             <a href={target.url}>{target.label}</a>
-            {" — "}{formatEvolutionCondition(evo.method, evo.param, itemName, moveName, typeName, speciesName)}
+            {" — "}
+            {evo.method === "HasInParty" ? (
+              <>{evolutionMethodLabel(evo.method)}: <a href={href(`/pokemon/${slugify(evo.param)}/`)}>{speciesName(evo.param)}</a></>
+            ) : (
+              formatEvolutionCondition(evo.method, evo.param, itemName, moveName, typeName, speciesName)
+            )}
           </li>
         );
       })}

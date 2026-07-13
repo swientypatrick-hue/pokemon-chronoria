@@ -3,7 +3,7 @@ import Layout from "../../../layouts/Layout.astro";
 import TypeBadge from "../../../components/TypeBadge.astro";
 import StatBar from "../../../components/StatBar.astro";
 import { pokemon, pokemonById, moveById, abilityById, itemById, slugify, pokemonDexNumber, typeNameById } from "../../../lib/data";
-import { formatEvolutionCondition } from "../../../lib/evolutionMethods";
+import { formatEvolutionCondition, evolutionMethodLabel } from "../../../lib/evolutionMethods";
 import { encounterMethodLabel } from "../../../lib/encounterMethods";
 import { eggGroupLabel } from "../../../lib/eggGroups";
 import { wildItemRows } from "../../../lib/wildItems";
@@ -72,10 +72,18 @@ const genderViews = [
 const hasTutorMoves = genderViews.some((v) => v.data.tutorMoves.length > 0);
 const hasEggMoves = genderViews.some((v) => v.data.eggMoves.length > 0);
 const hasWildItems = genderViews.some((v) => v.wildItems.length > 0);
+
+const dexIndex = pokemonDexNumber.get(p.id)! - 1;
+const prevPokemon = pokemon[(dexIndex - 1 + pokemon.length) % pokemon.length];
+const nextPokemon = pokemon[(dexIndex + 1) % pokemon.length];
 ---
 
 <Layout title={p.name}>
   <div class="detail-hero">
+    <div class="dex-nav">
+      <a href={href(`/pokemon/${slugify(prevPokemon.id)}/`)}>← #{String(pokemonDexNumber.get(prevPokemon.id)).padStart(3, "0")} {prevPokemon.name}</a>
+      <a href={href(`/pokemon/${slugify(nextPokemon.id)}/`)}>#{String(pokemonDexNumber.get(nextPokemon.id)).padStart(3, "0")} {nextPokemon.name} →</a>
+    </div>
     <p class="meta-note"><a href={href("/pokemon/")}>← Alle Pokémon</a></p>
     <h1><span class="dex-number">#{String(pokemonDexNumber.get(p.id)).padStart(3, "0")}</span> {p.name}</h1>
     {(p.sprite || p.femaleSprite) && (
@@ -164,7 +172,12 @@ const hasWildItems = genderViews.some((v) => v.wildItems.length > 0);
         {p.evolutions.map((evo: any) => (
           <li>
             <a href={href(`/pokemon/${slugify(evo.target)}/`)}>{speciesName(evo.target)}</a>
-            {" — "}{formatEvolutionCondition(evo.method, evo.param, itemName, moveName, typeName, speciesName)}
+            {" — "}
+            {evo.method === "HasInParty" ? (
+              <>{evolutionMethodLabel(evo.method)}: <a href={href(`/pokemon/${slugify(evo.param)}/`)}>{speciesName(evo.param)}</a></>
+            ) : (
+              formatEvolutionCondition(evo.method, evo.param, itemName, moveName, typeName, speciesName)
+            )}
           </li>
         ))}
       </ul>

@@ -248,6 +248,22 @@ h2 {
   text-align: center;
 }
 
+.dex-nav {
+  display: flex;
+  justify-content: space-between;
+  align-self: stretch;
+  gap: 1rem;
+  font-size: 0.9rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+.dex-nav a {
+  color: var(--text-muted);
+}
+.dex-nav a:hover {
+  color: var(--text);
+}
+
 .sprite-pair {
   display: flex;
   flex-wrap: wrap;

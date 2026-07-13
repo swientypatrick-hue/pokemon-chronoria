@@ -2,8 +2,10 @@
 import Layout from "../../layouts/Layout.astro";
 import { items, slugify } from "../../lib/data";
 import { href } from "../../lib/url";
+import { pocketName } from "../../lib/itemPockets";
 
 const sortedItems = [...items].sort((a, b) => a.name.localeCompare(b.name, "de"));
+const pockets = [...new Set(items.map((i) => i.pocket).filter((p): p is number => p !== null))].sort((a, b) => a - b);
 ---
 
 <Layout title="Items">
@@ -17,11 +19,17 @@ const sortedItems = [...items].sort((a, b) => a.name.localeCompare(b.name, "de")
     aria-label="Items nach Namen durchsuchen"
   />
 
+  <div class="filter-bar" id="pocket-filter">
+    {pockets.map((p, i) => (
+      <a href="#" data-pocket={String(p)} aria-current={i === 0 ? "true" : undefined}>{pocketName(p)}</a>
+    ))}
+  </div>
+
   <p class="meta-note" id="result-count"></p>
 
   <div class="card-grid" id="item-grid">
     {sortedItems.map((i) => (
-      <a class="card" href={href(`/items/${slugify(i.id)}/`)} data-name={i.name.toLowerCase()}>
+      <a class="card" href={href(`/items/${slugify(i.id)}/`)} data-name={i.name.toLowerCase()} data-pocket={i.pocket !== null ? String(i.pocket) : ""}>
         {i.icon && <img class="card-sprite" src={href(`/item-icons/${i.icon}`)} alt="" loading="lazy" width="48" height="48" />}
         <div class="card-name">{i.name}</div>
         <div class="meta-note">{i.price !== null ? `${i.price} ₽` : "nicht käuflich"}</div>
@@ -32,18 +40,37 @@ const sortedItems = [...items].sort((a, b) => a.name.localeCompare(b.name, "de")
 
 <script>
   const nameSearch = document.getElementById("name-search") as HTMLInputElement;
+  const filterBar = document.getElementById("pocket-filter")!;
   const resultCount = document.getElementById("result-count")!;
   const grid = document.getElementById("item-grid")!;
   const cards = [...grid.querySelectorAll<HTMLElement>("[data-name]")];
 
-  nameSearch.addEventListener("input", () => {
+  let activePocket = filterBar.querySelector("a")?.getAttribute("data-pocket") ?? "1";
+
+  function applyFilters() {
     const query = nameSearch.value.trim().toLowerCase();
     let visible = 0;
     for (const card of cards) {
-      const show = query === "" || (card.dataset.name ?? "").includes(query);
+      const matchesPocket = card.dataset.pocket === activePocket;
+      const matchesName = query === "" || (card.dataset.name ?? "").includes(query);
+      const show = matchesPocket && matchesName;
       card.style.display = show ? "" : "none";
       if (show) visible++;
     }
-    resultCount.textContent = query ? `${visible} Treffer` : "";
+    resultCount.textContent = `${visible} Item${visible === 1 ? "" : "s"}`;
+  }
+
+  filterBar.addEventListener("click", (e) => {
+    const link = (e.target as HTMLElement).closest("a[data-pocket]");
+    if (!link) return;
+    e.preventDefault();
+    activePocket = link.getAttribute("data-pocket")!;
+
+    for (const a of filterBar.querySelectorAll("a")) a.removeAttribute("aria-current");
+    link.setAttribute("aria-current", "true");
+    applyFilters();
   });
+
+  nameSearch.addEventListener("input", applyFilters);
+  applyFilters();
 </script>
