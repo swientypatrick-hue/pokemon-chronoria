@@ -146,6 +146,8 @@ export interface Item {
   flags: string[];
   /** filename in public/item-icons/, or null if no matching icon exists */
   icon: string | null;
+  /** move id this TM/HM teaches, or null for items that don't teach a move */
+  move: string | null;
 }
 
 export interface MedalCondition {

@@ -43,6 +43,7 @@ function blockToItem(block: PbsBlock, ctx: TranslationContext, icons: Map<string
     fieldUse: r.FieldUse ?? null,
     flags: splitList(r.Flags),
     icon: icons.get(id) ?? null,
+    move: r.Move ?? null,
   };
 }
 

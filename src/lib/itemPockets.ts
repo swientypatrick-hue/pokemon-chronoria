@@ -6,7 +6,7 @@ const POCKET_NAMES: Record<number, string> = {
   1: "Items",
   2: "Medizin",
   3: "Pokébälle",
-  4: "TMs & HMs",
+  4: "TMs",
   5: "Beeren",
   6: "Mega-Steine",
   7: "Kampf-Items",

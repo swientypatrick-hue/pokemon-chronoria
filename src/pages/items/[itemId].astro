@@ -1,6 +1,6 @@
 ---
 import Layout from "../../layouts/Layout.astro";
-import { items, slugify } from "../../lib/data";
+import { items, slugify, moveById } from "../../lib/data";
 import { pocketName } from "../../lib/itemPockets";
 import { href } from "../../lib/url";
 
@@ -9,15 +9,17 @@ export function getStaticPaths() {
 }
 
 const { i } = Astro.props;
+const displayName = i.move ? (moveById.get(i.move)?.name ?? i.name) : i.name;
 ---
 
-<Layout title={i.name}>
+<Layout title={displayName}>
   <p class="meta-note"><a href={href("/items/")}>← Alle Items</a></p>
-  <h1>{i.name}</h1>
+  <h1>{displayName}</h1>
   {i.icon && <img class="species-sprite" src={href(`/item-icons/${i.icon}`)} alt="" width="64" height="64" />}
   <p>{i.description || "–"}</p>
 
   <table>
+    {i.move && <tr><th>Name</th><td>{i.name}</td></tr>}
     <tr><th>Preis</th><td>{i.price !== null ? `${i.price} ₽` : "nicht käuflich"}</td></tr>
     <tr><th>Tasche</th><td>{pocketName(i.pocket)}</td></tr>
   </table>
