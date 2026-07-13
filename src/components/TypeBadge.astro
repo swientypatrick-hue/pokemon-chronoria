@@ -1,5 +1,6 @@
 ---
-import { typeColor } from "../lib/typeColors";
+import { typeColor, mixColor } from "../lib/typeColors";
+import { typeIcon } from "../lib/typeIcons";
 import { typeNameById } from "../lib/data";
 
 interface Props {
@@ -7,6 +8,11 @@ interface Props {
 }
 const { type } = Astro.props;
 const name = typeNameById.get(type) ?? type;
+const color = typeColor(type);
+const style = `background:linear-gradient(155deg, ${mixColor(color, 25)}, ${mixColor(color, -35)}); box-shadow: 0 4px 14px -3px ${color}99, inset 0 1px 0 rgba(255,255,255,0.14);`;
 ---
 
-<span class="badge badge-type" style={`background:${typeColor(type)}`}>{name}</span>
+<span class="badge badge-type" style={style}>
+  <svg class="badge-type-icon" viewBox="0 0 14 14" aria-hidden="true" set:html={typeIcon(type)} />
+  {name}
+</span>

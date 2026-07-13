@@ -25,3 +25,14 @@ export const TYPE_COLORS: Record<string, string> = {
 export function typeColor(type: string): string {
   return TYPE_COLORS[type] ?? "#68A090";
 }
+
+/** Shifts a hex color's RGB channels by `amount` (positive lightens, negative darkens),
+ *  clamped to 0-255 - used to build the diagonal glass-badge gradient from a single base color. */
+export function mixColor(hex: string, amount: number): string {
+  const n = parseInt(hex.slice(1), 16);
+  const clamp = (c: number) => Math.min(255, Math.max(0, c + amount));
+  const r = clamp((n >> 16) & 255);
+  const g = clamp((n >> 8) & 255);
+  const b = clamp(n & 255);
+  return `rgb(${r},${g},${b})`;
+}
