@@ -3082,15 +3082,6 @@ BPPrice = 50
 Flags = MegaStone,Fling_80
 Description = Dieser Stein ermöglicht Panferno eine Mega-Entwicklung.
 #-------------------------------
-[TYPHLOSIONITE]
-Name = Tornuptonit
-NamePlural = Tornuptonite
-Pocket = 6
-Price = 10000
-BPPrice = 50
-Flags = MegaStone,Fling_80
-Description = Dieser Stein ermöglicht Tornupto eine Mega-Entwicklung.
-#-------------------------------
 [REDORB]
 Name = Red Orb
 NamePlural = Red Orbs
