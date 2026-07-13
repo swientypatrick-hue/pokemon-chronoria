@@ -43,11 +43,31 @@ function parseLevelMoves(value: string | undefined): LevelMove[] {
   return moves;
 }
 
+// Methods the Essentials evolution schema registers with no :parameter key, so their PBS triple
+// is only ever "target,method" (2 tokens), not "target,method,param" (3). Evolutions is a flat
+// comma list of these variable-width groups back to back - treating every group as fixed-width 3
+// misaligns everything after the first zero-param entry, e.g. Eevee's
+// "...,ESPEON,HappinessDay,UMBREON,HappinessNight" would otherwise read "UMBREON" as HappinessDay's
+// param and drop the Umbreon evolution entirely.
+const ZERO_PARAM_EVOLUTION_METHODS = new Set([
+  "None", "Happiness", "HappinessMale", "HappinessFemale", "HappinessDay", "HappinessNight",
+  "MaxHappiness", "Trade", "TradeMale", "TradeFemale", "TradeDay", "TradeNight",
+]);
+
 function parseEvolutions(value: string | undefined): Evolution[] {
   const parts = splitList(value);
   const evolutions: Evolution[] = [];
-  for (let i = 0; i + 2 < parts.length; i += 3) {
-    evolutions.push({ target: parts[i], method: parts[i + 1] ?? "", param: parts[i + 2] ?? "" });
+  let i = 0;
+  while (i + 1 < parts.length) {
+    const target = parts[i];
+    const method = parts[i + 1];
+    if (ZERO_PARAM_EVOLUTION_METHODS.has(method)) {
+      evolutions.push({ target, method, param: "" });
+      i += 2;
+    } else {
+      evolutions.push({ target, method, param: parts[i + 2] ?? "" });
+      i += 3;
+    }
   }
   return evolutions;
 }

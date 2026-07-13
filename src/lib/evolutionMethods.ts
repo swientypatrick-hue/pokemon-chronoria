@@ -60,6 +60,15 @@ export function evolutionMethodLabel(method: string): string {
   return METHOD_LABELS[method] ?? method;
 }
 
+/** LocationFlag's param is an internal map-flag code, not an item/move/species id, so there's
+ *  no existing translated name anywhere in the PBS data to look up (unlike the other methods
+ *  below) - has to be its own small hand-written dictionary. */
+const LOCATION_FLAG_LABELS: Record<string, string> = {
+  Magnetic: "in der Nähe eines Magnetfelds",
+  MossRock: "in der Nähe eines bemoosten Felsens",
+  IceRock: "in der Nähe eines vereisten Felsens",
+};
+
 /** Renders a short human description of an evolution's method + param, e.g. "Level 16" or
  *  "mit Item (Wasserstein)". itemName/moveName/typeName resolve the param to a display name
  *  for methods whose param is that kind of ID. */
@@ -80,6 +89,7 @@ export function formatEvolutionCondition(
   if (method === "LevelUseMoveCount" || method === "HasMove") return `${label}: ${moveName?.(param) ?? param}`;
   if (method === "HasInParty") return `${label}: ${speciesName?.(param) ?? param}`;
   if (method === "HappinessMoveType") return `${label} (${typeName?.(param) ?? param})`;
+  if (method === "LocationFlag") return LOCATION_FLAG_LABELS[param] ?? `${label} (${param})`;
   if (method.startsWith("Item") || method === "TradeItem" || ITEM_PARAM_METHODS.has(method)) {
     return `${label}: ${itemName(param) ?? param}`;
   }
