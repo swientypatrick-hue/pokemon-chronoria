@@ -272,7 +272,7 @@ NamePlural = Rote Aprikokos
 Pocket = 1
 Price = 100
 Flags = Apricorn
-Description = A red Apricorn. It assails your nostrils.
+Description = Zum herstellen besonderer Pokébälle.
 #-------------------------------
 [YELLOWAPRICORN]
 Name = Gelbe Aprikoko
@@ -280,7 +280,7 @@ NamePlural = Gelbe Aprikokos
 Pocket = 1
 Price = 100
 Flags = Apricorn
-Description = A yellow Apricorn. It has an invigorating scent.
+Description = Zum herstellen besonderer Pokébälle.
 #-------------------------------
 [BLUEAPRICORN]
 Name = Blaue Aprikoko
@@ -288,7 +288,7 @@ NamePlural = Blaue Aprikokos
 Pocket = 1
 Price = 100
 Flags = Apricorn
-Description = A blue Apricorn. It smells a bit like grass.
+Description = Zum herstellen besonderer Pokébälle.
 #-------------------------------
 [GREENAPRICORN]
 Name = Grüne Aprikoko
@@ -296,7 +296,7 @@ NamePlural = Grüne Aprikokos
 Pocket = 1
 Price = 100
 Flags = Apricorn
-Description = A green Apricorn. It has a mysterious, aromatic scent.
+Description = Zum herstellen besonderer Pokébälle.
 #-------------------------------
 [PINKAPRICORN]
 Name = Pinke Aprikoko
@@ -304,7 +304,7 @@ NamePlural = Pinke Aprikokos
 Pocket = 1
 Price = 100
 Flags = Apricorn
-Description = A pink Apricorn. It has a nice, sweet scent.
+Description = Zum herstellen besonderer Pokébälle.
 #-------------------------------
 [WHITEAPRICORN]
 Name = Weiße Aprikoko
@@ -312,7 +312,7 @@ NamePlural = Weiße Aprikokos
 Pocket = 1
 Price = 100
 Flags = Apricorn
-Description = A white Apricorn. It doesn't smell like anything.
+Description = Zum herstellen besonderer Pokébälle.
 #-------------------------------
 [BLACKAPRICORN]
 Name = Schwarze Aprikoko
@@ -320,7 +320,7 @@ NamePlural = Schwarze Aprikokos
 Pocket = 1
 Price = 100
 Flags = Apricorn
-Description = A black Apricorn. It has an indescribable scent.
+Description = Zum herstellen besonderer Pokébälle.
 #-------------------------------
 [HELIXFOSSIL]
 Name = Helixfossil
@@ -635,53 +635,21 @@ Price = 200
 Flags = Mulch,Fling_30
 Description = A fertilizer to be spread on soft soil in regions where Berries are grown. A maniac will buy it for a high price.
 #-------------------------------
-[DAMPMULCH]
-Name = Damp Mulch
-NamePlural = Damp Mulch
-PortionName = bag of Damp Mulch
-PortionNamePlural = bags of Damp Mulch
-Pocket = 1
-Price = 200
-Flags = Mulch,Fling_30
-Description = A fertilizer to be spread on soft soil in regions where Berries are grown. A maniac will buy it for a high price.
-#-------------------------------
-[STABLEMULCH]
-Name = Stable Mulch
-NamePlural = Stable Mulch
-PortionName = bag of Stable Mulch
-PortionNamePlural = bags of Stable Mulch
-Pocket = 1
-Price = 200
-Flags = Mulch,Fling_30
-Description = A fertilizer to be spread on soft soil in regions where Berries are grown. A maniac will buy it for a high price.
-#-------------------------------
-[GOOEYMULCH]
-Name = Gooey Mulch
-NamePlural = Gooey Mulch
-PortionName = bag of Gooey Mulch
-PortionNamePlural = bags of Gooey Mulch
-Pocket = 1
-Price = 200
-Flags = Mulch,Fling_30
-Description = A fertilizer to be spread on soft soil in regions where Berries are grown. A maniac will buy it for a high price.
-#-------------------------------
 [SHOALSALT]
-Name = Shoal Salt
-NamePlural = Shoal Salts
-PortionName = pile of Shoal Salt
-PortionNamePlural = piles of Shoal Salt
+Name = Küstensalz
+NamePlural = Küstensalz
 Pocket = 1
 Price = 20
 Flags = Fling_30
-Description = Pure salt that can be discovered deep inside the Shoal Cave. A maniac will buy it for a high price.
+Description = Dafür erhält man sicherlich einen guten Preis.
 #-------------------------------
 [SHOALSHELL]
-Name = Shoal Shell
-NamePlural = Shoal Shells
+Name = Küstenschale
+NamePlural = Küstenschalen
 Pocket = 1
 Price = 20
 Flags = Fling_30
-Description = A pretty seashell that can be found deep inside the Shoal Cave. A maniac will buy it for a high price.
+Description = Dafür erhält man sicherlich einen guten Preis.
 #-------------------------------
 [ODDKEYSTONE]
 Name = Spiritkern
@@ -694,8 +662,6 @@ Description = Manchmal erscheinen Stimmen aus dem Spiritkern.
 [REDNECTAR]
 Name = Roter Nektar
 NamePlural = Roter Nektar
-PortionName = Glas mit rotem Nektar
-PortionNamePlural = Gläser mit rotem Nektar
 Pocket = 1
 Price = 300
 SellPrice = 75
@@ -706,8 +672,6 @@ Description = Wird der Rote Nektar auf ein Choreogel angewandt, so ändert sich 
 [YELLOWNECTAR]
 Name = Gelber Nektar
 NamePlural = Gelber Nektar
-PortionName = Glas mit gelbem Nektar
-PortionNamePlural = Gläser mit gelbem Nektar
 Pocket = 1
 Price = 300
 SellPrice = 75
@@ -718,8 +682,6 @@ Description = Wird der gelbe Nektar auf ein Choreogel angewandt so, ändert sich
 [PINKNECTAR]
 Name = Rosa Nektar
 NamePlural = Rosa Nektar
-PortionName = Glas mit rosanem Nektar
-PortionNamePlural = Gläser mit rosanem Nektar
 Pocket = 1
 Price = 300
 SellPrice = 75
@@ -730,8 +692,6 @@ Description = Wird der rosa Nektar auf ein Choreogel angewandt, so ändert sich 
 [PURPLENECTAR]
 Name = Purpurner Nektar
 NamePlural = Purpurner Nektar
-PortionName = Glas mit purpurnem Nektar
-PortionNamePlural = Gläser mit purpurnem Nektar
 Pocket = 1
 Price = 300
 SellPrice = 75
@@ -752,8 +712,6 @@ Description = Träger ist immun gegen Bodenattacken sowie Stachler, Klebenetz un
 [BRIGHTPOWDER]
 Name = Blendpuder
 NamePlural = Blendpuder
-PortionName = Beutel mit Blendpuder
-PortionNamePlural = Beutel mit Blendpuder
 Pocket = 1
 Price = 30000
 SellPrice = 7500
@@ -763,7 +721,7 @@ Description = Senkt die Genauigkeit aller Attacken, die den Träger zum Ziel hab
 #-------------------------------
 [EVIOLITE]
 Name = Evolith
-NamePlural = Evolithen
+NamePlural = Evolithe
 Pocket = 1
 Price = 50000
 SellPrice = 12500
@@ -813,7 +771,7 @@ Description = Erhöht die Sp. Verteidugung um 50% verhindert aber den Einsatz vo
 #-------------------------------
 [SAFETYGOGGLES]
 Name = Schutzbrille
-NamePlural = Schutzbrille
+NamePlural = Schutzbrillen
 Pocket = 1
 Price = 20000
 SellPrice = 5000
@@ -824,8 +782,6 @@ Description = Schützt den Träger vor wetterbedingtem Schaden. Zusätzlich ist 
 [PROTECTIVEPADS]
 Name = Schutzpolster
 NamePlural = Schutzpolster
-PortionName = Satz Schutzpolster
-PortionNamePlural = Satz Schutzpolster
 Pocket = 1
 Price = 15000
 SellPrice = 3750
@@ -836,8 +792,6 @@ Description = Schützt vor allen Effekten, die durch Kontakt hervorgerufen werde
 [HEAVYDUTYBOOTS]
 Name = Plateauschuhe
 NamePlural = Plateauschuhe
-PortionName = Paar Plateauschuhe
-PortionNamePlural = Paare Plateauschuhe
 Pocket = 1
 Price = 20000
 SellPrice = 5000
@@ -930,14 +884,6 @@ FieldUse = Direct
 Flags = KeyItem
 Description = Der EP-Teiler ist ausgeschaltet.
 #-------------------------------
-[EXPSHARE]
-Name = Exp. Share
-NamePlural = Exp. Shares
-Pocket = 1
-Price = 3000
-Flags = Fling_30
-Description = An item to be held by a Pokémon. The holder gets a share of a battle's Exp. Points without battling.
-#-------------------------------
 [AMULETCOIN]
 Name = Münzamulett
 NamePlural = Münzamulette
@@ -954,7 +900,7 @@ Price = 5000
 SellPrice = 1250
 BPPrice = 15
 Flags = Fling_10
-Description = 
+Description = Beim Tragen erhöht sich die Freundschaft eines Pokémon um 50 % schneller. 
 #-------------------------------
 [CLEANSETAG]
 Name = Schutzsticker
@@ -1047,8 +993,6 @@ Description = Verlängert die Wirkung von Feld-Attacken und Feld-Fähigkeiten.
 [LIGHTCLAY]
 Name = Lichtlehm
 NamePlural = Lichtlehm
-PortionName = Klumpen Lichtlehm
-PortionNamePlural = Klumpen Lichtlehm
 Pocket = 1
 Price = 20000
 SellPrice = 5000
@@ -1173,8 +1117,6 @@ Description = Der Angriff wird erhöht, wenn man durch eine Elektro-Attacke Scha
 [LUMINOUSMOSS]
 Name = Leuchtmoos
 NamePlural = Leuchtmoose
-PortionName = clump of Luminous Moss
-PortionNamePlural = clumps of Luminous Moss
 Pocket = 1
 Price = 5000
 SellPrice = 1250
@@ -1236,8 +1178,6 @@ BattleUse = Direct
 [ROOMSERVICE]
 Name = Bizarroservice
 NamePlural = Bizarroservices
-PortionName = voucher for Room Service
-PortionNamePlural = vouchers for Room Service
 Pocket = 1
 Price = 20000
 SellPrice = 5000
@@ -1551,90 +1491,72 @@ Flags = Fling_70
 Description = Träger erhält beim Level-Up mehr Initiative-Werte, aber seine Initiative wird gesenkt.
 #-------------------------------
 [LAXINCENSE]
-Name = Lax Incense
-NamePlural = Lax Incenses
-PortionName = jar of Lax Incense
-PortionNamePlural = jars of Lax Incense
+Name = Laxrauch
+NamePlural = Laxrauch
 Pocket = 1
 Price = 5000
 Flags = Fling_10
 Description = Die Genauigkeit des Gegners sinkt.
 #-------------------------------
 [FULLINCENSE]
-Name = Full Incense
-NamePlural = Full Incenses
-PortionName = jar of Full Incense
-PortionNamePlural = jars of Full Incense
+Name = Lahmrauch
+NamePlural = Lahmrauch
 Pocket = 1
 Price = 5000
 Flags = Fling_10
 Description = Der Träger wird träge und langsam.
 #-------------------------------
 [LUCKINCENSE]
-Name = Luck Incense
-NamePlural = Luck Incenses
-PortionName = jar of Luck Incense
-PortionNamePlural = jars of Luck Incense
+Name = Glücksrauch
+NamePlural = Glücksrauch
 Pocket = 1
 Price = 11000
 Flags = Fling_10
 Description = Das Preisgeld nach dem Kampf wird verdoppelt, wenn der Träger gekämpft hat.
 #-------------------------------
 [PUREINCENSE]
-Name = Pure Incense
-NamePlural = Pure Incenses
-PortionName = jar of Pure Incense
-PortionNamePlural = jars of Pure Incense
+Name = Scheuchrauch
+NamePlural = Scheuchrauch
 Pocket = 1
 Price = 6000
 Flags = Fling_10
 Description = Wenn der Träger an erster Stelle im Team ist, erscheinen keine wilden Pokémon mehr.
 #-------------------------------
 [SEAINCENSE]
-Name = Sea Incense
-NamePlural = Sea Incenses
-PortionName = jar of Sea Incense
-PortionNamePlural = jars of Sea Incense
+Name = Seerauch
+NamePlural = Seerauch
 Pocket = 1
 Price = 2000
 Flags = Fling_10
 Description = Verstärkt Wasser-Attacken des Trägers.
 #-------------------------------
 [WAVEINCENSE]
-Name = Wave Incense
-NamePlural = Wave Incenses
-PortionName = jar of Wave Incense
-PortionNamePlural = jars of Wave Incense
+Name = Wellenrauch
+NamePlural = Wellenrauch
 Pocket = 1
 Price = 2000
 Flags = Fling_10
 Description = An item to be held by a Pokémon. It has a curious aroma that boosts the power of Water-type moves.
 #-------------------------------
 [ROSEINCENSE]
-Name = Rose Incense
-NamePlural = Rose Incenses
-PortionName = jar of Rose Incense
-PortionNamePlural = jars of Rose Incense
+Name = Rosenrauch
+NamePlural = Rosenrauch
 Pocket = 1
 Price = 2000
 Flags = Fling_10
 Description = Verstärkt Pflanzen-Attacken des Trägers um 20%.
 #-------------------------------
 [ODDINCENSE]
-Name = Odd Incense
-NamePlural = Odd Incenses
-PortionName = jar of Odd Incense
-PortionNamePlural = jars of Odd Incense
+Name = Schrägrauch
+NamePlural = Schrägrauch
 Pocket = 1
 Price = 2000
 Flags = Fling_10
 Description = Verstärkt Psycho-Attacken des Trägers um 20%.
 #-------------------------------
 [ROCKINCENSE]
-Name = Rock Incense
-NamePlural = Rock Incenses
-PortionName = jar of Rock Incense
-PortionNamePlural = jars of Rock Incense
+Name = Steinrauch
+NamePlural = Steinrauch
 Pocket = 1
 Price = 2000
 Flags = Fling_10
@@ -1643,8 +1565,6 @@ Description = Verstärkt Gestein-Attacken des Trägers um 20%.
 [CHARCOAL]
 Name = Holzkohle
 NamePlural = Holzkohle
-PortionName = Stück Holzkohle
-PortionNamePlural = Stücke Holzkohle
 Pocket = 1
 Price = 3000
 SellPrice = 750
@@ -1652,8 +1572,8 @@ Flags = Fling_30
 Description = Verstärkt Feuer-Attacken des Trägers um 20%.
 #-------------------------------
 [MYSTICWATER]
-Name = Mystic Water
-NamePlural = Mystic Waters
+Name = Zauberwasser
+NamePlural = Zauberwasser
 Pocket = 1
 Price = 3000
 SellPrice = 750
@@ -1662,7 +1582,7 @@ Description = Verstärkt Wasser-Attacken des Trägers um 20%.
 #-------------------------------
 [MAGNET]
 Name = Magnet
-NamePlural = Magnets
+NamePlural = Magneten
 Pocket = 1
 Price = 3000
 SellPrice = 750
@@ -1670,8 +1590,8 @@ Flags = Fling_30
 Description = Verstärkt Elektro-Attacken des Trägers um 20%.
 #-------------------------------
 [MIRACLESEED]
-Name = Miracle Seed
-NamePlural = Miracle Seeds
+Name = Wundersaat
+NamePlural = Wundersaat
 Pocket = 1
 Price = 3000
 SellPrice = 750
@@ -1679,10 +1599,8 @@ Flags = Fling_30
 Description = Verstärkt Pflanzen-Attacken des Trägers um 20%.
 #-------------------------------
 [NEVERMELTICE]
-Name = Never-Melt Ice
-NamePlural = Never-Melt Ices
-PortionName = piece of Never-Melt Ice
-PortionNamePlural = pieces of Never-Melt Ice
+Name = Ewiges Eis
+NamePlural = Ewiges Eis
 Pocket = 1
 Price = 3000
 SellPrice = 750
@@ -1690,8 +1608,8 @@ Flags = Fling_30
 Description = Verstärkt Eis-Attacken des Trägers um 20%.
 #-------------------------------
 [BLACKBELT]
-Name = Black Belt
-NamePlural = Black Belts
+Name = Schwarzgurt
+NamePlural = Schwarzgurte
 Pocket = 1
 Price = 3000
 SellPrice = 750
@@ -1699,8 +1617,8 @@ Flags = Fling_30
 Description = Verstärkt Kampf-Attacken des Trägers um 20%.
 #-------------------------------
 [POISONBARB]
-Name = Poison Barb
-NamePlural = Poison Barbs
+Name = Giftstich
+NamePlural = Giftstiche
 Pocket = 1
 Price = 3000
 SellPrice = 750
@@ -1708,10 +1626,8 @@ Flags = Fling_70
 Description = Verstärkt Gift-Attacken des Trägers um 20%.
 #-------------------------------
 [SOFTSAND]
-Name = Soft Sand
-NamePlural = Soft Sand
-PortionName = bag of Soft Sand
-PortionNamePlural = bags of Soft Sand
+Name = Pudersand
+NamePlural = Pudersand
 Pocket = 1
 Price = 3000
 SellPrice = 750
@@ -1719,8 +1635,8 @@ Flags = Fling_10
 Description = Verstärkt Boden-Attacken des Trägers um 20%.
 #-------------------------------
 [SHARPBEAK]
-Name = Sharp Beak
-NamePlural = Sharp Beaks
+Name = Spitzer Schnabel
+NamePlural = Spitze Schnäbel
 Pocket = 1
 Price = 3000
 SellPrice = 750
@@ -1728,8 +1644,8 @@ Flags = Fling_50
 Description = Verstärkt Flug-Attacken des Trägers um 20%.
 #-------------------------------
 [TWISTEDSPOON]
-Name = Twisted Spoon
-NamePlural = Twisted Spoons
+Name = Krummlöffel
+NamePlural = Krummlöffel
 Pocket = 1
 Price = 3000
 SellPrice = 750
@@ -1737,10 +1653,8 @@ Flags = Fling_30
 Description = Verstärkt Psycho-Attacken des Trägers um 20%.
 #-------------------------------
 [SILVERPOWDER]
-Name = Silver Powder
-NamePlural = Silver Powders
-PortionName = pile of Silver Powder
-PortionNamePlural = piles of Silver Powder
+Name = Silberstaub
+NamePlural = Silberstaub
 Pocket = 1
 Price = 3000
 SellPrice = 750
@@ -1748,8 +1662,8 @@ Flags = Fling_10
 Description = Verstärkt Käfer-Attacken des Trägers um 20%.
 #-------------------------------
 [HARDSTONE]
-Name = Hard Stone
-NamePlural = Hard Stones
+Name = Granitstein
+NamePlural = Granitsteine
 Pocket = 1
 Price = 3000
 SellPrice = 750
@@ -1757,8 +1671,8 @@ Flags = Fling_100
 Description = Verstärkt Gestein-Attacken des Trägers um 20%.
 #-------------------------------
 [SPELLTAG]
-Name = Spell Tag
-NamePlural = Spell Tags
+Name = Bannsticker
+NamePlural = Bannsticker
 Pocket = 1
 Price = 3000
 SellPrice = 750
@@ -1766,8 +1680,8 @@ Flags = Fling_30
 Description = Verstärkt Geist-Attacken des Trägers um 20%.
 #-------------------------------
 [DRAGONFANG]
-Name = Dragon Fang
-NamePlural = Dragon Fangs
+Name = Drachenzahn
+NamePlural = Drachenzähne
 Pocket = 1
 Price = 3000
 SellPrice = 750
@@ -1775,10 +1689,8 @@ Flags = Fling_70
 Description = Verstärkt Drachen-Attacken des Trägers um 20%.
 #-------------------------------
 [BLACKGLASSES]
-Name = Black Glasses
-NamePlural = Black Glasses
-PortionName = pair of Black Glasses
-PortionNamePlural = pairs of Black Glasses
+Name = Schattenbrille
+NamePlural = Schattenbrillen
 Pocket = 1
 Price = 3000
 SellPrice = 750
@@ -1786,8 +1698,8 @@ Flags = Fling_30
 Description = Verstärkt Unlicht-Attacken des Trägers um 20%.
 #-------------------------------
 [METALCOAT]
-Name = Metal Coat
-NamePlural = Metal Coats
+Name = Metallmantel
+NamePlural = Metallmäntel
 Pocket = 1
 Price = 3000
 SellPrice = 750
@@ -1796,8 +1708,8 @@ Flags = EvolutionStone,Fling_30
 Description = Verstärkt Stahl-Attacken des Trägers um 20%.
 #-------------------------------
 [SILKSCARF]
-Name = Silk Scarf
-NamePlural = Silk Scarves
+Name = Seidenschal
+NamePlural = Seidenschals
 Pocket = 1
 Price = 3000
 SellPrice = 750
@@ -1805,8 +1717,8 @@ Flags = Fling_10
 Description = Verstärkt Normal-Attacken des Trägers um 20%.
 #-------------------------------
 [FLAMEPLATE]
-Name = Flame Plate
-NamePlural = Flame Plates
+Name = Feuertafel
+NamePlural = Feuertafeln
 Pocket = 1
 Price = 10000
 SellPrice = 500
@@ -1814,8 +1726,8 @@ Flags = Fling_90
 Description = Verstärkt Feuer-Attacken des Trägers um 20%.
 #-------------------------------
 [SPLASHPLATE]
-Name = Splash Plate
-NamePlural = Splash Plates
+Name = Wassertafel
+NamePlural = Wassertafeln
 Pocket = 1
 Price = 10000
 SellPrice = 500
@@ -1823,8 +1735,8 @@ Flags = Fling_90
 Description = Verstärkt Wasser-Attacken des Trägers um 20%.
 #-------------------------------
 [ZAPPLATE]
-Name = Zap Plate
-NamePlural = Zap Plates
+Name = Blitztafel
+NamePlural = Blitztafeln
 Pocket = 1
 Price = 10000
 SellPrice = 500
@@ -1832,8 +1744,8 @@ Flags = Fling_90
 Description = Verstärkt Elektro-Attacken des Trägers um 20%.
 #-------------------------------
 [MEADOWPLATE]
-Name = Meadow Plate
-NamePlural = Meadow Plates
+Name = Wiesentafel
+NamePlural = Wiesentafeln
 Pocket = 1
 Price = 10000
 SellPrice = 500
@@ -1841,8 +1753,8 @@ Flags = Fling_90
 Description = Verstärkt Pflanzen-Attacken des Trägers um 20%.
 #-------------------------------
 [ICICLEPLATE]
-Name = Icicle Plate
-NamePlural = Icicle Plates
+Name = Frosttafel
+NamePlural = Frosttafeln
 Pocket = 1
 Price = 10000
 SellPrice = 500
@@ -1850,8 +1762,8 @@ Flags = Fling_90
 Description = Verstärkt Eis-Attacken des Trägers um 20%.
 #-------------------------------
 [FISTPLATE]
-Name = Fist Plate
-NamePlural = Fist Plates
+Name = Fausttafel
+NamePlural = Fausttafeln
 Pocket = 1
 Price = 10000
 SellPrice = 500
@@ -1859,8 +1771,8 @@ Flags = Fling_90
 Description = Verstärkt Kampf-Attacken des Trägers um 20%.
 #-------------------------------
 [TOXICPLATE]
-Name = Toxic Plate
-NamePlural = Toxic Plates
+Name = Gifttafel
+NamePlural = Gifttafeln
 Pocket = 1
 Price = 10000
 SellPrice = 500
@@ -1868,8 +1780,8 @@ Flags = Fling_90
 Description = Verstärkt Gift-Attacken des Trägers um 20%.
 #-------------------------------
 [EARTHPLATE]
-Name = Earth Plate
-NamePlural = Earth Plates
+Name = Erdtafel
+NamePlural = Erdtafeln
 Pocket = 1
 Price = 10000
 SellPrice = 500
@@ -1877,8 +1789,8 @@ Flags = Fling_90
 Description = Verstärkt Boden-Attacken des Trägers um 20%.
 #-------------------------------
 [SKYPLATE]
-Name = Sky Plate
-NamePlural = Sky Plates
+Name = Wolkentafel
+NamePlural = Wolkentafeln
 Pocket = 1
 Price = 10000
 SellPrice = 500
@@ -1886,8 +1798,8 @@ Flags = Fling_90
 Description = Verstärkt Flug-Attacken des Trägers um 20%.
 #-------------------------------
 [MINDPLATE]
-Name = Mind Plate
-NamePlural = Mind Plates
+Name = Hirntafel
+NamePlural = Hirntafeln
 Pocket = 1
 Price = 10000
 SellPrice = 500
@@ -1895,8 +1807,8 @@ Flags = Fling_90
 Description = Verstärkt Psycho-Attacken des Trägers um 20%.
 #-------------------------------
 [INSECTPLATE]
-Name = Insect Plate
-NamePlural = Insect Plates
+Name = Käfertafel
+NamePlural = Käfertafeln
 Pocket = 1
 Price = 10000
 SellPrice = 500
@@ -1904,8 +1816,8 @@ Flags = Fling_90
 Description = Verstärkt Käfer-Attacken des Trägers um 20%.
 #-------------------------------
 [STONEPLATE]
-Name = Stone Plate
-NamePlural = Stone Plates
+Name = Steintafel
+NamePlural = Steintafeln
 Pocket = 1
 Price = 10000
 SellPrice = 500
@@ -1913,8 +1825,8 @@ Flags = Fling_90
 Description = Verstärkt Gestein-Attacken des Trägers um 20%.
 #-------------------------------
 [SPOOKYPLATE]
-Name = Spooky Plate
-NamePlural = Spooky Plates
+Name = Spuktafel
+NamePlural = Spuktafeln
 Pocket = 1
 Price = 10000
 SellPrice = 500
@@ -1922,8 +1834,8 @@ Flags = Fling_90
 Description = Verstärkt Geist-Attacken des Trägers um 20%.
 #-------------------------------
 [DRACOPLATE]
-Name = Draco Plate
-NamePlural = Draco Plates
+Name = Dracotafel
+NamePlural = Dracotafeln
 Pocket = 1
 Price = 10000
 SellPrice = 500
@@ -1931,8 +1843,8 @@ Flags = Fling_90
 Description = Verstärkt Drachen-Attacken des Trägers um 20%.
 #-------------------------------
 [DREADPLATE]
-Name = Dread Plate
-NamePlural = Dread Plates
+Name = Furchttafel
+NamePlural = Furchttafeln
 Pocket = 1
 Price = 10000
 SellPrice = 500
@@ -1940,8 +1852,8 @@ Flags = Fling_90
 Description = Verstärkt Unlicht-Attacken des Trägers um 20%.
 #-------------------------------
 [IRONPLATE]
-Name = Iron Plate
-NamePlural = Iron Plates
+Name = Eisentafel
+NamePlural = Eisentafeln
 Pocket = 1
 Price = 10000
 SellPrice = 500
@@ -1949,8 +1861,8 @@ Flags = Fling_90
 Description = Verstärkt Stahl-Attacken des Trägers um 20%.
 #-------------------------------
 [PIXIEPLATE]
-Name = Pixie Plate
-NamePlural = Pixie Plates
+Name = Feentafel
+NamePlural = Feentafeln
 Pocket = 1
 Price = 10000
 SellPrice = 500
@@ -1958,149 +1870,149 @@ Flags = Fling_90
 Description = Verstärkt Fee-Attacken des Trägers um 20%.
 #-------------------------------
 [FIREGEM]
-Name = Fire Gem
-NamePlural = Fire Gems
+Name = Feuerjuwel
+NamePlural = Feuerjuwelen
 Pocket = 1
 Price = 4000
 Flags = TypeGem
-Description = A gem with an essence of fire. When held, it strengthens the power of a Fire-type move only once.
+Description = Verstärkt einmalig eine Attacke vom Typ Feuer und wird dabei verbraucht.
 #-------------------------------
 [WATERGEM]
-Name = Water Gem
-NamePlural = Water Gems
+Name = Wasserjuwel
+NamePlural = Wasserjuwelen
 Pocket = 1
 Price = 4000
 Flags = TypeGem
-Description = A gem with an essence of water. When held, it strengthens the power of a Water-type move only once.
+Description = Verstärkt einmalig eine Attacke vom Typ Wasser und wird dabei verbraucht.
 #-------------------------------
 [ELECTRICGEM]
-Name = Electric Gem
-NamePlural = Electric Gems
+Name = Elektrojuwel
+NamePlural = Elektrojuwelen
 Pocket = 1
 Price = 4000
 Flags = TypeGem
-Description = A gem with an essence of electricity. When held, it strengthens the power of an Electric-type move only once.
+Description = Verstärkt einmalig eine Attacke vom Typ Elektro und wird dabei verbraucht.
 #-------------------------------
 [GRASSGEM]
-Name = Grass Gem
-NamePlural = Grass Gems
+Name = Pflanzenjuwel
+NamePlural = Pflanzenjuwelen
 Pocket = 1
 Price = 4000
 Flags = TypeGem
-Description = A gem with an essence of nature. When held, it strengthens the power of a Grass-type move only once.
+Description = Verstärkt einmalig eine Attacke vom Typ Pflanze und wird dabei verbraucht.
 #-------------------------------
 [ICEGEM]
-Name = Ice Gem
-NamePlural = Ice Gems
+Name = Eisjuwel
+NamePlural = Eisjuwelen
 Pocket = 1
 Price = 4000
 Flags = TypeGem
-Description = A gem with an essence of ice. When held, it strengthens the power of an Ice-type move only once.
+Description = Verstärkt einmalig eine Attacke vom Typ Eis und wird dabei verbraucht.
 #-------------------------------
 [FIGHTINGGEM]
-Name = Fighting Gem
-NamePlural = Fighting Gems
+Name = Kampfjuwel
+NamePlural = Kampfjuwelen
 Pocket = 1
 Price = 4000
 Flags = TypeGem
-Description = A gem with an essence of combat. When held, it strengthens the power of a Fighting-type move only once.
+Description = Verstärkt einmalig eine Attacke vom Typ Kampf und wird dabei verbraucht.
 #-------------------------------
 [POISONGEM]
-Name = Poison Gem
-NamePlural = Poison Gems
+Name = Giftjuwel
+NamePlural = Giftjuwelen
 Pocket = 1
 Price = 4000
 Flags = TypeGem
-Description = A gem with an essence of poison. When held, it strengthens the power of a Poison-type move only once.
+Description = Verstärkt einmalig eine Attacke vom Typ Gift und wird dabei verbraucht.
 #-------------------------------
 [GROUNDGEM]
-Name = Ground Gem
-NamePlural = Ground Gems
+Name = Bodenjuwel
+NamePlural = Bodenjuwelen
 Pocket = 1
 Price = 4000
 Flags = TypeGem
-Description = A gem with an essence of land. When held, it strengthens the power of a Ground-type move only once.
+Description = Verstärkt einmalig eine Attacke vom Typ Boden und wird dabei verbraucht.
 #-------------------------------
 [FLYINGGEM]
-Name = Flying Gem
-NamePlural = Flying Gems
+Name = Flugjuwel
+NamePlural = Flugjuwelen
 Pocket = 1
 Price = 4000
 Flags = TypeGem
-Description = A gem with an essence of air. When held, it strengthens the power of a Flying-type move only once.
+Description = Verstärkt einmalig eine Attacke vom Typ Wind und wird dabei verbraucht.
 #-------------------------------
 [PSYCHICGEM]
-Name = Psychic Gem
-NamePlural = Psychic Gems
+Name = Psychojuwel
+NamePlural = Psychojuwelen
 Pocket = 1
 Price = 4000
 Flags = TypeGem
-Description = A gem with an essence of the mind. When held, it strengthens the power of a Psychic-type move only once.
+Description = Verstärkt einmalig eine Attacke vom Typ Psycho und wird dabei verbraucht.
 #-------------------------------
 [BUGGEM]
-Name = Bug Gem
-NamePlural = Bug Gems
+Name = Käferjuwel
+NamePlural = Käferjuwelen
 Pocket = 1
 Price = 4000
 Flags = TypeGem
-Description = A gem with an insect-like essence. When held, it strengthens the power of a Bug-type move only once.
+Description = Verstärkt einmalig eine Attacke vom Typ Käfer und wird dabei verbraucht.
 #-------------------------------
 [ROCKGEM]
-Name = Rock Gem
-NamePlural = Rock Gems
+Name = Gesteinsjuwel
+NamePlural = Gesteinsjuwelen
 Pocket = 1
 Price = 4000
 Flags = TypeGem
-Description = A gem with an essence of rock. When held, it strengthens the power of a Rock-type move only once.
+Description = Verstärkt einmalig eine Attacke vom Typ Gestein und wird dabei verbraucht.
 #-------------------------------
 [GHOSTGEM]
-Name = Ghost Gem
-NamePlural = Ghost Gems
+Name = Geisterjuwel
+NamePlural = Geisterjuwelen
 Pocket = 1
 Price = 4000
 Flags = TypeGem
-Description = A gem with a spectral essence. When held, it strengthens the power of a Ghost-type move only once.
+Description = Verstärkt einmalig eine Attacke vom Typ Geist und wird dabei verbraucht.
 #-------------------------------
 [DRAGONGEM]
-Name = Dragon Gem
-NamePlural = Dragon Gems
+Name = Drakojuwel
+NamePlural = Drakojuwelen
 Pocket = 1
 Price = 4000
 Flags = TypeGem
-Description = A gem with a draconic essence. When held, it strengthens the power of a Dragon-type move only once.
+Description = Verstärkt einmalig eine Attacke vom Typ Drache und wird dabei verbraucht.
 #-------------------------------
 [DARKGEM]
-Name = Dark Gem
-NamePlural = Dark Gems
+Name = Unlichtjuwel
+NamePlural = Unlichtjuwelen
 Pocket = 1
 Price = 4000
 Flags = TypeGem
-Description = A gem with an essence of darkness. When held, it strengthens the power of a Dark-type move only once.
+Description = Verstärkt einmalig eine Attacke vom Typ Unlicht und wird dabei verbraucht.
 #-------------------------------
 [STEELGEM]
-Name = Steel Gem
-NamePlural = Steel Gems
+Name = Stahljuwel
+NamePlural = Stahljuwelen
 Pocket = 1
 Price = 4000
 Flags = TypeGem
-Description = A gem with an essence of steel. When held, it strengthens the power of a Steel-type move only once.
+Description = Verstärkt einmalig eine Attacke vom Typ Stahl und wird dabei verbraucht.
 #-------------------------------
 [FAIRYGEM]
-Name = Fairy Gem
-NamePlural = Fairy Gems
+Name = Feenjuwel
+NamePlural = Feenjuwelen
 Pocket = 1
 Price = 4000
 Flags = TypeGem
-Description = A gem with an essence of the fey. When held, it strengthens the power of a Fairy-type move only once.
+Description = Verstärkt einmalig eine Attacke vom Typ Fee und wird dabei verbraucht.
 #-------------------------------
 [NORMALGEM]
-Name = Normal Gem
-NamePlural = Normal Gems
+Name = Normaljuwel
+NamePlural = Normaljuwelen
 Pocket = 1
 Price = 15000
 SellPrice = 3750
 Flags = TypeGem
-Description = A gem with an ordinary essence. When held, it strengthens the power of a Normal-type move only once.
+Description = Verstärkt einmalig eine Attacke vom Typ Normal und wird dabei verbraucht.
 #-------------------------------
 [LIGHTBALL]
 Name = Light Ball
@@ -2117,96 +2029,92 @@ Pocket = 1
 Price = 1000
 BPPrice = 7
 Flags = Fling_40
-Description = An item to be held by Chansey. It is a pair of gloves that boosts Chansey's critical-hit ratio.
+Description = Erhöht die Wahrscheinlichkeit, dass Chaneira einen Volltreffer landet um zwei Stufen. 
 #-------------------------------
 [METALPOWDER]
-Name = Metal Powder
-NamePlural = Metal Powders
-PortionName = bag of Metal Powder
-PortionNamePlural = bags of Metal Powder
+Name = Metallstaub
+NamePlural = Metallstaub
 Pocket = 1
 Price = 1000
 Flags = Fling_10
-Description = An item to be held by Ditto. Extremely fine yet hard, this odd powder boosts the Defense stat.
+Description = Erhöht die Verteidigung und die Spezial-Verteidigung von Ditto um jeweils 50%.
 #-------------------------------
 [QUICKPOWDER]
-Name = Quick Powder
-NamePlural = Quick Powders
-PortionName = bag of Quick Powder
-PortionNamePlural = bags of Quick Powder
+Name = Flottstaub
+NamePlural = Flottstaub
 Pocket = 1
 Price = 1000
 Flags = Fling_10
-Description = An item to be held by Ditto. Extremely fine yet hard, this odd powder boosts the Speed stat.
+Description = Verdoppelt die Initiative von Ditto. Es wird rückgängig gemacht, sobald es sich verwandelt.
 #-------------------------------
 [THICKCLUB]
-Name = Thick Club
-NamePlural = Thick Clubs
+Name = Kampfknochen
+NamePlural = Kampfknochen
 Pocket = 1
 Price = 1000
 Flags = Fling_90
-Description = An item to be held by Cubone or Marowak. It is a hard bone of some sort that boosts the Attack stat.
+Description = Verdoppelt den Angriff von Tragosso und Knogga solange er getragen wird.
 #-------------------------------
 [LEEK]
-Name = Leek
-NamePlural = Leeks
+Name = Lauchstange
+NamePlural = Lauchstangen
 Pocket = 1
 Price = 1000
 Flags = Fling_60
-Description = An item to be held by Farfetch'd. It is a very long and stiff stalk of leek that boosts the critical-hit ratio.
+Description = Erhöht die Wahrscheinlichkeit, dass Porenta und Lauchzelot einen Volltreffer landen, um zwei Stufen. 
 #-------------------------------
 [SOULDEW]
-Name = Soul Dew
-NamePlural = Soul Dews
+Name = Seelentau
+NamePlural = Seelentauen
 Pocket = 1
 Price = 0
 Flags = Fling_30
-Description = A wondrous orb to be held by either Latios or Latias. It raises the power of Psychic- and Dragon-type moves.
+Description = Hebt Spezial-Angriff und Spezial-Verteidigung von Latios und Latias um 50%.
 #-------------------------------
 [DEEPSEATOOTH]
-Name = Deep Sea Tooth
-NamePlural = Deep Sea Teeth
+Name = Abysszahn
+NamePlural = Abysszähne
 Pocket = 1
 Price = 2000
 BPPrice = 5
 Flags = Fling_90
-Description = An item to be held by Clamperl. A fang that gleams a sharp silver, it raises the Sp. Atk stat.
+Description = Damit kann Perlu sich entwickeln.
 #-------------------------------
 [DEEPSEASCALE]
-Name = Deep Sea Scale
-NamePlural = Deep Sea Scales
+Name = Abyssschuppe
+NamePlural = Abyssschuppen
 Pocket = 1
 Price = 2000
 BPPrice = 5
 Flags = Fling_30
-Description = An item to be held by Clamperl. A scale that shines a faint pink, it raises the Sp. Def stat.
+Description = Damit kann Perlu sich entwickeln.
 #-------------------------------
 [ADAMANTORB]
-Name = Adamant Orb
-NamePlural = Adamant Orbs
+Name = Adamant-Orb
+NamePlural = Adamant-Orbs
 Pocket = 1
 Price = 10000
 SellPrice = 0
 Flags = Fling_60
-Description = Verstärkt Attacken vom Typ Drache und Stahl, wenn Dialga ihn trägt.
+Description = Trägt Dialga dieses Item, werden seine Stahl- und Drachen-Attacken um 20 % verstärkt.
 #-------------------------------
 [LUSTROUSORB]
-Name = Lustrous Orb
-NamePlural = Lustrous Orbs
+Name = Weiß-Orb
+NamePlural = Weiß-Orbs
 Pocket = 1
 Price = 10000
 SellPrice = 0
 Flags = Fling_60
-Description = A beautifully glowing orb to be held by Palkia. It boosts the power of Dragon- and Water-type moves.
+Description = Trägt Palkia dieses Item, werden seine Wasser- und Drachen-Attacken um 20 % verstärkt.
 #-------------------------------
 [GRISEOUSORB]
-Name = Griseous Orb
-NamePlural = Griseous Orbs
+Name = Platinum-Orb
+NamePlural = Platinum-Orbs
 Pocket = 1
 Price = 10000
 SellPrice = 0
 Flags = Fling_60
-Description = A glowing orb to be held by Giratina. It boosts the power of Dragon- and Ghost-type moves.
+Description = Trägt Giratina dieses Item, werden seine Drachen- und Geist-Attacken um 20 % verstärkt.
 #-------------------------------
 [RUSTEDSWORD]
 Name = Rusted Sword
