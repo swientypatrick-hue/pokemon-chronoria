@@ -1508,9 +1508,9 @@ Price = 0
 Description = Kann für bestimmte Rezepte verwendet werden.
 #-------------------------------
 [ARBOLIVAOIL]
-Name = Arboliva Oil
-NamePlural = Arboliva Oils
-Pocket = 8
+Name = Olithena-Öl
+NamePlural = Olithena-Öle
+Pocket = 5
 Price = 0
 Description = Kann für bestimmte Rezepte verwendet werden.
 #-------------------------------
