@@ -7137,152 +7137,152 @@ Flags = Berry,Fling_10,NaturalGift_DARK_100
 Description = If held by a Pokémon, this Berry will increase the holder's Sp. Def if it's hit with a special move.
 #-------------------------------
 [XATTACK]
-Name = X Attack
-NamePlural = X Attacks
+Name = X-Angriff
+NamePlural = X-Angriff
 Pocket = 7
 Price = 1000
 SellPrice = 250
 BattleUse = OnBattler
 Flags = Fling_30
-Description = An item that sharply boosts the Attack stat of a Pokémon while it remains in battle.
+Description = Es erhöht den Angriff eines Pokémon um 1 Stufe, bis es ausgwechselt wird.
 #-------------------------------
 [XATTACK2]
-Name = X Attack 2
-NamePlural = X Attack 2s
+Name = X-Angriff 2
+NamePlural = X-Angriff 2s
 Pocket = 7
 Price = 0
 BattleUse = OnBattler
 Flags = Fling_30
-Description = It sharply raises the Attack stat of a Pokémon in battle. It wears off if the Pokémon is withdrawn.
+Description = Es erhöht den Angriff eines Pokémon um 2 Stufen, bis es ausgwechselt wird.
 #-------------------------------
 [XATTACK3]
-Name = X Attack 3
-NamePlural = X Attack 3s
+Name = X-Angriff 3
+NamePlural = X-Angriff 3s
 Pocket = 7
 Price = 0
 BattleUse = OnBattler
 Flags = Fling_30
-Description = It drastically raises the Attack stat of a Pokémon in battle. It wears off if the Pokémon is withdrawn.
+Description = Es erhöht den Angriff eines Pokémon um 3 Stufen, bis es ausgwechselt wird.
 #-------------------------------
 [XATTACK6]
-Name = X Attack 6
-NamePlural = X Attack 6s
+Name = X-Angriff 6
+NamePlural = X-Angriff 6s
 Pocket = 7
 Price = 0
 BattleUse = OnBattler
 Flags = Fling_30
-Description = It raises the Attack stat of a Pokémon in battle immensely. It wears off if the Pokémon is withdrawn.
+Description = Es erhöht den Angriff eines Pokémon um 6 Stufen, bis es ausgwechselt wird.
 #-------------------------------
 [XDEFENSE]
-Name = X Defense
-NamePlural = X Defenses
+Name = X-Verteidugung
+NamePlural = X-Verteidugung
 Pocket = 7
 Price = 2000
 SellPrice = 250
 BattleUse = OnBattler
 Flags = Fling_30
-Description = An item that sharply boosts the Defense of a Pokémon while it remains in battle.
+Description = Es erhöht die Vert. eines Pokémon um 1 Stufe, bis es ausgwechselt wird.
 #-------------------------------
 [XDEFENSE2]
-Name = X Defense 2
-NamePlural = X Defense 2s
+Name = X-Verteidugung 2
+NamePlural = X-Verteidugung 2
 Pocket = 7
 Price = 0
 BattleUse = OnBattler
 Flags = Fling_30
-Description = It sharply raises the Defense stat of a Pokémon in battle. It wears off if the Pokémon is withdrawn.
+Description = Es erhöht die Vert. eines Pokémon um 2 Stufen, bis es ausgwechselt wird.
 #-------------------------------
 [XDEFENSE3]
-Name = X Defense 3
-NamePlural = X Defense 3s
+Name = X-Verteidugung 3
+NamePlural = X-Verteidugung 3
 Pocket = 7
 Price = 0
 BattleUse = OnBattler
 Flags = Fling_30
-Description = It drastically raises the Defense stat of a Pokémon in battle. It wears off if the Pokémon is withdrawn.
+Description = Es erhöht die Vert. eines Pokémon um 3 Stufen, bis es ausgwechselt wird.
 #-------------------------------
 [XDEFENSE6]
-Name = X Defense 6
-NamePlural = X Defense 6s
+Name = X-Verteidugung 6
+NamePlural = X-Verteidugung 6
 Pocket = 7
 Price = 0
 BattleUse = OnBattler
 Flags = Fling_30
-Description = It raises the Defense stat of a Pokémon in battle immensely. It wears off if the Pokémon is withdrawn.
+Description = Es erhöht die Vert. eines Pokémon um 6 Stufen, bis es ausgwechselt wird.
 #-------------------------------
 [XSPATK]
-Name = X Sp. Atk
-NamePlural = X Sp. Atks
+Name = X-Sp.-Angr.
+NamePlural = X-Sp.-Angr.
 Pocket = 7
 Price = 1000
 SellPrice = 250
 BattleUse = OnBattler
 Flags = Fling_30
-Description = An item that sharply boosts the Sp. Atk stat of a Pokémon while it remains in battle.
+Description = Es erhöht den Spezial-Angr. eines Pokémon um 1 Stufe, bis es ausgwechselt wird.
 #-------------------------------
 [XSPATK2]
-Name = X Sp. Atk 2
-NamePlural = X Sp. Atk 2s
+Name = X-Sp.-Angr. 2
+NamePlural = X-Sp.-Angr. 2
 Pocket = 7
 Price = 0
 BattleUse = OnBattler
 Flags = Fling_30
-Description = It sharply raises the Sp. Atk stat of a Pokémon in battle. It wears off if the Pokémon is withdrawn.
+Description = Es erhöht den Spezial-Angr. eines Pokémon um 2 Stufen, bis es ausgwechselt wird.
 #-------------------------------
 [XSPATK3]
-Name = X Sp. Atk 3
-NamePlural = X Sp. Atk 3s
+Name = X-Sp.-Angr. 3
+NamePlural = X-Sp.-Angr. 3
 Pocket = 7
 Price = 0
 BattleUse = OnBattler
 Flags = Fling_30
-Description = It drastically raises the Sp. Atk stat of a Pokémon in battle. It wears off if the Pokémon is withdrawn.
+Description = Es erhöht den Spezial-Angr. eines Pokémon um 3 Stufen, bis es ausgwechselt wird.
 #-------------------------------
 [XSPATK6]
-Name = X Sp. Atk 6
-NamePlural = X Sp. Atk 6s
+Name = X-Sp.-Angr. 6
+NamePlural = X-Sp.-Angr. 6
 Pocket = 7
 Price = 0
 BattleUse = OnBattler
 Flags = Fling_30
-Description = It raises the Sp. Atk stat of a Pokémon in battle immensely. It wears off if the Pokémon is withdrawn.
+Description = Es erhöht den Spezial-Angr. eines Pokémon um 6 Stufen, bis es ausgwechselt wird.
 #-------------------------------
 [XSPDEF]
-Name = X Sp. Def
-NamePlural = X Sp. Defs
+Name = X-Sp.-Vert.
+NamePlural = X-Sp.-Vert.
 Pocket = 7
 Price = 2000
 SellPrice = 250
 BattleUse = OnBattler
 Flags = Fling_30
-Description = An item that sharply boosts the Sp. Def stat of a Pokémon while it remains in battle.
+Description = Es erhöht die Spezial-Vert. eines Pokémon um 1 Stufen, bis es ausgwechselt wird.
 #-------------------------------
 [XSPDEF2]
-Name = X Sp. Def 2
-NamePlural = X Sp. Def 2s
+Name = X-Sp.-Vert. 2
+NamePlural = X-Sp.-Vert. 2
 Pocket = 7
 Price = 0
 BattleUse = OnBattler
 Flags = Fling_30
-Description = It sharply raises the Sp. Def stat of a Pokémon in battle. It wears off if the Pokémon is withdrawn.
+Description = Es erhöht die Spezial-Vert. eines Pokémon um 2 Stufen, bis es ausgwechselt wird.
 #-------------------------------
 [XSPDEF3]
-Name = X Sp. Def 3
-NamePlural = X Sp. Def 3s
+Name = X-Sp.-Vert. 3
+NamePlural = X-Sp.-Vert. 3
 Pocket = 7
 Price = 0
 BattleUse = OnBattler
 Flags = Fling_30
-Description = It drastically raises the Sp. Def stat of a Pokémon in battle. It wears off if the Pokémon is withdrawn.
+Description = Es erhöht die Spezial-Vert. eines Pokémon um 3 Stufen, bis es ausgwechselt wird.
 #-------------------------------
 [XSPDEF6]
-Name = X Sp. Def 6
-NamePlural = X Sp. Def 6s
+Name = X-Sp.-Vert. 6
+NamePlural = X-Sp.-Vert. 6
 Pocket = 7
 Price = 0
 BattleUse = OnBattler
 Flags = Fling_30
-Description = It raises the Sp. Def stat of a Pokémon in battle immensely. It wears off if the Pokémon is withdrawn.
+Description = Es erhöht die Spezial-Vert. eines Pokémon um 6 Stufen, bis es ausgwechselt wird.
 #-------------------------------
 [XSPEED]
 Name = X-Initiative
