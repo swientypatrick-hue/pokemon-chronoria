@@ -1,5 +1,5 @@
 ---
-import { typeColor, mixColor } from "../lib/typeColors";
+import { typeColor, mixColor, textColorFor } from "../lib/typeColors";
 import { typeIcon } from "../lib/typeIcons";
 import { typeNameById } from "../lib/data";
 
@@ -9,7 +9,10 @@ interface Props {
 const { type } = Astro.props;
 const name = typeNameById.get(type) ?? type;
 const color = typeColor(type);
-const style = `background:linear-gradient(155deg, ${mixColor(color, 25)}, ${mixColor(color, -35)}); box-shadow: 0 4px 14px -3px ${color}99, inset 0 1px 0 rgba(255,255,255,0.14);`;
+const ink = textColorFor(color);
+const textShadow =
+  ink === "#ffffff" ? "0 1px 2px rgba(0,0,0,0.45)" : "0 1px 0 rgba(255,255,255,0.35)";
+const style = `background:linear-gradient(155deg, ${mixColor(color, 25)}, ${mixColor(color, -35)}); box-shadow: 0 4px 14px -3px ${color}99, inset 0 1px 0 rgba(255,255,255,0.14); color: ${ink}; text-shadow: ${textShadow};`;
 ---
 
 <span class="badge badge-type" style={style}>

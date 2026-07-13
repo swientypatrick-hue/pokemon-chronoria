@@ -449,11 +449,9 @@ h2 {
   text-align: center;
   gap: 5px;
   padding: 0.3rem 0.75rem 0.3rem 0.6rem;
-  /* Glass badges sit on light AND dark backgrounds of every hue, so a plain white fill isn't
-     always readable (worst case: ELECTRIC's yellow) - a dark stroke + shadow keeps the glyphs
-     legible regardless of the badge's own color. */
-  -webkit-text-stroke: 0.4px rgba(0, 0, 0, 0.55);
-  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.45);
+  /* color and text-shadow are set inline per badge (see TypeBadge.astro): ink is picked from
+     each type's own brightness instead of forcing white + a stroke hack everywhere, which
+     looked "dirty" on light hues (ELECTRIC, NORMAL, FLYING). */
 }
 
 .badge-type-icon {

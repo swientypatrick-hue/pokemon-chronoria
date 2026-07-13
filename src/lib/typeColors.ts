@@ -36,3 +36,15 @@ export function mixColor(hex: string, amount: number): string {
   const b = clamp(n & 255);
   return `rgb(${r},${g},${b})`;
 }
+
+/** Picks readable ink for a badge from its own perceived brightness, rather than forcing white
+ *  everywhere and faking contrast with a text-stroke - that trick looked "dirty" on light hues
+ *  (ELECTRIC, NORMAL, FLYING). Dark ink on pale badges, white ink on saturated/dark ones. */
+export function textColorFor(hex: string): string {
+  const n = parseInt(hex.slice(1), 16);
+  const r = (n >> 16) & 255;
+  const g = (n >> 8) & 255;
+  const b = n & 255;
+  const luminance = 0.299 * r + 0.587 * g + 0.114 * b;
+  return luminance > 160 ? "#2b2418" : "#ffffff";
+}
