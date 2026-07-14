@@ -50,8 +50,6 @@ Description = Eine durchsichtige, gläserne Flöte, die wilde Pokémon anziehen 
 [HONEY]
 Name = Honig
 NamePlural = Honig
-PortionName = jar of Honey
-PortionNamePlural = jars of Honey
 Pocket = 1
 Price = 450
 FieldUse = Direct
@@ -501,8 +499,6 @@ Description = Eine Perlenkette, die verkauft werden kann.
 [STARDUST]
 Name = Sternenstaub
 NamePlural = Sternenstaub
-PortionName = bag of Stardust
-PortionNamePlural = bags of Stardust
 Pocket = 1
 Price = 3000
 Flags = Fling_30
@@ -625,15 +621,13 @@ Price = 300000
 Flags = Fling_30
 Description = Eine antike Krone.
 #-------------------------------
-[GROWTHMULCH]
-Name = Growth Mulch
-NamePlural = Growth Mulch
-PortionName = bag of Growth Mulch
-PortionNamePlural = bags of Growth Mulch
-Pocket = 1
-Price = 200
-Flags = Mulch,Fling_30
-Description = A fertilizer to be spread on soft soil in regions where Berries are grown. A maniac will buy it for a high price.
+#[GROWTHMULCH]
+#Name = Growth Mulch
+#NamePlural = Growth Mulch
+#Pocket = 1
+#Price = 200
+#Flags = Mulch,Fling_30
+#Description = A fertilizer to be spread on soft soil in regions where Berries are grown. A maniac will buy it for a high price.
 #-------------------------------
 [SHOALSALT]
 Name = Küstensalz
@@ -1033,8 +1027,6 @@ Description = Erhöht die Regeneration von Absorber-Attacken um 30%.
 [BLACKSLUDGE]
 Name = Giftschleim
 NamePlural = Giftschleime
-PortionName = Blob Giftschleim
-PortionNamePlural = Blob Giftschleim
 Pocket = 1
 Price = 10000
 SellPrice = 2500
@@ -1045,8 +1037,6 @@ Description = Von einem Gift-Pokémon getragen, stellt es 1/16 der Gesamt-LP am 
 [LEFTOVERS]
 Name = Überreste
 NamePlural = Überreste
-PortionName = Portion Überreste
-PortionNamePlural = Portion Überreste
 Pocket = 1
 Price = 20000
 SellPrice = 5000
@@ -6633,40 +6623,40 @@ Flags = Berry,Fling_10,NaturalGift_DARK_80
 Description = Heilt 33 % der KP wenn diese unter 25 % fallen, aber verwirrt Pokémon, die ein Vert. (-) Wesen haben.
 #-------------------------------
 [RAZZBERRY]
-Name = Razz Berry
-NamePlural = Razz Berries
+Name = Himmihbeere
+NamePlural = Himmihbeeren
 Pocket = 5
 Price = 20
 Flags = Berry,Fling_10,NaturalGift_STEEL_80
 Description = Eine Zutat für bestimmte Rezepte.
 #-------------------------------
 [BLUKBERRY]
-Name = Bluk Berry
-NamePlural = Bluk Berries
+Name = Morbbeere
+NamePlural = Morbbeeren
 Pocket = 5
 Price = 20
 Flags = Berry,Fling_10,NaturalGift_FIRE_90
 Description = Eine Zutat für bestimmte Rezepte.
 #-------------------------------
 [NANABBERRY]
-Name = Nanab Berry
-NamePlural = Nanab Berries
+Name = Nanabbeere
+NamePlural = Nanabbeeren
 Pocket = 5
 Price = 20
 Flags = Berry,Fling_10,NaturalGift_WATER_90
 Description = Eine Zutat für bestimmte Rezepte.
 #-------------------------------
 [WEPEARBERRY]
-Name = Wepear Berry
-NamePlural = Wepear Berries
+Name = Nirbebeere
+NamePlural = Nirbebeeren
 Pocket = 5
 Price = 20
 Flags = Berry,Fling_10,NaturalGift_ELECTRIC_90
 Description = Eine Zutat für bestimmte Rezepte.
 #-------------------------------
 [PINAPBERRY]
-Name = Pinap Berry
-NamePlural = Pinap Berries
+Name = Sananabeere
+NamePlural = Sananabeere
 Pocket = 5
 Price = 20
 Flags = Berry,Fling_10,NaturalGift_GRASS_90
@@ -6727,72 +6717,72 @@ Flags = Berry,Fling_10,NaturalGift_PSYCHIC_90
 Description = Senkt die Basis-Initiative um 10 und erhöht die Freundschaft um 10.
 #-------------------------------
 [CORNNBERRY]
-Name = Cornn Berry
-NamePlural = Cornn Berries
+Name = Saimbeere
+NamePlural = Saimbeeren
 Pocket = 5
 Price = 20
 Flags = Berry,Fling_10,NaturalGift_BUG_90
 Description = Eine Zutat für bestimmte Rezepte.
 #-------------------------------
 [MAGOSTBERRY]
-Name = Magost Berry
-NamePlural = Magost Berries
+Name = Magostbeere
+NamePlural = Magostbeeren
 Pocket = 5
 Price = 20
 Flags = Berry,Fling_10,NaturalGift_ROCK_90
 Description = Eine Zutat für bestimmte Rezepte.
 #-------------------------------
 [RABUTABERRY]
-Name = Rabuta Berry
-NamePlural = Rabuta Berries
+Name = Rabutabeere
+NamePlural = Rabutabeeren
 Pocket = 5
 Price = 20
 Flags = Berry,Fling_10,NaturalGift_GHOST_90
 Description = Eine Zutat für bestimmte Rezepte.
 #-------------------------------
 [NOMELBERRY]
-Name = Nomel Berry
-NamePlural = Nomel Berries
+Name = Tronzibeere
+NamePlural = Tronzibeeren
 Pocket = 5
 Price = 20
 Flags = Berry,Fling_10,NaturalGift_DRAGON_90
 Description = Eine Zutat für bestimmte Rezepte.
 #-------------------------------
 [SPELONBERRY]
-Name = Spelon Berry
-NamePlural = Spelon Berries
+Name = Kiwanbeere
+NamePlural = Kiwanbeeren
 Pocket = 5
 Price = 20
 Flags = Berry,Fling_10,NaturalGift_DARK_90
 Description = Eine Zutat für bestimmte Rezepte.
 #-------------------------------
 [PAMTREBERRY]
-Name = Pamtre Berry
-NamePlural = Pamtre Berries
+Name = Pallmbeere
+NamePlural = Pallmbeeren
 Pocket = 5
 Price = 20
 Flags = Berry,Fling_10,NaturalGift_STEEL_90
 Description = Eine Zutat für bestimmte Rezepte.
 #-------------------------------
 [WATMELBERRY]
-Name = Watmel Berry
-NamePlural = Watmel Berries
+Name = Wasmelbeere
+NamePlural = Wasmelbeeren
 Pocket = 5
 Price = 20
 Flags = Berry,Fling_10,NaturalGift_FIRE_100
 Description = Eine Zutat für bestimmte Rezepte.
 #-------------------------------
 [DURINBERRY]
-Name = Durin Berry
-NamePlural = Durin Berries
+Name = Durinbeere
+NamePlural = Durinbeeren
 Pocket = 5
 Price = 20
 Flags = Berry,Fling_10,NaturalGift_WATER_100
 Description = Eine Zutat für bestimmte Rezepte.
 #-------------------------------
 [BELUEBERRY]
-Name = Belue Berry
-NamePlural = Belue Berries
+Name = Myrtilbeere
+NamePlural = Myrtilbeeren
 Pocket = 5
 Price = 20
 Flags = Berry,Fling_10,NaturalGift_ELECTRIC_100
@@ -7642,8 +7632,6 @@ Description = Das Necrolun wird benutzt, um Necrozma und Lunala wieder zu trenne
 [REINSOFUNITY]
 Name = Zügel des Bundes
 NamePlural = Zügel des Bundes
-PortionName = set Zügel des Bundes
-PortionNamePlural = sets Zügel des Bundes
 Pocket = 8
 Price = 0
 FieldUse = OnPokemon
@@ -7653,8 +7641,6 @@ Description = Es kann Coronospa mit Polaross oder Phantoross fusionieren.
 [REINSOFUNITYUSED]
 Name = Zügel des Bundes
 NamePlural = Zügel des Bundes
-PortionName = set Zügel des Bundes
-PortionNamePlural = sets Zügel des Bundes
 Pocket = 8
 Price = 0
 FieldUse = OnPokemon

@@ -182,8 +182,6 @@ Description = Dieser Ball besitzt die gleiche Fangrate wie der Pokéball.
 [AUSPICIOUSARMOR]
 Name = Glorienrüstung
 NamePlural = Glorienrüstungen
-PortionName = set of Auspicious Armor
-PortionNamePlural = sets of Auspicious Armor
 Pocket = 1
 Price = 3000
 FieldUse = OnPokemon
@@ -193,8 +191,6 @@ Description = Damit kann Knarbon entwickelt werden.
 [MALICIOUSARMOR]
 Name = Fluchrüstung
 NamePlural = Fluchrüstungen
-PortionName = set of Malicious Armor
-PortionNamePlural = sets of Malicious Armor
 Pocket = 1
 Price = 3000
 FieldUse = OnPokemon
@@ -230,8 +226,6 @@ Description = Wenn Caesurio dieses Item trägt und drei andere Caesurio besiegt,
 [BOOSTERENERGY]
 Name = Energiekapsel
 NamePlural = Energiekapseln
-PortionName = capsule of Booster Energy
-PortionNamePlural = capsules of Booster Energy
 Pocket = 1
 Price = 0
 Flags = Fling_30
