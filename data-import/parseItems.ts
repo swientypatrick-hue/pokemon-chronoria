@@ -44,6 +44,7 @@ function blockToItem(block: PbsBlock, ctx: TranslationContext, icons: Map<string
     flags: splitList(r.Flags),
     icon: icons.get(id) ?? null,
     move: r.Move ?? null,
+    locations: [],
   };
 }
 

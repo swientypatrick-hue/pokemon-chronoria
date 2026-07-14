@@ -1,6 +1,7 @@
 import { readFileSync } from "node:fs";
 import { join } from "node:path";
-import { parsePbsBlocks, blockToRecord } from "./parsePbs.ts";
+import { parsePbsBlocks } from "./parsePbs.ts";
+import { loadMapLocationNames } from "./mapMetadata.ts";
 import type { EncounterLocation, EncounterSlot, EncounterTable } from "./dataModel.ts";
 
 const SOURCE_DIR = join(import.meta.dirname, "source", "PBS");
@@ -9,19 +10,10 @@ function load(file: string): string {
   return readFileSync(join(SOURCE_DIR, file), "utf-8");
 }
 
-function loadLocationNames(): Map<string, string> {
-  const names = new Map<string, string>();
-  for (const block of parsePbsBlocks(load("map_metadata.txt"))) {
-    const r = blockToRecord(block);
-    if (r.Name) names.set(block.headerParts[0], r.Name);
-  }
-  return names;
-}
-
 const isNumeric = (s: string) => /^\d+$/.test(s.trim());
 
 export function parseEncounters(): EncounterLocation[] {
-  const locationNames = loadLocationNames();
+  const locationNames = loadMapLocationNames();
   const locations: EncounterLocation[] = [];
 
   for (const block of parsePbsBlocks(load("encounters.txt"))) {

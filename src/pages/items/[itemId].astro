@@ -2,6 +2,7 @@
 import Layout from "../../layouts/Layout.astro";
 import { items, slugify, moveById } from "../../lib/data";
 import { pocketName } from "../../lib/itemPockets";
+import { itemLocationSourceLabel } from "../../lib/itemLocationSource";
 import { href } from "../../lib/url";
 
 export function getStaticPaths() {
@@ -10,6 +11,12 @@ export function getStaticPaths() {
 
 const { i } = Astro.props;
 const displayName = i.move ? (moveById.get(i.move)?.name ?? i.name) : i.name;
+const locationsByPlace = Object.groupBy
+  ? Object.groupBy(i.locations, (l: any) => l.locationName)
+  : i.locations.reduce((acc: Record<string, any[]>, l: any) => {
+      (acc[l.locationName] ??= []).push(l);
+      return acc;
+    }, {});
 ---
 
 <Layout title={displayName}>
@@ -23,4 +30,21 @@ const displayName = i.move ? (moveById.get(i.move)?.name ?? i.name) : i.name;
     {i.pocket !== 8 && <tr><th>Preis</th><td>{i.price !== null ? `${i.price} ₽` : "nicht käuflich"}</td></tr>}
     <tr><th>Tasche</th><td>{pocketName(i.pocket)}</td></tr>
   </table>
+
+  {i.locations.length > 0 && (
+    <>
+      <h2>Fundorte</h2>
+      <table>
+        <tr><th>Ort</th><th>Quelle</th></tr>
+        {Object.entries(locationsByPlace).map(([place, refs]: [string, any]) => (
+          refs.map((r: any, idx: number) => (
+            <tr>
+              {idx === 0 ? <td rowspan={refs.length}>{place}</td> : null}
+              <td>{itemLocationSourceLabel(r.source)}</td>
+            </tr>
+          ))
+        ))}
+      </table>
+    </>
+  )}
 </Layout>

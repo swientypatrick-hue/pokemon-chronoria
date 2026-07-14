@@ -37,6 +37,9 @@ function resolveAbility(species: string, formNumber: number, abilityIndex: numbe
   <h1>{t.name}</h1>
   {t.sprite && <img class="species-sprite" src={href(`/trainers/${t.sprite}`)} alt={t.name} width="96" height="96" />}
   <p class="meta-note">{t.trainerTypeName.text}</p>
+  {t.locations.length > 0 && (
+    <p class="meta-note">Anzutreffen bei: {t.locations.map((l) => l.locationName).join(", ")}</p>
+  )}
 
   <h2>Team</h2>
   <div class="card-grid">

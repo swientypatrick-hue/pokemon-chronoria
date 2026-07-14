@@ -148,6 +148,8 @@ export interface Item {
   icon: string | null;
   /** move id this TM/HM teaches, or null for items that don't teach a move */
   move: string | null;
+  // reverse index, filled in by buildData.ts from the map-event dump
+  locations: ItemLocationRef[];
 }
 
 export interface MedalCondition {
@@ -181,6 +183,17 @@ export interface TrainerPokemon {
   nature: string | null;
 }
 
+/** A map location a trainer or item is tied to, resolved from the map-event dump. */
+export interface MapLocationRef {
+  mapId: string;
+  locationName: string;
+}
+
+/** Same as MapLocationRef, plus how the item is obtained there. */
+export interface ItemLocationRef extends MapLocationRef {
+  source: "ground" | "hidden" | "gift" | "berry" | "special";
+}
+
 export interface Trainer {
   id: string; // "TRAINERTYPE-Name-optionalId"
   trainerType: string;
@@ -190,6 +203,8 @@ export interface Trainer {
   party: TrainerPokemon[];
   /** filename in public/trainers/, or null if no matching sprite exists */
   sprite: string | null;
+  // reverse index, filled in by buildData.ts from the map-event dump
+  locations: MapLocationRef[];
 }
 
 export interface EncounterSlot {

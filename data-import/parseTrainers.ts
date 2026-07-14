@@ -112,6 +112,7 @@ function blockToTrainer(
     loseText,
     party,
     sprite: sprites.get(trainerType) ?? null,
+    locations: [],
   };
 }
 

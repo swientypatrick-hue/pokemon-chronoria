@@ -14,6 +14,7 @@ import { parseTrainers } from "./parseTrainers.ts";
 import { parseEncounters } from "./parseEncounters.ts";
 import { parseTypes } from "./parseTypes.ts";
 import { parseMedals } from "./parseMedals.ts";
+import { parseMapLocations } from "./parseMapLocations.ts";
 import type { EncounterRef, Pokemon } from "./dataModel.ts";
 
 const OUT_DIR = join(import.meta.dirname, "..", "src", "data");
@@ -55,11 +56,14 @@ function main() {
   const encounters = parseEncounters();
   const types = parseTypes(ctx);
   const medals = parseMedals();
+  const mapLocations = parseMapLocations();
 
   console.log("Baue Querverweise...");
   const pokemonById = new Map(pokemon.map((p) => [p.id, p]));
   const moveById = new Map(moves.map((m) => [m.id, m]));
   const abilityById = new Map(abilities.map((a) => [a.id, a]));
+  const trainerById = new Map(trainers.map((t) => [t.id, t]));
+  const itemById = new Map(items.map((i) => [i.id, i]));
 
   // evolvesFrom
   for (const p of pokemon) {
@@ -114,6 +118,16 @@ function main() {
   }
   if (unresolvedEncounterSpecies > 0) {
     console.warn(`[Fundorte] ${unresolvedEncounterSpecies} Encounter-Einträge ohne passendes Pokémon übersprungen.`);
+  }
+
+  // map-event dump -> trainer.locations / item.locations
+  for (const [trainerId, refs] of mapLocations.trainerLocations) {
+    const trainer = trainerById.get(trainerId);
+    if (trainer) trainer.locations.push(...refs);
+  }
+  for (const [itemId, refs] of mapLocations.itemLocations) {
+    const item = itemById.get(itemId);
+    if (item) item.locations.push(...refs);
   }
 
   console.log("Schreibe JSON-Dateien...");
