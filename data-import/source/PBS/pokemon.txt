@@ -2613,7 +2613,7 @@ Evolutions = HAUNTER,Level,25
 RaidRanks = 1,2
 #-------------------------------
 [HAUNTER]
-Name = Haunter
+Name = Alpollo
 Types = GHOST,POISON
 BaseStats = 45,50,45,95,115,55
 GenderRatio = Female50Percent
