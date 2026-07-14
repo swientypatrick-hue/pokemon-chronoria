@@ -281,7 +281,8 @@ Pokemon = HAWLUCHA,17
 LoseText = Zu viel!
 Pokemon = HONEDGE,16
 Pokemon = YAMASK,16
-Pokemon = QWILFISH_1,16
+Pokemon = QWILFISH,16
+	Form = 1
 #-------------------------------
 [BIRDKEEPER_M2,Xaver]
 LoseText = Meine Pokémon sind nicht hoch genug geflogen.
