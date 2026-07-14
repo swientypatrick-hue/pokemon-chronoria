@@ -1109,7 +1109,7 @@ RaidRanks = 3,4
 [RATTATA,2]
 
 
-FormName = Krypto
+FormName = Chrono
 
 
 Types = DARK
@@ -1154,7 +1154,7 @@ Evolutions = RATICATE,Level,20
 [RATICATE,2]
 
 
-FormName = Krypto
+FormName = Chrono
 
 
 Types = DARK
@@ -9112,7 +9112,7 @@ CallRateSOS = 3
 [MAGNEMITE,1]
 
 
-FormName = Pflanzen-Form
+FormName = Chrono
 
 
 Types = GRASS,STEEL
@@ -9154,7 +9154,7 @@ Evolutions = MAGNETON,Level,30
 [MAGNETON,1]
 
 
-FormName = Pflanzen-Form
+FormName = Chrono
 
 
 Types = GRASS,STEEL
@@ -9187,7 +9187,7 @@ Evolutions = MAGNEZONE,Item,THUNDERSTONE,MAGNEZONE,LocationFlag,Magnetic
 [MAGNEZONE,1]
 
 
-FormName = Pflanzen-Form
+FormName = Chrono
 
 
 Types = GRASS,STEEL
