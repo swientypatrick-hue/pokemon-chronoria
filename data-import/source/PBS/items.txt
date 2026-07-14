@@ -767,7 +767,7 @@ Price = 50000
 SellPrice = 12500
 BPPrice = 25
 Flags = Fling_80
-Description = Erhöht die Sp. Verteidugung um 50% verhindert aber den Einsatz von Status-Attacken.
+Description = Erhöht die Sp. Verteidigung um 50% verhindert aber den Einsatz von Status-Attacken.
 #-------------------------------
 [SAFETYGOGGLES]
 Name = Schutzbrille
@@ -3523,218 +3523,184 @@ Flags = Fling_20
 Description = Erhöht die Initiative-Basispunkte um 1 und die Freundschaft um 3. 
 #-------------------------------
 [LONELYMINT]
-Name = Lonely Mint
-NamePlural = Lonely Mints
-PortionName = sprig of Lonely Mint
-PortionNamePlural = sprigs of Lonely Mint
+Name = Solo-Minze
+NamePlural = Solo-Minzen
 Pocket = 2
 Price = 20000
 SellPrice = 5000
 BPPrice = 50
 FieldUse = OnPokemon
 Flags = Fling_10
-Description = When a Pokémon smells this mint, its Attack will grow more easily, but its Defense will grow more slowly.
+Description = Der Angriff des Pokémon steigt schneller aber die Verteidigung langsamer.
 #-------------------------------
 [ADAMANTMINT]
-Name = Adamant Mint
-NamePlural = Adamant Mints
-PortionName = sprig of Adamant Mint
-PortionNamePlural = sprigs of Adamant Mint
+Name = Hart-Minze
+NamePlural = Hart-Minzen
 Pocket = 2
 Price = 20000
 SellPrice = 5000
 BPPrice = 50
 FieldUse = OnPokemon
 Flags = Fling_10
-Description = When a Pokémon smells this mint, its Attack will grow more easily, but its Sp. Atk will grow more slowly.
+Description = Der Angriff des Pokémon steigt schneller aber der Sp. Angr. langsamer.
 #-------------------------------
 [NAUGHTYMINT]
-Name = Naughty Mint
-NamePlural = Naughty Mints
-PortionName = sprig of Naughty Mint
-PortionNamePlural = sprigs of Naughty Mint
+Name = Frech-Minze
+NamePlural = Frech-Minzen
 Pocket = 2
 Price = 20000
 SellPrice = 5000
 BPPrice = 50
 FieldUse = OnPokemon
 Flags = Fling_10
-Description = When a Pokémon smells this mint, its Attack will grow more easily, but its Sp. Def will grow more slowly.
+Description = Der Angriff des Pokémon steigt schneller aber die Sp. Vert. langsamer.
 #-------------------------------
 [BRAVEMINT]
-Name = Brave Mint
-NamePlural = Brave Mints
-PortionName = sprig of Brave Mint
-PortionNamePlural = sprigs of Brave Mint
+Name = Mutig-Minze
+NamePlural = Mutig-Minzen
 Pocket = 2
 Price = 20000
 SellPrice = 5000
 BPPrice = 50
 FieldUse = OnPokemon
 Flags = Fling_10
-Description = When a Pokémon smells this mint, its Attack will grow more easily, but its Speed will grow more slowly.
+Description = Der Angriff des Pokémon steigt schneller aber die Initiative langsamer.
 #-------------------------------
 [BOLDMINT]
-Name = Bold Mint
-NamePlural = Bold Mints
-PortionName = sprig of Bold Mint
-PortionNamePlural = sprigs of Bold Mint
+Name = Kühn-Minze
+NamePlural = Kühn-Minzen
 Pocket = 2
 Price = 20000
 SellPrice = 5000
 BPPrice = 50
 FieldUse = OnPokemon
 Flags = Fling_10
-Description = When a Pokémon smells this mint, its Defense will grow more easily, but its Attack will grow more slowly.
+Description = Die Verteidigung des Pokémon steigt schneller aber der Angriff langsamer.
 #-------------------------------
 [IMPISHMINT]
-Name = Impish Mint
-NamePlural = Impish Mints
-PortionName = sprig of Impish Mint
-PortionNamePlural = sprigs of Impish Mint
+Name = Pfiffig-Minze
+NamePlural = Pfiffig-Minzen
 Pocket = 2
 Price = 20000
 SellPrice = 5000
 BPPrice = 50
 FieldUse = OnPokemon
 Flags = Fling_10
-Description = When a Pokémon smells this mint, its Defense will grow more easily, but its Sp. Atk will grow more slowly.
+Description = Die Verteidigung des Pokémon steigt schneller aber der Sp. Angr. langsamer.
 #-------------------------------
 [LAXMINT]
-Name = Lax Mint
-NamePlural = Lax Mints
-PortionName = sprig of Lax Mint
-PortionNamePlural = sprigs of Lax Mint
+Name = Lasch-Minze
+NamePlural = Lasch-Minzen
 Pocket = 2
 Price = 20000
 SellPrice = 5000
 BPPrice = 50
 FieldUse = OnPokemon
 Flags = Fling_10
-Description = When a Pokémon smells this mint, its Defense will grow more easily, but its Sp. Def will grow more slowly.
+Description = Die Verteidigung des Pokémon steigt schneller aber die Sp. Vert. langsamer.
 #-------------------------------
 [RELAXEDMINT]
-Name = Relaxed Mint
-NamePlural = Relaxed Mints
-PortionName = sprig of Relaxed Mint
-PortionNamePlural = sprigs of Relaxed Mint
+Name = Locker-Minze
+NamePlural = Locker-Minzen
 Pocket = 2
 Price = 20000
 SellPrice = 5000
 BPPrice = 50
 FieldUse = OnPokemon
 Flags = Fling_10
-Description = When a Pokémon smells this mint, its Defense will grow more easily, but its Speed will grow more slowly.
+Description = Die Verteidigung des Pokémon steigt schneller aber die Initiative langsamer.
 #-------------------------------
 [MODESTMINT]
-Name = Modest Mint
-NamePlural = Modest Mints
-PortionName = sprig of Modest Mint
-PortionNamePlural = sprigs of Modest Mint
+Name = Mäßig-Minze
+NamePlural = Mäßig-Minzen
 Pocket = 2
 Price = 20000
 SellPrice = 5000
 BPPrice = 50
 FieldUse = OnPokemon
 Flags = Fling_10
-Description = When a Pokémon smells this mint, its Sp. Atk will grow more easily, but its Attack will grow more slowly.
+Description = Der Sp. Angriff des Pokémon steigt schneller aber der Angriff langsamer.
 #-------------------------------
 [MILDMINT]
-Name = Mild Mint
-NamePlural = Mild Mints
-PortionName = sprig of Mild Mint
-PortionNamePlural = sprigs of Mild Mint
+Name = Mild-Minze
+NamePlural = Mild-Minzen
 Pocket = 2
 Price = 20000
 SellPrice = 5000
 BPPrice = 50
 FieldUse = OnPokemon
 Flags = Fling_10
-Description = When a Pokémon smells this mint, its Sp. Atk will grow more easily, but its Defense will grow more slowly.
+Description = Der Sp. Angriff des Pokémon steigt schneller aber die Verteidigung langsamer.
 #-------------------------------
 [RASHMINT]
-Name = Rash Mint
-NamePlural = Rash Mints
-PortionName = sprig of Rash Mint
-PortionNamePlural = sprigs of Rash Mint
+Name = Hitzig-Minze
+NamePlural = Hitzig-Minzen
 Pocket = 2
 Price = 20000
 SellPrice = 5000
 BPPrice = 50
 FieldUse = OnPokemon
 Flags = Fling_10
-Description = When a Pokémon smells this mint, its Sp. Atk will grow more easily, but its Sp. Def will grow more slowly.
+Description = Der Sp. Angriff des Pokémon steigt schneller aber die Sp. Verteidigung langsamer.
 #-------------------------------
 [QUIETMINT]
-Name = Quiet Mint
-NamePlural = Quiet Mints
-PortionName = sprig of Quiet Mint
-PortionNamePlural = sprigs of Quiet Mint
+Name = Ruhig-Minze
+NamePlural = Ruhig-Minzen
 Pocket = 2
 Price = 20000
 SellPrice = 5000
 BPPrice = 50
 FieldUse = OnPokemon
 Flags = Fling_10
-Description = When a Pokémon smells this mint, its Sp. Atk will grow more easily, but its Speed will grow more slowly.
+Description = Der Sp. Angriff des Pokémon steigt schneller aber die Initiative langsamer.
 #-------------------------------
 [CALMMINT]
-Name = Calm Mint
-NamePlural = Calm Mints
-PortionName = sprig of Calm Mint
-PortionNamePlural = sprigs of Calm Mint
+Name = Still-Minze
+NamePlural = Still-Minzen
 Pocket = 2
 Price = 20000
 SellPrice = 5000
 BPPrice = 50
 FieldUse = OnPokemon
 Flags = Fling_10
-Description = When a Pokémon smells this mint, its Sp. Def will grow more easily, but its Attack will grow more slowly.
+Description = Die Sp. Verteidigung des Pokémon steigt schneller aber der Angriff langsamer.
 #-------------------------------
 [GENTLEMINT]
-Name = Gentle Mint
-NamePlural = Gentle Mints
-PortionName = sprig of Gentle Mint
-PortionNamePlural = sprigs of Gentle Mint
+Name = Zart-Minze
+NamePlural = Zart-Minzen
 Pocket = 2
 Price = 20000
 SellPrice = 5000
 BPPrice = 50
 FieldUse = OnPokemon
 Flags = Fling_10
-Description = When a Pokémon smells this mint, its Sp. Def will grow more easily, but its Defense will grow more slowly.
+Description = Die Sp. Verteidigung des Pokémon steigt schneller aber die Verteidigung langsamer.
 #-------------------------------
 [CAREFULMINT]
-Name = Careful Mint
-NamePlural = Careful Mints
-PortionName = sprig of Careful Mint
-PortionNamePlural = sprigs of Careful Mint
+Name = Sacht-Minze
+NamePlural = Sacht-Minzen
 Pocket = 2
 Price = 20000
 SellPrice = 5000
 BPPrice = 50
 FieldUse = OnPokemon
 Flags = Fling_10
-Description = When a Pokémon smells this mint, its Sp. Def will grow more easily, but its Sp. Atk will grow more slowly.
+Description = Die Sp. Verteidigung des Pokémon steigt schneller aber der Sp. Angriff langsamer.
 #-------------------------------
 [SASSYMINT]
-Name = Sassy Mint
-NamePlural = Sassy Mints
-PortionName = sprig of Sassy Mint
-PortionNamePlural = sprigs of Sassy Mint
+Name = Forsch-Minze
+NamePlural = Forsch-Minzen
 Pocket = 2
 Price = 20000
 SellPrice = 5000
 BPPrice = 50
 FieldUse = OnPokemon
 Flags = Fling_10
-Description = When a Pokémon smells this mint, its Sp. Def will grow more easily, but its Speed will grow more slowly.
+Description = Die Sp. Verteidigung des Pokémon steigt schneller aber die Initiative langsamer.
 #-------------------------------
 [TIMIDMINT]
-Name = Timid Mint
-NamePlural = Timid Mints
-PortionName = sprig of Timid Mint
-PortionNamePlural = sprigs of Timid Mint
+Name = Scheu-Minze
+NamePlural = Scheu-Minzen
 Pocket = 2
 Price = 20000
 SellPrice = 5000
@@ -3744,56 +3710,48 @@ Flags = Fling_10
 Description = When a Pokémon smells this mint, its Speed will grow more easily, but its Attack will grow more slowly.
 #-------------------------------
 [HASTYMINT]
-Name = Hasty Mint
-NamePlural = Hasty Mints
-PortionName = sprig of Hasty Mint
-PortionNamePlural = sprigs of Hasty Mint
+Name = Hastig-Minze
+NamePlural = Hastig-Minzen
 Pocket = 2
 Price = 20000
 SellPrice = 5000
 BPPrice = 50
 FieldUse = OnPokemon
 Flags = Fling_10
-Description = When a Pokémon smells this mint, its Speed will grow more easily, but its Defense will grow more slowly.
+Description = Die Initiative des Pokémon steigt schneller aber der Angriff langsamer.
 #-------------------------------
 [JOLLYMINT]
-Name = Jolly Mint
-NamePlural = Jolly Mints
-PortionName = sprig of Jolly Mint
-PortionNamePlural = sprigs of Jolly Mint
+Name = Froh-Minze
+NamePlural = Froh-Minzen
 Pocket = 2
 Price = 20000
 SellPrice = 5000
 BPPrice = 50
 FieldUse = OnPokemon
 Flags = Fling_10
-Description = When a Pokémon smells this mint, its Speed will grow more easily, but its Sp. Atk will grow more slowly.
+Description = Die Initiative des Pokémon steigt schneller aber die Verteidigung langsamer.
 #-------------------------------
 [NAIVEMINT]
-Name = Naive Mint
-NamePlural = Naive Mints
-PortionName = sprig of Naive Mint
-PortionNamePlural = sprigs of Naive Mint
+Name = Naiv-Minze
+NamePlural = Naiv-Minzen
 Pocket = 2
 Price = 20000
 SellPrice = 5000
 BPPrice = 50
 FieldUse = OnPokemon
 Flags = Fling_10
-Description = When a Pokémon smells this mint, its Speed will grow more easily, but its Sp. Def will grow more slowly.
+Description = Die Initiative des Pokémon steigt schneller aber die Sp. Vert. langsamer.
 #-------------------------------
 [SERIOUSMINT]
-Name = Serious Mint
-NamePlural = Serious Mints
-PortionName = sprig of Serious Mint
-PortionNamePlural = sprigs of Serious Mint
+Name = Ernst-Minze
+NamePlural = Ernst-Minzen
 Pocket = 2
 Price = 20000
 SellPrice = 5000
 BPPrice = 50
 FieldUse = OnPokemon
 Flags = Fling_10
-Description = When a Pokémon smells this mint, all of its stats will grow at an equal rate.
+Description = Alle Werte steigen gleich schnell.
 #-------------------------------
 [ABILITYCAPSULE]
 Name = Fähigkeiten-Kapsel
@@ -7134,8 +7092,8 @@ Flags = Fling_30
 Description = Es erhöht den Angriff eines Pokémon um 6 Stufen, bis es ausgwechselt wird.
 #-------------------------------
 [XDEFENSE]
-Name = X-Verteidugung
-NamePlural = X-Verteidugung
+Name = X-Verteidigung
+NamePlural = X-Verteidigung
 Pocket = 7
 Price = 2000
 SellPrice = 250
@@ -7144,8 +7102,8 @@ Flags = Fling_30
 Description = Es erhöht die Vert. eines Pokémon um 1 Stufe, bis es ausgwechselt wird.
 #-------------------------------
 [XDEFENSE2]
-Name = X-Verteidugung 2
-NamePlural = X-Verteidugung 2
+Name = X-Verteidigung 2
+NamePlural = X-Verteidigung 2
 Pocket = 7
 Price = 0
 BattleUse = OnBattler
@@ -7153,8 +7111,8 @@ Flags = Fling_30
 Description = Es erhöht die Vert. eines Pokémon um 2 Stufen, bis es ausgwechselt wird.
 #-------------------------------
 [XDEFENSE3]
-Name = X-Verteidugung 3
-NamePlural = X-Verteidugung 3
+Name = X-Verteidigung 3
+NamePlural = X-Verteidigung 3
 Pocket = 7
 Price = 0
 BattleUse = OnBattler
@@ -7162,8 +7120,8 @@ Flags = Fling_30
 Description = Es erhöht die Vert. eines Pokémon um 3 Stufen, bis es ausgwechselt wird.
 #-------------------------------
 [XDEFENSE6]
-Name = X-Verteidugung 6
-NamePlural = X-Verteidugung 6
+Name = X-Verteidigung 6
+NamePlural = X-Verteidigung 6
 Pocket = 7
 Price = 0
 BattleUse = OnBattler
