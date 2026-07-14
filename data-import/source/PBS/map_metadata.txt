@@ -429,24 +429,24 @@ MapPosition = 1,13,16
 BattleBack = city
 #-------------------------------
 [076]   # Kolosseum
-Name = Kolosseum
+Name = Velmora
 ShowArea = true
 MapPosition = 0,1,18
 SnapEdges = true
 BattleBack = ruine
 #-------------------------------
 [077]   # Pflanze
-Name = Kolosseum
+Name = Velmora
 MapPosition = 0,1,18
 SnapEdges = true
 #-------------------------------
 [078]   # Feuer
-Name = Kolosseum
+Name = Velmora
 MapPosition = 0,1,18
 SnapEdges = true
 #-------------------------------
 [079]   # Wasser
-Name = Kolosseum
+Name = Velmora
 MapPosition = 0,1,18
 SnapEdges = true
 #-------------------------------
@@ -542,7 +542,7 @@ Environment = Cave
 Flags = Levels
 #-------------------------------
 [089]   # Zwischengebäude
-Name = Mistral
+Name = Route 2 / Mistral
 Bicycle = true
 MapPosition = 0,4,15
 SnapEdges = true
@@ -846,7 +846,7 @@ BattleBack = route15
 Flags = Levels
 #-------------------------------
 [140]   # Geisterhaus
-Name = Geisterhaus
+Name = Celestia
 ShowArea = true
 MapPosition = 0,6,5
 DarkMap = true
@@ -922,13 +922,13 @@ MapPosition = 0,4,13
 SnapEdges = true
 #-------------------------------
 [151]   # Arena 1
-Name = Arena Lunafeld
+Name = Lunafeld Arena
 ShowArea = true
 MapPosition = 0,4,13
 SnapEdges = true
 #-------------------------------
 [152]   # Arena 1 Prüfung
-Name = Arena Lunafeld
+Name = Lunafeld Arena
 MapPosition = 0,4,13
 DarkMap = true
 SnapEdges = true
@@ -938,7 +938,7 @@ Environment = Cave
 Flags = Levels
 #-------------------------------
 [153]   # Arena 1 Prüfung
-Name = Arena Lunafeld
+Name = Lunafeld Arena
 MapPosition = 0,4,13
 DarkMap = true
 SnapEdges = true
@@ -948,7 +948,7 @@ Environment = Cave
 Flags = Levels
 #-------------------------------
 [154]   # Arena 1 Kampf
-Name = Arena Lunafeld
+Name = Lunafeld Arena
 MapPosition = 0,4,13
 SnapEdges = true
 BattleBack = arena1
@@ -1039,7 +1039,7 @@ Name = Route 5
 MapPosition = 0,7,13
 #-------------------------------
 [164]   # Zwischengebäude
-Name = Zwischengebäude
+Name = Ephiron / Route 8
 MapPosition = 0,3,10
 SnapEdges = true
 #-------------------------------
@@ -1136,14 +1136,14 @@ BattleBack = gym2
 Name = Azumaris Arena
 MapPosition = 0,9,14
 BattleBack = gym2
-#-------------------------------
+#-------------------------------??
 [177]   # MAP177
-Name = Azumaris
+Name = Noch nicht vergeben
 HealingSpot = 177,10,7
 MapPosition = 0,9,14
 #-------------------------------
 [178]   # Arena 4
-Name = Arena Ephiron
+Name = Ephiron Arena
 MapPosition = 0,3,10
 SnapEdges = true
 BattleBack = gym4
@@ -1362,7 +1362,7 @@ MapPosition = 0,12,8
 DarkMap = true
 #-------------------------------
 [204]   # Aufzug
-Name = Arena Lunafeld
+Name = Lunafeld Arena
 MapPosition = 0,4,13
 SnapEdges = true
 #-------------------------------
@@ -1387,7 +1387,7 @@ WildBattleBGM = Battle! (Wild Pokémon)_7
 Flags = Levels
 #-------------------------------
 [207]   # MAP207
-Name = Route 5
+Name = Noch nicht vergeben
 MapPosition = 0,7,13
 #-------------------------------
 [208]   # Solhaven
@@ -1714,7 +1714,7 @@ MapPosition = 0,6,5
 SnapEdges = true
 #-------------------------------
 [263]   # Geisterhaus
-Name = Geisterhaus
+Name = Celestia
 ShowArea = true
 MapPosition = 0,6,5
 DarkMap = true
@@ -1758,7 +1758,7 @@ Environment = Forest
 Flags = Levels
 #-------------------------------
 [267]   # Geisterhaus
-Name = Geisterhaus
+Name = Celestia
 MapPosition = 0,6,5
 DarkMap = true
 SnapEdges = true
@@ -1768,7 +1768,7 @@ WildVictoryBGM = Victory! (Wild Pokemon)_9
 Flags = Levels
 #-------------------------------
 [268]   # Geisterhaus
-Name = Geisterhaus
+Name = Celestia
 MapPosition = 0,6,5
 DarkMap = true
 SnapEdges = true
@@ -1778,7 +1778,7 @@ WildVictoryBGM = Victory! (Wild Pokemon)_9
 Flags = Levels
 #-------------------------------
 [269]   # Geisterhaus
-Name = Geisterhaus
+Name = Celestia
 MapPosition = 0,6,5
 DarkMap = true
 SnapEdges = true
@@ -1788,7 +1788,7 @@ WildVictoryBGM = Victory! (Wild Pokemon)_9
 Flags = Levels
 #-------------------------------
 [270]   # Geisterhaus
-Name = Geisterhaus
+Name = Celestia
 MapPosition = 0,6,5
 DarkMap = true
 SnapEdges = true
@@ -1798,7 +1798,7 @@ WildVictoryBGM = Victory! (Wild Pokemon)_9
 Flags = Levels
 #-------------------------------
 [271]   # Geisterhaus
-Name = Geisterhaus
+Name = Celestia
 MapPosition = 0,6,5
 DarkMap = true
 SnapEdges = true
@@ -1808,7 +1808,7 @@ WildVictoryBGM = Victory! (Wild Pokemon)_9
 Flags = Levels
 #-------------------------------
 [272]   # Celestia Center
-Name = Celestia
+Name = Celestia Pokécenter
 ShowArea = true
 HealingSpot = 251,31,13
 MapPosition = 0,6,5
@@ -1959,47 +1959,47 @@ MapPosition = 0,1,18
 SnapEdges = true
 #-------------------------------
 [294]   # Hotel Klefki
-Name = Hotel Klefki
+Name = Azumaris
 MapPosition = 0,2,12
 #-------------------------------
 [295]   # Hotel Klefki P1
-Name = Hotel Klefki P1
+Name = Azumaris
 MapPosition = 0,2,12
 #-------------------------------
 [296]   # Zimmer
-Name = Zimmer
+Name = Azumaris
 MapPosition = 0,2,12
 #-------------------------------
 [297]   # Zimmer
-Name = Zimmer
+Name = Azumaris
 MapPosition = 0,2,12
 #-------------------------------
 [298]   # Zimmer
-Name = Zimmer
+Name = Azumaris
 MapPosition = 0,2,12
 #-------------------------------
 [299]   # Zimmer
-Name = Zimmer
+Name = Azumaris
 MapPosition = 0,2,12
 #-------------------------------
 [300]   # Hotel Klefki P2
-Name = Hotel Klefki P2
+Name = Azumaris
 MapPosition = 0,2,12
 #-------------------------------
 [301]   # Zimmer
-Name = Zimmer
+Name = Azumaris
 MapPosition = 0,2,12
 #-------------------------------
 [302]   # Zimmer
-Name = Zimmer
+Name = Azumaris
 MapPosition = 0,2,12
 #-------------------------------
 [303]   # Zimmer
-Name = Zimmer
+Name = Azumaris
 MapPosition = 0,2,12
 #-------------------------------
 [304]   # Zimmer
-Name = Zimmer
+Name = Azumaris
 MapPosition = 0,2,12
 #-------------------------------
 [305]   # Shaymin
@@ -2023,13 +2023,13 @@ MapPosition = 0,3,14
 SnapEdges = true
 #-------------------------------
 [308]   # Rätsel-Haus
-Name = Rätsel-Haus
+Name = Route 5
 ShowArea = true
 MapPosition = 0,9,10
 SnapEdges = true
 #-------------------------------
 [309]   # Rätsel 1
-Name = Rätselhaus
+Name = Route 5
 MapPosition = 0,9,10
 SnapEdges = true
 BattleBack = quiz
@@ -2037,16 +2037,16 @@ WildBattleBGM = Battle! (Wild Pokémon)_5
 Flags = HideFollowingPkmn
 #-------------------------------
 [310]   # MAP310
-Name = Rätsel-Haus
+Name = Route 5
 MapPosition = 0,9,10
 SnapEdges = true
 #-------------------------------
 [311]   # MAP311
-Name = MAP311
+Name = Käfersammler-Club
 MapPosition = 0,11,10
 #-------------------------------
 [312]   # Wald
-Name = Wald
+Name = Route 1
 Outdoor = true
 ShowArea = true
 Bicycle = true
@@ -2102,23 +2102,23 @@ Name = Ephiron
 MapPosition = 0,3,10
 #-------------------------------
 [325]   # Ephiron Markt
-Name = Ephiron Markt
+Name = Ephiron
 MapPosition = 0,3,10
 #-------------------------------
 [326]   # Ephiron Markt
-Name = Ephiron Markt
+Name = Ephiron
 MapPosition = 0,3,10
 #-------------------------------
 [327]   # Ephiron Markt
-Name = Ephiron Markt
+Name = Ephiron
 MapPosition = 0,3,10
 #-------------------------------
 [328]   # Ephiron Markt
-Name = Ephiron Markt
+Name = Ephiron
 MapPosition = 0,3,10
 #-------------------------------
 [329]   # Aufzug
-Name = Aufzug
+Name = Ephiron
 MapPosition = 0,3,10
 #-------------------------------
 [330]   # Sender
@@ -2177,7 +2177,7 @@ Environment = Sand
 Flags = Levels
 #-------------------------------
 [341]   # Arena 5
-Name = Arena von Ariduna
+Name = Ariduna Arena
 ShowArea = true
 MapPosition = 0,19,9
 SnapEdges = true
@@ -2223,13 +2223,13 @@ Environment = TallGrass
 Flags = Levels
 #-------------------------------
 [348]   # Kampfplatz
-Name = Kampfplatz
+Name = Velmora Kampfplatz
 Outdoor = true
 MapPosition = 0,1,18
 SnapEdges = true
 #-------------------------------
 [349]   # Durchgang
-Name = Route 12
+Name = Route 12 / 13
 Outdoor = true
 Bicycle = true
 MapPosition = 0,20,9
@@ -2276,58 +2276,58 @@ MapPosition = 0,1,18
 SnapEdges = true
 #-------------------------------
 [355]   # Hotel Klefki
-Name = Hotel Klefki
+Name = Azumaris
 MapPosition = 0,8,14
 SnapEdges = true
 #-------------------------------
 [356]   # Hotel Klefki P1
-Name = Hotel Klefki
+Name = Azumaris
 MapPosition = 0,8,14
 SnapEdges = true
 BattleBack = Indoor4
 #-------------------------------
 [357]   # Hotel Klefki P2
-Name = Hotel Klefki P2
+Name = Azumaris
 MapPosition = 0,8,14
 SnapEdges = true
 #-------------------------------
 [358]   # Zimmer
-Name = Hotel Klefki
+Name = Azumaris
 MapPosition = 0,8,14
 SnapEdges = true
 #-------------------------------
 [359]   # Zimmer
-Name = Zimmer
+Name = Azumaris
 MapPosition = 0,8,14
 SnapEdges = true
 #-------------------------------
 [360]   # Zimmer
-Name = Zimmer
+Name = Azumaris
 MapPosition = 0,8,14
 SnapEdges = true
 #-------------------------------
 [361]   # Zimmer
-Name = Zimmer
+Name = Azumaris
 MapPosition = 0,8,14
 SnapEdges = true
 #-------------------------------
 [362]   # Zimmer
-Name = Zimmer
+Name = Azumaris
 MapPosition = 0,8,14
 SnapEdges = true
 #-------------------------------
 [363]   # Zimmer
-Name = Zimmer
+Name = Azumaris
 MapPosition = 0,8,14
 SnapEdges = true
 #-------------------------------
 [364]   # Zimmer
-Name = Zimmer
+Name = Azumaris
 MapPosition = 0,8,14
 SnapEdges = true
 #-------------------------------
 [365]   # Zimmer
-Name = Zimmer
+Name = Azumaris
 MapPosition = 0,8,14
 SnapEdges = true
 #-------------------------------
@@ -2336,12 +2336,12 @@ Name = MAP366
 MapPosition = 0,11,10
 #-------------------------------
 [367]   # Aufzug 1
-Name = Aufzug 1
+Name = Azumaris
 MapPosition = 0,8,14
 SnapEdges = true
 #-------------------------------
 [368]   # Aufzug 2
-Name = Aufzug 2
+Name = Azumaris
 MapPosition = 0,8,14
 SnapEdges = true
 #-------------------------------
@@ -2381,7 +2381,7 @@ Environment = None
 Flags = Levels
 #-------------------------------
 [377]   # Kurts Haus
-Name = Kurts Haus
+Name = Lunafeld
 ShowArea = true
 MapPosition = 0,4,13
 SnapEdges = true
@@ -2401,14 +2401,14 @@ MapPosition = 0,5,15
 SnapEdges = true
 #-------------------------------
 [380]   # Lunafeld Center
-Name = Pokécenter Lunafeld
+Name = Lunafeld Pokécenter
 ShowArea = true
 HealingSpot = 141,35,37
 MapPosition = 0,4,13
 SnapEdges = true
 #-------------------------------
 [381]   # Kurts Haus
-Name = Kurts Haus
+Name = Lunafeld
 MapPosition = 0,4,13
 SnapEdges = true
 #-------------------------------
@@ -2426,7 +2426,7 @@ Environment = Sand
 Flags = Levels
 #-------------------------------
 [383]   # Brunnen
-Name = Brunnen
+Name = Route 3
 ShowArea = true
 MapPosition = 0,6,13
 DarkMap = true
@@ -2476,21 +2476,21 @@ SnapEdges = true
 BattleBack = labor
 #-------------------------------
 [389]   # Geheimlabor
-Name = Geheimlabor
+Name = Team 1 Labor
 ShowArea = true
 MapPosition = 0,4,9
 SnapEdges = true
 BattleBack = labor
 #-------------------------------
 [390]   # Geheimlabor
-Name = Geheimlabor
+Name = Team 1 Labor
 ShowArea = true
 MapPosition = 0,4,9
 SnapEdges = true
 BattleBack = labor
 #-------------------------------
 [391]   # Geheimlabor
-Name = Geheimlabor
+Name = Team 1 Labor
 ShowArea = true
 MapPosition = 0,4,9
 SnapEdges = true
@@ -2523,25 +2523,25 @@ Environment = Cave
 Flags = Levels
 #-------------------------------
 [395]   # Route 4 Center
-Name = Route 4 Center
+Name = Route 4 Pokécenter
 HealingSpot = 161,13,20
 MapPosition = 0,7,14
 SnapEdges = true
 #-------------------------------
 [396]   # Azumaris Center
-Name = Azumaris Center
+Name = Azumaris Pokécenter
 HealingSpot = 174,36,30
 MapPosition = 0,9,15
 SnapEdges = true
 #-------------------------------
 [397]   # Route 5 Center
-Name = Route 5 Center
+Name = Route 5 Pokécenter
 HealingSpot = 184,17,64
 MapPosition = 0,9,13
 SnapEdges = true
 #-------------------------------
 [398]   # Titanenbruch-Kaverne
-Name = Demeteros Eingang
+Name = Titanenbruch-Kaverne
 MapPosition = 0,2,10
 DarkMap = true
 SnapEdges = true
@@ -2552,7 +2552,7 @@ Environment = Cave
 Flags = Levels
 #-------------------------------
 [399]   # Titanenbruch-Kaverne
-Name = Höhle
+Name = Titanenbruch-Kaverne
 MapPosition = 0,2,10
 DarkMap = true
 SnapEdges = true
@@ -2563,7 +2563,7 @@ Environment = Cave
 Flags = Levels
 #-------------------------------
 [400]   # Titanenbruch-Kaverne
-Name = Höhle
+Name = Titanenbruch-Kaverne
 MapPosition = 0,2,10
 DarkMap = true
 SnapEdges = true
@@ -2574,7 +2574,7 @@ Environment = Cave
 Flags = Levels
 #-------------------------------
 [401]   # Titanenbruch-Kaverne
-Name = Höhle
+Name = Titanenbruch-Kaverne
 MapPosition = 0,2,10
 DarkMap = true
 SnapEdges = true
@@ -2591,7 +2591,7 @@ MapPosition = 0,3,10
 SnapEdges = true
 #-------------------------------
 [405]   # Titanenbruch-Kaverne
-Name = Höhle
+Name = Titanenbruch-Kaverne
 MapPosition = 0,2,10
 DarkMap = true
 SnapEdges = true
@@ -2602,7 +2602,7 @@ Environment = Cave
 Flags = Levels,MossRock
 #-------------------------------
 [406]   # Titanenbruch-Kaverne
-Name = MAP406
+Name = Titanenbruch-Kaverne
 MapPosition = 0,2,10
 DarkMap = true
 SnapEdges = true
@@ -2613,7 +2613,7 @@ Environment = Cave
 Flags = Levels
 #-------------------------------
 [407]   # Titanenbruch-Kaverne
-Name = MAP407
+Name = Titanenbruch-Kaverne
 MapPosition = 0,2,10
 DarkMap = true
 SnapEdges = true
@@ -2624,7 +2624,7 @@ Environment = Cave
 Flags = Levels
 #-------------------------------
 [408]   # Titanenbruch-Kaverne
-Name = Höhle
+Name = Titanenbruch-Kaverne
 MapPosition = 0,2,10
 DarkMap = true
 SnapEdges = true
@@ -2635,7 +2635,7 @@ Environment = Cave
 Flags = Levels
 #-------------------------------
 [409]   # Titanenbruch-Kaverne
-Name = MAP409
+Name = Titanenbruch-Kaverne
 MapPosition = 0,2,10
 DarkMap = true
 SnapEdges = true
@@ -2646,7 +2646,7 @@ Environment = Cave
 Flags = Levels
 #-------------------------------
 [410]   # Zwischengebäude
-Name = Lunafeld
+Name = Lunafeld / Route 3
 MapPosition = 0,4,13
 SnapEdges = true
 #-------------------------------
@@ -2656,7 +2656,7 @@ MapPosition = 0,3,10
 SnapEdges = true
 #-------------------------------
 [412]   # Zwischengebäude
-Name = Ephiron
+Name = Route 8 / Lunafeld
 MapPosition = 0,3,10
 SnapEdges = true
 #-------------------------------
@@ -2697,12 +2697,12 @@ BattleBack = gym4
 Flags = Levels
 #-------------------------------
 [417]   # Mine
-Name = Arena von Ariduna
+Name = Ariduna Arena
 MapPosition = 0,19,9
 SnapEdges = true
 #-------------------------------
 [418]   # Center
-Name = Pokécenter
+Name = Ariduna Pokécenter
 ShowArea = true
 HealingSpot = 340,26,20
 MapPosition = 0,19,9
@@ -2750,7 +2750,7 @@ Environment = Cave
 Flags = Levels
 #-------------------------------
 [424]   # Mine
-Name = Arena von Ariduna
+Name = Ariduna Arena
 MapPosition = 0,19,9
 SnapEdges = true
 BattleBack = mine
@@ -2761,7 +2761,7 @@ Environment = Cave
 Flags = Levels
 #-------------------------------
 [425]   # Gym
-Name = Arena von Ariduna
+Name = Ariduna Arena
 MapPosition = 0,19,9
 SnapEdges = true
 BattleBack = labor1
@@ -3126,79 +3126,79 @@ Environment = Cave
 Flags = Levels
 #-------------------------------
 [469]   # Arena 4
-Name = MAP469
+Name = Ephiron Arena
 MapPosition = 0,3,10
 SnapEdges = true
 BattleBack = gym4
 #-------------------------------
 [470]   # Arena 4
-Name = MAP470
+Name = Ephiron Arena
 MapPosition = 0,3,10
 SnapEdges = true
 BattleBack = gym4
 #-------------------------------
 [475]   # Arena 4
-Name = MAP475
+Name = Ephiron Arena
 MapPosition = 0,3,10
 SnapEdges = true
 BattleBack = gym4
 #-------------------------------
 [476]   # Arena 4
-Name = MAP476
+Name = Ephiron Arena
 MapPosition = 0,3,10
 SnapEdges = true
 BattleBack = gym4
 #-------------------------------
 [477]   # Arena 4
-Name = MAP477
+Name = Ephiron Arena
 MapPosition = 0,3,10
 SnapEdges = true
 BattleBack = gym4
 #-------------------------------
 [478]   # Arena 4
-Name = MAP478
+Name = Ephiron Arena
 MapPosition = 0,3,10
 SnapEdges = true
 BattleBack = gym4
 #-------------------------------
 [479]   # Arena 4
-Name = MAP479
+Name = Ephiron Arena
 MapPosition = 0,3,10
 SnapEdges = true
 BattleBack = gym4
 #-------------------------------
 [480]   # Arena 4
-Name = MAP480
+Name = Ephiron Arena
 MapPosition = 0,3,10
 SnapEdges = true
 BattleBack = gym4
 #-------------------------------
 [481]   # Arena 4
-Name = MAP481
+Name = Ephiron Arena
 MapPosition = 0,3,10
 SnapEdges = true
 BattleBack = gym4
 #-------------------------------
 [482]   # Arena 4
-Name = MAP482
+Name = Ephiron Arena
 MapPosition = 0,3,10
 SnapEdges = true
 BattleBack = gym4
 #-------------------------------
 [483]   # Arena 4
-Name = MAP483
+Name = Ephiron Arena
 MapPosition = 0,3,10
 SnapEdges = true
 BattleBack = gym4
 #-------------------------------
 [484]   # Arena 4
-Name = MAP484
+Name = Ephiron Arena
 MapPosition = 0,3,10
 SnapEdges = true
 BattleBack = gym4
 #-------------------------------
 [485]   # Arena 4
-Name = MAP485
+Name = Ephiron Arena
 MapPosition = 0,3,10
 SnapEdges = true
 BattleBack = gym4
@@ -3249,7 +3249,7 @@ Environment = Rock
 Flags = Levels
 #-------------------------------
 [499]   # Regirock
-Name = Regirock
+Name = Vermächtnis von Regirock
 MapPosition = 0,18,10
 SnapEdges = true
 BattleBack = ruine
@@ -3259,7 +3259,7 @@ Environment = Rock
 Flags = Levels
 #-------------------------------
 [500]   # Regirock
-Name = Regirock
+Name = Vermächtnis von Regirock
 MapPosition = 0,18,10
 SnapEdges = true
 BattleBack = ruine
@@ -3269,7 +3269,7 @@ Environment = Rock
 Flags = Levels
 #-------------------------------
 [501]   # Regirock
-Name = Regirock
+Name = Vermächtnis von Regirock
 MapPosition = 0,18,10
 SnapEdges = true
 BattleBack = ruine
@@ -3278,7 +3278,7 @@ WildVictoryBGM = Victory! (Wild Pokemon)_9
 Flags = Levels
 #-------------------------------
 [502]   # Regirock
-Name = Regirock
+Name = Vermächtnis von Regirock
 MapPosition = 0,18,10
 SnapEdges = true
 BattleBack = ruine
@@ -3287,7 +3287,7 @@ WildVictoryBGM = Victory! (Wild Pokemon)_9
 Flags = Levels
 #-------------------------------
 [503]   # Regirock
-Name = Regirock
+Name = Vermächtnis von Regirock
 MapPosition = 0,18,10
 SnapEdges = true
 BattleBack = ruine
@@ -3296,7 +3296,7 @@ WildVictoryBGM = Victory! (Wild Pokemon)_9
 Flags = Levels
 #-------------------------------
 [504]   # Regirock
-Name = Regirock
+Name = Vermächtnis von Regirock
 MapPosition = 0,18,10
 SnapEdges = true
 BattleBack = ruine
@@ -3305,7 +3305,7 @@ WildVictoryBGM = Victory! (Wild Pokemon)_9
 Flags = Levels
 #-------------------------------
 [505]   # Regirock
-Name = Regirock
+Name = Vermächtnis von Regirock
 MapPosition = 0,18,10
 SnapEdges = true
 BattleBack = ruine
@@ -3314,7 +3314,7 @@ WildVictoryBGM = Victory! (Wild Pokemon)_9
 Flags = Levels
 #-------------------------------
 [506]   # Regirock
-Name = Regirock
+Name = Vermächtnis von Regirock
 MapPosition = 0,18,10
 SnapEdges = true
 BattleBack = ruine
@@ -3323,7 +3323,7 @@ WildVictoryBGM = Victory! (Wild Pokemon)_9
 Flags = Levels
 #-------------------------------
 [507]   # Zwischengebäude
-Name = Route 11
+Name = Oase / Ariduna
 MapPosition = 0,19,9
 #-------------------------------
 [508]   # Regieleki Eingang
@@ -3337,7 +3337,7 @@ WildVictoryBGM = Victory! (Wild Pokemon)_9
 Flags = Levels
 #-------------------------------
 [509]   # Regieleki rechts
-Name = Regieleki
+Name = Vermächtnis von Regieleki
 MapPosition = 0,17,9
 SnapEdges = true
 BattleBack = ruine
@@ -3346,7 +3346,7 @@ WildVictoryBGM = Victory! (Wild Pokemon)_9
 Flags = Levels
 #-------------------------------
 [510]   # Regieleki links
-Name = Regieleki
+Name = Vermächtnis von Regieleki
 MapPosition = 0,17,9
 SnapEdges = true
 BattleBack = ruine
@@ -3355,7 +3355,7 @@ WildVictoryBGM = Victory! (Wild Pokemon)_9
 Flags = Levels
 #-------------------------------
 [511]   # Regieleki mitte
-Name = Regieleki
+Name = Vermächtnis von Regieleki
 MapPosition = 0,17,9
 SnapEdges = true
 BattleBack = ruine
@@ -3364,7 +3364,7 @@ WildVictoryBGM = Victory! (Wild Pokemon)_9
 Flags = Levels
 #-------------------------------
 [512]   # Regieleki links hinten
-Name = Regieleki
+Name = Vermächtnis von Regieleki
 MapPosition = 0,17,9
 SnapEdges = true
 BattleBack = ruine
@@ -3373,7 +3373,7 @@ WildVictoryBGM = Victory! (Wild Pokemon)_9
 Flags = Levels
 #-------------------------------
 [513]   # Regieleki links unten
-Name = Regieleki
+Name = Vermächtnis von Regieleki
 MapPosition = 0,17,9
 SnapEdges = true
 BattleBack = ruine
@@ -3440,7 +3440,7 @@ Environment = Sand
 Flags = Levels
 #-------------------------------
 [519]   # Tempel 1
-Name = Tempel
+Name = Route 11
 MapPosition = 0,17,9
 DarkMap = true
 SnapEdges = true
@@ -3450,7 +3450,7 @@ WildVictoryBGM = Victory! (Wild Pokemon)_9
 Flags = Levels
 #-------------------------------
 [520]   # Tempel 2
-Name = Tempel
+Name = Route 11
 MapPosition = 0,17,9
 DarkMap = true
 SnapEdges = true
@@ -3460,7 +3460,7 @@ WildVictoryBGM = Victory! (Wild Pokemon)_9
 Flags = Levels
 #-------------------------------
 [521]   # Tempel 3
-Name = Tempel
+Name = Route 11
 MapPosition = 0,17,9
 DarkMap = true
 SnapEdges = true
@@ -3470,7 +3470,7 @@ WildVictoryBGM = Victory! (Wild Pokemon)_9
 Flags = Levels
 #-------------------------------
 [522]   # Tempel 4
-Name = Tempel
+Name = Route 11
 MapPosition = 0,17,9
 DarkMap = true
 SnapEdges = true
@@ -3480,7 +3480,7 @@ WildVictoryBGM = Victory! (Wild Pokemon)_9
 Flags = Levels
 #-------------------------------
 [523]   # Tempel 5
-Name = Tempel
+Name = Route 11
 MapPosition = 0,17,9
 DarkMap = true
 SnapEdges = true
@@ -3490,7 +3490,7 @@ WildVictoryBGM = Victory! (Wild Pokemon)_9
 Flags = Levels
 #-------------------------------
 [524]   # Tempel 6
-Name = Tempel
+Name = Route 11
 MapPosition = 0,17,9
 DarkMap = true
 SnapEdges = true
@@ -3500,7 +3500,7 @@ WildVictoryBGM = Victory! (Wild Pokemon)_9
 Flags = Levels
 #-------------------------------
 [525]   # Tempel 7
-Name = Tempel
+Name = Route 11
 MapPosition = 0,17,9
 DarkMap = true
 SnapEdges = true
@@ -3510,7 +3510,7 @@ WildVictoryBGM = Victory! (Wild Pokemon)_9
 Flags = Levels
 #-------------------------------
 [527]   # Tempel 8
-Name = Tempel
+Name = Route 11
 MapPosition = 0,17,9
 #-------------------------------
 [528]   # Tempel 9
@@ -3525,7 +3525,7 @@ WildVictoryBGM = Victory! (Wild Pokemon)_9
 Flags = Levels
 #-------------------------------
 [529]   # Tempel 1
-Name = Tempel
+Name = Route 10
 MapPosition = 0,18,10
 DarkMap = true
 SnapEdges = true
@@ -3535,7 +3535,7 @@ WildVictoryBGM = Victory! (Wild Pokemon)_9
 Flags = Levels
 #-------------------------------
 [530]   # Tempel 2
-Name = Tempel
+Name = Route 10
 MapPosition = 0,18,10
 DarkMap = true
 SnapEdges = true
@@ -3545,7 +3545,7 @@ WildVictoryBGM = Victory! (Wild Pokemon)_9
 Flags = Levels
 #-------------------------------
 [531]   # Tempel 3
-Name = Tempel
+Name = Route 10
 MapPosition = 0,18,10
 DarkMap = true
 SnapEdges = true
@@ -3555,7 +3555,7 @@ WildVictoryBGM = Victory! (Wild Pokemon)_9
 Flags = Levels
 #-------------------------------
 [532]   # Tempel 4
-Name = Tempel
+Name = Route 10
 MapPosition = 0,18,10
 DarkMap = true
 SnapEdges = true
@@ -3565,7 +3565,7 @@ WildVictoryBGM = Victory! (Wild Pokemon)_9
 Flags = Levels
 #-------------------------------
 [533]   # Tempel 5
-Name = Tempel
+Name = Route 10
 MapPosition = 0,18,10
 DarkMap = true
 SnapEdges = true
@@ -3575,7 +3575,7 @@ WildVictoryBGM = Victory! (Wild Pokemon)_9
 Flags = Levels
 #-------------------------------
 [534]   # Tempel 6
-Name = Tempel
+Name = Route 10
 MapPosition = 0,18,10
 DarkMap = true
 SnapEdges = true
@@ -3585,7 +3585,7 @@ WildVictoryBGM = Victory! (Wild Pokemon)_9
 Flags = Levels
 #-------------------------------
 [535]   # Tempel 7
-Name = Tempel
+Name = Route 10
 MapPosition = 0,18,10
 DarkMap = true
 SnapEdges = true
@@ -3803,7 +3803,7 @@ MapPosition = 0,22,5
 SnapEdges = true
 #-------------------------------
 [566]   # Pokécenter
-Name = Pokécenter
+Name = Bruchhain Pokécenter
 HealingSpot = 155,12,18
 MapPosition = 0,22,7
 SnapEdges = true
@@ -3816,7 +3816,7 @@ SnapEdges = true
 Flags = Levels
 #-------------------------------
 [568]   # Pokécenter
-Name = Pokécenter
+Name = Morastia Pokécenter
 ShowArea = true
 HealingSpot = 109,37,19
 MapPosition = 0,22,5
@@ -3839,7 +3839,7 @@ MapPosition = 0,22,6
 SnapEdges = true
 #-------------------------------
 [601]   # Klartrug Arena
-Name = Klartrug Arena
+Name = Morastia Arena
 ShowArea = true
 MapPosition = 0,22,5
 SnapEdges = true
@@ -3849,7 +3849,7 @@ TrainerBattleBGM = Battle Trainer (6)
 WildVictoryBGM = Battle victory wild
 #-------------------------------
 [603]   # Klartrug Arena
-Name = Klartrug Arena
+Name = Morastia Arena
 ShowArea = true
 MapPosition = 0,22,5
 SnapEdges = true
@@ -3862,7 +3862,7 @@ Environment = Forest
 Flags = Levels,Inverse
 #-------------------------------
 [604]   # Klartrug Arena
-Name = Klartrug Arena
+Name = Morastia Arena
 ShowArea = true
 MapPosition = 0,22,5
 SnapEdges = true
@@ -3881,12 +3881,12 @@ Environment = Rock
 Flags = Levels
 #-------------------------------
 [609]   # Durchgang
-Name = Morastia
+Name = Route 15 / Morastia
 MapPosition = 0,22,5
 SnapEdges = true
 #-------------------------------
 [610]   # Zwischengebäude
-Name = Morastia
+Name = Faulmoor / Morastia
 MapPosition = 0,22,5
 SnapEdges = true
 #-------------------------------
@@ -3898,7 +3898,7 @@ SnapEdges = true
 Flags = Levels
 #-------------------------------
 [608]   # MAP608
-Name = Haus
+Name = Route 16
 ShowArea = false
 MapPosition = 0,20,3
 SnapEdges = true
