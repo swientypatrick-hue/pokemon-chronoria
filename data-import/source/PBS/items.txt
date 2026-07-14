@@ -6501,7 +6501,7 @@ Price = 40
 FieldUse = OnPokemon
 BattleUse = OnPokemon
 Flags = Berry,Fling_10,NaturalGift_FIRE_80
-Description = Heilt Paralyse im Kampf und auch außerhalb.
+Description = Heilt Paralyse.
 #-------------------------------
 [CHESTOBERRY]
 Name = Maronbeere
@@ -6511,7 +6511,7 @@ Price = 40
 FieldUse = OnPokemon
 BattleUse = OnPokemon
 Flags = Berry,Fling_10,NaturalGift_WATER_80
-Description = Weckt ein Pokémon auf, im Kampf und auch außerhalb.
+Description = Weckt ein Pokémon auf.
 #-------------------------------
 [PECHABERRY]
 Name = Pirsifbeere
@@ -6521,7 +6521,7 @@ Price = 40
 FieldUse = OnPokemon
 BattleUse = OnPokemon
 Flags = Berry,Fling_10,NaturalGift_ELECTRIC_80
-Description = Heilt Vergiftungen im Kampf und auch außerhalb.
+Description = Heilt Vergiftungen.
 #-------------------------------
 [RAWSTBERRY]
 Name = Fragiabeere
@@ -6531,7 +6531,7 @@ Price = 40
 FieldUse = OnPokemon
 BattleUse = OnPokemon
 Flags = Berry,Fling_10,NaturalGift_GRASS_80
-Description = Heilt Verbrennungen im Kampf und auch außerhalb.
+Description = Heilt Verbrennungen.
 #-------------------------------
 [ASPEARBERRY]
 Name = Wilbirbeere
@@ -6541,7 +6541,7 @@ Price = 40
 FieldUse = OnPokemon
 BattleUse = OnPokemon
 Flags = Berry,Fling_10,NaturalGift_ICE_80
-Description = Taut gefrorene Pokémon wieder auf, im Kampf und auch außerhalb.
+Description = Taut gefrorene Pokémon wieder auf.
 #-------------------------------
 [LEPPABERRY]
 Name = Jonagobeere	
@@ -6551,7 +6551,7 @@ Price = 40
 FieldUse = OnPokemon
 BattleUse = OnMove
 Flags = Berry,Fling_10,NaturalGift_FIGHTING_80
-Description = It may be used or held by a Pokémon to restore a move's PP by 10.
+Description = Stellt 10 AP einer Attacke wieder her.
 #-------------------------------
 [ORANBERRY]
 Name = Sinelbeere
@@ -6561,7 +6561,7 @@ Price = 40
 FieldUse = OnPokemon
 BattleUse = OnPokemon
 Flags = Berry,Fling_10,NaturalGift_POISON_80
-Description = It may be used or held by a Pokémon to heal the user by just 10 HP.
+Description = Heilt das Pokémon um 10 LP.
 #-------------------------------
 [PERSIMBERRY]
 Name = Persimbeere
@@ -6570,7 +6570,7 @@ Pocket = 5
 Price = 40
 BattleUse = OnBattler
 Flags = Berry,Fling_10,NaturalGift_GROUND_80
-Description = It may be used or held by a Pokémon to recover from confusion.
+Description = Heilt Verwirrung.
 #-------------------------------
 [LUMBERRY]
 Name = Prunusbeere
@@ -6580,7 +6580,7 @@ Price = 40
 FieldUse = OnPokemon
 BattleUse = OnPokemon
 Flags = Berry,Fling_10,NaturalGift_FLYING_80
-Description = It may be used or held by a Pokémon to recover from any status problem.
+Description = Kann jedes Statusproblem eines Pokémon heilen.
 #-------------------------------
 [SITRUSBERRY]
 Name = Tsitrubeere
@@ -6590,7 +6590,7 @@ Price = 40
 FieldUse = OnPokemon
 BattleUse = OnPokemon
 Flags = Berry,Fling_10,NaturalGift_PSYCHIC_80
-Description = It may be used or held by a Pokémon to heal the user's HP a little.
+Description = Heilt 25 % der KP. 
 #-------------------------------
 [FIGYBERRY]
 Name = Giefebeere
@@ -6598,7 +6598,7 @@ NamePlural = Giefebeeren
 Pocket = 5
 Price = 40
 Flags = Berry,Fling_10,NaturalGift_BUG_80
-Description = If held by a Pokémon, it restores the user's HP in a pinch, but will cause confusion if it hates the taste.
+Description = Heilt 33 % der KP wenn diese unter 25 % fallen, aber verwirrt Pokémon, die ein Angr. (-) Wesen haben.
 #-------------------------------
 [WIKIBERRY]
 Name = Wikibeere
@@ -6606,7 +6606,7 @@ NamePlural = Wikibeeren
 Pocket = 5
 Price = 40
 Flags = Berry,Fling_10,NaturalGift_ROCK_80
-Description = If held by a Pokémon, it restores the user's HP in a pinch, but will cause confusion if it hates the taste.
+Description = Heilt 33 % der KP wenn diese unter 25 % fallen, aber verwirrt Pokémon, die ein Sp. Angr. (-) Wesen haben.
 #-------------------------------
 [MAGOBERRY]
 Name = Magobeere
@@ -6614,7 +6614,7 @@ NamePlural = Magobeeren
 Pocket = 5
 Price = 40
 Flags = Berry,Fling_10,NaturalGift_GHOST_80
-Description = If held by a Pokémon, it restores the user's HP in a pinch, but will cause confusion if it hates the taste.
+Description = Heilt 33 % der KP wenn diese unter 25 % fallen, aber verwirrt Pokémon, die ein Init. (-) Wesen haben.
 #-------------------------------
 [AGUAVBERRY]
 Name = Gauvebeere
@@ -6622,7 +6622,7 @@ NamePlural = Gauvebeeren
 Pocket = 5
 Price = 40
 Flags = Berry,Fling_10,NaturalGift_DRAGON_80
-Description = If held by a Pokémon, it restores the user's HP in a pinch, but will cause confusion if it hates the taste.
+Description = Heilt 33 % der KP wenn diese unter 25 % fallen, aber verwirrt Pokémon, die ein Sp. Vert.. (-) Wesen haben.
 #-------------------------------
 [IAPAPABERRY]
 Name = Yapabeere
@@ -6630,7 +6630,7 @@ NamePlural = Yapabeeren
 Pocket = 5
 Price = 40
 Flags = Berry,Fling_10,NaturalGift_DARK_80
-Description = If held by a Pokémon, it restores the user's HP in a pinch, but will cause confusion if it hates the taste.
+Description = Heilt 33 % der KP wenn diese unter 25 % fallen, aber verwirrt Pokémon, die ein Vert. (-) Wesen haben.
 #-------------------------------
 [RAZZBERRY]
 Name = Razz Berry
@@ -6638,7 +6638,7 @@ NamePlural = Razz Berries
 Pocket = 5
 Price = 20
 Flags = Berry,Fling_10,NaturalGift_STEEL_80
-Description = In the Sinnoh region, they like to make sweets known as Poffins with this Berry.
+Description = Eine Zutat für bestimmte Rezepte.
 #-------------------------------
 [BLUKBERRY]
 Name = Bluk Berry
@@ -6646,7 +6646,7 @@ NamePlural = Bluk Berries
 Pocket = 5
 Price = 20
 Flags = Berry,Fling_10,NaturalGift_FIRE_90
-Description = In the Sinnoh region, they like to make sweets known as Poffins with this Berry.
+Description = Eine Zutat für bestimmte Rezepte.
 #-------------------------------
 [NANABBERRY]
 Name = Nanab Berry
@@ -6654,7 +6654,7 @@ NamePlural = Nanab Berries
 Pocket = 5
 Price = 20
 Flags = Berry,Fling_10,NaturalGift_WATER_90
-Description = In the Sinnoh region, they like to make sweets known as Poffins with this Berry.
+Description = Eine Zutat für bestimmte Rezepte.
 #-------------------------------
 [WEPEARBERRY]
 Name = Wepear Berry
@@ -6662,7 +6662,7 @@ NamePlural = Wepear Berries
 Pocket = 5
 Price = 20
 Flags = Berry,Fling_10,NaturalGift_ELECTRIC_90
-Description = In the Sinnoh region, they like to make sweets known as Poffins with this Berry.
+Description = Eine Zutat für bestimmte Rezepte.
 #-------------------------------
 [PINAPBERRY]
 Name = Pinap Berry
@@ -6670,7 +6670,7 @@ NamePlural = Pinap Berries
 Pocket = 5
 Price = 20
 Flags = Berry,Fling_10,NaturalGift_GRASS_90
-Description = In the Sinnoh region, they like to make sweets known as Poffins with this Berry.
+Description = Eine Zutat für bestimmte Rezepte.
 #-------------------------------
 [POMEGBERRY]
 Name = Granabeere
@@ -6679,7 +6679,7 @@ Pocket = 5
 Price = 40
 FieldUse = OnPokemon
 Flags = Berry,Fling_10,NaturalGift_ICE_90
-Description = Using it on a Pokémon makes it more friendly, but it also lowers its base HP.
+Description = Senkt die Basis-LP um 10 und erhöht die Freundschaft um 10.
 #-------------------------------
 [KELPSYBERRY]
 Name = Setangbeere
@@ -6688,7 +6688,7 @@ Pocket = 5
 Price = 40
 FieldUse = OnPokemon
 Flags = Berry,Fling_10,NaturalGift_FIGHTING_90
-Description = Using it on a Pokémon makes it more friendly, but it also lowers its base Attack stat.
+Description = Senkt d Basis-Angriff um 10 und erhöht die Freundschaft um 10.
 #-------------------------------
 [QUALOTBERRY]
 Name = Qualotbeere
@@ -6697,7 +6697,7 @@ Pocket = 5
 Price = 40
 FieldUse = OnPokemon
 Flags = Berry,Fling_10,NaturalGift_POISON_90
-Description = Using it on a Pokémon makes it more friendly, but it also lowers its base Defense stat.
+Description = Senkt die Basis-Verteidigung um 10 und erhöht die Freundschaft um 10.
 #-------------------------------
 [HONDEWBERRY]
 Name = Honmelbeere
@@ -6706,7 +6706,7 @@ Pocket = 5
 Price = 40
 FieldUse = OnPokemon
 Flags = Berry,Fling_10,NaturalGift_GROUND_90
-Description = Using it on a Pokémon makes it more friendly, but it also lowers its base Sp. Atk stat.
+Description = Senkt den Basis-Sp. Angriff um 10 und erhöht die Freundschaft um 10.
 #-------------------------------
 [GREPABERRY]
 Name = Labrusbeere
@@ -6715,7 +6715,7 @@ Pocket = 5
 Price = 40
 FieldUse = OnPokemon
 Flags = Berry,Fling_10,NaturalGift_FLYING_90
-Description = Using it on a Pokémon makes it more friendly, but it also lowers its base Sp. Def stat.
+Description = Senkt die Basis-Sp. Verteidigung um 10 und erhöht die Freundschaft um 10.
 #-------------------------------
 [TAMATOBERRY]
 Name = Tamotbeere
@@ -6724,7 +6724,7 @@ Pocket = 5
 Price = 20
 FieldUse = OnPokemon
 Flags = Berry,Fling_10,NaturalGift_PSYCHIC_90
-Description = Using it on a Pokémon makes it more friendly, but it also lowers its base Speed stat.
+Description = Senkt die Basis-Initiative um 10 und erhöht die Freundschaft um 10.
 #-------------------------------
 [CORNNBERRY]
 Name = Cornn Berry
@@ -6732,7 +6732,7 @@ NamePlural = Cornn Berries
 Pocket = 5
 Price = 20
 Flags = Berry,Fling_10,NaturalGift_BUG_90
-Description = In the Sinnoh region, they like to make sweets known as Poffins with this Berry.
+Description = Eine Zutat für bestimmte Rezepte.
 #-------------------------------
 [MAGOSTBERRY]
 Name = Magost Berry
@@ -6740,7 +6740,7 @@ NamePlural = Magost Berries
 Pocket = 5
 Price = 20
 Flags = Berry,Fling_10,NaturalGift_ROCK_90
-Description = In the Sinnoh region, they like to make sweets known as Poffins with this Berry.
+Description = Eine Zutat für bestimmte Rezepte.
 #-------------------------------
 [RABUTABERRY]
 Name = Rabuta Berry
@@ -6748,7 +6748,7 @@ NamePlural = Rabuta Berries
 Pocket = 5
 Price = 20
 Flags = Berry,Fling_10,NaturalGift_GHOST_90
-Description = In the Sinnoh region, they like to make sweets known as Poffins with this Berry.
+Description = Eine Zutat für bestimmte Rezepte.
 #-------------------------------
 [NOMELBERRY]
 Name = Nomel Berry
@@ -6756,7 +6756,7 @@ NamePlural = Nomel Berries
 Pocket = 5
 Price = 20
 Flags = Berry,Fling_10,NaturalGift_DRAGON_90
-Description = In the Sinnoh region, they like to make sweets known as Poffins with this Berry.
+Description = Eine Zutat für bestimmte Rezepte.
 #-------------------------------
 [SPELONBERRY]
 Name = Spelon Berry
@@ -6764,7 +6764,7 @@ NamePlural = Spelon Berries
 Pocket = 5
 Price = 20
 Flags = Berry,Fling_10,NaturalGift_DARK_90
-Description = In the Sinnoh region, they like to make sweets known as Poffins with this Berry.
+Description = Eine Zutat für bestimmte Rezepte.
 #-------------------------------
 [PAMTREBERRY]
 Name = Pamtre Berry
@@ -6772,7 +6772,7 @@ NamePlural = Pamtre Berries
 Pocket = 5
 Price = 20
 Flags = Berry,Fling_10,NaturalGift_STEEL_90
-Description = In the Sinnoh region, they like to make sweets known as Poffins with this Berry.
+Description = Eine Zutat für bestimmte Rezepte.
 #-------------------------------
 [WATMELBERRY]
 Name = Watmel Berry
@@ -6780,7 +6780,7 @@ NamePlural = Watmel Berries
 Pocket = 5
 Price = 20
 Flags = Berry,Fling_10,NaturalGift_FIRE_100
-Description = In the Sinnoh region, they like to make sweets known as Poffins with this Berry.
+Description = Eine Zutat für bestimmte Rezepte.
 #-------------------------------
 [DURINBERRY]
 Name = Durin Berry
@@ -6788,7 +6788,7 @@ NamePlural = Durin Berries
 Pocket = 5
 Price = 20
 Flags = Berry,Fling_10,NaturalGift_WATER_100
-Description = In the Sinnoh region, they like to make sweets known as Poffins with this Berry.
+Description = Eine Zutat für bestimmte Rezepte.
 #-------------------------------
 [BELUEBERRY]
 Name = Belue Berry
@@ -6796,7 +6796,7 @@ NamePlural = Belue Berries
 Pocket = 5
 Price = 20
 Flags = Berry,Fling_10,NaturalGift_ELECTRIC_100
-Description = In the Sinnoh region, they like to make sweets known as Poffins with this Berry.
+Description = Eine Zutat für bestimmte Rezepte.
 #-------------------------------
 [OCCABERRY]
 Name = Koakobeere
@@ -6804,7 +6804,7 @@ NamePlural = Koakobeeren
 Pocket = 5
 Price = 40
 Flags = Berry,Fling_10,NaturalGift_FIRE_80
-Description = Weakens a supereffective Fire-type attack against the holding Pokémon.
+Description = Schwächt eine sehr effektive Feuer-Attacke des Gegners ab.
 #-------------------------------
 [PASSHOBERRY]
 Name = Foepasbeere
@@ -6812,7 +6812,7 @@ NamePlural = Foepasbeeren
 Pocket = 5
 Price = 40
 Flags = Berry,Fling_10,NaturalGift_WATER_80
-Description = Weakens a supereffective Water-type attack against the holding Pokémon.
+Description = Schwächt eine sehr effektive Wasser-Attacke des Gegners ab.
 #-------------------------------
 [WACANBERRY]
 Name = Kerzalbeere
@@ -6820,7 +6820,7 @@ NamePlural = Kerzalbeeren
 Pocket = 5
 Price = 40
 Flags = Berry,Fling_10,NaturalGift_ELECTRIC_80
-Description = Weakens a supereffective Electric-type attack against the holding Pokémon.
+Description = Schwächt eine sehr effektive Elektro-Attacke des Gegners ab.
 #-------------------------------
 [RINDOBERRY]
 Name = Grindobeere
@@ -6828,7 +6828,7 @@ NamePlural = Grindobeeren
 Pocket = 5
 Price = 40
 Flags = Berry,Fling_10,NaturalGift_GRASS_80
-Description = Weakens a supereffective Grass-type attack against the holding Pokémon.
+Description = Schwächt eine sehr effektive Pflanzen-Attacke des Gegners ab
 #-------------------------------
 [YACHEBERRY]
 Name = Kiroyabeere
@@ -6836,7 +6836,7 @@ NamePlural = YKiroyabeeren
 Pocket = 5
 Price = 40
 Flags = Berry,Fling_10,NaturalGift_ICE_80
-Description = Weakens a supereffective Ice-type attack against the holding Pokémon.
+Description = Schwächt eine sehr effektive Eis-Attacke des Gegners ab.
 #-------------------------------
 [CHOPLEBERRY]
 Name = Rospelbeere
@@ -6844,7 +6844,7 @@ NamePlural = Rospelbeeren
 Pocket = 5
 Price = 40
 Flags = Berry,Fling_10,NaturalGift_FIGHTING_80
-Description = Weakens a supereffective Fighting-type attack against the holding Pokémon.
+Description = Schwächt eine sehr effektive Kampf-Attacke des Gegners ab.
 #-------------------------------
 [KEBIABERRY]
 Name = Grarzbeere
@@ -6852,7 +6852,7 @@ NamePlural = Grarzbeeren
 Pocket = 5
 Price = 40
 Flags = Berry,Fling_10,NaturalGift_POISON_80
-Description = Weakens a supereffective Poison-type attack against the holding Pokémon.
+Description = Schwächt eine sehr effektive Gift-Attacke des Gegners ab.
 #-------------------------------
 [SHUCABERRY]
 Name = Schukebeere
@@ -6860,7 +6860,7 @@ NamePlural = Schukebeeren
 Pocket = 5
 Price = 40
 Flags = Berry,Fling_10,NaturalGift_GROUND_80
-Description = Weakens a supereffective Ground-type attack against the holding Pokémon.
+Description = Schwächt eine sehr effektive Boden-Attacke des Gegners ab.
 #-------------------------------
 [COBABERRY]
 Name = Kobabeere
@@ -6868,7 +6868,7 @@ NamePlural = Kobabeeren
 Pocket = 5
 Price = 40
 Flags = Berry,Fling_10,NaturalGift_FLYING_80
-Description = Weakens a supereffective Flying-type attack against the holding Pokémon.
+Description = Schwächt eine sehr effektive Wind-Attacke des Gegners ab.
 #-------------------------------
 [PAYAPABERRY]
 Name = Pyapabeere
@@ -6876,7 +6876,7 @@ NamePlural = Pyapabeeren
 Pocket = 5
 Price = 40
 Flags = Berry,Fling_10,NaturalGift_PSYCHIC_80
-Description = Weakens a supereffective Psychic-type attack against the holding Pokémon.
+Description = Schwächt eine sehr effektive Psycho-Attacke des Gegners ab.
 #-------------------------------
 [TANGABERRY]
 Name = Tanigabeere
@@ -6884,7 +6884,7 @@ NamePlural = Tanigabeeren
 Pocket = 5
 Price = 40
 Flags = Berry,Fling_10,NaturalGift_BUG_80
-Description = Weakens a supereffective Bug-type attack against the holding Pokémon.
+Description = Schwächt eine sehr effektive Käfer-Attacke des Gegners ab.
 #-------------------------------
 [CHARTIBERRY]
 Name = Chiaribeere
@@ -6892,7 +6892,7 @@ NamePlural = Chiaribeeren
 Pocket = 5
 Price = 40
 Flags = Berry,Fling_10,NaturalGift_ROCK_80
-Description = Weakens a supereffective Rock-type attack against the holding Pokémon.
+Description = Schwächt eine sehr effektive Gestein-Attacke des Gegners ab.
 #-------------------------------
 [KASIBBERRY]
 Name = Zitarzbeere
@@ -6900,7 +6900,7 @@ NamePlural = Zitarzbeeren
 Pocket = 5
 Price = 40
 Flags = Berry,Fling_10,NaturalGift_GHOST_80
-Description = Weakens a supereffective Ghost-type attack against the holding Pokémon.
+Description = Schwächt eine sehr effektive Geist-Attacke des Gegners ab.
 #-------------------------------
 [HABANBERRY]
 Name = Terirobeere
@@ -6908,7 +6908,7 @@ NamePlural = Terirobeeren
 Pocket = 5
 Price = 40
 Flags = Berry,Fling_10,NaturalGift_DRAGON_80
-Description = Weakens a supereffective Dragon-type attack against the holding Pokémon.
+Description = Schwächt eine sehr effektive Drachen-Attacke des Gegners ab.
 #-------------------------------
 [COLBURBERRY]
 Name = Burleobeere
@@ -6916,7 +6916,7 @@ NamePlural = Burleobeeren
 Pocket = 5
 Price = 40
 Flags = Berry,Fling_10,NaturalGift_DARK_80
-Description = Weakens a supereffective Dark-type attack against the holding Pokémon.
+Description = Schwächt eine sehr effektive Unlicht-Attacke des Gegners ab.
 #-------------------------------
 [BABIRIBERRY]
 Name = Babiribeere
@@ -6924,7 +6924,7 @@ NamePlural = Babiribeeren
 Pocket = 5
 Price = 40
 Flags = Berry,Fling_10,NaturalGift_STEEL_80
-Description = Weakens a supereffective Steel-type attack against the holding Pokémon.
+Description = Schwächt eine sehr effektive Stahl-Attacke des Gegners ab.
 #-------------------------------
 [ROSELIBERRY]
 Name = Hibisbeere
@@ -6932,7 +6932,7 @@ NamePlural = Hibisbeeren
 Pocket = 5
 Price = 40
 Flags = Berry,Fling_10,NaturalGift_FAIRY_80
-Description = If held by a Pokémon, this Berry will lessen the damage taken from one supereffective Fairy-type attack.
+Description = Schwächt eine sehr effektive Feen-Attacke des Gegners ab.
 #-------------------------------
 [CHILANBERRY]
 Name = Chilanbeere
@@ -6940,7 +6940,7 @@ NamePlural = Chilanbeeren
 Pocket = 5
 Price = 40
 Flags = Berry,Fling_10,NaturalGift_NORMAL_80
-Description = Weakens a Normal-type attack against the Pokémon holding this berry.
+Description = Schwächt eine Normal-Attacke des Gegners ab.
 #-------------------------------
 [LIECHIBERRY]
 Name = Lydzibeere
@@ -6948,7 +6948,7 @@ NamePlural = Lydzibeeren
 Pocket = 5
 Price = 40
 Flags = Berry,Fling_10,NaturalGift_GRASS_100
-Description = If held by a Pokémon, it raises its Attack stat in a pinch.
+Description = Erhöht den Angriff, wenn die KP unter 25 % fallen.
 #-------------------------------
 [GANLONBERRY]
 Name = Linganbeere
@@ -6956,7 +6956,7 @@ NamePlural = Linganbeeren
 Pocket = 5
 Price = 40
 Flags = Berry,Fling_10,NaturalGift_ICE_100
-Description = If held by a Pokémon, it raises its Defense stat in a pinch.
+Description = Erhöht die Verteidigung, wenn die KP unter 25 % fallen.
 #-------------------------------
 [SALACBERRY]
 Name = Salkabeere
@@ -6964,7 +6964,7 @@ NamePlural = Salkabeeren
 Pocket = 5
 Price = 40
 Flags = Berry,Fling_10,NaturalGift_FIGHTING_100
-Description = If held by a Pokémon, it raises its Speed stat in a pinch.
+Description = Erhöht die Initiative, wenn die KP unter 25 % fallen.
 #-------------------------------
 [PETAYABERRY]
 Name = Tahaybeere
@@ -6972,7 +6972,7 @@ NamePlural = Tahaybeeren
 Pocket = 5
 Price = 40
 Flags = Berry,Fling_10,NaturalGift_POISON_100
-Description = If held by a Pokémon, it raises its Sp. Atk stat in a pinch.
+Description = Erhöht den Spezial-Angriff, wenn die KP unter 25 % fallen.
 #-------------------------------
 [APICOTBERRY]
 Name = Apikobeere
@@ -6980,7 +6980,7 @@ NamePlural = Apikobeeren
 Pocket = 5
 Price = 40
 Flags = Berry,Fling_10,NaturalGift_GROUND_100
-Description = If held by a Pokémon, it raises its Sp. Def stat in a pinch.
+Description = Erhöht die Spezial-Verteidigung, wenn die KP unter 25 % fallen.
 #-------------------------------
 [LANSATBERRY]
 Name = Lansatbeere
@@ -6988,7 +6988,7 @@ NamePlural = Lansatbeeren
 Pocket = 5
 Price = 40
 Flags = Berry,Fling_10,NaturalGift_FLYING_100
-Description = If held by a Pokémon, it raises its critical-hit ratio in a pinch.
+Description =  	Erhöht die Volltrefferquote, wenn die KP unter 25 % fallen.
 #-------------------------------
 [STARFBERRY]
 Name = Krambobeere
@@ -6996,7 +6996,7 @@ NamePlural = Krambobeeren
 Pocket = 5
 Price = 40
 Flags = Berry,Fling_10,NaturalGift_PSYCHIC_100
-Description = If held by a Pokémon, it sharply raises one of its stats in a pinch.
+Description = Erhöht einen zufälligen Statuswert stark, wenn die KP unter 25 % fallen.
 #-------------------------------
 [ENIGMABERRY]
 Name = Enigmabeere
@@ -7004,7 +7004,7 @@ NamePlural = Enigmabeeren
 Pocket = 5
 Price = 40
 Flags = Berry,Fling_10,NaturalGift_BUG_100
-Description = If held by a Pokémon, it restores its HP if it is hit by any supereffective attack.
+Description = Heilt die KP um 25 %, wenn von einer sehr effektiven Attacke getroffen.
 #-------------------------------
 [MICLEBERRY]
 Name = Wunfrubeere
@@ -7012,7 +7012,7 @@ NamePlural = Wunfrubeeren
 Pocket = 5
 Price = 40
 Flags = Berry,Fling_10,NaturalGift_ROCK_100
-Description = If held by a Pokémon, it raises the accuracy of a move just once in a pinch.
+Description = Steigert die Genauigkeit des nächsten Angriffs um 20 %.
 #-------------------------------
 [CUSTAPBERRY]
 Name = Eipfelbeere
@@ -7020,7 +7020,7 @@ NamePlural = Eipfelbeeren
 Pocket = 5
 Price = 40
 Flags = Berry,Fling_10,NaturalGift_GHOST_100
-Description = If held by a Pokémon, it gets to move first just once in a pinch.
+Description = Die nächste Attacke wird garantiert zuerst eingesetzt, wenn die KP unter 25 % fallen.
 #-------------------------------
 [JABOCABERRY]
 Name = Jabocabeere
@@ -7028,7 +7028,7 @@ NamePlural = Jabocabeeren
 Pocket = 5
 Price = 40
 Flags = Berry,Fling_10,NaturalGift_DRAGON_100
-Description = If held by a Pokémon and a physical attack lands, the attacker also takes damage.
+Description = Fügt dem Gegner Schaden zu, wenn von einer physischen Attacke getroffen.
 #-------------------------------
 [ROWAPBERRY]
 Name = Roselbeere
@@ -7036,7 +7036,7 @@ NamePlural = Roselbeeren
 Pocket = 5
 Price = 40
 Flags = Berry,Fling_10,NaturalGift_DARK_100
-Description = If held by a Pokémon and a special attack lands, the attacker also takes damage.
+Description = Fügt dem Gegner Schaden zu, wenn von einer speziellen Attacke getroffen.
 #-------------------------------
 [KEEBERRY]
 Name = Akibeere
@@ -7052,7 +7052,7 @@ NamePlural = Tarabeeren
 Pocket = 5
 Price = 40
 Flags = Berry,Fling_10,NaturalGift_DARK_100
-Description = If held by a Pokémon, this Berry will increase the holder's Sp. Def if it's hit with a special move.
+Description = Erhöht die Sp. Verteidigung des Trägers, wenn dieser von speziellen Attacken getroffen wird.
 #-------------------------------
 [XATTACK]
 Name = X-Angriff
