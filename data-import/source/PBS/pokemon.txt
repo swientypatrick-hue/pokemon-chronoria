@@ -23594,6 +23594,9 @@ Category = Apple Wing
 Pokedex = It ate a sour apple, and that induced its evolution. In its cheeks, it stores an acid capable of causing chemical burns.
 Generation = 8
 RaidRanks = 3,4
+WildItemCommon = WATMELBERRY
+WildItemUncommon = WATMELBERRY
+WildItemRare = WATMELBERRY
 #-------------------------------
 [APPLETUN]
 Name = Schlapfel
