@@ -22,7 +22,7 @@ const locationsByPlace = Object.groupBy
 <Layout title={displayName}>
   <p class="meta-note"><a href={href("/items/")}>← Alle Items</a></p>
   <h1>{displayName}</h1>
-  {i.icon && <img class="species-sprite" src={href(`/item-icons/${i.icon}`)} alt="" width="64" height="64" />}
+  {i.icon && <img class="species-sprite" src={href(`/item-icons/${i.icon}${i.iconVersion ? `?v=${i.iconVersion}` : ""}`)} alt="" width="64" height="64" />}
   <p>{i.description || "–"}</p>
 
   <table>

@@ -2,6 +2,7 @@ import { readFileSync, readdirSync, existsSync } from "node:fs";
 import { join } from "node:path";
 import { parsePbsBlocks, blockToRecord, splitList, type PbsBlock } from "./parsePbs.ts";
 import { resolveInlineName, type TranslationContext } from "./translationContext.ts";
+import { hashFile } from "./fileHash.ts";
 import type { Item } from "./dataModel.ts";
 
 const SOURCE_DIR = join(import.meta.dirname, "source", "PBS");
@@ -32,6 +33,7 @@ function blockToItem(block: PbsBlock, ctx: TranslationContext, icons: Map<string
   const r = blockToRecord(block);
   const id = block.headerParts[0];
   const resolvedName = resolveInlineName(ctx.itemName, id, r.Name ?? id);
+  const icon = icons.get(id) ?? null;
   return {
     id,
     name: resolvedName.text,
@@ -43,7 +45,8 @@ function blockToItem(block: PbsBlock, ctx: TranslationContext, icons: Map<string
     sellPrice: toNumberOrNull(r.SellPrice),
     fieldUse: r.FieldUse ?? null,
     flags: splitList(r.Flags),
-    icon: icons.get(id) ?? null,
+    icon,
+    iconVersion: icon ? hashFile(join(ICONS_DIR, icon)) : null,
     move: r.Move ?? null,
     locations: [],
   };

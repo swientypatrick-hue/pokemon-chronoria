@@ -38,7 +38,7 @@ const pockets = [...new Set(items.map((i) => i.pocket).filter((p): p is number =
   <div class="card-grid" id="item-grid">
     {sortedItems.map((i) => (
       <a class="card" href={href(`/items/${slugify(i.id)}/`)} data-name={i.name.toLowerCase()} data-pocket={i.pocket !== null ? String(i.pocket) : ""}>
-        {i.icon && <img class="card-sprite" src={href(`/item-icons/${i.icon}`)} alt="" loading="lazy" width="48" height="48" />}
+        {i.icon && <img class="card-sprite" src={href(`/item-icons/${i.icon}${i.iconVersion ? `?v=${i.iconVersion}` : ""}`)} alt="" loading="lazy" width="48" height="48" />}
         <div class="card-name">{i.move ? (moveById.get(i.move)?.name ?? i.name) : i.name}</div>
         {i.move && <div class="meta-note">{i.name}</div>}
         {i.pocket !== 8 && <div class="meta-note">{i.price !== null ? `${i.price} ₽` : "nicht käuflich"}</div>}

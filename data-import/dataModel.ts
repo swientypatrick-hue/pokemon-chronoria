@@ -151,6 +151,9 @@ export interface Item {
   flags: string[];
   /** filename in public/item-icons/, or null if no matching icon exists */
   icon: string | null;
+  /** short content hash of the icon file, or null if icon is null - see data-import/fileHash.ts
+   *  for why pages need this appended to the <img src> as a cache-busting query string */
+  iconVersion: string | null;
   /** move id this TM/HM teaches, or null for items that don't teach a move */
   move: string | null;
   // reverse index, filled in by buildData.ts from the map-event dump
