@@ -3612,7 +3612,7 @@ Pocket = 3
 Price = 0
 BattleUse = OnFoe
 Flags = PokeBall
-Description = Auschließlich nutzbar in der Safari-Zone
+Description = Auschließlich nutzbar in der Safari-Zone, 1.5-Fache Fangrate.
 #-------------------------------Käfersammler-Contest
 [SPORTBALL]
 Name = Prüfungsball
