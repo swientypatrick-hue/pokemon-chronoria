@@ -943,43 +943,114 @@ Pokedex = Its legs have become poison stingers. It stabs its prey repeatedly wit
 
 Generation = 6
 
-
 #-------------------------------
-
-
+[PIDGEY,1]
+FormName = Chrono
+Types = NORMAL,FLYING
+BaseStats = 40,45,40,56,35,35
+GenderRatio = Female50Percent
+GrowthRate = Parabolic
+BaseExp = 50
+EVs = SPEED,1
+CatchRate = 255
+Happiness = 50
+Abilities = KEENEYE,TANGLEDFEET
+HiddenAbilities = BIGPECKS
+Moves = 1,TACKLE,5,SANDATTACK,9,GUST,13,QUICKATTACK,17,WHIRLWIND,21,TWISTER,25,FEATHERDANCE,29,AGILITY,33,WINGATTACK,37,ROOST,41,TAILWIND,45,AERIALACE,49,AIRSLASH,53,HURRICANE
+TutorMoves = AERIALACE,AIRCUTTER,ATTRACT,CAPTIVATE,CONFIDE,DEFOG,DOUBLEEDGE,DOUBLETEAM,ENDURE,FACADE,FLY,FRUSTRATION,HEATWAVE,HIDDENPOWER,MIMIC,MUDSLAP,NATURALGIFT,OMINOUSWIND,PLUCK,PROTECT,RAINDANCE,REST,RETURN,ROOST,ROUND,SECRETPOWER,SKYATTACK,SLEEPTALK,SNORE,STEELWING,SUBSTITUTE,SUNNYDAY,SWAGGER,SWIFT,TAILWIND,THIEF,TWISTER,UPROAR,UTURN,WORKUP
+EggMoves = AIRCUTTER,AIRSLASH,BRAVEBIRD,UPROAR
+EggGroups = Flying
+HatchSteps = 3840
+Height = 0.3
+Weight = 1.8
+Color = Brown
+Shape = Winged
+Habitat = Forest
+Category = Tiny Bird
+Pokedex = It has an extremely sharp sense of direction. It can unerringly return home to its nest, however far it may be removed from its familiar surroundings.
+Generation = 1
+Evolutions = PIDGEOTTO,Level,18
+SpeciesSOS = PIDGEY,PIDGEOTTO
+CallRateSOS = 9
+RaidRanks = 1,2
+#-------------------------------
+[PIDGEOTTO,1]
+FormName = Chrono
+Types = NORMAL,FLYING
+BaseStats = 63,60,55,71,50,50
+GenderRatio = Female50Percent
+GrowthRate = Parabolic
+BaseExp = 122
+EVs = SPEED,2
+CatchRate = 120
+Happiness = 50
+Abilities = KEENEYE,TANGLEDFEET
+HiddenAbilities = BIGPECKS
+Moves = 1,SANDATTACK,1,GUST,1,TACKLE,5,SANDATTACK,9,GUST,13,QUICKATTACK,17,WHIRLWIND,22,TWISTER,27,FEATHERDANCE,32,AGILITY,37,WINGATTACK,42,ROOST,47,TAILWIND,52,AERIALACE,57,AIRSLASH,62,HURRICANE
+TutorMoves = AERIALACE,AIRCUTTER,ATTRACT,CAPTIVATE,CONFIDE,DEFOG,DOUBLEEDGE,DOUBLETEAM,ENDURE,FACADE,FLY,FRUSTRATION,HEATWAVE,HIDDENPOWER,MIMIC,MUDSLAP,NATURALGIFT,OMINOUSWIND,PLUCK,PROTECT,RAINDANCE,REST,RETURN,ROOST,ROUND,SECRETPOWER,SKYATTACK,SLEEPTALK,SNORE,STEELWING,SUBSTITUTE,SUNNYDAY,SWAGGER,SWIFT,TAILWIND,THIEF,TWISTER,UPROAR,UTURN,WORKUP
+EggGroups = Flying
+HatchSteps = 3840
+Height = 1.1
+Weight = 30.0
+Color = Brown
+Shape = Winged
+Habitat = Forest
+Category = Bird
+Pokedex = This Pokémon flies around, patrolling its large territory. If its living space is violated, it shows no mercy in thoroughly punishing the foe with its sharp claws.
+Generation = 1
+Evolutions = PIDGEOT,Level,36
+CallRateSOS = 6
+RaidRanks = 2,3
+#-------------------------------
 [PIDGEOT,1]
-
-
+FormName = Chrono
+Types = NORMAL,FLYING
+BaseStats = 83,80,75,101,70,70
+GenderRatio = Female50Percent
+GrowthRate = Parabolic
+BaseExp = 240
+EVs = SPEED,3
+CatchRate = 45
+Happiness = 50
+Abilities = KEENEYE,TANGLEDFEET
+HiddenAbilities = BIGPECKS
+Moves = 1,HURRICANE,1,TACKLE,1,SANDATTACK,1,GUST,1,QUICKATTACK,5,SANDATTACK,9,GUST,13,QUICKATTACK,17,WHIRLWIND,22,TWISTER,27,FEATHERDANCE,32,AGILITY,38,WINGATTACK,44,ROOST,50,TAILWIND,56,AERIALACE,62,AIRSLASH,68,HURRICANE
+TutorMoves = AERIALACE,AIRCUTTER,ATTRACT,CAPTIVATE,CONFIDE,DEFOG,DOUBLEEDGE,DOUBLETEAM,ENDURE,FACADE,FLY,FRUSTRATION,GIGAIMPACT,HEATWAVE,HIDDENPOWER,HYPERBEAM,LASERFOCUS,MIMIC,MUDSLAP,NATURALGIFT,OMINOUSWIND,PLUCK,PROTECT,RAINDANCE,REST,RETURN,ROOST,ROUND,SECRETPOWER,SKYATTACK,SLEEPTALK,SNORE,STEELWING,SUBSTITUTE,SUNNYDAY,SWAGGER,SWIFT,TAILWIND,THIEF,TWISTER,UPROAR,UTURN,WORKUP
+EggGroups = Flying
+HatchSteps = 3840
+Height = 1.5
+Weight = 39.5
+Color = Brown
+Shape = Winged
+Habitat = Forest
+Category = Bird
+Pokedex = Pidgeot has gorgeous, glossy feathers. Many trainers are so captivated by the beautiful feathers on its head that they choose Pidgeot as their Pokémon.
+Generation = 1
+RaidRanks = 3,4,5
+#-------------------------------
+[PIDGEOT,2]
 FormName = Mega Tauboss
-
-
-MegaStone = PIDGEOTITE
-
-
+MegaStone = PIDGEOTITEX
 BaseStats = 83,80,80,121,135,80
-
-
 BaseExp = 290
-
-
 Abilities = NOGUARD
-
-
 HiddenAbilities = NOGUARD
-
-
 Height = 2.2
-
-
 Weight = 50.5
-
-
 Pokedex = With its muscular strength now greatly increased, it can fly continuously for two weeks without resting.
-
-
 Generation = 6
-
-
+#-------------------------------
+[PIDGEOT,3]
+FormName = Mega Tauboss
+MegaStone = PIDGEOTITEY
+BaseStats = 83,80,80,121,135,80
+BaseExp = 290
+Abilities = NOGUARD
+HiddenAbilities = NOGUARD
+Height = 2.2
+Weight = 50.5
+Pokedex = With its muscular strength now greatly increased, it can fly continuously for two weeks without resting.
+Generation = 6
 #-------------------------------
 
 

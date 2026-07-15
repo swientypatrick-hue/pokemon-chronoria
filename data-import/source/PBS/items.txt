@@ -2515,9 +2515,18 @@ BPPrice = 50
 Flags = MegaStone,Fling_80
 Description = Dieser Stein ermöglicht Bibor eine Mega-Entwicklung.
 #-------------------------------Einzigartig
-[PIDGEOTITE]
-Name = Taubossnit
-NamePlural = Taubossnite
+[PIDGEOTITEX]
+Name = Taubossnit X
+NamePlural = Taubossnite X
+Pocket = 6
+Price = 10000
+BPPrice = 50
+Flags = MegaStone,Fling_80
+Description = Dieser Stein ermöglicht Tauboss eine Mega-Entwicklung.
+#-------------------------------Einzigartig
+[PIDGEOTITEY]
+Name = Taubossnit Y
+NamePlural = Taubossnite Y
 Pocket = 6
 Price = 10000
 BPPrice = 50

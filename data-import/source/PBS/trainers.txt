@@ -1908,7 +1908,7 @@ Pokemon = TINKATON,45
     Item = CHOICEBAND
     Gender = female
     IV = 7,12,16,9,10,13
-    Ball = HEALBALL
+    Ball = LOCKBALL
 Pokemon = MEOWSCARADA,49
     Moves = SEEDBOMB,UTURN,HONECLAWS,QUICKATTACK
     AbilityIndex = 0
@@ -1953,7 +1953,7 @@ Pokemon = TINKATON,45
     Item = CHOICEBAND
     Gender = female
     IV = 7,12,16,9,10,13
-    Ball = HEALBALL
+    Ball = LOCKBALL
 Pokemon = TYPHLOSION,49
     Moves = FLAMETHROWER,HEX,FIREFANG,REST
     AbilityIndex = 0
@@ -1998,7 +1998,7 @@ Pokemon = TINKATON,45
     Item = CHOICEBAND
     Gender = female
     IV = 7,12,16,9,10,13
-    Ball = HEALBALL
+    Ball = LOCKBALL
 Pokemon = PRIMARINA,49
     Moves = HYPERVOICE,WATERPLEDGE,WATERFALL,ENCORE
     AbilityIndex = 0
@@ -2337,7 +2337,7 @@ Pokemon = CLEFABLE,49
     Moves = MOONBLAST,FOCUSBLAST,COUNTER,SOFTBOILED
     AbilityIndex = 1
     Item = LEFTOVERS
-    Ball = HEALBALL
+    Ball = LOCKBALL
 Pokemon = STOUTLAND,49
     Moves = RETALIATE,BODYSLAM,PLAYROUGH,STOMPINGTANTRUM
     AbilityIndex = 0
@@ -2899,50 +2899,50 @@ LoseText = Lass uns jederzeit wieder kämpfen.
 Pokemon = CHANSEY,10
     Moves = DEFENSECURL,TAILWHIP
     AbilityIndex = 0
-    Ball = HEALBALL
+    Ball = LOCKBALL
 #-------------------------------
 [POKEMONBREEDER_F3,Hilfe]
 LoseText = Lass uns jederzeit wieder kämpfen.
 Pokemon = CHANSEY,20
     Moves = DEFENSECURL,TAILWHIP
     AbilityIndex = 0
-    Ball = HEALBALL
+    Ball = LOCKBALL
 #-------------------------------
 [POKEMONBREEDER_F4,Hilfe]
 LoseText = Lass uns jederzeit wieder kämpfen.
 Pokemon = CHANSEY,29
     Moves = DEFENSECURL,TAILWHIP
     AbilityIndex = 0
-    Ball = HEALBALL
+    Ball = LOCKBALL
 #-------------------------------
 [POKEMONBREEDER_M,Hilfe]
 LoseText = Lass uns jederzeit wieder kämpfen.
 Pokemon = CHANSEY,38
     Moves = DEFENSECURL,TAILWHIP
     AbilityIndex = 0
-    Ball = HEALBALL
+    Ball = LOCKBALL
 #-------------------------------
 [POKEMONBREEDER_M2,Hilfe]
 LoseText = Lass uns jederzeit wieder kämpfen.
 Pokemon = CHANSEY,47
     Moves = DEFENSECURL,TAILWHIP
     AbilityIndex = 0
-    Ball = HEALBALL
+    Ball = LOCKBALL
 Pokemon = CHANSEY,47
     Moves = DEFENSECURL,TAILWHIP
     AbilityIndex = 0
-    Ball = HEALBALL
+    Ball = LOCKBALL
 #-------------------------------
 [POKEMONBREEDER_M3,Hilfe]
 LoseText = Lass uns jederzeit wieder kämpfen.
 Pokemon = CHANSEY,55
     Moves = DEFENSECURL,TAILWHIP
     AbilityIndex = 0
-    Ball = HEALBALL
+    Ball = LOCKBALL
 Pokemon = CHANSEY,55
     Moves = DEFENSECURL,TAILWHIP
     AbilityIndex = 0
-    Ball = HEALBALL
+    Ball = LOCKBALL
 #-------------------------------
 [TEENAGERM,Leandro]
 LoseText = Für mich bleibt meine Freundin die Beste.
@@ -2964,7 +2964,7 @@ Pokemon = PURUGLY,57
 Pokemon = AUDINO,56
     Moves = DISARMINGVOICE,HYPERVOICE,WISH,DAZZLINGGLEAM
     AbilityIndex = 1
-    Ball = HEALBALL
+    Ball = LOCKBALL
 #-------------------------------
 [BUGMANIAC,Alexander]
 Items = MEGARING
