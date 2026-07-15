@@ -3773,16 +3773,6 @@ BattleUse = OnFoe
 Flags = PokeBall
 Description = 3-Fache Fangrate gegenüber dem Pokéball in dunklen Gebieten.
 #-------------------------------Shop / Rezept
-[HEALBALL]
-Name = Heilball
-NamePlural = Heilbälle
-Pocket = 3
-Price = 500
-SellPrice = 75
-BattleUse = OnFoe
-Flags = PokeBall
-Description = Heilt das gefangene Pokémon vollständig.
-#-------------------------------Shop / Rezept
 [QUICKBALL]
 Name = Flottball
 NamePlural = Flottbälle
@@ -3837,15 +3827,6 @@ Price = 400
 BattleUse = OnFoe
 Flags = PokeBall
 Description = Je schwerer das Pokémon, desto höher die Fangrate.
-#-------------------------------Shop / Rezept
-[LOVEBALL]
-Name = Sympaball
-NamePlural = Sympabälle
-Pocket = 3
-Price = 300
-BattleUse = OnFoe
-Flags = PokeBall
-Description = 8-Fache Fangrate gegenüber dem Pokéball bei Pokémon des anderen Geschlechts.
 #-------------------------------Shop / Rezept
 [FRIENDBALL]
 Name = Freundesball
