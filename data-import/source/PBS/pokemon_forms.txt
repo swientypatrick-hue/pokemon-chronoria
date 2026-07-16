@@ -4473,7 +4473,7 @@ Pokedex = Its intellect surpasses its previous level, resulting in battles so cr
 Generation = 6
 
 
-MegaStone = METAGROSSITE
+MegaStone = METAGROSSITEX
 
 
 UnmegaForm = 0
@@ -8790,7 +8790,7 @@ WildItemUncommon = METALCOAT
 FormName = Mega Metagross
 
 
-MegaStone = METAGROSSITE2
+MegaStone = METAGROSSITEY
 
 
 UnmegaForm = 1

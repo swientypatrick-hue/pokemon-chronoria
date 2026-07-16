@@ -6690,18 +6690,18 @@ BPPrice = 50
 Flags = MegaStone,Fling_80
 Description = Dieser Stein ermöglicht Brutalanda eine Mega-Entwicklung.
 #-------------------------------Einzigartig
-[METAGROSSITE]
-Name = Metagrossnit
-NamePlural = Metagrossnite
+[METAGROSSITEX]
+Name = Metagrossnit X
+NamePlural = Metagrossnite X
 Pocket = 6
 Price = 10000
 BPPrice = 50
 Flags = MegaStone,Fling_80
 Description = Dieser Stein ermöglicht Metagross eine Mega-Entwicklung.
 #-------------------------------Einzigartig
-[METAGROSSITE2]
-Name = Metagrossnit2
-NamePlural = Metagrossnite2
+[METAGROSSITEY]
+Name = Metagrossnit Y
+NamePlural = Metagrossnite Y
 Pocket = 6
 Price = 10000
 BPPrice = 50
