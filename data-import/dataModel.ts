@@ -197,9 +197,12 @@ export interface MapLocationRef {
   locationName: string;
 }
 
-/** Same as MapLocationRef, plus how the item is obtained there. */
+/** Same as MapLocationRef, plus how the item is obtained there. "shop" means the item is sold
+ *  at a Poké Mart on that map (pbPokemonMart(...) in the event dump) - unlike the other
+ *  sources, this isn't a single physical pickup, so exportItemList.ts's per-map count treats it
+ *  as a standalone "available for purchase" flag rather than counting it. */
 export interface ItemLocationRef extends MapLocationRef {
-  source: "ground" | "hidden" | "gift" | "berry" | "special";
+  source: "ground" | "hidden" | "gift" | "berry" | "special" | "shop";
 }
 
 export interface Trainer {

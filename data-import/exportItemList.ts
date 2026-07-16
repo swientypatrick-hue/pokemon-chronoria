@@ -37,6 +37,29 @@ function byName(a: Row, b: Row) {
   return naturalCompare(a.name, b.name);
 }
 
+// Groups an item's locations by map name and formats them as e.g. "Route 3 (2), Ariduna (Shop)".
+// "shop" locations (Poké Mart stock, see parseMapLocations.ts) aren't a physical pickup count,
+// so they're shown as a standalone "(Shop)" flag instead of contributing to the numeric count -
+// an item sold at two different mart counters on the same map is still just "available there",
+// not "found twice". A map with neither a count above 1 nor a shop flag renders as a bare name,
+// so the common single-location case stays exactly as readable as before this change.
+function formatLocationsByMap(locations: { locationName: string; source: string }[]): string {
+  const byMap = new Map<string, { count: number; shop: boolean }>();
+  for (const l of locations) {
+    const entry = byMap.get(l.locationName) ?? { count: 0, shop: false };
+    if (l.source === "shop") entry.shop = true;
+    else entry.count += 1;
+    byMap.set(l.locationName, entry);
+  }
+  return [...byMap.entries()]
+    .sort((a, b) => a[0].localeCompare(b[0], "de"))
+    .map(([name, { count, shop }]) => {
+      const parts = [count > 1 ? String(count) : null, shop ? "Shop" : null].filter((p): p is string => p !== null);
+      return parts.length ? `${name} (${parts.join(", ")})` : name;
+    })
+    .join(", ");
+}
+
 // Berries and a handful of other ingredients call this out directly in their (already-German)
 // Description text - no separate PBS "recipe" list exists, so this substring is the only signal.
 function isRecipeIngredient(description: string): boolean {
@@ -55,7 +78,7 @@ export async function exportItemListXlsx(items: Item[], pokemon: Pokemon[]) {
         .map((i) => ({
           name: i.name,
           count: i.locations.length,
-          locationNames: [...new Set(i.locations.map((l) => l.locationName))].sort((a, b) => a.localeCompare(b, "de")).join(", "),
+          locationNames: formatLocationsByMap(i.locations),
           recipeLabel: isRecipeIngredient(i.description) ? "Ja" : "Nein",
         }))
         .sort(byName)
@@ -87,10 +110,10 @@ export async function exportItemListXlsx(items: Item[], pokemon: Pokemon[]) {
   row += 1;
   sheet.getCell(row, 1).value =
     "Generiert aus den Map-Event-Fundorten der Wiki-Daten (data-import/parseMapLocations.ts), automatisch bei jedem build-data-Lauf. " +
-    'Taschen stehen nebeneinander. "Anzahl" zählt eindeutige Orte/Quellen (Boden, verstecktes Item, NPC-Geschenk, Beerenbaum, Sonderitem), ' +
-    '"Fundorte" listet diese Orte namentlich - keine Stückzahl pro Fundort und KEINE Shop-Bestände (Pokémon Märkte werden von diesem ' +
-    'Datenexport nicht erfasst). Ein Item in der unteren Tabelle kann also trotzdem regulär im Laden kaufbar sein. "Rezept" = Ja, wenn die ' +
-    'Item-Beschreibung "Rezept"/"Rezepte" erwähnt (Zutat für ein Kochrezept).';
+    'Taschen stehen nebeneinander. "Anzahl" zählt eindeutige Orte/Quellen (Boden, verstecktes Item, NPC-Geschenk, Beerenbaum, Sonderitem, ' +
+    'Shop-Bestand). "Fundorte" listet diese Orte namentlich, je Karte mit der Anzahl an nicht-Shop-Fundorten in Klammern, falls mehr als ' +
+    'einer (z.B. "Route 3 (2)"), und einem zusätzlichen "(Shop)"-Vermerk, falls dort auch käuflich (z.B. "Route 1 (Shop)" oder kombiniert ' +
+    '"Route 1 (2, Shop)"). "Rezept" = Ja, wenn die Item-Beschreibung "Rezept"/"Rezepte" erwähnt (Zutat für ein Kochrezept).';
   sheet.getCell(row, 1).font = NOTE_FONT;
   sheet.mergeCells(row, 1, row, maxCols);
   sheet.getRow(row).height = 45;

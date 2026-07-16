@@ -21,6 +21,14 @@ const ITEM_BALL_RE = /pbItemBall\(:(\w+)/; // ground items and hidden (Itemfinde
 const RECEIVE_ITEM_RE = /pbReceiveItem\(:(\w+)/; // items given by an NPC
 const PICK_BERRY_RE = /pbPickBerry\(:(\w+)/; // berry trees
 const MCR_RE = /pbMCR\("(\w+)"/; // rare "cinematic receive" key items
+// Poké Mart shop stock: "@>Script: pbPokemonMart([" opens the call, one or more ":ITEM_ID"
+// symbols follow across several continuation lines ("  :       :   :POTION, :SUPERPOTION,"),
+// and "])" closes it - always on its own line in this dump (verified: 201/202 pbPokemonMart
+// occurrences open this way, the one exception is a doc comment mentioning the function name,
+// which never matches SHOP_START_RE since it has no "([" ).
+const SHOP_START_RE = /pbPokemonMart\(\[/;
+const SHOP_END_RE = /\]\)/;
+const SHOP_ITEM_RE = /:(\w+)/g;
 
 // Leftover, unused default Pokémon Essentials demo content (Lappet Town, Cedolan City,
 // Route 1-8, Battle Frontier, Safari Zone, Berth/Faraday Island, ...) plus a few stray
@@ -66,6 +74,7 @@ export function parseMapLocations(): MapLocationsResult {
   let locationName = "";
   let eventName = "";
   let mapExcluded = true;
+  let inShop = false;
 
   for (const line of lines) {
     const mapMatch = MAP_ID_RE.exec(line);
@@ -73,9 +82,22 @@ export function parseMapLocations(): MapLocationsResult {
       mapId = mapMatch[1];
       locationName = locationNames.get(mapId) ?? mapId;
       mapExcluded = EXCLUDED_MAP_IDS.has(Number(mapId));
+      inShop = false; // a shop block never spans a map boundary; don't leak into the next map
       continue;
     }
     if (mapExcluded) continue;
+
+    if (inShop) {
+      for (const m of line.matchAll(SHOP_ITEM_RE)) {
+        addLocation(itemLocations, m[1], { mapId, locationName, source: "shop" }, (r) => `${r.mapId}:${r.source}`);
+      }
+      if (SHOP_END_RE.test(line)) inShop = false;
+      continue;
+    }
+    if (SHOP_START_RE.test(line)) {
+      inShop = true;
+      continue;
+    }
 
     const eventMatch = EVENT_NAME_RE.exec(line);
     if (eventMatch) {
