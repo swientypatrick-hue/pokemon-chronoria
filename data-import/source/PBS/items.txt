@@ -9028,7 +9028,7 @@ Description = Gibt Ogerpon zusätzlich den Typ Gestein.
 [TEALMASK]
 Name = Türkisgrüne Maske
 NamePlural = Türkisgrüne Masken
-Pocket = 8
+Pocket = 1
 Price = 0
 Flags = KeyItem,Fling_60
 Description = Gibt Ogerpon lediglich den Typ Pflanze.
