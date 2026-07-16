@@ -8937,21 +8937,27 @@ Description = Das volle Repertoire, um brüchige Felswände aufzuschlagen.
 Name = Lift-Ticket
 NamePlural = Lift-Tickets
 Pocket = 8
+Price = 0
 SellPrice = 0
+Flags = KeyItem
 Description = Eine Dauerkarte für den Lift zwischen Solhaven und Route 6.
 #-------------------------------Einzigartig
 [KEYCARD]
 Name = Schlüsselkarte
 NamePlural = Schlüsselkarten
 Pocket = 8
+Price = 0
 SellPrice = 0
+Flags = KeyItem
 Description = Eine Schlüsselkarte für eine unbekannte Tür.
 #-------------------------------Einzigartig
 [KEYCARD2]
 Name = Schlüsselkarte
 NamePlural = Schlüsselkarten
 Pocket = 8
+Price = 0
 SellPrice = 0
+Flags = KeyItem
 Description = Eine Schlüsselkarte für eine unbekannte Tür.
 #-------------------------------------------------------------------------------Löschen
 [KAEFERSAMMLERITEM]
@@ -9025,7 +9031,7 @@ NamePlural = Türkisgrüne Masken
 Pocket = 8
 Price = 0
 Flags = KeyItem,Fling_60
-Description = A teal mask patterned after the face of an ogre. Dropped by Ogerpon after visiting the Festival of Masks.
+Description = Gibt Ogerpon lediglich den Typ Pflanze.
 #-------------------------------Einzigartig
 [INDIGODISK]
 Name = Indigoblaue Scheibe
