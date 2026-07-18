@@ -17,6 +17,13 @@ const categories = [
   { href: href("/trainer/"), label: "Trainer", count: meta.counts.trainers },
   { href: href("/medaillen/"), label: "Medaillen", count: medals.length },
 ];
+
+// Built here (instead of via define:vars) because is:inline + define:vars makes Astro rebuild
+// the <script> tag during compilation, which silently drops the data-astro-rerun attribute added
+// below - define:vars needs this re-run too (see the script tag's own comment for why).
+const pagefindInitScript = `if (typeof PagefindUI !== "undefined") {
+  new PagefindUI({ element: "#search", bundlePath: ${JSON.stringify(href("/pagefind/"))}, showSubResults: true, resetStyles: false });
+}`;
 ---
 
 <Layout title="Start">
@@ -42,10 +49,10 @@ const categories = [
 
 <link rel="stylesheet" href={href("/pagefind/pagefind-ui.css")} />
 <script is:inline src={href("/pagefind/pagefind-ui.js")}></script>
-<script is:inline define:vars={{ bundlePath: href("/pagefind/") }}>
-  window.addEventListener("DOMContentLoaded", () => {
-    if (typeof PagefindUI !== "undefined") {
-      new PagefindUI({ element: "#search", bundlePath, showSubResults: true, resetStyles: false });
-    }
-  });
-</script>
+{/* data-astro-rerun so this re-runs every time the homepage is reached via a ClientRouter
+    navigation, not just the very first load - without it the #search box built by PagefindUI
+    stayed empty after navigating back to "/" (DOMContentLoaded, which the old version waited
+    for, only ever fires once per real document load, never again for client-side navigations).
+    No need to wait for any event here: by the time an inline script tag runs (first load or
+    rerun-reinsertion alike), the preceding #search element is already in the document. */}
+<script is:inline data-astro-rerun set:html={pagefindInitScript} />
