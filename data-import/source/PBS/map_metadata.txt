@@ -1136,7 +1136,7 @@ BattleBack = gym2
 Name = Azumaris Arena
 MapPosition = 0,9,14
 BattleBack = gym2
-#-------------------------------??
+#-------------------------------
 [177]   # MAP177
 Name = Noxburgh
 HealingSpot = 177,10,7
@@ -2015,11 +2015,13 @@ Flags = Levels
 Name = Trainerschule
 ShowArea = true
 MapPosition = 0,3,14
+DarkMap = true
 SnapEdges = true
 #-------------------------------
 [307]   # MAP307
 Name = Trainerschule
 MapPosition = 0,3,14
+DarkMap = true
 SnapEdges = true
 #-------------------------------
 [308]   # Rätsel-Haus
@@ -2057,10 +2059,11 @@ WildVictoryBGM = Victory! (Wild Pokemon)_4
 Environment = Forest
 Flags = Levels
 #-------------------------------
-[315]   # Mistral Angler
+[315]   # MAP315
 Name = Anglerladen
 ShowArea = true
 MapPosition = 0,5,16
+DarkMap = true
 SnapEdges = true
 #-------------------------------
 [316]   # Route 5 Angler
@@ -2345,7 +2348,7 @@ Name = Azumaris
 MapPosition = 0,8,14
 SnapEdges = true
 #-------------------------------
-[369]   # MAP369
+[369]   # Route 1
 Name = Route 1
 Outdoor = true
 ShowArea = true
@@ -2369,6 +2372,16 @@ WildBattleBGM = Battle! (Clan Warden)
 WildVictoryBGM = Victory! (Wild Pokémon)_2
 Environment = Forest
 Flags = Levels
+#-------------------------------
+[374]   # MAP374
+Name = MAP374
+DarkMap = true
+SnapEdges = true
+#-------------------------------
+[375]   # MAP375
+Name = MAP375
+DarkMap = true
+SnapEdges = true
 #-------------------------------
 [376]   # Brunnen
 Name = Brunnen
@@ -3125,6 +3138,11 @@ WildVictoryBGM = Victory! (Wild Pokemon)_3
 Environment = Cave
 Flags = Levels
 #-------------------------------
+[468]   # MAP468
+Name = MAP468
+DarkMap = true
+SnapEdges = true
+#-------------------------------
 [469]   # Arena 4
 Name = Ephiron Arena
 MapPosition = 0,3,10
@@ -3136,6 +3154,25 @@ Name = Ephiron Arena
 MapPosition = 0,3,10
 SnapEdges = true
 BattleBack = gym4
+#-------------------------------
+[471]   # MAP471
+Name = MAP471
+DarkMap = true
+SnapEdges = true
+#-------------------------------
+[472]   # MAP472
+Name = MAP472
+DarkMap = true
+SnapEdges = true
+#-------------------------------
+[473]   # MAP473
+DarkMap = true
+SnapEdges = true
+#-------------------------------
+[474]   # MAP474
+Name = MAP474
+DarkMap = true
+SnapEdges = true
 #-------------------------------
 [475]   # Arena 4
 Name = Ephiron Arena
@@ -3713,7 +3750,7 @@ BattleBack = wald
 Environment = Forest
 Flags = Levels
 #-------------------------------
-[553]   # Route 16
+[553]   # Flammenhain
 Name = Flammenhain
 Outdoor = true
 ShowArea = true
@@ -3723,7 +3760,7 @@ BattleBack = wald
 Environment = Forest
 Flags = Levels
 #-------------------------------
-[554]   # Route 16
+[554]   # Flammenhain
 Name = Flammenhain
 Outdoor = true
 ShowArea = true
@@ -3733,7 +3770,7 @@ BattleBack = wald
 Environment = Forest
 Flags = Levels
 #-------------------------------
-[555]   # Route 16
+[555]   # Flammenhain
 Name = Flammenhain
 Outdoor = true
 ShowArea = true
@@ -3743,7 +3780,7 @@ BattleBack = wald
 Environment = Forest
 Flags = Levels
 #-------------------------------
-[556]   # Route 16
+[556]   # Stein der Wahrheit
 Name = Stein der Wahrheit
 ShowArea = true
 MapPosition = 0,20,3
@@ -3752,7 +3789,7 @@ BattleBack = reshiram
 Environment = None
 Flags = Levels
 #-------------------------------
-[557]   # MAP557
+[557]   # Krypta der Weißen Flammen
 Name = Krypta der Weißen Flammen
 ShowArea = true
 MapPosition = 0,20,3
@@ -3760,7 +3797,7 @@ SnapEdges = true
 BattleBack = reshiram
 Flags = Levels
 #-------------------------------
-[558]   # MAP558
+[558]   # Schrein der Wahrheit und Ideale
 Name = Schrein der Wahrheit und Ideale
 ShowArea = true
 MapPosition = 0,22,4
@@ -3808,7 +3845,7 @@ HealingSpot = 155,12,18
 MapPosition = 0,22,7
 SnapEdges = true
 #-------------------------------
-[567]   # MAP567
+[567]   # Tao
 Name = Tao
 ShowArea = true
 MapPosition = 0,20,3
@@ -3848,6 +3885,11 @@ WildBattleBGM = battle wild 2
 TrainerBattleBGM = Battle Trainer (6)
 WildVictoryBGM = Battle victory wild
 #-------------------------------
+[602]   # MAP602
+Name = MAP602
+DarkMap = true
+SnapEdges = true
+#-------------------------------
 [603]   # Klartrug Arena
 Name = Morastia Arena
 ShowArea = true
@@ -3870,6 +3912,13 @@ BattleBack = Forest_2
 Environment = Forest
 Flags = Levels,Inverse
 #-------------------------------
+[606]   # Tao
+Name = Tao
+ShowArea = true
+MapPosition = 0,20,3
+SnapEdges = true
+Flags = Levels
+#-------------------------------
 [607]   # MAP607
 Name = Siegelkammer
 ShowArea = true
@@ -3878,6 +3927,12 @@ DarkMap = true
 SnapEdges = true
 BattleBack = ruine2
 Environment = Rock
+Flags = Levels
+#-------------------------------
+[608]   # Haus
+Name = Route 16
+MapPosition = 0,20,3
+SnapEdges = true
 Flags = Levels
 #-------------------------------
 [609]   # Durchgang
@@ -3890,16 +3945,27 @@ Name = Faulmoor / Morastia
 MapPosition = 0,22,5
 SnapEdges = true
 #-------------------------------
-[606]   # MAP606
-Name = Tao
-ShowArea = true
-MapPosition = 0,20,3
+[611]   # MAP611
+Name = MAP611
+DarkMap = true
 SnapEdges = true
-Flags = Levels
 #-------------------------------
-[608]   # MAP608
-Name = Route 16
-ShowArea = false
-MapPosition = 0,20,3
+[612]   # MAP612
+Name = MAP612
+Outdoor = true
 SnapEdges = true
-Flags = Levels
+#-------------------------------
+[613]   # MAP613
+Name = MAP613
+Outdoor = true
+SnapEdges = true
+#-------------------------------
+[614]   # MAP614
+Name = MAP614
+Outdoor = true
+SnapEdges = true
+#-------------------------------
+[615]   # MAP615
+Name = MAP615
+Outdoor = true
+SnapEdges = true
