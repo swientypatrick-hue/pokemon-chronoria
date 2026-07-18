@@ -751,6 +751,153 @@ tr:hover td {
 }
 
 /* ==========================================================================
+   Type effectiveness chart (homepage)
+   ========================================================================== */
+.type-chart-wrap {
+  overflow-x: auto;
+  border-radius: var(--radius-md);
+  border: 1px solid var(--border-glass);
+  background: var(--bg-glass);
+  box-shadow: var(--shadow-soft);
+}
+.type-chart {
+  border: none;
+  border-radius: 0;
+  box-shadow: none;
+  background: transparent;
+  font-size: 0.72rem;
+  border-collapse: separate;
+  border-spacing: 0;
+  /* Shared square size for every data/header cell: row height (driven by the row-header badge +
+     its padding) and column width both resolve to this same value, so the grid is a true square
+     grid and the rotated column headers get the same centered breathing room on their left/right
+     that the row headers already have on their top/bottom (see .tc-rotate below). */
+  --tc-size: 2.6rem;
+  /* Without this, the table has no unbreakable wide content left in its data/rotated-header
+     cells (the rotated badge is position:absolute, i.e. out of flow, so it no longer counts) -
+     the only genuinely wide in-flow content is the row-header column's un-rotated badge. Auto
+     table layout then shrinks the whole table to fit .type-chart-wrap's available width and
+     divides that up proportionally, silently ignoring every column's explicit --tc-size width
+     (that's why cells were rendering at ~29px instead of the requested 41.6px). Forcing the
+     table to its max-content width makes it actually grow to fit all columns at their requested
+     size, overflowing into the wrap's existing horizontal scrollbar instead of being squeezed. */
+  width: max-content;
+}
+.type-chart th,
+.type-chart td {
+  border: 1px solid var(--border-glass);
+  padding: 0;
+  text-align: center;
+  white-space: nowrap;
+}
+.type-chart thead th {
+  position: sticky;
+  top: 0;
+  background: var(--bg-glass-strong);
+  z-index: 1;
+}
+.type-chart tbody th.tc-row-head {
+  position: sticky;
+  left: 0;
+  background: var(--bg-glass-strong);
+  z-index: 1;
+}
+/* Scoped as ".type-chart .tc-*" (two classes) rather than bare ".tc-*" (one class) so these
+   win over the ".type-chart th, .type-chart td" base rule above - equal-looking selectors but
+   ".type-chart th" is actually MORE specific than a single ".tc-corner" class, which silently
+   dropped this padding/white-space/text-align (found via computed styles showing padding:0px and
+   white-space:nowrap here despite this rule "setting" the opposite - the corner label was
+   overflowing as one un-wrapped line into the first rotated header column). */
+.type-chart .tc-corner {
+  position: sticky;
+  left: 0;
+  top: 0;
+  z-index: 2;
+  min-width: 7rem;
+  max-width: 7rem;
+  white-space: normal;
+  color: var(--text-muted);
+  font-size: 0.66rem;
+  font-weight: 600;
+  letter-spacing: normal;
+  text-transform: none;
+  padding: 0.4rem 0.5rem;
+  background: var(--bg-glass-strong);
+}
+.type-chart .tc-head {
+  padding: 0.35rem 0.5rem;
+}
+.type-chart .tc-head--rotated {
+  /* position:relative + an absolutely-positioned .tc-rotate child is what actually makes the
+     narrower width stick: a plain transform:rotate() only repaints the badge, it doesn't shrink
+     the layout box the table's auto column-width algorithm measures (that box is still the
+     badge's full un-rotated ~94px width), so the column stayed wide no matter how small a width
+     was set here. Taking .tc-rotate out of flow via `position:absolute` removes it from that
+     column-width measurement entirely, so this th's own explicit width (matched to .tc-cell's,
+     for a uniform grid) is what the column actually gets.
+     No horizontal padding here on purpose: --tc-size is already comfortably wider than the
+     rotated badge's own thickness (1.75rem), so .tc-rotate's centering transform below creates
+     the left/right gap by itself - the same mechanism (and the same badge height) that already
+     produces the row headers' top/bottom gap, just centered on the other axis. */
+  position: relative;
+  height: 7rem;
+  width: var(--tc-size);
+  padding: 0;
+  vertical-align: middle;
+}
+.tc-rotate {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(-90deg);
+  white-space: nowrap;
+}
+.type-chart .tc-row-head {
+  text-align: left;
+  height: var(--tc-size);
+}
+.tc-cell {
+  width: var(--tc-size);
+  height: var(--tc-size);
+  font-weight: 700;
+  font-size: 0.95rem;
+  font-variant-numeric: tabular-nums;
+}
+.tc-cell--2 {
+  background: linear-gradient(160deg, #3ed17e, #1f9c53);
+  color: #ffffff;
+}
+.tc-cell--half {
+  background: linear-gradient(160deg, #e88a3c, #c0392b);
+  color: #ffffff;
+}
+.tc-cell--0 {
+  background: linear-gradient(160deg, #5b6472, #232a35);
+  color: #ffffff;
+}
+.type-chart-legend {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem 1.25rem;
+  margin-top: 0.85rem;
+  color: var(--text-muted);
+  font-size: 0.82rem;
+}
+.tc-legend-item {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+}
+.tc-swatch {
+  display: inline-block;
+  width: 0.85rem;
+  height: 0.85rem;
+  border-radius: 4px;
+  border: 1px solid var(--border-glass);
+  font-style: normal;
+}
+
+/* ==========================================================================
    Hero (homepage)
    ========================================================================== */
 .hero {

@@ -1,6 +1,7 @@
 ---
 import Layout from "../layouts/Layout.astro";
 import Card from "../components/Card.astro";
+import TypeChart from "../components/TypeChart.astro";
 import { meta, pokemon, medals } from "../lib/data";
 import { href } from "../lib/url";
 
@@ -41,6 +42,12 @@ const pagefindInitScript = `if (typeof PagefindUI !== "undefined") {
       </Card>
     ))}
   </div>
+
+  <h2>Typen-Chart</h2>
+  <p class="meta-note" style="margin-bottom:1rem">
+    Angriffstyp (Zeile) gegen Verteidigungstyp (Spalte) – zeigt, wie effektiv eine Attacke gegen ein Pokémon dieses Typs ist.
+  </p>
+  <TypeChart />
 
   <p class="meta-note" style="margin-top:2rem">
     Stand: {new Date(meta.generatedAt).toLocaleDateString("de-DE")} · Work in Progress — Ideen und Feedback sind jederzeit willkommen.

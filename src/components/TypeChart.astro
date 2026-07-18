@@ -1,0 +1,65 @@
+---
+// Single-type effectiveness matrix (attacker rows vs. defender columns), built straight from the
+// same Weaknesses/Resistances/Immunities fields the game itself reads from PBS/types.txt - not a
+// hardcoded copy of the general Pokémon type chart, so it stays correct if Chronoria ever
+// customizes a matchup.
+import { types } from "../lib/data";
+import TypeBadge from "./TypeBadge.astro";
+
+const chartTypes = types.filter((t) => t.id !== "QMARKS");
+
+type ChartType = (typeof chartTypes)[number];
+
+function multiplier(attackerId: string, defender: ChartType): number {
+  if (defender.immunities.includes(attackerId)) return 0;
+  if (defender.weaknesses.includes(attackerId)) return 2;
+  if (defender.resistances.includes(attackerId)) return 0.5;
+  return 1;
+}
+
+const CELL_LABEL: Record<number, string> = { 0: "0", 0.5: "½", 2: "2" };
+const CELL_CLASS: Record<number, string> = { 0: "tc-cell--0", 0.5: "tc-cell--half", 2: "tc-cell--2" };
+---
+
+<div class="type-chart-wrap">
+  <table class="type-chart" aria-label="Typen-Effektivitätstabelle">
+    <thead>
+      <tr>
+        <th class="tc-corner" scope="col">Angriff ↓ / Verteidigung →</th>
+        {chartTypes.map((d) => (
+          <th class="tc-head tc-head--rotated" scope="col">
+            <div class="tc-rotate">
+              <TypeBadge type={d.id} />
+            </div>
+          </th>
+        ))}
+      </tr>
+    </thead>
+    <tbody>
+      {chartTypes.map((a) => (
+        <tr>
+          <th class="tc-head tc-row-head" scope="row">
+            <TypeBadge type={a.id} />
+          </th>
+          {chartTypes.map((d) => {
+            const m = multiplier(a.id, d);
+            return m === 1 ? (
+              <td class="tc-cell" />
+            ) : (
+              <td class={`tc-cell ${CELL_CLASS[m]}`} title={`${a.name} gegen ${d.name}: ${CELL_LABEL[m]}×`}>
+                {CELL_LABEL[m]}
+              </td>
+            );
+          })}
+        </tr>
+      ))}
+    </tbody>
+  </table>
+</div>
+
+<div class="type-chart-legend">
+  <span class="tc-legend-item"><i class="tc-swatch tc-cell--2"></i> 2× – sehr effektiv</span>
+  <span class="tc-legend-item"><i class="tc-swatch tc-cell--half"></i> ½× – nicht sehr effektiv</span>
+  <span class="tc-legend-item"><i class="tc-swatch tc-cell--0"></i> 0× – keine Wirkung</span>
+  <span class="tc-legend-item"><i class="tc-swatch"></i> normal (1×)</span>
+</div>

@@ -13,7 +13,13 @@ export const moves = movesData as Move[];
 export const abilities = abilitiesData as Ability[];
 export const items = itemsData as Item[];
 export const trainers = trainersData as Trainer[];
-export const types = typesData as { id: string; name: string }[];
+export const types = typesData as {
+  id: string;
+  name: string;
+  weaknesses: string[];
+  resistances: string[];
+  immunities: string[];
+}[];
 export const medals = medalsData as Medal[];
 export const meta = metaData as {
   generatedAt: string;
